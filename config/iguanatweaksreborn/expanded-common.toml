@@ -1,0 +1,223 @@
+"Enable Combat" = true
+"Enable Experience" = true
+"Enable Hunger & Health" = true
+"Enable Items" = true
+"Enable Mining" = true
+"Enable Miscellaneous" = true
+"Enable Mobs" = true
+"Enable Movement" = true
+"Enable Sleep & Respawn" = true
+"Enable World" = true
+
+[World]
+	#Change a few things relative to Serene Seasons
+	"Enable Seasons" = true
+	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
+	"Enable Ore Generation" = true
+	"Enable Coal & Charcoal" = true
+
+	#Change a few things relative to Serene Seasons
+	[World.Seasons]
+		#Removes greenhouse glass.
+		"No greenhouse glass" = true
+		#Saplings no longer drop in Winter.
+		"No Saplings in Winter" = true
+		#Grass and tall grass decays in Winter and regrows back in Spring. Saplings are also transformed into Dead Bushes.
+		"Grass Decay and Growth" = true
+		#Makes the following changes to Serene Seasons config:
+		#Makes the following changes to Serene Seasons config:
+		#* seasonal_crops is set to false, as it's controlled by PlantsGrowth
+		#* Sets the starting season to mid summer
+		#
+		"Serene Seasons changes" = true
+		"Season based fishing time" = true
+
+	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
+	[World."Ore Generation"]
+		#Enables a Data Pack that changes Iron generation to include Poor and Rich Ores.
+		"Poor and Rich Iron Generation" = true
+		#Enables a Data Pack that changes Gold generation to include Poor and Rich Ores.
+		"Poor and Rich Gold Generation" = true
+		#Enables a Data Pack that changes Copper generation to include Poor and Rich Ores.
+		"Poor and Rich Copper Generation" = true
+
+	[World."Coal & Charcoal"]
+		#Chance for logs to release charcoal layer when burnt
+		#Range: 0.0 ~ 1.0
+		"Charcoal from burnt logs chance" = 0.8
+		#If enabled, a data pack will be enabled that removes the Charcoal recipe from smelting and makes Coal Ore require an Iron Pickaxe or better to mine.
+		"No charcoal smelting and iron coal" = true
+
+		[World."Coal & Charcoal"."Two flint fire starter"]
+			#If true, two flints (on per hand) can start a fire
+			Enabled = true
+			#Chance to ignite a block when using two flints
+			#Range: 0.0 ~ 1.0
+			"Ignite Chance" = 0.35
+			#Chance for the flint to break when using two flints
+			#Range: 0.0 ~ 1.0
+			"Break Chance" = 0.3
+
+["Sleep & Respawn"]
+	#Zombies can drop cloth instead of Rotten Flesh. Cloth is used to make beds.
+	"Enable Cloth" = true
+	#Generate Respawn Obelisks around the world where a precise respawn can be set
+	"Enable Respawn Obelisk" = true
+
+	#Zombies can drop cloth instead of Rotten Flesh. Cloth is used to make beds.
+	["Sleep & Respawn".Cloth]
+		#Enables a Data Pack that makes zombies drop cloth instead of rotten flesh and beds require Cloth to be crafted.
+		"Data Pack" = true
+
+[Movement]
+
+	[Movement.Minecarts]
+		#If true, enables a data pack that makes rails cheaper and adds recipes for new rails.
+		"Data Pack" = true
+
+[Mobs]
+	#Changes to EnhancedAI config
+	"Enable EnhancedAI" = true
+	#Increase monsters health, movement speed, etc. This feature uses Mobs Properties Randomness.
+	"Enable Stats Buffs" = true
+	#Changes to mob spawn
+	"Enable Spawning" = true
+
+	#Increase monsters health, movement speed, etc. This feature uses Mobs Properties Randomness.
+	[Mobs."Stats Buffs"]
+		#Enables a Data Pack that buffs mobs.
+		"Enable DataPack" = true
+
+	#Changes to mob spawn
+	[Mobs.Spawning]
+		#Animals and Sea Creatures can no longer naturally spawn in Winter.
+		"No Animals or Sea Creatures Spawn Winter" = true
+
+		[Mobs.Spawning.Despawning]
+			#Despawn Distance on winter, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Winter = 96
+			#Despawn Distance on spring, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Spring = 128
+			#Despawn Distance on summer, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Summer = 128
+			#Despawn Distance on autumn, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Autumn = 128
+
+		[Mobs.Spawning."Hostile Cap"]
+			#Hostile Mobs cap on winter, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Winter = 90
+			#Hostile Mobs cap on spring, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Spring = 70
+			#Hostile Mobs cap on summer, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Summer = 50
+			#Hostile Mobs cap on autumn, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Autumn = 70
+
+[Miscellaneous]
+	#Various data packs that can be enabled/disabled
+	"Enable Data Packs" = true
+
+	#Various data packs that can be enabled/disabled
+	[Miscellaneous."Data Packs"]
+		#If true, no integrated data pack will be loaded
+		"Disable ALL data packs" = false
+		#Enables a Data Pack that overhauls advancements to make them work with IguanaTweaks.
+		Advancements = true
+
+[Mining]
+	"Enable Forging" = true
+	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment
+	"Enable Durium" = true
+	#Adds mining charge
+	"Enable Mining Charge" = true
+	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal
+	"Enable Soul Steel" = true
+	#Add a new Netherite alternative which makes you go fast
+	"Enable Keego" = true
+	#Add new multi block furnaces
+	"Enable Multi Block Furnaces" = true
+
+	[Mining.Forging]
+		#Enables the following changes to vanilla data pack:
+		#* All metal gear requires a forge to be made
+		#* Diamond Gear requires Gold gear to be forged
+		#* Gold Gear requires Flint / Leather gear to be forged
+		#* Iron Gear requires Stone / Chained Copper gear to be forged
+		#* Buckets, Flint and Steel and Shears require a forge to be made
+		"Forging Equipment Crafting Data Pack" = true
+
+	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment
+	[Mining.Durium]
+		#Enables a data pack that makes Lodestone require Durium instead of Netherite.
+		"Durium Lodestone" = true
+
+	#Add new multi block furnaces
+	[Mining."Multi Block Furnaces"]
+		#Enables a data pack that changes the vanilla Blast Furnace recipe to give the multi block blast furnace.
+		"Blast Furnace Data pack" = true
+
+[Items]
+	#Add a new explosive block.
+	"Enable Explosive Barrel" = true
+	#Add flint tools and make wooden tools useless. Also add flint blocks.
+	"Enable Flint Expansion" = true
+	#A new block that can let you carry more stuff around.
+	"Enable Crate" = true
+	#Two new set of tools
+	"Enable Copper Tools Expansion" = true
+	#Check your altitude
+	"Enable Altimeter" = true
+	#Add Solarium, a new metal made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment
+	"Enable Solarium" = true
+	#Add Chained Copper Armor
+	"Enable Chained Copper Armor" = true
+
+	#A new block that can let you carry more stuff around.
+	[Items.Crate]
+		#Range: > 0
+		"Slowness with this or more crates" = 2
+		#Range: 0.0 ~ 1.0
+		"Slowness per crate > 'Slowness with this or more crates'" = 0.15
+
+	#Check your altitude
+	[Items.Altimeter]
+		"Show approx altitude in tooltip" = true
+
+["Hunger & Health"]
+	#Adds new foods and drinks.
+	"Enable New Foods & Drinks" = true
+
+[Experience]
+	#New lapis for better enchanting.
+	"Enable Lapis" = true
+	#Change some enchantments related stuff and adds new enchantments.
+	"Enable New Enchantments" = true
+	#Change some enchanting related stuff.
+	"Enable Enchanting" = true
+
+[Combat]
+	#Gives a use to the fletching table.
+	"Enable Fletching table" = true
+	#Changes to Shields+.
+	"Enable Shields+" = true
+
+	#Gives a use to the fletching table.
+	[Combat."Fletching table"]
+		#Enables the following changes:
+		#* Replaces the vanilla fletching table recipe with the mod's one
+		#* Adds more arrows recipes
+		"Fletching Data Pack" = true
+
+	#Changes to Shields+.
+	[Combat."Shields+"]
+		#Changes the crafting recipes of metal shields to require a Forge and rebalances the shields.
+		"Shields+ Compat DataPack" = true
+

@@ -1,0 +1,10 @@
+[
+  {
+    "entity": "#iguanatweaksreborn:breedable_animals",
+    "value": 3.0
+  },
+  {
+    "entity": "minecraft:villager",
+    "value": 6.0
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "hoe": "minecraft:wooden_hoe",
+    "cooldown": 40,
+    "damage_on_till": 4,
+    "scythe_radius": 1
+  },
+  {
+    "hoe": "minecraft:stone_hoe",
+    "cooldown": 30,
+    "damage_on_till": 4,
+    "scythe_radius": 0
+  },
+  {
+    "hoe": "iguanatweaksexpanded:flint_hoe",
+    "cooldown": 25,
+    "damage_on_till": 4,
+    "scythe_radius": 0
+  },
+  {
+    "hoe": "iguanatweaksexpanded:copper_hoe",
+    "cooldown": 20,
+    "damage_on_till": 4,
+    "scythe_radius": 1
+  },
+  {
+    "hoe": "minecraft:golden_hoe",
+    "cooldown": 6,
+    "damage_on_till": 3,
+    "scythe_radius": 2
+  },
+  {
+    "hoe": "minecraft:iron_hoe",
+    "cooldown": 22,
+    "damage_on_till": 3,
+    "scythe_radius": 1
+  },
+  {
+    "hoe": "iguanatweaksexpanded:solarium_hoe",
+    "cooldown": 28,
+    "damage_on_till": 3,
+    "scythe_radius": 1
+  },
+  {
+    "hoe": "iguanatweaksexpanded:durium_hoe",
+    "cooldown": 25,
+    "damage_on_till": 3,
+    "scythe_radius": 0
+  },
+  {
+    "hoe": "iguanatweaksexpanded:coated_copper_hoe",
+    "cooldown": 18,
+    "damage_on_till": 2,
+    "scythe_radius": 1
+  },
+  {
+    "hoe": "iguanatweaksexpanded:keego_hoe",
+    "cooldown": 10,
+    "damage_on_till": 2,
+    "scythe_radius": 2
+  },
+  {
+    "hoe": "minecraft:diamond_hoe",
+    "cooldown": 12,
+    "damage_on_till": 2,
+    "scythe_radius": 2
+  },
+  {
+    "hoe": "iguanatweaksexpanded:soul_steel_hoe",
+    "cooldown": 14,
+    "damage_on_till": 2,
+    "scythe_radius": 2
+  },
+  {
+    "hoe": "minecraft:netherite_hoe",
+    "cooldown": 12,
+    "damage_on_till": 2,
+    "scythe_radius": 2
+  }
+]
