@@ -2,7 +2,21 @@
   {
     "id": "minecraft:sugar_cane",
     "no_sunlight_growth_multiplier": 1.75,
-    "min_sunlight_required": 10
+    "min_sunlight_required": 10,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SPRING",
+        "multiplier": 0.0
+      },
+      {
+        "season": "AUTUMN",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:cactus",
@@ -11,7 +25,21 @@
     "correct_biomes": [
       "#forge:is_hot"
     ],
-    "wrong_biome_multiplier": 3.0
+    "wrong_biome_multiplier": 3.0,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SPRING",
+        "multiplier": 0.0
+      },
+      {
+        "season": "AUTUMN",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:cocoa",
@@ -22,7 +50,21 @@
     "correct_biomes": [
       "#forge:is_hot"
     ],
-    "wrong_biome_multiplier": 3.0
+    "wrong_biome_multiplier": 3.0,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SPRING",
+        "multiplier": 0.0
+      },
+      {
+        "season": "AUTUMN",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:nether_wart",
@@ -44,19 +86,53 @@
     "tag": "minecraft:saplings",
     "no_sunlight_growth_multiplier": 2.5,
     "min_sunlight_required": 10,
-    "night_time_growth_multiplier": 1.5
+    "night_time_growth_multiplier": 1.5,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:melon_stem",
     "no_sunlight_growth_multiplier": 2.5,
     "min_sunlight_required": 10,
-    "night_time_growth_multiplier": 1.5
+    "night_time_growth_multiplier": 1.5,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SPRING",
+        "multiplier": 0.0
+      },
+      {
+        "season": "AUTUMN",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:pumpkin_stem",
     "no_sunlight_growth_multiplier": 2.5,
     "min_sunlight_required": 10,
-    "night_time_growth_multiplier": 1.5
+    "night_time_growth_multiplier": 1.5,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SPRING",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SUMMER",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:sweet_berry_bush",
@@ -67,7 +143,13 @@
     "correct_biomes": [
       "#forge:is_taiga"
     ],
-    "wrong_biome_multiplier": 3.0
+    "wrong_biome_multiplier": 3.0,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:kelp",
@@ -87,7 +169,17 @@
     "correct_biomes": [
       "#minecraft:is_hot"
     ],
-    "wrong_biome_multiplier": 3.0
+    "wrong_biome_multiplier": 3.0,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "AUTUMN",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:wheat",
@@ -97,7 +189,17 @@
       "#forge:is_cold"
     ],
     "wrong_biome_multiplier": 2.0,
-    "inverse_correct_biomes": true
+    "inverse_correct_biomes": true,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SPRING",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:potatoes",
@@ -107,7 +209,21 @@
       "#forge:is_cold"
     ],
     "wrong_biome_multiplier": 2.0,
-    "inverse_correct_biomes": true
+    "inverse_correct_biomes": true,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "AUTUMN",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SUMMER",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:beetroots",
@@ -117,7 +233,21 @@
       "#forge:is_cold"
     ],
     "wrong_biome_multiplier": 1.5,
-    "inverse_correct_biomes": true
+    "inverse_correct_biomes": true,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SPRING",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SUMMER",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:carrots",
@@ -127,21 +257,57 @@
       "#forge:is_cold"
     ],
     "wrong_biome_multiplier": 1.5,
-    "inverse_correct_biomes": true
+    "inverse_correct_biomes": true,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "SUMMER",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:torchflower_crop",
     "no_sunlight_growth_multiplier": 2.0,
-    "min_sunlight_required": 10
+    "min_sunlight_required": 10,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "AUTUMN",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "minecraft:pitcher_crop",
     "no_sunlight_growth_multiplier": 2.0,
-    "min_sunlight_required": 10
+    "min_sunlight_required": 10,
+    "season_multipliers": [
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      }
+    ]
   },
   {
     "id": "supplementaries:flax",
     "no_sunlight_growth_multiplier": 2.0,
-    "min_sunlight_required": 10
+    "min_sunlight_required": 10,
+    "season_multipliers": [
+      {
+        "season": "SUMMER",
+        "multiplier": 0.0
+      },
+      {
+        "season": "WINTER",
+        "multiplier": 0.0
+      }
+    ]
   }
 ]

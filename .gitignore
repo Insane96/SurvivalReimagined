@@ -4,3 +4,4 @@ saves/
 .curseclient
 usercache.json
 usernamecache.json
+config/oculus.properties
