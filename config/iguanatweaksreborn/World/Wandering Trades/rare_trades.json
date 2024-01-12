@@ -35,6 +35,22 @@
   },
   {
     "item_a": "minecraft:emerald",
+    "item_a_count": 10,
+    "item_result": "iguanatweaksexpanded:ancient_lapis",
+    "item_result_count": 1,
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 4,
+    "item_result": "iguanatweaksexpanded:cleansed_lapis",
+    "item_result_count": 1,
+    "max_uses": 2,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
     "item_a_count": 1,
     "item_result": "minecraft:lily_pad",
     "item_result_count": 5,
