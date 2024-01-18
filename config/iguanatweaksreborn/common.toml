@@ -11,43 +11,31 @@
 "Enable World" = true
 
 [World]
-	#Berry bushes no longer deal damage when walking in them with leggings and boots.
-	"Enable Actually Sweet Berry Bushes" = true
 	"Enable Coal & Fire" = true
-	#Wear down grass when passing on it.
-	"Enable Desire Paths" = true
 	#Spawners will no longer spawn mobs infinitely. Echo shards can reactivate a spawner. Monsters spawning from spawners ignore light and spawning is much faster
 	"Enable Spawners" = true
-	"Enable Cyan Flower" = true
+	#Berry bushes no longer deal damage when walking in them with leggings and boots.
+	"Enable Actually Sweet Berry Bushes" = true
 	#Makes leaves decay faster and if Passable Foliage is installed, changes some values
 	"Enable Leaves" = true
 	"Enable Nether" = true
+	"Enable Fluids" = true
+	"Enable Cyan Flower" = true
 	#Trees fall when cut.
 	"Enable Timber Trees" = true
-	"Enable Fluids" = true
-	#Various changes to explosions from knockback to shielding.
-	"Enable Explosion Overhaul" = true
 	#Change wandering trader offers
 	"Enable Wandering Trades" = true
+	#Various changes to explosions from knockback to shielding.
+	"Enable Explosion Overhaul" = true
+	#Wear down grass when passing on it.
+	"Enable Desire Paths" = true
 
 	[World."Coal & Fire"]
 		#How much faster fire ticks and spreads.
 		#Range: 0.0 ~ 100.0
 		"Fire spread speed multiplier" = 4.0
 		#If true, campfires must be lit
-		"Unlit campfire" = true
-
-	#Wear down grass when passing on it.
-	[World."Desire Paths"]
-		#Chance for blocks to transform each tick
-		#Range: 0.0 ~ 1.0
-		"Chance to transform" = 0.008
-		#If true, speed will increase/decrease based off speed. The 'Chance to transform' will be based on walking.
-		"Speed based chance" = true
-		#Tall grass is broken when grass is transformed
-		"Break Tall Grass" = true
-		#Transform list of blocks
-		"Transformation List" = ["minecraft:grass_block,minecraft:dirt", "minecraft:dirt,minecraft:coarse_dirt"]
+		"Unlit campfire" = false
 
 	#Spawners will no longer spawn mobs infinitely. Echo shards can reactivate a spawner. Monsters spawning from spawners ignore light and spawning is much faster
 	[World.Spawners]
@@ -77,16 +65,28 @@
 		"Disable Nether Roof and 8 block ratio" = true
 		#The portal requires Gold blocks or Crying Obsidian in the corners to turn it on (in the overworld).
 		"Portal requires Gold Blocks or Crying Obsidians" = true
-		#If true, lava pockets in the nether are removed.
+		#If true, lava pockets in the nether are removed. If quark is installed, this is disabled
 		"Remove Lava Pockets" = true
+
+	[World.Fluids]
+		#If enabled, water will deal fall damage if too shallow
+		"Water fall damage" = true
 
 	#Trees fall when cut.
 	[World."Timber Trees"]
 		"Requires axe" = false
 
-	[World.Fluids]
-		#If enabled, water will deal fall damage if too shallow
-		"Water fall damage" = true
+	#Change wandering trader offers
+	[World."Wandering Trades"]
+		#Vanilla is 0 pre 23w31a, 2 otherwise
+		#Range: > -2147483648
+		"Amount of Buying trades" = 2
+		#Vanilla is 5
+		#Range: > -2147483648
+		"Amount of Ordinary trades" = 6
+		#Vanilla is 1
+		#Range: > -2147483648
+		"Amount of Rare trades" = 2
 
 	#Various changes to explosions from knockback to shielding.
 	[World."Explosion Overhaul"]
@@ -117,38 +117,29 @@
 		#Range: > -2147483648
 		"Limit explosion size" = 12
 
-	#Change wandering trader offers
-	[World."Wandering Trades"]
-		#Vanilla is 0 pre 23w31a, 2 otherwise
-		#Range: > -2147483648
-		"Amount of Buying trades" = 2
-		#Vanilla is 5
-		#Range: > -2147483648
-		"Amount of Ordinary trades" = 6
-		#Vanilla is 1
-		#Range: > -2147483648
-		"Amount of Rare trades" = 2
+	#Wear down grass when passing on it.
+	[World."Desire Paths"]
+		#Chance for blocks to transform each tick
+		#Range: 0.0 ~ 1.0
+		"Chance to transform" = 0.008
+		#If true, speed will increase/decrease based off speed. The 'Chance to transform' will be based on walking.
+		"Speed based chance" = true
+		#Tall grass is broken when grass is transformed
+		"Break Tall Grass" = true
+		#Transform list of blocks
+		"Transformation List" = ["minecraft:grass_block,minecraft:dirt", "minecraft:dirt,minecraft:coarse_dirt"]
 
 ["Sleep & Respawn"]
-	#Changes to sleeping and spawn points
-	"Enable Sleeping and Spawn Point" = false
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	"Enable Tiredness" = true
 	#Changes to respawning
 	"Enable Respawn" = true
-	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
-	"Enable Sleeping Effects" = true
 	#Changes to death
 	"Enable Death" = true
-
+	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
+	"Enable Sleeping Effects" = true
 	#Changes to sleeping and spawn points
-	["Sleep & Respawn"."Sleeping and Spawn Point"]
-		#If set to true the player will not be able to sleep.
-		"Disable Sleeping" = false
-		#If set to true the player spawn point cannot be changed with beds.
-		"Disable Spawn Point" = false
-		#If set to true the player will be able to sleep during day time. On wake up it will be night time. Note that with 'Tiredness' feature enabled you are still not able to sleep during day unless you're tired enough.
-		"Allow Sleeping During Day" = false
+	"Enable Sleeping and Spawn Point" = false
 
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	["Sleep & Respawn".Tiredness]
@@ -196,6 +187,11 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			Maximum = 128.0
 
+	#Changes to death
+	["Sleep & Respawn".Death]
+		#If true, the player's killer will not despawn and when killed will drop 4x more items and experience.
+		"Player's killer bounty" = true
+
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
 	["Sleep & Respawn"."Sleeping Effects"]
 		#How much the hunger bar is depleted when you wake up in the morning. Saturation is depleted before depleting hunger bar. Setting to 0 will disable this feature.
@@ -208,23 +204,32 @@
 		#Apply the bad effects only when too tired
 		"Dizzy when tired" = true
 
+	#Changes to sleeping and spawn points
+	["Sleep & Respawn"."Sleeping and Spawn Point"]
+		#If set to true the player will not be able to sleep.
+		"Disable Sleeping" = false
+		#If set to true the player spawn point cannot be changed with beds.
+		"Disable Spawn Point" = false
+		#If set to true the player will be able to sleep during day time. On wake up it will be night time. Note that with 'Tiredness' feature enabled you are still not able to sleep during day unless you're tired enough.
+		"Allow Sleeping During Day" = false
+
 [Movement]
 	#Armor slows down the player. Material Weights and Enchantment Weights are controlled via json in this feature's folder
 	"Enable Weighted Equipment" = true
-	#Prevents the player from placing blocks below him when in mid air.
-	"Enable No Pillaring" = true
-	#Player's slides down ladders faster and shift when opening an interface.
+	#Player's slides down ladders faster and stands still when opening an interface. This is disabled if quark is enabled
 	"Enable Better Ladders" = true
-	#Player's slowed down when walking backwards.
-	"Enable Backwards slowdown" = true
 	#Player's slowed down for a brief moment when hit.
 	"Enable Tagging" = true
-	#Makes flying with elytra outside the end dimension have stronger gravity.
-	"Enable Elytra Nerf" = true
+	#Prevents the player from placing blocks below him when in mid air.
+	"Enable No Pillaring" = true
 	#Stamina to let the player run and do stuff.
 	"Enable Stamina" = true
 	#Slowdown based off the terrain you're walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
 	"Enable Terrain Slowdown" = true
+	#Makes flying with elytra outside the end dimension have stronger gravity.
+	"Enable Elytra Nerf" = true
+	#Player's slowed down when walking backwards.
+	"Enable Backwards slowdown" = true
 
 	#Armor slows down the player. Material Weights and Enchantment Weights are controlled via json in this feature's folder
 	[Movement."Weighted Equipment"]
@@ -237,11 +242,9 @@
 		#Range: 0.0 ~ 1.0
 		"Percentage Increase per Toughness" = 0.025
 
-	#Player's slowed down when walking backwards.
-	[Movement."Backwards slowdown"]
-		#How much slower will the player go when walking backwards.
-		#Range: 0.0 ~ 1.0
-		Slowdown = 0.25
+	[Movement.Boats]
+		#If true, boats will no longer go stupidly fast on ice. (If quark is present this is disabled)
+		"No Ice Boats" = true
 
 	#Player's slowed down for a brief moment when hit.
 	[Movement.Tagging]
@@ -251,16 +254,6 @@
 		#Slowness is applied for damage_taken * this_value ticks.
 		#Range: 0 ~ 100
 		"Duration multiplier" = 7
-
-	[Movement.Boats]
-		#If true, boats will no longer go stupidly fast on ice.
-		"No Ice Boats" = true
-
-	#Makes flying with elytra outside the end dimension have stronger gravity.
-	[Movement."Elytra Nerf"]
-		#How much the player is pulled down when flying with elytra in non-end dimensions.
-		#Range: 0.0 ~ 1.0
-		Strength = 0.45
 
 	#Stamina to let the player run and do stuff.
 	[Movement.Stamina]
@@ -283,13 +276,25 @@
 		#Disable sprinting altogether
 		"Disable Sprinting" = false
 
+	#Makes flying with elytra outside the end dimension have stronger gravity.
+	[Movement."Elytra Nerf"]
+		#How much the player is pulled down when flying with elytra in non-end dimensions.
+		#Range: 0.0 ~ 1.0
+		Strength = 0.45
+
+	#Player's slowed down when walking backwards.
+	[Movement."Backwards slowdown"]
+		#How much slower will the player go when walking backwards.
+		#Range: 0.0 ~ 1.0
+		Slowdown = 0.25
+
 [Mobs]
 	#Changes to mob spawn
 	"Enable Spawning" = true
-	#Small changes to villagers to make them less OP
-	"Enable Villagers" = true
 	#Changes to mobs equipment
 	"Enable Equipment" = true
+	#Small changes to villagers to make them less OP
+	"Enable Villagers" = true
 
 	#Changes to mob spawn
 	[Mobs.Spawning]
@@ -297,6 +302,12 @@
 		"No Zombie Villagers" = true
 		#Allows mobs to spawn in the world spawn (in vanilla mobs can't spawn in a 24 blocks radius from world spawn)
 		"Allow world spawn spawn" = true
+
+	#Changes to mobs equipment
+	[Mobs.Equipment]
+		#Set the drop chance for mobs equipment.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Drop chance" = 1.0
 
 	#Small changes to villagers to make them less OP
 	[Mobs.Villagers]
@@ -313,49 +324,36 @@
 		"Clamp Negative Demand" = true
 		"Remove Bad Omen" = true
 
-	#Changes to mobs equipment
-	[Mobs.Equipment]
-		#Set the drop chance for mobs equipment.
-		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Drop chance" = 1.0
-
 [Miscellaneous]
-	#Various stuff that doesn't fit in any other Feature.
-	"Enable Tweaks" = true
-	#Various data packs that can be enabled/disabled
-	"Enable Data Packs" = true
-	#Various Nerfs
-	"Enable Nerfs" = true
 	#Apply potion effects on certain hunger / health / experience level. Debuffs are controlled via json in this feature's folder
 	"Enable DeBuffs" = false
+	#Various Nerfs
+	"Enable Nerfs" = true
+	#Various data packs that can be enabled/disabled
+	"Enable Data Packs" = true
+	#Various stuff that doesn't fit in any other Feature.
+	"Enable Tweaks" = true
 	#Beacon Range varying based of blocks of the pyramid and better conduit killing mobs. Blocks list and ranges are controlled via json in this feature's folder
 	"Enable Beacon & Conduit" = true
 
-	#Various stuff that doesn't fit in any other Feature.
-	[Miscellaneous.Tweaks]
-		#If true, entities will no longer be set on fire if have Fire Resistance (like bedrock edition)
-		"Prevent fire with resistance" = true
-		#Falling on glass has a chance of breaking it. The higher the fall, the higher the chance. iguanatweaksreborn:fall_on_break block tag can be used to add more blocks that break when falling onto them.
-		"Falling breaking glass" = true
-		#Poison will damage the player every this ticks at level I. Vanilla is 25.
-		#Range: > 1
-		"Poison damage speed" = 60
-		#The maximum amount of blocks a sponge can soak. (Vanilla is 64)
-		#Range: > -2147483648
-		"Maximum Sponge Soak Blocks" = 256
-		#The maximum range at which sponges will check for soakable blocks. (Vanilla is 5)
-		#Range: > -2147483648
-		"Maximum Sponge Soak Range" = 10
-		#When you die in hardcore, your spawn point is set to where you died and a lightning strike is summoned
-		"Better hardcore death" = true
-		#The amount of ticks the player consumes when underwater. In vanilla it's 1 without Respiration enchantment.
-		#Range: > -2147483648
-		"Player air ticks consumed" = 1
-		#The amount of air ticks the player regains each tick when out of water. Vanilla is 4
-		#Range: > -2147483648
-		"Player air ticks refilled" = 1
-		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2 tool efficiency.
-		"Efficiency based destroy delay" = true
+	#Various Nerfs
+	[Miscellaneous.Nerfs]
+		#If true, Iron golems will only drop Iron when killed by the player.
+		"Iron from Golems only when killed by Player" = true
+		#If true, renderDebugInfo is enabled by default. Requires a world restart
+		"No Coordinates" = true
+		#If true, randomTickSpeed is set to 2 from 3
+		"Reduced Random Tick Speed" = true
+		#If true, maxEntityCramming game rule is set to 6 from 24
+		"Reduced mob cramming" = true
+		#Kelp blocks smelt 16 items instead of 20
+		"Less burn time for Kelp block" = true
+		#Prevents duping falling blocks when they travel across dimensions. (If quark is present this is disabled)
+		"Remove Falling Block Dupe across dimensions" = true
+		#Fixes several piston physics exploits like TNT duping. (If quark is present this is disabled)
+		"Remove piston physics exploit" = true
+		#Range: 0.0 ~ 1.0
+		"Fishing has a chance to fish a guardian" = 0.05
 
 	#Various data packs that can be enabled/disabled
 	[Miscellaneous."Data Packs"]
@@ -395,24 +393,29 @@
 		#Changes mobs loot and makes mobs drop reduced loot if not killed by a player
 		"Mob loot changes" = true
 
-	#Various Nerfs
-	[Miscellaneous.Nerfs]
-		#If true, Iron golems will only drop Iron when killed by the player.
-		"Iron from Golems only when killed by Player" = true
-		#If true, renderDebugInfo is enabled by default. Requires a world restart
-		"No Coordinates" = true
-		#If true, randomTickSpeed is set to 2 from 3
-		"Reduced Random Tick Speed" = true
-		#If true, maxEntityCramming game rule is set to 6 from 24
-		"Reduced mob cramming" = true
-		#Kelp blocks smelt 16 items instead of 20
-		"Less burn time for Kelp block" = true
-		#Prevents duping falling blocks when they travel across dimensions. (Yes, I stole this from Quark)
-		"Remove Falling Block Dupe across dimensions" = true
-		#Fixes several piston physics exploits like TNT duping. (Yes, I also stole this from Quark)
-		"Remove piston physics exploit" = true
-		#Range: 0.0 ~ 1.0
-		"Fishing has a chance to fish a guardian" = 0.05
+	#Various stuff that doesn't fit in any other Feature.
+	[Miscellaneous.Tweaks]
+		#If true, entities will no longer be set on fire if have Fire Resistance (like bedrock edition)
+		"Prevent fire with resistance" = true
+		#Falling on glass has a chance of breaking it. The higher the fall, the higher the chance. iguanatweaksreborn:fall_on_break block tag can be used to add more blocks that break when falling onto them.
+		"Falling breaking glass" = true
+		#Poison will damage the player every this ticks at level I. Vanilla is 25.
+		#Range: > 1
+		"Poison damage speed" = 60
+		#The maximum amount of blocks a sponge can soak. (Vanilla is 64, disabled if quark is installed)
+		#Range: > -2147483648
+		"Maximum Sponge Soak Blocks" = 256
+		#The maximum range at which sponges will check for soakable blocks. (Vanilla is 5, disabled if quark is installed)
+		#Range: > -2147483648
+		"Maximum Sponge Soak Range" = 10
+		#When you die in hardcore, your spawn point is set to where you died and a lightning strike is summoned
+		"Better hardcore death" = true
+		#The amount of ticks the player consumes when underwater. In vanilla it's 1 without Respiration enchantment.
+		#Range: > -2147483648
+		"Player air ticks consumed" = 1
+		#The amount of air ticks the player regains each tick when out of water. Vanilla is 4
+		#Range: > -2147483648
+		"Player air ticks refilled" = 1
 
 	#Beacon Range varying based of blocks of the pyramid and better conduit killing mobs. Blocks list and ranges are controlled via json in this feature's folder
 	[Miscellaneous."Beacon & Conduit"]
@@ -430,18 +433,37 @@
 [Mining]
 	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
 	"Enable Block Hardness" = true
-	#Various changes for different materials.
-	"Enable Materials Data Packs" = true
+	#Makes gold tools more useful
+	"Enable Gold" = true
 	#Various mining changes
 	"Enable Misc" = true
-	#Makes gold tools more useful
-	"Enable Lucky Gold" = true
+	#Various changes for different materials.
+	"Enable Materials Data Packs" = true
 
 	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
 	[Mining."Block Hardness"]
 		#Multiplier applied to the hardness of blocks. E.g. with this set to 2.0 blocks will take 2 times longer to break.
 		#Range: 0.0 ~ 128.0
 		"Hardness Multiplier" = 1.0
+
+	#Makes gold tools more useful
+	[Mining.Gold]
+		#Changes Gold tools to have an innate Fortune/Looting I and changes the harvest level to be like iron tools.
+		"Lucky Gold" = true
+
+	#Various mining changes
+	[Mining.Misc]
+		#Silverfish blocks will insta-mine like pre-1.17
+		"Insta-Mine Silverfish" = true
+		#Heads will insta-break
+		"Insta-Mine Heads" = true
+		#Reduce the range at which players can interact with blocks
+		#Range: -4.0 ~ 0.0
+		"Mining Range reduction" = -1.0
+		#Makes slabs, stairs and walls take less time to break
+		"Faster slabs, stairs and walls" = true
+		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2 tool efficiency.
+		"Efficiency based destroy delay" = true
 
 	#Various changes for different materials.
 	[Mining."Materials Data Packs"]
@@ -463,30 +485,22 @@
 				#Enables a Data Pack.
 				"2 Diamond ore generation" = true
 
-	#Various mining changes
-	[Mining.Misc]
-		#Silverfish blocks will insta-mine like pre-1.17
-		"Insta-Mine Silverfish" = true
-		#Heads will insta-break
-		"Insta-Mine Heads" = true
-		#Reduce the range at which players can interact with blocks
-		#Range: -4.0 ~ 0.0
-		"Mining Range reduction" = -1.0
-		#Makes slabs, stairs and walls take less time to break
-		"Faster slabs, stairs and walls" = true
-
-	#Makes gold tools more useful
-	[Mining."Lucky Gold"]
-		#Changes Gold tools to have an innate Fortune/Looting I and changes the harvest level to be like iron tools.
-		"Lucky Gold" = true
-
 [Items]
-	#Retrieve name tags from name tagged entities.
-	"Enable Name tags" = true
-	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff might require a Minecraft restart.
-	"Enable Stack Sizes" = true
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
 	"Enable Item Stats" = true
+	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff might require a Minecraft restart.
+	"Enable Stack Sizes" = true
+	#Retrieve name tags from name tagged entities.
+	"Enable Name tags" = true
+
+	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
+	[Items."Item Stats"]
+		#If set to true items in the 'no_damage_items' and 'no_efficiency_items' will get a tooltip. Items with durability get a durability tooltip. Tools get an efficiency tooltip.
+		"More Items Tooltips" = true
+		#If set to true items will no longer break, will be left with 1 durability. Items in the iguanatweaksreborn:not_unbreakable tag will break instead.
+		"Unbreakable Items" = true
+		#If set to true items will no longer break if enchanted. Ignores the iguanatweaksreborn:not_unbreakable item tag.
+		"Unbreakable Enchanted Items" = true
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff might require a Minecraft restart.
 	[Items."Stack Sizes"]
@@ -504,22 +518,13 @@
 		#Range: 0.01 ~ 64.0
 		"Block Stack Multiplier" = 1.0
 
-	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
-	[Items."Item Stats"]
-		#If set to true items in the 'no_damage_items' and 'no_efficiency_items' will get a tooltip. Items with durability get a durability tooltip. Tools get an efficiency tooltip.
-		"More Items Tooltips" = true
-		#If set to true items will no longer break, will be left with 1 durability. Items in the iguanatweaksreborn:not_unbreakable tag will break instead.
-		"Unbreakable Items" = true
-		#If set to true items will no longer break if enchanted. Ignores the iguanatweaksreborn:not_unbreakable item tag.
-		"Unbreakable Enchanted Items" = true
-
 ["Hunger & Health"]
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Also adds Vigour effect. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	"Enable Hunger Health Regen" = true
-	#Make the player consume more hunger with different actions. If hunger is disabled, still works for Tiredness.
-	"Enable Exhaustion Increase" = true
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	"Enable Foods & Drinks" = true
+	#Make the player consume more hunger with different actions. If hunger is disabled, still works for Tiredness.
+	"Enable Exhaustion Increase" = true
 	#Remove hunger and get back to the Beta 1.7.3 days.
 	"Enable No Hunger" = true
 
@@ -595,20 +600,6 @@
 				#If true, eating when already under Vigour increases the duration.
 				Stacks = true
 
-	#Make the player consume more hunger with different actions. If hunger is disabled, still works for Tiredness.
-	["Hunger & Health"."Exhaustion Increase"]
-		#When you break a block you'll get exhaustion equal to the block hardness multiplied by this value. Setting this to 0 will default to the vanilla exhaustion (0.005). (It's not affected by the Global Hardness Features)
-		#Range: 0.0 ~ 128.0
-		"Block Break Exhaustion Multiplier" = 0.0
-		#When breaking block you'll get exhaustion every tick during the breaking.
-		#Range: 0.0 ~ 128.0
-		"Exhaustion per tick when breaking a block" = 0.005
-		#Every second the player will get this exhaustion.
-		#Range: 0.0 ~ 128.0
-		"Passive Exhaustion" = 0.005
-		#When affected by the hunger effect ANY action will give you 100% more exhaustion per level.
-		"Effective Hunger" = true
-
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	["Hunger & Health"."Foods & Drinks"]
 		#Food's hunger restored will be multiplied by this value (rounded up). E.g. With this set to 0.5 a Cooked Pork-chop would restore 4 hunger instead of 8. Setting to 1 will disable this feature.
@@ -632,6 +623,20 @@
 		#Raw food has this chance to poison the player. Raw food is defined in the iguanatweaksreborn:raw_food tag
 		#Range: 0.0 ~ 1.0
 		"Raw food Poison Chance" = 0.7
+
+	#Make the player consume more hunger with different actions. If hunger is disabled, still works for Tiredness.
+	["Hunger & Health"."Exhaustion Increase"]
+		#When you break a block you'll get exhaustion equal to the block hardness multiplied by this value. Setting this to 0 will default to the vanilla exhaustion (0.005). (It's not affected by the Global Hardness Features)
+		#Range: 0.0 ~ 128.0
+		"Block Break Exhaustion Multiplier" = 0.0
+		#When breaking block you'll get exhaustion every tick during the breaking.
+		#Range: 0.0 ~ 128.0
+		"Exhaustion per tick when breaking a block" = 0.005
+		#Every second the player will get this exhaustion.
+		#Range: 0.0 ~ 128.0
+		"Passive Exhaustion" = 0.005
+		#When affected by the hunger effect ANY action will give you 100% more exhaustion per level.
+		"Effective Hunger" = true
 
 	#Remove hunger and get back to the Beta 1.7.3 days.
 	["Hunger & Health"."No Hunger"]
@@ -669,18 +674,29 @@
 			"Heal Multiplier" = 1.0
 
 [Farming]
-	#Bone meal is no longer so OP and also Rich Farmland
-	"Enable Bone meal" = true
-	#Slower breeding, Growing, Egging and Milking. Lower yield.
-	"Enable Livestock" = true
-	#Crops are no longer insta-minable. Break speed is still affected by the Hardness module. Requires a minecraft restart.
-	"Enable Hard Crops" = true
-	#Crops tweaks and less yield from crops
-	"Enable Crops" = true
 	#Slower Plants (non-crops) growing. Plants properties are controlled via json in this feature's folder
 	"Enable Plants Growth" = true
 	#Slower Hoes and more fragile. Hoes Properties are controlled via json in this feature's folder
 	"Enable Hoes" = true
+	#Bone meal is no longer so OP and also Rich Farmland
+	"Enable Bone meal" = true
+	#Crops tweaks and less yield from crops
+	"Enable Crops" = true
+	#Slower breeding, Growing, Egging and Milking. Lower yield.
+	"Enable Livestock" = true
+	#Crops are no longer insta-minable. Break speed is still affected by the Hardness module. Requires a minecraft restart.
+	"Enable Hard Crops" = true
+
+	#Slower Plants (non-crops) growing. Plants properties are controlled via json in this feature's folder
+	[Farming."Plants Growth"]
+		"Huge mushrooms on Mycelium only" = true
+
+	#Slower Hoes and more fragile. Hoes Properties are controlled via json in this feature's folder
+	[Farming.Hoes]
+		#Each Efficiency level reduces the cooldown of hoes by this many ticks.
+		#Range: > 0
+		"Efficiency cooldown reduction" = 1
+		"Trigger only for farmland" = true
 
 	#Bone meal is no longer so OP and also Rich Farmland
 	[Farming."Bone meal"]
@@ -703,16 +719,6 @@
 		"Bone meal canes and cactus" = true
 		"Compostable Rotten Flesh" = true
 
-	#Slower breeding, Growing, Egging and Milking. Lower yield.
-	[Farming.Livestock]
-		#Enables a data pack that changes food drops
-		"Loot DataPack" = true
-
-	#Crops are no longer insta-minable. Break speed is still affected by the Hardness module. Requires a minecraft restart.
-	[Farming."Hard Crops"]
-		#If the hardness should be applied to mature crops only.
-		"Only fully grown" = true
-
 	#Crops tweaks and less yield from crops
 	[Farming.Crops]
 		#Set if crops require wet farmland to grow.
@@ -734,26 +740,56 @@
 		#
 		"Crops data pack" = true
 
-	#Slower Plants (non-crops) growing. Plants properties are controlled via json in this feature's folder
-	[Farming."Plants Growth"]
-		"Huge mushrooms on Mycelium only" = true
+	#Slower breeding, Growing, Egging and Milking. Lower yield.
+	[Farming.Livestock]
+		#Enables a data pack that changes food drops
+		"Loot DataPack" = true
 
-	#Slower Hoes and more fragile. Hoes Properties are controlled via json in this feature's folder
-	[Farming.Hoes]
-		#Each Efficiency level reduces the cooldown of hoes by this many ticks.
-		#Range: > 0
-		"Efficiency cooldown reduction" = 1
-		"Trigger only for farmland" = true
+	#Crops are no longer insta-minable. Break speed is still affected by the Hardness module. Requires a minecraft restart.
+	[Farming."Hard Crops"]
+		#If the hardness should be applied to mature crops only.
+		"Only fully grown" = true
 
 [Experience]
-	#Better repair, free rename and merge.
-	"Enable Anvils" = true
-	#Changes the experience lost on death and xp per level required.
-	"Enable Player Experience" = true
 	#Various changes to experience
 	"Enable Experience" = true
+	#Better repair, free rename and merge.
+	"Enable Anvils" = true
 	#Changes to some enchantments related stuff.
 	"Enable Enchantments" = true
+	#Changes the experience lost on death and xp per level required.
+	"Enable Player Experience" = true
+
+	#Various changes to experience
+	[Experience.Experience]
+		#Experience dropped will be multiplied by this value.
+		#Can be set to 0 to disable experience drop from any source.
+		#Range: 0.0 ~ 128.0
+		"Global Experience Multiplier" = 1.0
+		#Experience dropped by blocks (Ores and Spawners) will be multiplied by this multiplier. Experience dropped by blocks are still affected by 'Global Experience Multiplier'
+		#Can be set to 0 to make blocks drop no experience
+		#Range: 0.0 ~ 128.0
+		"Experience from Blocks Multiplier" = 1.0
+		#Experience dropped from mobs that come from spawners will be multiplied by this multiplier.
+		#Experience dropped by mobs from spawners are still affected by 'Global Experience Multiplier'
+		#Can be set to 0 to disable experience drop from mob that come from spawners.
+		#Range: 0.0 ~ 128.0
+		"Mobs from Spawners Multiplier" = 0.5
+		#Experience dropped from mobs that DON'T come from spawners will be multiplied by this multiplier.
+		#Experience dropped from mobs that DON'T come from spawners is still affected by 'Global Experience Multiplier'
+		#Can be set to 0 to disable experience drop from mob that DON'T come from spawners.
+		#Range: 0.0 ~ 128.0
+		"Natural Mobs Multiplier" = 1.0
+		#Vanilla mobs drop 1~4 xp per equipment they have.
+		#Range: > 0
+		"Bonus experience per equipment" = 2
+		#This is added to 'Bonus experience per equipment'.
+		#Range: > 0
+		"Bonus experience per enchanted equipment" = 2
+		#Bottle o' enchanting will drop this more XP. Experience is still affected by 'Global Experience Multiplier'
+		#Can be set to 0 to make Bottle o' enchanting drop no bonus experience
+		#Range: 0 ~ 512
+		"Bottle o' Enchanting Bonus XP" = 20
 
 	#Better repair, free rename and merge.
 	[Experience.Anvils]
@@ -790,50 +826,6 @@
 			#Range: > 0
 			"Very Rare" = 6
 
-	#Changes the experience lost on death and xp per level required.
-	[Experience."Player Experience"]
-		#The experience required to level up is calculated by this formula. The variable available is 'current_level'
-		#Set to empty to disable.
-		#Incompatible with Allurement's 'Remove level Scaling' or any other mod that does something similar
-		"Level Scaling Formula" = "35"
-		#On death, players will drop this percentage of experience instead of max 7 levels. Setting to -1 will disable this.
-		#Due to Minecraft limitations this is incompatible with other mods that change the level scaling (e.g. Allurement's 'Remove level Scaling').
-		#Range: -1.0 ~ 1.0
-		"Dropped Experience on Death" = 0.85
-		#Players will pick up experience faster
-		"Pickup XP Faster" = true
-
-	#Various changes to experience
-	[Experience.Experience]
-		#Experience dropped will be multiplied by this value.
-		#Can be set to 0 to disable experience drop from any source.
-		#Range: 0.0 ~ 128.0
-		"Global Experience Multiplier" = 1.0
-		#Experience dropped by blocks (Ores and Spawners) will be multiplied by this multiplier. Experience dropped by blocks are still affected by 'Global Experience Multiplier'
-		#Can be set to 0 to make blocks drop no experience
-		#Range: 0.0 ~ 128.0
-		"Experience from Blocks Multiplier" = 1.0
-		#Experience dropped from mobs that come from spawners will be multiplied by this multiplier.
-		#Experience dropped by mobs from spawners are still affected by 'Global Experience Multiplier'
-		#Can be set to 0 to disable experience drop from mob that come from spawners.
-		#Range: 0.0 ~ 128.0
-		"Mobs from Spawners Multiplier" = 0.5
-		#Experience dropped from mobs that DON'T come from spawners will be multiplied by this multiplier.
-		#Experience dropped from mobs that DON'T come from spawners is still affected by 'Global Experience Multiplier'
-		#Can be set to 0 to disable experience drop from mob that DON'T come from spawners.
-		#Range: 0.0 ~ 128.0
-		"Natural Mobs Multiplier" = 1.0
-		#Vanilla mobs drop 1~4 xp per equipment they have.
-		#Range: > 0
-		"Bonus experience per equipment" = 2
-		#This is added to 'Bonus experience per equipment'.
-		#Range: > 0
-		"Bonus experience per enchanted equipment" = 2
-		#Bottle o' enchanting will drop this more XP. Experience is still affected by 'Global Experience Multiplier'
-		#Can be set to 0 to make Bottle o' enchanting drop no bonus experience
-		#Range: 0 ~ 512
-		"Bottle o' Enchanting Bonus XP" = 20
-
 	#Changes to some enchantments related stuff.
 	[Experience.Enchantments]
 		#Infinity can go up to level 4. Each level makes an arrow have 1 in level+1 chance to not consume.
@@ -854,44 +846,45 @@
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Specific damaging enchantments bonus damage" = 2.0
 
+	#Changes the experience lost on death and xp per level required.
+	[Experience."Player Experience"]
+		#The experience required to level up is calculated by this formula. The variable available is 'current_level'
+		#Set to empty to disable.
+		#Incompatible with Allurement's 'Remove level Scaling' or any other mod that does something similar
+		"Level Scaling Formula" = "35"
+		#On death, players will drop this percentage of experience instead of max 7 levels. Setting to -1 will disable this.
+		#Due to Minecraft limitations this is incompatible with other mods that change the level scaling (e.g. Allurement's 'Remove level Scaling').
+		#Range: -1.0 ~ 1.0
+		"Dropped Experience on Death" = 0.85
+		#Players will pick up experience faster
+		"Pickup XP Faster" = true
+
 [Combat]
-	#Shovels deal bonus knockback.
-	"Enable Bonking Shovels" = true
-	"Enable Critical Hits" = true
-	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
-	"Enable Unfair one-shots" = true
-	#Less invincibility frames and none with arrows.
-	"Enable Attack invincibility" = true
-	#Various changes from weapons damage to armor reduction
-	"Enable Misc Stats" = true
 	#Players are able to hit mobs through no collision blocks like grass or torches.
 	"Enable Swing Through Grass" = true
-	#Armor gives regenerating absorption instead of armor and toughness speeds up regen speed
-	"Enable Absorption Armor" = true
+	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
+	"Enable Unfair one-shots" = true
+	"Enable Critical Hits" = true
+	#Various changes from weapons damage to armor reduction
+	"Enable Misc Stats" = true
 	"Enable Snowballs" = true
 	#Adds a new attribute to add regenerating absorption hearts to the player.
 	"Enable Regenerating Absorption" = true
-	#Pickaxes deal bonus piercing damage.
-	"Enable Piercing Pickaxes" = true
 	#Player will deal reduced knockback if attacking with a non-weapon or spamming.
 	"Enable Knockback" = true
-
+	#Armor gives regenerating absorption instead of armor and toughness speeds up regen speed
+	"Enable Absorption Armor" = true
+	#Pickaxes deal bonus piercing damage.
+	"Enable Piercing Pickaxes" = true
 	#Shovels deal bonus knockback.
-	[Combat."Bonking Shovels"]
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Shovels damage to knockback ratio" = 0.4
+	"Enable Bonking Shovels" = true
+	#Less invincibility frames and none with arrows.
+	"Enable Attack invincibility" = true
 
 	[Combat."Critical Hits"]
 		#How much damage a critical hit does. Vanilla is 1.5
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Critical hit damage multiplier" = 1.25
-
-	#Less invincibility frames and none with arrows.
-	[Combat."Attack invincibility"]
-		#If true less invincibility frames are applied to mobs only if using an item with attack speed modifier
-		"Invincibility frames based off attack speed" = true
-		#If true, a data pack is enabled that makes Arrows and magic damage ignore invincibility frames.
-		"Arrows and magic ignore invincibility frames" = true
 
 	#Various changes from weapons damage to armor reduction
 	[Combat."Misc Stats"]
@@ -938,11 +931,6 @@
 		#If true, absorption hearts will not shield from damages not from mobs (e.g. Poison).
 		"Absorbing Entity damage only" = true
 
-	#Pickaxes deal bonus piercing damage.
-	[Combat."Piercing Pickaxes"]
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Pickaxe damage to piercing ratio" = 0.5
-
 	#Player will deal reduced knockback if attacking with a non-weapon or spamming.
 	[Combat.Knockback]
 		#If true the player will deal reduced knockback when not using an item that doesn't have the attack damage attribute.
@@ -950,4 +938,21 @@
 		#Percentage knockback dealt when conditions are met.
 		#Range: 0.0 ~ 1.0
 		"Knockback reduction" = 0.6
+
+	#Pickaxes deal bonus piercing damage.
+	[Combat."Piercing Pickaxes"]
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Pickaxe damage to piercing ratio" = 0.5
+
+	#Shovels deal bonus knockback.
+	[Combat."Bonking Shovels"]
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Shovels damage to knockback ratio" = 0.4
+
+	#Less invincibility frames and none with arrows.
+	[Combat."Attack invincibility"]
+		#If true less invincibility frames are applied to mobs only if using an item with attack speed modifier
+		"Invincibility frames based off attack speed" = true
+		#If true, a data pack is enabled that makes Arrows and magic damage ignore invincibility frames.
+		"Arrows and magic ignore invincibility frames" = true
 
