@@ -34,12 +34,8 @@
 
 	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
 	[World."Ore Generation"]
-		#Enables a Data Pack that changes Iron generation to include Poor and Rich Ores.
-		"Poor and Rich Iron Generation" = true
-		#Enables a Data Pack that changes Gold generation to include Poor and Rich Ores.
-		"Poor and Rich Gold Generation" = true
-		#Enables a Data Pack that changes Copper generation to include Poor and Rich Ores.
-		"Poor and Rich Copper Generation" = true
+		#Enables a Data Pack that changes Iron, Gold and Copper generation to include Poor and Rich Ores.
+		"Poor and Rich Ore Generation" = false
 
 	[World."Coal & Charcoal"]
 		#Chance for logs to release charcoal layer when burnt
@@ -144,6 +140,8 @@
 	"Enable Keego" = true
 	#Add new multi block furnaces
 	"Enable Multi Block Furnaces" = true
+	#Add Quaron, a new metal made by alloying Iron and Amethyst
+	"Enable Quaron" = true
 
 	[Mining.Forging]
 		#Enables the following changes to vanilla data pack:
@@ -153,6 +151,8 @@
 		#* Iron Gear requires Stone / Chained Copper gear to be forged
 		#* Buckets, Flint and Steel and Shears require a forge to be made
 		"Forging Equipment Crafting Data Pack" = true
+		#Enchanted items can't be forged
+		"Unforgable enchanted items" = true
 
 	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment
 	[Mining.Durium]
@@ -167,7 +167,7 @@
 [Items]
 	#Add a new explosive block.
 	"Enable Explosive Barrel" = true
-	#Add flint tools and make wooden tools useless. Also add flint blocks.
+	#Add flint tools and shield.
 	"Enable Flint Expansion" = true
 	#A new block that can let you carry more stuff around.
 	"Enable Crate" = true
@@ -196,12 +196,19 @@
 	"Enable New Foods & Drinks" = true
 
 [Experience]
-	#New lapis for better enchanting.
-	"Enable Lapis" = true
 	#Change some enchantments related stuff and adds new enchantments.
 	"Enable New Enchantments" = true
-	#Change some enchanting related stuff.
+	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in not_enchantable tag cannot be enchanted.
 	"Enable Enchanting" = true
+
+	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in not_enchantable tag cannot be enchanted.
+	[Experience.Enchanting]
+		#Enchanted items can no longer be merged with other enchanted items and also enchanted books can no longer be applied to enchanted items.
+		"No enchantment merge" = true
+		#Enchanted items can no longer be upgraded (e.g. netherite)
+		"No enchanted smithing" = true
+		#If enabled, the enchantability of the following item is changed to allow enchanting. Tridents, Fishing Rods, Flint and Steel, Brush, 
+		"Tools enchantability fix" = true
 
 [Combat]
 	#Gives a use to the fletching table.

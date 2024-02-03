@@ -35,7 +35,7 @@
 		#Range: 0.0 ~ 100.0
 		"Fire spread speed multiplier" = 4.0
 		#If true, campfires must be lit
-		"Unlit campfire" = false
+		"Unlit campfire" = true
 
 	#Spawners will no longer spawn mobs infinitely. Echo shards can reactivate a spawner. Monsters spawning from spawners ignore light and spawning is much faster
 	[World.Spawners]
@@ -168,10 +168,10 @@
 	["Sleep & Respawn".Respawn]
 		#Mobs in this range from the player will be despawned when respawning at world spawn.
 		#Range: > 0
-		"Despawn mobs on world respawn" = 48
+		"Despawn mobs on world respawn" = 64
 		#Mobs in this range from the player will be despawned when respawning at bed spawn.
 		#Range: > 0
-		"Despawn mobs on bed respawn" = 24
+		"Despawn mobs on bed respawn" = 32
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose World Spawn Range"]
@@ -191,6 +191,10 @@
 	["Sleep & Respawn".Death]
 		#If true, the player's killer will not despawn and when killed will drop 4x more items and experience.
 		"Player's killer bounty" = true
+		#If true, the player will generate a grave on death with its items in it.
+		Grave = true
+		#If true, the player's experience is stored in the grave.
+		"Grave keeps experience" = false
 
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
 	["Sleep & Respawn"."Sleeping Effects"]
@@ -288,6 +292,16 @@
 		#Range: 0.0 ~ 1.0
 		Slowdown = 0.25
 
+	#Slowdown based off the terrain you're walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
+	[Movement."Terrain Slowdown"]
+		"Frost walker reduces Ice slowdown" = true
+
+	#Player's slides down ladders faster and stands still when opening an interface. This is disabled if quark is enabled
+	[Movement."Better Ladders"]
+		#How much faster the players moves down ladders
+		#Range: 0.0 ~ 5.0
+		Speed = 0.2
+
 [Mobs]
 	#Changes to mob spawn
 	"Enable Spawning" = true
@@ -322,6 +336,7 @@
 		"Prevent Cure Discount" = true
 		#When villagers restock, they update the 'demand'. Demand is a trade modifier that increases the price whenever a trade is done many times, BUT when a trade is not performed, at each restock the 'demand' goes negative, making possible for a trade to never increase it's price due to high negative demand. With this to true, negative demand will be capped at -max_uses of the trade (e.g. Carrot trade from a farmer will have it's minimum demand set to -16).
 		"Clamp Negative Demand" = true
+		#If true, the effect can no longer be applied to entities
 		"Remove Bad Omen" = true
 
 [Miscellaneous]
@@ -478,12 +493,8 @@
 		#* Smelting Iron in a Furnace takes 4x time, and 2x time in a blast furnace
 		#* Can no longer smelt gold in a Furnace, and 2x in a blast furnace
 		"Ore Smelting Data Pack" = true
-
-		[Mining."Materials Data Packs"."Backport 1"]
-
-			[Mining."Materials Data Packs"."Backport 1".20]
-				#Enables a Data Pack.
-				"2 Diamond ore generation" = true
+		#Enables a Data Pack.
+		"Backport 1(dot)20(dot)2 Diamond ore generation" = true
 
 [Items]
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
@@ -731,7 +742,7 @@
 		#Radius where water hydrates farmland, vanilla is 4.
 		#Range: > 1
 		"Water Hydration Radius" = 2
-		#	Enables a data pack that makes the following changes:
+		#	Makes potatoes and carrots not plantable and also enables a data pack that makes the following changes:
 		#	* Makes all vanilla crops drop only one seed (and makes carrots and potatoes drop the new seed item)
 		#	* Makes melon seeds and pumpkin seeds harder to obtain
 		#	* Removes carrots and potato drops from zombies
@@ -834,17 +845,15 @@
 		"Less unbreakable unbreaking" = true
 		#Thorns is no longer compatible with other protections, but deals damage every time (higher levels deal more damage) and no longer damages items.
 		"Small Thorns Overhaul" = true
-		#Change the efficiency formula from tool_efficiency+(lvl*lvl+1) to tool_efficiency * (0.15 * (lvl * lvl + 1))
+		#Change the efficiency formula from tool_efficiency+(lvl*lvl+1) to tool_efficiency * (1 + (0.5*lvl))
 		"Better Efficiency Formula" = true
 		#Set arrow's damage increase with the Power enchantment (vanilla is 0.5). Set to 0.5 to disable.
 		#Range: 0.0 ~ 2.0
 		"Power Enchantment Damage" = 0.35
 		"Prevent farmland trampling with Feather Falling" = true
-		#Increases the damage protection from Feather Falling. From 12% per level to 16% per level
-		"Buff Feather Falling" = true
-		#Changes the bonus damage of type based damage enchantments (e.g. Smite). Vanilla is 2.5
-		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Specific damaging enchantments bonus damage" = 2.0
+		#If true, vanilla protection enchantments are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
+		#Protection has only one level, and protects 6% per level. Other protections work the same except for projectile that reduces the sight range of mobs by 2% per level. Feather falling protects for 16% per level instead of 12%.
+		"Replace protection enchantments" = true
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player Experience"]
@@ -907,6 +916,8 @@
 		#Set arrow's base damage if shot from bow.
 		#Range: 0.0 ~ 10.0
 		"Bow's Arrows Base Damage" = 1.5
+		#Enables a data pack that changes all the item stats
+		"Item Stats Data Pack" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -923,7 +934,7 @@
 		#Speed (in ticks) at which Absorption hearts decay
 		#Range: > 0
 		"Absorption decay" = 10
-		#Ticks that must pass from the last hit to regen absorption hearts. This is affected by regenerating absorption speed
+		#Ticks that must pass from the last hit to regen absorption hearts. This is affected by regenerating absorption speed (absorp regen speed * this)
 		#Range: > 0
 		"Un-damaged time to regen" = 30
 		#The amount of regenerating absorption hearts cannot go over the entity's current health.
