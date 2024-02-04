@@ -219,7 +219,7 @@
 
 [Movement]
 	#Armor slows down the player. Material Weights and Enchantment Weights are controlled via json in this feature's folder
-	"Enable Weighted Equipment" = true
+	"Enable Weighted Equipment" = false
 	#Player's slides down ladders faster and stands still when opening an interface. This is disabled if quark is enabled
 	"Enable Better Ladders" = true
 	#Player's slowed down for a brief moment when hit.

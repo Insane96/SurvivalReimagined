@@ -187,8 +187,8 @@
 
 	[building.leaf_carpet]
 		#This feature disables itself if any of the following mods are loaded:
-		# - immersive_weathering
 		# - woodworks
+		# - immersive_weathering
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -222,8 +222,8 @@
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
 		#This feature disables itself if any of the following mods are loaded:
-		# - environmental
 		# - goated
+		# - environmental
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -701,7 +701,7 @@
 		#Can any wool color be dyed?
 		"Dye Any Wool" = true
 		#Can other stone-like materials be used for crafting stone tools?
-		"Better Stone Tool Crafting" = true
+		"Better Stone Tool Crafting" = false
 		#Can a dispenser be crafted by adding a bow to a dropper?
 		"Enable Dispenser" = true
 		#Can a repeater be crafted with the pattern for a redstone torch?
@@ -723,7 +723,7 @@
 		#Can torches can be used as fuel in furnaces?
 		"Torches Burn" = true
 		#Can bones be smelted down to bone meal?
-		"Bone Meal Utility" = true
+		"Bone Meal Utility" = false
 		#Can Charcoal be crafted into Black Dye?
 		"Charcoal To Black Dye" = true
 		#Can two Logs be used instead of a Chest to make a Hopper?
@@ -731,7 +731,7 @@
 		#Can two Logs be used to craft 16 sticks?
 		"Easy Sticks" = true
 		#Can raw ore blocks be smelted, taking 9x the time a normal item?
-		"Smelt Raw Ore Blocks" = true
+		"Smelt Raw Ore Blocks" = false
 
 [world]
 	"Ancient Wood" = true
