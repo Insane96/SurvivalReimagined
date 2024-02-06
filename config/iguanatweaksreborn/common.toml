@@ -14,8 +14,6 @@
 	"Enable Coal & Fire" = true
 	#Spawners will no longer spawn mobs infinitely. Echo shards can reactivate a spawner. Monsters spawning from spawners ignore light and spawning is much faster
 	"Enable Spawners" = true
-	#Berry bushes no longer deal damage when walking in them with leggings and boots.
-	"Enable Actually Sweet Berry Bushes" = true
 	#Makes leaves decay faster and if Passable Foliage is installed, changes some values
 	"Enable Leaves" = true
 	"Enable Nether" = true
@@ -29,6 +27,7 @@
 	"Enable Explosion Overhaul" = true
 	#Wear down grass when passing on it.
 	"Enable Desire Paths" = true
+	"Enable Berry Bushes" = true
 
 	[World."Coal & Fire"]
 		#How much faster fire ticks and spreads.
@@ -128,6 +127,14 @@
 		"Break Tall Grass" = true
 		#Transform list of blocks
 		"Transformation List" = ["minecraft:grass_block,minecraft:dirt", "minecraft:dirt,minecraft:coarse_dirt"]
+
+	[World."Berry Bushes"]
+		#Berry bushes no longer deal damage when walking in them with leggings and boots
+		"No damage if dressed" = true
+		#	Makes sweet berries not plantable, requiring seeds, and also enables a data pack that makes the following changes:
+		#	* Makes sweet berry bushes drop seeds
+		#
+		"Data pack" = true
 
 ["Sleep & Respawn"]
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
@@ -491,7 +498,7 @@
 		#Enables the following changes to vanilla data pack:
 		#* Smelting copper in a furnace takes 2x time
 		#* Smelting Iron in a Furnace takes 4x time, and 2x time in a blast furnace
-		#* Can no longer smelt gold in a Furnace, and 2x in a blast furnace
+		#* Can no longer smelt gold and Ancient Debris in a Furnace, and 2x in a blast furnace
 		"Ore Smelting Data Pack" = true
 		#Enables a Data Pack.
 		"Backport 1(dot)20(dot)2 Diamond ore generation" = true
@@ -852,8 +859,15 @@
 		"Power Enchantment Damage" = 0.35
 		"Prevent farmland trampling with Feather Falling" = true
 		#If true, vanilla protection enchantments are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
-		#Protection has only one level, and protects 6% per level. Other protections work the same except for projectile that reduces the sight range of mobs by 2% per level. Feather falling protects for 16% per level instead of 12%.
+		#Protection has only one level, protects 6% per level and is treasure. Other protections work the same except for projectile that reduces the sight range of mobs by 2% per level. Feather falling protects for 16% per level instead of 12%.
 		"Replace protection enchantments" = true
+		#If true, vanilla damaging enchantments (such as smite or sharpness) are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
+		#Changes to damaging enchantments:
+		#Enchantments deal bonus damage based off the item's attack damage. So Sharpness on a Sword adds less damage than Sharpness on an Axe.
+		#Sharpness deals +0.75 damage per level
+		#Smite deals +1.25 damage per level to undead
+		#Bane of Arthropods has been replaced with Bane of SSSSS that deals +1.25 damage per level to arthropods and creepers and applies slowness
+		"Replace damaging enchantments" = true
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player Experience"]
@@ -939,8 +953,8 @@
 		"Un-damaged time to regen" = 30
 		#The amount of regenerating absorption hearts cannot go over the entity's current health.
 		"Cap to health" = true
-		#If true, absorption hearts will not shield from damages not from mobs (e.g. Poison).
-		"Absorbing Entity damage only" = true
+		#If true, absorption hearts will not shield from damages in the bypasses_armor damage type tag.
+		"Absorbing bypasses_armor damage only" = true
 
 	#Player will deal reduced knockback if attacking with a non-weapon or spamming.
 	[Combat.Knockback]

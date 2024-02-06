@@ -127,6 +127,8 @@
 		"Disable ALL data packs" = false
 		#Enables a Data Pack that overhauls advancements to make them work with IguanaTweaks.
 		Advancements = true
+		#Enables a data pack that changes all the item stats
+		"Item Stats Data Pack" = true
 
 [Mining]
 	"Enable Forging" = true
@@ -196,12 +198,12 @@
 	"Enable New Foods & Drinks" = true
 
 [Experience]
-	#Change some enchantments related stuff and adds new enchantments.
+	#Change some enchantments related stuff and adds new enchantments. Please note that Damaging enchantments such as water coolant are enabled only if ITR 'Replace damaging enchantments' is enabled. This also applies for protection enchantments and ITR 'Replace protection enchantments'
 	"Enable New Enchantments" = true
-	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in not_enchantable tag cannot be enchanted.
+	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
 	"Enable Enchanting" = true
 
-	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in not_enchantable tag cannot be enchanted.
+	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
 	[Experience.Enchanting]
 		#Enchanted items can no longer be merged with other enchanted items and also enchanted books can no longer be applied to enchanted items.
 		"No enchantment merge" = true

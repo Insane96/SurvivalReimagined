@@ -5,7 +5,7 @@ autoSuggestions:true
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
-enableVsync:true
+enableVsync:false
 entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
@@ -36,7 +36,7 @@ simulationDistance:16
 entityDistanceScaling:5.0
 guiScale:4
 particles:0
-maxFps:120
+maxFps:140
 graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
@@ -85,9 +85,9 @@ panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
 soundCategory_master:0.47516556291390727
-soundCategory_music:1.0
+soundCategory_music:0.0
 soundCategory_record:1.0
-soundCategory_weather:1.0
+soundCategory_weather:0.704225352112676
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0
