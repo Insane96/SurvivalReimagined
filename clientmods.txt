@@ -1,8 +1,9 @@
 BetterAdvancements
-BorderlessWindows
+BorderlessWindow
 defaultoptions
 embeddium
 Fallingleaves
+ImmediatelyFast
 LegendaryTooltips
 MindfulDarkness
 modelfix
