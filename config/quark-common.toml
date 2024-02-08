@@ -667,7 +667,7 @@
 		#Allowed values: [0,1]
 		Leniency = 0.5
 		Whitelist = []
-		Blacklist = []
+		Blacklist = ["minecraft:potato", "minecraft:carrot", "minecraft:sweet_berries"]
 
 	[tweaks.renewable_spore_blossoms]
 		"Bone Meal Chance" = 0.2
