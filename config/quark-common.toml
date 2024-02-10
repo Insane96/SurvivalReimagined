@@ -1691,7 +1691,7 @@
 		#Makes Iron Golems not drop Iron Ingots
 		"Disable Iron Farms" = false
 		#Makes Boats not glide on ice
-		"Disable Ice Roads" = true
+		"Disable Ice Roads" = false
 		#Makes Sheep not drop Wool when killed
 		"Disable Wool Drops" = false
 		#Disables mob griefing for only specific entities
@@ -1699,9 +1699,9 @@
 		#Force Elytra to only work in specific dimensions
 		"Enable Dimension Locked Elytra" = false
 		#Makes falling blocks not able to be duped via dimension crossing
-		"Disable Falling Block Dupe" = true
+		"Disable Falling Block Dupe" = false
 		#Fixes several piston physics exploits, most notably including TNT duping
-		"Disable Piston Physics Exploits" = true
+		"Disable Piston Physics Exploits" = false
 		#Fixes mushroom growth being able to replace blocks
 		"Disable Mushroom Block Removal" = true
 		#Makes tripwire hooks unable to be duplicated

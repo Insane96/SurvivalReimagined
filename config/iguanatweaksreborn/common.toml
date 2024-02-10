@@ -323,6 +323,8 @@
 		"No Zombie Villagers" = true
 		#Allows mobs to spawn in the world spawn (in vanilla mobs can't spawn in a 24 blocks radius from world spawn)
 		"Allow world spawn spawn" = true
+		#Disables insomnia and makes Phantoms spawn naturally in the End
+		"Phantoms in the End" = true
 
 	#Changes to mobs equipment
 	[Mobs.Equipment]
@@ -711,9 +713,6 @@
 
 	#Slower Hoes and more fragile. Hoes Properties are controlled via json in this feature's folder
 	[Farming.Hoes]
-		#Each Efficiency level reduces the cooldown of hoes by this many ticks.
-		#Range: > 0
-		"Efficiency cooldown reduction" = 1
 		"Trigger only for farmland" = true
 
 	#Bone meal is no longer so OP and also Rich Farmland
