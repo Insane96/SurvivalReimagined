@@ -10,23 +10,23 @@
   {
     "item_a": "minecraft:emerald",
     "item_a_count": 2,
+    "item_result": "iguanatweaksreborn:carrot_seeds",
+    "item_result_count": 1,
+    "max_uses": 4,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 2,
+    "item_result": "iguanatweaksreborn:rooted_potato",
+    "item_result_count": 1,
+    "max_uses": 4,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 2,
     "item_result": "minecraft:beetroot_seeds",
-    "item_result_count": 1,
-    "max_uses": 4,
-    "xp": 0
-  },
-  {
-    "item_a": "minecraft:emerald",
-    "item_a_count": 2,
-    "item_result": "iguanatweaksexpanded:carrot_seeds",
-    "item_result_count": 1,
-    "max_uses": 4,
-    "xp": 0
-  },
-  {
-    "item_a": "minecraft:emerald",
-    "item_a_count": 2,
-    "item_result": "iguanatweaksexpanded:rooted_potato",
     "item_result_count": 1,
     "max_uses": 4,
     "xp": 0
