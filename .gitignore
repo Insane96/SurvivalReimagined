@@ -1,6 +1,7 @@
 downloads/
 logs/
 saves/
+screenshots/
 .curseclient
 usercache.json
 usernamecache.json
