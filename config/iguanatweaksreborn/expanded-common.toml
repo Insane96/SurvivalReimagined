@@ -31,6 +31,9 @@
 		#
 		"Serene Seasons changes" = true
 		"Season based fishing time" = true
+		#How many minutes will day and night duration be shifted based off seasons? E.g. in Mid spring / autumn the duration of day and night is vanilla, when moving off those seasons day and night will last this many minutes more/less. In mid summer / winter the duration of day and night duration will be more / less by 3 times this value.
+		#Range: 0.0 ~ 3.0
+		"Time Control day night shift" = 1.0
 
 	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
 	[World."Ore Generation"]
@@ -185,9 +188,10 @@
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]
 		#Range: > 0
-		"Slowness with this or more crates" = 2
+		"Max crates without slowdown" = 1
+		#When you have > 'Max crates without slowdown' this is the base value for the slowdown. The slowdown is calculated as (crates above 'Max crates' * this * crates above 'Max crates')
 		#Range: 0.0 ~ 1.0
-		"Slowness per crate > 'Slowness with this or more crates'" = 0.15
+		"Base Slowness per crate over max" = 0.05
 
 	#Check your altitude
 	[Items.Altimeter]
