@@ -139,7 +139,7 @@
 ["Sleep & Respawn"]
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	"Enable Tiredness" = true
-	#Changes to respawning
+	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	"Enable Respawn" = true
 	#Changes to death
 	"Enable Death" = true
@@ -171,7 +171,7 @@
 		#Allowed Values: RESET, KEEP, SET_AT_EFFECT
 		"On death behaviour" = "SET_AT_EFFECT"
 
-	#Changes to respawning
+	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	["Sleep & Respawn".Respawn]
 		#Mobs in this range from the player will be despawned when respawning at world spawn.
 		#Range: > 0
