@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "worldborder:try_setup",
+        "worldborder:try_shrink",
+        "worldborder:try_expand"
+    ]
+}

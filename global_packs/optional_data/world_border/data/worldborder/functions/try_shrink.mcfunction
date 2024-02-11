@@ -1,0 +1,2 @@
+execute as @a if score @s wb_deaths matches 1 if score WORLD_BORDER world_border_setup matches 15.. run function worldborder:shrink
+execute as @a if score @s wb_deaths matches 1 run scoreboard players set @s wb_deaths 2

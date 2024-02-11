@@ -1,0 +1,1 @@
+execute if predicate worldborder:new_day if score WORLD_BORDER world_border_setup matches 1.. run function worldborder:expand
