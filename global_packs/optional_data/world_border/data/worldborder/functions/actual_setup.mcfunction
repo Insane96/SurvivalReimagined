@@ -1,5 +1,5 @@
 worldborder center ~ ~ 
-worldborder set 7 0
+worldborder set 9 0
 worldborder warning distance 0
 gamerule spawnRadius 0
 setworldspawn ~ ~ ~
