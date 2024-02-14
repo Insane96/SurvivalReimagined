@@ -144,7 +144,7 @@
 	#Changes to death
 	"Enable Death" = true
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
-	"Enable Sleeping Effects" = true
+	"Enable Sleeping Effects" = false
 	#Changes to sleeping and spawn points
 	"Enable Sleeping and Spawn Point" = false
 
@@ -944,9 +944,6 @@
 
 	#Adds a new attribute to add regenerating absorption hearts to the player.
 	[Combat."Regenerating Absorption"]
-		#Speed (in ticks) at which Absorption hearts decay
-		#Range: > 0
-		"Absorption decay" = 10
 		#Ticks that must pass from the last hit to regen absorption hearts. This is affected by regenerating absorption speed (absorp regen speed * this)
 		#Range: > 0
 		"Un-damaged time to regen" = 30

@@ -1,5 +1,6 @@
 BetterAdvancements
 BorderlessWindow
+brb
 defaultoptions
 embeddium
 Fallingleaves
