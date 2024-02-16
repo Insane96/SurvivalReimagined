@@ -440,6 +440,8 @@
 		#The amount of air ticks the player regains each tick when out of water. Vanilla is 4
 		#Range: > -2147483648
 		"Player air ticks refilled" = 1
+		#If enabled, the Totem of Undying will give Resistance IV for 5 seconds
+		"Totem resistance" = true
 
 	#Beacon Range varying based of blocks of the pyramid and better conduit killing mobs. Blocks list and ranges are controlled via json in this feature's folder
 	[Miscellaneous."Beacon & Conduit"]
