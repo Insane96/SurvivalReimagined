@@ -26,7 +26,7 @@
 		"Grass Decay and Growth" = true
 		#Makes the following changes to Serene Seasons config:
 		#Makes the following changes to Serene Seasons config:
-		#* seasonal_crops is set to false, as it's controlled by PlantsGrowth
+		#* seasonal_crops is set to false, as it's controlled by Plants Growth
 		#* Sets the starting season to mid summer
 		#
 		"Serene Seasons changes" = true
@@ -34,6 +34,8 @@
 		#How many minutes will day and night duration be shifted based off seasons? E.g. in Mid spring / autumn the duration of day and night is vanilla, when moving off those seasons day and night will last this many minutes more/less. In mid summer / winter the duration of day and night duration will be more / less by 3 times this value.
 		#Range: 0.0 ~ 3.0
 		"Time Control day night shift" = 1.0
+		#Chance for a bone meal to fail to grow something. Empty this string to disable. Accepts a list of seasons and chances separated by a ;
+		"Bone meal fail chance" = "AUTUMN,0.4;WINTER,0.8"
 
 	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
 	[World."Ore Generation"]
@@ -89,8 +91,8 @@
 
 	#Changes to mob spawn
 	[Mobs.Spawning]
-		#Animals and Sea Creatures can no longer naturally spawn in Winter.
-		"No Animals or Sea Creatures Spawn Winter" = true
+		#Animals and Sea Creatures can no longer naturally spawn in Winter and will spawn less in autumn.
+		"Animals and sea creature in cold seasons" = true
 
 		[Mobs.Spawning.Despawning]
 			#Despawn Distance on winter, note that lower values increase the mobs around the player.
@@ -132,6 +134,12 @@
 		Advancements = true
 		#Enables a data pack that changes all the item stats
 		"Item Stats Data Pack" = true
+		#If true a data pack will be enabled that overhauls structure loot. This overrides some loot tables from ITR
+		"Better Structure Loot" = true
+		#If true, a data pack is enabled that changes the growth of plants based off seasons
+		"Plant growth multipliers data pack" = true
+		#Enables a data pack that slows down growing, breeding, egging etc based off seasons
+		"Livestock Data" = true
 
 [Mining]
 	"Enable Forging" = true
@@ -184,6 +192,8 @@
 	"Enable Solarium" = true
 	#Add Chained Copper Armor
 	"Enable Chained Copper Armor" = true
+	#Back to base
+	"Enable Recall Potion" = true
 
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]

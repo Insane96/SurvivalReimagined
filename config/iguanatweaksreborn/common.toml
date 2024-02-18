@@ -675,7 +675,7 @@
 			#If true, Passive Regeneration is enabled
 			Enable = false
 
-			#Min represents how many seconds the regeneration of 1 HP takes when health is 100%, Max how many seconds when health is 0%
+			#Min represents how many ticks the regeneration of 1 HP takes when health is 100%, Max how many ticks when health is 0%
 			["Hunger & Health"."No Hunger"."Passive Health Regen"."Regen Speed"]
 				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				Minimum = 120.0
@@ -689,6 +689,9 @@
 			"Over time Strength" = "MAX(0.2, 0.75 * saturation_modifier)"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
 			"Instant Heal" = "(hunger^1.25)*0.15"
+			#If true, foods below this saturation will fully instantly heal (Over Time + Instant Heal) instead of having over time heal.
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Low saturation foods instant heal" = 3.0
 
 		["Hunger & Health"."No Hunger"."Raw food"]
 			#If true, raw food will heal by this percentage (this is applied after 'Food Heal.Health Multiplier'). Raw food is defined in the iguanatweaksreborn:raw_food tag
@@ -712,6 +715,8 @@
 	#Slower Plants (non-crops) growing. Plants properties are controlled via json in this feature's folder
 	[Farming."Plants Growth"]
 		"Huge mushrooms on Mycelium only" = true
+		#If true, a data pack is enabled that changes the growth of plants based off various factors, such as sunlight and biome
+		"Plant growth multipliers data pack" = true
 
 	#Slower Hoes and more fragile. Hoes Properties are controlled via json in this feature's folder
 	[Farming.Hoes]
@@ -761,8 +766,11 @@
 
 	#Slower breeding, Growing, Egging and Milking. Lower yield.
 	[Farming.Livestock]
-		#Enables a data pack that changes food drops
-		"Loot DataPack" = true
+		#Changes the chance for a chicken to come out from an egg (1 in this value). Vanilla is 8
+		#Range: > -2147483648
+		"Chicken from egg chance" = 8
+		#Enables a data pack that changes food drops and slows down growing, breeding, egging etc
+		"Data Pack" = true
 
 	#Crops are no longer insta-minable. Break speed is still affected by the Hardness module. Requires a minecraft restart.
 	[Farming."Hard Crops"]
@@ -933,6 +941,8 @@
 		"Bow's Arrows Base Damage" = 1.5
 		#Enables a data pack that changes all the item stats
 		"Item Stats Data Pack" = true
+		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%.
+		"Player no damage when spamming" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
