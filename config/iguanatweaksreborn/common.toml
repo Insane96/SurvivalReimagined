@@ -956,7 +956,7 @@
 	[Combat."Regenerating Absorption"]
 		#Ticks that must pass from the last hit to regen absorption hearts. This is affected by regenerating absorption speed (absorp regen speed * this)
 		#Range: > 0
-		"Un-damaged time to regen" = 30
+		"Un-damaged time to regen" = 100
 		#The amount of regenerating absorption hearts cannot go over the entity's current health.
 		"Cap to health" = true
 		#If true, absorption hearts will not shield from damages in the bypasses_armor damage type tag.
