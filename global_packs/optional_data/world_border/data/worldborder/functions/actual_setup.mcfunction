@@ -14,3 +14,4 @@ gamerule doImmediateRespawn true
 effect clear @a
 tp @a @s
 gamerule iguanatweaks:doLooseRespawn false
+gamerule iguanatweaks:deathGrave false
