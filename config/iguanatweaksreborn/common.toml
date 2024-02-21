@@ -198,8 +198,6 @@
 	["Sleep & Respawn".Death]
 		#If true, the player's killer will not despawn and when killed will drop 4x more items and experience.
 		"Player's killer bounty" = true
-		#If true, the player will generate a grave on death with its items in it.
-		Grave = true
 		#If true, the player's experience is stored in the grave.
 		"Grave keeps experience" = false
 

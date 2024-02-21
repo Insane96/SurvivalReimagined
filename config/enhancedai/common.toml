@@ -341,6 +341,9 @@
 		"Freezing Snowballs" = true
 		#If true, snowballs hitting snow golems will heal them.
 		"Healing Snowballs" = true
+		#Ticks between snowballs
+		#Range: > 0
+		"Shooting Cooldown" = 10
 
 	#Use the enhancedai:change_iron_golems entity type tag to add more iron golems.
 	[Pets."Iron Golems"]
@@ -357,11 +360,11 @@
 	"Enable Spawning" = true
 	#Mobs can flee or attack Wardens. Use the entity type tag enhancedai:ignore_warden_interaction to blacklist mobs.
 	"Enable Warden Interacting" = true
-	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:no_run_from_explosion to blacklist them
+	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:no_run_from_explosion to whitelist them
 	"Enable Avoid Explosions" = true
-	#Changes attack range to use the 1.20.2 mechanic
+	#Changes mobs attack range to use the 1.20.2 mechanic
 	"Enable Melee Attacking" = true
-	#Prevent players from abusing some game mechanics to stop mobs. Mobs in the entity type tag enhancedai:ignore_anti_cheese will not be affected by this feature.
+	#Prevent players from abusing some game mechanics to stop mobs. Only mobs in the entity type tag enhancedai:can_use_anti_cheese will be affected by this feature.
 	"Enable Anti-Cheese" = true
 	#Let mobs use Fishing Rods, reeling players in. Either put a Fishing Rod in main or off hand and when near enough from the target they will use it. Only mobs in enhancedai:can_be_fisher entity type tag are affected by this feature.
 	"Enable Fisher Mobs" = true
@@ -381,7 +384,7 @@
 	"Enable Biting Mobs" = true
 	#Let mobs use ender pearls. Either put ender pearls in main or off hand and when far enough from the target they will throw it. Only mobs in the enhancedai:can_be_pearler entity type tag can be pearler.
 	"Enable Pearler Mobs" = true
-	#Change how mobs target players. Use the enhancedai:no_target_changes and enhancedai:no_follow_range_changes entity type tag to blacklist mobs. Add mobs to enhancedai:allow_target_change entity type tag to allow these mobs to be able to switch targets when hit (e.g. Creepers can't normally do that).
+	#Change how mobs target players. Use the enhancedai:use_target_changes and enhancedai:use_follow_range_changes entity type tag to whitelist mobs. Add mobs to enhancedai:allow_target_switch entity type tag to allow these mobs to be able to switch targets when hit (e.g. Creepers can't normally do that).
 	"Enable Targeting" = true
 	#Makes mobs ride other mobs
 	"Enable Riding" = true
@@ -405,7 +408,7 @@
 		"Flee speed Multiplier Far" = 1.1
 		"Mobs target the Warden" = false
 
-	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:no_run_from_explosion to blacklist them
+	#Mobs will run away from exploding creepers / TNT. Use the entity type tag enhancedai:no_run_from_explosion to whitelist them
 	[Mobs."Avoid Explosions"]
 		#Speed multiplier when the mob runs from explosions and it's within 7 blocks from him.
 		#Range: 0.0 ~ 10.0
@@ -416,7 +419,7 @@
 		#Entities also flee from TnTs
 		"Flee TNT" = false
 
-	#Changes attack range to use the 1.20.2 mechanic
+	#Changes mobs attack range to use the 1.20.2 mechanic
 	[Mobs."Melee Attacking"]
 		#If true melee monsters (zombies, etc) will attack based off the forge:entity_reach attribute instead of a fixed ~0.82 blocks. By default, mobs' forge:attack_range is set to 0.82 blocks, like vanilla 1.20.2.
 		"Melee Attacks Attribute Based" = true
@@ -437,7 +440,7 @@
 				#Range: 0.0 ~ 4.0
 				Hard = 0.6
 
-	#Prevent players from abusing some game mechanics to stop mobs. Mobs in the entity type tag enhancedai:ignore_anti_cheese will not be affected by this feature.
+	#Prevent players from abusing some game mechanics to stop mobs. Only mobs in the entity type tag enhancedai:can_use_anti_cheese will be affected by this feature.
 	[Mobs.Anti-Cheese]
 		#If true, 'Enemies' will no longer be able to be Boated and Minecarted.
 		"Prevent Boating & Minecarting" = false
@@ -545,7 +548,7 @@
 		#Range: 1 ~ 16
 		Inaccuracy = 3
 
-	#Change how mobs target players. Use the enhancedai:no_target_changes and enhancedai:no_follow_range_changes entity type tag to blacklist mobs. Add mobs to enhancedai:allow_target_change entity type tag to allow these mobs to be able to switch targets when hit (e.g. Creepers can't normally do that).
+	#Change how mobs target players. Use the enhancedai:use_target_changes and enhancedai:use_follow_range_changes entity type tag to whitelist mobs. Add mobs to enhancedai:allow_target_switch entity type tag to allow these mobs to be able to switch targets when hit (e.g. Creepers can't normally do that).
 	[Mobs.Targeting]
 		#Mobs will no longer take random time to target a player.
 		"Instant Target" = false
@@ -761,7 +764,7 @@
 			Particles = true
 			#The special sound effect that the Angry Creeper plays
 			#Allowed Values: NONE, CENA, WTF_BOOM
-			Sounds = "WTF_BOOM"
+			Sounds = "NONE"
 			#If true, Angry Creeper will have a name
 			Name = true
 			#When ignited, Angry Creeper will not stop swelling

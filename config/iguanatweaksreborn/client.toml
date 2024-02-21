@@ -23,6 +23,9 @@
 		"World Border Transparency" = 0.4
 		#If true, the world border height is reduced by 4 times.
 		"Shorter world border" = true
+		#Set the max height of the world border.
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Cap world border height" = 128.0
 
 	#Makes fog less invasive in some contexts
 	[Client.Fog]
