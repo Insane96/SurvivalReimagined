@@ -126,5 +126,9 @@
   {
     "id": "minecraft:powder_snow",
     "value": 2.5
+  },
+  {
+    "id": "#minecraft:leaves",
+    "value": 0.4
   }
 ]

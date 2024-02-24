@@ -30,11 +30,6 @@
             "value": false
         }
     },
-    "LockedSlotsSettings": {
-        "locked_slots_empty_hotbar_as_semi_locked": {
-            "value": false
-        }
-    },
     "Hotkeys": {
         "sort_inventory": {
             "main": {

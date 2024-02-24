@@ -682,11 +682,11 @@
 
 		["Hunger & Health"."No Hunger"."Food Heal"]
 			#The formula to calculate the health regenerated when eating a food. Leave empty to disable. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Over Time" = "(hunger^1.55)*0.2"
-			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Default is 75% of the saturation modifier, down to a minimum of 0.2/s
-			"Over time Strength" = "MAX(0.2, 0.75 * saturation_modifier)"
+			"Over Time" = "(hunger^1.5)*0.15"
+			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Default is 60% of the saturation modifier, down to a minimum of 0.15/s
+			"Over time Strength" = "MAX(0.15, 0.6 * saturation_modifier)"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Instant Heal" = "(hunger^1.25)*0.15"
+			"Instant Heal" = "(hunger^1.45)*0.2"
 			#If true, foods below this saturation will fully instantly heal (Over Time + Instant Heal) instead of having over time heal.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Low saturation foods instant heal" = 3.0
@@ -875,6 +875,8 @@
 		#Smite deals +1.25 damage per level to undead
 		#Bane of Arthropods has been replaced with Bane of SSSSS that deals +1.25 damage per level to arthropods and creepers and applies slowness
 		"Replace damaging enchantments" = true
+		#If true, vanilla looting, fortune and Luck of the Sea enchantments are replaced with a single one: Luck. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
+		"Replace looting, fortune and LotS enchantments" = true
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player Experience"]
