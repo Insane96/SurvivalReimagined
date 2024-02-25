@@ -375,7 +375,7 @@
 		#Fixes several piston physics exploits like TNT duping. (If quark is present this is disabled)
 		"Remove piston physics exploit" = true
 		#Range: 0.0 ~ 1.0
-		"Fishing has a chance to fish a guardian" = 0.05
+		"Fishing has a chance to fish a guardian" = 0
 
 	#Various data packs that can be enabled/disabled
 	[Miscellaneous."Data Packs"]
