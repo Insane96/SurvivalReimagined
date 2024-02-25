@@ -223,8 +223,8 @@
 		"No enchantment merge" = true
 		#Enchanted items can no longer be upgraded (e.g. netherite)
 		"No enchanted smithing" = true
-		#If enabled, the enchantability of the following item is changed to allow enchanting. Tridents, Fishing Rods, Flint and Steel, Brush, 
-		"Tools enchantability fix" = true
+		#If true, grindstone will give XP based off the new enchanting table. This is based off the ITR levelScalingFormula set to a fixed value
+		"Better grindstone xp" = true
 
 [Combat]
 	#Gives a use to the fletching table.

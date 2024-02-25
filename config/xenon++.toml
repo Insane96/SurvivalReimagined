@@ -4,8 +4,8 @@
 	[xenonextras.general]
 		#Configure FPS Display mode
 		#Complete mode gives you min FPS count and average count
-		#Allowed Values: OFF, SIMPLE, ADVANCED
-		fpsDisplay = "ADVANCED"
+		#Allowed Values: OFF, SIMPLE, ADVANCED, FRAMETIME
+		fpsDisplay = "OFF"
 		#Shows GPU and memory usage onto FPS display
 		#Allowed Values: OFF, ON, RAM
 		fpsDisplaySystem = "OFF"
@@ -37,12 +37,15 @@
 		[xenonextras.performance.distanceCulling]
 
 			[xenonextras.performance.distanceCulling.entities]
+				#Configure modifier applied to hostile entities
+				#Value is raw, 50% - 200%
+				#Range: 25 ~ 200
+				hostileEntityModifier = 100
 				#Configure horizontal max distance before cull entities
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
 				cullingMaxDistanceX = 4096
 				#Toggles distance culling for entities
-				#Maybe you use another mod for that :(
 				enable = true
 				#Configure vertical max distance before cull entities
 				#Value is raw
