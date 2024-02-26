@@ -2,7 +2,7 @@ BetterAdvancements
 BorderlessWindow
 brb
 defaultoptions
-embeddium
+xenon
 Fallingleaves
 ImmediatelyFast
 LegendaryTooltips
@@ -10,7 +10,5 @@ MindfulDarkness
 modelfix
 notenoughanimations
 oculus
-rubidium-extra
-textrues_embeddium_options
 tia
 YeetusExperimentus

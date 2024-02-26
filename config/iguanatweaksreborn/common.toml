@@ -62,10 +62,10 @@
 	[World.Nether]
 		#Makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and removes the 8 block ratio between nether and end.
 		"Disable Nether Roof and 8 block ratio" = true
-		#The portal requires Gold blocks or Crying Obsidian in the corners to turn it on (in the overworld).
-		"Portal requires Gold Blocks or Crying Obsidians" = true
 		#If true, lava pockets in the nether are removed. If quark is installed, this is disabled
 		"Remove Lava Pockets" = true
+		#The portal requires Crying Obsidian in the corners to turn it on (in the overworld). The block tag 'iguanatweaksreborn:portal_corners' can be used to change the required blocks for the corners
+		"Portal requires Crying Obsidian" = true
 
 	[World.Fluids]
 		#If enabled, water will deal fall damage if too shallow
@@ -376,6 +376,7 @@
 		"Remove piston physics exploit" = true
 		#Range: 0.0 ~ 1.0
 		"Fishing has a chance to fish a guardian" = 0
+		"No fish if fishing in the same spot" = true
 
 	#Various data packs that can be enabled/disabled
 	[Miscellaneous."Data Packs"]
