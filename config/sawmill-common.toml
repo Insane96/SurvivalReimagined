@@ -26,4 +26,6 @@
 	[general.special_recipe_costs]
 		stairs = 1.0
 		fence = 1.0
+		trapdoor = 2.0
+		bowl = 1.3
 
