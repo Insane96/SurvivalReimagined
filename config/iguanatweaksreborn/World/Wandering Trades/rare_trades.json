@@ -91,6 +91,19 @@
     "item_a_count": 8,
     "item_result": "minecraft:map",
     "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.jungle_pyramid\"}\u0027}}",
+    "exploration_map": {
+      "destination": "iguanatweaksreborn:jungle_pyramid",
+      "skip_existing_chunks": false
+    },
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 8,
+    "item_result": "minecraft:map",
+    "item_result_count": 1,
     "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.igloo\"}\u0027}}",
     "exploration_map": {
       "destination": "iguanatweaksreborn:igloo",

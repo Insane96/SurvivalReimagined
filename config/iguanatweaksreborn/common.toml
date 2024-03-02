@@ -131,7 +131,7 @@
 	[World."Berry Bushes"]
 		#Berry bushes no longer deal damage when walking in them with leggings and boots
 		"No damage if dressed" = true
-		#	Makes sweet berries not plantable, requiring seeds, and also enables a data pack that makes the following changes:
+		#	Makes sweet berries not plantable, requiring seeds, and also enables a data pack (If berry_good mod is not present) that makes the following changes:
 		#	* Makes sweet berry bushes drop seeds
 		#
 		"Data pack" = true
@@ -905,14 +905,16 @@
 	"Enable Regenerating Absorption" = true
 	#Player will deal reduced knockback if attacking with a non-weapon or spamming.
 	"Enable Knockback" = true
-	#Armor gives regenerating absorption instead of armor and toughness speeds up regen speed
-	"Enable Absorption Armor" = true
+	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
+	"Enable Absorption Armor" = false
 	#Pickaxes deal bonus piercing damage.
 	"Enable Piercing Pickaxes" = true
 	#Shovels deal bonus knockback.
 	"Enable Bonking Shovels" = true
 	#Less invincibility frames and none with arrows.
 	"Enable Attack invincibility" = true
+	#Changes how armor and toughness work. Armor reduces armor by a percentage and Toughness reduces damage by a flat amount
+	"Enable Armor Rework" = true
 
 	[Combat."Critical Hits"]
 		#How much damage a critical hit does. Vanilla is 1.5
@@ -989,4 +991,9 @@
 		"Invincibility frames based off attack speed" = true
 		#If true, a data pack is enabled that makes Arrows and magic damage ignore invincibility frames.
 		"Arrows and magic ignore invincibility frames" = true
+
+	#Changes how armor and toughness work. Armor reduces armor by a percentage and Toughness reduces damage by a flat amount
+	[Combat."Armor Rework"]
+		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
+		"Damage Reduction formula" = "(damage - (toughness / 10)) * (1 - ((MIN(20, MAX(armor / 5, armor - (2 * (damage - (toughness / 10)) / 10)))) / 40))"
 

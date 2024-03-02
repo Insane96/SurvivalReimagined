@@ -111,13 +111,13 @@
 		[Mobs.Spawning."Hostile Cap"]
 			#Hostile Mobs cap on winter, note that lower values increase the mobs around the player.
 			#Range: > -2147483648
-			Winter = 90
+			Winter = 80
 			#Hostile Mobs cap on spring, note that lower values increase the mobs around the player.
 			#Range: > -2147483648
 			Spring = 70
 			#Hostile Mobs cap on summer, note that lower values increase the mobs around the player.
 			#Range: > -2147483648
-			Summer = 50
+			Summer = 55
 			#Hostile Mobs cap on autumn, note that lower values increase the mobs around the player.
 			#Range: > -2147483648
 			Autumn = 70
