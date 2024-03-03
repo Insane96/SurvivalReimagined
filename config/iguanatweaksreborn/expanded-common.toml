@@ -194,6 +194,8 @@
 	"Enable Chained Copper Armor" = true
 	#Back to base
 	"Enable Recall Potion" = true
+	#Integration with Tool Belt
+	"Enable ToolBelt" = true
 
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]
@@ -206,6 +208,11 @@
 	#Check your altitude
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
+
+	#Integration with Tool Belt
+	[Items.ToolBelt]
+		#Enables a data pack that changes the crafting of the Tool Belt to give more slots (2 -> 4). Also makes the cost to upgrade start from 4 instead of 2
+		"Bigger ToolBelt" = true
 
 ["Hunger & Health"]
 	#Adds new foods and drinks.
