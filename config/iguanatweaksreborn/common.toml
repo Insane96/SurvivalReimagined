@@ -50,7 +50,7 @@
 		"Ignore Light" = true
 		#How much faster spawners tick down the spawning delay.
 		#Range: > 0
-		"Spawning speed boost" = 3
+		"Spawning speed boost" = 2
 
 	#Makes leaves decay faster and if Passable Foliage is installed, changes some values
 	[World.Leaves]
@@ -946,6 +946,8 @@
 		"Item Stats Data Pack" = true
 		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%.
 		"Player no damage when spamming" = true
+		#Changes Mining fatigue and haste to no longer affects attack speed. (Requires a Minecraft restart)
+		"Better haste/mining fatigue" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
