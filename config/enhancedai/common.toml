@@ -452,7 +452,7 @@
 		#Chance for a mob in the entity type tag enhancedai:can_be_fisher to spawn with a Fishing Rod in the offhand.
 		#I recommend Mobs Properties Randomness to have more control over mobs equipment.
 		#Range: 0.0 ~ 1.0
-		"Equip Fishing Rod Chance" = 0.5
+		"Equip Fishing Rod Chance" = 0.05
 		#Chance for a fisher mob to steal an item from the players' inventory instead of reeling the player.
 		#Range: 0.0 ~ 1.0
 		"Hook Inventory Chance" = 0.4
@@ -846,10 +846,10 @@
 	[Animals."Animals Scared Attack"]
 		#Animals have this percentage chance to be able to fight back instead of fleeing. Animals have a slightly bigger range to attack. Attack damage can't be changed via config due to limitation so use mods like Mobs Properties Randomness to change the damage. Base damage is 3
 		#Range: 0.0 ~ 1.0
-		"Fight back chance" = 0.3
+		"Fight back chance" = 0.35
 		#Animals have this percentage chance to be scared by players and run away. Fight back chance has priority over this
 		#Range: 0.0 ~ 1.0
-		"Players Scared chance" = 0.0
+		"Players Scared chance" = 0.25
 		#Movement speed multiplier when aggroed.
 		#Range: 0.0 ~ 4.0
 		"Movement Speed Multiplier" = 1.1
