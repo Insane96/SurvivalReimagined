@@ -409,7 +409,7 @@
 		"Fishing Loot Changes" = true
 		#If true, a data pack will be enabled that makes End Cities will be more common.
 		"Increase End Cities" = true
-		#If true a data pack will be enabled that overhauls structure loot
+		#If true a data pack will be enabled that overhauls structure loot. Disables itself if iguanatweaksexpanded is present
 		"Better Structure Loot" = true
 		#If true a data pack will be enabled that reduces loot from structures closer to spawn
 		"Less loot closer to spawn" = true
