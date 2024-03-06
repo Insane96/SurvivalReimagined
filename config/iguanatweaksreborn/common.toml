@@ -932,7 +932,7 @@
 		#If true, Arrows from Bows and Crossbows will no longer deal more damage when fully charged.
 		"Disable Critical Arrows bonus damage" = true
 		#Range: 0.0 ~ 1.0
-		"Hoes Knockback multiplier" = 0.4
+		"Hoes Knockback multiplier" = 0.25
 		#Vanilla tooltips on gear don't sum up multiple modifiers (e.g. a sword would have "4 Attack Damage" and "-2 Attack Damage" instead of "2 Attack Damage". This might break other mods messing with these Tooltips (e.g. Quark's improved tooltips)
 		"Fix tooltips" = true
 		#Changes Strength effect from +3 damage per level to +20% damage per level. (Requires a Minecraft restart)

@@ -6,7 +6,7 @@
 	#E.g. minecraft:farmland,minecraft:dirt will make farmland transform to path when right-clicked with a shovel. You can even use tags in blockRightClicked.
 	"Transform List" = ["minecraft:dirt_path,minecraft:dirt", "minecraft:farmland,minecraft:dirt"]
 
-	#Items and tags that should not perform the block transformation. By default any item that uses ToolActions.SHOVEL_FLATTEN will work. Note that items in this list will only be prevented from executing the transofmrations above and not the default Dirt to Path transformation.
+	#Items and tags that should not perform the block transformation. By default any item that uses ToolActions.SHOVEL_FLATTEN will work. Note that items in this list will only be prevented from executing the transformations above and not the default Dirt to Path transformation.
 	["Path to Dirt"."Item Blacklist"]
 		Blacklist = ["quark:pickarang", "quark:netherite_pickarang"]
 		#If true the list will be treated as a whitelist instead of blacklist
