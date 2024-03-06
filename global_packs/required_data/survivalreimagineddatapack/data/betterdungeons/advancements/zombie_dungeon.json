@@ -2,7 +2,7 @@
   "parent": "minecraft:adventure/root",
   "display": {
     "icon": {
-      "item": "minecraft:rotten_flesh"
+      "item": "iguanatweaksexpanded:cloth"
     },
     "title": {
       "translate": "When in Rome"
