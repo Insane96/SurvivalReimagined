@@ -116,7 +116,7 @@
           {
             "type": "minecraft:item",
             "weight": 3,
-            "name": "iguanatweaksexpanded:cheese",
+            "name": "iguanatweaksexpanded:cheese_slice",
             "functions": [
               {
                 "function": "minecraft:set_count",
