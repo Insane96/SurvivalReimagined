@@ -130,5 +130,9 @@
   {
     "id": "#minecraft:leaves",
     "value": 0.4
+  },
+  {
+    "id": "amendments:skull_candle",
+    "value": 0
   }
 ]
