@@ -38,19 +38,49 @@
 
 	#Spawners will no longer spawn mobs infinitely. Echo shards can reactivate a spawner. Monsters spawning from spawners ignore light and spawning is much faster
 	[World.Spawners]
-		#The minimum amount of spawnable mobs (when the spawner is basically in the same position as the world spawn. The amount of spawnable mobs before deactivating is equal to the distance divided by 8 (plus this value). E.g. At 160 blocks from spawn the max spawnable mobs will be 160 / 8 + 25 = 20 + 25 = 55
-		#Range: > 0
-		"Minimum Spawnable Mobs" = 20
-		#This multiplier increases the max mobs spawned.
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Spawnable mobs multiplier" = 1.0
-		#If true, the spawner will drop more experience when broken, if not disabled, based of distance from spawn. +100% every 1024 blocks from spawn. The multiplier from 'Experience From Blocks' Feature still applies.
-		"Bonus experience if not disabled" = true
 		#If true, monsters from spawners will spawn no matter the light level.
 		"Ignore Light" = true
-		#How much faster spawners tick down the spawning delay.
-		#Range: > 0
-		"Spawning speed boost" = 2
+		#Range in which a player must be present for a spawner to work. Vanilla is 16.
+		"Required Player Range" = 32
+
+		[World.Spawners."Disable spawners"]
+			Enabled = false
+			#The minimum amount of spawnable mobs (when the spawner is basically in the same position as the world spawn. The amount of spawnable mobs before deactivating is equal to the distance divided by 8 (plus this value). E.g. At 160 blocks from spawn the max spawnable mobs will be 160 / 8 + 25 = 20 + 25 = 55
+			#Range: > 0
+			"Minimum Spawnable Mobs" = 20
+			#This multiplier increases the max mobs spawned.
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Spawnable mobs multiplier" = 1.0
+
+		[World.Spawners.Empowered]
+			#If true, spawners will generate in an empowered state. When empowered, will generate mobs really fast for a while and then will slow down.
+			Enabled = true
+			#How many mobs are spawned before empowered ends.
+			#Range: > 0
+			"Mobs amount" = 24
+			#When the Spawner stops being empowered, will generate loot from the iguanatweaksreborn:empowered_spawner loot table
+			"Loot Reward" = true
+
+			#Spawning Delay (in ticks) when the Spawner is empowered.
+			[World.Spawners.Empowered.Delay]
+				#Range: 1.0 ~ 1.7976931348623157E308
+				Minimum = 100.0
+				#Range: 1.0 ~ 1.7976931348623157E308
+				Maximum = 400.0
+
+			#When the Spawner stops being empowered, will generate this amount of experience
+			[World.Spawners.Empowered."Experience Reward"]
+				#Range: 0.0 ~ 1.7976931348623157E308
+				Minimum = 100.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				Maximum = 200.0
+
+		#Spawning Delay (in ticks) of the spawner. Vanilla is 200~800.
+		[World.Spawners.Delay]
+			#Range: 1.0 ~ 1.7976931348623157E308
+			Minimum = 500.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			Maximum = 2000.0
 
 	#Makes leaves decay faster and if Passable Foliage is installed, changes some values
 	[World.Leaves]
@@ -168,7 +198,8 @@
 		#RESET resets the tiredness to 0
 		#KEEP keeps the current tiredness
 		#SET_AT_EFFECT keeps the current tiredness but if higher than 'Tiredness for effect' it's set to that
-		#Allowed Values: RESET, KEEP, SET_AT_EFFECT
+		#REMOVE_ONE_LEVEL keeps the current tiredness but if higher than 'Tiredness for effect' removes one level of Tired to a minimum of I
+		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
 		"On death behaviour" = "SET_AT_EFFECT"
 
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
@@ -546,8 +577,6 @@
 	"Enable Foods & Drinks" = true
 	#Make the player consume more hunger with different actions. If hunger is disabled, still works for Tiredness.
 	"Enable Exhaustion Increase" = true
-	#Remove hunger and get back to the Beta 1.7.3 days.
-	"Enable No Hunger" = true
 
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Also adds Vigour effect. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	["Hunger & Health"."Hunger Health Regen"]
@@ -604,22 +633,29 @@
 				#Range: 0.0 ~ 20.0
 				Hard = 6.0
 
-		["Hunger & Health"."Hunger Health Regen".Effects]
-
-			["Hunger & Health"."Hunger Health Regen".Effects.Vigour]
-				#Set to true to enable Vigour, a new effect that lowers hunger consumption and increases health regen speed. Applied when good foods are eaten.
-				Enable = true
-				#Multiplies the base duration of Vigour by this value. Base duration is 1 second per food saturation.
-				#Range: 0.0 ~ 128.0
-				"Duration Multiplier" = 20.0
-				#How much does health regen Vigour increases.
-				#Range: 0.0 ~ 1.0
-				Effectiveness = 0.2
-				#Minimum saturation given by the food to apply Vigour.
+			#Health of respawning players
+			["Hunger & Health"."Hunger Health Regen".Respawn.Health]
 				#Range: 0.0 ~ 20.0
-				"Minimum Saturation" = 7.0
-				#If true, eating when already under Vigour increases the duration.
-				Stacks = true
+				"Easy/Peaceful" = 20.0
+				#Range: 0.0 ~ 20.0
+				Normal = 14.0
+				#Range: 0.0 ~ 20.0
+				Hard = 8.0
+
+		["Hunger & Health"."Hunger Health Regen".Vigour]
+			#Set to true to enable Vigour, a new effect that lowers hunger consumption and increases health regen speed. Applied when good foods are eaten.
+			Enable = false
+			#Multiplies the base duration of Vigour by this value. Base duration is 1 second per food saturation.
+			#Range: 0.0 ~ 128.0
+			"Duration Multiplier" = 20.0
+			#How much does health regen Vigour increases.
+			#Range: 0.0 ~ 1.0
+			Effectiveness = 0.2
+			#Minimum saturation given by the food to apply Vigour.
+			#Range: 0.0 ~ 20.0
+			"Minimum Saturation" = 7.0
+			#If true, eating when already under Vigour increases the duration.
+			Stacks = true
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	["Hunger & Health"."Foods & Drinks"]
@@ -659,7 +695,7 @@
 		#When affected by the hunger effect ANY action will give you 100% more exhaustion per level.
 		"Effective Hunger" = true
 
-	#Remove hunger and get back to the Beta 1.7.3 days.
+	#Remove hunger and get back to the Beta 1.7.3 days. Use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
 	["Hunger & Health"."No Hunger"]
 		#If true, Hunger effect is replaced by Weakness
 		"Convert Hunger to Weakness" = true
@@ -683,14 +719,14 @@
 
 		["Hunger & Health"."No Hunger"."Food Heal"]
 			#The formula to calculate the health regenerated when eating a food. Leave empty to disable. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Over Time" = "(hunger^1.5)*0.15"
+			"Over Time" = "(hunger^1.55)*0.25"
 			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Default is 60% of the saturation modifier, down to a minimum of 0.15/s
 			"Over time Strength" = "MAX(0.15, 0.6 * saturation_modifier)"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Instant Heal" = "(hunger^1.45)*0.2"
-			#If true, foods below this saturation will fully instantly heal (Over Time + Instant Heal) instead of having over time heal.
+			"Instant Heal" = "(hunger^1.65)*0.2"
+			#Foods below this saturation will instantly heal, foods above this threshold will have overtime heal.
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Low saturation foods instant heal" = 3.0
+			"Saturation threshold" = 4.0
 
 		["Hunger & Health"."No Hunger"."Raw food"]
 			#If true, raw food will heal by this percentage (this is applied after 'Food Heal.Health Multiplier'). Raw food is defined in the iguanatweaksreborn:raw_food tag
@@ -854,9 +890,9 @@
 
 	#Changes to some enchantments related stuff.
 	[Experience.Enchantments]
-		#Infinity can go up to level 4. Each level makes an arrow have 1 in level+1 chance to not consume.
+		#Infinity can go up to level 4. Each level makes an arrow have only 1 in level+1 chance to consume. E.g. with Infinity 4 there's 1 in 5 chance to consume the arrow, and 4 in 5 to not consume it.
 		"Infinity overhaul" = true
-		#Unbreaking chance to not consume durability is changed from 50%/66.7%/75%/80%/... to 25%/45%/60%/70%/... (at levels I/II/III/IV)
+		#Unbreaking "bonus durability" is changed from 100%/200%/300%/400% to 35%/105%/175%/245% (at levels I/II/III/IV)
 		"Less unbreakable unbreaking" = true
 		#Thorns is no longer compatible with other protections, but deals damage every time (higher levels deal more damage) and no longer damages items.
 		"Small Thorns Overhaul" = true
@@ -948,6 +984,8 @@
 		"Player no damage when spamming" = true
 		#Changes Mining fatigue and haste to no longer affects attack speed. (Requires a Minecraft restart)
 		"Better haste/mining fatigue" = true
+		#If enabled, tools will not take 2 damage when used to hurt entities
+		"1 damage for tools attacking" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.

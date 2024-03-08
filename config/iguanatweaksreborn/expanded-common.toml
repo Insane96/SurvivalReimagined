@@ -60,12 +60,12 @@
 			"Break Chance" = 0.3
 
 ["Sleep & Respawn"]
-	#Zombies can drop cloth instead of Rotten Flesh. Cloth is used to make beds.
+	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
 	"Enable Cloth" = true
 	#Generate Respawn Obelisks around the world where a precise respawn can be set
 	"Enable Respawn Obelisk" = true
 
-	#Zombies can drop cloth instead of Rotten Flesh. Cloth is used to make beds.
+	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
 	["Sleep & Respawn".Cloth]
 		#Enables a Data Pack that makes zombies drop cloth instead of rotten flesh and beds require Cloth to be crafted.
 		"Data Pack" = true
@@ -226,7 +226,7 @@
 
 	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
 	[Experience.Enchanting]
-		#Enchanted items can no longer be merged with other enchanted items and also enchanted books can no longer be applied to enchanted items.
+		#Enchanted items can no longer be merged with other enchanted items (also applies to enchanted books).
 		"No enchantment merge" = true
 		#Enchanted items can no longer be upgraded (e.g. netherite)
 		"No enchanted smithing" = true
