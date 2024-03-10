@@ -1,10 +1,46 @@
 [
   {
     "id": "iguanatweaksexpanded:expanded",
-    "value": 4.199999809265137
+    "value": 5.0
   },
   {
     "id": "iguanatweaksexpanded:veining",
-    "value": 3.5
+    "value": 4.0
+  },
+  {
+    "id": "minecraft:multishot",
+    "value": 5.0
+  },
+  {
+    "id": "minecraft:quick_charge",
+    "value": 3.0
+  },
+  {
+    "id": "minecraft:power",
+    "value": 2.0
+  },
+  {
+    "id": "minecraft:soul_speed",
+    "value": 4.0
+  },
+  {
+    "id": "minecraft:efficiency",
+    "value": 2.0
+  },
+  {
+    "id": "iguanatweaksexpanded:blasting",
+    "value": 2.0
+  },
+  {
+    "id": "shieldsplus:aegis",
+    "value": 2.0
+  },
+  {
+    "id": "shieldsplus:reinforced",
+    "value": 2.0
+  },
+  {
+    "id": "shieldsplus:shield_bash",
+    "value": 4.0
   }
 ]
