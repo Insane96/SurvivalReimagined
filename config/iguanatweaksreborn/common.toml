@@ -961,7 +961,7 @@
 	[Combat."Misc Stats"]
 		#Adds this to players' attack range
 		#Range: -4.0 ~ 4.0
-		"Player attack range modifier" = -0.5
+		"Player attack range modifier" = 0
 		#Reduces movement speed for players by this percentage.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Players movement speed reduction" = 0.05
@@ -1013,7 +1013,7 @@
 		"No Weapon Penalty" = true
 		#Percentage knockback dealt when conditions are met.
 		#Range: 0.0 ~ 1.0
-		"Knockback reduction" = 0.6
+		"Knockback reduction" = 0.35
 
 	#Pickaxes deal bonus piercing damage.
 	[Combat."Piercing Pickaxes"]
