@@ -10,5 +10,8 @@ config/oculus.properties
 options.txt
 servers.dat
 .qmenu_opened.marker
-shaderpacks/ComplementaryReimagined_r5.1.1.zip.txt
+shaderpacks/
 brb.pins
+inventoryprofilesnext/*
+!inventoryprofilesnext/inventoryprofiles.json
+inventoryprofilesnext/
