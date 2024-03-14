@@ -12,3 +12,5 @@ notenoughanimations
 oculus
 tia
 YeetusExperimentus
+entity_model
+entity_texture

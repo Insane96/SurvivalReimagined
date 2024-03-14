@@ -33,6 +33,8 @@ key_key.hotbar.7:key.keyboard.7:NONE
 key_key.hotbar.8:key.keyboard.8:NONE
 key_key.hotbar.9:key.keyboard.9:NONE
 key_[Forgery] Crawl:key.keyboard.c:NONE
+key_Options Gui:key.keyboard.i:NONE
+key_key.configured.open_mod_list:key.keyboard.unknown:NONE
 key_key.toolbelt.open:key.keyboard.left.alt:NONE
 key_key.toolbelt.cycle.left:key.keyboard.unknown:NONE
 key_key.toolbelt.cycle.right:key.keyboard.unknown:NONE
@@ -66,3 +68,4 @@ key_quark.keybind.sort_player:key.keyboard.unknown:NONE
 key_quark.keybind.sort_container:key.keyboard.unknown:NONE
 key_quark.keybind.lock_rotation:key.keyboard.k:NONE
 key_quark.keybind.variant_selector:key.keyboard.unknown:NONE
+key_supplementaries.keybind.quiver:key.keyboard.v:NONE

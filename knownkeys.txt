@@ -69,3 +69,6 @@ quark.keybind.sort_player
 quark.keybind.sort_container
 quark.keybind.lock_rotation
 quark.keybind.variant_selector
+Options Gui
+key.configured.open_mod_list
+supplementaries.keybind.quiver
