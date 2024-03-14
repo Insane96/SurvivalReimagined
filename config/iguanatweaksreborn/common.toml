@@ -12,7 +12,7 @@
 
 [World]
 	"Enable Coal & Fire" = true
-	#Spawners will no longer spawn mobs infinitely. Echo shards can reactivate a spawner. Monsters spawning from spawners ignore light and spawning is much faster
+	#Spawners are now a challenge. Monsters spawning from spawners ignore light.
 	"Enable Spawners" = true
 	#Makes leaves decay faster and if Passable Foliage is installed, changes some values
 	"Enable Leaves" = true
@@ -36,7 +36,7 @@
 		#If true, campfires must be lit
 		"Unlit campfire" = true
 
-	#Spawners will no longer spawn mobs infinitely. Echo shards can reactivate a spawner. Monsters spawning from spawners ignore light and spawning is much faster
+	#Spawners are now a challenge. Monsters spawning from spawners ignore light.
 	[World.Spawners]
 		#If true, monsters from spawners will spawn no matter the light level.
 		"Ignore Light" = true
@@ -59,19 +59,19 @@
 			#Range: > 0
 			"Mobs amount" = 24
 			#When the Spawner stops being empowered, will generate loot from the iguanatweaksreborn:empowered_spawner loot table
-			"Loot Reward" = true
+			"Loot Reward" = false
 
 			#Spawning Delay (in ticks) when the Spawner is empowered.
 			[World.Spawners.Empowered.Delay]
 				#Range: 1.0 ~ 1.7976931348623157E308
 				Minimum = 100.0
 				#Range: 1.0 ~ 1.7976931348623157E308
-				Maximum = 400.0
+				Maximum = 300.0
 
 			#When the Spawner stops being empowered, will generate this amount of experience
 			[World.Spawners.Empowered."Experience Reward"]
 				#Range: 0.0 ~ 1.7976931348623157E308
-				Minimum = 100.0
+				Minimum = 150.0
 				#Range: 0.0 ~ 1.7976931348623157E308
 				Maximum = 200.0
 
@@ -256,8 +256,6 @@
 [Movement]
 	#Armor slows down the player. Material Weights and Enchantment Weights are controlled via json in this feature's folder
 	"Enable Weighted Equipment" = false
-	#Player's slides down ladders faster and stands still when opening an interface. This is disabled if quark is enabled
-	"Enable Better Ladders" = true
 	#Player's slowed down for a brief moment when hit.
 	"Enable Tagging" = true
 	#Prevents the player from placing blocks below him when in mid air.
@@ -270,6 +268,8 @@
 	"Enable Elytra Nerf" = true
 	#Player's slowed down when walking backwards.
 	"Enable Backwards slowdown" = true
+	#Player's slides down climbable blocks faster and stands still when opening an interface. This is disabled if quark is enabled
+	"Enable Better Climbable" = true
 
 	#Armor slows down the player. Material Weights and Enchantment Weights are controlled via json in this feature's folder
 	[Movement."Weighted Equipment"]
@@ -332,9 +332,9 @@
 	[Movement."Terrain Slowdown"]
 		"Frost walker reduces Ice slowdown" = true
 
-	#Player's slides down ladders faster and stands still when opening an interface. This is disabled if quark is enabled
-	[Movement."Better Ladders"]
-		#How much faster the players moves down ladders
+	#Player's slides down climbable blocks faster and stands still when opening an interface. This is disabled if quark is enabled
+	[Movement."Better Climbable"]
+		#How much faster the players moves down climbable blocks
 		#Range: 0.0 ~ 5.0
 		Speed = 0.2
 
