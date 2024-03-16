@@ -338,6 +338,11 @@
 		#Range: 0.0 ~ 5.0
 		Speed = 0.2
 
+	#Prevents the player from placing blocks below him when in mid air.
+	[Movement."No Pillaring"]
+		#If true, pillaring will be negated only if there are monsters nearby
+		"Monsters Only" = true
+
 [Mobs]
 	#Changes to mob spawn
 	"Enable Spawning" = true
@@ -723,7 +728,7 @@
 			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Default is 60% of the saturation modifier, down to a minimum of 0.15/s
 			"Over time Strength" = "MAX(0.15, 0.6 * saturation_modifier)"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Instant Heal" = "(hunger^1.65)*0.2"
+			"Instant Heal" = "(hunger^1.3)*0.4"
 			#Foods below this saturation will instantly heal, foods above this threshold will have overtime heal.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Saturation threshold" = 4.0
