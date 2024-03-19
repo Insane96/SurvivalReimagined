@@ -320,7 +320,7 @@
 	[Movement."Elytra Nerf"]
 		#How much the player is pulled down when flying with elytra in non-end dimensions.
 		#Range: 0.0 ~ 1.0
-		Strength = 0.45
+		Strength = 0.4
 
 	#Player's slowed down when walking backwards.
 	[Movement."Backwards slowdown"]
@@ -856,7 +856,7 @@
 		#Bottle o' enchanting will drop this more XP. Experience is still affected by 'Global Experience Multiplier'
 		#Can be set to 0 to make Bottle o' enchanting drop no bonus experience
 		#Range: 0 ~ 512
-		"Bottle o' Enchanting Bonus XP" = 20
+		"Bottle o' Enchanting Bonus XP" = 35
 
 	#Better repair, free rename and merge.
 	[Experience.Anvils]
