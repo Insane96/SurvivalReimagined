@@ -132,14 +132,14 @@
 		"Disable ALL data packs" = false
 		#Enables a Data Pack that overhauls advancements to make them work with IguanaTweaks.
 		Advancements = true
-		#Enables a data pack that changes all the item stats
-		"Item Stats Data Pack" = true
 		#If true a data pack will be enabled that overhauls structure loot. This overrides some loot tables from ITR
 		"Better Structure Loot" = true
-		#If true, a data pack is enabled that changes the growth of plants based off seasons
-		"Plant growth multipliers data pack" = true
 		#Enables a data pack that slows down growing, breeding, egging etc based off seasons
 		"Livestock Data" = true
+		#Enables a data pack that changes all the item stats
+		"Item Stats" = true
+		#If true, a data pack is enabled that changes the growth of plants based off seasons
+		"Plant growth multipliers" = true
 
 [Mining]
 	"Enable Forging" = true
@@ -188,7 +188,7 @@
 	"Enable Copper Tools Expansion" = true
 	#Check your altitude
 	"Enable Altimeter" = true
-	#Add Solarium, a new metal made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment
+	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment
 	"Enable Solarium" = true
 	#Add Chained Copper Armor
 	"Enable Chained Copper Armor" = true

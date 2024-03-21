@@ -749,8 +749,6 @@
 	"Enable Crops" = true
 	#Slower breeding, Growing, Egging and Milking. Lower yield.
 	"Enable Livestock" = true
-	#Crops are no longer insta-minable. Break speed is still affected by the Hardness module. Requires a minecraft restart.
-	"Enable Hard Crops" = true
 
 	#Slower Plants (non-crops) growing. Plants properties are controlled via json in this feature's folder
 	[Farming."Plants Growth"]
@@ -803,6 +801,8 @@
 		#	* Makes wild crops generate in the world
 		#
 		"Crops data pack" = true
+		#If the hardness should be applied to mature crops only.
+		"Only fully grown" = true
 
 	#Slower breeding, Growing, Egging and Milking. Lower yield.
 	[Farming.Livestock]
@@ -811,11 +811,6 @@
 		"Chicken from egg chance" = 8
 		#Enables a data pack that changes food drops and slows down growing, breeding, egging etc
 		"Data Pack" = true
-
-	#Crops are no longer insta-minable. Break speed is still affected by the Hardness module. Requires a minecraft restart.
-	[Farming."Hard Crops"]
-		#If the hardness should be applied to mature crops only.
-		"Only fully grown" = true
 
 [Experience]
 	#Various changes to experience
@@ -914,7 +909,7 @@
 		#Changes to damaging enchantments:
 		#Enchantments deal bonus damage based off the item's attack damage. So Sharpness on a Sword adds less damage than Sharpness on an Axe.
 		#Sharpness deals +0.75 damage per level
-		#Smite deals +1.25 damage per level to undead
+		#Smite deals +1.5 damage per level to undead
 		#Bane of Arthropods has been replaced with Bane of SSSSS that deals +1.25 damage per level to arthropods and creepers and applies slowness
 		"Replace damaging enchantments" = true
 		#If true, vanilla looting, fortune and Luck of the Sea enchantments are replaced with a single one: Luck. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
@@ -954,7 +949,7 @@
 	"Enable Bonking Shovels" = true
 	#Less invincibility frames and none with arrows.
 	"Enable Attack invincibility" = true
-	#Changes how armor and toughness work. Armor reduces armor by a percentage and Toughness reduces damage by a flat amount
+	#Change armor and toughness formula
 	"Enable Armor Rework" = true
 
 	[Combat."Critical Hits"]
@@ -976,10 +971,6 @@
 		"Hoes Knockback multiplier" = 0.25
 		#Vanilla tooltips on gear don't sum up multiple modifiers (e.g. a sword would have "4 Attack Damage" and "-2 Attack Damage" instead of "2 Attack Damage". This might break other mods messing with these Tooltips (e.g. Quark's improved tooltips)
 		"Fix tooltips" = true
-		#Changes Strength effect from +3 damage per level to +20% damage per level. (Requires a Minecraft restart)
-		"Combat Test Strength" = true
-		#Changes Weakness like Strength effect from -3 damage per level to -20% damage per level. (Requires a Minecraft restart)
-		"Better weakness" = true
 		#Set arrow's base damage if shot from bow.
 		#Range: 0.0 ~ 10.0
 		"Bow's Arrows Base Damage" = 1.5
@@ -991,6 +982,8 @@
 		"Better haste/mining fatigue" = true
 		#If enabled, tools will not take 2 damage when used to hurt entities
 		"1 damage for tools attacking" = true
+		#Changes Strength and Weakness +/-3 damage per level to +/-20% damage per level. (Requires a Minecraft restart)
+		"Better strength and weakness" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -1011,6 +1004,11 @@
 		"Cap to health" = true
 		#If true, absorption hearts will not shield from damages in the bypasses_armor damage type tag.
 		"Absorbing bypasses_armor damage only" = true
+		#Min Un-damaged time to regen
+		#Range: > 0
+		"Un-damaged time to regen cap" = 60
+		#If true, a sound is played when the absorption is damaged.
+		"Sound on absorption hurt" = true
 
 	#Player will deal reduced knockback if attacking with a non-weapon or spamming.
 	[Combat.Knockback]
@@ -1037,7 +1035,7 @@
 		#If true, a data pack is enabled that makes Arrows and magic damage ignore invincibility frames.
 		"Arrows and magic ignore invincibility frames" = true
 
-	#Changes how armor and toughness work. Armor reduces armor by a percentage and Toughness reduces damage by a flat amount
+	#Change armor and toughness formula
 	[Combat."Armor Rework"]
 		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
 		"Damage Reduction formula" = "damage * (1 - 1.20 * (armor / (armor + 20)))"
