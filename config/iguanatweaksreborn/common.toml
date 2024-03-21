@@ -960,7 +960,7 @@
 	[Combat."Critical Hits"]
 		#How much damage a critical hit does. Vanilla is 1.5
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Critical hit damage multiplier" = 1.25
+		"Critical hit damage multiplier" = 1.2
 
 	#Various changes from weapons damage to armor reduction
 	[Combat."Misc Stats"]
@@ -1040,5 +1040,5 @@
 	#Changes how armor and toughness work. Armor reduces armor by a percentage and Toughness reduces damage by a flat amount
 	[Combat."Armor Rework"]
 		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
-		"Damage Reduction formula" = "(damage - (toughness / 10)) * (1 - ((MIN(20, MAX(armor / 5, armor - (2 * (damage - (toughness / 10)) / 10)))) / 40))"
+		"Damage Reduction formula" = "damage * (1 - 1.20 * (armor / (armor + 20)))"
 
