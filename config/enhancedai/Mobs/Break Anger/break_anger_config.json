@@ -2,6 +2,6 @@
   {
     "block": "#forge:ores/quartz",
     "entity": "minecraft:zombified_piglin",
-    "range": 32.0
+    "range": 24.0
   }
 ]
