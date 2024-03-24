@@ -9,7 +9,7 @@
   },
   {
     "id": "iguanatweaksexpanded:blasting",
-    "value": 1.7999999523162842
+    "value": 1.8
   },
   {
     "id": "iguanatweaksexpanded:burst_of_arrows",
@@ -17,7 +17,7 @@
   },
   {
     "id": "iguanatweaksreborn:luck",
-    "value": 3.700000047683716
+    "value": 3.2
   },
   {
     "id": "minecraft:multishot",
@@ -29,11 +29,11 @@
   },
   {
     "id": "minecraft:power",
-    "value": 2.200000047683716
+    "value": 2.2
   },
   {
     "id": "minecraft:piercing",
-    "value": 1.399999976158142
+    "value": 1.4
   },
   {
     "id": "minecraft:infinity",
@@ -41,15 +41,19 @@
   },
   {
     "id": "minecraft:soul_speed",
-    "value": 4.0
+    "value": 3.0
   },
   {
     "id": "minecraft:efficiency",
-    "value": 1.7999999523162842
+    "value": 1.8
   },
   {
     "id": "minecraft:vanishing_curse",
     "value": 2.0
+  },
+  {
+    "id": "minecraft:mending",
+    "value": 5.0
   },
   {
     "id": "shieldsplus:aegis",

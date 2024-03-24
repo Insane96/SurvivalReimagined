@@ -41,7 +41,7 @@
 		#If true, monsters from spawners will spawn no matter the light level.
 		"Ignore Light" = true
 		#Range in which a player must be present for a spawner to work. Vanilla is 16.
-		"Required Player Range" = 32
+		"Required Player Range" = 24
 
 		[World.Spawners."Disable spawners"]
 			Enabled = false
@@ -59,7 +59,7 @@
 			#Range: > 0
 			"Mobs amount" = 24
 			#When the Spawner stops being empowered, will generate loot from the iguanatweaksreborn:empowered_spawner loot table
-			"Loot Reward" = false
+			"Loot Reward" = true
 
 			#Spawning Delay (in ticks) when the Spawner is empowered.
 			[World.Spawners.Empowered.Delay]
@@ -900,7 +900,7 @@
 		"Better Efficiency Formula" = true
 		#Set arrow's damage increase with the Power enchantment (vanilla is 0.5). Set to 0.5 to disable.
 		#Range: 0.0 ~ 2.0
-		"Power Enchantment Damage" = 0.35
+		"Power Enchantment Damage" = 0.2
 		"Prevent farmland trampling with Feather Falling" = true
 		#If true, vanilla protection enchantments are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		#Protection has only one level, protects 6% per level and is treasure. Other protections work the same except for projectile that reduces the sight range of mobs by 2% per level. Feather falling protects for 16% per level instead of 12%.
@@ -973,8 +973,8 @@
 		"Fix tooltips" = true
 		#Set arrow's base damage if shot from bow.
 		#Range: 0.0 ~ 10.0
-		"Bow's Arrows Base Damage" = 1.5
-		#Enables a data pack that changes all the item stats
+		"Bow's Arrows Base Damage" = 1
+		#Enables a data pack that rebalances all the items, from armor to efficiency to weapons. Also changes some item stacks.
 		"Item Stats Data Pack" = true
 		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%.
 		"Player no damage when spamming" = true

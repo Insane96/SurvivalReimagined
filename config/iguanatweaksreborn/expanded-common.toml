@@ -140,6 +140,8 @@
 		"Item Stats" = true
 		#If true, a data pack is enabled that changes the growth of plants based off seasons
 		"Plant growth multipliers" = true
+		#Change some vanilla textures such as arrows to flint, spawners to echo
+		"Texture override" = true
 
 [Mining]
 	"Enable Forging" = true
