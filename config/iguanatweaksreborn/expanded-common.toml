@@ -186,18 +186,16 @@
 	"Enable Flint Expansion" = true
 	#A new block that can let you carry more stuff around.
 	"Enable Crate" = true
-	#Two new set of tools
-	"Enable Copper Tools Expansion" = true
 	#Check your altitude
 	"Enable Altimeter" = true
 	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment
 	"Enable Solarium" = true
-	#Add Chained Copper Armor
-	"Enable Chained Copper Armor" = true
 	#Back to base
 	"Enable Recall Potion" = true
 	#Integration with Tool Belt
 	"Enable ToolBelt" = true
+	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items
+	"Enable Copper Tools/Armor Expansion" = true
 
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]

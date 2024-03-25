@@ -262,7 +262,7 @@
 	"Enable No Pillaring" = true
 	#Stamina to let the player run and do stuff.
 	"Enable Stamina" = true
-	#Slowdown based off the terrain you're walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
+	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
 	"Enable Terrain Slowdown" = true
 	#Makes flying with elytra outside the end dimension have stronger gravity.
 	"Enable Elytra Nerf" = true
@@ -328,7 +328,7 @@
 		#Range: 0.0 ~ 1.0
 		Slowdown = 0.25
 
-	#Slowdown based off the terrain you're walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
+	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
 	[Movement."Terrain Slowdown"]
 		"Frost walker reduces Ice slowdown" = true
 
@@ -873,6 +873,9 @@
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Break chance" = 0.075
 		"Fix anvils with Iron Blocks" = true
+		#Repairing items in an anvil costs more materials if the item is enchanted. This is the percentage increase for each level of enchantment on the item
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Increase materials required with enchantments" = 0.15
 
 		[Experience.Anvils."Enchantments cost by rarity"]
 			#Vanilla: 1
