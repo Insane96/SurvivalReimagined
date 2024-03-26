@@ -472,11 +472,15 @@
 		#The amount of ticks the player consumes when underwater. In vanilla it's 1 without Respiration enchantment.
 		#Range: > -2147483648
 		"Player air ticks consumed" = 1
-		#The amount of air ticks the player regains each tick when out of water. Vanilla is 4
-		#Range: > -2147483648
-		"Player air ticks refilled" = 1
 		#If enabled, the Totem of Undying will give Resistance IV for 5 seconds
 		"Totem resistance" = true
+
+		#The amount of air ticks the player regains each tick when out of water. Vanilla is 4. Min is the amount as soon as you exit water, 4 is the maximum a few seconds out of water.
+		[Miscellaneous.Tweaks."Player air ticks refilled"]
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			Minimum = 1.0
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			Maximum = 3.0
 
 	#Beacon Range varying based of blocks of the pyramid and better conduit killing mobs. Blocks list and ranges are controlled via json in this feature's folder
 	[Miscellaneous."Beacon & Conduit"]
@@ -864,8 +868,6 @@
 		#Vanilla is 12%
 		#Range: 0 ~ 100
 		"Merging Repair bonus" = 15
-		#Repairing items in an anvil doesn't cost xp
-		"No xp repair cost" = true
 		#Multiplier for the levels required to repair or merge an item.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Repair cost multiplier" = 0.7
@@ -876,6 +878,10 @@
 		#Repairing items in an anvil costs more materials if the item is enchanted. This is the percentage increase for each level of enchantment on the item
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Increase materials required with enchantments" = 0.15
+		#Repairing items in an anvil doesn't cost xp
+		"No vanilla xp repair cost" = true
+		#XP cost when repairing an item in an anvil is based of the levels of the enchantments. This is not affected by 'Repair cost multiplier'
+		"Different xp repair cost" = false
 
 		[Experience.Anvils."Enchantments cost by rarity"]
 			#Vanilla: 1
@@ -917,6 +923,8 @@
 		"Replace damaging enchantments" = true
 		#If true, vanilla looting, fortune and Luck of the Sea enchantments are replaced with a single one: Luck. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Replace looting, fortune and LotS enchantments" = true
+		#The ore_drops formula is changed to 30%/60%/90%/... drop increase from 25%/75%/125%/...
+		"Nerf fortune" = true
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player Experience"]
