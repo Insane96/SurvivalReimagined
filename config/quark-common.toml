@@ -58,9 +58,9 @@
 		#Setting this to true will change the Crafter to use Emi's original design instead of Mojang's.
 		#Emi's design allows only one item per slot, instead of continuing to fill it round robin.
 		#If this is enabled, Allow Items While Powered should also be set to false for the full design.
-		"Use Emi Logic" = false
+		"Use Emi Logic" = true
 		#Set to false to allow items to be inserted into the Crafter even while it's powered.
-		"Allow Items While Powered" = true
+		"Allow Items While Powered" = false
 
 	[automation.dispensers_place_blocks]
 		Blacklist = ["minecraft:water", "minecraft:lava", "minecraft:fire"]
@@ -187,8 +187,8 @@
 
 	[building.leaf_carpet]
 		#This feature disables itself if any of the following mods are loaded:
-		# - immersive_weathering
 		# - woodworks
+		# - immersive_weathering
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -222,8 +222,8 @@
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
 		#This feature disables itself if any of the following mods are loaded:
-		# - environmental
 		# - goated
+		# - environmental
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
