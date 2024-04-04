@@ -326,7 +326,7 @@
 	[Movement."Backwards slowdown"]
 		#How much slower will the player go when walking backwards.
 		#Range: 0.0 ~ 1.0
-		Slowdown = 0.25
+		Slowdown = 0.3
 
 	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
 	[Movement."Terrain Slowdown"]
@@ -877,7 +877,7 @@
 		"Fix anvils with Iron Blocks" = true
 		#Repairing items in an anvil costs more materials if the item is enchanted. This is the percentage increase for each level of enchantment on the item
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Increase materials required with enchantments" = 0.15
+		"Increase materials required with enchantments" = 0.2
 		#Repairing items in an anvil doesn't cost xp
 		"No vanilla xp repair cost" = true
 		#XP cost when repairing an item in an anvil is based of the levels of the enchantments. This is not affected by 'Repair cost multiplier'

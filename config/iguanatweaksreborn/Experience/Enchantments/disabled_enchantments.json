@@ -12,7 +12,5 @@
   "minecraft:feather_falling",
   "minecraft:looting",
   "minecraft:fortune",
-  "minecraft:luck_of_the_sea",
-  "allurement:reforming",
-  "allurement:alleviating"
+  "minecraft:luck_of_the_sea"
 ]

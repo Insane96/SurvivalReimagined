@@ -66,5 +66,17 @@
   {
     "id": "shieldsplus:shield_bash",
     "value": 4.0
+  },
+  {
+    "id": "allurement:alleviating",
+    "value": 5.0
+  },
+  {
+    "id": "allurement:reforming",
+    "value": 5.0
+  },
+  {
+    "id": "allurement:launch",
+    "value": 3.2
   }
 ]
