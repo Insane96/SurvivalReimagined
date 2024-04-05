@@ -27,7 +27,7 @@
 		#Makes the following changes to Serene Seasons config:
 		#Makes the following changes to Serene Seasons config:
 		#* seasonal_crops is set to false, as it's controlled by Plants Growth
-		#* Sets the starting season to mid summer
+		#* Sets the starting season to the one in 'Starting season'
 		#
 		"Serene Seasons changes" = true
 		"Season based fishing time" = true
@@ -36,6 +36,9 @@
 		"Time Control day night shift" = 1.0
 		#Chance for a bone meal to fail to grow something. Empty this string to disable. Accepts a list of seasons and chances separated by a ;
 		"Bone meal fail chance" = "AUTUMN,0.4;WINTER,0.8"
+		#Has no effect if 'Serene Seasons changes' is disabled
+		#Allowed Values: EARLY_SPRING, MID_SPRING, LATE_SPRING, EARLY_SUMMER, MID_SUMMER, LATE_SUMMER, EARLY_AUTUMN, MID_AUTUMN, LATE_AUTUMN, EARLY_WINTER, MID_WINTER, LATE_WINTER
+		"Starting season" = "EARLY_SUMMER"
 
 	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
 	[World."Ore Generation"]
@@ -144,19 +147,8 @@
 		"Texture override" = true
 
 [Mining]
-	"Enable Forging" = true
-	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment
-	"Enable Durium" = true
-	#Adds mining charge
-	"Enable Mining Charge" = true
 	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal
 	"Enable Soul Steel" = true
-	#Add a new Netherite alternative which makes you go fast
-	"Enable Keego" = true
-	#Add new multi block furnaces
-	"Enable Multi Block Furnaces" = true
-	#Add Quaron, a new metal made by alloying Iron and Amethyst
-	"Enable Quaron" = true
 
 	[Mining.Forging]
 		#Enables the following changes to vanilla data pack:
@@ -180,22 +172,10 @@
 		"Blast Furnace Data pack" = true
 
 [Items]
-	#Add a new explosive block.
-	"Enable Explosive Barrel" = true
-	#Add flint tools and shield.
-	"Enable Flint Expansion" = true
-	#A new block that can let you carry more stuff around.
-	"Enable Crate" = true
-	#Check your altitude
-	"Enable Altimeter" = true
-	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment
-	"Enable Solarium" = true
 	#Back to base
 	"Enable Recall Potion" = true
 	#Integration with Tool Belt
 	"Enable ToolBelt" = true
-	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items
-	"Enable Copper Tools/Armor Expansion" = true
 
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]
@@ -232,6 +212,13 @@
 		"No enchanted smithing" = true
 		#If true, grindstone will give XP based off the new enchanting table. This is based off the ITR levelScalingFormula set to a fixed value
 		"Better grindstone xp" = true
+		#If true, grindstone will be able to extract treasure enchantments (and curses) from items onto books.
+		"Grindstone trasure enchantment extraction" = true
+		#If true, some mixins are used on Allurement to make the enchantments work on more things and configs are changed to not overlap with ITE.
+		#Requires Minecraft Restart.
+		#PLEASE NOTE that due to config limitation, some things cannot be disabled, so better use item tags. E.g. Launch enchantment uses a new iguanatweaksexpanded:enchanting/allurement/accepts_launch_enchantments item tag to decide which item accepts the enchantment.
+		#
+		"Allurement integration" = true
 
 [Combat]
 	#Gives a use to the fletching table.
