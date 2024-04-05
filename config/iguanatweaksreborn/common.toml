@@ -877,7 +877,7 @@
 		"Fix anvils with Iron Blocks" = true
 		#Repairing items in an anvil costs more materials if the item is enchanted. This is the percentage increase for each level of enchantment on the item
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Increase materials required with enchantments" = 0.2
+		"Increase materials required with enchantments" = 0.05
 		#Repairing items in an anvil doesn't cost xp
 		"No vanilla xp repair cost" = true
 		#XP cost when repairing an item in an anvil is based of the levels of the enchantments. This is not affected by 'Repair cost multiplier'
