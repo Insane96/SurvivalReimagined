@@ -125,7 +125,7 @@
 	/**
 	 * Whether recipes should have a button to show the recipe tree.
 	 */
-	recipe-tree-button: true;
+	recipe-tree-button: false;
 
 	/**
 	 * Whether recipes should have a button to fill the ingredients in a handler.
