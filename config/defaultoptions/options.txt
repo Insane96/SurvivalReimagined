@@ -36,13 +36,13 @@ simulationDistance:16
 entityDistanceScaling:5.0
 guiScale:4
 particles:0
-maxFps:120
+maxFps:140
 graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
-renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","file/VanillaTweaks_r350280.zip","file/VanillaTweaks_CleanerBorder.zip","Moonlight Mods Dynamic Assets","survivalreimaginedresourcepack","file/FreshAnimations_v1.9.zip"]
+renderClouds:"false"
+resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","iguanatweaksexpanded:texture_override","survivalreimaginedresourcepack","file/FreshAnimations_v1.9.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -86,8 +86,8 @@ telemetryOptInExtra:false
 onboardAccessibility:false
 soundCategory_master:0.5016556291390728
 soundCategory_music:0.0
-soundCategory_record:1.0
-soundCategory_weather:0.7024647887323944
+soundCategory_record:0.5017605633802817
+soundCategory_weather:0.7007042253521126
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0
