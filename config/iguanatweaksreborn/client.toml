@@ -26,6 +26,8 @@
 		#Set the max height of the world border.
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Cap world border height" = 128.0
+		#If true, camera will not tilt when taking magic, wither, on fire, cramming, drowning and thorns damage.
+		"No tilting with some damage types" = true
 
 	#Makes fog less invasive in some contexts
 	[Client.Fog]

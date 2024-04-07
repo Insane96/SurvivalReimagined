@@ -201,6 +201,11 @@
 		#REMOVE_ONE_LEVEL keeps the current tiredness but if higher than 'Tiredness for effect' removes one level of Tired to a minimum of I
 		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
 		"On death behaviour" = "SET_AT_EFFECT"
+		#Sounds played when the player is tired
+		"Tired sounds" = ["minecraft:block.basalt.break", "minecraft:block.big_dripleaf.place", "minecraft:block.bone_block.hit", "minecraft:block.candle.extinguish", "minecraft:entity.zombie.ambient", "minecraft:entity.skeleton.ambient", "minecraft:entity.spider.ambient", "minecraft:entity.slime.attack", "minecraft:entity.creeper.hurt", "minecraft:entity.ghast.ambient"]
+		#The chance is 0% of this value as soon as a sound is played, 100% as 10 minutes have passed and 200% at 30 minutes
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Tired Sound Chance" = 0.025
 
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	["Sleep & Respawn".Respawn]
@@ -270,6 +275,7 @@
 	"Enable Backwards slowdown" = true
 	#Player's slides down climbable blocks faster and stands still when opening an interface. This is disabled if quark is enabled
 	"Enable Better Climbable" = true
+	"Enable Boats" = true
 
 	#Armor slows down the player. Material Weights and Enchantment Weights are controlled via json in this feature's folder
 	[Movement."Weighted Equipment"]
@@ -285,6 +291,9 @@
 	[Movement.Boats]
 		#If true, boats will no longer go stupidly fast on ice. (If quark is present this is disabled)
 		"No Ice Boats" = true
+		#If true, boats will always break when falling from this height or more
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Break height" = 5.0
 
 	#Player's slowed down for a brief moment when hit.
 	[Movement.Tagging]
@@ -490,6 +499,8 @@
 		"Player air ticks consumed" = 1
 		#If enabled, the Totem of Undying will give Resistance IV for 5 seconds
 		"Totem resistance" = true
+		#If exposed to the sun sponges may dry and if exposed to rain sponges might get wet
+		"Sponges dry in the sun and wet in rain" = true
 
 		#The amount of air ticks the player regains each tick when out of water. Vanilla is 4. Min is the amount as soon as you exit water, 4 is the maximum a few seconds out of water.
 		[Miscellaneous.Tweaks."Player air ticks refilled"]
@@ -561,6 +572,11 @@
 		"Ore Smelting Data Pack" = true
 		#Enables a Data Pack.
 		"Backport 1(dot)20(dot)2 Diamond ore generation" = true
+
+	#Change, through data packs, the properties of blocks, from hardness to explosion resistance to speed and jump factors
+	[Mining."Block Data"]
+		#If true, a data pack is enabled that changes various blocks hardness, like ores and crops, and some blocks slowdown.
+		"Block Data Data Pack" = true
 
 [Items]
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
@@ -946,7 +962,7 @@
 		"Replace looting, fortune and LotS enchantments" = true
 		#The ore_drops formula is changed to 30%/60%/90%/... drop increase from 25%/75%/125%/...
 		"Nerf fortune" = true
-		#Mending is changed to consume player experience instead of picked up experience.
+		#Mending is changed to consume player experience when item's used instead of repairing on picked up experience.
 		"Mending Overhaul" = true
 
 	#Changes the experience lost on death and xp per level required.

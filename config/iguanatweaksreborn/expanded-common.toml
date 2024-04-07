@@ -145,6 +145,7 @@
 		"Plant growth multipliers" = true
 		#Change some vanilla textures such as arrows to flint, spawners to echo
 		"Texture override" = true
+		"Block Data Data Pack" = true
 
 [Mining]
 	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal
@@ -212,7 +213,7 @@
 		"No enchanted smithing" = true
 		#If true, grindstone will give XP based off the new enchanting table. This is based off the ITR levelScalingFormula set to a fixed value
 		"Better grindstone xp" = true
-		#If true, grindstone will be able to extract treasure enchantments (and curses) from items onto books.
+		#If true, grindstone will be able to extract treasure enchantments (and curses) from items onto books. Please note this feature is incompatible with Forgery, so you should ban the "Grindstone disenchantment" feature from it.
 		"Grindstone trasure enchantment extraction" = true
 		#If true, some mixins are used on Allurement to make the enchantments work on more things and configs are changed to not overlap with ITE.
 		#Requires Minecraft Restart.
