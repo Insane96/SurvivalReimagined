@@ -1,13 +1,13 @@
 [
   {
     "item_a": "minecraft:emerald",
-    "item_a_count": 6,
+    "item_a_count": 9,
     "item_result": "minecraft:book",
     "item_result_count": 1,
     "enchant_randomly": {
-      "min_levels": 10,
-      "max_levels": 18,
-      "treasure": false
+      "min_levels": 12,
+      "max_levels": 22,
+      "treasure": true
     },
     "max_uses": 1,
     "xp": 0

@@ -21,7 +21,7 @@
 	"Enable Cyan Flower" = true
 	#Trees fall when cut.
 	"Enable Timber Trees" = true
-	#Change wandering trader offers
+	#Change wandering trader offers.
 	"Enable Wandering Trades" = true
 	#Various changes to explosions from knockback to shielding.
 	"Enable Explosion Overhaul" = true
@@ -105,7 +105,7 @@
 	[World."Timber Trees"]
 		"Requires axe" = false
 
-	#Change wandering trader offers
+	#Change wandering trader offers.
 	[World."Wandering Trades"]
 		#Vanilla is 0 pre 23w31a, 2 otherwise
 		#Range: > -2147483648
@@ -962,8 +962,10 @@
 		"Replace looting, fortune and LotS enchantments" = true
 		#The ore_drops formula is changed to 30%/60%/90%/... drop increase from 25%/75%/125%/...
 		"Nerf fortune" = true
-		#Mending is changed to consume player experience when item's used instead of repairing on picked up experience.
-		"Mending Overhaul" = true
+		#Mending only makes the tool repair by one durability instead of 2 per xp.
+		"Mending Nerf" = true
+		#If true and shift it pressed, items will show enchantment info below the enchantments
+		"Enchantments info" = true
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player Experience"]
