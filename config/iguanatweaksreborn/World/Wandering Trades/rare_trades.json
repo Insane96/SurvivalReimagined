@@ -117,6 +117,20 @@
     "item_a_count": 8,
     "item_result": "minecraft:map",
     "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.trail_ruins\"}\u0027}}",
+    "exploration_map": {
+      "destination": "iguanatweaksreborn:trail_ruins",
+      "decoration": "target_point",
+      "skip_existing_chunks": false
+    },
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 8,
+    "item_result": "minecraft:map",
+    "item_result_count": 1,
     "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.mansion\"}\u0027}}",
     "exploration_map": {
       "destination": "minecraft:on_woodland_explorer_maps",
