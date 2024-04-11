@@ -1,5 +1,9 @@
 [
   {
+    "id": "iguanatweaksexpanded:reach",
+    "value": 5.0
+  },
+  {
     "id": "iguanatweaksexpanded:expanded",
     "value": 5.0
   },
@@ -17,11 +21,11 @@
   },
   {
     "id": "iguanatweaksexpanded:gravity_defying",
-    "value": 3.4
+    "value": 5
   },
   {
     "id": "iguanatweaksexpanded:ma_jump",
-    "value": 3.4
+    "value": 3.45
   },
   {
     "id": "iguanatweaksreborn:luck",

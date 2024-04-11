@@ -15,6 +15,11 @@
     "eating_time": 40
   },
   {
+    "food": "minecraft:pumpkin_pie",
+    "nutrition": 6,
+    "eating_time": 40
+  },
+  {
     "food": "minecraft:golden_apple",
     "effects": [
       {

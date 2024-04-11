@@ -600,7 +600,7 @@
 		#Food stack sizes will be reduced based off their hunger restored and saturation multiplier. See 'Food Stack Reduction Formula' for the formula
 		"Food Stack Reduction" = true
 		#The formula to calculate the stack size of a food item. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-		"Food Stack Reduction Formula" = "ROUND((1 - (effectiveness - 1) / 24) * 64 * 0.25, 0)"
+		"Food Stack Reduction Formula" = "ROUND((1 - (effectiveness - 1) / 25) * 64 * 0.25, 0)"
 		#Stews will stack up to this number. It's overridden by 'foodStackReduction' if enabled. Still affected by black/whitelist
 		#Range: 1 ~ 64
 		"Stackable Stews" = 16
@@ -712,7 +712,7 @@
 		#Makes the speed for eating food based off the hunger and saturation they provide.
 		"Eating Speed Based Off Food Restored" = true
 		#The formula to calculate the ticks required to eat a food. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. The default formula increases the time to eat exponentially when higher effectiveness.
-		"Eating Speed Formula" = "MAX((IF(fast_food, 16, 32) * effectiveness) * 0.08, IF(fast_food, 12, 20))"
+		"Eating Speed Formula" = "MAX((IF(fast_food, 16, 32) * effectiveness) * 0.075, IF(fast_food, 12, 20))"
 		#If true, eating/drinking stops when the player's hit.
 		"Stop consuming on hit" = true
 		#Food can no longer be smelted in furnaces and change smokers recipe to require Mithril ingot.
@@ -762,11 +762,11 @@
 
 		["Hunger & Health"."No Hunger"."Food Heal"]
 			#The formula to calculate the health regenerated when eating a food. Leave empty to disable. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Over Time" = "(hunger^1.55)*0.25"
+			"Over Time" = "(hunger^2.5)*0.05"
 			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Default is 60% of the saturation modifier, down to a minimum of 0.15/s
 			"Over time Strength" = "MAX(0.15, 0.6 * saturation_modifier)"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Instant Heal" = "(hunger^1.3)*0.4"
+			"Instant Heal" = "(hunger^1.3)*0.35"
 			#Foods below this saturation will instantly heal, foods above this threshold will have overtime heal.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Saturation threshold" = 4.0
