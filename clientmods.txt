@@ -17,3 +17,4 @@ entity_texture
 e4mc
 autohud
 raised
+AmbientSounds
