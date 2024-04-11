@@ -12,8 +12,5 @@ servers.dat
 .qmenu_opened.marker
 shaderpacks/
 brb.pins
-inventoryprofilesnext/*
-!inventoryprofilesnext/inventoryprofiles.json
-inventoryprofilesnext/
 etched-sounds/
 emi.json

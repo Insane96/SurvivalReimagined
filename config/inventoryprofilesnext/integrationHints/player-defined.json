@@ -1,0 +1,16 @@
+{
+    "org.violetmoon.quark.addons.oddities.client.screen.CrateScreen": {
+        "ignore": true,
+        "buttonHints": {
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": -22
+            },
+            "SORT": {
+                "horizontalOffset": -23
+            }
+        }
+    },
+    "org.violetmoon.quark.addons.oddities.inventory.CrateMenu": {
+        "ignore": true
+    }
+}
