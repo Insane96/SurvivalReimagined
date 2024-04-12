@@ -187,8 +187,8 @@
 
 	[building.leaf_carpet]
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodworks
 		# - immersive_weathering
+		# - woodworks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -222,8 +222,8 @@
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
 		#This feature disables itself if any of the following mods are loaded:
-		# - goated
 		# - environmental
+		# - goated
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -499,7 +499,7 @@
 
 [tweaks]
 	"Armed Armor Stands" = true
-	"Automatic Recipe Unlock" = false
+	"Automatic Recipe Unlock" = true
 	"Better Elytra Rocket" = true
 	"Campfires Boost Elytra" = true
 	"Compasses Work Everywhere" = true
