@@ -28,7 +28,7 @@
 		"Lightweight bonus speed" = 2.0
 		#Max ticks for a perfect parry.
 		#Range: 0 ~ 10
-		"Perfect Parry tick window" = 2
+		"Perfect Parry tick window" = 1
 		#Amount of knockback given to entities per level.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Recoil entities knockback" = 0.6
