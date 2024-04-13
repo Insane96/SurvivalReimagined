@@ -14,6 +14,7 @@
 	"Enable Seasons" = true
 	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
 	"Enable Ore Generation" = true
+	#If this feature is enabled, 'Unlit campfire' from IguanaTweaks Reborn is set to true
 	"Enable Coal & Charcoal" = true
 
 	#Change a few things relative to Serene Seasons
@@ -45,6 +46,7 @@
 		#Enables a Data Pack that changes Iron, Gold and Copper generation to include Poor and Rich Ores.
 		"Poor and Rich Ore Generation" = false
 
+	#If this feature is enabled, 'Unlit campfire' from IguanaTweaks Reborn is set to true
 	[World."Coal & Charcoal"]
 		#Chance for logs to release charcoal layer when burnt
 		#Range: 0.0 ~ 1.0
