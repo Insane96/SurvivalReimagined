@@ -1,7 +1,7 @@
 {
   "general": {
     "engines": 0,
-    "volume": 1,
+    "volume": 0.4674329459667206,
     "useSoundMasterSource": false,
     "scanStepAmount": 100,
     "playSoundWithOffset": true
