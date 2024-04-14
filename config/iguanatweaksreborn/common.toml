@@ -23,7 +23,7 @@
 	"Enable Timber Trees" = true
 	#Change wandering trader offers.
 	"Enable Wandering Trades" = true
-	#Various changes to explosions from knockback to shielding.
+	#Various changes to explosions, like higher knockback and getting hit when behind blown up blocks.
 	"Enable Explosion Overhaul" = true
 	#Wear down grass when passing on it.
 	"Enable Desire Paths" = true
@@ -117,7 +117,7 @@
 		#Range: > -2147483648
 		"Amount of Rare trades" = 2
 
-	#Various changes to explosions from knockback to shielding.
+	#Various changes to explosions, like higher knockback and getting hit when behind blown up blocks.
 	[World."Explosion Overhaul"]
 		#Vanilla Explosions use a random number that changes the explosion power. With this enabled the ray strength will be as the explosion size.
 		"Disable Explosion Randomness" = true
@@ -1089,4 +1089,9 @@
 	[Combat."Armor Rework"]
 		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
 		"Damage Reduction formula" = "damage * (1 - 2.1 * (armor / (armor + 50)))"
+
+	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
+	[Combat."Unfair one-shots"]
+		#If true, a resistance effect is given to players on activation
+		Resistance = true
 
