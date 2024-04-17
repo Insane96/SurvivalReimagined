@@ -45,6 +45,13 @@
     ]
   },
   {
+    "id": "iguanatweaksreborn:vigour",
+    "time_cost": [
+      2,
+      5
+    ]
+  },
+  {
     "id": "minecraft:resistance",
     "time_cost": [
       1,
