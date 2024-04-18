@@ -1,7 +1,6 @@
 {
     "values": [
         "minecraft:barrier",
-        "minecraft:bedrock",
-        "woodworks:sawmill"
+        "minecraft:bedrock"
     ]
 }
