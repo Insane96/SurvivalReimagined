@@ -12,7 +12,7 @@
 	maxEntityHeight = 2.5
 	#Slowness multiplier for blocks
 	#Range: 0.0 ~ 1.7976931348623157E308
-	blockSlownessMultiplier = 4.0
+	blockSlownessMultiplier = 1.0
 	#Slowness multiplier for entities
 	#Range: 0.0 ~ 1.7976931348623157E308
 	entitySlownessMultiplier = 1.0
@@ -20,7 +20,7 @@
 	#Range: > 1
 	maxEntityStackLimit = 10
 	#More complex Tile Entities slow down the player more
-	heavyTiles = true
+	heavyTiles = false
 	#Allow all blocks to be picked up, not just Tile Entites. White/Blacklist will still be respected.
 	pickupAllBlocks = false
 	#Whether Blocks and Entities slow the creative player down when carried

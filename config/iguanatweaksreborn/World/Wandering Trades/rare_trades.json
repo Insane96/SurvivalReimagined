@@ -59,10 +59,10 @@
   },
   {
     "item_a": "minecraft:emerald",
-    "item_a_count": 3,
+    "item_a_count": 6,
     "item_result": "minecraft:experience_bottle",
     "item_result_count": 1,
-    "max_uses": 8,
+    "max_uses": 4,
     "xp": 0
   },
   {
