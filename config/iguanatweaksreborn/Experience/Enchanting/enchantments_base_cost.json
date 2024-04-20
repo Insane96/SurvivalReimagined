@@ -36,8 +36,16 @@
     "value": 2.75
   },
   {
+    "id": "iguanatweaksexpanded:soulbound",
+    "value": 4
+  },
+  {
     "id": "iguanatweaksreborn:luck",
     "value": 3.2
+  },
+  {
+    "id": "iguanatweaksreborn:vigour",
+    "value": 3.45
   },
   {
     "id": "minecraft:multishot",
@@ -53,7 +61,7 @@
   },
   {
     "id": "minecraft:piercing",
-    "value": 1.4
+    "value": 1.7
   },
   {
     "id": "minecraft:infinity",

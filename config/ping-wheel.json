@@ -1,7 +1,7 @@
 {
   "pingVolume": 100,
   "pingDuration": 7,
-  "pingDistance": 2048,
+  "pingDistance": 128,
   "correctionPeriod": 1.0,
   "itemIconVisible": false,
   "directionIndicatorVisible": true,
