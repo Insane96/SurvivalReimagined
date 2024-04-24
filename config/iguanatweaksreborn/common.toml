@@ -141,7 +141,7 @@
 		"Creeper collateral" = false
 		#Number in the explosion damage calculation. Vanilla is 7. Higher = More damage
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Explosion Damage calculation multiplier" = 5.5
+		"Explosion Damage calculation multiplier" = 6.5
 		#Disabled if set to -1.
 		#Range: > -2147483648
 		"Limit explosion size" = 12
@@ -317,7 +317,7 @@
 		"Stamina consumed on swimming" = 0.5
 		#At which health percentage will stamina be unlocked
 		#Range: 0.0 ~ 1.0
-		"Unlock Stamina at health ratio" = 0.75
+		"Unlock Stamina at health ratio" = 0.5
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Stamina regen per tick" = 0.6
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -384,7 +384,7 @@
 	[Mobs.Equipment]
 		#Set the drop chance for mobs equipment.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Drop chance" = 1.0
+		"Drop chance" = 0.5
 		#Max durability of items dropped by mobs. This also fixes https://bugs.mojang.com/browse/MC-136374. Setting to 0 will disable this feature.
 		#Range: 0.0 ~ 1.0
 		"Max durability" = 0.6
