@@ -324,6 +324,9 @@
 		"Stamina regen per tick if locked" = 0.35
 		#Disable sprinting (and swimming) altogether
 		"Disable Sprinting" = false
+		#How much stamina the player consumes each tick when sprinting
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Stamina consumed on sprint" = 1.0
 
 		[Movement.Stamina.Slowdown]
 			#Below this percentage stamina you'll get slowed down.
@@ -851,7 +854,7 @@
 [Experience]
 	#Various changes to experience
 	"Enable Experience" = true
-	#Better repair, free rename and merge.
+	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.
 	"Enable Anvils" = true
 	#Changes to some enchantments related stuff.
 	"Enable Enchantments" = true
@@ -889,7 +892,7 @@
 		#Range: 0 ~ 512
 		"Bottle o' Enchanting Bonus XP" = 35
 
-	#Better repair, free rename and merge.
+	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.
 	[Experience.Anvils]
 		#Set the cap for repairing items in the anvil (vanilla is 40)
 		#Range: > 0
