@@ -66,6 +66,9 @@
 			[general.entries.wood_type.vct]
 				crafting_table = true
 
+			[general.entries.wood_type.farmersdelight]
+				cabinet = true
+
 		[general.entries.leaves_type]
 
 			[general.entries.leaves_type.quark]

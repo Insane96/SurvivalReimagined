@@ -12,5 +12,6 @@
   "minecraft:feather_falling",
   "minecraft:looting",
   "minecraft:fortune",
-  "minecraft:luck_of_the_sea"
+  "minecraft:luck_of_the_sea",
+  "farmersdelight:backstabbing"
 ]
