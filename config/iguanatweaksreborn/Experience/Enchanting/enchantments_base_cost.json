@@ -72,6 +72,10 @@
     "value": 3.0
   },
   {
+    "id": "minecraft:protection",
+    "value": 5
+  },
+  {
     "id": "minecraft:efficiency",
     "value": 1.8
   },
