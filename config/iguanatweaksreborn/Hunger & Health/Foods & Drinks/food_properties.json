@@ -55,5 +55,13 @@
         "amplifier": 3
       }
     ]
+  },
+  {
+    "food": "berry_good:sweet_berry_meatballs",
+    "nutrition": 9
+  },
+  {
+    "food": "berry_good:glowgurt",
+    "nutrition": 8
   }
 ]
