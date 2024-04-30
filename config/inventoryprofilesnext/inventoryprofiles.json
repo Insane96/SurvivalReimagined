@@ -1,5 +1,6 @@
 {
     "ModSettings": {
+        "always_include_hotbar": true,
         "enable_auto_refill": {
             "value": false
         },

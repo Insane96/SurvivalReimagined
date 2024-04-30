@@ -27,7 +27,7 @@
 	"Enable Explosion Overhaul" = true
 	#Wear down grass when passing on it.
 	"Enable Desire Paths" = true
-	"Enable Berry Bushes" = true
+	"Enable Berries" = true
 
 	[World."Coal & Fire"]
 		#How much faster fire ticks and spreads.
@@ -164,11 +164,12 @@
 		#Transform list of blocks
 		"Transformation List" = ["minecraft:grass_block,minecraft:dirt", "minecraft:dirt,minecraft:coarse_dirt"]
 
-	[World."Berry Bushes"]
+	[World.Berries]
 		#Berry bushes no longer deal damage when walking in them with leggings and boots
 		"No damage if dressed" = true
-		#	Makes sweet berries not plantable, requiring seeds, and also enables a data pack (If berry_good mod is not present) that makes the following changes:
+		#	Makes sweet berries not plantable, requiring seeds, and also enables a data pack that makes the following changes:
 		#	* Makes sweet berry bushes drop seeds
+		#	If berry good is present, a different datapack is enabled that integrates with the mod
 		#
 		"Data pack" = true
 
@@ -531,7 +532,7 @@
 		#Integrates the mod with Farmer's delight. Some config options are changed along with a data pack installed. Check here for changes: https://github.com/Insane96/IguanaTweaksReborn/wiki/Farmer%27s-Delight-integration
 		"Farmer's Delight integration" = true
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
-		"Force Reload world Data Packs" = true
+		"Force Reload world Data Packs" = false
 
 [Mining]
 	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
@@ -624,6 +625,8 @@
 	"Enable Foods & Drinks" = true
 	#Make the player consume more hunger with different actions. If hunger is disabled, still works for Tiredness.
 	"Enable Exhaustion Increase" = true
+	#Remove hunger and get back to the Beta 1.7.3 days. You can also use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
+	"Enable No Hunger" = true
 
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Also adds Vigour effect. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	["Hunger & Health"."Hunger Health Regen"]
@@ -742,7 +745,7 @@
 		#When affected by the hunger effect ANY action will give you 100% more exhaustion per level.
 		"Effective Hunger" = true
 
-	#Remove hunger and get back to the Beta 1.7.3 days. Use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
+	#Remove hunger and get back to the Beta 1.7.3 days. You can also use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
 	["Hunger & Health"."No Hunger"]
 		#If true, Hunger effect is replaced by Weakness
 		"Convert Hunger to Weakness" = true
@@ -787,7 +790,7 @@
 	"Enable Plants Growth" = true
 	#Slower Hoes and more fragile. Hoes Properties are controlled via json in this feature's folder
 	"Enable Hoes" = true
-	#Bone meal is no longer so OP and also Rich Farmland
+	#Increase uses for bone meal and nerf its use on some plants
 	"Enable Bone meal" = true
 	#Crops tweaks and less yield from crops
 	"Enable Crops" = true
@@ -806,16 +809,8 @@
 		#Range: > 1
 		"Durability used on till" = 4
 
-	#Bone meal is no longer so OP and also Rich Farmland
+	#Increase uses for bone meal and nerf its use on some plants
 	[Farming."Bone meal"]
-		#Makes more Bone Meal required for Crops. Valid Values are
-		#NO: No Bone Meal changes
-		#SLIGHT: Makes Bone Meal grow 1-2 crop stages
-		#NERFED: Makes Bone Meal grow only 1 Stage
-		#Allowed Values: NO, SLIGHT, NERFED
-		"Nerfed Bone Meal" = "NERFED"
-		#Bone meal used on Farmland transforms it into Rich Farmland.
-		"Transform Farmland in Rich Farmland" = true
 		#How many extra random ticks does Rich Farmland give to the crop sitting on top?
 		#Range: > 1
 		"Rich Farmland Extra Ticks" = 3
@@ -826,6 +821,17 @@
 		"Bone meal dirt to grass" = true
 		"Bone meal canes and cactus" = true
 		"Compostable Rotten Flesh" = true
+		#Bone meal used on Farmland (or shift right clicked on crops) transforms it into Rich Farmland.
+		"Rich Farmland" = true
+		#Chance for a bone meal to fail to grow something. Empty this string to disable. Accepts a list of seasons and chances separated by a ;
+		"Season fail chance" = "AUTUMN,0.4;WINTER,0.8"
+
+		#How many stages will bone meal make stuff grow?
+		[Farming."Bone meal"."Stage growth"]
+			#Range: 0.0 ~ 25.0
+			Minimum = 1.0
+			#Range: 0.0 ~ 25.0
+			Maximum = 1.0
 
 	#Crops tweaks and less yield from crops
 	[Farming.Crops]

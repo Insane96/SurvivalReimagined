@@ -6,7 +6,7 @@
 		"Enable Alleviating" = true
 		#How much the experience value is multiplied by into health
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Healing factor" = 0.25
+		"Healing factor" = 0.2
 
 	[enchantments.launch]
 		#Weapon enchantment that launches enemies upwards rather than away

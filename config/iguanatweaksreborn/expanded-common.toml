@@ -173,12 +173,13 @@
 	[Mining."Multi Block Furnaces"]
 		#Enables a data pack that changes the vanilla Blast Furnace recipe to give the multi block blast furnace.
 		"Blast Furnace Data pack" = true
+		#If true, the Blasting category will be hidden in EMI.
+		"Hide Blasting category in EMI" = true
 
 [Items]
 	#Back to base
 	"Enable Recall Potion" = true
-	#Integration with Tool Belt
-	"Enable ToolBelt" = true
+	"Enable Tool Belt Integration" = true
 
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]
@@ -192,8 +193,7 @@
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
 
-	#Integration with Tool Belt
-	[Items.ToolBelt]
+	[Items."Tool Belt Integration"]
 		#Enables a data pack that changes the crafting of the Tool Belt to give more slots (2 -> 4). Also makes the cost to upgrade start from 4 instead of 2
 		"Bigger ToolBelt" = true
 

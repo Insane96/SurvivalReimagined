@@ -115,7 +115,7 @@
 	/**
 	 * Display cost per batch when hovering a recipe output
 	 */
-	show-cost-per-batch: true;
+	show-cost-per-batch: false;
 
 	/**
 	 * Whether recipes should have a button to set as default.
