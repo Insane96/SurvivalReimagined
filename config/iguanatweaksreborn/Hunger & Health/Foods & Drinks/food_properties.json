@@ -11,8 +11,7 @@
   },
   {
     "food": "minecraft:honey_bottle",
-    "nutrition": 3,
-    "eating_time": 40
+    "nutrition": 2
   },
   {
     "food": "minecraft:pumpkin_pie",

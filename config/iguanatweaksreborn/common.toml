@@ -472,6 +472,9 @@
 		#If exposed to the sun sponges may dry and if exposed to rain sponges might get wet
 		"Sponges dry in the sun and wet in rain" = true
 		"Increase drown damage the more drowning" = true
+		#The ticks of Water Breathing given by the Turtle Helmet. Vanilla is 200
+		#Range: > -2147483648
+		"Turtle Helmet water breathing time" = 900
 
 		#The amount of air ticks the player regains each tick when out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4. Min is the amount as soon as you exit water, Max is a few seconds out of water.
 		[Miscellaneous.Tweaks."Player air ticks refilled"]
@@ -771,9 +774,9 @@
 
 		["Hunger & Health"."No Hunger"."Food Heal"]
 			#The formula to calculate the health regenerated when eating a food. Leave empty to disable. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Over Time" = "(hunger^2.5)*0.05"
+			"Over Time" = "(hunger^2.16)*0.1"
 			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Default is 60% of the saturation modifier, down to a minimum of 0.15/s
-			"Over time Strength" = "MAX(0.15, 0.6 * saturation_modifier)"
+			"Over time Strength" = "MAX(0.15, 5 * saturation_modifier * (1 / hunger))"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
 			"Instant Heal" = "(hunger^1.3)*0.35"
 			#Foods below this saturation will instantly heal, foods above this threshold will have overtime heal.
@@ -802,6 +805,9 @@
 		"Huge mushrooms on Mycelium only" = true
 		#If true, a data pack is enabled that changes the growth of plants based off various factors, such as sunlight and biome
 		"Plant growth multipliers data pack" = true
+		#If != 1, cave vines will grow this slower above sea level or if they can see the sky light
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Cave vines underground" = 3.0
 
 	#Slower Hoes and more fragile. Hoes Properties are controlled via json in this feature's folder
 	[Farming.Hoes]
@@ -979,10 +985,12 @@
 		"Replace looting, fortune and LotS enchantments" = true
 		#The ore_drops formula is changed to 30%/60%/90%/... drop increase from 25%/75%/125%/...
 		"Nerf fortune" = true
-		#Mending only makes the tool repair by one durability instead of 2 per xp.
+		#Mending only makes the tool repair by one durability every 2 xp instead of 2 durability/1 xp.
 		"Mending Nerf" = true
 		#If true and shift it pressed, items will show enchantment info below the enchantments
 		"Enchantments info" = true
+		#Respiration decreases air consumption by 50% per level instead of 100%.
+		"Respiration Nerf" = true
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player Experience"]
