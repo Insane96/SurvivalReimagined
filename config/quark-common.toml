@@ -56,7 +56,7 @@
 	Crafter = true
 	"Dispensers Place Blocks" = true
 	"Ender Watcher" = true
-	"Feeding Trough" = false
+	"Feeding Trough" = true
 	Gravisand = true
 	"Iron Rod" = true
 	"Metal Buttons" = true
@@ -86,7 +86,7 @@
 		#Allowed values: [1,)
 		Cooldown = 30
 		#The maximum amount of animals allowed around the trough's range for an animal to enter love mode
-		"Max Animals" = 32
+		"Max Animals" = 16
 		#The chance (between 0 and 1) for an animal to enter love mode when eating from the trough
 		#Allowed values: (0,1]
 		"Love Chance" = 0.333333333
@@ -197,8 +197,8 @@
 
 	[building.leaf_carpet]
 		#This feature disables itself if any of the following mods are loaded:
-		# - immersive_weathering
 		# - woodworks
+		# - immersive_weathering
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -232,8 +232,8 @@
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
 		#This feature disables itself if any of the following mods are loaded:
-		# - environmental
 		# - goated
+		# - environmental
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -1553,7 +1553,7 @@
 	"Chest Searching" = false
 	"Elytra Indicator" = true
 	"Greener Grass" = true
-	"Improved Tooltips" = false
+	"Improved Tooltips" = true
 	"Long Range Pick Block" = true
 	"Microcrafting Helper" = true
 	"Soul Candles" = true
@@ -1601,25 +1601,25 @@
 			B = [0.0, 0.0, 1.22]
 
 	[client.improved_tooltips]
-		"Attribute Tooltips" = true
-		"Food Tooltips" = true
+		"Attribute Tooltips" = false
+		"Food Tooltips" = false
 		"Shulker Tooltips" = true
 		"Map Tooltips" = true
-		"Enchanting Tooltips" = true
-		"Fuel Time Tooltips" = true
+		"Enchanting Tooltips" = false
+		"Fuel Time Tooltips" = false
 		"Shulker Box Use Colors" = true
 		"Shulker Box Require Shift" = false
 		"Map Require Shift" = false
 		#The value of each shank of food.
 		#Tweak this when using mods like Hardcore Hunger which change that value.
 		"Food Divisor" = 2
-		"Show Saturation" = true
+		"Show Saturation" = false
 		"Food Compression Threshold" = 4
 		"Fuel Time Divisor" = 200
 		#Should item attributes be colored relative to your current equipped item?
 		#e.g. if wearing an Iron Helmet, the armor value in a Diamond Helmet will show as green, and vice versa would be red.
 		#If set to false, item attributes will show in white or red if they're negative values.
-		"Show Upgrade Status" = true
+		"Show Upgrade Status" = false
 		"Animate Up Down Arrows" = true
 		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang", "supplementaries:slingshot", "supplementaries:bubble_blower", "farmersdelight:diamond_knife"]
 		#A list of additional stacks to display on each enchantment
