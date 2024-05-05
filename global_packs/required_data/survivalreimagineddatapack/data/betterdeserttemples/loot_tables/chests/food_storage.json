@@ -130,21 +130,6 @@
                 "add": false
               }
             ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 5,
-            "name": "iguanatweaksexpanded:cheese_slice",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "type": "minecraft:uniform",
-                  "min": 3,
-                  "max": 6
-                }
-              }
-            ]
           }
         ]
       }

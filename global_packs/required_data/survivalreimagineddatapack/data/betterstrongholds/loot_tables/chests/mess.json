@@ -115,21 +115,6 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
-            "name": "iguanatweaksexpanded:cheese_slice",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "type": "minecraft:uniform",
-                  "min": 2,
-                  "max": 5
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
             "weight": 2,
             "name": "minecraft:golden_apple"
           }
