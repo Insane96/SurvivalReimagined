@@ -69,6 +69,10 @@
 			[general.entries.wood_type.farmersdelight]
 				cabinet = true
 
+			[general.entries.wood_type.boatload]
+				large_boat = true
+				furnace_boat = true
+
 		[general.entries.leaves_type]
 
 			[general.entries.leaves_type.quark]

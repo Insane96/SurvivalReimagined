@@ -469,7 +469,7 @@
 		"Player air ticks consumed" = 1
 		#If enabled, the Totem of Undying will give Resistance IV for 5 seconds
 		"Totem resistance" = true
-		#If exposed to the sun sponges may dry and if exposed to rain sponges might get wet
+		#If exposed to the sun sponges may dry and if exposed to rain sponges might get wet. Requires a Minecraft restart if disabled
 		"Sponges dry in the sun and wet in rain" = true
 		"Increase drown damage the more drowning" = true
 		#The ticks of Water Breathing given by the Turtle Helmet. Vanilla is 200
@@ -535,7 +535,7 @@
 		#Integrates the mod with Farmer's delight. Some config options are changed along with a data pack installed. Check here for changes: https://github.com/Insane96/IguanaTweaksReborn/wiki/Farmer%27s-Delight-integration
 		"Farmer's Delight integration" = true
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
-		"Force Reload world Data Packs" = false
+		"Force Reload world Data Packs" = true
 
 [Mining]
 	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
@@ -758,8 +758,8 @@
 		"Render armor at Hunger" = true
 		#Make cakes restore 40% missing health
 		"Buff cakes" = true
-		#(Client Only) Food shows how much food regenerates in its tooltip. Disabling this still shows the tooltip with advanced tooltip enabled (and reducedDebugInfo = false). Please note that if the formulas differ from client to server then this will display wrong values.
-		"Regen tooltip" = false
+		#(Client Only) If enabled, Foods will show "Snack" when the food instantly heals and "Meal" when the food heals over time. If advanced tooltips are enabled, the food will show how much it restores
+		"Food tooltip" = true
 
 		["Hunger & Health"."No Hunger"."Passive Health Regen"]
 			#If true, Passive Regeneration is enabled
