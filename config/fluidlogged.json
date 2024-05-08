@@ -52,6 +52,7 @@
       "#minecraft:anvil",
       "#quark:ladders",
       "#quark:posts",
+      "#quark:iron_rod",
       "#forge:glass"
     ]
   },
@@ -125,7 +126,10 @@
       "#minecraft:anvil",
       "#forge:chests",
       "#quark:ladders",
-      "#quark:posts"
+      "#quark:posts",
+      "#quark:iron_rod",
+      "#quark:hollow_logs"
+
     ]
   },
   "shape_independent_fluid_permeable_blocks": {

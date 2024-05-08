@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","survivalreimaginedresourcepack","file/VanillaTweaks_CleanerBorder.zip","file/VanillaTweaks_r350280.zip","file/FreshAnimations_v1.9.zip"]
+resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","survivalreimaginedresourcepack","file/VanillaTweaks_CleanerBorder.zip","file/FreshAnimations_v1.9.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us

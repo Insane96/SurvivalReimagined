@@ -536,6 +536,8 @@
 		"Farmer's Delight integration" = true
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
 		"Force Reload world Data Packs" = false
+		#Integrates the mod with Supplementaries. Check here for changes: https://github.com/Insane96/IguanaTweaksReborn/wiki/Farmer%27s-Delight-integration
+		"Supplementaries integration" = true
 
 [Mining]
 	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
@@ -830,7 +832,7 @@
 		#Bone meal used on Farmland (or shift right clicked on crops) transforms it into Rich Farmland.
 		"Rich Farmland" = true
 		#Chance for a bone meal to fail to grow something. Empty this string to disable. Accepts a list of seasons and chances separated by a ;
-		"Season fail chance" = "AUTUMN,0.4;WINTER,0.8"
+		"Season fail chance" = "WINTER,0.6"
 
 		#How many stages will bone meal make stuff grow?
 		[Farming."Bone meal"."Stage growth"]
