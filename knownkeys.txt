@@ -115,3 +115,5 @@ ping-wheel.key.ping-location
 ping-wheel.key.open-settings
 ping-wheel.key.name-labels
 key.firstperson.toggle
+placebo.toggleTrails
+placebo.toggleWings

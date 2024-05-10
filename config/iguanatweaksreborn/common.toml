@@ -1089,7 +1089,7 @@
 		"Un-damaged time to regen cap" = 60
 		#If true, a sound is played when the absorption is damaged.
 		"Sound on absorption hurt" = true
-		#If true, regenerating absorption hearts are rendered on the right instead on top of hearts.
+		#(Client only) If true, regenerating absorption hearts are rendered on the right instead on top of hearts.
 		"Render on the right" = false
 
 	#Player will deal reduced knockback if attacking with a non-weapon or spamming.
