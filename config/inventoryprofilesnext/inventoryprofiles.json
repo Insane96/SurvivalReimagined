@@ -1,13 +1,14 @@
 {
     "ModSettings": {
         "always_include_hotbar": true,
-        "enable_auto_refill": {
+        "enable_profiles": {
             "value": false
         },
         "villager_trading_enable": {
             "value": false
         },
         "enable_updates_check": false,
+        "move_all_at_cursor": false,
         "first_run": false
     },
     "GuiSettings": {
@@ -31,6 +32,33 @@
             "value": false
         }
     },
+    "AutoRefillSettings": {
+        "auto_refill_prefer_smaller_stacks": true,
+        "refill_armor": {
+            "value": false
+        },
+        "refill_before_tool_break": {
+            "value": false
+        },
+        "visual_durability_notification": {
+            "value": false
+        },
+        "audio_durability_notification": {
+            "value": false
+        },
+        "visual_replace_success_notification": {
+            "value": false
+        },
+        "audio_replace_success_notification": {
+            "value": false
+        },
+        "visual_replace_failed_notification": {
+            "value": false
+        },
+        "audio_replace_failed_notification": {
+            "value": false
+        }
+    },
     "Hotkeys": {
         "sort_inventory": {
             "main": {
@@ -39,7 +67,7 @@
         },
         "move_all_items": {
             "main": {
-                "keys": ""
+                "keys": "T"
             }
         },
         "throw_all_items": {
