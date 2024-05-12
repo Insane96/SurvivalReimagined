@@ -93,7 +93,7 @@
 		#Range: > 1
 		"Min ticks to decay" = 50
 		#Range: > 1
-		"Max ticks to decay" = 400
+		"Max ticks to decay" = 300
 
 	[World.Nether]
 		#Makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and removes the 8 block ratio between nether and end.
