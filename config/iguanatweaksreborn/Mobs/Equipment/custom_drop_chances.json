@@ -34,5 +34,9 @@
   {
     "entity": "minecraft:pillager",
     "slot": "mainhand"
+  },
+  {
+    "entity": "progressivebosses:wither_minion",
+    "slot": "mainhand"
   }
 ]

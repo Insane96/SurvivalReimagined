@@ -28,8 +28,12 @@
     "value": 5
   },
   {
-    "id": "iguanatweaksexpanded:ma_jump",
-    "value": 3.45
+    "id": "iguanatweaksexpanded:double_jump",
+    "value": 5
+  },
+  {
+    "id": "iguanatweaksexpanded:gravity_defying",
+    "value": 5
   },
   {
     "id": "iguanatweaksexpanded:magnetic",

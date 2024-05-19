@@ -374,14 +374,14 @@
 		"Monsters Only" = true
 
 [Mobs]
-	#Changes to mob spawn
+	#Add a brand new Echo Torch and some changes to mob spawn
 	"Enable Spawning" = true
 	#Changes to mobs equipment
 	"Enable Equipment" = true
 	#Small changes to villagers to make them less OP
 	"Enable Villagers" = true
 
-	#Changes to mob spawn
+	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
 		#Disables Zombie Villagers
 		"No Zombie Villagers" = true
@@ -597,6 +597,8 @@
 	"Enable Stack Sizes" = true
 	#Retrieve name tags from name tagged entities.
 	"Enable Name tags" = true
+	#Wooden items have a lower chance to break in sunlight.
+	"Enable Ecologic Wood" = true
 
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
 	[Items."Item Stats"]
@@ -1012,6 +1014,7 @@
 	"Enable Swing Through Grass" = true
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	"Enable Unfair one-shots" = true
+	#Rework critical hits to be a chance to happen instead of damage on jump
 	"Enable Critical Hits" = true
 	#Various changes from weapons damage to armor reduction
 	"Enable Misc Stats" = true
@@ -1029,10 +1032,20 @@
 	#Adds a new attribute that deals bonus damage that bypasses armor
 	"Enable Piercing damage" = true
 
+	#Rework critical hits to be a chance to happen instead of damage on jump
 	[Combat."Critical Hits"]
+		#If set >= 0 critical hits are no longer dealt, have a random chance to happen.
+		#Range: -1.0 ~ 1.0
+		Chance = 0.05
+		#Chance increase per level of Critical enchantment.
+		#Range: -1.0 ~ 1.0
+		"Enchantment Chance" = 0.1
+		#Critical multiplier increase per level of Critical enchantment. This only applies if chance based crit is enabled, otherwise critical doubles the crit multiplier.
+		#Range: -1.0 ~ 1.0
+		"Enchantment Bonus" = 0.3
 		#How much damage a critical hit does. Vanilla is 1.5
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Critical hit damage multiplier" = 1.2
+		"Damage multiplier" = 1.5
 
 	#Various changes from weapons damage to armor reduction
 	[Combat."Misc Stats"]
