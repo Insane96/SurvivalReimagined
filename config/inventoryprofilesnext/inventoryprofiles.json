@@ -40,6 +40,7 @@
         "refill_before_tool_break": {
             "value": false
         },
+        "autorefill_blacklist": "minecraft:water_bucket",
         "visual_durability_notification": {
             "value": false
         },
