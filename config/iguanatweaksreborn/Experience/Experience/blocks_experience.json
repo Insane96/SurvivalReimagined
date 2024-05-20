@@ -16,12 +16,12 @@
   },
   {
     "id": "minecraft:sculk_catalyst",
-    "min": 40.0,
-    "max": 40.0
+    "min": 35.0,
+    "max": 35.0
   },
   {
     "id": "minecraft:spawner",
-    "min": 40.0,
-    "max": 40.0
+    "min": 70.0,
+    "max": 70.0
   }
 ]

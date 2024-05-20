@@ -95,7 +95,7 @@
 
 	[tweaks.infinity]
 		#If Infinity requires an arrow in the player's inventory in order to shoot
-		"Infinity requires arrows" = false
+		"Infinity requires arrows" = true
 
 	[tweaks.protection]
 		#Remove the base Protection enchantment, requiring players to choose between the other types
