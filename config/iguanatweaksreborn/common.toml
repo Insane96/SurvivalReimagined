@@ -338,10 +338,10 @@
 		[Movement.Stamina.Slowdown]
 			#Below this percentage stamina you'll get slowed down.
 			#Range: 0.0 ~ 1.0
-			Threshold = 0.2
+			Threshold = 0
 			#Below this stamina you'll get slowed down.
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Flat Threshold" = 20.0
+			"Flat Threshold" = 0
 			#Range: -1.0 ~ 1.7976931348623157E308
 			Amount = -0.2
 			"Only when locked" = true

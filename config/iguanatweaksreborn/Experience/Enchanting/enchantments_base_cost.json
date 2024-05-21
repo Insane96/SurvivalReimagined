@@ -88,6 +88,10 @@
     "value": 1.8
   },
   {
+    "id": "minecraft:unbreaking",
+    "value": 1.8
+  },
+  {
     "id": "minecraft:depth_strider",
     "value": 2.4
   },
