@@ -52,8 +52,7 @@
       "#minecraft:anvil",
       "#quark:ladders",
       "#quark:posts",
-      "#quark:iron_rod",
-      "#forge:glass"
+      "#quark:iron_rod"
     ]
   },
   "fluid_permeable_blocks": {
