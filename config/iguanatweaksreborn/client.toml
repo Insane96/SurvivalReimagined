@@ -43,6 +43,6 @@
 	[Client.Light]
 		#If true night vision will no longer flash 10 seconds before expiring, instead will slowly fade out 2 seconds before expiring.
 		"No Night Vision Flashing" = true
-		#If enabled, the brightness will be set to 0 regardless of the current brightness in video settings.
+		#If enabled, the brightness will be set to 15% regardless of the current brightness in video settings.
 		"Force darkness" = true
 

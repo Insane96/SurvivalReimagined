@@ -948,6 +948,8 @@
 		#Repairing items in an anvil with another item will repair it less if the item is enchanted (this value is the percentage applied to the right item durability). This also prevents the 'Merging Repair bonus'
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Reduced repair with other item if enchanted" = 0.5
+		#If true, anvils don't wear down when only used for renaming
+		"No break on renaming" = true
 
 		[Experience.Anvils."Enchantments cost by rarity"]
 			#Vanilla: 1
@@ -967,7 +969,7 @@
 	[Experience.Enchantments]
 		#Infinity can go up to level 4. Each level makes an arrow have only 1 in level+1 chance to consume. E.g. with Infinity 4 there's 1 in 5 chance to consume the arrow, and 4 in 5 to not consume it.
 		"Infinity overhaul" = true
-		#Unbreaking "bonus durability" is changed from 100%/200%/300%/400% to 35%/105%/175%/245% (at levels I/II/III/IV)
+		#Unbreaking max level is now 5 but "bonus durability" is reduced
 		"Less unbreakable unbreaking" = true
 		#Thorns is no longer compatible with other protections, but deals damage every time (higher levels deal more damage) and no longer damages items.
 		"Small Thorns Overhaul" = true
@@ -978,7 +980,7 @@
 		"Power Enchantment Damage" = 0.2
 		"Prevent farmland trampling with Feather Falling" = true
 		#If true, vanilla protection enchantments are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
-		#Protection has only one level, protects 6% per level and is treasure. Other protections work the same except for projectile that reduces the sight range of mobs by 2% per level. Feather falling protects for 16% per level instead of 12%.
+		#Protection has only one level, protects 6% per level and is treasure. Other protections work the same except for projectile that reduces the sight range of mobs by 2% per level. Feather falling protects for 16% per level instead of 12% + 1 per level.
 		"Replace protection enchantments" = true
 		#If true, vanilla damaging enchantments (such as smite or sharpness) are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		#Changes to damaging enchantments:
@@ -1073,7 +1075,7 @@
 		"Better strength and weakness" = true
 		#If true, arrows will deal float damage instead of being rounded up.
 		"Decimal arrow's damage" = true
-		#Multiplies arrow's damage if shot from bow by this value.
+		#Multiplies arrow's damage if shot from bow by this value. (this doesn't affect mobs arrows)
 		#Range: 0.0 ~ 10.0
 		"Arrows Damage Multiplier" = 0.5
 		#Speed at which arrows are shot from crossbows. Vanilla is 3.15
