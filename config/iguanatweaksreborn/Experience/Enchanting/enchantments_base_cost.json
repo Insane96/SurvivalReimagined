@@ -81,7 +81,7 @@
   },
   {
     "id": "minecraft:protection",
-    "value": 5
+    "value": 4
   },
   {
     "id": "minecraft:efficiency",
@@ -113,6 +113,10 @@
   },
   {
     "id": "shieldsplus:shield_bash",
+    "value": 4.0
+  },
+  {
+    "id": "shieldsplus:perfect_parry",
     "value": 4.0
   },
   {
