@@ -150,6 +150,8 @@
 [Mining]
 	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal
 	"Enable Soul Steel" = true
+	#Add repair kits, making you able to repair items in the crafting grid
+	"Enable Repair Kits" = true
 
 	[Mining.Forging]
 		#Enables the following changes to vanilla data pack:
@@ -173,6 +175,12 @@
 		"Blast Furnace Data pack" = true
 		#If true, the Blasting category will be hidden in EMI.
 		"Hide Blasting category in EMI" = true
+
+	#Add repair kits, making you able to repair items in the crafting grid
+	[Mining."Repair Kits"]
+		#How many ingots does a repair kit repair
+		#Range: > 1
+		"Repair Kit Ingot Ratio" = 2
 
 [Items]
 	#Back to base
