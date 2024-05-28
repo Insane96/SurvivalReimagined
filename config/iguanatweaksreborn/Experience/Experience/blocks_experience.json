@@ -1,16 +1,16 @@
 [
   {
-    "id": "#iguanatweaksexpanded:copper_ores",
+    "id": "#iguanatweaksreborn:copper_ores",
     "min": 0.0,
     "max": 2.0
   },
   {
-    "id": "#iguanatweaksexpanded:iron_ores",
+    "id": "#iguanatweaksreborn:iron_ores",
     "min": 1.0,
     "max": 2.0
   },
   {
-    "id": "#iguanatweaksexpanded:gold_ores",
+    "id": "#iguanatweaksreborn:gold_ores",
     "min": 2.0,
     "max": 3.0
   },
