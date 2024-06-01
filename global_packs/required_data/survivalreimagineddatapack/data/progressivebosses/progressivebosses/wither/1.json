@@ -3,9 +3,12 @@
     "attack": {
         "skull_damage": 8.0,
         "skull_speed_multiplier": 2,
-        "dangerous_skull_chance": 0.4,
+        "dangerous_skull_chance": {
+            "above_half_health": 0.4,
+            "below_half_health": 0.3
+        },
         "attack_speed_near": 50,
-        "attack_speed_far": 50,
+        "attack_speed_far": 40,
         "side_heads_attack_speed_multiplier": 1.2,
         "effect_amplifier": 1,
         "effect_duration": {
@@ -13,26 +16,26 @@
             "normal": 4,
             "hard": 8
         },
-        "attack_to_heal_threshold": 0,
+        "attack_to_heal_threshold": 0.30,
         "heal_on_skull_kill": 7,
         "charge": {
             "max_chance": {
-                "above_half_health": 0.20,
+                "above_half_health": 0.075,
                 "below_half_health": 0.1
             },
-            "damage": 16.0,
-            "time": 30
+            "damage": 15.0,
+            "time": 40
         }
     },
     "health": {
-        "health": 300.0,
-        "regeneration": 1.25,
+        "health": 400.0,
+        "regeneration": 1,
         "regen_when_hit": 0.5,
         "regen_when_hit_duration": 40
     },
     "resistances": {
         "armor": {
-            "above_half_health": 4.0,
+            "above_half_health": 8.0,
             "below_half_health": 8.0
         },
         "toughness": {
