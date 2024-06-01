@@ -229,7 +229,7 @@
 		#Adds an overlay to quivers in gui displaying currently selected arrow
 		overlay = true
 		#Allows using your mouse to select an arrow in the quiver GUI
-		mouse_movement_in_gui = true
+		mouse_movement_in_gui = false
 		#Quiver GUI X offset from default position
 		#Range: -1000 ~ 1000
 		gui_x_offset = 0

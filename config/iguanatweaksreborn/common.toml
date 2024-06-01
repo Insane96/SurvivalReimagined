@@ -783,7 +783,7 @@
 
 		["Hunger & Health"."No Hunger"."Food Heal"]
 			#The formula to calculate the health regenerated when eating a food. Leave empty to disable. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Over Time" = "(hunger^2.16)*0.1"
+			"Over Time" = "(hunger^1.37)*0.5"
 			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Default is 60% of the saturation modifier, down to a minimum of 0.15/s
 			"Over time Strength" = "MAX(0.15, 5 * saturation_modifier * (1 / hunger))"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
@@ -1086,6 +1086,8 @@
 		"Crossbow velocity" = 3.5
 		#Changes Healing potions to work like pre 1.6.1 by healing 3 health per level
 		"Better healing potion" = true
+		#Makes swords do sweep attack even if not on ground and if did crit
+		"Better sweeping" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -1113,6 +1115,9 @@
 		"Sound on absorption hurt" = true
 		#(Client only) If true, regenerating absorption hearts are rendered on the right instead on top of hearts.
 		"Render on the right" = false
+		#How fast will absorption hearts decay when higher than the current maximum.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Decay Speed" = 0.1
 
 	#Player will deal reduced knockback if attacking with a non-weapon or spamming.
 	[Combat.Knockback]

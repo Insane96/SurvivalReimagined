@@ -52,6 +52,10 @@
     "value": 3.45
   },
   {
+    "id": "iguanatweaksreborn:protection",
+    "value": 4
+  },
+  {
     "id": "minecraft:multishot",
     "value": 5.0
   },
@@ -130,5 +134,9 @@
   {
     "id": "allurement:launch",
     "value": 3.2
+  },
+  {
+    "id": "passablefoliage:leaf_walker",
+    "value": 3
   }
 ]
