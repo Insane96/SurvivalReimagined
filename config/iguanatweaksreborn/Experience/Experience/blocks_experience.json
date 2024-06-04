@@ -1,16 +1,16 @@
 [
   {
-    "id": "#iguanatweaksreborn:copper_ores",
+    "id": "#minecraft:copper_ores",
     "min": 0.0,
     "max": 2.0
   },
   {
-    "id": "#iguanatweaksreborn:iron_ores",
+    "id": "#minecraft:iron_ores",
     "min": 1.0,
     "max": 2.0
   },
   {
-    "id": "#iguanatweaksreborn:gold_ores",
+    "id": "#minecraft:gold_ores",
     "min": 2.0,
     "max": 3.0
   },

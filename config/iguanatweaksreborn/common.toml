@@ -272,8 +272,6 @@
 	"Enable Tagging" = true
 	#Prevents the player from placing blocks below him when in mid air.
 	"Enable No Pillaring" = true
-	#Stamina to let the player run and do stuff.
-	"Enable Stamina" = true
 	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
 	"Enable Terrain Slowdown" = true
 	#Makes flying with elytra outside the end dimension have stronger gravity.
@@ -310,41 +308,6 @@
 		#Slowness is applied for damage_taken * this_value ticks.
 		#Range: 0 ~ 100
 		"Duration multiplier" = 7
-
-	#Stamina to let the player run and do stuff.
-	[Movement.Stamina]
-		#How much stamina the player has per half heart. Each 1 stamina is 1 tick of running
-		#Range: > 0
-		"Stamina per half heart" = 5
-		#How much stamina the player consumes on each jump
-		#Range: > 0
-		"Stamina consumed on jump" = 5
-		#How much stamina the player consumes each tick when swimming
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Stamina consumed on swimming" = 0.5
-		#At which health percentage will stamina be unlocked
-		#Range: 0.0 ~ 1.0
-		"Unlock Stamina at health ratio" = 0.5
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Stamina regen per tick" = 0.6
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Stamina regen per tick if locked" = 0.35
-		#Disable sprinting (and swimming) altogether
-		"Disable Sprinting" = false
-		#How much stamina the player consumes each tick when sprinting
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Stamina consumed on sprint" = 1.0
-
-		[Movement.Stamina.Slowdown]
-			#Below this percentage stamina you'll get slowed down.
-			#Range: 0.0 ~ 1.0
-			Threshold = 0
-			#Below this stamina you'll get slowed down.
-			#Range: 0.0 ~ 1.7976931348623157E308
-			"Flat Threshold" = 0
-			#Range: -1.0 ~ 1.7976931348623157E308
-			Amount = -0.2
-			"Only when locked" = true
 
 	#Makes flying with elytra outside the end dimension have stronger gravity.
 	[Movement."Elytra Nerf"]
@@ -400,6 +363,9 @@
 		#Max durability of items dropped by mobs. This also fixes https://bugs.mojang.com/browse/MC-136374. Setting to 0 will disable this feature.
 		#Range: 0.0 ~ 1.0
 		"Max durability" = 0.6
+		#Set the drop chance for mobs equipment when spawned from spawners.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Drop chance from Spawners" = 0.2
 
 	#Small changes to villagers to make them less OP
 	[Mobs.Villagers]
@@ -784,7 +750,7 @@
 		["Hunger & Health"."No Hunger"."Food Heal"]
 			#The formula to calculate the health regenerated when eating a food. Leave empty to disable. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
 			"Over Time" = "(hunger^1.37)*0.5"
-			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Default is 60% of the saturation modifier, down to a minimum of 0.15/s
+			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html
 			"Over time Strength" = "MAX(0.15, 5 * saturation_modifier * (1 / hunger))"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
 			"Instant Heal" = "(hunger^1.3)*0.35"
