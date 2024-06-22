@@ -25,8 +25,6 @@
 	"Enable Wandering Trades" = true
 	#Various changes to explosions, like higher knockback and getting hit when behind blown up blocks.
 	"Enable Explosion Overhaul" = true
-	#Wear down grass when passing on it.
-	"Enable Desire Paths" = true
 	"Enable Berries" = true
 
 	[World."Coal & Fire"]
@@ -151,18 +149,6 @@
 		#Disabled if set to -1.
 		#Range: > -2147483648
 		"Limit explosion size" = 12
-
-	#Wear down grass when passing on it.
-	[World."Desire Paths"]
-		#Chance for blocks to transform each tick
-		#Range: 0.0 ~ 1.0
-		"Chance to transform" = 0.008
-		#If true, speed will increase/decrease based off speed. The 'Chance to transform' will be based on walking.
-		"Speed based chance" = true
-		#Tall grass is broken when grass is transformed
-		"Break Tall Grass" = true
-		#Transform list of blocks
-		"Transformation List" = ["minecraft:grass_block,minecraft:dirt", "minecraft:dirt,minecraft:coarse_dirt"]
 
 	[World.Berries]
 		#Berry bushes no longer deal damage when walking in them with leggings and boots
@@ -597,7 +583,7 @@
 		"Block Stack Multiplier" = 1.0
 
 ["Hunger & Health"]
-	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Also adds Vigour effect. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
+	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	"Enable Hunger Health Regen" = true
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	"Enable Foods & Drinks" = true
@@ -606,7 +592,7 @@
 	#Remove hunger and get back to the Beta 1.7.3 days. You can also use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
 	"Enable No Hunger" = false
 
-	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Also adds Vigour effect. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
+	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	["Hunger & Health"."Hunger Health Regen"]
 		#Sets how many ticks between the health regeneration happens (vanilla is 80).
 		#Range: > 0
@@ -638,6 +624,8 @@
 		#When eating you'll get healed by this percentage of (hunger + saturation) restored.
 		#Range: 0.0 ~ 1.0
 		"Food Heal Multiplier" = 0.0
+		#If enabled, peaceful difficulty no longer heals and fulfills the player
+		"Peaceful Hunger & Health" = true
 
 		["Hunger & Health"."Hunger Health Regen".Respawn]
 			#If hunger or saturation were above the values on respawn, they will not be reduced.
@@ -669,21 +657,6 @@
 				Normal = 14.0
 				#Range: 0.0 ~ 20.0
 				Hard = 8.0
-
-		["Hunger & Health"."Hunger Health Regen".Vigour]
-			#Set to true to enable Vigour, a new effect that lowers hunger consumption and increases health regen speed. Applied when good foods are eaten. If stamina is enabled, decreases its consumption
-			Enable = false
-			#Multiplies the base duration of Vigour by this value. Base duration is 1 second per food saturation.
-			#Range: 0.0 ~ 128.0
-			"Duration Multiplier" = 20.0
-			#How much does health regen Vigour increases.
-			#Range: 0.0 ~ 1.0
-			Effectiveness = 0.2
-			#Minimum saturation given by the food to apply Vigour.
-			#Range: 0.0 ~ 20.0
-			"Minimum Saturation" = 7.0
-			#If true, eating when already under Vigour increases the duration.
-			Stacks = true
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	["Hunger & Health"."Foods & Drinks"]
