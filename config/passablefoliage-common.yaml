@@ -11,5 +11,5 @@ playerOnly: false
 alwaysNotViewBlocking: true
 alwaysLeafWalking: false
 sounds:
-  volume: 1.0
+  volume: 0.4
   playerOnly: false

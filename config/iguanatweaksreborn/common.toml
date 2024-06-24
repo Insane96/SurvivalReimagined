@@ -161,15 +161,15 @@
 
 ["Sleep & Respawn"]
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
-	"Enable Tiredness" = true
+	"Enable Tiredness" = false
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
-	"Enable Respawn" = true
+	"Enable Respawn" = false
 	#Changes to death
-	"Enable Death" = true
+	"Enable Death" = false
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
 	"Enable Sleeping Effects" = false
 	#Changes to sleeping and spawn points
-	"Enable Sleeping and Spawn Point" = false
+	"Enable Sleeping and Spawn Point" = true
 
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	["Sleep & Respawn".Tiredness]
@@ -245,7 +245,7 @@
 	#Changes to sleeping and spawn points
 	["Sleep & Respawn"."Sleeping and Spawn Point"]
 		#If set to true the player will not be able to sleep.
-		"Disable Sleeping" = false
+		"Disable Sleeping" = true
 		#If set to true the player spawn point cannot be changed with beds.
 		"Disable Spawn Point" = false
 		#If set to true the player will be able to sleep during day time. On wake up it will be night time. Note that with 'Tiredness' feature enabled you are still not able to sleep during day unless you're tired enough.
@@ -555,7 +555,7 @@
 	#Retrieve name tags from name tagged entities.
 	"Enable Name tags" = true
 	#Wooden items have a lower chance to break in sunlight.
-	"Enable Ecologic Wood" = true
+	"Enable Ecologic Wood" = false
 
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
 	[Items."Item Stats"]
@@ -589,8 +589,8 @@
 	"Enable Foods & Drinks" = true
 	#Make the player consume more hunger with different actions. If hunger is disabled, still works for Tiredness.
 	"Enable Exhaustion Increase" = true
-	#Remove hunger and get back to the Beta 1.7.3 days. You can also use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
-	"Enable No Hunger" = false
+	#Remove hunger and get back to the Beta 1.7.3 days
+	"Enable No Hunger" = true
 
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	["Hunger & Health"."Hunger Health Regen"]
@@ -696,7 +696,7 @@
 		#When affected by the hunger effect ANY action will give you 100% more exhaustion per level.
 		"Effective Hunger" = true
 
-	#Remove hunger and get back to the Beta 1.7.3 days. You can also use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
+	#Remove hunger and get back to the Beta 1.7.3 days
 	["Hunger & Health"."No Hunger"]
 		#If true, Hunger effect is replaced by Weakness
 		"Convert Hunger to Weakness" = true
@@ -819,7 +819,7 @@
 		"Data Pack" = true
 
 [Experience]
-	#Various changes to experience
+	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to disable experience drops and experience bar.
 	"Enable Experience" = true
 	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.
 	"Enable Anvils" = true
@@ -828,11 +828,11 @@
 	#Changes the experience lost on death and xp per level required.
 	"Enable Player Experience" = true
 
-	#Various changes to experience
+	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to disable experience drops and experience bar.
 	[Experience.Experience]
 		#Experience dropped will be multiplied by this value.
-		#Can be set to 0 to disable experience drop from any source.
-		#Range: 0.0 ~ 128.0
+		#Use the iguanatweaks:disableExperience game rule to disable experience drops.
+		#Range: 1.0 ~ 128.0
 		"Global Experience Multiplier" = 1.0
 		#Experience dropped by blocks (Ores and Spawners) will be multiplied by this multiplier. Experience dropped by blocks are still affected by 'Global Experience Multiplier'
 		#Can be set to 0 to make blocks drop no experience
@@ -982,7 +982,7 @@
 	[Combat."Critical Hits"]
 		#If set >= 0 critical hits are no longer dealt, have a random chance to happen.
 		#Range: -1.0 ~ 1.0
-		Chance = 0.05
+		Chance = 0.0
 		#Chance increase per level of Critical enchantment.
 		#Range: -1.0 ~ 1.0
 		"Enchantment Chance" = 0.1

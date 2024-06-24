@@ -1,0 +1,14 @@
+{
+    "block": "minecraft:sugar_cane",
+    "modifiers": [
+        {
+            "id": "iguanatweaksreborn:season",
+            "seasons": [
+                "WINTER",
+                "SPRING",
+                "AUTUMN"
+            ],
+            "multiplier": 0
+        }
+    ]
+}

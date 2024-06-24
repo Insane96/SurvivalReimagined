@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "description": "Changes shields to require the Forge and rebalances them",
+        "pack_format": 15
+    }
+}

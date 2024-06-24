@@ -1,0 +1,14 @@
+{
+    "block": "minecraft:pumpkin_stem",
+    "modifiers": [
+        {
+            "id": "iguanatweaksreborn:season",
+            "seasons": [
+                "WINTER",
+                "SUMMER",
+                "SPRING"
+            ],
+            "multiplier": 0
+        }
+    ]
+}
