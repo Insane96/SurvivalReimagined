@@ -14,7 +14,7 @@
 	"Enable Coal & Fire" = true
 	#Spawners are now a challenge. Monsters spawning from spawners ignore light.
 	"Enable Spawners" = true
-	#Makes leaves decay faster and if Passable Foliage is installed, changes some values
+	#Makes leaves decay faster
 	"Enable Leaves" = true
 	"Enable Nether" = true
 	"Enable Fluids" = true
@@ -86,7 +86,7 @@
 			#Range: 1.0 ~ 1.7976931348623157E308
 			Maximum = 2000.0
 
-	#Makes leaves decay faster and if Passable Foliage is installed, changes some values
+	#Makes leaves decay faster
 	[World.Leaves]
 		#Range: > 1
 		"Min ticks to decay" = 50

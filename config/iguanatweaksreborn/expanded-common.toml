@@ -171,7 +171,7 @@
 
 	#Add new multi block furnaces
 	[Mining."Multi Block Furnaces"]
-		#Enables a data pack that changes the vanilla Blast Furnace recipe to give the multi block blast furnace.
+		#Enables a data pack that changes the vanilla Blast Furnace recipe to give the multi block blast furnace. Also prevents using the vanilla Blast Furnace (break it to get ITR one)
 		"Blast Furnace Data pack" = true
 		#If true, the Blasting category will be hidden in EMI.
 		"Hide Blasting category in EMI" = true
