@@ -13,6 +13,9 @@
 		"survivalreimagined:structory/ruin/taiga/loot",
 		"survivalreimagined:structory/ruin/taiga/illager_high",
 		"survivalreimagined:structory/ruin/taiga/illager_low",
-		"survivalreimagined:structory/ruin/taiga/illager_treasure"
+		"survivalreimagined:structory/ruin/taiga/illager_treasure",
+
+		"survivalreimagined:remove_enchanted_books",
+		"survivalreimagined:remove_experience_bottles"
 	]
 }

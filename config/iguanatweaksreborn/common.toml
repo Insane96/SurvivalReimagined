@@ -562,7 +562,7 @@
 		#If set to true items in the 'no_damage_items' and 'no_efficiency_items' will get a tooltip. Items with durability get a durability tooltip. Tools get an efficiency tooltip.
 		"More Items Tooltips" = true
 		#If set to true items will no longer break, will be left with 1 durability. Items in the iguanatweaksreborn:not_unbreakable tag will break instead.
-		"Unbreakable Items" = true
+		"Unbreakable Items" = false
 		#If set to true items will no longer break if enchanted. Ignores the iguanatweaksreborn:not_unbreakable item tag.
 		"Unbreakable Enchanted Items" = true
 

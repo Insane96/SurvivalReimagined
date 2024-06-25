@@ -1,0 +1,7 @@
+{
+    "type": "iguanatweaksreborn:drop_multiplier",
+    "conditions": [
+    ],
+    "item": "minecraft:enchanted_book",
+    "multiplier": 0.0
+  }
