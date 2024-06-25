@@ -255,7 +255,7 @@
 	#Armor slows down the player. Material Weights and Enchantment Weights are controlled via json in this feature's folder
 	"Enable Weighted Equipment" = false
 	#Player's slowed down for a brief moment when hit.
-	"Enable Tagging" = true
+	"Enable Tagging" = false
 	#Prevents the player from placing blocks below him when in mid air.
 	"Enable No Pillaring" = true
 	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
@@ -1006,7 +1006,7 @@
 		#Vanilla tooltips on gear don't sum up multiple modifiers (e.g. a sword would have "4 Attack Damage" and "-2 Attack Damage" instead of "2 Attack Damage". This might break other mods messing with these Tooltips (e.g. Quark's improved tooltips)
 		"Fix tooltips" = true
 		#Enables a data pack that rebalances all the items, from armor to efficiency to weapons. Also changes some item stacks.
-		"Item Stats Data Pack" = true
+		"Item Stats Data Pack" = false
 		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%.
 		"Player no damage when spamming" = true
 		#Changes Mining fatigue and haste to no longer affects attack speed. (Requires a Minecraft restart)
