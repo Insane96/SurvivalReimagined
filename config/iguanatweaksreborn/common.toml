@@ -476,7 +476,7 @@
 		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc). Also makes Corail's Woodcutter no longer able to make buttons and pressure plates.
 		"Actual Redstone Components" = true
 		#If true a data pack will be enabled that makes furnaces require copper. Copper ingots can be obtained from raw copper on campfires.
-		"Copper Furnace" = true
+		"Copper Furnace" = false
 		#If true a data pack will be enabled that disables villages and pillagers outpost generation.
 		"Disable Long Noses Structures" = true
 		#If true a data pack will be enabled that changes fishing Loot.
