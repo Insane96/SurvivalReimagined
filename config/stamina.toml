@@ -33,8 +33,10 @@
 	"Stamina regen per tick" = 0.6
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Stamina regen per tick if locked" = 0.35
-	#Disable sprinting (and swimming) altogether
+	#Disable sprinting altogether
 	"Disable Sprinting" = false
+	#Disable swimming altogether
+	"Disable Swimming" = false
 
 	[Stamina.Slowdown]
 		#Below this percentage stamina you'll get slowed down.
