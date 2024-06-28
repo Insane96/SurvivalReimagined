@@ -1,5 +1,12 @@
 {
     "target": "#iguanatweaksexpanded:overworld_skeletons",
+    "events": {
+        "on_attack": [{
+            "target": "this",
+            "damage_modifier": 4,
+            "damage_modifier_operation": "multiply"
+        }]
+    },
     "set_nbt": [
         {
             "nbt_tag": "enhancedai:inaccuracy",

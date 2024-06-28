@@ -503,8 +503,8 @@
 	"Enable Gold" = true
 	#Various mining changes
 	"Enable Misc" = true
-	#Various changes for different materials.
-	"Enable Materials Data Packs" = true
+	#Various changes for different materials and ores.
+	"Enable Materials and ores" = true
 
 	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
 	[Mining."Block Hardness"]
@@ -526,10 +526,16 @@
 		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2 tool efficiency.
 		"Efficiency based destroy delay" = true
 
-	#Various changes for different materials.
-	[Mining."Materials Data Packs"]
-		#If enabled, a data pack will be enabled that changes coal generation to be rarer but with bigger veins
-		"Different Coal generation" = true
+	#Change, through data packs, the properties of blocks, from hardness to explosion resistance to speed and jump factors
+	[Mining."Block Data"]
+		#If true, a data pack is enabled that changes various blocks hardness, like ores and crops, and some blocks slowdown.
+		"Block Data Data Pack" = true
+
+	#Various changes for different materials and ores.
+	[Mining."Materials and ores"]
+		"Ore generation Overhaul" = true
+		#https://minecraft.wiki/w/Ore_vein
+		"Disable Ore Veins" = true
 		#Enables the following changes to vanilla data pack:
 		#* Stone (Broken with a non Silk-Touch tool) can drop Iron Nuggets
 		#* Silverfish can drop Iron Nuggets
@@ -539,13 +545,6 @@
 		#* Smelting Iron in a Furnace takes 4x time, and 2x time in a blast furnace
 		#* Can no longer smelt gold and Ancient Debris in a Furnace, and 2x in a blast furnace
 		"Ore Smelting Data Pack" = true
-		#Enables a Data Pack.
-		"Backport 1(dot)20(dot)2 Diamond ore generation" = true
-
-	#Change, through data packs, the properties of blocks, from hardness to explosion resistance to speed and jump factors
-	[Mining."Block Data"]
-		#If true, a data pack is enabled that changes various blocks hardness, like ores and crops, and some blocks slowdown.
-		"Block Data Data Pack" = true
 
 [Items]
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
@@ -1000,7 +999,7 @@
 		"Player attack range modifier" = 0
 		#Reduces movement speed for players by this percentage.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Players movement speed reduction" = 0.05
+		"Players movement speed reduction" = 0.0
 		#If true, Arrows from Bows and Crossbows will no longer deal more damage when fully charged.
 		"Disable Critical Arrows bonus damage" = true
 		#Vanilla tooltips on gear don't sum up multiple modifiers (e.g. a sword would have "4 Attack Damage" and "-2 Attack Damage" instead of "2 Attack Damage". This might break other mods messing with these Tooltips (e.g. Quark's improved tooltips)
@@ -1080,7 +1079,7 @@
 	#Change armor and toughness formula
 	[Combat."Armor Rework"]
 		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
-		"Damage Reduction formula" = "damage * (1 - 2.1 * (armor / (armor + 50)))"
+		"Damage Reduction formula" = "damage * (1 - 2.8 * (armor / (armor + 50)))"
 
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	[Combat."Unfair one-shots"]

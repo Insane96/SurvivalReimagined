@@ -252,9 +252,9 @@
 			#Range: 0.0 ~ 30.0
 			"Easy/Peaceful" = 6.0
 			#Range: 0.0 ~ 30.0
-			Normal = 5.0
+			Normal = 3.0
 			#Range: 0.0 ~ 30.0
-			Hard = 3.0
+			Hard = 1.0
 
 	#Skeletons try to stay away from the target. Use the enhancedai:skeleton_flee entity type tag to add/remove skeletons that are affected by this feature
 	[Skeletons."Skeleton Flee"]

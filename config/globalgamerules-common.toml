@@ -62,7 +62,7 @@
 		#Non Vanilla gamerule: 'iguanatweaks:disableExperience'
 		"iguanatweaks:disable_experience" = true
 		#Non Vanilla gamerule: 'iguanatweaks:doLooseRespawn'
-		"iguanatweaks:do_loose_respawn" = true
+		"iguanatweaks:do_loose_respawn" = false
 		#Whether the player should keep items and experience in their inventory after death .
 		keep_inventory = false
 		#Whether the player can regenerate health naturally if their hunger is full enough (doesn't affect external healing, such as golden apples, the Regeneration effect, etc.)
