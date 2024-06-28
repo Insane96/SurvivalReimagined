@@ -3,7 +3,7 @@
     "events": {
         "on_attack": [{
             "target": "this",
-            "damage_modifier": 4,
+            "damage_modifier": 2,
             "damage_modifier_operation": "multiply"
         }]
     },
