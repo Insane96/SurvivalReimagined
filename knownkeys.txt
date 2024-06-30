@@ -117,3 +117,5 @@ ping-wheel.key.name-labels
 key.firstperson.toggle
 placebo.toggleTrails
 placebo.toggleWings
+quark.keybind.narrator_readout
+quark.keybind.narrator_full_readout

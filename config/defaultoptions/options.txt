@@ -30,7 +30,7 @@ glintSpeed:0.5
 glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
-gamma:0.15
+gamma:0.0
 renderDistance:24
 simulationDistance:16
 entityDistanceScaling:5.0
@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","survivalreimaginedresourcepack","file/VanillaTweaks_CleanerBorder.zip","file/FreshAnimations_v1.9.zip"]
+resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","survivalreimaginedresourcepack","file/VanillaTweaks_CleanerBorder.zip","file/VanillaTweaks_Tweaks.zip","iguanatweaksexpanded:assets_override","file/FreshAnimations_v1.9.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -84,7 +84,7 @@ onlyShowSecureChat:false
 panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
-soundCategory_master:0.5016556291390728
+soundCategory_master:0.39983443708609273
 soundCategory_music:0.0
 soundCategory_record:0.5017605633802817
 soundCategory_weather:0.7007042253521126

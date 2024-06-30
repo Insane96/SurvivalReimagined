@@ -137,12 +137,8 @@
 		Advancements = true
 		#If true a data pack will be enabled that overhauls structure loot. This overrides some loot tables from ITR
 		"Better Structure Loot" = true
-		#Enables a data pack that slows down growing, breeding, egging etc based off seasons
-		"Livestock Data" = true
 		#Enables a data pack that changes all the item stats
 		"Item Stats" = true
-		#If true, a data pack is enabled that changes the growth of plants based off seasons
-		"Plant growth multipliers" = true
 		"Block Data Data Pack" = true
 		#Change some vanilla textures such as arrows to flint, spawners to echo and also some lang entries
 		"Assets override" = true

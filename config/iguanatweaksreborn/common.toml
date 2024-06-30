@@ -503,8 +503,8 @@
 	"Enable Gold" = true
 	#Various mining changes
 	"Enable Misc" = true
-	#Various changes for different materials.
-	"Enable Materials Data Packs" = true
+	#Various changes for different materials and ores.
+	"Enable Materials and ores" = true
 
 	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
 	[Mining."Block Hardness"]
@@ -526,10 +526,16 @@
 		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2 tool efficiency.
 		"Efficiency based destroy delay" = true
 
-	#Various changes for different materials.
-	[Mining."Materials Data Packs"]
-		#If enabled, a data pack will be enabled that changes coal generation to be rarer but with bigger veins
-		"Different Coal generation" = true
+	#Change, through data packs, the properties of blocks, from hardness to explosion resistance to speed and jump factors
+	[Mining."Block Data"]
+		#If true, a data pack is enabled that changes various blocks hardness, like ores and crops, and some blocks slowdown.
+		"Block Data Data Pack" = true
+
+	#Various changes for different materials and ores.
+	[Mining."Materials and ores"]
+		"Ore generation Overhaul" = true
+		#https://minecraft.wiki/w/Ore_vein
+		"Disable Ore Veins" = true
 		#Enables the following changes to vanilla data pack:
 		#* Stone (Broken with a non Silk-Touch tool) can drop Iron Nuggets
 		#* Silverfish can drop Iron Nuggets
@@ -539,13 +545,6 @@
 		#* Smelting Iron in a Furnace takes 4x time, and 2x time in a blast furnace
 		#* Can no longer smelt gold and Ancient Debris in a Furnace, and 2x in a blast furnace
 		"Ore Smelting Data Pack" = true
-		#Enables a Data Pack.
-		"Backport 1(dot)20(dot)2 Diamond ore generation" = true
-
-	#Change, through data packs, the properties of blocks, from hardness to explosion resistance to speed and jump factors
-	[Mining."Block Data"]
-		#If true, a data pack is enabled that changes various blocks hardness, like ores and crops, and some blocks slowdown.
-		"Block Data Data Pack" = true
 
 [Items]
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
@@ -589,7 +588,7 @@
 	"Enable Foods & Drinks" = true
 	#Make the player consume more hunger with different actions. If hunger is disabled, still works for Tiredness.
 	"Enable Exhaustion Increase" = true
-	#Remove hunger and get back to the Beta 1.7.3 days. You can also use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
+	#Remove hunger and get back to the Beta 1.7.3 days
 	"Enable No Hunger" = true
 
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
@@ -696,7 +695,7 @@
 		#When affected by the hunger effect ANY action will give you 100% more exhaustion per level.
 		"Effective Hunger" = true
 
-	#Remove hunger and get back to the Beta 1.7.3 days. You can also use the gamerule iguanatweaks:no_hunger to re-enable hunger (and thus, disable this feature)
+	#Remove hunger and get back to the Beta 1.7.3 days
 	["Hunger & Health"."No Hunger"]
 		#If true, Hunger effect is replaced by Weakness
 		"Convert Hunger to Weakness" = true
@@ -819,7 +818,7 @@
 		"Data Pack" = true
 
 [Experience]
-	#Various changes to experience
+	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to disable experience drops and experience bar.
 	"Enable Experience" = true
 	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.
 	"Enable Anvils" = true
@@ -828,11 +827,11 @@
 	#Changes the experience lost on death and xp per level required.
 	"Enable Player Experience" = true
 
-	#Various changes to experience
+	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to disable experience drops and experience bar.
 	[Experience.Experience]
 		#Experience dropped will be multiplied by this value.
-		#Can be set to 0 to disable experience drop from any source.
-		#Range: 0.0 ~ 128.0
+		#Use the iguanatweaks:disableExperience game rule to disable experience drops.
+		#Range: 1.0 ~ 128.0
 		"Global Experience Multiplier" = 1.0
 		#Experience dropped by blocks (Ores and Spawners) will be multiplied by this multiplier. Experience dropped by blocks are still affected by 'Global Experience Multiplier'
 		#Can be set to 0 to make blocks drop no experience
