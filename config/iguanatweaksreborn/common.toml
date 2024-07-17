@@ -104,6 +104,11 @@
 	[World.Fluids]
 		#If enabled, water will deal fall damage if too shallow
 		"Water fall damage" = true
+		#How strong does water push entities. Vanilla is 0.014
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Water push force" = 0.03
+		#If true water pushes entities down even when no blocks are around
+		"Water pushes when no blocks are around" = true
 
 	#Trees fall when cut.
 	[World."Timber Trees"]
@@ -155,6 +160,7 @@
 		"No damage if dressed" = true
 		#	Makes sweet berries not plantable, requiring seeds, and also enables a data pack that makes the following changes:
 		#	* Makes sweet berry bushes drop seeds
+		#	* Makes sweet berry patches has less plants and plants will not be all grown up
 		#	If berry good is present, a different datapack is enabled that integrates with the mod
 		#
 		"Data pack" = true
@@ -1016,7 +1022,7 @@
 		"Better strength and weakness" = true
 		#If true, arrows will deal float damage instead of being rounded up.
 		"Decimal arrow's damage" = true
-		#Multiplies arrow's damage if shot from bow by this value. (this doesn't affect mobs arrows)
+		#Multiplies arrow's damage by this value. (this doesn't affect mobs arrows)
 		#Range: 0.0 ~ 10.0
 		"Arrows Damage Multiplier" = 0.5
 		#Speed at which arrows are shot from crossbows. Vanilla is 3.15
