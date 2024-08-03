@@ -2,6 +2,18 @@
     "values": [
         "minecraft:barrier",
         "minecraft:barrier",
-        "farmersdelight:rope"
+        "farmersdelight:rope",
+        "chunkbychunk:unstablechunkspawner",
+        "chunkbychunk:plainschunkspawner",
+        "chunkbychunk:snowchunkspawner",
+        "chunkbychunk:desertchunkspawner",
+        "chunkbychunk:swampchunkspawner",
+        "chunkbychunk:badlandschunkspawner",
+        "chunkbychunk:forestchunkspawner",
+        "chunkbychunk:savannachunkspawner",
+        "chunkbychunk:rockychunkspawner",
+        "chunkbychunk:junglechunkspawner",
+        "chunkbychunk:mushroomchunkspawner",
+        "chunkbychunk:mountainchunkspawner"
     ]
 }

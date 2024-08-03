@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["iguanatweaksexpanded:durium_ingot", "iguanatweaksexpanded:durium_nugget", "iguanatweaksexpanded:durium_scrap", "iguanatweaksexpanded:durium_scrap_block"],
+    "targetBlocks" : ["minecraft:gold_ore", "minecraft:deepslate_gold_ore", "minecraft:nether_gold_ore", "minecraft:raw_gold_block"]
+  }

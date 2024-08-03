@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["farmersdelight:cabbage_seeds", "farmersdelight:cabbage"],
+    "targetBlocks" : ["farmersdelight:wild_cabbages", "farmersdelight:cabbages"]
+  }

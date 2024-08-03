@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["minecraft:carrot_seeds", "minecraft:carrot"],
+    "targetBlocks" : ["iguanatweaksreborn:wild_carrots", "minecraft:carrots"]
+  }

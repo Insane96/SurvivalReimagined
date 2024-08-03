@@ -31,7 +31,7 @@
 	[gamerules.misc]
 		#Controls the maximum number of blocks changed when using /clone, /fill, or /fillbiome.
 		#Range: > 0
-		command_modification_block_limit = 32768
+		command_modification_block_limit = 1000000
 		#Whether certain sound events are heard by all players regardless of location.
 		global_sound_events = true
 		#Non Vanilla gamerule: 'iguanatweaks:explosionMobGriefing'

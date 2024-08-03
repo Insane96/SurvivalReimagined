@@ -64,7 +64,7 @@
 [WorldScanner]
 	#The amount of fuel provided by each world fragment (and then scaled up for world shard, crystal and core
 	#Range: 1 ~ 512
-	fuel_per_fragment = 64
+	fuel_per_fragment = 256
 	#The amount of fuel required to scan each chunk
 	#Range: 1 ~ 65534
 	fuel_required_per_chunk = 32

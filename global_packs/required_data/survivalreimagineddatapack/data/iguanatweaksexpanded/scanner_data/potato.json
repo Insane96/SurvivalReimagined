@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["minecraft:rooted_potato", "minecraft:potato"],
+    "targetBlocks" : ["iguanatweaksreborn:wild_potatoes", "minecraft:potatoes"]
+  }

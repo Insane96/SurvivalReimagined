@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["iguanatweaksreborn:rice_seeds", "farmersdelight:rice"],
+    "targetBlocks" : ["farmersdelight:wild_rice", "farmersdelight:rice"]
+  }

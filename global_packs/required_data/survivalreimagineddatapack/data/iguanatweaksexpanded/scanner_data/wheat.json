@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["minecraft:wheat_seeds", "minecraft:wheat"],
+    "targetBlocks" : ["iguanatweaksreborn:wild_wheat", "minecraft:wheat"]
+  }

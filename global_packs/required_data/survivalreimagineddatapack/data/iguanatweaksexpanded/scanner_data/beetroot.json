@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["minecraft:beetroot_seeds", "minecraft:beetroot"],
+    "targetBlocks" : ["iguanatweaksreborn:wild_beetroots", "minecraft:beetroots"]
+  }

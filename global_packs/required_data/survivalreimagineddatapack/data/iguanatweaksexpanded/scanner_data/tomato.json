@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["farmersdelight:tomato_seeds", "farmersdelight:tomato"],
+    "targetBlocks" : ["farmersdelight:wild_tomatoes", "farmersdelight:tomatoes"]
+  }

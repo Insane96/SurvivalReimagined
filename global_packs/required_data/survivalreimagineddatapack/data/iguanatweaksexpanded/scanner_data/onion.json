@@ -1,0 +1,4 @@
+{
+    "inputItems" : ["iguanatweaksreborn:rooted_onion", "farmersdelight:onion"],
+    "targetBlocks" : ["farmersdelight:wild_onions", "farmersdelight:onions"]
+  }
