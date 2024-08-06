@@ -20,7 +20,7 @@
 	chest_quantity = 1
 	#The minimum depth at which the chunk spawner chest can spawn
 	#Range: -64 ~ 128
-	min_chest_spawn_depth = -60
+	min_chest_spawn_depth = -59
 	#The maximum depth at which the chunk spawner chest can spawn
 	#Range: -64 ~ 128
 	max_chest_spawn_depth = -53
