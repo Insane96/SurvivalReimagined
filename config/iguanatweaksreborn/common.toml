@@ -135,9 +135,6 @@
 		"Enable Poof Particles" = true
 		#Removes the particles spawned by the explosion.
 		"Disable Emitter Particles" = true
-		#How much damage will the player take when blocking an explosion with a shield. Putting 0 shields will block all the damage like Vanilla, while putting 1 shields will block no damage.
-		#Range: 0.0 ~ 1.0
-		"Blocking Damage Scaling" = 1.0
 		#While enabled knockback is greatly increased by explosion size
 		"Knockback Scales With Size" = true
 		#Explosions will start from the middle of the entity instead of feets.
@@ -273,6 +270,7 @@
 	#Player's slides down climbable blocks faster and stands still when opening an interface. This is disabled if quark is enabled
 	"Enable Better Climbable" = true
 	"Enable Boats" = true
+	"Enable Swimming" = true
 
 	#Armor slows down the player. Material Weights and Enchantment Weights are controlled via json in this feature's folder
 	[Movement."Weighted Equipment"]
@@ -327,6 +325,10 @@
 	[Movement."No Pillaring"]
 		#If true, pillaring will be negated only if there are monsters nearby
 		"Monsters Only" = true
+
+	[Movement.Swimming]
+		#Prevents swimming up really fast if swimming and holding the jump key.
+		"Prevent fast swim up with jump" = true
 
 [Mobs]
 	#Add a brand new Echo Torch and some changes to mob spawn
@@ -822,6 +824,12 @@
 		"Chicken from egg chance" = 8
 		#Enables a data pack that changes food drops and slows down growing, breeding, egging etc
 		"Data Pack" = true
+		#If not 0, chickens will no longer breed, instead when fed will make eggs twice as fast for the seconds set here.
+		#Range: > -2147483648
+		"Faster egg time" = 900
+		#Seconds until you can milk cows (or stew mooshrooms)
+		#Range: > -2147483648
+		"Milk Cooldown" = 1200
 
 [Experience]
 	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to disable experience drops and experience bar.
