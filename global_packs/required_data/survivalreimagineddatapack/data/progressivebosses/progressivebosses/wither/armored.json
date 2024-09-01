@@ -49,8 +49,8 @@
     },
     "resistances": {
         "armor": {
-            "above_half_health": 8.0,
-            "below_half_health": 8.0
+            "above_half_health": 10.0,
+            "below_half_health": 10.0
         },
         "toughness": {
             "above_half_health": 0.0,
