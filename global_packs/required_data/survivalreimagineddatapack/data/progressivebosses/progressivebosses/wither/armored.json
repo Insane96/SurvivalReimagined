@@ -9,7 +9,7 @@
         },
         "attack_speed_near": 50,
         "attack_speed_far": 40,
-        "side_heads_attack_speed_multiplier": 1.25,
+        "side_heads_attack_speed_multiplier": 1.1,
         "effect_amplifier": 1,
         "effect_duration": {
             "easy": 4,
@@ -24,7 +24,7 @@
                     "above_half_health": 0.075,
                     "below_half_health": 0.1
                 },
-                "damage": 6.0,
+                "damage": 8.0,
                 "time_to_charge": 40
             },
             "second_phase": {
@@ -57,8 +57,12 @@
             "below_half_health": 0.0
         }
     },
-    "misc": {
+    "death": {
         "explosion_power": 8.0,
+        "explosion_causes_fire": false
+    },
+    "misc": {
+        "explosion_power": 7.0,
         "explosion_causes_fire": false,
         "ignore_wither_proof_blocks": true,
         "nether_only": false

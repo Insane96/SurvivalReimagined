@@ -9,7 +9,7 @@
         },
         "attack_speed_near": 50,
         "attack_speed_far": 40,
-        "side_heads_attack_speed_multiplier": 1.25,
+        "side_heads_attack_speed_multiplier": 1.1,
         "effect_amplifier": 0,
         "effect_duration": {
             "easy": 8,
@@ -26,7 +26,8 @@
             "min_duration": 50,
             "max_duration": 100,
             "attack_speed": 4,
-            "attack_cooldown_on_end": 50
+            "attack_cooldown_on_end": 50,
+            "inaccuracy": 1
         },
         "charge": {
             "second_phase": {
@@ -42,6 +43,10 @@
                 "chance_per_second": 0.03
             }
         }
+    },
+    "death": {
+        "explosion_power": 8.0,
+        "explosion_causes_fire": false
     },
     "health": {
         "health": 300.0,
