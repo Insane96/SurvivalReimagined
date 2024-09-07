@@ -26,6 +26,8 @@
 	#Various changes to explosions, like higher knockback and getting hit when behind blown up blocks.
 	"Enable Explosion Overhaul" = true
 	"Enable Berries" = true
+	#Change a few things relative to Serene Seasons
+	"Enable Seasons" = true
 
 	[World."Coal & Fire"]
 		#How much faster fire ticks and spreads.
@@ -162,6 +164,13 @@
 		#
 		"Data pack" = true
 
+	#Change a few things relative to Serene Seasons
+	[World.Seasons]
+		#Makes the following changes to Serene Seasons config:
+		#* seasonal_crops is set to false, as it's controlled by Plants Growth
+		#
+		"Serene Seasons changes" = true
+
 ["Sleep & Respawn"]
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	"Enable Tiredness" = true
@@ -197,11 +206,8 @@
 		#REMOVE_ONE_LEVEL keeps the current tiredness but if higher than 'Tiredness for effect' removes one level of Tired to a minimum of I
 		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
 		"On death behaviour" = "SET_AT_EFFECT"
-		#Sounds played when the player is tired
-		"Tired sounds" = ["minecraft:block.basalt.break", "minecraft:block.big_dripleaf.place", "minecraft:block.bone_block.hit", "minecraft:block.candle.extinguish", "minecraft:entity.zombie.ambient", "minecraft:entity.skeleton.ambient", "minecraft:entity.spider.ambient", "minecraft:entity.slime.attack", "minecraft:entity.creeper.hurt", "minecraft:entity.creeper.primed", "entity.egg.throw"]
-		#The chance is 0% of this value as soon as a sound is played, 100% as 10 minutes have passed and 200% at 30 minutes
-		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Tired Sound Chance" = 0.025
+		#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
+		"Fake sound mobs" = ["minecraft:skeleton,minecraft:overworld", "minecraft:zombie,minecraft:overworld", "minecraft:spider,minecraft:overworld", "minecraft:ghast,minecraft:the_nether", "minecraft:zombified_piglin,minecraft:the_nether"]
 
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	["Sleep & Respawn".Respawn]
@@ -700,8 +706,11 @@
 		#Every second the player will get this exhaustion.
 		#Range: 0.0 ~ 128.0
 		"Passive Exhaustion" = 0.005
+		#Every tick of the player's rowing will get this exhaustion.
+		#Range: 0.0 ~ 128.0
+		"Rowing Exhaustion" = 0.005
 		#When affected by the hunger effect ANY action will give you 100% more exhaustion per level.
-		"Effective Hunger" = true
+		"Effective Hunger Effect" = true
 
 	#Remove hunger and get back to the Beta 1.7.3 days
 	["Hunger & Health"."No Hunger"]
@@ -946,7 +955,7 @@
 		"Replace damaging enchantments" = true
 		#If true, vanilla looting, fortune and Luck of the Sea enchantments are replaced with a single one: Luck. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Replace looting, fortune and LotS enchantments" = true
-		#The ore_drops formula is changed to 30%/60%/90%/... drop increase from 25%/75%/125%/...
+		#The ore_drops formula is changed to 20%/50%/85%/... drop increase from 25%/75%/125%/...
 		"Nerf fortune" = true
 		#Mending only makes the tool repair by one durability every 2 xp instead of 2 durability/1 xp.
 		"Mending Nerf" = true
