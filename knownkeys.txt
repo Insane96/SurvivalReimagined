@@ -119,3 +119,9 @@ placebo.toggleTrails
 placebo.toggleWings
 quark.keybind.narrator_readout
 quark.keybind.narrator_full_readout
+key.nostalgic_tweaks.open_config
+key.nostalgic_tweaks.toggle_fog
+key.nostalgic_tweaks.stop_song
+key.nostalgic_tweaks.next_song
+key.jei.transferRecipeBookmark
+key.jei.maxTransferRecipeBookmark
