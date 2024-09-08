@@ -1,7 +1,7 @@
 {
     "values": [
         "minecraft:barrier",
-        "minecraft:barrier",
-        "farmersdelight:rope"
+        "minecraft:enchanting_table",
+        "minecraft:anvil"
     ]
 }
