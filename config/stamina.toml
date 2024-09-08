@@ -34,7 +34,7 @@
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Stamina regen per tick if locked" = 0.35
 	#Disable sprinting altogether
-	"Disable Sprinting" = false
+	"Disable Sprinting" = true
 	#Disable swimming altogether
 	"Disable Swimming" = false
 

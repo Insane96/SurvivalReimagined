@@ -963,6 +963,8 @@
 		"Enchantments info" = true
 		#Respiration decreases air consumption by 50% per level instead of 100%.
 		"Respiration Nerf" = true
+		#If true, the formula for bonus damage for arrows is changed from `'Power Enchantment Damage' + 'Power Enchantment Damage' * lvl` to `base_damage * 'Power Enchantment Damage' * lvl`.
+		"Power Enchantment Multiplier" = true
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player Experience"]
@@ -1102,7 +1104,7 @@
 	#Change armor and toughness formula
 	[Combat."Armor Rework"]
 		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
-		"Damage Reduction formula" = "damage * (1 - 2.1 * (armor / (armor + 50)))"
+		"Damage Reduction formula" = "damage * (1 - 2.275 * (armor / (armor + 50)) - toughness * 0.0175)"
 
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	[Combat."Unfair one-shots"]

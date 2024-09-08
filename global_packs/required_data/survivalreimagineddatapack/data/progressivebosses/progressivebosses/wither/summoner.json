@@ -17,11 +17,11 @@
             "hard": 8
         },
         "attack_to_heal_threshold": 0.35,
-        "heal_on_skull_kill": 25,
+        "heal_on_skull_kill": 10,
         "barrage": {
             "chance": {
                 "above_half_health": 0.3,
-                "below_half_health": 0.1
+                "below_half_health": 0.2
             },
             "min_duration": 50,
             "max_duration": 100,
@@ -39,29 +39,29 @@
             "target_unseen": {
                 "damage": 6.0,
                 "time_to_charge": 40,
-                "seconds_unseen": 3,
+                "seconds_unseen": 2,
                 "chance_per_second": 0.03
             }
         }
     },
     "health": {
         "health": 300.0,
-        "regeneration": 2,
-        "regen_when_hit": 1,
+        "regeneration": 1.5,
+        "regen_when_hit": 0.75,
         "regen_when_hit_duration": 20
     },
     "minion": {
-        "minions_spawned": 5.0,
-        "max_minion_around": 10.0,
+        "minions_spawned": 3.0,
+        "max_minion_around": 6.0,
         "min_cooldown": {
-            "above_half_health": 250.0,
-            "below_half_health": 100.0
+            "above_half_health": 300.0,
+            "below_half_health": 150.0
         },
         "max_cooldown": {
-            "above_half_health": 250.0,
-            "below_half_health": 100.0
+            "above_half_health": 300.0,
+            "below_half_health": 150.0
         },
-        "health": 12,
+        "health": 8,
         "bonus_movement_speed": 0.2,
         "bow_chance": {
             "above_half_health": 0.5,
