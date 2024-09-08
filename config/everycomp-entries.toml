@@ -33,9 +33,6 @@
 
 	[entries.wood_type]
 
-		[entries.wood_type.farmersdelight]
-			cabinet = true
-
 		[entries.wood_type.quark]
 			vertical_planks = true
 			post = true
