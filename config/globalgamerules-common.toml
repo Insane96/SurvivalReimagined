@@ -40,7 +40,7 @@
 		#Range: > 0
 		max_command_chain_length = 65536
 		#Whether the debug screen shows all or reduced information; and whether the effects of F3+B (entity hitboxes) and F3+G (chunk boundaries) are shown.
-		reduced_debug_info = false
+		reduced_debug_info = true
 
 	[gamerules.player]
 		#Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer.
@@ -148,7 +148,7 @@
 #A collection of misc configs
 [misc]
 	#If gamerules should be saved to config on world unload
-	save_gamerules = true
+	save_gamerules = false
 	#A comma separated list of commands to run on world join, @p is replaced with joining player name, command is run by the server
 	#Example: default_commands = ["/tellraw @p [\"\",{\"text\":\"Hi \"},{\"text\":\"@p\",\"color\":\"aqua\"}]"]
 	default_commands = []
