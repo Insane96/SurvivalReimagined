@@ -6,6 +6,7 @@
 * Re-enabled witch huts with YUNGs Better Witch Huts
     * This is the only way currently to obtain potions (other than killing wild witches)
 * Removed xp bottles from loot
+* Removed some wandering traders items useless or wrong
 * Disabled enchanting tables interfaces
 
 ## Alpha 0.1.0
