@@ -443,7 +443,7 @@
     "disableOrbSpawn": false,
     "disableOrbRendering": false,
     "disableAnvil": false,
-    "disableEnchantTable": false,
+    "disableEnchantTable": true,
     "oldNightmares": false,
     "disableSprint": false,
     "leftClickDoor": false,
