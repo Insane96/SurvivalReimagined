@@ -1,18 +1,6 @@
 {
 	"replace": false,
 	"entries": [
-		"survivalreimagined:structory/harvest/graveyard",
-		"survivalreimagined:structory/harvest/graveyard2",
-		"survivalreimagined:structory/harvest/old_manor/common",
-		"survivalreimagined:structory/harvest/old_manor/treasure",
-		"survivalreimagined:structory/harvest/manor2/loot",
-		"survivalreimagined:structory/harvest/manor2/treasure",
-		"survivalreimagined:structory/library/high",
-		"survivalreimagined:structory/ruin/ruin",
-		"survivalreimagined:structory/ruin/swamp/loot",
-		"survivalreimagined:structory/ruin/taiga/loot",
-		"survivalreimagined:structory/ruin/taiga/illager_high",
-		"survivalreimagined:structory/ruin/taiga/illager_low",
-		"survivalreimagined:structory/ruin/taiga/illager_treasure"
+		"survivalreimagined:replace_xp_bottles"
 	]
 }
