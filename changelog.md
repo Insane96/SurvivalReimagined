@@ -9,6 +9,7 @@
 * Removed some wandering traders items useless or wrong
 * Disabled enchanting tables interfaces
 * Respawn obelisks now generate less iron blocks
+* Reduced depth multiplier
 
 ## Alpha 0.1.0
 * First release
