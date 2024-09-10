@@ -1102,7 +1102,7 @@
 	#Change armor and toughness formula
 	[Combat."Armor Rework"]
 		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
-		"Damage Reduction formula" = "damage * (1 - 2.1 * (armor / (armor + 50)))"
+		"Damage Reduction formula" = "damage * (1 - 2.275 * (armor / (armor + 50)) - toughness * 0.0175)"
 
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	[Combat."Unfair one-shots"]

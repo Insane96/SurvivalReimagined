@@ -39,7 +39,7 @@
             "target_unseen": {
                 "damage": 6.0,
                 "time_to_charge": 40,
-                "seconds_unseen": 3,
+                "seconds_unseen": 2,
                 "chance_per_second": 0.03
             }
         }
@@ -60,6 +60,6 @@
         "ignore_wither_proof_blocks": false,
         "nether_only": false
     },
-    "xp_dropped": 200,
+    "xp_dropped": 500,
     "loot_table": "progressivebosses:entities/wither/base"
 }
