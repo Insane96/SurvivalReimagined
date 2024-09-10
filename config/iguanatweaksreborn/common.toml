@@ -96,12 +96,14 @@
 		"Max ticks to decay" = 300
 
 	[World.Nether]
-		#Makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and removes the 8 block ratio between nether and end.
-		"Disable Nether Roof and 8 block ratio" = true
 		#If true, lava pockets in the nether are removed. If quark is installed, this is disabled
 		"Remove Lava Pockets" = true
 		#The portal requires Crying Obsidian in the corners to turn it on (in the overworld). The block tag 'iguanatweaksreborn:portal_corners' can be used to change the required blocks for the corners
 		"Portal requires Crying Obsidian" = true
+		#Makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and reduces the 8 block ratio between nether and other dimensions to 4.
+		"Disable Nether Roof and reduce block ratio" = true
+		#If true you cannot lit nether portals
+		"Disable Nether" = true
 
 	[World.Fluids]
 		#If enabled, water will deal fall damage if too shallow
@@ -559,6 +561,17 @@
 		#* Smelting Iron in a Furnace takes 4x time, and 2x time in a blast furnace
 		#* Can no longer smelt gold and Ancient Debris in a Furnace, and 2x in a blast furnace
 		"Ore Smelting Data Pack" = true
+
+	#Changes Gold tools to have an innate Fortune/Looting I and changes the harvest level to be like stone tools
+	[Mining.Gold]
+		#Set the harvest level of gold tools. Vanilla is minecraft:gold (same as minecraft:wood), the there's stone, iron, diamond, netherite. Please note that an invalid resource location or harvest level here might crash the game.
+		"Harvest Level" = "minecraft:stone"
+		#Set the innate looting level of gold tools.
+		#Range: 0 ~ 255
+		"Looting Level" = 1
+		#Set the innate fortune level of gold tools.
+		#Range: 0 ~ 255
+		"Fortune Level" = 1
 
 [Items]
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
