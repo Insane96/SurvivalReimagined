@@ -568,10 +568,10 @@
 		"Harvest Level" = "minecraft:stone"
 		#Set the innate looting level of gold tools.
 		#Range: 0 ~ 255
-		"Looting Level" = 1
+		"Looting Level" = 2
 		#Set the innate fortune level of gold tools.
 		#Range: 0 ~ 255
-		"Fortune Level" = 1
+		"Fortune Level" = 2
 
 [Items]
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via json in this feature's folder. Note that removing entries from the json requires a Minecraft Restart
