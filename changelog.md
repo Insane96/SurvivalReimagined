@@ -8,6 +8,7 @@
 * Removed xp bottles from loot
 * Removed some wandering traders items useless or wrong
 * Disabled enchanting tables interfaces
+* Respawn obelisks now generate less iron blocks
 
 ## Alpha 0.1.0
 * First release
