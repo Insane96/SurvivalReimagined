@@ -1,6 +1,6 @@
 # Changelog
 
-## Alpha 0.2.0
+## Alpha 0.1.1
 * Re-enabled anvils
     * You can now rename and repair items
 * Re-enabled witch huts with YUNGs Better Witch Huts
