@@ -10,6 +10,8 @@
 * Disabled enchanting tables interfaces
 * Respawn obelisks now generate less iron blocks
 * Reduced depth multiplier
+* Increased chance for Beta Creepers
+* Removed Angry Creepers
 
 ## Alpha 0.1.0
 * First release

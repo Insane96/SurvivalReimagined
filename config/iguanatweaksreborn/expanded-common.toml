@@ -82,7 +82,7 @@
 
 [Mobs]
 	#Changes to EnhancedAI config
-	"Enable EnhancedAI" = true
+	"Enable EnhancedAI" = false
 	#Increase monsters health, movement speed, etc. This feature uses Mobs Properties Randomness.
 	"Enable Stats Buffs" = true
 	#Changes to mob spawn

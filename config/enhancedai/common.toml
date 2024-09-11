@@ -745,7 +745,7 @@
 		"TNT Like" = false
 		#Beta creepers when exploding will walk around the target, like the creepers in pre-1.2.
 		#Range: 0.0 ~ 1.0
-		"Beta Creeper Chance" = 0.35
+		"Beta Creeper Chance" = 0.7
 		#If IguanaTweaks Reborn is installed and Explosion Overhaul is enabled, Angry creeper will deal more knockback and break more blocks and breaching creepers will break more blocks
 		"IguanaTweaks Reborn Integration" = true
 		#Makes creepers blow up on death like when they were added back in 0.30
@@ -768,7 +768,7 @@
 		[Creepers."Creeper Swell"."Angry Creeper"]
 			#Chance for a creeper to spawn angry
 			#Range: 0.0 ~ 1.0
-			Chance = 0.03
+			Chance = 0
 			#If true, Angry Creeper emits particles
 			Particles = true
 			#The special sound effect that the Angry Creeper plays
