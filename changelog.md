@@ -12,6 +12,7 @@
 * Reduced depth multiplier
 * Increased chance for Beta Creepers
 * Removed Angry Creepers
+* Increased armor protection
 
 ## Alpha 0.1.0
 * First release
