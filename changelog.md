@@ -2,6 +2,7 @@
 
 ## Upcoming
 * Nerfed Pumpkin Bread
+* Items can no longer be merged in the crafting grid
 
 ## Alpha 0.1.1
 * Re-enabled anvils
