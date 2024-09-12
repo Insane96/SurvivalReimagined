@@ -62,5 +62,13 @@
   {
     "food": "berry_good:glowgurt",
     "nutrition": 8
+  },
+  {
+    "food": "farmersdelight:bone_broth",
+    "nutrition": 6
+  },
+  {
+    "food": "autumnity:pumpkin_bread",
+    "nutrition": 6
   }
 ]

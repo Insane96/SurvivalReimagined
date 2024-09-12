@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Nerfed Pumpkin Bread
+
 ## Alpha 0.1.1
 * Re-enabled anvils
     * You can now rename and repair items
