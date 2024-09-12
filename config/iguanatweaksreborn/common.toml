@@ -104,6 +104,9 @@
 		"Disable Nether Roof and reduce block ratio" = true
 		#If true you cannot lit nether portals
 		"Disable Nether" = true
+		#How much time inside the portal to pass it. Vanilla is 80 ticks
+		#Range: > -2147483648
+		"Portal wait time" = 50
 
 	[World.Fluids]
 		#If enabled, water will deal fall damage if too shallow
@@ -368,6 +371,8 @@
 		#Set the drop chance for mobs equipment when spawned from spawners.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Drop chance from Spawners" = 0.2
+		#All drops from mobs will be disenchanted.
+		"Disenchant equipment" = true
 
 	#Small changes to villagers to make them less OP
 	[Mobs.Villagers]
@@ -927,6 +932,8 @@
 		"Reduced repair with other item if enchanted" = 0.5
 		#If true, anvils don't wear down when only used for renaming
 		"No break on renaming" = true
+		#If true you can merge items in the anvil and get a repair bonus
+		"Allow Merging Items" = false
 
 		[Experience.Anvils."Enchantments cost by rarity"]
 			#Vanilla: 1
@@ -1117,7 +1124,7 @@
 	#Change armor and toughness formula
 	[Combat."Armor Rework"]
 		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
-		"Damage Reduction formula" = "damage * (1 - 2.8 * (armor / (armor + 50)) - toughness * 0.0175)"
+		"Damage Reduction formula" = "damage * (1 - 0.933 * (armor / (armor + 8)))"
 
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	[Combat."Unfair one-shots"]
