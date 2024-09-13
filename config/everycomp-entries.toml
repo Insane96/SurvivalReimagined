@@ -12,6 +12,9 @@
 		[types.wood_type.autumnity]
 			maple = true
 
+		[types.wood_type.betterarcheology]
+			rotten = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.autumnity]
