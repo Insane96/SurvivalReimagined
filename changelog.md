@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## Alpha 0.2.0 - The exploration update (part 1 probably)
 * Added Shared advancements
 * Added Philip's Biome Features
 * Added Philip's ruins
