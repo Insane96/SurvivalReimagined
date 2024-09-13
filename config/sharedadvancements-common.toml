@@ -1,0 +1,8 @@
+
+#Common Configuration for Shared Advancements
+[options]
+	#Enables the entire mod
+	enabled = true
+	#Set to true to share advancements with all players
+	broadcast_advancements = false
+
