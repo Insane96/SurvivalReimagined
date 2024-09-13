@@ -3,6 +3,8 @@
 ## Upcoming
 * Added Shared advancements
 * Added Philip's Biome Features
+* Added Philip's ruins
+* Added Better Archaeology
 * Nerfed Pumpkin Bread
 * Heavily increased damage reduction with low armor
 * Items can no longer be merged in the crafting grid and anvil

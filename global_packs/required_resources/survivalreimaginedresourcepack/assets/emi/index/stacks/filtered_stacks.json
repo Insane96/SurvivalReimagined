@@ -35,7 +35,10 @@
       "/fermented_spider_eye/",
       "/dragon/",
       "/phantom/",
-      "/placeable_item/"
+      "/placeable_item/",
+      "/iron_brush/",
+      "/diamond_brush/",
+      "/netherite_brush/"
     ],
     "disable": true
   }
