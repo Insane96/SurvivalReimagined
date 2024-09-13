@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Iron, golden, durium and solarium armor no longer have a movement speed penalty. Diamond and Netherite's movement speed penalty has been reduced
+
 ## Alpha 0.2.0 - The exploration update (part 1 probably)
 * Added Shared advancements
 * Added Philip's Biome Features
