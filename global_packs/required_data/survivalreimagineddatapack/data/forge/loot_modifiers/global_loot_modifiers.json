@@ -1,7 +1,6 @@
 {
 	"replace": false,
 	"entries": [
-		"survivalreimagined:replace_xp_bottles",
-		"survivalreimagined:remove_enchanted_items"
+		"survivalreimagined:replace_xp_bottles"
 	]
 }

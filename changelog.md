@@ -1,6 +1,8 @@
 # Changelog
 
 ## Upcoming
+* Enchanted items are now obtainable again
+  * The only way to obtain enchanted items as now is with mobs drops and chests. Enchanted books can be applied to items with Anvils
 * Iron, golden, durium and solarium armor no longer have a movement speed penalty. Diamond and Netherite's movement speed penalty has been reduced
 
 ## Alpha 0.2.0 - The exploration update (part 1 probably)

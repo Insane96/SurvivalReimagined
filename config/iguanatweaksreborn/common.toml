@@ -372,7 +372,7 @@
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Drop chance from Spawners" = 0.2
 		#All drops from mobs will be disenchanted.
-		"Disenchant equipment" = true
+		"Disenchant equipment" = false
 
 	#Small changes to villagers to make them less OP
 	[Mobs.Villagers]
