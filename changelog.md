@@ -1,8 +1,13 @@
 # Changelog
 
 ## Upcoming
+* Added Shared advancements
+* Added Philip's Biome Features
 * Nerfed Pumpkin Bread
-* Items can no longer be merged in the crafting grid
+* Heavily increased damage reduction with low armor
+* Items can no longer be merged in the crafting grid and anvil
+* Lowered bridges generating
+* Removed Yung's Extras
 
 ## Alpha 0.1.1
 * Re-enabled anvils
