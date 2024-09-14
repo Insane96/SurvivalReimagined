@@ -125,3 +125,4 @@ key.nostalgic_tweaks.stop_song
 key.nostalgic_tweaks.next_song
 key.jei.transferRecipeBookmark
 key.jei.maxTransferRecipeBookmark
+key.paraglider.paragliderSettings
