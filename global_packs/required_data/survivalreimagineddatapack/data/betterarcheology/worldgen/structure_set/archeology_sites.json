@@ -5,8 +5,20 @@
             "weight": 5
         },
         {
+            "structure": "betterarcheology:catacombs",
+            "weight": 2
+        },
+        {
             "structure": "betterarcheology:desert_obelisk",
             "weight": 6
+        },
+        {
+            "structure": "betterarcheology:light_temple",
+            "weight": 2
+        },
+        {
+            "structure": "betterarcheology:mesa_ruins",
+            "weight": 4
         },
         {
             "structure": "betterarcheology:mott",
@@ -18,6 +30,10 @@
         },
         {
             "structure": "betterarcheology:stonehenge_grassy",
+            "weight": 5
+        },
+        {
+            "structure": "betterarcheology:temple_jungle",
             "weight": 5
         },
         {
