@@ -6,6 +6,7 @@
   * Some enchantments related to sprinting and experience have been disabled
 * Iron, golden, durium and solarium armor no longer have a movement speed penalty. Diamond and Netherite's movement speed penalty has been reduced
 * Removed many philip's ruins, but readded many others
+* Added many resource packs
 * Fixed fermented spider eye disappeared
 
 ## Alpha 0.2.0 - The exploration update (part 1 probably)
