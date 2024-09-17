@@ -8,6 +8,7 @@
 * Removed many philip's ruins, but readded many others
 * Added many resource packs
 * Fixed fermented spider eye disappeared
+* Fixed respawn obelisks generating with too many iron blocks
 
 ## Alpha 0.2.0 - The exploration update (part 1 probably)
 * Added Shared advancements
