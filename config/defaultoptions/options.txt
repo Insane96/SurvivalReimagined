@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","iguanatweaksexpanded:assets_override","survivalreimaginedresourcepack","file/[1.4.1] Enhanced Boss Bars.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","file/VanillaTweaks_r540474_MC1.20.x.zip"]
-incompatibleResourcePacks:["file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip"]
+resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","iguanatweaksexpanded:assets_override","survivalreimaginedresourcepack","file/[1.4.1] Enhanced Boss Bars.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","file/VanillaTweaks_r540474_MC1.20.x.zip","file/redstone-torch-backport-v2.zip"]
+incompatibleResourcePacks:["file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","file/redstone-torch-backport-v2.zip"]
 lastServer:
 lang:en_us
 soundDevice:""

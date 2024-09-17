@@ -10,35 +10,10 @@
 "Enable World" = true
 
 [World]
-	#Change a few things relative to Serene Seasons
-	"Enable Seasons" = true
 	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
 	"Enable Ore Generation" = true
 	#If this feature is enabled, 'Unlit campfire' from IguanaTweaks Reborn is set to true
 	"Enable Coal & Charcoal" = true
-
-	#Change a few things relative to Serene Seasons
-	[World.Seasons]
-		#Removes greenhouse glass.
-		"No greenhouse glass" = true
-		#Saplings no longer drop in Winter.
-		"No Saplings in Winter" = true
-		#Grass and tall grass decays in Winter and regrows back in Spring. Saplings are also transformed into Dead Bushes.
-		"Grass Decay and Growth" = true
-		#Makes the following changes to Serene Seasons config:
-		#* Sets the starting season to the one in 'Starting season'
-		#
-		"Serene Seasons changes" = true
-		"Season based fishing time" = true
-		#How many minutes will day and night duration be shifted based off seasons? E.g. in Mid spring / autumn the duration of day and night is vanilla, when moving off those seasons day and night will last this many minutes more/less. In mid summer / winter the duration of day and night duration will be more / less by 3 times this value. Set to 0 to disable
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Time Control day night shift" = 1.5
-		#Has no effect if 'Serene Seasons changes' is disabled
-		#Allowed Values: EARLY_SPRING, MID_SPRING, LATE_SPRING, EARLY_SUMMER, MID_SUMMER, LATE_SUMMER, EARLY_AUTUMN, MID_AUTUMN, LATE_AUTUMN, EARLY_WINTER, MID_WINTER, LATE_WINTER
-		"Starting season" = "EARLY_SUMMER"
-		#How many minutes will day and night duration be (with this set to 10 the day will last 10 minutes and the night 10 minutes for a grand total of 20 minutes). This also adjusts the day_duration config option in Serene Seasons. Vanilla is 10.
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Time Control day night duration" = 15.0
 
 	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
 	[World."Ore Generation"]
@@ -81,50 +56,15 @@
 		"Data Pack" = true
 
 [Mobs]
-	#Changes to EnhancedAI config
+	#Changes some values in EnhancedAI config
 	"Enable EnhancedAI" = false
 	#Increase monsters health, movement speed, etc. This feature uses Mobs Properties Randomness.
 	"Enable Stats Buffs" = true
-	#Changes to mob spawn
-	"Enable Spawning" = true
 
 	#Increase monsters health, movement speed, etc. This feature uses Mobs Properties Randomness.
 	[Mobs."Stats Buffs"]
 		#Enables a Data Pack that buffs mobs.
 		"Enable DataPack" = true
-
-	#Changes to mob spawn
-	[Mobs.Spawning]
-		#Animals and Sea Creatures can no longer naturally spawn in Winter and will spawn less in autumn.
-		"Animals and sea creature in cold seasons" = true
-
-		[Mobs.Spawning.Despawning]
-			#Despawn Distance on winter, note that lower values increase the mobs around the player.
-			#Range: > -2147483648
-			Winter = 96
-			#Despawn Distance on spring, note that lower values increase the mobs around the player.
-			#Range: > -2147483648
-			Spring = 128
-			#Despawn Distance on summer, note that lower values increase the mobs around the player.
-			#Range: > -2147483648
-			Summer = 128
-			#Despawn Distance on autumn, note that lower values increase the mobs around the player.
-			#Range: > -2147483648
-			Autumn = 128
-
-		[Mobs.Spawning."Hostile Cap"]
-			#Hostile Mobs cap on winter, note that lower values increase the mobs around the player.
-			#Range: > -2147483648
-			Winter = 85
-			#Hostile Mobs cap on spring, note that lower values increase the mobs around the player.
-			#Range: > -2147483648
-			Spring = 70
-			#Hostile Mobs cap on summer, note that lower values increase the mobs around the player.
-			#Range: > -2147483648
-			Summer = 55
-			#Hostile Mobs cap on autumn, note that lower values increase the mobs around the player.
-			#Range: > -2147483648
-			Autumn = 70
 
 [Miscellaneous]
 	#Various data packs that can be enabled/disabled

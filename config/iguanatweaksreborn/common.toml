@@ -114,8 +114,10 @@
 		#How strong does water push entities. Vanilla is 0.014
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Water push force" = 0.03
-		#If true water pushes entities down even when no blocks are around
+		#If true water pushes entities down with the same strength as there are no blocks around
 		"Water pushes when no blocks are around" = true
+		#If true, entities will float in water
+		"[EXPERIMENTAL] Floaty entities" = false
 
 	#Trees fall when cut.
 	[World."Timber Trees"]
@@ -173,8 +175,25 @@
 	[World.Seasons]
 		#Makes the following changes to Serene Seasons config:
 		#* seasonal_crops is set to false, as it's controlled by Plants Growth
+		#* Sets the starting season to the one in 'Starting season'
 		#
 		"Serene Seasons changes" = true
+		#Removes greenhouse glass.
+		"No greenhouse glass" = true
+		#Saplings no longer drop in Winter.
+		"No Saplings in Winter" = true
+		#Grass and tall grass decays in Winter and regrows back in Spring. Saplings are also transformed into Dead Bushes.
+		"Grass Decay and Growth" = true
+		#Has no effect if 'Serene Seasons changes' is disabled
+		#Allowed Values: EARLY_SPRING, MID_SPRING, LATE_SPRING, EARLY_SUMMER, MID_SUMMER, LATE_SUMMER, EARLY_AUTUMN, MID_AUTUMN, LATE_AUTUMN, EARLY_WINTER, MID_WINTER, LATE_WINTER
+		"Starting season" = "EARLY_SUMMER"
+		#How many minutes will day and night duration be (with this set to 10 the day will last 10 minutes and the night 10 minutes for a grand total of 20 minutes). This also adjusts the day_duration config option in Serene Seasons. Vanilla is 10.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Time Control day night duration" = 15.0
+		#How many minutes will day and night duration be shifted based off seasons? E.g. in Mid spring / autumn the duration of day and night is vanilla, when moving off those seasons day and night will last this many minutes more/less. In mid summer / winter the duration of day and night duration will be more / less by 3 times this value. Set to 0 to disable
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Time Control day night shift" = 1.5
+		"Season based fishing time" = true
 
 ["Sleep & Respawn"]
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
@@ -348,6 +367,8 @@
 	"Enable Equipment" = true
 	#Small changes to villagers to make them less OP
 	"Enable Villagers" = true
+	#Changes to mob spawn with Serene Seasons installed
+	"Enable Season Spawning" = true
 
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
@@ -389,6 +410,39 @@
 		"Clamp Negative Demand" = true
 		#If true, the effect can no longer be applied to entities
 		"Remove Bad Omen" = true
+
+	#Changes to mob spawn with Serene Seasons installed
+	[Mobs."Season Spawning"]
+		#Animals and Sea Creatures can no longer naturally spawn in Winter and will spawn less in autumn.
+		"Animals and sea creature in cold seasons" = false
+
+		[Mobs."Season Spawning".Despawning]
+			#Despawn Distance on winter, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Winter = 112
+			#Despawn Distance on spring, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Spring = 128
+			#Despawn Distance on summer, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Summer = 128
+			#Despawn Distance on autumn, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Autumn = 128
+
+		[Mobs."Season Spawning"."Hostile Cap"]
+			#Hostile Mobs cap on winter, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Winter = 85
+			#Hostile Mobs cap on spring, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Spring = 70
+			#Hostile Mobs cap on summer, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Summer = 55
+			#Hostile Mobs cap on autumn, note that lower values increase the mobs around the player.
+			#Range: > -2147483648
+			Autumn = 70
 
 [Miscellaneous]
 	#Apply potion effects on certain hunger / health / experience level. Debuffs are controlled via json in this feature's folder
@@ -453,6 +507,9 @@
 		#The strength used to throw splash potions. Vanilla is 0.5
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Splash potions throw strength" = 1.0
+		#If set higher than 0 it will enable damage when colliding with walls at a high speed (e.g. with explosions or knockback). Higher = more damage
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Collide with walls damage" = 2.5
 
 		#The amount of air ticks the player regains each tick when out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4. Min is the amount as soon as you exit water, Max is a few seconds out of water.
 		[Miscellaneous.Tweaks."Player air ticks refilled"]

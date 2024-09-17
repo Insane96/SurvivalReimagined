@@ -13,7 +13,7 @@
 	"Stamina consumed on sprint" = 1.0
 	#How much stamina the player consumes on each jump
 	#Range: > 0
-	"Stamina consumed on jump" = 0
+	"Stamina consumed on jump" = 5
 	#How much stamina the player consumes each tick when swimming
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Stamina consumed on swimming" = 0.5
@@ -34,7 +34,7 @@
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Stamina regen per tick if locked" = 0.35
 	#Disable sprinting altogether
-	"Disable Sprinting" = true
+	"Disable Sprinting" = false
 	#Disable swimming altogether
 	"Disable Swimming" = false
 

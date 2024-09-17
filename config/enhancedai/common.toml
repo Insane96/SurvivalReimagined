@@ -388,6 +388,8 @@
 	"Enable Targeting" = true
 	#Makes mobs ride other mobs
 	"Enable Riding" = true
+	#Makes mobs be able to jump in place when target is a few blocks above the mob.
+	"Enable Jump" = true
 
 	[Mobs.Spawning]
 		#How far away from any player monsters will instantly despawn? Vanilla is 128
@@ -577,10 +579,12 @@
 			Maximum = 0.0
 
 		[Mobs.Targeting."Hurt by target"]
-			#Mobs will no longer switch target if it's the same or if the current one it's closer.
+			#Mobs will actually switch target when attacked unless it's the same or if the current one it's closer.
 			"Better version" = true
 			#Mobs will no longer attack each other.
 			"Prevent infighting" = true
+			#Mobs will prefer to attack players instead of other mobs (Note that 'Prevent infighting' should be disabled).
+			"Prefer players" = true
 
 		#Chances for a mob to spawn neutral
 		[Mobs.Targeting."Neutral Chances"]
@@ -673,10 +677,10 @@
 		#Distance from a player that will make the skeleton run away.
 		#Range: 0.0 ~ 32.0
 		"Flee Distance Far" = 16.0
-		#Speed multiplier when the skeleton avoids the player and it's within 'Flee Distance Near' blocks from him.
+		#Speed multiplier when the pillager avoids the player and it's within 'Flee Distance Near' blocks from him.
 		#Range: 0.0 ~ 4.0
 		"Flee speed Multiplier Near" = 1.1
-		#Speed multiplier when the skeleton avoids the player and it's farther than 'Flee Distance Far' blocks from him.
+		#Speed multiplier when the pillager avoids the player and it's farther than 'Flee Distance Far' blocks from him.
 		#Range: 0.0 ~ 4.0
 		"Flee speed Multiplier Far" = 1.0
 
@@ -772,7 +776,7 @@
 			#If true, Angry Creeper emits particles
 			Particles = true
 			#The special sound effect that the Angry Creeper plays
-			#Allowed Values: NONE, CENA, WTF_BOOM
+			#Allowed Values: NONE, CENA, WTF_BOOM, OLD_EXPLOSION
 			Sounds = "NONE"
 			#If true, Angry Creeper will have a name
 			Name = true
@@ -875,6 +879,12 @@
 		Knockback = 1.5
 		#Animals' knockback attribute will be increased/decreased based on the side of the mob.
 		"Knockback size based" = true
+		#Speed multiplier when the animal avoids the player and it's within 8 blocks from him.
+		#Range: 0.0 ~ 4.0
+		"Flee speed Multiplier Near" = 1.1
+		#Speed multiplier when the animal avoids the player and it's farther than 16 blocks from him.
+		#Range: 0.0 ~ 4.0
+		"Flee speed Multiplier Far" = 1.0
 
 	#Make animals flee/fight back when one is attacked
 	[Animals."Animals Group Flee"]
