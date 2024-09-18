@@ -1,12 +1,14 @@
 # Changelog
 
-## Upcoming
+## Alpha 0.2.1
 * You can now sprint again
   * You can sprint for 5 seconds before your stamina depletes
   * Depleting your stamina locks you from sprinting and slows you down
+* Removed Stone tools
 * Enchanted items are now obtainable again
   * The only way to obtain enchanted items as now is with mobs drops and chests. Enchanted books can be applied to items with Anvils as usual
   * Some enchantments related to sprinting and experience have been disabled
+* New main menu panorama
 * Iron, golden, durium and solarium armor no longer have a movement speed penalty. Diamond and Netherite's movement speed penalty has been reduced
 * Removed many philip's ruins, but re-added many others
 * Added many resource packs

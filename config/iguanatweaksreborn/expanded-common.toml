@@ -140,6 +140,11 @@
 		#Enables a data pack that changes the crafting of the Tool Belt to give more slots (2 -> 4). Also makes the cost to upgrade start from 4 instead of 2
 		"Bigger ToolBelt" = true
 
+	#Add flint tools and shield.
+	[Items."Flint Expansion"]
+		#If true, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with flint ones
+		"Disable Stone Tools" = true
+
 ["Hunger & Health"]
 	#Adds new foods and drinks.
 	"Enable New Foods & Drinks" = true
