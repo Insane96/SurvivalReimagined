@@ -969,7 +969,7 @@
 		"Merging Repair bonus" = 15
 		#Multiplier for the levels required to repair or merge an item.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Repair cost multiplier" = 0.7
+		"Repair cost multiplier" = 0
 		#Chance for an anvil to become chipped/damaged/break. Vanilla is 12%
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Break chance" = 0.075

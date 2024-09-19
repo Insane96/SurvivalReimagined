@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Applying enchanted books to items no longer cost XP
+
 ## Alpha 0.2.1
 * You can now sprint again
   * You can sprint for 5 seconds before your stamina depletes
