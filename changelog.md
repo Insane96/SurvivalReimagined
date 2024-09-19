@@ -2,6 +2,7 @@
 
 ## Upcoming
 * Applying enchanted books to items no longer cost XP
+* Food now always heals at least 1/4 of a heart
 
 ## Alpha 0.2.1
 * You can now sprint again

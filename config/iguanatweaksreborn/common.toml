@@ -30,9 +30,6 @@
 	"Enable Seasons" = true
 
 	[World."Coal & Fire"]
-		#How much faster fire ticks and spreads.
-		#Range: 0.0 ~ 100.0
-		"Fire spread speed multiplier" = 4.0
 		#If true, campfires must be lit
 		"Unlit campfire" = true
 
@@ -813,11 +810,11 @@
 
 		["Hunger & Health"."No Hunger"."Food Heal"]
 			#The formula to calculate the health regenerated when eating a food. Leave empty to disable. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Over Time" = "(hunger^1.37)*0.5"
+			"Over Time" = "ROUND((hunger^1.37) * 0.5 * 2, 0) / 2"
 			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html
 			"Over time Strength" = "MAX(0.15, 5 * saturation_modifier * (1 / hunger))"
 			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Instant Heal" = "(hunger^1.3)*0.35"
+			"Instant Heal" = "ROUND((hunger^1.3) * 0.35 * 2, 0) / 2"
 			#Foods below this saturation will instantly heal, foods above this threshold will have overtime heal.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Saturation threshold" = 4.0

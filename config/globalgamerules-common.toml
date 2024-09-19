@@ -117,6 +117,9 @@
 		snow_accumulation_height = 1
 		#Whether new sources of water are allowed to form.
 		water_source_conversion = true
+		#Non Vanilla gamerule: 'iguanatweaks:fireSpeedMultiplier'
+		#Range: > 0
+		"iguanatweaks:fire_speed_multiplier" = 4
 
 	[gamerules.spawning]
 		#Whether phantoms can spawn in the nighttime.
