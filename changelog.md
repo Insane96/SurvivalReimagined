@@ -1,6 +1,7 @@
 # Changelog
 
 ## Upcoming
+* Added Pierce Arrow. Arrows get stuck in mobs visually like players
 * Applying enchanted books to items no longer cost XP
 * Food now always heals at least 1/4 of a heart
 
