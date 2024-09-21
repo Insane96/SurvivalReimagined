@@ -30,6 +30,8 @@
 		"No tilting with some damage types" = true
 		#If true, the outline around blocks will be red if the tool in hand will make drops not ... drop.
 		"Red block outline with wrong tool" = true
+		#If true, when you die, you switch to third person camera.
+		"Thrid person on death" = true
 
 	#Makes fog less invasive in some contexts
 	[Client.Fog]
