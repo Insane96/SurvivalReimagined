@@ -91,7 +91,7 @@
 		cloudsHeight = 192
 		#Toggle fog feature
 		#Fog was a vanilla feature, toggling off may increases performance
-		fog = false
+		fog = true
 
 		[xenonextras.quality.darkness]
 			#Configure fog brightness on nether when darkness is enabled

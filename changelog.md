@@ -1,5 +1,8 @@
 # Changelog
 
+## Alpha 0.2.3
+* Mod updates
+
 ## Alpha 0.2.2
 * Added Pierce Arrow. Arrows get stuck in mobs visually like players
 * Applying enchanted books to items no longer cost XP

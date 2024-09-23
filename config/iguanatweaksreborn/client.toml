@@ -32,6 +32,8 @@
 		"Red block outline with wrong tool" = true
 		#If true, when you die, you switch to third person camera.
 		"Thrid person on death" = true
+		#Why is that still a thing?.
+		"Remove score" = true
 
 	#Makes fog less invasive in some contexts
 	[Client.Fog]
