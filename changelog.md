@@ -1,5 +1,17 @@
 # Changelog
 
+* https://spark.lucko.me/VlkqLmfBJn
+* Biome compass: tells you the biome you're in
+* More iron in lush caves
+* Remove leftover overtime heal consumption
+* Heal wolves more
+* Buff tools efficiency?
+* Turn off campfires under rain
+* Can't craft foul pips
+* Nether woods visible in EMI, and myalite
+* Make entities flee from the target and not players
+* Ding sound when you hit entities far away
+
 ## Alpha 0.2.3
 * Mod updates
 
