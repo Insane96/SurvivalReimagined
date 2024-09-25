@@ -5,7 +5,7 @@
 * Nether woods visible in EMI, and myalite
 
 ## Upcoming
-* Experience Bottles are now replaced with Enchanted Cleansed Lapis
+* Experience Bottles are now replaced with Enchanted Cleansed Lapis (in a 50% ratio)
 
 ## Alpha 0.2.3
 * Mod updates
