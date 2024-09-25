@@ -2,12 +2,7 @@
 
 * https://spark.lucko.me/VlkqLmfBJn
 * Biome compass: tells you the biome you're in
-* More iron in lush caves
-* Heal wolves more
-* Turn off campfires under rain
-* Can't craft foul pips
 * Nether woods visible in EMI, and myalite
-* Make entities flee from the target and not players
 
 ## Upcoming
 * Experience Bottles are now replaced with Enchanted Cleansed Lapis
