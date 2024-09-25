@@ -1,10 +1,8 @@
 # Changelog
 
-* https://spark.lucko.me/VlkqLmfBJn
-* Biome compass: tells you the biome you're in
-* Nether woods visible in EMI, and myalite
-
-## Upcoming
+## Alpha 0.3.0 - The enchanting update
+* Added back experience and enchanting.
+  * The Enchanting table knows no enchantments when placed, but enchanted books can be used on it to let it learn enchantments
 * Experience Bottles are now replaced with Enchanted Cleansed Lapis (in a 50% ratio)
 
 ## Alpha 0.2.3

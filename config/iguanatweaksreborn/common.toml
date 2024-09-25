@@ -32,6 +32,8 @@
 	[World."Coal & Fire"]
 		#If true, campfires must be lit
 		"Unlit campfire" = true
+		#If true, campfires will be extinguished when it starts to rain
+		"Campfire turn off under rain" = true
 
 	#Spawners are now a challenge. Monsters spawning from spawners ignore light.
 	[World.Spawners]
@@ -507,6 +509,9 @@
 		#If set higher than 0 it will enable damage when colliding with walls at a high speed (e.g. with explosions or knockback). Higher = more damage
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Collide with walls damage" = 2.5
+		#Plays a sound effect when a mob is hit at least from this distance.
+		#Range: > -2147483648
+		"Ding on mob hit at distance" = 40
 
 		#The amount of air ticks the player regains each tick when out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4. Min is the amount as soon as you exit water, Max is a few seconds out of water.
 		[Miscellaneous.Tweaks."Player air ticks refilled"]
@@ -818,6 +823,9 @@
 			#Foods below this saturation will instantly heal, foods above this threshold will have overtime heal.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Saturation threshold" = 4.0
+			#Over Time Heal will be consumed at the rate of exhaustion multiplied by this
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			"Over time Decay" = 0.02
 
 		["Hunger & Health"."No Hunger"."Raw food"]
 			#If true, raw food will heal by this percentage (this is applied after 'Food Heal.Health Multiplier'). Raw food is defined in the iguanatweaksreborn:raw_food tag
@@ -1007,11 +1015,11 @@
 	[Experience.Enchantments]
 		#Infinity can go up to level 4. Each level makes an arrow have only 1 in level+1 chance to consume. E.g. with Infinity 4 there's 1 in 5 chance to consume the arrow, and 4 in 5 to not consume it.
 		"Infinity overhaul" = true
-		#Unbreaking max level is now 5 but "bonus durability" is reduced
+		#Unbreaking max level is now 5 and tool lasts 50% more per level
 		"Less unbreakable unbreaking" = true
 		#Thorns is no longer compatible with other protections, but deals damage every time (higher levels deal more damage) and no longer damages items.
 		"Small Thorns Overhaul" = true
-		#Change the efficiency formula from tool_efficiency+(lvl*lvl+1) to tool_efficiency * (1 + (0.5*lvl))
+		#Change the bonus efficiency formula from `lvl*lvl+1` to `tool_efficiency * (0.5*lvl)`
 		"Better Efficiency Formula" = true
 		#Set arrow's damage increase with the Power enchantment (vanilla is 0.5). If set to a value != 0.5 the flat 0.5 bonus is also removed. Set to 0.5 to disable.
 		#Range: 0.0 ~ 2.0
@@ -1023,13 +1031,13 @@
 		#If true, vanilla damaging enchantments (such as smite or sharpness) are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		#Changes to damaging enchantments:
 		#Enchantments deal bonus damage based off the item's attack damage. So Sharpness on a Sword adds less damage than Sharpness on an Axe.
-		#Sharpness deals +0.75 damage per level
-		#Smite deals +1.25 damage per level to undead
-		#Bane of Arthropods has been replaced with Bane of SSSSS that deals +1.25 damage per level to arthropods and creepers and applies slowness
+		#Sharpness deals +0.5 damage per level
+		#Smite deals +1 damage per level to undead and applies weakness
+		#Bane of Arthropods has been replaced with Bane of SSSSS that deals +1 damage per level to arthropods and creepers and applies slowness
 		"Replace damaging enchantments" = true
 		#If true, vanilla looting, fortune and Luck of the Sea enchantments are replaced with a single one: Luck. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Replace looting, fortune and LotS enchantments" = true
-		#The ore_drops formula is changed to 20%/50%/85%/... drop increase from 25%/75%/125%/...
+		#The ore_drops formula is changed to 20%/50%/85%/125% drop increase from 33%/75%/120%/166%
 		"Nerf fortune" = true
 		#Mending only makes the tool repair by one durability every 2 xp instead of 2 durability/1 xp.
 		"Mending Nerf" = true

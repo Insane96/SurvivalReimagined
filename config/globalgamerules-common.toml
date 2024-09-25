@@ -65,7 +65,7 @@
 		#Range: > 0
 		"iguanatweaks:death_lose_items_percentage" = 0
 		#Non Vanilla gamerule: 'iguanatweaks:disableExperience'
-		"iguanatweaks:disable_experience" = true
+		"iguanatweaks:disable_experience" = false
 		#Non Vanilla gamerule: 'iguanatweaks:doLooseRespawn'
 		"iguanatweaks:do_loose_respawn" = true
 		#Whether the player should keep items and experience in their inventory after death .
