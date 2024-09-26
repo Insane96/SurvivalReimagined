@@ -1,8 +1,13 @@
 # Changelog
 
+* https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-forge
+
 ## Alpha 0.3.0 - The enchanting update
 * Added back experience and enchanting.
   * The Enchanting table knows no enchantments when placed, but enchanted books can be used on it to let it learn enchantments
+* Added Multimine
+  * Blocks stay "mined" for a while before slowly going back to normal state
+  * In multiplayer if multiple ppl break a block at the same time, it will be mined faster
 * Experience Bottles are now replaced with Enchanted Cleansed Lapis (in a 50% ratio)
 
 ## Alpha 0.2.3
