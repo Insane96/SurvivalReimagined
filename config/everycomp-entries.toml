@@ -31,6 +31,22 @@
 			yellow_blossom = true
 			red_blossom = true
 
+	[types.stone_type]
+
+		[types.stone_type.philipsruins]
+			frozen_prismarine = true
+
+		[types.stone_type.quark]
+			soul_sandstone = true
+			permafrost = true
+			limestone = true
+			jasper = true
+			shale = true
+			myalite = true
+
+		[types.stone_type.supplementaries]
+			ash = true
+
 #Disables specific entries
 [entries]
 
