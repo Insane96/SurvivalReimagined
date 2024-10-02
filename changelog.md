@@ -2,6 +2,9 @@
 
 * https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-forge
 
+## Upcoming
+* Added Friends and Foes
+
 ## Alpha 0.3.0 - The enchanting update
 * Added back experience and enchanting.
   * The Enchanting table knows no enchantments when placed, but enchanted books can be used on it to let it learn enchantments
