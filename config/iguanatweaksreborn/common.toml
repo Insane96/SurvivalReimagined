@@ -742,11 +742,11 @@
 			#Health of respawning players
 			["Hunger & Health"."Hunger Health Regen".Respawn.Health]
 				#Range: 0.0 ~ 20.0
-				"Easy/Peaceful" = 20.0
+				"Easy/Peaceful" = 10.0
 				#Range: 0.0 ~ 20.0
-				Normal = 14.0
+				Normal = 10.0
 				#Range: 0.0 ~ 20.0
-				Hard = 8.0
+				Hard = 6.0
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	["Hunger & Health"."Foods & Drinks"]

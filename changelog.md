@@ -1,7 +1,5 @@
 # Changelog
 
-* https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-forge
-
 ## Upcoming
 * Added Friends and Foes
 
