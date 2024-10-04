@@ -1,9 +1,8 @@
 # Changelog
 
-* Zombies drop 2 cloth?
-* Tiredness fake sounds times level
-
 ## Upcoming
+* Added YUNG's Better Dungeons
+  * Only the small dungeons are used
 * Zombies and skellys can now have enchanted gear again
 
 ## Alpha 0.4.0 - The enchanting and friends update 
