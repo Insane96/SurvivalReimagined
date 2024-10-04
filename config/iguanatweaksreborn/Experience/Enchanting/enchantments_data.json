@@ -1,0 +1,888 @@
+[
+  {
+    "id": "allurement:alleviating",
+    "costs": 5
+  },
+  {
+    "id": "allurement:ascension_curse",
+    "costs": 5
+  },
+  {
+    "id": "allurement:fleeting_curse",
+    "costs": 5
+  },
+  {
+    "id": "allurement:launch",
+    "costs": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "allurement:obedience",
+    "costs": 3
+  },
+  {
+    "id": "allurement:reeling",
+    "costs": [
+      3,
+      6,
+      9
+    ]
+  },
+  {
+    "id": "allurement:reforming",
+    "costs": 3
+  },
+  {
+    "id": "allurement:shockwave",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "allurement:spread_of_ailments",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "allurement:vengeance",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "farmersdelight:backstabbing",
+    "costs": [
+      2,
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:adrenaline",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:air_born",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:air_stealer",
+    "costs": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:armor_piercer",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:blasting",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:blood_pact_curse",
+    "costs": 5
+  },
+  {
+    "id": "iguanatweaksexpanded:burst_of_arrows",
+    "costs": 6
+  },
+  {
+    "id": "iguanatweaksexpanded:double_jump",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:dumbness_curse",
+    "costs": 2
+  },
+  {
+    "id": "iguanatweaksexpanded:ender_curse",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:exchange",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:expanded",
+    "costs": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:experience_curse",
+    "costs": 5
+  },
+  {
+    "id": "iguanatweaksexpanded:fragility_curse",
+    "costs": 2
+  },
+  {
+    "id": "iguanatweaksexpanded:gravity_defying",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:healthy",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:hoppy",
+    "costs": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:inefficiency_curse",
+    "costs": 2
+  },
+  {
+    "id": "iguanatweaksexpanded:knowledgeable",
+    "costs": 6
+  },
+  {
+    "id": "iguanatweaksexpanded:lucky_hook",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:magic_protection",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:magnetic",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:melee_protection",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:padding",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:part_breaker",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:rage",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:reach",
+    "costs": 6
+  },
+  {
+    "id": "iguanatweaksexpanded:recovery",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:short_arm_curse",
+    "costs": 2
+  },
+  {
+    "id": "iguanatweaksexpanded:slow_charge_curse",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:slow_strike_curse",
+    "costs": 2
+  },
+  {
+    "id": "iguanatweaksexpanded:smartness",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:soulbound",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:sprint_pact",
+    "costs": 6
+  },
+  {
+    "id": "iguanatweaksexpanded:steady_fall",
+    "costs": 6
+  },
+  {
+    "id": "iguanatweaksexpanded:steel_fall_curse",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:step_up",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:swift_strike",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:tear_curse",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:unhurried_curse",
+    "costs": 3
+  },
+  {
+    "id": "iguanatweaksexpanded:veining",
+    "costs": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:vindication",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:void_curse",
+    "costs": 2
+  },
+  {
+    "id": "iguanatweaksexpanded:walking_curse",
+    "costs": 5
+  },
+  {
+    "id": "iguanatweaksexpanded:water_coolant",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:zippy",
+    "costs": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:bane_of_sssss",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:blast_protection",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:critical",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:feather_falling",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:fire_aspect",
+    "costs": [
+      3,
+      6,
+      9
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:fire_protection",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:knockback",
+    "costs": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:luck",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:projectile_protection",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:protection",
+    "costs": 6
+  },
+  {
+    "id": "iguanatweaksreborn:sharpness",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksreborn:smite",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:aqua_affinity",
+    "costs": 3
+  },
+  {
+    "id": "minecraft:bane_of_arthropods",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:binding_curse",
+    "costs": 5
+  },
+  {
+    "id": "minecraft:blast_protection",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "minecraft:channeling",
+    "costs": 6
+  },
+  {
+    "id": "minecraft:depth_strider",
+    "costs": [
+      3,
+      6,
+      9
+    ]
+  },
+  {
+    "id": "minecraft:efficiency",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:feather_falling",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "minecraft:fire_aspect",
+    "costs": [
+      3,
+      6,
+      9
+    ]
+  },
+  {
+    "id": "minecraft:fire_protection",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "minecraft:flame",
+    "costs": 3
+  },
+  {
+    "id": "minecraft:fortune",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:frost_walker",
+    "costs": [
+      3,
+      6,
+      9
+    ]
+  },
+  {
+    "id": "minecraft:impaling",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:infinity",
+    "costs": [
+      3,
+      6,
+      9,
+      12,
+      15
+    ]
+  },
+  {
+    "id": "minecraft:knockback",
+    "costs": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "minecraft:looting",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:loyalty",
+    "costs": [
+      2,
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "id": "minecraft:luck_of_the_sea",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:lure",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:mending",
+    "costs": 3
+  },
+  {
+    "id": "minecraft:multishot",
+    "costs": 3
+  },
+  {
+    "id": "minecraft:piercing",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "minecraft:power",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:projectile_protection",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "id": "minecraft:protection",
+    "costs": [
+      3,
+      6,
+      9,
+      12,
+      15
+    ]
+  },
+  {
+    "id": "minecraft:punch",
+    "costs": [
+      3,
+      6,
+      9
+    ]
+  },
+  {
+    "id": "minecraft:quick_charge",
+    "costs": [
+      2,
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "id": "minecraft:respiration",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:riptide",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:sharpness",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:silk_touch",
+    "costs": 6
+  },
+  {
+    "id": "minecraft:smite",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:soul_speed",
+    "costs": [
+      4,
+      8,
+      12,
+      16
+    ]
+  },
+  {
+    "id": "minecraft:sweeping",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:swift_sneak",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:thorns",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:unbreaking",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "minecraft:vanishing_curse",
+    "costs": 5
+  },
+  {
+    "id": "passablefoliage:leaf_walker",
+    "costs": 2
+  },
+  {
+    "id": "shieldsplus:ablaze",
+    "costs": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "shieldsplus:aegis",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "shieldsplus:celestial_guardian",
+    "costs": 6
+  },
+  {
+    "id": "shieldsplus:fast_recovery",
+    "costs": 3
+  },
+  {
+    "id": "shieldsplus:lightweight",
+    "costs": 3
+  },
+  {
+    "id": "shieldsplus:perfect_parry",
+    "costs": 6
+  },
+  {
+    "id": "shieldsplus:recoil",
+    "costs": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "shieldsplus:reflection",
+    "costs": [
+      3,
+      6,
+      9,
+      12,
+      15
+    ]
+  },
+  {
+    "id": "shieldsplus:reinforced",
+    "costs": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "id": "shieldsplus:shield_bash",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "id": "supplementaries:stasis",
+    "costs": 5
+  }
+]

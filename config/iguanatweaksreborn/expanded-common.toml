@@ -152,10 +152,10 @@
 [Experience]
 	#Change some enchantments related stuff and adds new enchantments. Please note that Damaging enchantments such as water coolant are enabled only if ITR 'Replace damaging enchantments' is enabled. This also applies for protection enchantments and ITR 'Replace protection enchantments'
 	"Enable New Enchantments" = true
-	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
+	#Adds a brand new enchanting table. If this feature is enabled, a data pack is also enabled that changes the enchanting table recipe to give the new one and replaces xp bottles with enchanted cleansed lapis. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
 	"Enable Enchanting" = true
 
-	#Adds a brand new enchanting table. If this feature is enabled a data pack is also enabled that changes the enchanting table recipe. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
+	#Adds a brand new enchanting table. If this feature is enabled, a data pack is also enabled that changes the enchanting table recipe to give the new one and replaces xp bottles with enchanted cleansed lapis. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
 	[Experience.Enchanting]
 		#Enchanted items can no longer be merged with other enchanted items (also applies to enchanted books).
 		"No enchantment merge" = true
@@ -168,6 +168,8 @@
 		"Allurement integration" = true
 		#If true, the new enchanting table must learn all the enchantments and not only treasure.
 		"Enchanting Table requires learning enchantments" = true
+		#If true, the new enchanting table can learn curses.
+		"Allow learning Curses" = true
 
 		[Experience.Enchanting.Grindstone]
 			#If true, grindstone will give XP based off the new enchanting table. This is based off the ITR levelScalingFormula set to a fixed value
@@ -176,6 +178,8 @@
 			"Treasure enchantment extraction" = true
 			#If true, grindstone will be able to extract all enchantments, not only treasure enchantments.
 			"Enchantment extraction" = true
+			#If true, grindstone will also remove curses when disenchanting.
+			"Curse removal" = true
 
 [Combat]
 	#Gives a use to the fletching table.

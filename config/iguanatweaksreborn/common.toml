@@ -919,6 +919,26 @@
 		#Seconds until you can milk cows (or stew mooshrooms)
 		#Range: > -2147483648
 		"Milk Cooldown" = 1200
+		#Chance for animals breeding to get twins. This chance is applied for every baby spawned so you have have triplets if lucky enough.
+		#Range: 0.0 ~ 1.0
+		"Twins chance" = 0.5
+		#Chance every 10 seconds for animals to fall in love without food (breeding cooldown still applies).
+		#Range: 0.0 ~ 1.0
+		"Auto-breed chance" = 0.02
+
+		#Experience obtained when cows or mooshrooms are milked or stewed. This only works if the fluid cooldown is enabled.
+		[Farming.Livestock."Milk xp"]
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 2.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 5.0
+
+		#Experience obtained when shearing sheep.
+		[Farming.Livestock."Shear xp"]
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 1.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 3.0
 
 [Experience]
 	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to disable experience drops and experience bar.
@@ -960,6 +980,13 @@
 		#Can be set to 0 to make Bottle o' enchanting drop no bonus experience
 		#Range: 0 ~ 512
 		"Bottle o' Enchanting Bonus XP" = 35
+
+		#Experience gained from harvesting Honey or Honeycombs from beehives
+		[Experience.Experience."Honey Harvest Experience"]
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 5.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 10.0
 
 	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.
 	[Experience.Anvils]
