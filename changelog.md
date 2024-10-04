@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## Alpha 0.4.0 - The enchanting and friends update 
 * Added Friends and Foes
 * Added Connectible Chains
 
