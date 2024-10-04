@@ -1,5 +1,10 @@
 # Changelog
 
+* Can't make iron shield
+* Mobs equipment enchantments
+* Zombies drop 2 cloth?
+* Tiredness fake sounds times level
+
 ## Alpha 0.4.0 - The enchanting and friends update 
 * Added Friends and Foes
 * Added Connectible Chains
