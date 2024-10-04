@@ -1,9 +1,10 @@
 # Changelog
 
-* Can't make iron shield
-* Mobs equipment enchantments
 * Zombies drop 2 cloth?
 * Tiredness fake sounds times level
+
+## Upcoming
+* Zombies and skellys can now have enchanted gear again
 
 ## Alpha 0.4.0 - The enchanting and friends update 
 * Added Friends and Foes
