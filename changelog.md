@@ -3,6 +3,8 @@
 ## Upcoming
 * Added YUNG's Better Dungeons
   * Only the small dungeons are used
+* Added Pick Up Notifier
+* Added Straw Statues
 * Zombies and skellys can now have enchanted gear again
 
 ## Alpha 0.4.0 - The enchanting and friends update 
