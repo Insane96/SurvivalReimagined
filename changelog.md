@@ -2,6 +2,7 @@
 
 ## Upcoming
 * Added Friends and Foes
+* Added Connectible Chains
 
 ## Alpha 0.3.0 - The enchanting update
 * Added back experience and enchanting.
