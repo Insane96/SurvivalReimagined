@@ -1,11 +1,14 @@
 # Changelog
 
+* Repairing stuff should cost 20% less
+
 ## Upcoming
 * Added YUNG's Better Dungeons
   * Only the small dungeons are used
 * Added Pick Up Notifier
-* Added Straw Statues
+* Added Straw Statues 
 * Zombies and skellys can now have enchanted gear again
+* Fixed surge protector advancement
 
 ## Alpha 0.4.0 - The enchanting and friends update 
 * Added Friends and Foes
