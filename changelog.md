@@ -1,10 +1,10 @@
 # Changelog
 
-* Repairing stuff should cost 20% less
-
 ## Upcoming
 * Added YUNG's Better Dungeons
   * Only the small dungeons are used
+* Added Respawning Animals
+  * Animals now despawn and respawn like in Beta and Bedrock edition. Animals will not despawn if mounted, tamed, fed, etc.
 * Added Pick Up Notifier
 * Added Straw Statues 
 * Zombies and skellys can now have enchanted gear again
