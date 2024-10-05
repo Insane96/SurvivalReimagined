@@ -5,9 +5,13 @@
   * Only the small dungeons are used
 * Added Respawning Animals
   * Animals now despawn and respawn like in Beta and Bedrock edition. Animals will not despawn if mounted, tamed, fed, etc.
+* Added Dungeons and Taverns
+  * More stuff to explore (and die in)
 * Added Pick Up Notifier
 * Added Straw Statues 
+* Added Stylish Effects
 * Zombies and skellys can now have enchanted gear again
+* Nerfed Witches a bit
 * Fixed surge protector advancement
 
 ## Alpha 0.4.0 - The enchanting and friends update 

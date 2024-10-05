@@ -127,11 +127,16 @@
 		#Whether mobs should naturally spawn. Does not affect monster spawners.
 		do_mob_spawning = true
 		#Whether patrols can spawn.
-		do_patrol_spawning = true
+		do_patrol_spawning = false
 		#Whether wandering traders can spawn.
 		do_trader_spawning = true
 		#Whether wardens can spawn.
 		do_warden_spawning = true
+		#Non Vanilla gamerule: 'animalMobCap'
+		#Range: > 0
+		animal_mob_cap = 15
+		#Non Vanilla gamerule: 'persistentAnimals'
+		persistent_animals = false
 
 #Configs related to difficult changes
 [difficulty]
