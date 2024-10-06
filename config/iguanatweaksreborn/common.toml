@@ -1093,8 +1093,6 @@
 	"Enable Swing Through Grass" = true
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	"Enable Unfair one-shots" = true
-	#Rework critical hits to be a chance to happen instead of damage on jump
-	"Enable Critical Hits" = true
 	#Various changes from weapons damage to armor reduction
 	"Enable Misc Stats" = true
 	"Enable Snowballs" = true
@@ -1110,21 +1108,8 @@
 	"Enable Armor Rework" = true
 	#Adds a new attribute that deals bonus damage that bypasses armor
 	"Enable Piercing damage" = true
-
-	#Rework critical hits to be a chance to happen instead of damage on jump
-	[Combat."Critical Hits"]
-		#If set >= 0 critical hits are no longer dealt, have a random chance to happen.
-		#Range: -1.0 ~ 1.0
-		Chance = 0.05
-		#Chance increase per level of Critical enchantment.
-		#Range: -1.0 ~ 1.0
-		"Enchantment Chance" = 0.1
-		#Critical multiplier increase per level of Critical enchantment. This only applies if chance based crit is enabled, otherwise critical doubles the crit multiplier.
-		#Range: -1.0 ~ 1.0
-		"Enchantment Bonus" = 0.3
-		#How much damage a critical hit does. Vanilla is 1.5
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Damage multiplier" = 1.5
+	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
+	"Enable Critical Rework" = true
 
 	#Various changes from weapons damage to armor reduction
 	[Combat."Misc Stats"]
@@ -1160,6 +1145,9 @@
 		"Better healing potion" = true
 		#Makes swords do sweep attack even if not on ground and if did crit
 		"Better sweeping" = true
+		#Changes bows accuracy. Vanilla is 1.0
+		#Range: 0.0 ~ 10.0
+		"Bow Inaccuracy" = 0.5
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -1219,4 +1207,13 @@
 	[Combat."Unfair one-shots"]
 		#If true, a resistance effect is given to players on activation
 		Resistance = true
+
+	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
+	[Combat."Critical Rework"]
+		#iguanatweaksreborn:critical_chance increase per level of Critical enchantment.
+		#Range: -1.0 ~ 1.0
+		"Enchantment Chance" = 0.1
+		#iguanatweaksreborn:critical_damage increase per level of Critical enchantment.
+		#Range: -1.0 ~ 1.0
+		"Enchantment Damage" = 0.3
 
