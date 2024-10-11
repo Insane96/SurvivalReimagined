@@ -10,10 +10,11 @@
 * Added Pick Up Notifier
 * Added Straw Statues 
 * Added Stylish Effects
-* You can now merge unenchanted items in an Anvil again, getting a 10% repair bonus
+* You can now merge items in an Anvil again, getting a 10% repair bonus
 * Zombies and skellys can now have enchanted gear again
 * Nerfed Witches a bit
 * Fixed surge protector advancement
+* Fixed fog being overridden by Nostalgic Tweaks
 
 ## Alpha 0.4.0 - The enchanting and friends update 
 * Added Friends and Foes

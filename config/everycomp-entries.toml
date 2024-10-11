@@ -2,18 +2,34 @@
 #Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
 [types]
 
+	[types.stone_type]
+
+		[types.stone_type.philipsruins]
+			frozen_prismarine = true
+
+		[types.stone_type.supplementaries]
+			ash = true
+
+		[types.stone_type.quark]
+			soul_sandstone = true
+			permafrost = true
+			limestone = true
+			jasper = true
+			shale = true
+			myalite = true
+
 	[types.wood_type]
+
+		[types.wood_type.betterarcheology]
+			rotten = true
+
+		[types.wood_type.autumnity]
+			maple = true
 
 		[types.wood_type.quark]
 			azalea = true
 			ancient = true
 			blossom = true
-
-		[types.wood_type.autumnity]
-			maple = true
-
-		[types.wood_type.betterarcheology]
-			rotten = true
 
 	[types.leaves_type]
 
@@ -31,26 +47,20 @@
 			yellow_blossom = true
 			red_blossom = true
 
-	[types.stone_type]
-
-		[types.stone_type.philipsruins]
-			frozen_prismarine = true
-
-		[types.stone_type.quark]
-			soul_sandstone = true
-			permafrost = true
-			limestone = true
-			jasper = true
-			shale = true
-			myalite = true
-
-		[types.stone_type.supplementaries]
-			ash = true
-
 #Disables specific entries
 [entries]
 
 	[entries.wood_type]
+
+		[entries.wood_type.vct]
+			crafting_table = true
+
+		[entries.wood_type.friendsandfoes]
+			beehive = true
+
+		[entries.wood_type.boatload]
+			large_boat = true
+			furnace_boat = true
 
 		[entries.wood_type.quark]
 			vertical_planks = true
@@ -61,16 +71,6 @@
 			trapped_chest = true
 			bookshelf = true
 			hollow_log = true
-
-		[entries.wood_type.boatload]
-			large_boat = true
-			furnace_boat = true
-
-		[entries.wood_type.vct]
-			crafting_table = true
-
-		[entries.wood_type.friendsandfoes]
-			beehive = true
 
 	[entries.leaves_type]
 
