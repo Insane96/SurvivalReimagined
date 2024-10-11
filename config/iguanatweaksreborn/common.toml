@@ -998,7 +998,7 @@
 		"Merging cost is based off result" = true
 		#Vanilla is 12%
 		#Range: 0 ~ 100
-		"Merging Repair bonus" = 15
+		"Merging Repair bonus" = 10
 		#Multiplier for the levels required to repair or merge an item.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Repair cost multiplier" = 0
@@ -1022,7 +1022,7 @@
 		#If true, anvils don't wear down when only used for renaming
 		"No break on renaming" = true
 		#If true you can merge items in the anvil and get a repair bonus
-		"Allow Merging Items" = false
+		"Allow Merging Items" = true
 
 		[Experience.Anvils."Enchantments cost by rarity"]
 			#Vanilla: 1

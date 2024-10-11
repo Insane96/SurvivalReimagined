@@ -10,6 +10,7 @@
 * Added Pick Up Notifier
 * Added Straw Statues 
 * Added Stylish Effects
+* You can now merge unenchanted items in an Anvil again, getting a 10% repair bonus
 * Zombies and skellys can now have enchanted gear again
 * Nerfed Witches a bit
 * Fixed surge protector advancement
