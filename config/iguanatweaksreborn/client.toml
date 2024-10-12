@@ -44,12 +44,6 @@
 		#Render distance is multiplied by this value in the Nether. Vanilla is 0.5.
 		#Range: 0.0 ~ 1.0
 		"Nether Fog Ratio" = 0.75
-		#Changes fog to start closer to the player. E.g. A value of 0.5 makes fog start at half the render distance. Vanilla is 1, Pre-1.18.1 was 0.75, Pre-1.7.2 was 0.25
-		#Range: 0.0 ~ 1.0
-		"Overworld Fog Start Ratio" = 0.4
-		#Changes fog ratio when raining. Vanilla is 1
-		#Range: 0.0 ~ 1.0
-		"Overworld Fog Start Ratio on Rain" = 0.0
 
 	#Changes to light
 	[Client.Light]

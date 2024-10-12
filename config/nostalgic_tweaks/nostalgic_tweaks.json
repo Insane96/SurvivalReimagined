@@ -6,7 +6,10 @@
   "serverDebugMode": false,
   "mod": {
     "favoriteTweaks": {
-      "list": [],
+      "list": [
+        "eyeCandy.blockOutlineColor",
+        "eyeCandy.blockOutlineThickness"
+      ],
       "disabled": false
     },
     "openedConfigScreen": true,

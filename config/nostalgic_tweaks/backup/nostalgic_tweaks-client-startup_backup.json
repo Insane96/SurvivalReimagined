@@ -346,7 +346,7 @@
     "oldMixedExplosionParticles": false,
     "unoptimizedExplosionParticles": false,
     "oldSquareBorder": false,
-    "oldWorldFog": "ALPHA_R164",
+    "oldWorldFog": "MODERN",
     "fogBinding": -1,
     "oldNetherFog": false,
     "oldSunriseSunsetFog": false,
