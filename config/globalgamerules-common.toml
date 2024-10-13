@@ -45,6 +45,9 @@
 		"iguanatweaks:foggy_weather" = true
 		#Non Vanilla gamerule: 'iguanatweaks:thunderstormIntensity'
 		"iguanatweaks:thunderstorm_intensity" = true
+		#Non Vanilla gamerule: 'iguanatweaks:painful_world_border'
+		#Range: > 0
+		"iguanatweaks:painful_world_border" = 0
 
 	[gamerules.player]
 		#Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer.

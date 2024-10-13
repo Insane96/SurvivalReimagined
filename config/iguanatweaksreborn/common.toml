@@ -360,7 +360,7 @@
 	"Enable No Pillaring" = true
 	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
 	"Enable Terrain Slowdown" = true
-	#Makes flying with elytra outside the end dimension have stronger gravity.
+	#Makes flying with elytra outside the end dimension have stronger "air resistance"
 	"Enable Elytra Nerf" = true
 	#Player's slowed down when walking backwards.
 	"Enable Backwards slowdown" = true
@@ -396,11 +396,11 @@
 		#Range: 0 ~ 100
 		"Duration multiplier" = 7
 
-	#Makes flying with elytra outside the end dimension have stronger gravity.
+	#Makes flying with elytra outside the end dimension have stronger "air resistance"
 	[Movement."Elytra Nerf"]
-		#How much the player is pulled down when flying with elytra in non-end dimensions.
+		#How much the player is slowed down when gliding.
 		#Range: 0.0 ~ 1.0
-		Strength = 0.4
+		"Air Resistance" = 0.975
 
 	#Player's slowed down when walking backwards.
 	[Movement."Backwards slowdown"]
@@ -1133,7 +1133,7 @@
 	"Enable Swing Through Grass" = true
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	"Enable Unfair one-shots" = true
-	#Various changes from weapons damage to armor reduction
+	#Various changes from weapons damage to bows, arrows and effects
 	"Enable Misc Stats" = true
 	"Enable Snowballs" = true
 	#Adds a new attribute to add regenerating absorption hearts to the player.
@@ -1151,7 +1151,7 @@
 	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
 	"Enable Critical Rework" = true
 
-	#Various changes from weapons damage to armor reduction
+	#Various changes from weapons damage to bows, arrows and effects
 	[Combat."Misc Stats"]
 		#Adds this to players' attack range
 		#Range: -4.0 ~ 4.0
@@ -1183,11 +1183,11 @@
 		"Crossbow velocity" = 3.5
 		#Changes Healing potions to work like pre 1.6.1 by healing 3 health per level
 		"Better healing potion" = true
-		#Makes swords do sweep attack even if not on ground and if did crit
-		"Better sweeping" = true
 		#Changes bows accuracy. Vanilla is 1.0
 		#Range: 0.0 ~ 10.0
 		"Bow Inaccuracy" = 0.5
+		#Rework Swords sweeping attack. The sweeping attack deals full damage and the Sweeping Edge enchantment increases the range.
+		"Sweeping overhaul" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -1221,8 +1221,6 @@
 
 	#Player will deal reduced knockback if attacking with a non-weapon or spamming.
 	[Combat.Knockback]
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Shovels damage to knockback ratio" = 0.4
 
 		[Combat.Knockback."No Weapon Penalty"]
 			#If true the player will deal reduced knockback when not using an item that doesn't have the attack damage attribute.
@@ -1247,6 +1245,8 @@
 	[Combat."Unfair one-shots"]
 		#If true, a resistance effect is given to players on activation
 		Resistance = true
+		#If true, an animation is played on activation
+		Animation = true
 
 	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
 	[Combat."Critical Rework"]
