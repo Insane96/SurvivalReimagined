@@ -7,6 +7,8 @@
   * More stuff to explore (and die in)
 * Added Respawning Animals
   * Animals now despawn and respawn like in Beta and Bedrock edition. Animals will not despawn if mounted, tamed, fed, etc.
+* Added Upgrade Aquatic
+* Added back Allurement
 * Added Pick Up Notifier
 * Added Straw Statues 
 * Added Stylish Effects

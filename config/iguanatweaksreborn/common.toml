@@ -251,8 +251,24 @@
 		#REMOVE_ONE_LEVEL keeps the current tiredness but if higher than 'Tiredness for effect' removes one level of Tired to a minimum of I
 		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
 		"On death behaviour" = "SET_AT_EFFECT"
-		#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
-		"Fake sound mobs" = ["minecraft:skeleton,minecraft:overworld", "minecraft:zombie,minecraft:overworld", "minecraft:spider,minecraft:overworld", "minecraft:ghast,minecraft:the_nether", "minecraft:zombified_piglin,minecraft:the_nether"]
+
+		["Sleep & Respawn".Tiredness."Fake sound"]
+			#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
+			Mobs = ["minecraft:skeleton,minecraft:overworld", "minecraft:zombie,minecraft:overworld", "minecraft:spider,minecraft:overworld", "minecraft:ghast,minecraft:the_nether", "minecraft:zombified_piglin,minecraft:the_nether"]
+
+			#The cooldown (in ticks) between choosing a mob to play the fake sound. This is divided by the Tired effect level
+			["Sleep & Respawn".Tiredness."Fake sound".Cooldown]
+				#Range: 0.0 ~ 1.7976931348623157E308
+				Minimum = 12000.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				Maximum = 24000.0
+
+			#How many times will a fake sound of a mob play before going into cooldown. 'Maximum' is multiplied by the Tired effect level
+			["Sleep & Respawn".Tiredness."Fake sound".Times]
+				#Range: 0.0 ~ 1.7976931348623157E308
+				Minimum = 1.0
+				#Range: 0.0 ~ 1.7976931348623157E308
+				Maximum = 3.0
 
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	["Sleep & Respawn".Respawn]
@@ -545,6 +561,9 @@
 		#When an entity is hit and on a mount they have this chance to fall
 		#Range: 0.0 ~ 1.0
 		"Fall from mount chance" = 0.2
+		#When prone your mining speed is multiplied by this
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Prone mining speed multiplier" = 0.5
 
 	#Various stuff that doesn't fit in any other Feature.
 	[Miscellaneous.Tweaks]
@@ -583,6 +602,9 @@
 		#Plays a sound effect when a mob is hit at least from this distance.
 		#Range: > -2147483648
 		"Ding on mob hit at distance" = 40
+		#The speed modifier when frozen. Vanilla is -0.05
+		#Range: -1.0 ~ 0.0
+		"Frozen Movement Speed modifier" = -0.1
 
 		#The amount of air ticks the player regains each tick when out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4. Min is the amount as soon as you exit water, Max is a few seconds out of water.
 		[Miscellaneous.Tweaks."Player air ticks refilled"]

@@ -18,6 +18,9 @@
 			shale = true
 			myalite = true
 
+		[types.stone_type.upgrade_aquatic]
+			kelpy_cobblestone = true
+
 	[types.wood_type]
 
 		[types.wood_type.betterarcheology]
@@ -30,6 +33,10 @@
 			azalea = true
 			ancient = true
 			blossom = true
+
+		[types.wood_type.upgrade_aquatic]
+			driftwood = true
+			river = true
 
 	[types.leaves_type]
 
@@ -46,6 +53,9 @@
 			orange_blossom = true
 			yellow_blossom = true
 			red_blossom = true
+
+		[types.leaves_type.upgrade_aquatic]
+			river = true
 
 #Disables specific entries
 [entries]
