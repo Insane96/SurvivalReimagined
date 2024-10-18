@@ -9,11 +9,11 @@
   * Animals now despawn and respawn like in Beta and Bedrock edition. Animals will not despawn if mounted, tamed, fed, etc.
 * Added Upgrade Aquatic
 * Added back Allurement
-* Re-enabled some disabled enchantments
 * Added Pick Up Notifier
 * Added Straw Statues 
 * Added Stylish Effects
-* You can now merge items in an Anvil again, getting a 10% repair bonus
+* Re-enabled some disabled enchantments
+* You can now merge un-enchanted items in an Anvil again, getting a 10% repair bonus
 * Zombies and skellys can now have enchanted gear again
 * Nerfed Witches a bit
 * Fixed surge protector advancement
