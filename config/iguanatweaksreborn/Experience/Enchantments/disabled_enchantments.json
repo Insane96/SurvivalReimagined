@@ -13,14 +13,5 @@
   "minecraft:looting",
   "minecraft:fortune",
   "minecraft:luck_of_the_sea",
-  "farmersdelight:backstabbing",
-
-  "minecraft:mending",
-  "iguanatweaksexpanded:sprint_pact",
-  "iguanatweaksexpanded:smartness",
-  "iguanatweaksexpanded:knowledgeable",
-  "iguanatweaksexpanded:experience_curse",
-  "iguanatweaksexpanded:tear_curse",
-  "iguanatweaksexpanded:walking_curse",
-  "iguanatweaksexpanded:dumbness_curse"
+  "farmersdelight:backstabbing"
 ]
