@@ -1,5 +1,9 @@
 # Changelog
 
+## Upcoming
+* Removed Respawning Animals
+  * Was waaay too OP
+
 ## Alpha 0.5.0
 * Added YUNG's Better Dungeons
   * Only the small dungeons are used

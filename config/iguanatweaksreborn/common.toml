@@ -211,10 +211,10 @@
 		[World.Weather."Foggy Weather"]
 			#Minimum time (in minutes) a foggy weather can last.
 			#Range: > 1
-			"Min Time" = 1
+			"Min Time" = 5
 			#Maximum time (in minutes) a foggy weather can last.
 			#Range: > 1
-			"Max Time" = 20
+			"Max Time" = 30
 
 ["Sleep & Respawn"]
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
