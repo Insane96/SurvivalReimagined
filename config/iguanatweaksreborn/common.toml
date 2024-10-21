@@ -590,9 +590,6 @@
 		#If exposed to the sun sponges may dry and if exposed to rain sponges might get wet. Requires a Minecraft restart if disabled
 		"Sponges dry in the sun and wet in rain" = true
 		"Increase drown damage the more drowning" = true
-		#The ticks of Water Breathing given by the Turtle Helmet. Vanilla is 200
-		#Range: > -2147483648
-		"Turtle Helmet water breathing time" = 900
 		#The strength used to throw splash potions. Vanilla is 0.5
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Splash potions throw strength" = 1.0
@@ -612,6 +609,13 @@
 			Minimum = 1.0
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			Maximum = 3.0
+
+		[Miscellaneous.Tweaks.Turtle]
+			#The ticks of Water Breathing given by the Turtle Helmet. Vanilla is 200
+			#Range: > -2147483648
+			"Helmet water breathing time" = 900
+			#If true scutes will drop as a block and not as item
+			"Scute drop as block" = true
 
 	#Beacon Range varying based of blocks of the pyramid and better conduit killing mobs. Blocks list and ranges are controlled via json in this feature's folder
 	[Miscellaneous."Beacon & Conduit"]

@@ -9,8 +9,8 @@
   * Animals now despawn and respawn like in Beta and Bedrock edition. Animals will not despawn if mounted, tamed, fed, etc.
 * Added Upgrade Aquatic
 * Added back Allurement
-* Added Pick Up Notifier
-* Added Straw Statues 
+* Added back Pick Up Notifier
+* Added back Straw Statues 
 * Added Stylish Effects
 * Re-enabled some disabled enchantments
 * You can now merge un-enchanted items in an Anvil again, getting a 10% repair bonus

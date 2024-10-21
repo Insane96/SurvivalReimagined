@@ -10,15 +10,8 @@
 "Enable World" = true
 
 [World]
-	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
-	"Enable Ore Generation" = true
 	#If this feature is enabled, 'Unlit campfire' from IguanaTweaks Reborn is set to true
 	"Enable Coal & Charcoal" = true
-
-	#Changes ore generation of many ores. Also adds poor and rich Iron, Gold and Copper
-	[World."Ore Generation"]
-		#Enables a Data Pack that changes Iron, Gold and Copper generation to include Poor and Rich Ores.
-		"Poor and Rich Ore Generation" = false
 
 	#If this feature is enabled, 'Unlit campfire' from IguanaTweaks Reborn is set to true
 	[World."Coal & Charcoal"]
@@ -89,6 +82,8 @@
 	"Enable Soul Steel" = true
 	#Add repair kits, making you able to repair items in the crafting grid
 	"Enable Repair Kits" = true
+	#Enables a Data Pack that makes Beeg Ore Veins generate. On the surface of the overworld you can now find ore rocks. These indicate that underground there's a huge vein of that ore
+	"Enable Beeg Ore Veins" = false
 
 	[Mining.Forging]
 		#Enables the following changes to vanilla data pack:
