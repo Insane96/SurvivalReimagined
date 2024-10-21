@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## Alpha 0.5.0
 * Added YUNG's Better Dungeons
   * Only the small dungeons are used
 * Added Dungeons and Taverns
