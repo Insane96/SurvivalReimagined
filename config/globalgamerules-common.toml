@@ -139,11 +139,6 @@
 		do_trader_spawning = true
 		#Whether wardens can spawn.
 		do_warden_spawning = true
-		#Non Vanilla gamerule: 'animalMobCap'
-		#Range: > 0
-		animal_mob_cap = 10
-		#Non Vanilla gamerule: 'persistentAnimals'
-		persistent_animals = false
 
 #Configs related to difficult changes
 [difficulty]

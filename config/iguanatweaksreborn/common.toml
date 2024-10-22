@@ -28,6 +28,7 @@
 	"Enable Berries" = true
 	#Change a few things relative to Serene Seasons
 	"Enable Seasons" = true
+	#Thunderstorm Intensity and Foggy Weather
 	"Enable Weather" = true
 
 	[World."Coal & Fire"]
@@ -195,6 +196,7 @@
 		"Time Control day night shift" = 1.5
 		"Season based fishing time" = true
 
+	#Thunderstorm Intensity and Foggy Weather
 	[World.Weather]
 
 		[World.Weather."Thunderstorm Intensity"]
@@ -308,7 +310,7 @@
 					#Range: 0.0 ~ 20.0
 					Hard = 6.0
 
-				#How much health respawning players loose on respawn
+				#How much health respawning players loose on respawn (not max health)
 				["Sleep & Respawn".Respawn."Stats Penalty".Health."Per Death"]
 					#Range: 0.0 ~ 20.0
 					"Easy/Peaceful" = 1.0
@@ -496,13 +498,13 @@
 
 	#Changes to mob spawn with Serene Seasons installed
 	[Mobs."Season Spawning"]
-		#Animals and Sea Creatures can no longer naturally spawn in Winter and will spawn less in autumn.
-		"Animals and sea creature in cold seasons" = false
+		#Sea Creatures can no longer naturally spawn in Winter and will spawn less in autumn.
+		"Sea creature in cold seasons" = false
 
 		[Mobs."Season Spawning".Despawning]
 			#Despawn Distance on winter, note that lower values increase the mobs around the player.
 			#Range: > -2147483648
-			Winter = 112
+			Winter = 96
 			#Despawn Distance on spring, note that lower values increase the mobs around the player.
 			#Range: > -2147483648
 			Spring = 128
@@ -514,18 +516,32 @@
 			Autumn = 128
 
 		[Mobs."Season Spawning"."Hostile Cap"]
-			#Hostile Mobs cap on winter, note that lower values increase the mobs around the player.
+			#Hostile Mobs cap on winter.
 			#Range: > -2147483648
 			Winter = 85
-			#Hostile Mobs cap on spring, note that lower values increase the mobs around the player.
+			#Hostile Mobs cap on spring.
 			#Range: > -2147483648
 			Spring = 70
-			#Hostile Mobs cap on summer, note that lower values increase the mobs around the player.
+			#Hostile Mobs cap on summer.
 			#Range: > -2147483648
 			Summer = 55
-			#Hostile Mobs cap on autumn, note that lower values increase the mobs around the player.
+			#Hostile Mobs cap on autumn.
 			#Range: > -2147483648
 			Autumn = 70
+
+		[Mobs."Season Spawning"."Animals Cap"]
+			#Animals Mobs cap on winter.
+			#Range: > -2147483648
+			Winter = 0
+			#Animals Mobs cap on spring.
+			#Range: > -2147483648
+			Spring = 15
+			#Animals Mobs cap on summer.
+			#Range: > -2147483648
+			Summer = 25
+			#Animals Mobs cap on autumn.
+			#Range: > -2147483648
+			Autumn = 5
 
 [Miscellaneous]
 	#Apply potion effects on certain hunger / health / experience level. Debuffs are controlled via json in this feature's folder
