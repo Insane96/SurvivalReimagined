@@ -2,7 +2,7 @@
 
 ## Upcoming
 * Removed Respawning Animals
-  * Was waaay too OP
+  * Was waaay too OP, IguanaTweaks now heavily increases animal cap in hot seasons so more animals should spawn
 
 ## Alpha 0.5.0
 * Added YUNG's Better Dungeons
