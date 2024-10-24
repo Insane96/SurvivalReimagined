@@ -4,6 +4,10 @@
 * Added Let Sleeping Dogs lie
 * Added Mooshroom tweaks
   * Makes brown mooshrooms spawn naturally on mushroom islands
+* Added Dismount Entity
+  * Shift-right clicking on a veichle will dismount passengers
+* Added Ice Prevents Crops Growth
+  * Placing ice under a block prevents the block two blocks above from growing
 * Removed Respawning Animals
   * Was waaay too OP, IguanaTweaks now heavily increases animal cap in hot seasons so more animals should spawn
 
