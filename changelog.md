@@ -8,6 +8,8 @@
   * Shift-right clicking on a veichle will dismount passengers
 * Added Ice Prevents Crops Growth
   * Placing ice under a block prevents the block two blocks above from growing
+* Added Weaker Spider Webs
+  * Makes Cobwebs break after you walk in them for a while
 * Removed Respawning Animals
   * Was waaay too OP, IguanaTweaks now heavily increases animal cap in hot seasons so more animals should spawn
 
