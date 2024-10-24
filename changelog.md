@@ -10,6 +10,8 @@
   * Placing ice under a block prevents the block two blocks above from growing
 * Added Weaker Spider Webs
   * Makes Cobwebs break after you walk in them for a while
+* Added Cinch's Better Deepslate
+  * Why Cobbled Deepslate = Deepslate?
 * Removed Respawning Animals
   * Was waaay too OP, IguanaTweaks now heavily increases animal cap in hot seasons so more animals should spawn
 
