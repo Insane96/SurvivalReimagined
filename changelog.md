@@ -1,6 +1,9 @@
 # Changelog
 
 ## Upcoming
+* Added Let Sleeping Dogs lie
+* Added Mooshroom tweaks
+  * Makes brown mooshrooms spawn naturally on mushroom islands
 * Removed Respawning Animals
   * Was waaay too OP, IguanaTweaks now heavily increases animal cap in hot seasons so more animals should spawn
 
