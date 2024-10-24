@@ -12,6 +12,7 @@
   * Makes Cobwebs break after you walk in them for a while
 * Added Cinch's Better Deepslate
   * Why Cobbled Deepslate = Deepslate?
+* Added back Ambient Sounds
 * Removed Respawning Animals
   * Was waaay too OP, IguanaTweaks now heavily increases animal cap in hot seasons so more animals should spawn
 
