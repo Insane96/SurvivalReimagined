@@ -48,7 +48,7 @@
 
 		[World.Spawners."Disable spawners"]
 			Enabled = false
-			#The minimum amount of spawnable mobs (when the spawner is basically in the same position as the world spawn. The amount of spawnable mobs before deactivating is equal to the distance divided by 8 (plus this value). E.g. At 160 blocks from spawn the max spawnable mobs will be 160 / 8 + 25 = 20 + 25 = 55
+			#The minimum amount of spawnable mobs (when the spawner is basically in the same position as the world spawn). The amount of spawnable mobs before deactivating is equal to the distance divided by 8 (plus this value). E.g. At 160 blocks from spawn the max spawnable mobs will be 160 / 8 + 25 = 20 + 25 = 55
 			#Range: > 0
 			"Minimum Spawnable Mobs" = 20
 			#This multiplier increases the max mobs spawned.
@@ -461,10 +461,10 @@
 		"No Zombie Villagers" = true
 		#Allows mobs to spawn in the world spawn (in vanilla mobs can't spawn in a 24 blocks radius from world spawn)
 		"Allow world spawn spawn" = true
-		#Disables insomnia and makes Phantoms spawn naturally in the End
-		"Phantoms in the End" = true
 		#Disables normal skeletons from spawning in Fortresses. Requires a minecraft restart
 		"Remove skeletons from Fortresses" = true
+		#Enables a data pack that makes Guardians spawn in deep oceans. These guardians have half health compared to monument guardians.
+		"Guardians in Deep Oceans" = true
 
 	#Changes to mobs equipment
 	[Mobs.Equipment]
@@ -609,8 +609,8 @@
 		#The strength used to throw splash potions. Vanilla is 0.5
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Splash potions throw strength" = 1.0
-		#If set higher than 0 it will enable damage when colliding with walls at a high speed (e.g. with explosions or knockback). Higher = more damage
-		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		#If set higher than 0 it will enable damage when colliding with walls at a high speed (e.g. with explosions or knockback). Higher = more damage. Set to 0 to disable
+		#Range: 0.0 ~ 1.7976931348623157E308
 		"Collide with walls damage" = 2.5
 		#Plays a sound effect when a mob is hit at least from this distance.
 		#Range: > -2147483648
@@ -1156,6 +1156,8 @@
 		"Respiration Nerf" = true
 		#If true, the formula for bonus damage for arrows is changed from `'Power Enchantment Damage' + 'Power Enchantment Damage' * lvl` to `base_damage * 'Power Enchantment Damage' * lvl`.
 		"Power Enchantment Multiplier" = true
+		#If true, vanilla fire aspect and knockback are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
+		"Replace other enchantments" = true
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player Experience"]
@@ -1285,10 +1287,10 @@
 
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	[Combat."Unfair one-shots"]
-		#If true, a resistance effect is given to players on activation
-		Resistance = true
 		#If true, an animation is played on activation
 		Animation = true
+		#A list of effects to give when Unfair One Shot triggers, separated by semi-colons
+		Effects = "minecraft:resistance,50,4;minecraft:resistance,100,3;minecraft:resistance,150,1"
 
 	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
 	[Combat."Critical Rework"]

@@ -34,6 +34,9 @@
 		"Thrid person on death" = true
 		#Why is that still a thing?.
 		"Remove score" = true
+		#Moves the hotbar this amount of pixels up (like bedrock edition)
+		#Range: > 0
+		"Floaty hotbar" = 2
 
 	#Makes fog less invasive in some contexts
 	[Client.Fog]
