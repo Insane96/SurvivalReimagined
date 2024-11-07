@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## Alpha 0.6.0
 * Added Let Sleeping Dogs lie
 * Added Mooshroom tweaks
   * Makes brown mooshrooms spawn naturally on mushroom islands
