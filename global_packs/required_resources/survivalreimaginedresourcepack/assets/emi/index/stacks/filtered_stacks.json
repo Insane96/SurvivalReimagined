@@ -34,7 +34,17 @@
       "/placeable_item/",
       "/iron_brush/",
       "/diamond_brush/",
-      "/netherite_brush/"
+      "/netherite_brush/",
+      "/deepslate:deepslate_sword/",
+      "/deepslate:deepslate_pickaxe/",
+      "/deepslate:deepslate_axe/",
+      "/deepslate:deepslate_shovel/",
+      "/deepslate:deepslate_hoe/",
+      "/deepslate:blackstone_sword/",
+      "/deepslate:blackstone_pickaxe/",
+      "/deepslate:blackstone_axe/",
+      "/deepslate:blackstone_shovel/",
+      "/deepslate:blackstone_hoe/"
     ],
     "disable": true
   }
