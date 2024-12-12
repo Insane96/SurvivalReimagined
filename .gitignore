@@ -26,3 +26,5 @@ config/everycomp-hazardous.properties
 /.idea/modules.xml
 /.idea/Survival Reimagined 2.iml
 /.idea/vcs.xml
+.physics_mod_cache
+exposures
