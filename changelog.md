@@ -9,6 +9,7 @@
   * Adds rare Big and Huge variants of trees in their respective biome
 * Added Combat Struuctres
   * Adds a few more ruins
+* Removed Yung's Better Nether Fortresses
 
 ## Alpha 0.6.0
 * Added Let Sleeping Dogs lie
