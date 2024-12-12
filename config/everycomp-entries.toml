@@ -2,25 +2,6 @@
 #Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
 [types]
 
-	[types.stone_type]
-
-		[types.stone_type.philipsruins]
-			frozen_prismarine = true
-
-		[types.stone_type.supplementaries]
-			ash = true
-
-		[types.stone_type.quark]
-			soul_sandstone = true
-			permafrost = true
-			limestone = true
-			jasper = true
-			shale = true
-			myalite = true
-
-		[types.stone_type.upgrade_aquatic]
-			kelpy_cobblestone = true
-
 	[types.wood_type]
 
 		[types.wood_type.betterarcheology]
@@ -81,6 +62,7 @@
 			trapped_chest = true
 			bookshelf = true
 			hollow_log = true
+			vertical_slab = true
 
 	[entries.leaves_type]
 
