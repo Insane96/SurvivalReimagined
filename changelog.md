@@ -3,6 +3,7 @@
 ## Alpha 0.7.0
 * Welcome back Nether!
 * Also welcome back Ancient Cities
+* Added back Progressive Bosses
 * Added Exposure
   * Take a shot at your world
 * Added Chalk
