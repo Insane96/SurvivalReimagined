@@ -1,15 +1,16 @@
 # Changelog
 
 ## Alpha 0.7.0
+* Welcome back Nether!
+* Also welcome back Ancient Cities
 * Added Exposure
   * Take a shot at your world
 * Added Chalk
   * Don't grief your friend's walls
 * Added More Tree Sizes
   * Adds rare Big and Huge variants of trees in their respective biome
-* Added Combat Struuctres
+* Added Combat Structres
   * Adds a few more ruins
-* Removed Yung's Better Nether Fortresses
 
 ## Alpha 0.6.0
 * Added Let Sleeping Dogs lie

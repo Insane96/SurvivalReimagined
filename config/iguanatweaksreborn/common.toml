@@ -104,7 +104,7 @@
 		#Makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and reduces the 8 block ratio between nether and other dimensions to 4.
 		"Disable Nether Roof and reduce block ratio" = true
 		#If true you cannot lit nether portals
-		"Disable Nether" = true
+		"Disable Nether" = false
 		#How much time inside the portal to pass it. Vanilla is 80 ticks
 		#Range: > -2147483648
 		"Portal wait time" = 50
