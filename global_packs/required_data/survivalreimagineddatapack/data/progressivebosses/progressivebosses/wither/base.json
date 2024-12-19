@@ -1,5 +1,5 @@
 {
-    "level": 1,
+    "level": 0,
     "attack": {
         "skull_damage": 6.0,
         "skull_speed_multiplier": 2,
@@ -64,12 +64,12 @@
         "minions_spawned": 4.0,
         "max_minion_around": 8.0,
         "min_cooldown": {
-            "above_half_health": 300.0,
-            "below_half_health": 200.0
+            "above_half_health": 400.0,
+            "below_half_health": 250.0
         },
         "max_cooldown": {
-            "above_half_health": 300.0,
-            "below_half_health": 200.0
+            "above_half_health": 400.0,
+            "below_half_health": 250.0
         },
         "health": 8,
         "bonus_movement_speed": 0.1,
@@ -77,10 +77,10 @@
             "above_half_health": 0.5,
             "below_half_health": 0.2
         },
-        "sharpness_chance": 2,
-        "knockback_chance": 0.5,
-        "power_chance": 2,
-        "punch_chance": 0.5
+        "sharpness_chance": 0,
+        "knockback_chance": 0,
+        "power_chance": 0,
+        "punch_chance": 0
     },
     "death": {
         "explosion_power": 8.0,
