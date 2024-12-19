@@ -62,16 +62,16 @@
     },
     "minion": {
         "minions_spawned": 4.0,
-        "max_minion_around": 8.0,
+        "max_minion_around": 4.0,
         "min_cooldown": {
-            "above_half_health": 400.0,
+            "above_half_health": 500.0,
             "below_half_health": 250.0
         },
         "max_cooldown": {
-            "above_half_health": 400.0,
+            "above_half_health": 500.0,
             "below_half_health": 250.0
         },
-        "health": 8,
+        "health": 5,
         "bonus_movement_speed": 0.1,
         "bow_chance": {
             "above_half_health": 0.5,
