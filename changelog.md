@@ -4,6 +4,7 @@
 * Welcome back Nether!
 * Also welcome back Ancient Cities
 * Added back Progressive Bosses
+  * Only the base wither is available and it's much stronger
 * Added Exposure
   * Take a shot at your world
 * Added Chalk

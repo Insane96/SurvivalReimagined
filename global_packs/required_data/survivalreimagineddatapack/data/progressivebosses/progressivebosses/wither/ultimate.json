@@ -1,4 +1,4 @@
-{
+,{
     "level": 1,
     "attack": {
         "skull_damage": 8.0,
@@ -12,9 +12,9 @@
         "side_heads_attack_speed_multiplier": 1,
         "effect_amplifier": 1,
         "effect_duration": {
-            "easy": 8,
-            "normal": 8,
-            "hard": 16
+            "easy": 5,
+            "normal": 5,
+            "hard": 10
         },
         "attack_to_heal_threshold": 0.35,
         "heal_on_skull_kill": 5,
@@ -110,6 +110,6 @@
         "ignore_wither_proof_blocks": true,
         "nether_only": false
     },
-    "xp_dropped": 10000,
+    "xp_dropped": 15000,
     "loot_table": "progressivebosses:entities/wither/ultimate"
 }

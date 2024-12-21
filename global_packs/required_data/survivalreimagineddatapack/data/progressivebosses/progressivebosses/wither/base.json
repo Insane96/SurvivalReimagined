@@ -12,9 +12,9 @@
         "side_heads_attack_speed_multiplier": 1.1,
         "effect_amplifier": 0,
         "effect_duration": {
-            "easy": 8,
-            "normal": 8,
-            "hard": 16
+            "easy": 5,
+            "normal": 5,
+            "hard": 10
         },
         "attack_to_heal_threshold": 0.2,
         "heal_on_skull_kill": 5,
@@ -30,8 +30,8 @@
             "second_phase": {
                 "damage": 8,
                 "time_to_charge": 35,
-                "times": 4,
-                "tick_reduction": 5,
+                "times": 2,
+                "tick_reduction": 10,
                 "barrage": true,
                 "minion": true
             },
@@ -61,7 +61,7 @@
         "regen_when_hit_duration": 40
     },
     "minion": {
-        "minions_spawned": 4.0,
+        "minions_spawned": 2.0,
         "max_minion_around": 4.0,
         "min_cooldown": {
             "above_half_health": 500.0,
@@ -71,7 +71,7 @@
             "above_half_health": 500.0,
             "below_half_health": 250.0
         },
-        "health": 5,
+        "health": 6,
         "bonus_movement_speed": 0.1,
         "bow_chance": {
             "above_half_health": 0.5,
@@ -92,6 +92,6 @@
         "ignore_wither_proof_blocks": true,
         "nether_only": false
     },
-    "xp_dropped": 10000,
-    "loot_table": "progressivebosses:entities/wither/ultimate"
+    "xp_dropped": 5000,
+    "loot_table": "progressivebosses:entities/wither/base"
 }
