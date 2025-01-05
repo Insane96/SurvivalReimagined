@@ -1,5 +1,9 @@
 # Changelog
 
+## Upcoming
+* Updated IguanaTweaks to Insane's Survival Overhaul
+  * This should change little to nothing, but backup your worlds just in case
+
 ## Alpha 0.7.0
 * Welcome back Nether!
 * Also welcome back Ancient Cities
