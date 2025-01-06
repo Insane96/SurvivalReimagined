@@ -126,3 +126,4 @@ key.nostalgic_tweaks.next_song
 key.jei.transferRecipeBookmark
 key.jei.maxTransferRecipeBookmark
 key.paraglider.paragliderSettings
+key.exposure.camera_controls
