@@ -19,3 +19,5 @@ autohud
 raised
 AmbientSounds
 firstperson
+LetSleepingDogsLie
+StylishEffects
