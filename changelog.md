@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## Alpha 2.0.0
 * Added Atmospheric and Environmental
 * Updated IguanaTweaks to Insane's Survival Overhaul
   * This should change little to nothing, but backup your worlds just in case
