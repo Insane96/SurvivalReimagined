@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "more_tree_sizes:large_birchtree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 10,
+    "separation": 5,
+    "salt": 289122271
+  }
+}

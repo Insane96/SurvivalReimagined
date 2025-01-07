@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "more_tree_sizes:largecherrytree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 10,
+    "separation": 5,
+    "salt": 1109946200
+  }
+}
