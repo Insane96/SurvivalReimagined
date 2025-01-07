@@ -1,5 +1,8 @@
 # Changelog
 
+## Alpha 2.0.1
+* Minor structures and big trees rebalancing
+
 ## Alpha 2.0.0
 * Added Atmospheric and Environmental
 * Updated IguanaTweaks to Insane's Survival Overhaul
