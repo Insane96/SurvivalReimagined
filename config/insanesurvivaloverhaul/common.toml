@@ -343,7 +343,7 @@
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose World Spawn Range"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 128.0
+			Minimum = 96.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			Maximum = 192.0
 

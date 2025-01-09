@@ -299,7 +299,7 @@
       "disabled": true
     },
     "itemMergeLimit": 16,
-    "oldItemMerging": false,
+    "oldItemMerging": true,
     "old2dItems": false,
     "old2dColors": false,
     "old2dRendering": false,
@@ -446,7 +446,7 @@
     "disableOrbSpawn": false,
     "disableOrbRendering": false,
     "disableAnvil": false,
-    "disableEnchantTable": true,
+    "disableEnchantTable": false,
     "oldNightmares": false,
     "disableSprint": false,
     "leftClickDoor": false,

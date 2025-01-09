@@ -2,6 +2,7 @@
 
 ## Alpha 2.0.1
 * Minor structures and big trees rebalancing
+* Fixed nostalgic tweaks on server re-enabling all the config options ...
 
 ## Alpha 2.0.0
 * Added Atmospheric and Environmental
