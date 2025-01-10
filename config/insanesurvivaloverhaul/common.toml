@@ -203,6 +203,7 @@
 		#Disabled if set to 0.
 		#Range: > -2147483648
 		"Limit explosion size" = 12
+		"Don't stack drops" = true
 
 	[World.Fluids]
 		#If enabled, water will deal fall damage if too shallow
@@ -485,8 +486,6 @@
 		"Duration multiplier" = 7
 
 [Mobs]
-	#Small changes to villagers to make them less OP
-	"Enable Villagers" = true
 	#Changes to mob spawn with Serene Seasons installed
 	"Enable Season Spawning" = true
 	#Add a brand new Echo Torch and some changes to mob spawn
@@ -497,22 +496,8 @@
 	"Enable Equipment" = true
 	#Rebalance Enhanced AI config
 	"Enable EnhancedAI" = true
-
 	#Small changes to villagers to make them less OP
-	[Mobs.Villagers]
-		#If true, villagers will be given 1 trading experience as soon as they choose their job to lock the trades.
-		"Lock Trades" = true
-		#If true, villagers will always be transformed into Zombies, no matter the difficulty.
-		"Always Convert Zombie" = true
-		#Define a max percentage discount that villagers can give.
-		#Range: 0.0 ~ 1.0
-		"Max Discount Percentage" = 0.5
-		#If true, villagers will no longer get the discount when cured from Zombies to prevent over discounting.
-		"Prevent Cure Discount" = true
-		#When villagers restock, they update the 'demand'. Demand is a trade modifier that increases the price whenever a trade is done many times, BUT when a trade is not performed, at each restock the 'demand' goes negative, making possible for a trade to never increase it's price due to high negative demand. With this to true, negative demand will be capped at -max_uses of the trade (e.g. Carrot trade from a farmer will have it's minimum demand set to -16).
-		"Clamp Negative Demand" = true
-		#If true, the effect can no longer be applied to entities
-		"Remove Bad Omen" = true
+	"Enable Villagers Nerfs" = true
 
 	#Changes to mob spawn with Serene Seasons installed
 	[Mobs."Season Spawning"]
@@ -520,16 +505,16 @@
 		"No Sea creature in cold seasons" = true
 
 		[Mobs."Season Spawning".Despawning]
-			#Despawn Distance on winter, note that lower values increase the mobs around the player.
+			#Despawn Distance on winter, note that lower values increase the mobs around the player. Vanilla is 128
 			#Range: > -2147483648
 			Winter = 96
-			#Despawn Distance on spring, note that lower values increase the mobs around the player.
+			#Despawn Distance on spring, note that lower values increase the mobs around the player. Vanilla is 128
 			#Range: > -2147483648
 			Spring = 128
-			#Despawn Distance on summer, note that lower values increase the mobs around the player.
+			#Despawn Distance on summer, note that lower values increase the mobs around the player. Vanilla is 128
 			#Range: > -2147483648
 			Summer = 128
-			#Despawn Distance on autumn, note that lower values increase the mobs around the player.
+			#Despawn Distance on autumn, note that lower values increase the mobs around the player. Vanilla is 128
 			#Range: > -2147483648
 			Autumn = 128
 
@@ -585,6 +570,22 @@
 		"Max durability" = 0.6
 		#All drops from mobs will be disenchanted.
 		"Disenchant equipment" = false
+
+	#Small changes to villagers to make them less OP
+	[Mobs."Villagers Nerfs"]
+		#If true, villagers will be given 1 trading experience as soon as they choose their job to lock the trades.
+		"Lock Trades" = true
+		#If true, villagers will always be transformed into Zombies, no matter the difficulty.
+		"Always Convert Zombie" = true
+		#Define a max percentage discount that villagers can give.
+		#Range: 0.0 ~ 1.0
+		"Max Discount Percentage" = 0.5
+		#If true, villagers will no longer get the discount when cured from Zombies to prevent over discounting.
+		"Prevent Cure Discount" = true
+		#When villagers restock, they update the 'demand'. Demand is a trade modifier that increases the price whenever a trade is done many times, BUT when a trade is not performed, at each restock the 'demand' goes negative, making possible for a trade to never increase it's price due to high negative demand. With this to true, negative demand will be capped at -max_uses of the trade (e.g. Carrot trade from a farmer will have it's minimum demand set to -16).
+		"Clamp Negative Demand" = true
+		#If true, the effect can no longer be applied to entities
+		"Remove Bad Omen" = true
 
 [Miscellaneous]
 	#Various data packs that can be enabled/disabled
@@ -732,7 +733,7 @@
 			"Air ticks consumed" = 1.5
 			"Increase drown damage the more drowning" = true
 
-			#The amount of air ticks the player regains each tick when out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4. Min is the amount as soon as you exit water, Max is a few seconds out of water.
+			#The amount of air ticks the player regains each tick when out of water. Min is the amount as soon as you exit water, Max is a few seconds out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4.
 			[Miscellaneous.Tweaks.Breathe."Air ticks refilled"]
 				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				Minimum = 1.0
@@ -755,7 +756,7 @@
 	"Enable Block Hardness" = true
 	#Various mining changes
 	"Enable Misc" = true
-	#Change, through data packs, the properties of blocks, from hardness to explosion resistance to speed and jump factors. If enabled, a data pack is enabled that changes various blocks hardness, like ores and crops, and some blocks slowdown.
+	#Change, through data packs, some blocks properties, from hardness to explosion resistance to speed and jump factors to bone meal chance to fail.
 	"Enable Block Definitions" = true
 
 	#Changes Gold tools to have an innate Fortune/Looting I and changes the harvest level to be like stone tools
@@ -878,8 +879,6 @@
 	"Enable Health Regen" = true
 	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
 	"Enable Exhaustion" = true
-	#Remove hunger and get back to the Beta 1.7.3 days
-	"Enable No Hunger" = true
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	["Hunger & Health"."Foods & Drinks"]
@@ -936,7 +935,7 @@
 		"Hunger Consumption Chance" = 0.5
 		#If enabled, peaceful difficulty no longer heals and fulfills the player
 		"Peaceful Hunger & Health" = true
-		#When eating you'll get healed by this percentage of (hunger + saturation) restored.
+		#When eating you'll get healed by this percentage of 'hunger + saturation' restored.
 		#Range: 0.0 ~ 1.0
 		"Food Heal Multiplier" = 0.0
 
@@ -967,38 +966,6 @@
 		"Rowing Exhaustion" = 0.005
 		#When affected by the hunger effect, exhaustion will be doubled per level of the effect
 		"Effective Hunger Effect" = true
-
-	#Remove hunger and get back to the Beta 1.7.3 days
-	["Hunger & Health"."No Hunger"]
-		#If true, Hunger effect is replaced by Weakness
-		"Convert Hunger to Weakness" = true
-		#If true, Saturation effect is replaced by Haste
-		"Convert Saturation to Haste" = true
-		#Make cakes restore 40% missing health
-		"Buff cakes" = true
-		#(Client Only) If enabled, Foods will show "Snack" when the food instantly heals and "Meal" when the food heals over time. If advanced tooltips are enabled, the food will show how much it restores
-		"Food tooltip" = true
-		#(Client Only) Armor is rendered in the place of Hunger bar
-		"Render armor at Hunger" = true
-
-		["Hunger & Health"."No Hunger"."Food Heal"]
-			#The formula to calculate the health regenerated overtime when eating food. Leave empty to disable. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Over Time" = "(hunger^1.37) * 0.5"
-			#How much HP does food regen each second? Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html
-			"Over time Strength" = "MAX(0.15, 5 * saturation_modifier * (1 / hunger))"
-			#Over Time Heal will be consumed at the rate of exhaustion multiplied by this
-			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			"Over time Decay" = 0.02
-			#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-			"Instant Heal" = "0.5 * ROUND((hunger^1.3) * 0.35, 1) / 0.5"
-			#Foods below this saturation will instantly heal, foods equal or above this threshold will have overtime heal.
-			#Range: 0.0 ~ 1.7976931348623157E308
-			"Saturation threshold" = 4.0
-
-		["Hunger & Health"."No Hunger"."Raw food"]
-			#If true, raw food will heal by this percentage (this is applied after 'Food Heal.Health Multiplier'). Raw food is defined in the iguanatweaksreborn:raw_food tag
-			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			"Heal Multiplier" = 1.0
 
 [Farming]
 	#Increase uses for bone meal and nerf its use on some plants
@@ -1246,7 +1213,7 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			Maximum = 10.0
 
-		#Experience obtained when cows or mooshrooms are milked or stewed. This only works if the fluid cooldown is enabled.
+		#Experience obtained when cows or mooshrooms are milked or stewed. This only works if Fluid Cooldown is enabled.
 		[Experience."Dropped Experience"."Milk xp"]
 			#Range: 0.0 ~ 1.7976931348623157E308
 			Minimum = 2.0
@@ -1272,7 +1239,7 @@
 	"Enable Absorption Armor" = false
 	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
 	"Enable Critical Rework" = true
-	#Various changes from weapons damage to bows, arrows and effects
+	#Apply attribute modifiers to players. Attributes can be added in the json config of this feature's folder. Changing attribute modifiers requires player rejoin
 	"Enable Player Stats" = true
 	"Enable Misc Stats" = true
 	#Adds a new attribute to add regenerating absorption hearts to the player.
@@ -1311,6 +1278,9 @@
 		#Percentage knockback dealt if the player is attacking when the attack is not fully charged.
 		#Range: 0.0 ~ 1.0
 		"Spam Penalty" = 0.35
+		#Percentage knockback dealt by arrows.
+		#Range: 0.0 ~ 1.0
+		"Projectile Knockback" = 0.7
 
 	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
 	[Combat."Critical Rework"]
@@ -1321,19 +1291,10 @@
 		#Range: -1.0 ~ 1.0
 		"Enchantment Damage" = 0.3
 
-	#Various changes from weapons damage to bows, arrows and effects
+	#Apply attribute modifiers to players. Attributes can be added in the json config of this feature's folder. Changing attribute modifiers requires player rejoin
 	[Combat."Player Stats"]
-		#Adds this to players' attack range
-		#Range: -4.0 ~ 4.0
-		"Attack range modifier" = 0.0
 		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%.
 		"No damage when spamming" = true
-		#Reduces movement speed for players by this percentage.
-		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Movement speed reduction" = 0
-		#Reduce the range at which players can interact with blocks
-		#Range: -4.0 ~ 0.0
-		"Mining Range reduction" = -1.0
 
 	[Combat."Misc Stats"]
 		#Vanilla tooltips on gear don't sum up multiple modifiers (e.g. a sword would have "4 Attack Damage" and "-2 Attack Damage" instead of "2 Attack Damage". This might break other mods messing with these Tooltips (e.g. Quark's improved tooltips)
