@@ -1,12 +1,10 @@
 # Changelog
 
-## Upcoming
+## Alpha 2.0.2
 * Archaeology identifying can now give a treasure enchantment or curse
   * Instead of the 3 enchantments added by the mod, those have been disabled
-
-## Alpha 2.0.2
-* Mod updates
 * Added No Hunger since it's no longer in Insane's Survival Overhaul
+* Mod updates
 
 ## Alpha 2.0.1
 * Minor structures and big trees rebalancing
