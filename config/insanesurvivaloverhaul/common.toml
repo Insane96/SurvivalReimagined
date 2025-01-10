@@ -247,7 +247,7 @@
 	"Enable Cloth" = true
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	"Enable Tiredness" = true
-	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player
+	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player. Graves can be disabled with the iguanatweaks:deathGrave game rule. Items percentage lost can be configured with the iguanatweaks:deathLoseItemsPercentage and iguanatweaks:deathLoseItemsEnchanted game rules.
 	"Enable Death" = true
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	"Enable Respawn" = true
@@ -325,7 +325,7 @@
 				#Range: 0.0 ~ 1.7976931348623157E308
 				Maximum = 3.0
 
-	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player
+	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player. Graves can be disabled with the iguanatweaks:deathGrave game rule. Items percentage lost can be configured with the iguanatweaks:deathLoseItemsPercentage and iguanatweaks:deathLoseItemsEnchanted game rules.
 	["Sleep & Respawn".Death]
 		#If true, the player's killer will not despawn and when killed will drop 4x more items and experience.
 		"Players's killer bounty" = true
@@ -340,6 +340,8 @@
 		#Mobs in this range from the player will be despawned when respawning at bed spawn.
 		#Range: > 0
 		"Despawn mobs on bed respawn" = 32
+		#If disabled, beds spawn point will not overwrite obelisk spawn point
+		"Allow obelisk spawn point overwrite with beds" = true
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose World Spawn Range"]

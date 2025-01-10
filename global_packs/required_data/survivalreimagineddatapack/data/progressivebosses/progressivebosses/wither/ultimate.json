@@ -1,5 +1,5 @@
 ,{
-    "level": 1,
+    "level": 3,
     "attack": {
         "skull_damage": 8.0,
         "skull_speed_multiplier": 2.5,

@@ -116,7 +116,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "iguanatweaksreborn:flint_chestplate",
+          "name": "iguanatweaksexpanded:chained_copper_chestplate",
           "weight": 2,
           "functions": [
             {
@@ -146,7 +146,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "iguanatweaksreborn:flint_helmet",
+          "name": "iguanatweaksexpanded:chained_copper_helmet",
           "weight": 2,
           "functions": [
             {

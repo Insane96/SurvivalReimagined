@@ -12,5 +12,8 @@
   "minecraft:looting",
   "minecraft:fortune",
   "minecraft:luck_of_the_sea",
-  "farmersdelight:backstabbing"
+  "farmersdelight:backstabbing",
+  "betterarcheology:soaring_winds",
+  "betterarcheology:tunneling",
+  "betterarcheology:penetrating_strike"
 ]
