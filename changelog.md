@@ -1,5 +1,9 @@
 # Changelog
 
+## Alpha 2.0.2
+* Mod updates
+* Added No Hunger since it's no longer in Insane's Survival Overhaul
+
 ## Alpha 2.0.1
 * Minor structures and big trees rebalancing
 * Fixed nostalgic tweaks on server re-enabling all the config options ...
