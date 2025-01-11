@@ -199,7 +199,7 @@
 		"Creeper collateral" = false
 		#Number in the explosion damage calculation. Vanilla is 7. Higher = More damage
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Explosion Damage calculation multiplier" = 6.5
+		"Explosion Damage calculation multiplier" = 6
 		#Disabled if set to 0.
 		#Range: > -2147483648
 		"Limit explosion size" = 12

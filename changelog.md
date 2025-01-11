@@ -2,6 +2,7 @@
 
 ## Upcoming
 * Fixed Dragon Fruit related stuff not showing up in EMI
+* Slightly reduced explosion damage
 
 ## Beta 2.0.2
 * Archaeology identifying can now give a treasure enchantment or curse
