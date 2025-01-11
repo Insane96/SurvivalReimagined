@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Fixed Dragon Fruit related stuff not showing up in EMI
+
 ## Beta 2.0.2
 * Archaeology identifying can now give a treasure enchantment or curse
   * Instead of the 3 enchantments added by the mod, those have been disabled
