@@ -57,11 +57,6 @@
 		#* Buckets, Flint and Steel and Shears require a forge to be made
 		"Forging Equipment Crafting Data Pack" = true
 
-	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment
-	[Mining.Durium]
-		#Enables a data pack that makes Lodestone require Durium instead of Netherite.
-		"Durium Lodestone" = true
-
 [Items]
 	#Back to base
 	"Enable Recall Potion" = true
@@ -120,6 +115,8 @@
 		#* Replaces the vanilla fletching table recipe with the mod's one
 		#* Adds more arrows recipes
 		"Fletching Data Pack" = true
+		#If disabled, torch arrows will only set mobs on fire
+		"Torch arrows place torches" = true
 
 	#Changes to Shields+.
 	[Combat."Shields+"]

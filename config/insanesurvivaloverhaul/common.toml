@@ -242,7 +242,7 @@
 	#Changes to sleeping and spawn points
 	"Enable Sleeping and Spawn Point" = false
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
-	"Enable Sleeping Effects" = false
+	"Enable Sleeping Effects" = true
 	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
 	"Enable Cloth" = true
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
@@ -267,7 +267,7 @@
 		#Range: 0 ~ 20
 		"Hunger Depleted on Wake Up" = 15
 		#If the player's hunger bar is below 'Hunger Depleted on Wake Up' he can't sleep.
-		"No Sleep If Hungry" = false
+		"No Sleep If Hungry" = true
 		#If the player has no hunger on wake up, beneficial effects are not applied.
 		"No beneficial effect when hungry" = true
 		#Apply the bad effects only when too tired

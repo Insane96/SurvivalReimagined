@@ -5,6 +5,8 @@
   * Adds vertical slabs for many modded blocks
 * Added back Hunger
   * This is tentative. Hunger works better thanks to Insane's Survival Overhaul
+* Enabled back Sleeping Effects from ISO
+  * You cannot sleep if you're too hungry
 * Fixed Dragon Fruit related stuff not showing up in EMI
 * Slightly reduced explosion damage
 
