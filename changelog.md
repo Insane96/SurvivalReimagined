@@ -1,6 +1,10 @@
 # Changelog
 
 ## Upcoming
+* Added Vertical Slabs Compat
+  * Adds vertical slabs for many modded blocks
+* Added back Hunger
+  * This is tentative. Hunger works better thanks to Insane's Survival Overhaul
 * Fixed Dragon Fruit related stuff not showing up in EMI
 * Slightly reduced explosion damage
 
