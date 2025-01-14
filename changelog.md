@@ -1,7 +1,7 @@
 # Changelog
 
 ## Upcoming
-* Added Vertical Slabs Compat
+* ~~Added Vertical Slabs Compat~~ Disabled for now, crashes the creative mode screen
   * Adds vertical slabs for many modded blocks
 * Added back Hunger
   * This is tentative. Hunger works better thanks to Insane's Survival Overhaul
