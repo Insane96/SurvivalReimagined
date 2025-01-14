@@ -8,6 +8,7 @@
 * Enabled back Sleeping Effects from ISO
   * You cannot sleep if you're too hungry
 * Fixed Dragon Fruit related stuff not showing up in EMI
+* Fixed environmental Dirt Path not returning dirt
 * Slightly reduced explosion damage
 
 ## Beta 2.0.2
