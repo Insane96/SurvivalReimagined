@@ -43,7 +43,55 @@
     "leaves": "#iguanatweaksreborn:azalea_leaves"
   },
   {
+    "log": "quark:ancient_log",
+    "leaves": "quark:ancient_leaves"
+  },
+  {
     "log": "autumnity:maple_log",
     "leaves": "#iguanatweaksreborn:maple_leaves"
+  },
+  {
+    "log": "upgrade_aquatic:river_log",
+    "leaves": "upgrade_aquatic:river_leaves"
+  },
+  {
+    "log": "atmospheric:rosewood_log",
+    "leaves": "atmospheric:rosewood_leaves"
+  },
+  {
+    "log": "atmospheric:yucca_log",
+    "leaves": "atmospheric:yucca_leaves"
+  },
+  {
+    "log": "atmospheric:grimwood_log",
+    "leaves": "atmospheric:grimwood_leaves"
+  },
+  {
+    "log": "atmospheric:kousa_log",
+    "leaves": "atmospheric:kousa_leaves"
+  },
+  {
+    "log": "#iguanatweaksreborn:aspen_logs",
+    "leaves": "#iguanatweaksreborn:aspen_leaves"
+  },
+  {
+    "log": "atmospheric:laurel_log",
+    "leaves": "#iguanatweaksreborn:laurel_leaves"
+  },
+  {
+    "log": "environmental:pine_log",
+    "leaves": "environmental:pine_leaves"
+  },
+  {
+    "log": "environmental:plum_log",
+    "leaves": "environmental:plum_leaves"
+  },
+  {
+    "log": "environmental:willow_log",
+    "leaves": "environmental:willow_leaves"
+  },
+  {
+    "log": "environmental:wisteria_log",
+    "leaves": "#iguanatweaksreborn:wisteria_leaves"
   }
 ]
