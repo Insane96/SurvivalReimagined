@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 2.1.0
 * ~~Added Vertical Slabs Compat~~ Disabled for now, crashes the creative mode screen
   * Adds vertical slabs for many modded blocks
 * Added back Hunger

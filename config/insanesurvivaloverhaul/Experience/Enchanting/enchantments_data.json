@@ -490,6 +490,15 @@
     ]
   },
   {
+    "id": "iguanatweaksreborn:sweeping_edge",
+    "costs": [
+      3,
+      6,
+      9,
+      12
+    ]
+  },
+  {
     "id": "minecraft:aqua_affinity",
     "costs": 3
   },

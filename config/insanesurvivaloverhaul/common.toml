@@ -309,6 +309,7 @@
 		#REMOVE_ONE_LEVEL keeps the current tiredness but if higher than 'Tiredness for effect' removes one level of Tired to a minimum of I
 		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
 		"On death behaviour" = "SET_AT_EFFECT"
+		"Tired overlay" = true
 
 		["Sleep & Respawn".Tiredness."Fake sound"]
 			#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
@@ -896,10 +897,10 @@
 ["Hunger & Health"]
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	"Enable Foods & Drinks" = true
-	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
-	"Enable Health Regen" = true
 	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
 	"Enable Exhaustion" = true
+	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
+	"Enable Health Regen & Hunger" = true
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
 	["Hunger & Health"."Foods & Drinks"]
@@ -923,52 +924,12 @@
 		"Food Saturation Modifier Formula" = "saturation_modifier * 1.25"
 		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current)
 		"Combat Snapshot eating saturation" = true
-
-	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
-	["Hunger & Health"."Health Regen"]
-		#Sets how many ticks between the health regeneration happens (vanilla is 80).
-		#Range: > 0
-		"Health Regen Speed" = 40
-		#Sets how much hunger the player must have to regen health (vanilla is >17).
-		#Range: > 0
-		"Regen when Hunger Above" = 6
-		#Sets how many ticks between starve damage happens (vanilla is 80).
-		#Range: > 0
-		"Starve Speed" = 640
-		#Set how much damage is dealt when starving (vanilla is 1).
-		#Range: > 0
-		"Starve Damage" = 1
-		#The player will start starving at this hunger (Vanilla is 0)
-		#Range: 0 ~ 20
-		"Starve at Hunger" = 4
-		#If below 'Starve at Hunger' player will starve 2x faster for each hunger point below 'Starve at Hunger'.
-		"Faster Starving when really hungry" = true
-		#Set to true to disable the health regen boost given when max hunger and saturation (false in Vanilla).
-		"Disable Saturation Regen Boost" = true
-		#Set to true to consume Hunger only (and not saturation) when regenerating health (false for Vanilla).
-		"Consume Hunger Only" = true
-		#Vanilla consumes 1 saturation or hunger whenever Exhaustion reaches 4.0. You can change that value with this config option. NOTE that Minecraft caps this value to 40.
-		#Range: 0.0 ~ 40.0
-		"Max Exhaustion" = 4.0
-		#If 'Consume Hunger Only' is true then this is the chance to consume an hunger whenever the player is healed (vanilla ignores this; Combat Test has this set to 0.5).
-		#Range: 0.0 ~ 1.0
-		"Hunger Consumption Chance" = 0.5
-		#If enabled, peaceful difficulty no longer heals and fulfills the player
-		"Peaceful Hunger & Health" = true
-		#When eating you'll get healed by this percentage of 'hunger + saturation' restored.
-		#Range: 0.0 ~ 1.0
-		"Food Heal Multiplier" = 0.0
-
-		["Hunger & Health"."Health Regen"."Passive Health Regen"]
-			#If true, Passive Regeneration is enabled
-			Enable = false
-
-			#Min represents how many ticks the regeneration of 1 HP takes when health is 100%, Max how many ticks when health is 0%
-			["Hunger & Health"."Health Regen"."Passive Health Regen"."Regen Speed"]
-				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-				Minimum = 120.0
-				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-				Maximum = 3600.0
+		#Raw food will give this level of poison to the player.
+		#Range: 0 ~ 255
+		"Raw food Poison Amplifier" = 1
+		#Raw food's poison duration will be multiplied by this value. With this set to 1, raw food will give 1 second of poison per nutrition + saturation given.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Raw food Poison Duration Multiplier" = 2.0
 
 	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
 	["Hunger & Health".Exhaustion]
@@ -986,6 +947,65 @@
 		"Rowing Exhaustion" = 0.005
 		#When affected by the hunger effect, exhaustion will be doubled per level of the effect
 		"Effective Hunger Effect" = true
+
+	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
+	["Hunger & Health"."Health Regen & Hunger"]
+		#Sets how many ticks between the health regeneration happens (vanilla is 80).
+		#Range: > 0
+		"Health Regen Speed" = 40
+		#Sets how much hunger the player must have to regen health (vanilla is >17).
+		#Range: > 0
+		"Regen when Hunger Above" = 6
+		#Set to true to disable the health regen boost given when max hunger and saturation (false in Vanilla).
+		"Disable Saturation Regen Boost" = true
+		#Set to true to consume Hunger only (and not saturation) when regenerating health (false for Vanilla).
+		"Consume Hunger Only" = true
+		#Vanilla consumes 1 saturation or hunger whenever Exhaustion reaches 4.0. You can change that value with this config option. NOTE that Minecraft caps this value to 40.
+		#Range: 0.0 ~ 40.0
+		"Max Exhaustion" = 4.0
+		#If 'Consume Hunger Only' is true then this is the chance to consume an hunger whenever the player is healed (vanilla ignores this; Combat Test has this set to 0.5).
+		#Range: 0.0 ~ 1.0
+		"Hunger Consumption Chance" = 0.5
+		#If enabled, peaceful difficulty no longer heals and fulfills the player
+		"Peaceful Hunger & Health" = true
+		#When eating you'll get healed by this percentage of 'hunger + saturation' restored.
+		#Range: 0.0 ~ 1.0
+		"Food Heal Multiplier" = 0.0
+
+		["Hunger & Health"."Health Regen & Hunger"."Passive Health Regen"]
+			#If true, Passive Regeneration is enabled
+			Enable = false
+
+			#Min represents how many ticks the regeneration of 1 HP takes when health is 100%, Max how many ticks when health is 0%
+			["Hunger & Health"."Health Regen & Hunger"."Passive Health Regen"."Regen Speed"]
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				Minimum = 120.0
+				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				Maximum = 3600.0
+
+		["Hunger & Health"."Health Regen & Hunger".Starve]
+			#Sets how many ticks between starve damage happens (vanilla is 80).
+			#Range: > 0
+			Speed = 80
+			#Set how much damage is dealt when starving (vanilla is 1).
+			#Range: > 0
+			Damage = 1
+			#The player will start starving at this hunger (Vanilla is 0)
+			#Range: 0 ~ 20
+			"at Hunger" = 1
+			#If below 'Starve at Hunger' player will starve 2x faster for each hunger point below 'Starve at Hunger'.
+			"Faster when really hungry" = true
+
+		["Hunger & Health"."Health Regen & Hunger".Sprint]
+			#Player can only sprint when have at least this much hunger. Vanilla is 7
+			#Range: 0 ~ 20
+			"Min hunger" = 1
+			#How much less movement speed per hunger below 'Speed Penalty below hunger' sprinting players have
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Speed reduction each hunger" = 0.025
+			#How much less movement speed per hunger below 'Speed Penalty below hunger' sprinting players have
+			#Range: 0 ~ 20
+			"Speed Penalty below hunger" = 7
 
 [Farming]
 	#Increase uses for bone meal and nerf its use on some plants
@@ -1332,7 +1352,7 @@
 		"Better healing potion" = true
 		#If enabled, tools will not take 2 damage when used to hurt entities
 		"1 damage for tools attacking" = true
-		#Rework Swords sweeping attack. The sweeping attack deals full damage and the Sweeping Edge enchantment increases the range.
+		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the Sweeping Edge enchantment increases the range. This also replaces the vanilla sweeping edge enchantment with a new one that can be applied to hoes instead of swords.
 		"Sweeping overhaul" = true
 
 	#Adds a new attribute to add regenerating absorption hearts to the player.

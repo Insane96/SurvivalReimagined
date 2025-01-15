@@ -34,20 +34,20 @@
 		command_modification_block_limit = 32768
 		#Whether certain sound events are heard by all players regardless of location.
 		global_sound_events = true
-		#Non Vanilla gamerule: 'iguanatweaks:explosionMobGriefing'
-		"iguanatweaks:explosion_mob_griefing" = true
 		#The maximum length of a chain of commands that can be executed during one tick. Applies to command blocks and functions.
 		#Range: > 0
 		max_command_chain_length = 65536
 		#Whether the debug screen shows all or reduced information; and whether the effects of F3+B (entity hitboxes) and F3+G (chunk boundaries) are shown.
 		reduced_debug_info = true
+		#Non Vanilla gamerule: 'iguanatweaks:explosionMobGriefing'
+		"iguanatweaks:explosion_mob_griefing" = true
 		#Non Vanilla gamerule: 'iguanatweaks:foggyWeather'
 		"iguanatweaks:foggy_weather" = true
-		#Non Vanilla gamerule: 'iguanatweaks:thunderstormIntensity'
-		"iguanatweaks:thunderstorm_intensity" = true
 		#Non Vanilla gamerule: 'iguanatweaks:painful_world_border'
 		#Range: > 0
-		"iguanatweaks:painful_world_border" = 2
+		"iguanatweaks:painful_world_border" = 0
+		#Non Vanilla gamerule: 'iguanatweaks:thunderstormIntensity'
+		"iguanatweaks:thunderstorm_intensity" = true
 
 	[gamerules.player]
 		#Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer.
@@ -64,17 +64,6 @@
 		fire_damage = true
 		#Whether the player should take damage when inside powder snow.
 		freeze_damage = true
-		#Non Vanilla gamerule: 'iguanatweaks:deathGrave'
-		"iguanatweaks:death_grave" = false
-		#Non Vanilla gamerule: 'iguanatweaks:deathLoseItemsEnchanted'
-		"iguanatweaks:death_lose_items_enchanted" = false
-		#Non Vanilla gamerule: 'iguanatweaks:deathLoseItemsPercentage'
-		#Range: > 0
-		"iguanatweaks:death_lose_items_percentage" = 0
-		#Non Vanilla gamerule: 'iguanatweaks:disableExperience'
-		"iguanatweaks:disable_experience" = false
-		#Non Vanilla gamerule: 'iguanatweaks:doLooseRespawn'
-		"iguanatweaks:do_loose_respawn" = true
 		#Whether the player should keep items and experience in their inventory after death .
 		keep_inventory = false
 		#Whether the player can regenerate health naturally if their hunger is full enough (doesn't affect external healing, such as golden apples, the Regeneration effect, etc.)
@@ -87,6 +76,17 @@
 		spawn_radius = 10
 		#Whether players in spectator mode can generate chunks
 		spectators_generate_chunks = true
+		#Non Vanilla gamerule: 'iguanatweaks:deathGrave'
+		"iguanatweaks:death_grave" = true
+		#Non Vanilla gamerule: 'iguanatweaks:deathLoseItemsEnchanted'
+		"iguanatweaks:death_lose_items_enchanted" = false
+		#Non Vanilla gamerule: 'iguanatweaks:deathLoseItemsPercentage'
+		#Range: > 0
+		"iguanatweaks:death_lose_items_percentage" = 0
+		#Non Vanilla gamerule: 'iguanatweaks:disableExperience'
+		"iguanatweaks:disable_experience" = false
+		#Non Vanilla gamerule: 'iguanatweaks:doLooseRespawn'
+		"iguanatweaks:do_loose_respawn" = true
 		#Non Vanilla gamerule: 'iguanatweaks:doSeasonGrassGrowDeath'
 		"iguanatweaks:do_season_grass_grow_death" = true
 
