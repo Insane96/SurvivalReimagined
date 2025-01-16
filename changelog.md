@@ -2,14 +2,13 @@
 
 * https://www.curseforge.com/minecraft/mc-mods/hang-glider
 * https://www.curseforge.com/minecraft/mc-mods/map-atlases-forge
-* https://www.curseforge.com/minecraft/mc-mods/mutant-monsters
-* https://www.curseforge.com/minecraft/mc-mods/vintage-animations
 
 ## Upcoming
-* Rebalanced some chests loot
-* Removed more structures
 * Added Cut Through
   * Swing Through Grass from ISO has been removed
+* Added Vintage Animations
+* Rebalanced some chests loot
+* Removed more structures
 
 ## 2.1.0
 * ~~Added Vertical Slabs Compat~~ Disabled for now, crashes the creative mode screen
