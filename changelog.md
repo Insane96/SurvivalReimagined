@@ -1,12 +1,14 @@
 # Changelog
 
-* https://www.curseforge.com/minecraft/mc-mods/hang-glider
-* https://www.curseforge.com/minecraft/mc-mods/map-atlases-forge
+* atlases and glider advancements
 
 ## Upcoming
 * Added Cut Through
   * Swing Through Grass from ISO has been removed
 * Added Vintage Animations
+* Added Hang Glider
+  * Fall gently from the sky
+* Added Map Atlases
 * Rebalanced some chests loot
 * Removed more structures
 

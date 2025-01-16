@@ -28,3 +28,4 @@ config/everycomp-hazardous.properties
 /.idea/vcs.xml
 .physics_mod_cache
 exposures
+map_atlases/
