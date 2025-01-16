@@ -1,5 +1,15 @@
 # Changelog
 
+* https://www.curseforge.com/minecraft/mc-mods/cut-through
+* https://www.curseforge.com/minecraft/mc-mods/hang-glider
+* https://www.curseforge.com/minecraft/mc-mods/map-atlases-forge
+* https://www.curseforge.com/minecraft/mc-mods/mutant-monsters
+* https://www.curseforge.com/minecraft/mc-mods/vintage-animations
+
+## Upcoming
+* Rebalanced some chests loot
+* Removed more Archeology structures
+
 ## 2.1.0
 * ~~Added Vertical Slabs Compat~~ Disabled for now, crashes the creative mode screen
   * Adds vertical slabs for many modded blocks

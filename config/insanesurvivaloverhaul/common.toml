@@ -1385,7 +1385,7 @@
 	#Change armor and toughness formula
 	[Combat."Armor Rework"]
 		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
-		"Damage Reduction formula" = "damage * (1 - 1.08 * (armor / (armor + 16))) * (1 - toughness * 0.02)"
+		"Damage Reduction formula" = "damage * (1 - 1.5 * (armor / (armor + 20)))"
 
 	[Combat."Shields+ Integration"]
 		#Rebalances shields to fit the other mods' changes
