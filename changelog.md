@@ -1,7 +1,6 @@
 # Changelog
 
 * atlases and glider advancements
-* Grass overhaul
 
 ## Upcoming
 * Added Cut Through
