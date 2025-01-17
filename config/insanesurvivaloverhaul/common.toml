@@ -670,6 +670,12 @@
 		"Assets override" = true
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
 		"Force Reload world Data Packs" = false
+		#Integrates the mod with Environmental. Changes animals loot to match the livestock changes
+		"Environmental integration" = true
+		#Integrates the mod with Quark. Changes animals loot to match the livestock changes.
+		"Quark integration" = true
+		#Integrates the mod with Autumnity. Changes animals loot to match the livestock changes.
+		"Autumnity integration" = true
 
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	[Miscellaneous."Beacon & Conduit"]
@@ -1276,8 +1282,8 @@
 	"Enable Snowballs" = true
 	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	"Enable Unfair one-shot" = true
-	#Players are able to hit mobs through no collision blocks like grass or torches.
-	"Enable Swing Through Grass" = true
+	#Players are able to hit mobs through no collision blocks like grass or torches. This is really wonky, use Cut Through by Fuzs
+	"Enable Swing Through Grass" = false
 	#Players will deal reduced knockback if attacking with a non-weapon or spamming. Knockback reductions are defined via Data Packs with Item Definitions (the item_stats integrated data pack already does this)
 	"Enable Knockback" = true
 	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness

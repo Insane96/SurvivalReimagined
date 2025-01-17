@@ -10,7 +10,7 @@
   * Fall gently from the sky
 * Added Map Atlases
 * Rebalanced some chests loot
-* Removed more structures
+* Removed a few more structures
 
 ## 2.1.0
 * ~~Added Vertical Slabs Compat~~ Disabled for now, crashes the creative mode screen

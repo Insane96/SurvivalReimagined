@@ -233,13 +233,6 @@
 			#Range: 1.0 ~ 64.0
 			Maximum = 24.0
 
-		#The ticks cooldown after shooting
-		[Skeletons."Skeleton Shoot"."Shooting Cooldown"]
-			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 40.0
-			#Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 55.0
-
 		#The ticks the skeleton charges the bow. at least 20 ticks for a full charge.
 		[Skeletons."Skeleton Shoot"."Bow charge ticks"]
 			#Range: 0.0 ~ 1.7976931348623157E308
@@ -255,6 +248,13 @@
 			Normal = 5.0
 			#Range: 0.0 ~ 30.0
 			Hard = 3.0
+
+		#The ticks cooldown after shooting
+		[Skeletons."Skeleton Shoot"."Shooting Cooldown"]
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 35.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 40.0
 
 	#Skeletons try to stay away from the target. Use the enhancedai:skeleton_flee entity type tag to add/remove skeletons that are affected by this feature
 	[Skeletons."Skeleton Flee"]

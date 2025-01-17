@@ -89,6 +89,8 @@
 		"iguanatweaks:do_loose_respawn" = true
 		#Non Vanilla gamerule: 'iguanatweaks:doSeasonGrassGrowDeath'
 		"iguanatweaks:do_season_grass_grow_death" = true
+		#Non Vanilla gamerule: 'iguanatweaks:discrete_name_tags'
+		"iguanatweaks:discrete_name_tags" = true
 
 	[gamerules.mobs]
 		#Whether raids are disabled.
