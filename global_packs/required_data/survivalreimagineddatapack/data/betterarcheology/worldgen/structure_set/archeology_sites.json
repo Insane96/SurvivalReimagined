@@ -5,6 +5,10 @@
             "weight": 5
         },
         {
+            "structure": "betterarcheology:catacombs",
+            "weight": 2
+        },
+        {
             "structure": "betterarcheology:desert_obelisk",
             "weight": 6
         },
@@ -18,6 +22,10 @@
         },
         {
             "structure": "betterarcheology:stonehenge_grassy",
+            "weight": 5
+        },
+        {
+            "structure": "betterarcheology:temple_jungle",
             "weight": 5
         },
         {
