@@ -1,6 +1,7 @@
 # Changelog
 
 * atlases and glider advancements
+* recycle smithing tables
 
 ## Upcoming
 * Added Cut Through
@@ -10,6 +11,7 @@
   * Fall gently from the sky
 * Added Map Atlases
 * Rebalanced some chests loot
+* Re-enabled yung's dungeons
 * Removed a few more structures
 
 ## 2.1.0
