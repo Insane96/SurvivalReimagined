@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "item": "hangglider:hang_glider"
+        },
+        "title": {
+            "translate": "advancements.sr_story.hang_glider.title"
+        },
+        "description": {
+            "translate": "advancements.sr_story.hang_glider.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "minecraft:story/smelt_iron",
+    "criteria": {
+        "hang_glider": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "hangglider:hang_glider"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "hang_glider"
+        ]
+    ]
+}

@@ -2,5 +2,9 @@
     "advancements.sr_story.root.title": "Survival Reimagined",
     "no_nether": "The Nether is WIP, please stand by",
     "advancements.sr_story.straw_statue.title": "From hay to hey",
-    "advancements.sr_story.straw_statue.description": "Make a Straw Statue"
+    "advancements.sr_story.straw_statue.description": "Make a Straw Statue",
+    "advancements.sr_story.atlas.title": "Mapping out the world",
+    "advancements.sr_story.atlas.description": "Craft an atlas and store maps all in one place",
+    "advancements.sr_story.hang_glider.title": "Soar through the skies",
+    "advancements.sr_story.hang_glider.description": "Craft an Hang Glider and find the tallest mountain"
 }
