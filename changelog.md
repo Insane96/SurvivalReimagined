@@ -1,8 +1,5 @@
 # Changelog
 
-* atlases and glider advancements
-* recycle smithing tables
-
 ## Upcoming
 * Added Cut Through
   * Swing Through Grass from ISO has been removed
