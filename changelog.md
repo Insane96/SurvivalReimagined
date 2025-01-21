@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 2.1.1
 * Added Cut Through
   * Swing Through Grass from ISO has been removed
 * Added Vintage Animations
