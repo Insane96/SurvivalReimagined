@@ -27,8 +27,6 @@
 	"Enable Explosion Overhaul" = true
 	"Enable Fluids" = true
 	"Enable Cyan Flower" = true
-	#Thunderstorm Intensity and Foggy Weather
-	"Enable Weather" = true
 
 	#Change a few things relative to Serene Seasons
 	[World.Seasons]
@@ -216,7 +214,7 @@
 		#If true, entities will float in water
 		"[EXPERIMENTAL] Floaty entities" = false
 
-	#Thunderstorm Intensity and Foggy Weather
+	#Thunderstorm Intensity and Foggy Weather. Disable them via gamerules: iguanatweaks:thunderstormIntensity and iguanatweaks:foggyWeather
 	[World.Weather]
 
 		[World.Weather."Thunderstorm Intensity"]
@@ -344,8 +342,8 @@
 		#Mobs in this range from the player will be despawned when respawning at bed spawn.
 		#Range: > 0
 		"Despawn mobs on bed respawn" = 32
-		#If disabled, beds spawn point will not overwrite obelisk spawn point
-		"Allow obelisk spawn point overwrite with beds" = true
+		#If enabled, sleeping a bed when sneaking will overwrite obelisk spawn point
+		"Allow obelisk spawn point overwrite with beds when sneaking" = true
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose World Spawn Range"]
@@ -1096,9 +1094,6 @@
 		#Seconds until you can milk cows (or stew mooshrooms)
 		#Range: > -2147483648
 		"Milk Cooldown" = 1200
-		#Chance every 10 seconds for animals to fall in love without food (breeding cooldown still applies).
-		#Range: 0.0 ~ 1.0
-		"Auto-breed chance" = 0.02
 		#Enables a data pack that changes animal loot (reduced food drops) and slows down growing, breeding, egging etc
 		"Data Pack" = true
 
@@ -1404,11 +1399,16 @@
 		"Float point damage" = true
 		#Multiplies arrow's damage by this value. (this doesn't affect mobs arrows)
 		#Range: 0.0 ~ 10.0
-		"Damage Multiplier" = 0.5
+		"Damage Multiplier" = 0.65
 		#Changes bows accuracy. Vanilla is 1.0
 		#Range: 0.0 ~ 10.0
-		"Bow Inaccuracy" = 0.5
+		"Bow Inaccuracy" = 1
 		#Speed at which arrows are shot from crossbows. Vanilla is 3.15
 		#Range: 0.0 ~ 10.0
-		"Crossbow velocity" = 3.5
+		"Crossbow velocity" = 2.25
+		#If true, crossbows will have an innate Piercing ability
+		"Piercing Crossbow" = true
+		#Changes crossbows accuracy. Vanilla is 1.0
+		#Range: 0.0 ~ 10.0
+		"Crossbow Inaccuracy" = 0.2
 
