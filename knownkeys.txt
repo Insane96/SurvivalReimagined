@@ -127,3 +127,10 @@ key.jei.transferRecipeBookmark
 key.jei.maxTransferRecipeBookmark
 key.paraglider.paragliderSettings
 key.exposure.camera_controls
+key.map_atlases.open_minimap
+key.map_atlases.zoom_out_minimap
+key.map_atlases.zoom_in_minimap
+key.map_atlases.place_pin
+key.map_atlases.increase_slice
+key.map_atlases.decrease_slice
+key.stellarview.open_config_screen
