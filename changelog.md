@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Disabled modern music, C418 music now plays
+
 ## 2.1.1
 * Added Cut Through
   * Swing Through Grass from ISO has been removed
