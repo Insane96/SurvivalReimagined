@@ -21,3 +21,4 @@ AmbientSounds
 firstperson
 LetSleepingDogsLie
 StylishEffects
+Stellar View
