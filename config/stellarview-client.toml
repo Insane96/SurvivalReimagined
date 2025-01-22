@@ -24,6 +24,8 @@
 			#Specifies the max distance at which a Space Region can render
 			#Range: 1 ~ 12
 			space_region_render_distance = 8
+			#Makes the sky static (compatible with shaders)
+			static_sky = false
 
 	["Stellar View Client Config"."Overworld Config"]
 
