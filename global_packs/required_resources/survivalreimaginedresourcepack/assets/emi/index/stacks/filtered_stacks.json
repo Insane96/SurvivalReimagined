@@ -25,7 +25,15 @@
       "/deepslate:blackstone_pickaxe/",
       "/deepslate:blackstone_axe/",
       "/deepslate:blackstone_shovel/",
-      "/deepslate:blackstone_hoe/"
+      "/deepslate:blackstone_hoe/",
+
+      "minecraft:stone_pickaxe",
+      "minecraft:stone_axe",
+      "minecraft:stone_shovel",
+      "minecraft:stone_hoe",
+      "minecraft:stone_sword",
+      "shieldsplus:stone_shield",
+      "iguanatweaksexpanded:stone_hammer"
     ],
     "disable": true
   }
