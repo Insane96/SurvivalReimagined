@@ -6,6 +6,8 @@
 * Disabled modern music, C418 music now plays
 * Removed Vintage Animations
   * Felt way too slow
+* Doubled stamina
+  * You can now sprint for 10 seconds at full health
 
 ## 2.1.1
 * Added Cut Through

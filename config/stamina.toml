@@ -24,11 +24,11 @@
 	[Stamina.Stats]
 		#How much stamina the player has per half heart. Each 1 stamina is 1 tick of running
 		#Range: > 0
-		"Stamina per half heart" = 5
+		"Stamina per half heart" = 10
 		#Range: > 0
-		"Bonus stamina per level of Vigour Enchantment" = 25
+		"Bonus stamina per level of Vigour Enchantment" = 40
 		#Range: > 0
-		"Bonus stamina per level of Vigour Effect" = 25
+		"Bonus stamina per level of Vigour Effect" = 40
 
 	[Stamina.Consumption]
 		#How much stamina the player consumes each tick when sprinting
@@ -36,7 +36,7 @@
 		Sprint = 1.0
 		#How much stamina the player consumes on each jump
 		#Range: > 0
-		Jump = 5
+		Jump = 10
 		#How much stamina the player consumes each tick when swimming
 		#Range: 0.0 ~ 1.7976931348623157E308
 		Swim = 0.5

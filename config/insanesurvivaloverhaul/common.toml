@@ -923,9 +923,9 @@
 		#This also enables a change to the smelt_item_function in loot tables to use smoker recipes instead of furnaces (otherwise, mobs wouldn't drop cooked food). Might have unintended side effects.
 		"No Furnace food and smoker recipe" = true
 		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature
-		"Food Hunger Formula" = "ROUND(hunger * 0.8, 0)"
+		"Food Hunger Formula" = "hunger"
 		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature
-		"Food Saturation Modifier Formula" = "saturation_modifier * 1.25"
+		"Food Saturation Modifier Formula" = "saturation_modifier"
 		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current)
 		"Combat Snapshot eating saturation" = true
 		#Raw food will give this level of poison to the player.
