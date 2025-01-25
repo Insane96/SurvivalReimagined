@@ -1,9 +1,9 @@
 # Changelog
 
-## Upcoming
+## 2.2.0
 * Added Stellar View
   * Experience a more dynamic night sky
-* Add Caverns and Chasms
+* Added Caverns and Chasms
 * Disabled modern music, C418 music now plays
 * Removed Vintage Animations
   * Felt way too slow
