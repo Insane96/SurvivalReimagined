@@ -33,7 +33,7 @@
 		"Perfect Parry tick window" = 1
 		#Amount of knockback given to entities per level.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Recoil entities knockback" = 0.6
+		"Recoil entities knockback" = 0.5
 		#Amount of knockback given to projectiles per level.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Recoil projectiles knockback" = 5.0

@@ -73,6 +73,12 @@
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
 
+	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items
+	[Items."Copper Tools/Armor Expansion"]
+		#The sea level + this at which the deep bonus starts to apply
+		#Range: > -2147483648
+		"Deep Bonus Sea Level" = 16
+
 [Experience]
 	#Adds new enchantments. Please note that Damaging enchantments such as water coolant are enabled only if ITR 'Replace damaging enchantments' is enabled. This also applies for protection enchantments and ITR 'Replace protection enchantments'
 	"Enable New Enchantments" = true

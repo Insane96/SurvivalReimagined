@@ -344,6 +344,8 @@
 		"Despawn mobs on bed respawn" = 32
 		#If enabled, sleeping a bed when sneaking will overwrite obelisk spawn point
 		"Allow obelisk spawn point overwrite with beds when sneaking" = true
+		#If enabled, respawning will try to place you on land and not in fluids
+		"Don't respawn on fluid" = true
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose World Spawn Range"]
@@ -674,6 +676,8 @@
 		"Quark integration" = true
 		#Integrates the mod with Autumnity. Changes animals loot to match the livestock changes.
 		"Autumnity integration" = true
+		#Integrates the mod with Caverns & Chasms. Slightly alters ore generation and adds item stats.
+		"Caverns & Chasms integration" = true
 
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	[Miscellaneous."Beacon & Conduit"]
@@ -692,7 +696,7 @@
 	[Miscellaneous.Nerfs]
 		#If true, Iron golems will only drop Iron when killed by the player.
 		"Iron from Golems only when killed by Players" = true
-		#If true, renderDebugInfo is enabled by default. Requires a world restart
+		#If true, renderDebugInfo is enabled by default. Requires a world restart. This also changes Caverns and Chasms from displaying coordinates with compasses.
 		"No Coordinates" = true
 		#If true, randomTickSpeed is set to 2 from 3
 		"Reduced Random Tick Speed" = true
@@ -774,7 +778,7 @@
 			"Scute drop as block" = true
 
 [Mining]
-	#Changes Gold tools to have an innate Fortune/Looting I and changes the harvest level to be like stone tools
+	#Changes Gold tools to have an innate Fortune/Looting I
 	"Enable Gold" = true
 	#Various changes for different materials and ores.
 	"Enable Materials and ores" = true
@@ -785,10 +789,8 @@
 	#Change, through data packs, some blocks properties, from hardness to explosion resistance to speed and jump factors to bone meal chance to fail.
 	"Enable Block Definitions" = true
 
-	#Changes Gold tools to have an innate Fortune/Looting I and changes the harvest level to be like stone tools
+	#Changes Gold tools to have an innate Fortune/Looting I
 	[Mining.Gold]
-		#Set the harvest level of gold tools. Vanilla is minecraft:gold (same as minecraft:wood), the there's stone, iron, diamond, netherite. Please note that an invalid resource location or harvest level here might crash the game.
-		"Harvest Level" = "minecraft:stone"
 		#Set the innate looting level of gold tools.
 		#Range: 0 ~ 255
 		"Looting Level" = 2
@@ -828,9 +830,11 @@
 		"Faster slabs, stairs and walls" = true
 		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2 tool efficiency.
 		"Efficiency based destroy delay" = true
+		#Changes some Caverns and Chasms config options.
+		"Caverns and Chasms Integration" = true
 
 [Items]
-	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff might require a Minecraft restart.
+	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	"Enable Stack Sizes" = true
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via data packs
 	"Enable Unbreakable Items" = true
@@ -844,15 +848,12 @@
 	"Enable Ecologic Wood" = true
 	"Enable gigaherz Tool Belt" = true
 
-	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff might require a Minecraft restart.
+	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack Sizes"]
 		#Food stack sizes will be reduced based off their hunger restored and saturation multiplier. See 'Food Stack Reduction Formula' for the formula
 		"Food Stack Reduction" = true
 		#The formula to calculate the stack size of a food item. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-		"Food Stack Reduction Formula" = "ROUND((1 - (effectiveness - 1) / 25) * 64 * 0.25, 0)"
-		#Stews will stack up to this number. It's overridden by 'foodStackReduction' if enabled. Still affected by black/whitelist
-		#Range: 1 ~ 64
-		"Stackable Stews" = 1
+		"Food Stack Reduction Formula" = "ROUND((1 - (effectiveness - 1) / 23) * 64 * 0.5, 0)"
 		#Items max stack sizes (excluding blocks) will be multiplied by this value. Foods will be overridden by 'Food Stack Reduction' or 'Food Stack Multiplier' if are active. Setting to 1 will disable this feature.
 		#Range: 0.01 ~ 64.0
 		"Item Stack Multiplier" = 1.0
@@ -926,7 +927,7 @@
 		"Food Hunger Formula" = "hunger"
 		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature
 		"Food Saturation Modifier Formula" = "saturation_modifier"
-		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current)
+		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current). If AppleSkin is installed it also adds compatibility for saturation restored overlay
 		"Combat Snapshot eating saturation" = true
 		#Raw food will give this level of poison to the player.
 		#Range: 0 ~ 255

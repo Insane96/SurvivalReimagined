@@ -34,6 +34,9 @@
 			kousa = true
 			grimwood = true
 
+		[types.wood_type.caverns_and_chasms]
+			azalea = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.autumnity]

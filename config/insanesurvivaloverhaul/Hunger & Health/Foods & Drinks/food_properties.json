@@ -14,6 +14,10 @@
     "nutrition": 2
   },
   {
+    "food": "minecraft:rabbit_stew",
+    "saturation_modifier": 1.6
+  },
+  {
     "food": "minecraft:pumpkin_pie",
     "nutrition": 6,
     "eating_time": 40
