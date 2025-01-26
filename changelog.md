@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Replaced Cycle Paingings with Gallery
+
 ## 2.2.0
 * Added Stellar View
   * Experience a more dynamic night sky
