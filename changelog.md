@@ -1,8 +1,10 @@
 # Changelog
 
 * Invert saturation and hunger
+* Savage and Ravage support
+* Villager Comfort fix no bed comfort
 
-## Upcoming
+## 2.3.0 - The long nosed update
 * Added Guard Villagers
   * Guard your villages
 * Added Villager Comfort
