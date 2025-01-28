@@ -1,7 +1,12 @@
 # Changelog
+* Prevent saturation from capping to health when eating
+* InsaneLib: add post readConfig
 
 ## Upcoming
 * Replaced Cycle Paingings with Gallery
+* Added Savage and Ravage
+* Re-enabled zombie villagers
+  * Villages will remain disabled, but you can get villagers by curing zombies
 
 ## 2.2.0
 * Added Stellar View

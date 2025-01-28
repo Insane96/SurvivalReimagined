@@ -571,7 +571,7 @@
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
 		#Disables Zombie Villagers
-		"No Zombie Villagers" = true
+		"No Zombie Villagers" = false
 		#Allows mobs to spawn in the world spawn (in vanilla mobs can't spawn in a 24 blocks radius from world spawn)
 		"Allow world spawn spawn" = true
 		#Disables normal skeletons from spawning in Fortresses.
@@ -924,9 +924,9 @@
 		#This also enables a change to the smelt_item_function in loot tables to use smoker recipes instead of furnaces (otherwise, mobs wouldn't drop cooked food). Might have unintended side effects.
 		"No Furnace food and smoker recipe" = true
 		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature
-		"Food Hunger Formula" = "hunger"
+		"Food Hunger Formula" = ""
 		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature
-		"Food Saturation Modifier Formula" = "saturation_modifier"
+		"Food Saturation Modifier Formula" = "saturation_modifier * 1.1"
 		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current). If AppleSkin is installed it also adds compatibility for saturation restored overlay
 		"Combat Snapshot eating saturation" = true
 		#Raw food will give this level of poison to the player.

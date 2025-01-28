@@ -41,7 +41,7 @@
 	[Stamina.Lock]
 		#When max stamina goes below this percentage, stamina will be locked. With locked stamina, the player can't sprint
 		#Range: 0.0 ~ 1.0
-		"Below health ratio" = 0.20
+		"Below health ratio" = 0.2
 		#At which health percentage will stamina be unlocked
 		#Range: 0.0 ~ 1.0
 		"Unlock at health ratio" = 0.4
