@@ -1,12 +1,17 @@
 # Changelog
 * Prevent saturation from capping to health when eating
-* InsaneLib: add post readConfig
 
 ## Upcoming
-* Replaced Cycle Paingings with Gallery
+* Added Guard Villagers
+  * Guard your villages
+* Added Villager Comfort
+  * Give villagers a proper home and workplace otherwise their prices will skyrocket
+* Added Savage and Ravage
+* Replaced Cycle Paintings with Gallery
 * Added Savage and Ravage
 * Re-enabled zombie villagers
   * Villages will remain disabled, but you can get villagers by curing zombies
+  * Re-enabled patrol villagers
 
 ## 2.2.0
 * Added Stellar View
