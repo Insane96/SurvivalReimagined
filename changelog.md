@@ -1,5 +1,6 @@
 # Changelog
-* Prevent saturation from capping to health when eating
+
+* Invert saturation and hunger
 
 ## Upcoming
 * Added Guard Villagers

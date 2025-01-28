@@ -201,7 +201,10 @@
 		#Disabled if set to 0.
 		#Range: > -2147483648
 		"Limit explosion size" = 12
+		#Like pre-1.14
 		"Don't stack drops" = true
+		#If enabled and Caverns and Chasms is present, Deepers explosions will pierce through blocks more (like Breaching creepers and Angry Creepers in Enhanced AI), knockback and damage are reduced by 25%.
+		"Caverns and Chasms Deepers" = true
 
 	[World.Fluids]
 		#If enabled, water will deal fall damage if too shallow
@@ -608,6 +611,9 @@
 		"Clamp Negative Demand" = true
 		#If true, the effect can no longer be applied to entities
 		"Remove Bad Omen" = false
+		#1 in X chance each tick for villagers to regain 1 health. Set to 0 to disable
+		#Range: > 0
+		"Heal chance" = 200
 
 [Miscellaneous]
 	#Various data packs that can be enabled/disabled
@@ -900,14 +906,14 @@
 		"Reduce upgrade cost" = true
 
 ["Hunger & Health"]
-	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
+	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Changing the json requires a minecraft restart.
 	"Enable Foods & Drinks" = true
 	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
 	"Enable Exhaustion" = true
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	"Enable Health Regen & Hunger" = true
 
-	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Removing entries from the json requires a minecraft restart.
+	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Changing the json requires a minecraft restart.
 	["Hunger & Health"."Foods & Drinks"]
 		#Makes potion, milk and honey faster to drink, 1 second instead of 1.6.
 		"Faster Drink Consuming" = true
@@ -923,9 +929,9 @@
 		#Food can no longer be smelted in furnaces and change smokers recipe to require soul sand.
 		#This also enables a change to the smelt_item_function in loot tables to use smoker recipes instead of furnaces (otherwise, mobs wouldn't drop cooked food). Might have unintended side effects.
 		"No Furnace food and smoker recipe" = true
-		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature
+		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Requires a Minecraft restart
 		"Food Hunger Formula" = ""
-		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature
+		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Requires a Minecraft restart
 		"Food Saturation Modifier Formula" = "saturation_modifier * 1.1"
 		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current). If AppleSkin is installed it also adds compatibility for saturation restored overlay
 		"Combat Snapshot eating saturation" = true
