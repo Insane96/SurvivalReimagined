@@ -3,6 +3,13 @@
 * Invert saturation and hunger
 * Savage and Ravage support
 * Villager Comfort fix no bed comfort
+* rollback Replaced Cycle Paintings with Gallery
+* CC Azalea pressure plates
+* Chrouching with shield in offhand prevents arrow from firing
+* Zombie villager mixin
+
+## Upcoming
+* Replaced back Gallery with Cycle Paintings
 
 ## 2.3.0 - The long nosed update
 * Added Guard Villagers

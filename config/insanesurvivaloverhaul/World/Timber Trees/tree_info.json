@@ -93,5 +93,9 @@
   {
     "log": "environmental:wisteria_log",
     "leaves": "#iguanatweaksreborn:wisteria_leaves"
+  },
+  {
+    "log": "caverns_and_chasms:azalea_log",
+    "leaves": "#iguanatweaksreborn:azalea_leaves"
   }
 ]
