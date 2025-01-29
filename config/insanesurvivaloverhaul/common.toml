@@ -563,13 +563,13 @@
 			Winter = 0
 			#Animals Mobs cap on spring.
 			#Range: > -2147483648
-			Spring = 15
+			Spring = 45
 			#Animals Mobs cap on summer.
 			#Range: > -2147483648
-			Summer = 25
+			Summer = 70
 			#Animals Mobs cap on autumn.
 			#Range: > -2147483648
-			Autumn = 5
+			Autumn = 20
 
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
@@ -975,7 +975,7 @@
 		"Consume Hunger Only" = true
 		#Vanilla consumes 1 saturation or hunger whenever Exhaustion reaches 4.0. You can change that value with this config option. NOTE that Minecraft caps this value to 40.
 		#Range: 0.0 ~ 40.0
-		"Max Exhaustion" = 4.0
+		"Max Exhaustion" = 6.0
 		#If 'Consume Hunger Only' is true then this is the chance to consume an hunger whenever the player is healed (vanilla ignores this; Combat Test has this set to 0.5).
 		#Range: 0.0 ~ 1.0
 		"Hunger Consumption Chance" = 0.5

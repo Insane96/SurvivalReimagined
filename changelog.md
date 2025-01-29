@@ -3,6 +3,10 @@
 * Invert saturation and hunger
 * Savage and Ravage support
 * Villager Comfort fix no bed comfort
+* block with broken shield
+* Haste and ??? enchantments. Flat enchantments that increase efficiency and durability. 5 cost
+* recycle silver and necromium
+* depth gauge/altimeter should add info on top left like BTA
 
 ## 2.3.1
 * Replaced back Gallery with Cycle Paintings
