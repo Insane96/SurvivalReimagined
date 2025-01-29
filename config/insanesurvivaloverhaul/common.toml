@@ -600,8 +600,6 @@
 	[Mobs."Villagers Nerfs"]
 		#If true, villagers will be given 1 trading experience as soon as they choose their job to lock the trades.
 		"Lock Trades" = true
-		#If true, villagers will always be transformed into Zombies, no matter the difficulty.
-		"Always Convert Zombie" = true
 		#Define a max percentage discount that villagers can give.
 		#Range: 0.0 ~ 1.0
 		"Max Discount Percentage" = 0.5
@@ -614,6 +612,8 @@
 		#1 in X chance each tick for villagers to regain 1 health. Set to 0 to disable
 		#Range: > 0
 		"Heal chance" = 200
+		#If true, villagers will always be transformed into Zombies no matter the difficulty.
+		"Always convert villager to zombie" = true
 
 [Miscellaneous]
 	#Various data packs that can be enabled/disabled
@@ -885,6 +885,8 @@
 		"Efficiency tooltip" = true
 		#Enables a data pack that rebalances all the items, from armor to efficiency to weapons. Also changes some item stacks.
 		"Item Stats Data Pack" = true
+		#If enabled items in the iguanatweaksreborn:has_tooltip item tag will get a tooltip with the vanilla name + .tooltip (e.g. item.minecraft.arrow.tooltip)
+		"Item tooltips" = true
 
 	#Make items not able to mine / attack
 	[Items."Disabled Items"]
