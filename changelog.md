@@ -4,7 +4,7 @@
 * Savage and Ravage support
 * short bow? doesn't slow down as much like normal bow
 
-## Upcoming
+## 2.4.0
 * Added Majruszs Enchantments
   * Many have been disabled, but now horse armors have enchantments
 * Added new resource packs
