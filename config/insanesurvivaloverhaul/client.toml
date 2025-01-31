@@ -13,6 +13,8 @@
 	"Enable Death" = true
 	#Changes to sounds and music. Disabling this feature requires a Minecraft restart.
 	"Enable Sounds & Music" = true
+	#Adds various infos on top left of the screen
+	"Enable HudInfos" = true
 
 	#Misc client side changes
 	[Client.Misc]
@@ -69,4 +71,17 @@
 		#Multiplies the time it takes for music to play by this value (in vanilla, normal music plays each 10 to 20 minutes).
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Music delay multiplier" = 0.1
+
+	#Adds various infos on top left of the screen
+	[Client.HudInfos]
+		#If true, items in the iguanatweaksreborn:hud/cardinal_direction will display the cardinal direction.
+		"Cardinal Direction" = true
+		#If true, items in the iguanatweaksreborn:hud/season will display the current season. Only available if Serene Seasons is installed
+		Season = true
+		#If true, items in the iguanatweaksreborn:hud/depth will display the current Y level
+		Depth = true
+		#If true, items in the iguanatweaksreborn:hud/time will display the time of day
+		Time = true
+		#If true, items in the iguanatweaksreborn:hud/biome will display the current biome
+		Biome = true
 

@@ -21,8 +21,6 @@
 	"Enable Timber Trees" = true
 	"Enable Faster Decay Leaves" = true
 	"Enable Coal & Fire" = true
-	#Change wandering trader offers. Trades can be customized via json in this feature's folder
-	"Enable Wandering Trades" = true
 	#Various changes to explosions, like higher knockback and getting hit when behind blown up blocks.
 	"Enable Explosion Overhaul" = true
 	"Enable Fluids" = true
@@ -163,18 +161,6 @@
 			#Chance for the flint to break when using two flints
 			#Range: 0.0 ~ 1.0
 			"Break Chance" = 0.3
-
-	#Change wandering trader offers. Trades can be customized via json in this feature's folder
-	[World."Wandering Trades"]
-		#Vanilla is 0 pre-23w31a experimental feature, 2 otherwise
-		#Range: > -2147483648
-		"Amount of Buying trades" = 2
-		#Vanilla is 5
-		#Range: > -2147483648
-		"Amount of Ordinary trades" = 6
-		#Vanilla is 1
-		#Range: > -2147483648
-		"Amount of Rare trades" = 2
 
 	#Various changes to explosions, like higher knockback and getting hit when behind blown up blocks.
 	[World."Explosion Overhaul"]
@@ -521,8 +507,10 @@
 	"Enable Equipment" = true
 	#Rebalance Enhanced AI config
 	"Enable EnhancedAI" = true
-	#Small changes to villagers to make them less OP
-	"Enable Villagers Nerfs" = true
+	#Change wandering trader offers. Trades can be customized via json in this feature's folder
+	"Enable Wandering Trades" = true
+	#Nerfs to villagers + change their trades via json config
+	"Enable Villagers" = true
 
 	#Changes to mob spawn with Serene Seasons installed
 	[Mobs."Season Spawning"]
@@ -596,10 +584,24 @@
 		#All drops from mobs will be disenchanted.
 		"Disenchant equipment" = false
 
-	#Small changes to villagers to make them less OP
-	[Mobs."Villagers Nerfs"]
+	#Change wandering trader offers. Trades can be customized via json in this feature's folder
+	[Mobs."Wandering Trades"]
+		#Vanilla is 0 pre-23w31a experimental feature, 2 otherwise
+		#Range: > -2147483648
+		"Amount of Buying trades" = 2
+		#Vanilla is 5
+		#Range: > -2147483648
+		"Amount of Ordinary trades" = 6
+		#Vanilla is 1
+		#Range: > -2147483648
+		"Amount of Rare trades" = 2
+
+	#Nerfs to villagers + change their trades via json config
+	[Mobs.Villagers]
 		#If true, villagers will be given 1 trading experience as soon as they choose their job to lock the trades.
 		"Lock Trades" = true
+		#If true, villagers will always be transformed into Zombies no matter the difficulty.
+		"Always convert villager to zombie" = true
 		#Define a max percentage discount that villagers can give.
 		#Range: 0.0 ~ 1.0
 		"Max Discount Percentage" = 0.5
@@ -607,13 +609,16 @@
 		"Prevent Cure Discount" = true
 		#When villagers restock, they update the 'demand'. Demand is a trade modifier that increases the price whenever a trade is done many times, BUT when a trade is not performed, at each restock the 'demand' goes negative, making possible for a trade to never increase it's price due to high negative demand. With this to true, negative demand will be capped at -max_uses of the trade (e.g. Carrot trade from a farmer will have it's minimum demand set to -16).
 		"Clamp Negative Demand" = true
-		#If true, the effect can no longer be applied to entities
-		"Remove Bad Omen" = false
 		#1 in X chance each tick for villagers to regain 1 health. Set to 0 to disable
 		#Range: > 0
 		"Heal chance" = 200
-		#If true, villagers will always be transformed into Zombies no matter the difficulty.
-		"Always convert villager to zombie" = true
+		#Chance for a nitwit to spawn when two villagers breed
+		#Range: 0.0 ~ 1.0
+		"Nitwit chance" = 0.1
+		#If true, the effect can no longer be applied to entities
+		"Remove Bad Omen" = false
+		#Enables a data pack that changes villagers trades
+		"Trades Data Pack" = true
 
 [Miscellaneous]
 	#Various data packs that can be enabled/disabled
@@ -1225,7 +1230,7 @@
 		"Replace bonus loot enchantments" = true
 		#If true, vanilla fire aspect and knockback are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Replace other enchantments" = true
-		#If true and shift it pressed, items will show enchantment info below the enchantments
+		#If true and shift it pressed, items will show enchantment info below the enchantments. Disables itself if the Enchantment descriptions mod is installed
 		"Enchantments info" = true
 
 	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to make experience disappear altogether.

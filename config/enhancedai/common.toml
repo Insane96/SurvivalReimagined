@@ -518,6 +518,9 @@
 
 	#Endermen will make the player's item fall from his hands. Add/remove mobs via the enhancedai:can_disrupt_item entity type tag
 	[Mobs."Item Disruption"]
+		#Cooldown (in ticks) before being able to use the ability again.
+		#Range: > -2147483648
+		Cooldown = 200
 
 		#Chance can be changed within entity data's ForgeData."enhancedai:item_disruption_chance"
 		[Mobs."Item Disruption".Chance]
