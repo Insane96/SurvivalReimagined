@@ -8,6 +8,8 @@
 * No launching deepers
 
 ## Upcoming
+* Added Majruszs Enchantments
+  * Many have been disabled, but now horse armors have enchantments
 * Added new resource packs
   * Torches Reimagined and Soft Weather
 

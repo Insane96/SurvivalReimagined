@@ -905,5 +905,9 @@
   {
     "id": "supplementaries:stasis",
     "costs": 5
+  },
+  {
+    "id": "majruszsenchantments:telekinesis",
+    "costs": 6
   }
 ]
