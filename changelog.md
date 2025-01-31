@@ -2,16 +2,15 @@
 
 * Invert saturation and hunger
 * Savage and Ravage support
-* https://www.curseforge.com/minecraft/mc-mods/domestication-innovation
 * short bow? doesn't slow down as much like normal bow
-* Enchantment against long noses
-* No launching deepers
 
 ## Upcoming
 * Added Majruszs Enchantments
   * Many have been disabled, but now horse armors have enchantments
 * Added new resource packs
   * Torches Reimagined and Soft Weather
+* Added Enchantment Descriptions
+* Added Feur Dungeon Spawner
 
 ## 2.3.1
 * Replaced back Gallery with Cycle Paintings
