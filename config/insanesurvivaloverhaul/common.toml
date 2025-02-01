@@ -250,9 +250,6 @@
 
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
 	["Sleep & Respawn"."Sleeping Effects"]
-		#How much the hunger bar is depleted when you wake up in the morning. Setting to 0 will disable this feature.
-		#Range: 0 ~ 20
-		"Hunger Depleted on Wake Up" = 15
 		#If the player's hunger bar is below 'Hunger Depleted on Wake Up' he can't sleep.
 		"No Sleep If Hungry" = true
 		#If the player has no hunger on wake up, beneficial effects are not applied.
@@ -262,6 +259,9 @@
 		"Dizzy when tired" = 3
 		#If the player's has the hunger effect he can't sleep.
 		"No Sleep with Hunger effect" = true
+		#How much saturation and hunger are depleted when you wake up in the morning. Setting to 0 will disable this feature.
+		#Range: 0 ~ 20
+		"Hunger & Saturation Depleted on Wake Up" = 15
 
 	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
 	["Sleep & Respawn".Cloth]
@@ -861,9 +861,7 @@
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack Sizes"]
-		#Food stack sizes will be reduced based off their hunger restored and saturation multiplier. See 'Food Stack Reduction Formula' for the formula
-		"Food Stack Reduction" = true
-		#The formula to calculate the stack size of a food item. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
+		#The formula to calculate the stack size of a food item. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. Set to empty to disable this. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
 		"Food Stack Reduction Formula" = "ROUND((1 - hunger / 9) * 64 * 0.5, 0)"
 		#Items max stack sizes (excluding blocks) will be multiplied by this value. Foods will be overridden by 'Food Stack Reduction' or 'Food Stack Multiplier' if are active. Setting to 1 will disable this feature.
 		#Range: 0.01 ~ 64.0
@@ -913,14 +911,14 @@
 		"Reduce upgrade cost" = true
 
 ["Hunger & Health"]
-	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Changing the json requires a minecraft restart.
+	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	"Enable Foods & Drinks" = true
 	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
 	"Enable Exhaustion" = true
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	"Enable Health Regen & Hunger" = true
 
-	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder. Changing the json requires a minecraft restart.
+	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	["Hunger & Health"."Foods & Drinks"]
 		#Makes potion, milk and honey faster to drink, 1 second instead of 1.6.
 		"Faster Drink Consuming" = true
@@ -936,9 +934,9 @@
 		#Food can no longer be smelted in furnaces and change smokers recipe to require soul sand.
 		#This also enables a change to the smelt_item_function in loot tables to use smoker recipes instead of furnaces (otherwise, mobs wouldn't drop cooked food). Might have unintended side effects.
 		"No Furnace food and smoker recipe" = true
-		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Requires a Minecraft restart
+		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Can be re-applied with /reload
 		"Food Hunger Formula" = ""
-		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Requires a Minecraft restart
+		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Can be re-applied with /reload
 		"Food Saturation Modifier Formula" = "saturation_modifier * 1.2"
 		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current). If AppleSkin is installed it also adds compatibility for saturation restored overlay
 		"Combat Snapshot eating saturation" = true
@@ -965,6 +963,9 @@
 		"Rowing Exhaustion" = 0.005
 		#When affected by the hunger effect, exhaustion will be doubled per level of the effect
 		"Effective Hunger Effect" = true
+		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion.
+		#Range: 0.0 ~ 128.0
+		"Bow charge exhaustion" = 0.005
 
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	["Hunger & Health"."Health Regen & Hunger"]
@@ -1311,7 +1312,8 @@
 	#Adds a new attribute that deals bonus damage that bypasses armor
 	"Enable Piercing damage" = true
 	"Enable Shields+ Integration" = true
-	"Enable Arrow Stats" = true
+	#Bows, crossbows and short bows
+	"Enable Bows" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -1406,7 +1408,8 @@
 		#Rebalances shields to fit the other mods' changes
 		"Shields+ Compat DataPack" = true
 
-	[Combat."Arrow Stats"]
+	#Bows, crossbows and short bows
+	[Combat.Bows]
 		#If true, Arrows from Bows and Crossbows will no longer deal more damage when fully charged.
 		"Disable Critical Arrows bonus damage" = true
 		#If true, arrows will deal float damage instead of being rounded up.
@@ -1416,7 +1419,7 @@
 		"Damage Multiplier" = 0.65
 		#Changes bows accuracy. Vanilla is 1.0
 		#Range: 0.0 ~ 10.0
-		"Bow Inaccuracy" = 1
+		"Bow Inaccuracy" = 1.0
 		#Speed at which arrows are shot from crossbows. Vanilla is 3.15
 		#Range: 0.0 ~ 10.0
 		"Crossbow velocity" = 2.25

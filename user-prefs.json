@@ -2306,6 +2306,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\16\\b37472b0cd3fa68c1bd731ced3fe0ba6fb2e3c",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\16\\b4d2aac43132009c5101a26b2e8244dd364208",
         "isSelected": false
       },
@@ -5595,6 +5599,10 @@
       },
       {
         "path": ".git\\objects\\3e\\2edd3a04e209163812743a14dfbb3281b957df",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\3e\\3c07d7d0c6fd3633984a581961a7f911debff5",
         "isSelected": false
       },
       {
@@ -9078,6 +9086,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\67\\b0b0e3397c3a7fc9dde259dbb59520cf95e040",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\67\\bb0379f459d121177678e278b92ddf98cfa123",
         "isSelected": false
       },
@@ -11838,6 +11850,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\86\\1b38871f8f23b16ff2550fd65991d53d30914a",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\86\\478cb0d63e139320facb51d8ed27f0410b449d",
         "isSelected": false
       },
@@ -13795,6 +13811,10 @@
       },
       {
         "path": ".git\\objects\\9e",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\9e\\11c699637a539b181f1ee1fc9466a04d98fb49",
         "isSelected": false
       },
       {
@@ -21618,6 +21638,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\f7\\2d2454d199de970bc25413402e5c5d94341ef2",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\f7\\328cc8a494c74885deee4b80ee88a27c5c447a",
         "isSelected": false
       },
@@ -22014,6 +22038,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\fa\\fee9c5454f50abf944f837ccadc11db1d7dc45",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\fb",
         "isSelected": false
       },
@@ -22399,6 +22427,10 @@
       },
       {
         "path": ".git\\objects\\ff\\b37083c9a597556e0becfa064e0a167c94ed01",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\ff\\b704059bd71e4d0b50f6a5cf865d6554e5bce2",
         "isSelected": false
       },
       {
@@ -27234,7 +27266,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\InsaneLib-1.17.0-mc1.20.1.jar",
+        "path": "mods\\InsaneLib-1.18.0-mc1.20.1.jar",
         "isSelected": true
       },
       {
@@ -27242,7 +27274,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\InsaneSurvivalOverhaul-4.5.0-mc1.20.1.jar",
+        "path": "mods\\InsaneSurvivalOverhaul-4.5.1-mc1.20.1.jar",
         "isSelected": true
       },
       {
