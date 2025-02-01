@@ -9018,6 +9018,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\67\\bb0379f459d121177678e278b92ddf98cfa123",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\67\\dd44831c93f3ff41b695caa852e4321be5abcf",
         "isSelected": false
       },
@@ -10247,6 +10251,10 @@
       },
       {
         "path": ".git\\objects\\76",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\76\\033b038ae21cd35dbdba6e9d1cea8b06f52399",
         "isSelected": false
       },
       {
@@ -13594,6 +13602,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\9c\\cfe5f4232e9f955f223ab436066f9febeda27d",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\9c\\e12e643b98772a4f24eb3ee774634dfbac0c82",
         "isSelected": false
       },
@@ -13615,6 +13627,10 @@
       },
       {
         "path": ".git\\objects\\9d\\2314859197316587223c5e771197efde61ed4c",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\9d\\267ec6855f2b2ed6e04f1ec62d6b23e898320d",
         "isSelected": false
       },
       {
@@ -16850,6 +16866,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\c1\\93194928bb024493c7b96adbe992aa5e2a57dd",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\c1\\93a242fe250c94598dd320b785c9742d61e3d0",
         "isSelected": false
       },
@@ -18726,6 +18746,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\d6\\878aab2ae0cb49f06992619befff7f2131137e",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\d6\\acaa0dc4b89d06efb5f9a7625e074794c02241",
         "isSelected": false
       },
@@ -19430,6 +19454,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\df\\13c4ee7a2ac91f53915097be68065116663efe",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\df\\18b1d3adb314d37b4b79734544a371baccf036",
         "isSelected": false
       },
@@ -19543,6 +19571,10 @@
       },
       {
         "path": ".git\\objects\\e0\\5a0a736fe63153920117416b9c1210bf787268",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\e0\\7f853d730d205b6deec9462b6d1ba0a9d57f5f",
         "isSelected": false
       },
       {
@@ -22782,6 +22814,22 @@
         "isSelected": true
       },
       {
+        "path": "config\\insanesurvivaloverhaul\\Mobs\\Wandering Trades",
+        "isSelected": true
+      },
+      {
+        "path": "config\\insanesurvivaloverhaul\\Mobs\\Wandering Trades\\buying_trades.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\insanesurvivaloverhaul\\Mobs\\Wandering Trades\\generic_trades.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\insanesurvivaloverhaul\\Mobs\\Wandering Trades\\rare_trades.json",
+        "isSelected": true
+      },
+      {
         "path": "config\\insanesurvivaloverhaul\\Movement",
         "isSelected": true
       },
@@ -25802,118 +25850,6 @@
         "isSelected": false
       },
       {
-        "path": "logs\\2025-01-17-6.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-18-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-18-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-18-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-18-4.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-20-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-21-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-21-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-21-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-22-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-22-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-22-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-23-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-25-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-25-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-26-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-26-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-28-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-28-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-28-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-28-4.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-28-5.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-29-1.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-29-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-29-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-29-4.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-29-5.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-29-6.log.gz",
-        "isSelected": false
-      },
-      {
         "path": "logs\\2025-01-31-1.log.gz",
         "isSelected": false
       },
@@ -25930,35 +25866,11 @@
         "isSelected": false
       },
       {
-        "path": "logs\\2025-01-31-5.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-31-6.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\2025-01-31-7.log.gz",
-        "isSelected": false
-      },
-      {
         "path": "logs\\debug-1.log.gz",
         "isSelected": false
       },
       {
         "path": "logs\\debug-2.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\debug-3.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\debug-4.log.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\debug-5.log.gz",
         "isSelected": false
       },
       {
@@ -27074,7 +26986,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\EnhancedAI-2.5.3-mc1.20.1.jar",
+        "path": "mods\\EnhancedAI-2.5.4-mc1.20.1.jar",
         "isSelected": true
       },
       {
@@ -27182,11 +27094,11 @@
         "isSelected": true
       },
       {
-        "path": "mods\\InsaneSurvivalExtra-1.19.2-mc1.20.1.jar",
+        "path": "mods\\InsaneSurvivalExtra-1.20.0-mc1.20.1.jar",
         "isSelected": true
       },
       {
-        "path": "mods\\InsaneSurvivalOverhaul-4.3.3-mc1.20.1.jar",
+        "path": "mods\\InsaneSurvivalOverhaul-4.4.1-mc1.20.1.jar",
         "isSelected": true
       },
       {
@@ -27254,7 +27166,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\moonlight-1.20-2.13.56-forge.jar",
+        "path": "mods\\moonlight-1.20-2.13.58-forge.jar",
         "isSelected": true
       },
       {

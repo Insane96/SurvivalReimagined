@@ -1611,7 +1611,7 @@
 		"Food Tooltips" = false
 		"Shulker Tooltips" = true
 		"Map Tooltips" = true
-		"Enchanting Tooltips" = false
+		"Enchanting Tooltips" = true
 		"Fuel Time Tooltips" = false
 		"Shulker Box Use Colors" = true
 		"Shulker Box Require Shift" = false

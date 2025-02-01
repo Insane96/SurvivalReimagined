@@ -3,6 +3,7 @@
 * Invert saturation and hunger
 * Savage and Ravage support
 * short bow? doesn't slow down as much like normal bow
+  * InsaneLib event: UseItemSlowdownEvent
 
 ## 2.4.0
 * Added Majruszs Enchantments

@@ -5,6 +5,6 @@
   "requireKeybindPress": true,
   "indentSize": 2,
   "style": {
-    "color": "gray"
+    "color": "dark_gray"
   }
 }

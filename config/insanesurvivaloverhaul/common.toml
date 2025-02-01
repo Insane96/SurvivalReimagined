@@ -864,7 +864,7 @@
 		#Food stack sizes will be reduced based off their hunger restored and saturation multiplier. See 'Food Stack Reduction Formula' for the formula
 		"Food Stack Reduction" = true
 		#The formula to calculate the stack size of a food item. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-		"Food Stack Reduction Formula" = "ROUND((1 - (effectiveness - 1) / 23) * 64 * 0.5, 0)"
+		"Food Stack Reduction Formula" = "ROUND((1 - hunger / 9) * 64 * 0.5, 0)"
 		#Items max stack sizes (excluding blocks) will be multiplied by this value. Foods will be overridden by 'Food Stack Reduction' or 'Food Stack Multiplier' if are active. Setting to 1 will disable this feature.
 		#Range: 0.01 ~ 64.0
 		"Item Stack Multiplier" = 1.0
@@ -939,7 +939,7 @@
 		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Requires a Minecraft restart
 		"Food Hunger Formula" = ""
 		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Requires a Minecraft restart
-		"Food Saturation Modifier Formula" = "saturation_modifier * 1.1"
+		"Food Saturation Modifier Formula" = "saturation_modifier * 1.2"
 		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current). If AppleSkin is installed it also adds compatibility for saturation restored overlay
 		"Combat Snapshot eating saturation" = true
 		#Raw food will give this level of poison to the player.
