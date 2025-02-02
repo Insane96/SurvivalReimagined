@@ -3,6 +3,14 @@
 * Invert saturation and hunger
 * Savage and Ravage support
 
+## Upcoming
+* Added Domestication Innovation
+  * Adds a new wandering state to the pet so they can move freely around a spot.
+  * Allows you to tame axolotls, rabbits, frogs and foxes.
+* Wolves overhaul
+  * They now have double health, increased damage and movement speed.
+  * They also heal every ~10 seconds
+
 ## 2.4.1
 * Mod updates
 * Removed Torches Reimagined

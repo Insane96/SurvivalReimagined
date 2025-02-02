@@ -33,7 +33,11 @@
       "minecraft:stone_hoe",
       "minecraft:stone_sword",
       "shieldsplus:stone_shield",
-      "iguanatweaksexpanded:stone_hammer"
+      "iguanatweaksexpanded:stone_hammer",
+      "domesticationinnovation:collar_tag",
+      "domesticationinnovation:rotten_apple",
+      "domesticationinnovation:drum",
+      "/domesticationinnovation:pet_bed_/"
     ],
     "disable": true
   }

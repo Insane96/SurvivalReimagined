@@ -333,7 +333,7 @@
 	#Use the enhancedai:change_iron_golems entity type tag to add more iron golems.
 	"Enable Iron Golems" = true
 	#Use the enhancedai:change_wolves entity type tag to add more wolves.
-	"Enable Wolves" = true
+	"Enable Wolves" = false
 
 	#Use the enhancedai:change_snow_golems entity type tag to add more snow golems.
 	[Pets."Snow Golems"]
