@@ -946,6 +946,8 @@
 		#Raw food's poison duration will be multiplied by this value. With this set to 1, raw food will give 1 second of poison per nutrition + saturation given.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Raw food Poison Duration Multiplier" = 2.0
+		#If enabled, eating cakes will give 30 seconds of Speed and Haste
+		"Buff cakes" = true
 
 	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
 	["Hunger & Health".Exhaustion]

@@ -14,7 +14,7 @@
 	#Changes to sounds and music. Disabling this feature requires a Minecraft restart.
 	"Enable Sounds & Music" = true
 	#Adds various infos on top left of the screen
-	"Enable HudInfos" = true
+	"Enable HUD Infos" = true
 
 	#Misc client side changes
 	[Client.Misc]
@@ -73,7 +73,7 @@
 		"Music delay multiplier" = 0.1
 
 	#Adds various infos on top left of the screen
-	[Client.HudInfos]
+	[Client."HUD Infos"]
 		#If true, items in the iguanatweaksreborn:hud/cardinal_direction will display the cardinal direction.
 		"Cardinal Direction" = true
 		#If true, items in the iguanatweaksreborn:hud/season will display the current season. Only available if Serene Seasons is installed
