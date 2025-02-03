@@ -3,7 +3,7 @@
 * Invert saturation and hunger
 * Savage and Ravage support
 
-## Upcoming
+## 2.4.2
 * Added Domestication Innovation
   * Adds a new wandering state to the pet so they can move freely around a spot.
   * Allows you to tame axolotls, rabbits, frogs and foxes.
