@@ -37,7 +37,8 @@
       "domesticationinnovation:collar_tag",
       "domesticationinnovation:rotten_apple",
       "domesticationinnovation:drum",
-      "/domesticationinnovation:pet_bed_/"
+      "/domesticationinnovation:pet_bed_/",
+      "supplementaries:pancake"
     ],
     "disable": true
   }
