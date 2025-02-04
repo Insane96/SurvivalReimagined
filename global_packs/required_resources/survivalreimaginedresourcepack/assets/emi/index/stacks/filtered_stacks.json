@@ -38,7 +38,8 @@
       "domesticationinnovation:rotten_apple",
       "domesticationinnovation:drum",
       "/domesticationinnovation:pet_bed_/",
-      "supplementaries:pancake"
+      "supplementaries:pancake",
+      "/savage_and_ravage:griefer_/"
     ],
     "disable": true
   }
