@@ -202,6 +202,8 @@
 		"Water pushes when no blocks are around" = true
 		#If true, entities will float in water
 		"[EXPERIMENTAL] Floaty entities" = false
+		#If true, water and lava will have 0 explosion resistance allowing waterlogged block to be destroyed by explosions
+		"[EXPERIMENTAL] No explosion resistance" = true
 
 	#Thunderstorm Intensity and Foggy Weather. Disable them via gamerules: iguanatweaks:thunderstormIntensity and iguanatweaks:foggyWeather
 	[World.Weather]
@@ -260,8 +262,11 @@
 		#If the player's has the hunger effect he can't sleep.
 		"No Sleep with Hunger effect" = true
 		#How much saturation and hunger are depleted when you wake up in the morning. Setting to 0 will disable this feature.
-		#Range: 0 ~ 20
+		#Range: 0 ~ 40
 		"Hunger & Saturation Depleted on Wake Up" = 15
+		#How much more saturation and hunger are depleted per level of Tired.
+		#Range: 0 ~ 20
+		"Tired bonus Hunger & Saturation Depleted" = 1
 
 	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
 	["Sleep & Respawn".Cloth]
@@ -1113,6 +1118,15 @@
 		"Milk Cooldown" = 1200
 		#Enables a data pack that changes animal loot (reduced food drops) and slows down growing, breeding, egging etc
 		"Data Pack" = true
+
+		[Farming.Livestock.Aging]
+			#If true, animals will age and die of old age. Configurable via data packs. With the data pack enabled, adult and mid age animals will drop 50% more stuff.
+			Enable = true
+			#If true, animals die of old age.
+			"Die of old age" = true
+			#If Die of old age is disabled you can still make animals grow up to this age
+			#Allowed Values: YOUNG, ADULT, MID_AGE, OLD
+			"Stop at" = "MID_AGE"
 
 [Experience]
 	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.

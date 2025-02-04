@@ -65,6 +65,7 @@
 		"Third person" = true
 		#Why is that still a thing?.
 		"Remove score" = true
+		"Replace score with time since last death" = true
 
 	#Changes to sounds and music. Disabling this feature requires a Minecraft restart.
 	[Client."Sounds & Music"]

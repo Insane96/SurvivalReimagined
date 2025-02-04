@@ -1,9 +1,8 @@
 # Changelog
 
-* Invert saturation and hunger
-* Savage and Ravage support
+* Wolf buffs in ISO
 
-## Upcoming
+## 2.4.3
 * Re-enabled Igloos and Ocean Monuments
 * Cleaned up the inventory screen 
   * EMI is hidden unless you search
