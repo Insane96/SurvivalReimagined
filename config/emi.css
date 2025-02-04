@@ -88,7 +88,7 @@
 	 * Whether to have the search bar in the center of the screen, instead of to the
 	 * side.
 	 */
-	center-search-bar: true;
+	center-search-bar: false;
 
 	/**
 	 * Which sidebar type to switch to when searching.
@@ -103,12 +103,12 @@
 	/**
 	 * Whether the EMI config button should be visible.
 	 */
-	emi-config-button-visibility: shown;
+	emi-config-button-visibility: auto;
 
 	/**
 	 * Whether the recipe tree button should be visible.
 	 */
-	recipe-tree-button-visibility: auto;
+	recipe-tree-button-visibility: hidden;
 
 	/**
 	 * The maximum height the recipe screen will grow to be if space is available in
@@ -167,7 +167,7 @@
 	/**
 	 * The pages in the left sidebar
 	 */
-	left-sidebar-pages: favorites;
+	left-sidebar-pages: craftables, favorites;
 
 	/**
 	 * The subpanels in the left sidebar
@@ -177,7 +177,7 @@
 	/**
 	 * How many columns and rows of ingredients to limit the left sidebar to
 	 */
-	left-sidebar-size: 12, 100;
+	left-sidebar-size: 8, 7;
 
 	/**
 	 * How much space to maintain between the left sidebar and obstructions, in pixels
@@ -187,7 +187,7 @@
 	/**
 	 * Where to position the left sidebar
 	 */
-	left-sidebar-align: left, top;
+	left-sidebar-align: right, center;
 
 	/**
 	 * Whether to render the header buttons and page count for the left sidebar
@@ -197,12 +197,12 @@
 	/**
 	 * Which theme to use for the left sidebar
 	 */
-	left-sidebar-theme: transparent;
+	left-sidebar-theme: modern;
 
 	/**
 	 * The pages in the right sidebar
 	 */
-	right-sidebar-pages: index, craftables;
+	right-sidebar-pages: index;
 
 	/**
 	 * The subpanels in the right sidebar
@@ -232,7 +232,7 @@
 	/**
 	 * Which theme to use for the right sidebar
 	 */
-	right-sidebar-theme: transparent;
+	right-sidebar-theme: modern;
 
 	/**
 	 * The pages in the top sidebar

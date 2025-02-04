@@ -1007,7 +1007,7 @@
 		["Hunger & Health"."Health Regen & Hunger".Starve]
 			#Sets how many ticks between starve damage happens (vanilla is 80).
 			#Range: > 0
-			Speed = 80
+			Speed = 160
 			#Set how much damage is dealt when starving (vanilla is 1).
 			#Range: > 0
 			Damage = 1

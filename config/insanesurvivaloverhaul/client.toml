@@ -70,7 +70,7 @@
 	[Client."Sounds & Music"]
 		#Multiplies the time it takes for music to play by this value (in vanilla, normal music plays each 10 to 20 minutes).
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Music delay multiplier" = 0.1
+		"Music delay multiplier" = 0.05
 
 	#Adds various infos on top left of the screen
 	[Client."HUD Infos"]
