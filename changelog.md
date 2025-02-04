@@ -2,6 +2,10 @@
 
 * Invert saturation and hunger
 * Savage and Ravage support
+* More sleep = more hunger
+
+## Upcoming
+* Re-enabled Igloos and Ocean Monuments
 
 ## 2.4.2
 * Added Domestication Innovation

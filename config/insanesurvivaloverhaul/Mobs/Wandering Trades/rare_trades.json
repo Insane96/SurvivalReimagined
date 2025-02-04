@@ -54,21 +54,10 @@
     "item_a": "minecraft:emerald",
     "item_a_count": 8,
     "item_result": "minecraft:map",
-    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.desert_pyramid\"}\u0027}}",
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.trail_ruins\"}\u0027}}",
     "exploration_map": {
-      "destination": "iguanatweaksreborn:desert_pyramid",
-      "skip_existing_chunks": false
-    },
-    "max_uses": 1,
-    "xp": 0
-  },
-  {
-    "item_a": "minecraft:emerald",
-    "item_a_count": 8,
-    "item_result": "minecraft:map",
-    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.jungle_pyramid\"}\u0027}}",
-    "exploration_map": {
-      "destination": "iguanatweaksreborn:jungle_pyramid",
+      "destination": "iguanatweaksreborn:trail_ruins",
+      "decoration": "target_point",
       "skip_existing_chunks": false
     },
     "max_uses": 1,
@@ -90,11 +79,13 @@
     "item_a": "minecraft:emerald",
     "item_a_count": 8,
     "item_result": "minecraft:map",
-    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.trail_ruins\"}\u0027}}",
+    "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.catacombs\"}\u0027}}",
     "exploration_map": {
-      "destination": "iguanatweaksreborn:trail_ruins",
-      "decoration": "target_point",
-      "skip_existing_chunks": false
+      "destination": "betterarcheology:on_catacombs_explorer_map",
+      "decoration": "mansion",
+      "skip_existing_chunks": false,
+      "zoom": 4
     },
     "max_uses": 1,
     "xp": 0
@@ -103,11 +94,28 @@
     "item_a": "minecraft:emerald",
     "item_a_count": 8,
     "item_result": "minecraft:map",
-    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.mansion\"}\u0027}}",
+    "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.temple_jungle\"}\u0027}}",
     "exploration_map": {
-      "destination": "minecraft:on_woodland_explorer_maps",
-      "search_radius": 100,
-      "skip_existing_chunks": false
+      "destination": "survivalreimagined:on_temple_jungle_explorer_map",
+      "decoration": "mansion",
+      "skip_existing_chunks": false,
+      "zoom": 4
+    },
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 8,
+    "item_result": "minecraft:map",
+    "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.zombie_dungeon\"}\u0027}}",
+    "exploration_map": {
+      "destination": "survivalreimagined:on_zombie_dungeon_explorer_map",
+      "decoration": "target_point",
+      "skip_existing_chunks": false,
+      "zoom": 4
     },
     "max_uses": 1,
     "xp": 0
