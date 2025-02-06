@@ -525,7 +525,7 @@
 		[Mobs."Season Spawning".Despawning]
 			#Despawn Distance on winter, note that lower values increase the mobs around the player. Vanilla is 128
 			#Range: > -2147483648
-			Winter = 96
+			Winter = 112
 			#Despawn Distance on spring, note that lower values increase the mobs around the player. Vanilla is 128
 			#Range: > -2147483648
 			Spring = 128
@@ -539,7 +539,7 @@
 		[Mobs."Season Spawning"."Hostile Cap"]
 			#Hostile Mobs cap on winter.
 			#Range: > -2147483648
-			Winter = 85
+			Winter = 70
 			#Hostile Mobs cap on spring.
 			#Range: > -2147483648
 			Spring = 70
@@ -798,7 +798,7 @@
 	"Enable Gold" = true
 	#Various changes for different materials and ores.
 	"Enable Materials and ores" = true
-	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
+	#Change blocks hardness. Dimension Hardness and Depth Hardness are controlled via json in this feature's folder. Block hardness can be changed with Block Data via data packs
 	"Enable Block Hardness" = true
 	#Various mining changes
 	"Enable Misc" = true
@@ -830,7 +830,7 @@
 		#* Can no longer smelt gold and Ancient Debris in a Furnace, and 2x in a blast furnace
 		"Ore Smelting Data Pack" = true
 
-	#Change blocks hardness. Dimension Hardness, Depth Hardness and Custom Hardness are controlled via json in this feature's folder
+	#Change blocks hardness. Dimension Hardness and Depth Hardness are controlled via json in this feature's folder. Block hardness can be changed with Block Data via data packs
 	[Mining."Block Hardness"]
 		#Multiplier applied to the hardness of blocks. E.g. with this set to 2.0 blocks will take 2 times longer to break.
 		#Range: 0.0 ~ 128.0

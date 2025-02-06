@@ -23,6 +23,10 @@
     "eating_time": 40
   },
   {
+    "food": "minecraft:glow_berries",
+    "can_always_eat": true
+  },
+  {
     "food": "minecraft:golden_apple",
     "effects": [
       {
