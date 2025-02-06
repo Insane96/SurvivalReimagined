@@ -115,7 +115,7 @@
 	#Uses yellow markers for all mobs
 	radar_single_color = false
 	#Recolors map texture at night to make them use night lightmap. Requires light_map config in common configs
-	night_lightmap = true
+	night_lightmap = false
 	#Turn on to convert Xaeros minimap waypoints. Conversion will happen on world boot. Remember to turn back off
 	convert_xaeros_waypoints = false
 
