@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 2.4.4
 * Replaced Cycle Paintings with Easel Does It!
 * You can now add paper to Atlases to create new maps
 * Mod updates
