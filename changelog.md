@@ -1,17 +1,6 @@
 # Changelog
 
-* Monster boxes mobs drop nothing
-* reduce crafting of repaiur kits
-* tiredness sounds should play slightly farther
-* altas in inventory
-* zombie multiply total
-* animal auto breed check around
-  * set on cooldown breeding if can't
 * Cake buffs not working
-* pets reverng attack
-* Learned enchantments max level 1 shouldn't show "up to level 1" when learned
-* Learning enchantments with same level should +1 max level (e.g. with Unbr III learning unbr III unlocks to unbr IV)
-* Merging incompatible enchantments in anvil
 
 ## Upcoming
 * Atlas now updates in inventory too, not only in the hotbar

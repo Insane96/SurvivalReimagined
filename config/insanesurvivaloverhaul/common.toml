@@ -319,7 +319,7 @@
 			#How many times will a fake sound of a mob play before going into cooldown. 'Maximum' is multiplied by the Tired effect level
 			["Sleep & Respawn".Tiredness."Fake sound".Times]
 				#Range: 0.0 ~ 1.7976931348623157E308
-				Minimum = 1.0
+				Minimum = 2.0
 				#Range: 0.0 ~ 1.7976931348623157E308
 				Maximum = 3.0
 
@@ -942,7 +942,7 @@
 		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Can be re-applied with /reload
 		"Food Hunger Formula" = ""
 		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Can be re-applied with /reload
-		"Food Saturation Modifier Formula" = "saturation_modifier * 1.2"
+		"Food Saturation Modifier Formula" = "saturation_modifier * hunger / 7"
 		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current). If AppleSkin is installed it also adds compatibility for saturation restored overlay
 		"Combat Snapshot eating saturation" = true
 		#Raw food will give this level of poison to the player.
@@ -1147,7 +1147,7 @@
 		"Merging Repair bonus" = 10
 		#Chance for an anvil to become chipped/damaged/break. Vanilla is 12%
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Degradation chance" = 0.075
+		"Degradation chance" = 0.05
 		"Fix with Iron blocks" = true
 
 		[Experience.Anvils.Renaming]

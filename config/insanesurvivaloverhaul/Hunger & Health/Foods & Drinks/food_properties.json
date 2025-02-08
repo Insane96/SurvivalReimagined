@@ -15,7 +15,7 @@
   },
   {
     "food": "minecraft:rabbit_stew",
-    "saturation_modifier": 0.8
+    "nutrition": 12
   },
   {
     "food": "minecraft:pumpkin_pie",
