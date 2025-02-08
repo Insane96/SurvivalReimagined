@@ -64,7 +64,7 @@
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]
 		#Range: > 0
-		"Max crates without slowdown" = 1
+		"Max crates without slowdown" = 2
 		#When you have > 'Max crates without slowdown' this is the base value for the slowdown. The slowdown is calculated as (crates above 'Max crates' * this * crates above 'Max crates')
 		#Range: 0.0 ~ 1.0
 		"Base Slowness per crate over max" = 0.05
