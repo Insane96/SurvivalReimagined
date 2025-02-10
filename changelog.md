@@ -1,8 +1,6 @@
 # Changelog
 
-* Cake buffs not working
-
-## Upcoming
+## 2.4.5
 * Atlas now updates in inventory too, not only in the hotbar
 * Mod updates
 
