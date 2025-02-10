@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "item": "easel_does_it:easel"
+        },
+        "title": {
+            "translate": "advancements.sr_story.easel.title"
+        },
+        "description": {
+            "translate": "advancements.sr_story.easel.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "minecraft:story/root",
+    "criteria": {
+        "easel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "easel_does_it:easel"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "easel"
+        ]
+    ]
+}
