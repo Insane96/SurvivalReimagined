@@ -4,6 +4,7 @@
 
 ## Upcoming
 * Atlas now updates in inventory too, not only in the hotbar
+* Mod updates
 
 ## 2.4.4
 * Replaced Cycle Paintings with Easel Does It!
