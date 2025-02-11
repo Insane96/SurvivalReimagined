@@ -15,7 +15,7 @@
     "chunk_builder_threads": 4,
     "always_defer_chunk_updates_v2": true,
     "animate_only_visible_textures": true,
-    "use_entity_culling": true,
+    "use_entity_culling": false,
     "leaf_culling_quality": "SOLID",
     "use_fog_occlusion": false,
     "use_block_face_culling": true,

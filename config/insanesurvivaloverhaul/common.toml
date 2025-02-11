@@ -292,7 +292,7 @@
 		"Tiredness for effect" = 500.0
 		#Every this Tiredness above 'Tiredness for effect' will add a new level of Tired.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Tiredness per level" = 75.0
+		"Tiredness per level" = 125.0
 		#By default if omitted in the json, food items will give 1 second of Energy Boost per effective nourishment (hunger + saturation) of the food. This multiplies the duration of the effect
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Default Energy Boost Duration Multiplier" = 5.0
