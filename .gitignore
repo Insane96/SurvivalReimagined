@@ -29,3 +29,4 @@ config/everycomp-hazardous.properties
 .physics_mod_cache
 exposures
 map_atlases/
+/controllable_natives/

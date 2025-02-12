@@ -1,6 +1,7 @@
 # Changelog
 
-* A way to see currently known enchantments
+## 2.4.6
+* Mod updates
 
 ## 2.4.5
 * Atlas now updates in inventory too, not only in the hotbar
