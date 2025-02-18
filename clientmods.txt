@@ -22,3 +22,4 @@ firstperson
 LetSleepingDogsLie
 StylishEffects
 Stellar View
+controllable

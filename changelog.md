@@ -1,6 +1,8 @@
 # Changelog
 
-## Upcoming
+* Check Formations structures
+
+## 2.4.7
 * Added Subtle Effects
   * Adds more particles and stuff
 * Added Every compat (stone zone)
