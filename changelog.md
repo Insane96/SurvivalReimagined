@@ -1,7 +1,14 @@
 # Changelog
 
 ## Upcoming
+* Added Subtle Effects
+  * Adds more particles and stuff
+* Added Every compat (stone zone)
+* Added Formations Nether
+  * More structures in the Nether
+* Mobs now drop all the blocks they blow up
 * Ores no longer sparkle
+* Mod updates
 
 ## 2.4.6
 * Mod updates
