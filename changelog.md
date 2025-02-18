@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Ores no longer sparkle
+
 ## 2.4.6
 * Mod updates
 

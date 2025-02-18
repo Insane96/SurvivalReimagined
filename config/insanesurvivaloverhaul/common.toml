@@ -1060,7 +1060,13 @@
 		"Season fail chance" = "WINTER,0.65"
 		#If true, you can bone meal dirt that's near a grass block to get grass block.
 		"Bone meal dirt to grass" = true
-		"Bone meal canes and cactus" = true
+
+		#How many stages will cactus and sugar canes grow with one bone meal
+		[Farming."Bone meal"."Bone meal canes and cactus"]
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 1.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 4.0
 
 		#How many stages will bone meal make stuff grow?
 		[Farming."Bone meal"."Stage growth"]

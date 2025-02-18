@@ -82,6 +82,21 @@
 			currant = true
 			grimwood = true
 
+	[types.stone_type]
+
+		[types.stone_type.quark]
+			soul_sandstone = true
+			midori = true
+			duskbound = true
+			limestone = true
+			jasper = true
+			shale = true
+			myalite = true
+			permafrost = true
+
+		[types.stone_type.supplementaries]
+			ash = true
+
 #Disables specific entries
 [entries]
 
