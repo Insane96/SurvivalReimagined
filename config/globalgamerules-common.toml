@@ -24,7 +24,7 @@
 		#Whether blocks should have drops.
 		do_tile_drops = true
 		#Whether block loot is dropped by all blocks (false) or randomly (true) depending on how far the block is from the center of a mob explosion (e.g. Creeper explosion).
-		mob_explosion_drop_decay = true
+		mob_explosion_drop_decay = false
 		#Whether block loot is dropped by all blocks (false) or randomly (true) depending on how far the block is from the center of a TNT explosion.
 		tnt_explosion_drop_decay = false
 
