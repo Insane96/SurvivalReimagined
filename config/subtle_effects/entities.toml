@@ -50,10 +50,10 @@ seasons = "DEFAULT"
 additionalBiomes = [  ]
 
 [humanoids.player]
-stomachGrowlingThreshold = 6
-stomachGrowlingVolume = 1.0
-heartBeatingThreshold = 6
-heartbeatVolume = 1.0
+stomachGrowlingThreshold = 2
+stomachGrowlingVolume = 0.8
+heartBeatingThreshold = 4
+heartbeatVolume = 0.8
 
 [dustClouds]
 scale = 2.0

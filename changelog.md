@@ -1,6 +1,14 @@
 # Changelog
 
 * Check Formations structures
+* Change silver generation
+  * Should generate together with gold in any biome, instead of just that strange generation below y -56
+* Wolves still don't regen health
+* brontolio
+* supplementaries rope arrow fletching
+* bucket requires 4 iron ingots
+* Merging books should cost xp?
+  * So you can't easily upgrade enchantments in the enchanting table
 
 ## 2.4.7
 * Added Subtle Effects
