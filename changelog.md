@@ -1,8 +1,6 @@
 # Changelog
 
-* Check Formations structures
-
-## Upcoming
+## 2.4.8
 * Added Formations Overworld
   * some structures have been disabled
 * Added Yung's better ocean monuments
