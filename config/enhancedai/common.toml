@@ -619,11 +619,11 @@
 		#Chance for a mob to have an AI to go and ride mobs. Use enhancedai:can_be_mounted and enhancedai:can_mount entity type tags
 		[Mobs.Riding."Chance to have Riding AI"]
 			#Range: 0.0 ~ 1.0
-			"Easy/Peaceful" = 0.03
+			"Easy/Peaceful" = 0.0
 			#Range: 0.0 ~ 1.0
-			Normal = 0.06
+			Normal = 0.0
 			#Range: 0.0 ~ 1.0
-			Hard = 0.1
+			Hard = 0.0
 
 [Bugs]
 	#Let them swarm. This also changes the Merge With stone goal to have 1.5 seconds cooldown before trying to merge, to prevent them from instantly getting into stone without having the chance to target someone.

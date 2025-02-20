@@ -10,6 +10,9 @@
 * Merging books should cost xp?
   * So you can't easily upgrade enchantments in the enchanting table
 
+## Upcoming
+* Mobs can no longer ride other mobs
+
 ## 2.4.7
 * Added Subtle Effects
   * Adds more particles and stuff
