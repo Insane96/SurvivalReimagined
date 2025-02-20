@@ -84,7 +84,7 @@
   },
   {
     "log": "environmental:plum_log",
-    "leaves": "iguanatweaksreborn:plum_leaves"
+    "leaves": "#iguanatweaksreborn:plum_leaves"
   },
   {
     "log": "environmental:willow_log",
