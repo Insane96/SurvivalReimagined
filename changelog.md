@@ -5,6 +5,7 @@
 ## Upcoming
 * Added Formations Overworld
   * some structures have been disabled
+* Added Yung's better ocean monuments
 * Mobs can no longer ride other mobs
 
 ## 2.4.7
