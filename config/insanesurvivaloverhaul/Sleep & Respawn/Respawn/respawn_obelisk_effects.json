@@ -14,5 +14,10 @@
     "id": "minecraft:speed",
     "duration": 1200,
     "ambient": true
+  },
+  {
+    "id": "minecraft:saturation",
+    "duration": 900,
+    "ambient": true
   }
 ]
