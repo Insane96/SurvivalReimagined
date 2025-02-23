@@ -1,5 +1,11 @@
 # Changelog
 
+* Heartstone advancement
+
+## Upcoming
+* Added Heartstone
+  * A new item that helps you find your friends
+
 ## 2.4.8
 * Added Formations Overworld
   * some structures have been disabled
