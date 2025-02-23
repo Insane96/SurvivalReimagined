@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "item": "heartstone:heartstone"
+        },
+        "title": {
+            "translate": "advancements.sr_story.heartstone.title"
+        },
+        "description": {
+            "translate": "advancements.sr_story.heartstone.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "minecraft:adventure/root",
+    "criteria": {
+        "heartstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "heartstone:heartstone"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "heartstone"
+        ]
+    ]
+}
