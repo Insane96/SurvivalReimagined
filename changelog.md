@@ -1,5 +1,14 @@
 # Changelog
 
+* Respawn obelisk not working
+* glider in forge
+
+## Upcoming
+* Re-enabled graves
+* Removed underwater bubbles in 1st person
+* Feeding through now has an higher chance to make animals fall in love
+* Ropes no longer make you descend really fast
+
 ## 2.4.8
 * Added Heartstone
   * A new item that helps you find your friends

@@ -97,7 +97,7 @@
 		#Allows ropes to be supported & attached to solid block sides
 		block_side_attachment = true
 		#Makes sliding down ropes as fast as free falling, still negating fall damage
-		slide_on_fall = true
+		slide_on_fall = false
 		#In case you want to disable supplementaries ropes you can specify here another mod rope and they will be used for rope arrows and in mineshafts instead
 		rope_override = "supplementaries:rope"
 		#Enables horizontal placement of ropes. Disabling will make ropes always non solid

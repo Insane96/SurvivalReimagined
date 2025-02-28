@@ -77,7 +77,7 @@
 		#Whether players in spectator mode can generate chunks
 		spectators_generate_chunks = true
 		#Non Vanilla gamerule: 'iguanatweaks:deathGrave'
-		"iguanatweaks:death_grave" = false
+		"iguanatweaks:death_grave" = true
 		#Non Vanilla gamerule: 'iguanatweaks:deathLoseItemsEnchanted'
 		"iguanatweaks:death_lose_items_enchanted" = false
 		#Non Vanilla gamerule: 'iguanatweaks:deathLoseItemsPercentage'
