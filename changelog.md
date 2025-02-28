@@ -1,7 +1,5 @@
 # Changelog
 
-* Heartstone advancement
-
 ## Upcoming
 * Added Heartstone
   * A new item that helps you find your friends

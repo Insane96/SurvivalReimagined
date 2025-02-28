@@ -77,7 +77,7 @@
 		"Show approx altitude in tooltip" = true
 
 	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items
-	[Items."Copper Tools/Armor Expansion"]
+	[Items."Copper Tools & Armor Expansion"]
 		#The sea level + this at which the deep bonus starts to apply
 		#Range: > -2147483648
 		"Deep Bonus Sea Level" = 16
