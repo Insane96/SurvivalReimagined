@@ -1,8 +1,9 @@
 # Changelog
 
-## Upcoming
+## 2.4.8
 * Added Heartstone
   * A new item that helps you find your friends
+* Mod updates
 
 ## 2.4.8
 * Added Formations Overworld
