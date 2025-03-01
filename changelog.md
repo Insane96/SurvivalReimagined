@@ -1,9 +1,6 @@
 # Changelog
 
-* Respawn obelisk not working
-* glider in forge
-
-## Upcoming
+## 2.4.9
 * Re-enabled graves
 * Removed underwater bubbles in 1st person
 * Feeding through now has an higher chance to make animals fall in love
