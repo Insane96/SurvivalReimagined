@@ -1,12 +1,15 @@
 # Changelog
 
-## 2.4.9
+* Increase back random tick speed and slow down crops growth?
+* Disarm enchantment
+
+## 2.4.10
 * Re-enabled graves
 * Removed underwater bubbles in 1st person
 * Feeding through now has an higher chance to make animals fall in love
 * Ropes no longer make you descend really fast
 
-## 2.4.8
+## 2.4.9
 * Added Heartstone
   * A new item that helps you find your friends
 * Mod updates
