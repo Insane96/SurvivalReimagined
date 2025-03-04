@@ -78,5 +78,9 @@
   {
     "food": "autumnity:pumpkin_bread",
     "nutrition": 5
+  },
+  {
+    "food": "buzzier_bees:honey_bread",
+    "nutrition": 5
   }
 ]

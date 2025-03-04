@@ -1,7 +1,9 @@
 # Changelog
 
-* Increase back random tick speed and slow down crops growth?
-* Disarm enchantment
+## Upcoming
+* Disabled Quark's vertical slabs
+* Removed Every Comp
+  * Broke abnormal slabs recipes
 
 ## 2.4.10
 * Re-enabled graves

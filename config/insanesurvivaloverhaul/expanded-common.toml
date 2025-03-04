@@ -99,8 +99,6 @@
 		#PLEASE NOTE that due to config limitation, some things cannot be disabled, so better use item tags. E.g. Launch enchantment uses a new iguanatweaksexpanded:enchanting/allurement/accepts_launch_enchantments item tag to decide which item accepts the enchantment.
 		#
 		"Allurement integration" = true
-		#If true, the new enchanting table must learn all the enchantments and not only treasure.
-		"Enchanting Table requires learning enchantments" = true
 
 		[Experience.Enchanting.Grindstone]
 			#If true, grindstone will give XP based off the new enchanting table. This is based off the ITR levelScalingFormula set to a fixed value
@@ -111,6 +109,30 @@
 			"Enchantment extraction" = true
 			#If true, grindstone will also remove curses when disenchanting.
 			"Curse removal" = false
+
+		[Experience.Enchanting."Enchanting Table"]
+			#If true, the new enchanting table must learn all the enchantments and not only treasure.
+			"Requires learning enchantments" = true
+			#Increasing this increases bookshelves required. Vanilla is 15
+			#Range: > 0
+			"Max enchanting power" = 25
+			#Tool enchantability multiplier if not infused or empowered
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Enchantability multiplier" = 0.5
+			#Tool enchantability multiplier when infused
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Infused Enchantability multiplier" = 1.0
+			#Tool enchantability bonus when infused
+			#Range: > 0
+			"Infused Enchantability flat" = 0
+			#Tool enchantability bonus percentage when empowered
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Empowered bonus Enchantability" = 0.2
+			#Tool enchantability bonus when empowered
+			#Range: > 0
+			"Empowered bonus Enchantability flat" = 1
+			#Range: > 0
+			"Base enchantability" = 3
 
 [Combat]
 	#Gives a use to the fletching table.

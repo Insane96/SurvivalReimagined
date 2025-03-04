@@ -127,7 +127,7 @@
   },
   {
     "id": "iguanatweaksexpanded:double_jump",
-    "costs": 3
+    "costs": 5
   },
   {
     "id": "iguanatweaksexpanded:dumbness_curse",
@@ -202,12 +202,7 @@
   },
   {
     "id": "iguanatweaksexpanded:lucky_hook",
-    "costs": [
-      3,
-      6,
-      9,
-      12
-    ]
+    "costs": 6
   },
   {
     "id": "iguanatweaksexpanded:magic_protection",
@@ -454,12 +449,7 @@
   },
   {
     "id": "iguanatweaksreborn:luck",
-    "costs": [
-      3,
-      6,
-      9,
-      12
-    ]
+    "costs": 6
   },
   {
     "id": "iguanatweaksreborn:projectile_protection",

@@ -23,3 +23,5 @@ LetSleepingDogsLie
 StylishEffects
 Stellar View
 controllable
+configured
+catalogue

@@ -311,19 +311,19 @@
 			#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
 			Mobs = ["minecraft:skeleton,minecraft:overworld", "minecraft:zombie,minecraft:overworld", "minecraft:spider,minecraft:overworld", "minecraft:ghast,minecraft:the_nether", "minecraft:zombified_piglin,minecraft:the_nether"]
 
-			#The cooldown (in ticks) between choosing a mob to play the fake sound. This is divided by the Tired effect level
+			#The cooldown (in ticks) between choosing a mob to play the fake sound. This is reduced with higher Tired effect levels
 			["Sleep & Respawn".Tiredness."Fake sound".Cooldown]
 				#Range: 0.0 ~ 1.7976931348623157E308
 				Minimum = 12000.0
 				#Range: 0.0 ~ 1.7976931348623157E308
 				Maximum = 24000.0
 
-			#How many times will a fake sound of a mob play before going into cooldown. 'Maximum' is multiplied by the Tired effect level
+			#How many times will a fake sound of a mob play before going into cooldown
 			["Sleep & Respawn".Tiredness."Fake sound".Times]
 				#Range: 0.0 ~ 1.7976931348623157E308
 				Minimum = 2.0
 				#Range: 0.0 ~ 1.7976931348623157E308
-				Maximum = 3.0
+				Maximum = 5.0
 
 	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player. Graves can be disabled with the iguanatweaks:deathGrave game rule. Items percentage lost can be configured with the iguanatweaks:deathLoseItemsPercentage and iguanatweaks:deathLoseItemsEnchanted game rules.
 	["Sleep & Respawn".Death]
@@ -458,6 +458,8 @@
 		#How much faster players move down climbable blocks
 		#Range: 0.0 ~ 5.0
 		"Descend Speed" = 0.2
+		#If enabled, climbables will no longer cancel fall damage. Damage is reduced by 40%.
+		"Fall damage on climbables" = true
 
 	#Prevents the player from placing blocks below him when in mid air.
 	[Movement."No Pillaring"]
@@ -523,6 +525,7 @@
 	"Enable Wandering Trades" = true
 	#Nerfs to villagers + change their trades via json config
 	"Enable Villagers" = true
+	"Enable Misc Mobs" = true
 
 	#Changes to mob spawn with Serene Seasons installed
 	[Mobs."Season Spawning"]
@@ -563,13 +566,13 @@
 			Winter = 0
 			#Animals Mobs cap on spring.
 			#Range: > -2147483648
-			Spring = 45
+			Spring = 35
 			#Animals Mobs cap on summer.
 			#Range: > -2147483648
-			Summer = 70
+			Summer = 50
 			#Animals Mobs cap on autumn.
 			#Range: > -2147483648
-			Autumn = 20
+			Autumn = 15
 
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
@@ -621,9 +624,6 @@
 		"Prevent Cure Discount" = true
 		#When villagers restock, they update the 'demand'. Demand is a trade modifier that increases the price whenever a trade is done many times, BUT when a trade is not performed, at each restock the 'demand' goes negative, making possible for a trade to never increase it's price due to high negative demand. With this to true, negative demand will be capped at -max_uses of the trade (e.g. Carrot trade from a farmer will have it's minimum demand set to -16).
 		"Clamp Negative Demand" = true
-		#1 in X chance each tick for villagers to regain 1 health. Set to 0 to disable
-		#Range: > 0
-		"Heal chance" = 200
 		#Chance for a nitwit to spawn when two villagers breed
 		#Range: 0.0 ~ 1.0
 		"Nitwit chance" = 0.1
@@ -631,6 +631,11 @@
 		"Remove Bad Omen" = false
 		#Enables a data pack that changes villagers trades
 		"Trades Data Pack" = true
+
+	[Mobs."Misc Mobs"]
+		#1 in X chance each tick for mobs in the `iguanatweaksreborn:passive_regen` entity type tag to regain 1 health. Set to 0 to disable
+		#Range: > 0
+		"Passive regen chance" = 200
 
 [Miscellaneous]
 	#Various data packs that can be enabled/disabled
@@ -719,8 +724,6 @@
 		"Iron from Golems only when killed by Players" = true
 		#If true, renderDebugInfo is enabled by default. Requires a world restart. This also changes Caverns and Chasms from displaying coordinates with compasses.
 		"No Coordinates" = true
-		#If true, randomTickSpeed is set to 2 from 3
-		"Reduced Random Tick Speed" = true
 		#If true, maxEntityCramming game rule is set to 6 from 24
 		"Reduced mob cramming" = true
 		#Kelp blocks smelt 16 items instead of 20
@@ -767,6 +770,10 @@
 		#Plays a sound effect when a mob is hit at least from this distance.
 		#Range: > -2147483648
 		"Ding on mob hit at distance" = 40
+		#Vanilla is 10
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Leash max distance" = 16.0
+		"Blindness no longer prevents sprinting" = true
 
 		[Miscellaneous.Tweaks.Sponge]
 			#The maximum amount of blocks a sponge can soak. (Vanilla is 64, disabled if quark is installed)
@@ -779,12 +786,15 @@
 			"Dry in the sun and wet in rain" = true
 
 		[Miscellaneous.Tweaks.Breathe]
-			#The amount of ticks the player consumes when underwater. In vanilla it's 1 without Respiration enchantment. For non integer numbers the decimal part will count as a chance to have a +1
+			#The amount of ticks the entities consumes when underwater. In vanilla it's 1 without Respiration enchantment. For non integer numbers the decimal part will count as a chance to have a +1
 			#Range: 0.0 ~ 100.0
 			"Air ticks consumed" = 1.5
 			"Increase drown damage the more drowning" = true
+			#Every how many ticks will entities drown
+			#Range: 0 ~ 100
+			"Drown Speed" = 30
 
-			#The amount of air ticks the player regains each tick when out of water. Min is the amount as soon as you exit water, Max is a few seconds out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4.
+			#The amount of air ticks the entities regains each tick when out of water. Min is the amount as soon as you exit water, Max is a few seconds out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4.
 			[Miscellaneous.Tweaks.Breathe."Air ticks refilled"]
 				#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				Minimum = 1.0
@@ -814,7 +824,7 @@
 	[Mining.Gold]
 		#Set the innate looting level of gold tools.
 		#Range: 0 ~ 255
-		"Looting Level" = 2
+		"Looting Level" = 1
 		#Set the innate fortune level of gold tools.
 		#Range: 0 ~ 255
 		"Fortune Level" = 1
@@ -947,7 +957,7 @@
 		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Can be re-applied with /reload
 		"Food Hunger Formula" = ""
 		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Can be re-applied with /reload
-		"Food Saturation Modifier Formula" = "saturation_modifier * hunger / 7"
+		"Food Saturation Modifier Formula" = "saturation_modifier * 1.2"
 		#If enabled, when eating food the saturation will not sum, instead will just be set to the food's saturation (if higher than the current). If AppleSkin is installed it also adds compatibility for saturation restored overlay
 		"Combat Snapshot eating saturation" = true
 		#Raw food will give this level of poison to the player.
@@ -1236,8 +1246,6 @@
 		"Nerf Mending" = true
 		#Respiration decreases air consumption by 50% per level instead of 100%.
 		"Nerf Respiration" = true
-		#The ore_drops formula is changed to 20%/50%/85%/125% drop increase from 33%/75%/120%/166%
-		"Nerf Fortune" = true
 		#Set arrow's damage increase with the Power enchantment (vanilla is 0.5). If set to a value != 0.5 the flat 0.5 bonus is also removed. Set to 0.5 to disable.
 		#Range: 0.0 ~ 2.0
 		"Power Enchantment Damage" = 0.2
@@ -1254,12 +1262,10 @@
 		#Smite deals +1 damage per level to undead and applies weakness
 		#Bane of Arthropods has been replaced with Bane of SSSSS that deals +1 damage per level to arthropods and creepers and applies slowness
 		"Replace damaging enchantments" = true
-		#If true, vanilla looting, fortune and Luck of the Sea enchantments are replaced with a single one: Luck. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
-		"Replace bonus loot enchantments" = true
 		#If true, vanilla fire aspect and knockback are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Replace other enchantments" = true
-		#If true and shift it pressed, items will show enchantment info below the enchantments. Disables itself if the Enchantment descriptions mod is installed
-		"Enchantments info" = true
+		#If true, Looting, Fortune and Luck of the Sea enchantments are replaced with a single level one: Luck. Luck works like Fortune/Looting/LoTS II. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
+		"Rework bonus loot enchantments" = true
 
 	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to make experience disappear altogether.
 	[Experience."Dropped Experience"]
