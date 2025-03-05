@@ -1,6 +1,7 @@
 # Changelog
 
 ## Upcoming
+* Added Immersive UI
 * Disabled Quark's vertical slabs
 * Removed Every Comp
   * Broke abnormal slabs recipes

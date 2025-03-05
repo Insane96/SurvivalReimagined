@@ -636,6 +636,8 @@
 		#1 in X chance each tick for mobs in the `iguanatweaksreborn:passive_regen` entity type tag to regain 1 health. Set to 0 to disable
 		#Range: > 0
 		"Passive regen chance" = 200
+		#Instead of dealing magic and melee damage, guardians now only deal magic damage equal to their attack_damage attribute
+		"Guardian magic damage only" = true
 
 [Miscellaneous]
 	#Various data packs that can be enabled/disabled
