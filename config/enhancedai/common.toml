@@ -639,7 +639,7 @@
 		"Ticks after hurt to wake up friends" = 10
 		#In vanilla everytime a silverfish is woken up there is 1 in 2 chance to stop waking up more silverfish. This changes the 1 in x chance.
 		#Range: > 1
-		"Chance to stop waking up friends" = 10
+		"Chance to stop waking up friends" = 5
 		#Y range on which a hurt silverfish checks for infested stone to break. Vanilla is 5.
 		#Range: 1 ~ 32
 		"Vertical Wake up Range" = 5
