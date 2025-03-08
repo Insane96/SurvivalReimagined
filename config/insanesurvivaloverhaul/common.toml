@@ -434,10 +434,10 @@
 	#Players's slowed down when walking backwards.
 	"Enable Backwards slowdown" = true
 	"Enable Swimming" = true
-	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Armor weights are controlled via Item Definitions.
-	"Enable Weighted Equipment" = false
 	#Players's slowed down for a brief moment when hit.
 	"Enable Tagging" = true
+	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. If you need more control over armor, use item definitions
+	"Enable Weighted Armor" = false
 
 	[Movement.Boats]
 		#If true, boats will no longer go stupidly fast on ice. (If quark is present this is disabled)
@@ -490,17 +490,6 @@
 		#If true, enables a data pack that makes rails cheaper and adds recipes for new rail. Also adds a global loot modifier that replaces vanilla rails with golden powered rails
 		"Data Pack" = true
 
-	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Armor weights are controlled via Item Definitions.
-	[Movement."Weighted Equipment"]
-		#Percentage slowdown per point of armor the player is wearing.
-		#Range: 0.0 ~ 1.0
-		"Slowdown per Armor" = 0.0
-		#This value times the Armor Toughness worn by the player is a percentage increase of the Slowdown per Armor.
-		#Total percentage slowdown is '(slowness_per_armor * armor_points) * (1 + (toughness * percentage_per_toughness))'
-		#E.g. with 'Slowness per Armor' set to 0.005 and this set to 0.025 and the player wearing Diamond Armor the slowdown is '(0.005 * 20) * (1 + (8 * 0.025))' = '0.1 * 1.2'= '0.12' = -12% Speed applied to the player.
-		#Range: 0.0 ~ 1.0
-		"Percentage Increase per Toughness" = 0.0
-
 	#Players's slowed down for a brief moment when hit.
 	[Movement.Tagging]
 		#Which level of Slowness is applied to the player (level 0 is Slowness I).
@@ -509,6 +498,11 @@
 		#Slowness is applied for damage_taken * this_value ticks.
 		#Range: 0 ~ 100
 		"Duration multiplier" = 7
+
+	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. If you need more control over armor, use item definitions
+	[Movement."Weighted Armor"]
+		#Formula to calculate the slowdown of a piece of armor. Variables available are: armor, armor_toughness. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Please note that 1 means 100% slowdown
+		"Slowdown formula" = "0"
 
 [Mobs]
 	#Changes to mob spawn with Serene Seasons installed
@@ -1133,23 +1127,27 @@
 		#Changes the chance for a chicken to come out from an egg (1 in this value). Vanilla is 8
 		#Range: > -2147483648
 		"Chicken from egg chance" = 8
-		#If not 0, chickens will no longer breed, instead when fed will make eggs twice as fast for the seconds set here.
-		#Range: > -2147483648
-		"Faster egg time" = 900
 		#Seconds until you can milk cows (or stew mooshrooms)
 		#Range: > -2147483648
 		"Milk Cooldown" = 1200
 		#Enables a data pack that changes animal loot (reduced food drops) and slows down growing, breeding, egging etc
 		"Data Pack" = true
+		#If true, animals will no longer be able to be bred manually. Only animals in iguanatweaksreborn:prevent_breeding will be affected by this.
+		"Prevent breeding" = true
 
 		[Farming.Livestock.Aging]
-			#If true, animals will age and die of old age. Configurable via data packs. With the data pack enabled, adult and mid age animals will drop 50% more stuff.
+			#If true, animals will age and die of old age. Configurable via data packs. With the data pack enabled, adult will drop more goodies. With pehkui installed, animals will also be smaller/bigger.
 			Enable = true
 			#If true, animals die of old age.
 			"Die of old age" = true
 			#If Die of old age is disabled you can still make animals grow up to this age
-			#Allowed Values: YOUNG, ADULT, MID_AGE, OLD
-			"Stop at" = "MID_AGE"
+			#Allowed Values: YOUNG, ADULT, ELDER
+			"Stop at" = "ELDER"
+			#If true, animals will die if not young and haven't been fed in a while.
+			"Starvation death" = false
+			#How long (in minutes) will an animal remain marked as fed after eating?
+			#Range: > 0
+			"Last fed duration" = 60
 
 [Experience]
 	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.

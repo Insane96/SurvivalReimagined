@@ -158,6 +158,22 @@
     ]
   },
   {
+    "id": "iguanatweaksexpanded:enduring",
+    "costs": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:haste",
+    "costs": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
     "id": "iguanatweaksexpanded:experience_curse",
     "costs": 4
   },

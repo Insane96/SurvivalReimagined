@@ -115,7 +115,7 @@
 			"Requires learning enchantments" = true
 			#Increasing this increases bookshelves required. Vanilla is 15
 			#Range: > 0
-			"Max enchanting power" = 25
+			"Max enchanting power" = 20
 			#Tool enchantability multiplier if not infused or empowered
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Enchantability multiplier" = 0.5

@@ -78,8 +78,8 @@ playerRunningRequiresSpeed = false
 [burning]
 smoke = "DEFAULT"
 flames = true
-sparks = true
-sounds = true
+sparks = false
+sounds = false
 extinguishSteam = true
 
 [itemRarity]

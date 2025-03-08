@@ -868,7 +868,7 @@
 [Animals]
 	#Makes animals not tempted by food. Use the entity type tag enhancedai:can_ignore_food_temptation to change animals.
 	"Enable Not Tempted Animals" = true
-	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:can_fight_back and enhancedai:can_be_scared_by_players to add/remove animals.
+	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:can_be_neutral, enhancedai:can_be_hostile, and enhancedai:can_be_scared_by_players to add/remove animals.
 	"Enable Animals Scared Attack" = true
 	#Make animals flee/fight back when one is attacked
 	"Enable Animals Group Flee" = true
@@ -879,11 +879,8 @@
 		#Range: 0.0 ~ 1.0
 		"Not tempted chance" = 0.5
 
-	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:can_fight_back and enhancedai:can_be_scared_by_players to add/remove animals.
+	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:can_be_neutral, enhancedai:can_be_hostile, and enhancedai:can_be_scared_by_players to add/remove animals.
 	[Animals."Animals Scared Attack"]
-		#Animals have this percentage chance to be able to fight back instead of fleeing. Animals have a slightly bigger range to attack. Attack damage can't be changed via config due to limitation so use mods like Mobs Properties Randomness to change the damage. Base damage is 3
-		#Range: 0.0 ~ 1.0
-		"Fight back chance" = 0.35
 		#Animals have this percentage chance to be scared by players and run away. Fight back chance has priority over this
 		#Range: 0.0 ~ 1.0
 		"Players Scared chance" = 0.25
@@ -901,6 +898,12 @@
 		#Speed multiplier when the animal avoids the player and it's farther than 16 blocks from him.
 		#Range: 0.0 ~ 4.0
 		"Flee speed Multiplier Far" = 1.0
+		#Animals have this percentage chance to be able to fight back instead of fleeing. Animals have a slightly bigger range to attack. Attack damage can't be changed via config due to limitations so use mods like Mobs Properties Randomness to change the damage. Base damage is 3
+		#Range: 0.0 ~ 1.0
+		"Neutral chance" = 0.35
+		#Animals have this percentage chance to be hostile
+		#Range: 0.0 ~ 1.0
+		"Hostile chance" = 0.1
 
 	#Make animals flee/fight back when one is attacked
 	[Animals."Animals Group Flee"]
