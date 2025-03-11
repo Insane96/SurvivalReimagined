@@ -921,4 +921,9 @@
 		#Multiplies the distance at which the darkness effect is applied.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Darkness range multiplier" = 2.0
+		#Multiplies the distance at which vibrations reach wardens.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Listen range multiplier" = 2.0
+		#If enabled, will make warden have higher step height making it not need to jump.
+		"Step up" = true
 

@@ -116,23 +116,23 @@
 			#Increasing this increases bookshelves required. Vanilla is 15
 			#Range: > 0
 			"Max enchanting power" = 20
-			#Tool enchantability multiplier if not infused or empowered
+			#Tool enchantability multiplier if not purified or infused
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Enchantability multiplier" = 0.5
-			#Tool enchantability multiplier when infused
-			#Range: 0.0 ~ 1.7976931348623157E308
-			"Infused Enchantability multiplier" = 1.0
-			#Tool enchantability bonus when infused
-			#Range: > 0
-			"Infused Enchantability flat" = 0
-			#Tool enchantability bonus percentage when empowered
-			#Range: 0.0 ~ 1.7976931348623157E308
-			"Empowered bonus Enchantability" = 0.2
-			#Tool enchantability bonus when empowered
-			#Range: > 0
-			"Empowered bonus Enchantability flat" = 1
 			#Range: > 0
 			"Base enchantability" = 3
+			#Tool enchantability multiplier when purified (sums with Enchantability multiplier and Infused bonus Enchantability multiplier)
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Purified Enchantability multiplier" = 0.5
+			#Tool enchantability bonus when purified
+			#Range: > 0
+			"Purified Enchantability flat" = 0
+			#Tool enchantability bonus percentage when infused (sums with Enchantability multiplier and Purified bonus Enchantability multiplier)
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Infused bonus Enchantability multiplier" = 0.2
+			#Tool enchantability bonus when infused
+			#Range: > 0
+			"Infused bonus Enchantability flat" = 1
 
 [Combat]
 	#Gives a use to the fletching table.

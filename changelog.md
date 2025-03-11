@@ -1,19 +1,7 @@
 # Changelog
 
-* sort enchantments by translated name
-* Opening an already opened enchanting table screen scrolls back up to the top
-* Enchanting doesn't update the item client side
-* rework costs to start from 1 instead of 2
-  * Reduce by 25% enchantability
-  * Increase to 40 xp to level up
-* shoveling podzol
-* flame arrows sound
-* infused -> purified
-* empowered -> infused
-* Glowing arrows that hit a glowing entity will deal increased damage
-* soul steel -> hell steel (remove soul from crafting)
-
-## Upcoming
+## 2.4.13
+* Fixed some more path to dirt missing
 * Mod updates
 
 ## 2.4.11

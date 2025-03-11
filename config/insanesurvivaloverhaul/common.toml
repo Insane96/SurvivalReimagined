@@ -1220,23 +1220,23 @@
 
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Players Experience"]
-		#The experience required to level up is calculated by this formula. The variable available is 'current_level'
-		#Set to empty to disable.
-		#This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-		#Incompatible with Allurement's 'Remove level Scaling' or any other mod that does something similar
-		"Level Scaling Formula" = "35"
 		#On death, players will drop this percentage of experience instead of max 7 levels. Setting to -1 will disable this.
 		#Due to Minecraft limitations this is incompatible with other mods that change the level scaling (e.g. Allurement's 'Remove level Scaling').
 		#Range: -1.0 ~ 1.0
 		"Dropped Experience on Death" = 0.8
 		#Players will pick up experience faster
 		"Pickup XP Faster" = true
+		#The experience required to level up is calculated by this formula. The variable available is 'current_level'
+		#Set to empty to disable.
+		#This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
+		#Incompatible with Allurement's 'Remove level Scaling' or any other mod that does something similar
+		"Level up formula" = "50"
 
 	#Changes to some enchantments related stuff.
 	[Experience.Enchantments]
 		#Infinity can go up to level 4. Each level makes an arrow have only 1 in level+1 chance to consume. E.g. with Infinity 4 there's 1 in 5 chance to consume the arrow, and 4 in 5 to not consume it.
 		"Infinity overhaul" = true
-		#Unbreaking max level is now 5 and tool lasts 50% more per level
+		#Unbreaking increases tool durability by 75% per level
 		"Less unbreakable unbreaking" = true
 		#Thorns is no longer compatible with other protections, but deals damage every time (higher levels deal more damage) and no longer damages items.
 		"Small Thorns Overhaul" = true
@@ -1277,10 +1277,9 @@
 		#Can be set to 0 to make blocks drop no experience
 		#Range: 0.0 ~ 128.0
 		"Experience from Blocks Multiplier" = 1.0
-		#Bottle o' enchanting will drop this more XP. Experience is still affected by 'Global Experience Multiplier'
-		#Can be set to 0 to make Bottle o' enchanting drop no bonus experience
+		#Bottle o' enchanting will drop this amount of experience. Can be set to 0 to make Bottle o' enchanting drop no experience
 		#Range: 0 ~ 512
-		"Bottle o' Enchanting Bonus XP" = 35
+		"Bottle o' Enchanting XP" = 50
 
 		[Experience."Dropped Experience".Mobs]
 			#Experience dropped from mobs that come from spawners will be multiplied by this multiplier.
@@ -1384,7 +1383,7 @@
 		"Enchantment Chance" = 0.1
 		#iguanatweaksreborn:critical_damage increase per level of Critical enchantment.
 		#Range: -1.0 ~ 1.0
-		"Enchantment Damage" = 0.3
+		"Enchantment Damage" = 0.1
 
 	#Apply attribute modifiers to players. Attributes can be added in the json config of this feature's folder. Changing attribute modifiers requires player rejoin
 	[Combat."Player Stats"]
