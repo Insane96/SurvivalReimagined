@@ -1236,10 +1236,6 @@
 	[Experience.Enchantments]
 		#Infinity can go up to level 4. Each level makes an arrow have only 1 in level+1 chance to consume. E.g. with Infinity 4 there's 1 in 5 chance to consume the arrow, and 4 in 5 to not consume it.
 		"Infinity overhaul" = true
-		#Unbreaking increases tool durability by 75% per level
-		"Less unbreakable unbreaking" = true
-		#Thorns is no longer compatible with other protections, but deals damage every time (higher levels deal more damage) and no longer damages items.
-		"Small Thorns Overhaul" = true
 		#Change the bonus efficiency formula from `lvl*lvl+1` to `tool_efficiency * (0.5*lvl)`
 		"Tool Efficiency Scaled Efficiency Formula" = true
 		#Mending only makes the tool repair by one durability every 2 xp instead of 2 durability/1 xp.
@@ -1266,6 +1262,12 @@
 		"Replace other enchantments" = true
 		#If true, Looting, Fortune and Luck of the Sea enchantments are replaced with a single level one: Luck. Luck works like Fortune/Looting/LoTS II. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Rework bonus loot enchantments" = true
+		#Unbreaking increases tool durability by 75% per level
+		"Unbreaking overhaul" = true
+		#Changes Multishot to actually load 3 arrows, instead of materializing 2 arrows from thin air
+		"Actual multishot" = true
+		#Thorns is no longer compatible with other protections, but deals damage every time (higher levels deal more damage) and no longer damages items.
+		"Thorns overhaul" = true
 
 	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to make experience disappear altogether.
 	[Experience."Dropped Experience"]

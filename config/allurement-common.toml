@@ -34,7 +34,7 @@
 		"Enable Reforming" = true
 		#How many ticks it takes a reforming item to repair
 		#Range: > 0
-		"Reforming tick rate" = 2400
+		"Reforming tick rate" = 1200
 
 	[enchantments.shockwave]
 		#Boots enchantment that creates a shockwave when taking fall damage

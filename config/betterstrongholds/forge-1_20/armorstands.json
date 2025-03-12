@@ -1,17 +1,19 @@
 {
   "commonHelmets": {
     "entries": {
-      "chainmail_helmet": 0.3,
-      "leather_helmet": 0.1,
       "carved_pumpkin": 0.01,
-      "iron_helmet": 0.3
+      "chainmail_helmet": 0.3,
+      "iron_helmet": 0.3,
+      "iguanatweaksexpanded:durium_helmet": 0.3,
+      "leather_helmet": 0.1
     },
     "defaultItem": "air"
   },
   "rareHelmets": {
     "entries": {
       "carved_pumpkin": 0.2,
-      "diamond_helmet": 0.3
+      "diamond_helmet": 0.3,
+      "iguanatweaksexpanded:keego_helmet": 0.3
     },
     "defaultItem": "air"
   },
@@ -19,13 +21,15 @@
     "entries": {
       "leather_chestplate": 0.1,
       "iron_chestplate": 0.3,
-      "chainmail_chestplate": 0.3
+      "chainmail_chestplate": 0.3,
+      "iguanatweaksexpanded:durium_chestplate": 0.3
     },
     "defaultItem": "air"
   },
   "rareChestplates": {
     "entries": {
-      "diamond_chestplate": 0.3
+      "diamond_chestplate": 0.3,
+      "iguanatweaksexpanded:keego_chestplate": 0.3
     },
     "defaultItem": "air"
   },
@@ -33,27 +37,31 @@
     "entries": {
       "chainmail_leggings": 0.3,
       "leather_leggings": 0.1,
-      "iron_leggings": 0.3
+      "iron_leggings": 0.3,
+      "iguanatweaksexpanded:durium_leggings": 0.3
     },
     "defaultItem": "air"
   },
   "rareLeggings": {
     "entries": {
-      "diamond_leggings": 0.3
+      "diamond_leggings": 0.3,
+      "iguanatweaksexpanded:keego_leggings": 0.3
     },
     "defaultItem": "air"
   },
   "commonBoots": {
     "entries": {
+      "iron_boots": 0.3,
       "chainmail_boots": 0.3,
       "leather_boots": 0.1,
-      "iron_boots": 0.3
+      "iguanatweaksexpanded:durium_boots": 0.3
     },
     "defaultItem": "air"
   },
   "rareBoots": {
     "entries": {
-      "diamond_boots": 0.3
+      "diamond_boots": 0.3,
+      "iguanatweaksexpanded:keego_boots": 0.3
     },
     "defaultItem": "air"
   }

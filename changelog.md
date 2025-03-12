@@ -1,7 +1,9 @@
 # Changelog
 
 ## Upcoming
-* 
+* Added Back strongholds
+  * I don't recommend going to the end yet.
+* Mod updates
 
 ## 2.4.15
 * I think a mod update broke everything, so I've reverted it
