@@ -5,7 +5,6 @@
   "copperGolemAreaStructureWeight": 1,
   "generateCopperGolemInAncientCity": true,
   "copperGolemAncientCityCenterWeight": 10,
-  "enableLightningRodOxidation": true,
   "enableCrab": false,
   "enableCrabSpawn": false,
   "crabSpawnWeight": 14,
