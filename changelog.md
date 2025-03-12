@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 2.4.16
 * Added Back strongholds
   * I don't recommend going to the end yet.
 * Mod updates
