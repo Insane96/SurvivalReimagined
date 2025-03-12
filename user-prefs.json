@@ -8118,6 +8118,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\4f\\a4423ec13abf2b4fa50d055598d759436f38d9",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\4f\\a7d5809adb22785227a10f7fab84d45e839d98",
         "isSelected": false
       },
@@ -13462,6 +13466,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\83\\b75ee3079fce51373fd17f698b678662c0b000",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\83\\be79320c4d9e91f8c7df14b5375d81f9a77bbf",
         "isSelected": false
       },
@@ -16822,6 +16830,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\a7\\99b5f2abff766c54b95bba01d296a75cfd1351",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\a7\\bfc61df83beb36a6b55edf1bc20e9baf4e04cf",
         "isSelected": false
       },
@@ -16967,6 +16979,10 @@
       },
       {
         "path": ".git\\objects\\a9\\4718c3bd8fc4cb7e529f39152418224b51f65d",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\a9\\4c09c8788662ee6eefe605ad00d5d89f74a74c",
         "isSelected": false
       },
       {
@@ -21746,6 +21762,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\d7\\56ee0f29e27af6e3471182e25fd94d99cd88e7",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\d7\\830dbc4b5a8991f706ada89f4f17f8f5b67f49",
         "isSelected": false
       },
@@ -22435,6 +22455,10 @@
       },
       {
         "path": ".git\\objects\\de\\59b6c9ebac28f09d95062325bd088ad79bf1f8",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\de\\62ed25061def20c4aef71c22995f2bd704f653",
         "isSelected": false
       },
       {
@@ -24882,6 +24906,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\f7\\6a155fe604e98a69eb0f9eb00cc82efe8d5c42",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\f7\\703fa896f5e6eddd350cef10767c34d856c14b",
         "isSelected": false
       },
@@ -26566,11 +26594,31 @@
         "isSelected": true
       },
       {
+        "path": "config\\jei\\11444163736474488538.tmp",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\12311827111063374626.tmp",
+        "isSelected": true
+      },
+      {
         "path": "config\\jei\\12349818742496097506.tmp",
         "isSelected": true
       },
       {
         "path": "config\\jei\\12891410902714604601.tmp",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\16984222832861269882.tmp",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\17157723813945745841.tmp",
+        "isSelected": true
+      },
+      {
+        "path": "config\\jei\\38353889395976731.tmp",
         "isSelected": true
       },
       {
@@ -27242,6 +27290,10 @@
         "isSelected": true
       },
       {
+        "path": "config\\progressivebosses-common.toml",
+        "isSelected": true
+      },
+      {
         "path": "config\\puzzlesapi-iteminteractions-client.toml",
         "isSelected": true
       },
@@ -27403,6 +27455,10 @@
       },
       {
         "path": "config\\xenon-options.json",
+        "isSelected": true
+      },
+      {
+        "path": "config\\xenon-options.json.tmp",
         "isSelected": true
       },
       {
@@ -29755,6 +29811,18 @@
       },
       {
         "path": "logs\\2025-03-12-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-03-12-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-03-12-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-03-12-7.log.gz",
         "isSelected": false
       },
       {
@@ -32846,7 +32914,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\moonlight-1.20-2.13.71-forge.jar",
+        "path": "mods\\moonlight-1.20-2.13.72-forge.jar",
         "isSelected": true
       },
       {
@@ -32910,7 +32978,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\ProgressiveBosses-4.2.1-mc1.20.1.jar",
+        "path": "mods\\ProgressiveBosses-4.3.1-mc1.20.1.jar",
         "isSelected": true
       },
       {
@@ -32946,7 +33014,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\smoothchunk-1.20.1-4.0.jar",
+        "path": "mods\\smoothchunk-1.20.1-4.1.jar",
         "isSelected": true
       },
       {
@@ -32978,7 +33046,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\SubtleEffects-forge-1.20.1-1.9.1.jar",
+        "path": "mods\\SubtleEffects-forge-1.20.1-1.9.0.jar",
         "isSelected": true
       },
       {
@@ -32990,7 +33058,7 @@
         "isSelected": true
       },
       {
-        "path": "mods\\suppsquared-1.20-1.1.18.jar",
+        "path": "mods\\suppsquared-1.20-1.1.21.jar",
         "isSelected": true
       },
       {

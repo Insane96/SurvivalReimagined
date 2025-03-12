@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.4.17
+* Rollback subtle effects
+
 ## 2.4.16
 * Added Back strongholds
   * I don't recommend going to the end yet.
