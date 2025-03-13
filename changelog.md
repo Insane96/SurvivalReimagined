@@ -1,6 +1,5 @@
 # Changelog
 
-* breath effect 3rd
 * Should not drop nametag entity type tag
 * Quick charge cost doesn't increase
 * Reduce reach cost?
