@@ -1,10 +1,8 @@
 # Changelog
-* 
-* Can randomly teleport the wearer
-* Crouch for a while, jumping gets higher (like luigi in mario 2)
-* Grindstone fix experience
 
-## Upcoming
+* Crouch for a while, jumping gets higher (like luigi in mario 2)
+
+## 2.4.18
 * Removed breath in first person
 * Wolves, cats and parrots no longer drop a nametag (since you can revive them)
 * Mod updates
