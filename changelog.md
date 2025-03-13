@@ -1,5 +1,18 @@
 # Changelog
 
+* breath effect 3rd
+* Should not drop nametag entity type tag
+* Quick charge cost doesn't increase
+* Reduce reach cost?
+* shield enchantability
+* Can randomly teleport the wearer
+* Crouch for a while, jumping gets higher (like luigi in mario 2)
+* Grindstone fix experience
+
+## 2.4.18
+* Removed breath in first person
+* Mod updates
+
 ## 2.4.17
 * Rollback subtle effects
 

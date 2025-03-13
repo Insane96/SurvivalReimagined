@@ -20,7 +20,8 @@ spectralArrowParticles = true
 wardenDeathSoulParticles = true
 xpBottleParticlesDisplayType = "DEFAULT"
 xpBottleParticlesDensity = 10
-eggSmashSound = true
+eggSmashSoundVolume = 0.5
+freezingSnowFlakes = true
 
 [attacked]
 chickenFeathers = true
@@ -50,7 +51,7 @@ potionRingsParticleType = "BOTH"
 NPCsHavePotionRings = true
 
 [humanoids.frostyBreath]
-displayType = "DEFAULT"
+displayType = "THIRD_PERSON_ONLY"
 alpha = 0.5
 waitTime = 60
 seasons = "DEFAULT"

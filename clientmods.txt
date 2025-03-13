@@ -25,3 +25,4 @@ Stellar View
 controllable
 configured
 catalogue
+SubtleEffects
