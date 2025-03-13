@@ -1,15 +1,12 @@
 # Changelog
-
-* Should not drop nametag entity type tag
-* Quick charge cost doesn't increase
-* Reduce reach cost?
-* shield enchantability
+* 
 * Can randomly teleport the wearer
 * Crouch for a while, jumping gets higher (like luigi in mario 2)
 * Grindstone fix experience
 
-## 2.4.18
+## Upcoming
 * Removed breath in first person
+* Wolves, cats and parrots no longer drop a nametag (since you can revive them)
 * Mod updates
 
 ## 2.4.17
