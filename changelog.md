@@ -1,13 +1,9 @@
 # Changelog
 
-* Crouch for a while, jumping gets higher (like luigi in mario 2)
-* curse of binding on the shield?
-* Reduce endurance for shields
-* Efficiency uses italian decimal separator
-
-## Upcoming
-* Rolled back Subtle Effects
+## 2.4.19
+* Rolled back Subtle Effects ... again
 * Fixed language being Italian by default
+* Mod updates
 
 ## 2.4.18
 * Removed breath in first person
