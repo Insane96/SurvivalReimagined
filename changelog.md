@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.4.20
+* Mod updates
+
 ## 2.4.19
 * Rolled back Subtle Effects ... again
 * Fixed language being Italian by default

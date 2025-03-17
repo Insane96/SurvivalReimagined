@@ -644,6 +644,8 @@
 	"Enable Nerfs" = true
 	#Various stuff that doesn't fit in any other Feature.
 	"Enable Tweaks" = true
+	#Various data packs that can be enabled/disabled
+	"Enable Tinker Integration" = true
 
 	#Various data packs that can be enabled/disabled
 	[Miscellaneous."Data Packs & Integration"]
@@ -700,6 +702,10 @@
 		"Autumnity integration" = true
 		#Integrates the mod with Caverns & Chasms. Slightly alters ore generation and adds item stats.
 		"Caverns & Chasms integration" = true
+		#Integrates the mod with Crate. Alters ore generation.
+		"Create integration" = true
+		#Integrates the mod with Tinker's Construct. Disables vanilla items.
+		"Tinkers' Construct integration" = false
 
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	[Miscellaneous."Beacon & Conduit"]
@@ -804,6 +810,18 @@
 			#If true scutes will drop as a block and not as item
 			"Scute drop as block" = true
 
+	#Various data packs that can be enabled/disabled
+	[Miscellaneous."Tinker Integration"]
+		#Multiplier applied to tinkers construct heads mining speed. This also applies to additive modifiers
+		#Range: 0.0 ~ 128.0
+		"Mining speed modifier" = 0.75
+		#Multiplier applied to tinkers construct heads attack damage. This also applies to additive modifiers
+		#Range: 0.0 ~ 128.0
+		"Damage modifier" = 0.75
+		#Multiplier applied to tinkers construct heads durability. This also applies to additive modifiers
+		#Range: 0.0 ~ 128.0
+		"Durability modifier" = 0.75
+
 [Mining]
 	#Changes Gold tools to have an innate Fortune/Looting I
 	"Enable Gold" = true
@@ -885,6 +903,8 @@
 		#All the blocks max stack sizes will be multiplied by this value to increase / decrease them.
 		#Range: 0.01 ~ 64.0
 		"Block Stack Multiplier" = 1.0
+		#Enables a data pack that changes some item stacks.
+		"Item stacks data pack" = true
 
 	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via data packs
 	[Items."Unbreakable Items"]
@@ -900,16 +920,14 @@
 
 	#Control Items properties via data packs. Add more tooltips.
 	[Items.Misc]
-		#Tools get an efficiency tooltip.
+		#Tools get a tool efficiency tooltip.
 		"Efficiency tooltip" = true
-		#Enables a data pack that rebalances all the items, from armor to efficiency to weapons. Also changes some item stacks.
-		"Item Stats Data Pack" = true
 		#If enabled items in the iguanatweaksreborn:has_tooltip item tag will get a tooltip with the vanilla name + .tooltip (e.g. item.minecraft.arrow.tooltip)
 		"Item tooltips" = true
 
 	#Make items not able to mine / attack
 	[Items."Disabled Items"]
-		#If set to true items in the 'no_damage' and 'no_efficiency' item tags will get a tooltip.
+		#If set to true items in the 'no_damage', 'no_efficiency', 'no_equip' and 'disabled' item tags will get a tooltip.
 		"Add tooltip" = true
 
 	#Wooden items have a lower chance to break in sunlight.
@@ -1260,7 +1278,7 @@
 		"Replace damaging enchantments" = true
 		#If true, vanilla fire aspect and knockback are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Replace other enchantments" = true
-		#If true, Looting, Fortune and Luck of the Sea enchantments are replaced with a single level one: Luck. Luck works like Fortune/Looting/LoTS II. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
+		#If true, Looting, Fortune and Luck of the Sea enchantments are replaced with a single level one: Luck. Luck works like Fortune/Looting/LoTS II. To re-enable vanilla enchantments refer to `disabled_enchantments.json`. Requires a Minecraft restart
 		"Rework bonus loot enchantments" = true
 		#Unbreaking increases tool durability by 75% per level
 		"Unbreaking overhaul" = true
@@ -1389,7 +1407,7 @@
 
 	#Apply attribute modifiers to players. Attributes can be added in the json config of this feature's folder. Changing attribute modifiers requires player rejoin
 	[Combat."Player Stats"]
-		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%.
+		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%. This also mixins into Tinkers Construct to apply the same effect.
 		"No damage when spamming" = true
 
 	[Combat."Misc Stats"]
@@ -1405,6 +1423,8 @@
 		"1 damage for tools attacking" = true
 		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the Sweeping Edge enchantment increases the range. This also replaces the vanilla sweeping edge enchantment with a new one that can be applied to hoes instead of swords.
 		"Sweeping overhaul" = true
+		#Enables a data pack that reworks armor, weapons and tools.
+		"Combat rework data pack" = true
 
 	#Adds a new attribute to add regenerating absorption hearts to the player.
 	[Combat."Regenerating Absorption"]
@@ -1416,15 +1436,15 @@
 		"Un-damaged time to regen cap" = 60
 		#The amount of regenerating absorption hearts cannot go over the entity's current health.
 		"Cap to health" = true
-		#How fast will absorption hearts decay when higher than the current maximum.
-		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Decay Speed" = 0.1
 		#If true, absorption hearts will not shield from damages in the bypasses_armor damage type tag.
 		"Absorbing bypasses_armor damage only" = true
 		#If true, a sound is played when the absorption is damaged.
 		"Sound on absorption hurt" = true
 		#(Client only) If true, regenerating absorption hearts are rendered on the right instead on top of hearts.
 		"Render on the right" = false
+		#How fast (each tick) will absorption hearts decay when higher than the current maximum.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Decay speed" = 0.1
 
 	#Less invincibility frames and none with arrows.
 	[Combat."Attack invincibility"]
@@ -1462,4 +1482,10 @@
 		#Changes crossbows accuracy. Vanilla is 1.0
 		#Range: 0.0 ~ 10.0
 		"Crossbow Inaccuracy" = 0.2
+
+	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
+	[Combat."Absorption Armor"]
+		#If > 0, Armor Toughness on items will be converted to absorption, multiplying it by this, and Armor will stay the same.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Toughness to absorption ratio" = 0.25
 
