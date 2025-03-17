@@ -1299,26 +1299,26 @@
 			"Bonus experience per equipment" = 2
 			#This is added to 'Bonus experience per equipment'.
 			#Range: > 0
-			"Bonus experience per equipment if enchanted" = 2
+			"Bonus experience per equipment if enchanted" = 3
 
 		#Experience gained from harvesting Honey or Honeycombs from beehives
 		[Experience."Dropped Experience"."Honey Harvest Experience"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 5.0
+			Minimum = 3.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 10.0
+			Maximum = 5.0
 
 		#Experience obtained when cows or mooshrooms are milked or stewed. This only works if Fluid Cooldown is enabled.
 		[Experience."Dropped Experience"."Milk xp"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 2.0
+			Minimum = 3.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			Maximum = 5.0
 
 		#Experience obtained when shearing sheep.
 		[Experience."Dropped Experience"."Shear xp"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 1.0
+			Minimum = 2.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			Maximum = 3.0
 
