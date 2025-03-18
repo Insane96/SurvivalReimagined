@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4.21
+* Fixed Time Stop No Player Online data pack running with 1st player
+* Mod updates
+
 ## 2.4.20
 * Mod updates
 

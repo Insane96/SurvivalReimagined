@@ -20,7 +20,8 @@ spectralArrowParticles = true
 wardenDeathSoulParticles = true
 xpBottleParticlesDisplayType = "DEFAULT"
 xpBottleParticlesDensity = 10
-eggSmashSound = true
+eggSmashSoundVolume = 0.5
+freezingSnowFlakes = true
 
 [attacked]
 chickenFeathers = true
@@ -59,8 +60,10 @@ additionalBiomes = [  ]
 [humanoids.player]
 stomachGrowlingThreshold = 2
 stomachGrowlingVolume = 0.8
+stomachGrowlingWaitTime = 15
 heartBeatingThreshold = 4
 heartbeatVolume = 0.8
+heartBeatingWaitTime = 3
 
 [dustClouds]
 scale = 2.0
@@ -87,6 +90,7 @@ particlesDisplayType = "NOT_COMMON"
 particleColorType = "NAME_COLOR"
 mixedColorName = true
 useItemBorder = true
+colorOverrides = [  ]
 particleMaxHeight = 0.75
 particleMaxSpeed = 0.5
 particleDensity = 0.2444921874999999

@@ -295,9 +295,6 @@
 		#Every this Tiredness above 'Tiredness for effect' will add a new level of Tired.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Tiredness per level" = 125.0
-		#By default if omitted in the json, food items will give 1 second of Energy Boost per effective nourishment (hunger + saturation) of the food. This multiplies the duration of the effect
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Default Energy Boost Duration Multiplier" = 5.0
 		#What to do with tiredness when the player dies.
 		#RESET resets the tiredness to 0
 		#KEEP keeps the current tiredness
@@ -324,6 +321,14 @@
 				Minimum = 2.0
 				#Range: 0.0 ~ 1.7976931348623157E308
 				Maximum = 5.0
+
+		["Sleep & Respawn".Tiredness."Energy boost"]
+			#If the player has energy boost, reduce tiredness by this value (multiplied by the effect level) each tick.
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Tiredness reduction" = 0.025
+			#By default if omitted in the json, food items will give 1 second of Energy Boost per effective nourishment (hunger + saturation) of the food. This multiplies the duration of the effect
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"Duration multiplier" = 5.0
 
 	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player. Graves can be disabled with the iguanatweaks:deathGrave game rule. Items percentage lost can be configured with the iguanatweaks:deathLoseItemsPercentage and iguanatweaks:deathLoseItemsEnchanted game rules.
 	["Sleep & Respawn".Death]
@@ -873,7 +878,7 @@
 		"Insta-Mine Heads" = true
 		#Makes slabs, stairs and walls take less time to break
 		"Faster slabs, stairs and walls" = true
-		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2 tool efficiency.
+		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2 tool mining speed.
 		"Efficiency based destroy delay" = true
 		#Changes some Caverns and Chasms config options.
 		"Caverns and Chasms Integration" = true
@@ -920,10 +925,10 @@
 
 	#Control Items properties via data packs. Add more tooltips.
 	[Items.Misc]
-		#Tools get a tool efficiency tooltip.
-		"Efficiency tooltip" = true
 		#If enabled items in the iguanatweaksreborn:has_tooltip item tag will get a tooltip with the vanilla name + .tooltip (e.g. item.minecraft.arrow.tooltip)
 		"Item tooltips" = true
+		#Tools get a mining speed tooltip.
+		"Mining speed tooltip" = true
 
 	#Make items not able to mine / attack
 	[Items."Disabled Items"]
@@ -1254,8 +1259,6 @@
 	[Experience.Enchantments]
 		#Infinity can go up to level 4. Each level makes an arrow have only 1 in level+1 chance to consume. E.g. with Infinity 4 there's 1 in 5 chance to consume the arrow, and 4 in 5 to not consume it.
 		"Infinity overhaul" = true
-		#Change the bonus efficiency formula from `lvl*lvl+1` to `tool_efficiency * (0.5*lvl)`
-		"Tool Efficiency Scaled Efficiency Formula" = true
 		#Mending only makes the tool repair by one durability every 2 xp instead of 2 durability/1 xp.
 		"Nerf Mending" = true
 		#Respiration decreases air consumption by 50% per level instead of 100%.
@@ -1286,6 +1289,8 @@
 		"Actual multishot" = true
 		#Thorns is no longer compatible with other protections, but deals damage every time (higher levels deal more damage) and no longer damages items.
 		"Thorns overhaul" = true
+		#Change the bonus efficiency formula from `lvl*lvl+1` to `tool_mining_speed * (0.5*lvl)`
+		"Tool Mining Speed Scaled Efficiency Formula" = true
 
 	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to make experience disappear altogether.
 	[Experience."Dropped Experience"]
