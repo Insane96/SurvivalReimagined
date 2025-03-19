@@ -39,7 +39,10 @@
       "domesticationinnovation:drum",
       "/domesticationinnovation:pet_bed_/",
       "supplementaries:pancake",
-      "/savage_and_ravage:griefer_/"
+      "/savage_and_ravage:griefer_/",
+
+      "woodworks:sawmill",
+      "/citadel:/"
     ],
     "disable": true
   }
