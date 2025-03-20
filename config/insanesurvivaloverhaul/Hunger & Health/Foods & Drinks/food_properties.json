@@ -10,6 +10,10 @@
     "eating_time": 40
   },
   {
+    "food": "minecraft:cooked_beef",
+    "nutrition": 6
+  },
+  {
     "food": "minecraft:honey_bottle",
     "nutrition": 2
   },

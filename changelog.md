@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 2.5.0
 * Added woodworks
   * All wood types should have chests now!
 
