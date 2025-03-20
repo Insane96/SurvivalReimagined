@@ -672,7 +672,7 @@
 		#* Dispensers can be made from droppers
 		#* Levers and glass can now be broken faster with pickaxes, cactus with hoes
 		"Misc tweaks" = true
-		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc). Also makes Corail's Woodcutter no longer able to make buttons and pressure plates.
+		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc).
 		"Actual Redstone Components" = true
 		#If true a data pack will be enabled that makes furnaces require copper. Copper ingots can be obtained from raw copper on campfires.
 		"Copper Furnace" = true
@@ -987,6 +987,8 @@
 		"Raw food Poison Duration Multiplier" = 2.0
 		#If enabled, eating cakes will give 30 seconds of Speed and Haste
 		"Buff cakes" = true
+		#If true, eating will always be possible, even with full hunger.
+		"Always eat" = false
 
 	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
 	["Hunger & Health".Exhaustion]

@@ -28,10 +28,16 @@
 [Mining]
 	#Add repair kits, making you able to repair items in the crafting grid
 	"Enable Repair Kits" = true
-	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal. DISABLING THIS DOES NOTHING. use datapacks to remove soul steel from the game, with recipes, loot table modifiers and world gen.
+	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal. Disabling this will disable ore generation and items in the creative inventory.
 	"Enable Soul Steel" = true
 	#Enables a Data Pack that makes Beeg Ore Veins generate. On the surface of the overworld you can now find ore rocks. These indicate that underground there's a huge vein of that ore
 	"Enable Beeg Ore Veins" = false
+	#Add Quaron, a new metal made by alloying Iron and Amethyst. Disabling this will disable ore generation and items in the creative inventory.
+	"Enable Quaron" = true
+	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
+	"Enable Durium" = true
+	#Add a new Nether gem which makes lets you go fast (KEEp GOing). Disabling this will disable ore generation and items in the creative inventory.
+	"Enable Keego" = true
 
 	#Add repair kits, making you able to repair items in the crafting grid
 	[Mining."Repair Kits"]
@@ -63,6 +69,10 @@
 [Items]
 	#Back to base
 	"Enable Recall Potion" = true
+	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
+	"Enable Solarium" = true
+	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
+	"Enable Copper Tools & Armor Expansion" = true
 
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]
@@ -76,7 +86,7 @@
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
 
-	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items
+	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
 	[Items."Copper Tools & Armor Expansion"]
 		#The sea level + this at which the deep bonus starts to apply
 		#Range: > -2147483648
