@@ -3,6 +3,7 @@
 ## 2.5.0
 * Added woodworks
   * All wood types should have chests now!
+* Mod updates
 
 ## 2.4.21
 * Fixed Time Stop No Player Online data pack running with 1st player

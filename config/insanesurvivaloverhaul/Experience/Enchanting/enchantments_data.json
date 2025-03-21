@@ -122,6 +122,14 @@
   },
   {
     "id": "iguanatweaksexpanded:expanded",
+    "costs": [
+      3,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "iguanatweaksexpanded:veining",
     "cost_per_level": 3
   },
   {
@@ -253,6 +261,10 @@
     "cost_per_level": 2
   },
   {
+    "id": "iguanatweaksexpanded:enlightened",
+    "cost_per_level": 2
+  },
+  {
     "id": "minecraft:thorns",
     "cost_per_level": 2
   },
@@ -267,6 +279,14 @@
   {
     "id": "iguanatweaksexpanded:vindication",
     "cost_per_level": 2
+  },
+  {
+    "id": "iguanatweaksexpanded:invulnerability",
+    "cost_per_level": 4
+  },
+  {
+    "id": "iguanatweaksexpanded:fire_guardian",
+    "cost_per_level": 3
   },
   {
     "id": "minecraft:swift_sneak",
@@ -291,6 +311,10 @@
   {
     "id": "iguanatweaksexpanded:zippy",
     "cost_per_level": 2
+  },
+  {
+    "id": "iguanatweaksexpanded:charged_jump",
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksreborn:feather_falling",
@@ -467,5 +491,9 @@
   {
     "id": "supplementaries:stasis",
     "cost_per_level": 4
+  },
+  {
+    "id": "majruszsenchantments:telekinesis",
+    "costs": 4
   }
 ]
