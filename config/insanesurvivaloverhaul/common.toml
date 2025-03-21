@@ -1255,7 +1255,7 @@
 		#Set to empty to disable.
 		#This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
 		#Incompatible with Allurement's 'Remove level Scaling' or any other mod that does something similar
-		"Level up formula" = "50"
+		"Level up formula" = "40"
 
 	#Changes to some enchantments related stuff.
 	[Experience.Enchantments]
