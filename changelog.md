@@ -1,7 +1,7 @@
 # Changelog
 
-* No item in screen no descriptions
-* Unidentified artifacts not working
+## Upcoming
+* Fixed identifying artifacts not working
 
 ## 2.5.0
 * Added woodworks
