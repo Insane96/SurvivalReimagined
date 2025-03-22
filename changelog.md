@@ -2,6 +2,7 @@
 
 ## Upcoming
 * Fixed identifying artifacts not working
+* Removed more tree sizes
 
 ## 2.5.0
 * Added woodworks
