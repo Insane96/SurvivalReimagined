@@ -1,8 +1,10 @@
 # Changelog
 
-## Upcoming
+## 2.6.0
 * Added Waystones
-  * Can be found and activated in the world and you can teleport between them
+  * Can be found and activated in the world, and you can teleport between them
+* Added back Every Comp
+  * Should no longer break recipes on servers
 * Fixed identifying artifacts not working
 * Removed more tree sizes
 
