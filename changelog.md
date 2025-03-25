@@ -1,6 +1,8 @@
 # Changelog
 
 ## Upcoming
+* Added Waystones
+  * Can be found and activated in the world and you can teleport between them
 * Fixed identifying artifacts not working
 * Removed more tree sizes
 

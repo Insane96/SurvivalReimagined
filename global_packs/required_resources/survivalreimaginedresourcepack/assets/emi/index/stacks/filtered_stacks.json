@@ -42,7 +42,8 @@
       "/savage_and_ravage:griefer_/",
 
       "woodworks:sawmill",
-      "/citadel:/"
+      "/citadel:/",
+      "/waystones:/"
     ],
     "disable": true
   }

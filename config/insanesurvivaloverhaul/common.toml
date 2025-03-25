@@ -303,6 +303,8 @@
 		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
 		"On death behaviour" = "SET_AT_EFFECT"
 		"Tired overlay" = true
+		#Phantoms will no longer spawn based on insomnia, but instead based off tiredness. Will spawn with Tired III or more.
+		"Tired phantoms" = true
 
 		["Sleep & Respawn".Tiredness."Fake sound"]
 			#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
@@ -349,6 +351,8 @@
 		"Allow obelisk spawn point overwrite with beds when sneaking" = true
 		#If enabled, respawning will try to place you on land and not in fluids
 		"Don't respawn on fluid" = true
+		#Data pack that makes respawn obelisks generate in the world
+		"Respawn obelisks" = true
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose World Spawn Range"]

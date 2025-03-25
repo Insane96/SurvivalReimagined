@@ -93,9 +93,23 @@
 			shale = true
 			myalite = true
 			permafrost = true
+			shingles = true
 
 		[types.stone_type.supplementaries]
 			ash = true
+
+		[types.stone_type.atmospheric]
+			dolerite = true
+			ivory_travertine = true
+			peach_travertine = true
+			persimmon_travertine = true
+			saffron_travertine = true
+
+		[types.stone_type.caverns_and_chasms]
+			sugilite = true
+
+		[types.stone_type.upgrade_aquatic]
+			coralstone = true
 
 #Disables specific entries
 [entries]
@@ -123,9 +137,40 @@
 			hollow_log = true
 			vertical_slab = true
 
+		[entries.wood_type.woodworks]
+			bookshelf = true
+			chiseled_bookshelf = true
+			trapped_chest = true
+			boards = true
+			chest = true
+			ladder = true
+			beehive = true
+
 	[entries.leaves_type]
 
 		[entries.leaves_type.quark]
 			hedge = true
 			leaf_carpet = true
+
+		[entries.leaves_type.woodworks]
+			leaf_pile = true
+
+	[entries.stone_type]
+
+		[entries.stone_type.quark]
+			pillar = true
+			polished_vertical_slab = true
+			vertical_slab = true
+
+	[entries.mud_type]
+
+		[entries.mud_type.quark]
+			carved_bricks = true
+			pillar = true
+			brick_lattice = true
+
+		[entries.mud_type.betterarcheology]
+			cracked_brick_stairs = true
+			cracked_bricks = true
+			cracked_brick_slab = true
 
