@@ -1,5 +1,10 @@
 # Changelog
 
+* atlas map in the nether
+
+## 2.6.1
+* Mod Updates
+
 ## 2.6.0
 * Added Waystones
   * Can be found and activated in the world, and you can teleport between them

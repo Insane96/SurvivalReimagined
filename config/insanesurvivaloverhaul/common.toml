@@ -334,10 +334,13 @@
 
 	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player. Graves can be disabled with the iguanatweaks:deathGrave game rule. Items percentage lost can be configured with the iguanatweaks:deathLoseItemsPercentage and iguanatweaks:deathLoseItemsEnchanted game rules.
 	["Sleep & Respawn".Death]
-		#If true, the player's killer will not despawn and when killed will drop 4x more items and experience.
-		"Players's killer bounty" = true
 		#If true, the player's experience is stored in the grave.
-		"Grave keeps experience" = false
+		"Grave keeps experience" = true
+		#If true, the player's killer will not despawn and when killed will drop 4x more items and experience.
+		"Players' killer bounty" = true
+		#In how many ticks will items despawn after dropping from a grave.
+		#Range: > -2147483648
+		"Despawn time" = 2400
 
 	#Changes to respawning. Adds the doLooseRespawn gamerule that can disable the loose spawn range
 	["Sleep & Respawn".Respawn]
@@ -1197,7 +1200,7 @@
 		"Merging Repair bonus" = 10
 		#Chance for an anvil to become chipped/damaged/break. Vanilla is 12%
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Degradation chance" = 0.05
+		"Degradation chance" = 0.01
 		"Fix with Iron blocks" = true
 
 		[Experience.Anvils.Renaming]
@@ -1310,7 +1313,7 @@
 		"Experience from Blocks Multiplier" = 1.0
 		#Bottle o' enchanting will drop this amount of experience. Can be set to 0 to make Bottle o' enchanting drop no experience
 		#Range: 0 ~ 512
-		"Bottle o' Enchanting XP" = 50
+		"Bottle o' Enchanting XP" = 40
 
 		[Experience."Dropped Experience".Mobs]
 			#Experience dropped from mobs that come from spawners will be multiplied by this multiplier.
