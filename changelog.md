@@ -2,6 +2,10 @@
 
 * atlas map in the nether
 
+## 2.6.2
+* Mod updates
+* Fixed insomnia disabled
+
 ## 2.6.1
 * Mod Updates
 

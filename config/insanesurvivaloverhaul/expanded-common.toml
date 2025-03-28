@@ -128,12 +128,12 @@
 			"Max enchanting power" = 20
 			#Tool enchantability multiplier if not purified or infused
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Enchantability multiplier" = 0.5
+			"Enchantability multiplier" = 0.6
 			#Range: > 0
 			"Base enchantability" = 1
 			#Tool enchantability multiplier when purified (sums with Enchantability multiplier and Infused bonus Enchantability multiplier)
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Purified Enchantability multiplier" = 0.5
+			"Purified Enchantability multiplier" = 0.4
 			#Tool enchantability bonus when purified
 			#Range: > 0
 			"Purified Enchantability flat" = 0

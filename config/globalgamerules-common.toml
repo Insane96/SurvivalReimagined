@@ -132,7 +132,7 @@
 
 	[gamerules.spawning]
 		#Whether phantoms can spawn in the nighttime.
-		do_insomnia = false
+		do_insomnia = true
 		#Whether mobs should naturally spawn. Does not affect monster spawners.
 		do_mob_spawning = true
 		#Whether patrols can spawn.
