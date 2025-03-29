@@ -2,7 +2,7 @@
 
 * atlas map in the nether
 
-## Upcoming
+## 2.6.3
 * Added chunk sending and better chunk loading mods
 
 ## 2.6.2

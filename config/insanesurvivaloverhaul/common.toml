@@ -270,7 +270,7 @@
 		"Hunger & Saturation Depleted on Wake Up" = 15
 		#How much more saturation and hunger are depleted per level of Tired.
 		#Range: 0 ~ 20
-		"Tired bonus Hunger & Saturation Depleted" = 1
+		"Tired bonus Hunger & Saturation Depleted" = 2
 
 	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
 	["Sleep & Respawn".Cloth]
@@ -294,7 +294,7 @@
 		"Tiredness for effect" = 500.0
 		#Every this Tiredness above 'Tiredness for effect' will add a new level of Tired.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Tiredness per level" = 125.0
+		"Tiredness per level" = 250.0
 		#What to do with tiredness when the player dies.
 		#RESET resets the tiredness to 0
 		#KEEP keeps the current tiredness
@@ -302,8 +302,7 @@
 		#REMOVE_ONE_LEVEL keeps the current tiredness but if higher than 'Tiredness for effect' removes one level of Tired to a minimum of I
 		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
 		"On death behaviour" = "SET_AT_EFFECT"
-		"Tired overlay" = true
-		#Phantoms will no longer spawn based on insomnia, but instead based off tiredness. Will spawn with Tired III or more.
+		#Phantoms will no longer spawn based on insomnia, but instead based off tiredness. Will spawn with Tired III.
 		"Tired phantoms" = true
 
 		["Sleep & Respawn".Tiredness."Fake sound"]
@@ -322,13 +321,13 @@
 				#Range: 0.0 ~ 1.7976931348623157E308
 				Minimum = 2.0
 				#Range: 0.0 ~ 1.7976931348623157E308
-				Maximum = 5.0
+				Maximum = 6.0
 
 		["Sleep & Respawn".Tiredness."Energy boost"]
 			#If the player has energy boost, reduce tiredness by this value (multiplied by the effect level) each tick.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Tiredness reduction" = 0.025
-			#By default if omitted in the json, food items will give 1 second of Energy Boost per effective nourishment (hunger + saturation) of the food. This multiplies the duration of the effect
+			#By default if omitted in the json, food items will give 1 second of Energy Boost per effectiveness (hunger + saturation) of the food. This multiplies the duration of the effect
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Duration multiplier" = 5.0
 
