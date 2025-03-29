@@ -2,6 +2,9 @@
 
 * atlas map in the nether
 
+## Upcoming
+* Added chunk sending and better chunk loading mods
+
 ## 2.6.2
 * Mod updates
 * Fixed insomnia disabled
