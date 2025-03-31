@@ -2,6 +2,9 @@
 
 * atlas map in the nether
 
+## Upcoming
+* Fixed phantom and end stuff hidden in EMI 
+
 ## 2.6.3
 * Added chunk sending and better chunk loading mods
 

@@ -1,17 +1,6 @@
 {
     "filters": [
-      "/end_stone/",
-      "/end_portal/",
-      "/shulker/",
-      "/myalite/",
-      "/:safe/",
-      "/elytra/",
-      "/tipped_arrow/",
-      "/totem_of_undying/",
       "/rotten_flesh/",
-      "/minecraft:dragon/",
-      "/quark:dragon/",
-      "/phantom/",
       "/placeable_item/",
       "/iron_brush/",
       "/diamond_brush/",
