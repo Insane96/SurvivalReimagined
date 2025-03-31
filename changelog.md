@@ -2,7 +2,7 @@
 
 * atlas map in the nether
 
-## Upcoming
+## 2.6.4
 * Fixed phantom and end stuff hidden in EMI 
 
 ## 2.6.3
