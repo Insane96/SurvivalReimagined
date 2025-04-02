@@ -2,6 +2,9 @@
 
 * atlas map in the nether
 
+## 2.6.5
+* Mod updates
+
 ## 2.6.4
 * Fixed phantom and end stuff hidden in EMI 
 
