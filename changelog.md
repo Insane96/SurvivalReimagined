@@ -1,6 +1,6 @@
 # Changelog
 
-* atlas map in the nether
+* nerf expanded and veining by reducing mining speed
 
 ## 2.6.5
 * Mod updates
