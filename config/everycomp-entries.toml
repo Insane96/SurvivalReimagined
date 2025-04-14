@@ -86,17 +86,12 @@
 
 		[types.stone_type.quark]
 			soul_sandstone = true
-			midori = true
 			duskbound = true
 			limestone = true
 			jasper = true
 			shale = true
 			myalite = true
 			permafrost = true
-			shingles = true
-
-		[types.stone_type.supplementaries]
-			ash = true
 
 		[types.stone_type.atmospheric]
 			dolerite = true

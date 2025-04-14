@@ -25,6 +25,7 @@
 	"Enable Explosion Overhaul" = true
 	"Enable Fluids" = true
 	"Enable Cyan Flower" = true
+	"Enable Biome Compass" = true
 
 	#Change a few things relative to Serene Seasons
 	[World.Seasons]
@@ -449,6 +450,7 @@
 	"Enable Tagging" = true
 	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. If you need more control over armor, use item definitions
 	"Enable Weighted Armor" = false
+	"Enable Minecarts" = true
 
 	[Movement.Boats]
 		#If true, boats will no longer go stupidly fast on ice. (If quark is present this is disabled)
@@ -823,13 +825,13 @@
 
 	#Various data packs that can be enabled/disabled
 	[Miscellaneous."Tinker Integration"]
-		#Multiplier applied to tinkers construct heads mining speed. This also applies to additive modifiers
+		#Multiplier applied to tinkers construct heads and modifiers mining speed. This also applies to additive modifiers
 		#Range: 0.0 ~ 128.0
 		"Mining speed modifier" = 0.75
-		#Multiplier applied to tinkers construct heads attack damage. This also applies to additive modifiers
+		#Multiplier applied to tinkers construct heads and modifiers attack damage. This also applies to additive modifiers
 		#Range: 0.0 ~ 128.0
 		"Damage modifier" = 0.75
-		#Multiplier applied to tinkers construct heads durability. This also applies to additive modifiers
+		#Multiplier applied to tinkers construct heads and modifiers durability. This also applies to additive modifiers
 		#Range: 0.0 ~ 128.0
 		"Durability modifier" = 0.75
 
@@ -903,6 +905,8 @@
 	#Wooden items have a lower chance to break in sunlight.
 	"Enable Ecologic Wood" = true
 	"Enable gigaherz Tool Belt" = true
+	#Add flint tools and shield.
+	"Enable Flint Expansion" = true
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack Sizes"]
@@ -1379,6 +1383,8 @@
 	"Enable Shields+ Integration" = true
 	#Bows, crossbows and short bows
 	"Enable Bows" = true
+	#This feature disables itself if Shields+ is installed
+	"Enable Shields" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -1501,4 +1507,13 @@
 		#If > 0, Armor Toughness on items will be converted to absorption, multiplying it by this, and Armor will stay the same.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Toughness to absorption ratio" = 0.25
+
+	#This feature disables itself if Shields+ is installed
+	[Combat.Shields]
+		#In vanilla when you start blocking with a shield, there's a 0.25 seconds (5 ticks) window where you are still not blocking. By default the windup is removed.
+		#Range: > 0
+		"Shield windup" = 0
+		#The minimum damage dealt to the player for the shield to take damage. Vanilla is 3. E.g. With this set to 3, the shield will not be damaged if damage received is lower than.
+		#Range: 0.0 ~ 3.4028234663852886E38
+		"Min shield hurt damage" = 0.0
 

@@ -2,6 +2,9 @@
 
 * nerf expanded and veining by reducing mining speed
 
+## Upcoming
+* Reduced Wrench attack damage (4 -> 2)
+
 ## 2.6.5
 * Mod updates
 

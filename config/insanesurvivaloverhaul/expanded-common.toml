@@ -24,6 +24,7 @@
 		#If true a data pack will be enabled that overhauls structure loot. This overrides some loot tables from ITR
 		"Better Structure Loot" = true
 		"Block Data Data Pack" = true
+		"Tinkers Construct Integration" = true
 
 [Mining]
 	#Add repair kits, making you able to repair items in the crafting grid
@@ -38,6 +39,11 @@
 	"Enable Durium" = true
 	#Add a new Nether gem which makes lets you go fast (KEEp GOing). Disabling this will disable ore generation and items in the creative inventory.
 	"Enable Keego" = true
+	#Add new multi block furnaces
+	"Enable Multi Block Furnaces" = true
+	#Adds mining charge
+	"Enable Mining Charge" = true
+	"Enable Forging" = true
 
 	#Add repair kits, making you able to repair items in the crafting grid
 	[Mining."Repair Kits"]
@@ -73,6 +79,12 @@
 	"Enable Solarium" = true
 	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
 	"Enable Copper Tools & Armor Expansion" = true
+	#A new block that can let you carry more stuff around.
+	"Enable Crate" = true
+	#Add a new explosive block.
+	"Enable Explosive Barrel" = true
+	#Check your altitude. Will be hidden from creative inventory if disabled or if caverns and chasms is enabled
+	"Enable Altimeter" = true
 
 	#A new block that can let you carry more stuff around.
 	[Items.Crate]
@@ -82,7 +94,7 @@
 		#Range: 0.0 ~ 1.0
 		"Base Slowness per crate over max" = 0.05
 
-	#Check your altitude
+	#Check your altitude. Will be hidden from creative inventory if disabled or if caverns and chasms is enabled
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
 
