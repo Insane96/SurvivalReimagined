@@ -5,7 +5,7 @@ autoSuggestions:true
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
-enableVsync:true
+enableVsync:false
 entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
@@ -32,7 +32,7 @@ damageTiltStrength:1.0
 highContrast:false
 gamma:1.0
 renderDistance:24
-simulationDistance:16
+simulationDistance:12
 entityDistanceScaling:5.0
 guiScale:4
 particles:0
@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","survivalreimaginedresourcepack","file/VanillaTweaks.zip","file/VanillaTweaks_CleanerBorder.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","file/Soft-Weather-1.0-1.20.zip","iguanatweaksreborn:assets_override"]
+resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","file/VanillaTweaks.zip","file/VanillaTweaks_CleanerBorder.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","file/Soft-Weather-1.0-1.20.zip","survivalreimaginedresourcepack","fabric"]
 incompatibleResourcePacks:["file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip"]
 lastServer:eitikitikitircraft.mcserver.us
 lang:en_us
@@ -84,7 +84,7 @@ onlyShowSecureChat:false
 panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
-soundCategory_master:0.4826158940397351
+soundCategory_master:0.3162251655629139
 soundCategory_music:0.5117370892018779
 soundCategory_record:1.0
 soundCategory_weather:0.5052816901408451

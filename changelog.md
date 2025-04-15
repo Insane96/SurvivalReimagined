@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 2.6.6
 * Reduced Wrench attack damage (4 -> 2) and knockback
 
 ## 2.6.5
