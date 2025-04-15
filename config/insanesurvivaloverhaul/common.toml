@@ -576,7 +576,7 @@
 			Spring = 35
 			#Animals Mobs cap on summer.
 			#Range: > -2147483648
-			Summer = 50
+			Summer = 55
 			#Animals Mobs cap on autumn.
 			#Range: > -2147483648
 			Autumn = 15
