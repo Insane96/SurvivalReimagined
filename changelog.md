@@ -1,9 +1,7 @@
 # Changelog
 
-* nerf expanded and veining by reducing mining speed
-
 ## Upcoming
-* Reduced Wrench attack damage (4 -> 2)
+* Reduced Wrench attack damage (4 -> 2) and knockback
 
 ## 2.6.5
 * Mod updates

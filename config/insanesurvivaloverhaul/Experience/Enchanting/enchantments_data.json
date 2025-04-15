@@ -122,15 +122,11 @@
   },
   {
     "id": "iguanatweaksexpanded:expanded",
-    "costs": [
-      3,
-      3,
-      4
-    ]
+    "cost_per_level": 2
   },
   {
     "id": "iguanatweaksexpanded:veining",
-    "cost_per_level": 3
+    "cost_per_level": 2
   },
   {
     "id": "minecraft:silk_touch",
