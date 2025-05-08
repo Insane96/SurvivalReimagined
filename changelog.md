@@ -1,5 +1,9 @@
 # Changelog
 
+## Upcoming
+* Time stop no player online data pack now also stop weather from cycling
+* Mod updates
+
 ## 2.6.6
 * Reduced Wrench attack damage (4 -> 2) and knockback
 
