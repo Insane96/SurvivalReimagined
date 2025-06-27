@@ -824,7 +824,7 @@
 		"Neutral chance" = 0.35
 		#Animals have this percentage chance to be hostile
 		#Range: 0.0 ~ 1.0
-		"Hostile chance" = 0.1
+		"Hostile chance" = 0.02
 
 	[Animals."Animals Group Flee"]
 		#Range at which an animal alerts other animals.
