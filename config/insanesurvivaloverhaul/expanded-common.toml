@@ -10,10 +10,8 @@
 "Enable World" = true
 
 [Miscellaneous]
-	#Various data packs that can be enabled/disabled
 	"Enable Data Packs" = true
 
-	#Various data packs that can be enabled/disabled
 	[Miscellaneous."Data Packs"]
 		#If true, no integrated data pack will be loaded
 		"Disable ALL data packs" = false
@@ -24,37 +22,24 @@
 		#If true a data pack will be enabled that overhauls structure loot. This overrides some loot tables from ITR
 		"Better Structure Loot" = true
 		"Block Data Data Pack" = true
-		"Tinkers Construct Integration" = true
+		"Tinkers Construct Integration" = false
 
 [Mining]
-	#Add repair kits, making you able to repair items in the crafting grid
-	"Enable Repair Kits" = true
-	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Soul Steel" = true
-	#Enables a Data Pack that makes Beeg Ore Veins generate. On the surface of the overworld you can now find ore rocks. These indicate that underground there's a huge vein of that ore
 	"Enable Beeg Ore Veins" = false
-	#Add Quaron, a new metal made by alloying Iron and Amethyst. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Quaron" = true
+	"Enable Quaron" = false
 	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Durium" = true
+	"Enable Durium" = false
 	#Add a new Nether gem which makes lets you go fast (KEEp GOing). Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Keego" = true
-	#Add new multi block furnaces
+	"Enable Keego" = false
 	"Enable Multi Block Furnaces" = true
-	#Adds mining charge
-	"Enable Mining Charge" = true
-	"Enable Forging" = true
-
+	"Enable Forging" = false
 	#Add repair kits, making you able to repair items in the crafting grid
-	[Mining."Repair Kits"]
-		#How many ingots does a repair kit repair
-		#Range: > 1
-		"Repair Kit Ingot Ratio" = 2
-		#Maximum repair percentage of an item
-		#Range: 0.0 ~ 1.0
-		"Max repair" = 0.75
+	"Enable Repair kits" = false
+	#Adds mining charge
+	"Enable Mining charge" = true
+	#Add Soul Steel, a new metal made by alloying Iron, Soul Sand and Hellish Coal. Disabling this will disable ore generation and items in the creative inventory.
+	"Enable Soul steel" = false
 
-	#Add new multi block furnaces
 	[Mining."Multi Block Furnaces"]
 		#If true, the Blasting category will be hidden in EMI.
 		"Hide Blasting category in EMI" = true
@@ -72,21 +57,26 @@
 		#* Buckets, Flint and Steel and Shears require a forge to be made
 		"Forging Equipment Crafting Data Pack" = true
 
+	#Add repair kits, making you able to repair items in the crafting grid
+	[Mining."Repair kits"]
+		#How many ingots does a repair kit repair
+		#Range: > 1
+		"Repair Kit Ingot Ratio" = 2
+		#Maximum repair percentage of an item
+		#Range: 0.0 ~ 1.0
+		"Max repair" = 0.75
+
 [Items]
-	#Back to base
 	"Enable Recall Potion" = true
 	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Solarium" = true
-	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Copper Tools & Armor Expansion" = true
-	#A new block that can let you carry more stuff around.
+	"Enable Solarium" = false
 	"Enable Crate" = true
+	"Enable Altimeter" = false
+	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
+	"Enable Copper expansion" = false
 	#Add a new explosive block.
-	"Enable Explosive Barrel" = true
-	#Check your altitude. Will be hidden from creative inventory if disabled or if caverns and chasms is enabled
-	"Enable Altimeter" = true
+	"Enable Explosive barrel" = true
 
-	#A new block that can let you carry more stuff around.
 	[Items.Crate]
 		#Range: > 0
 		"Max crates without slowdown" = 2
@@ -94,23 +84,19 @@
 		#Range: 0.0 ~ 1.0
 		"Base Slowness per crate over max" = 0.05
 
-	#Check your altitude. Will be hidden from creative inventory if disabled or if caverns and chasms is enabled
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
 
 	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
-	[Items."Copper Tools & Armor Expansion"]
+	[Items."Copper expansion"]
 		#The sea level + this at which the deep bonus starts to apply
 		#Range: > -2147483648
 		"Deep Bonus Sea Level" = 16
 
 [Experience]
-	#Adds new enchantments. Please note that Damaging enchantments such as water coolant are enabled only if ITR 'Replace damaging enchantments' is enabled. This also applies for protection enchantments and ITR 'Replace protection enchantments'
 	"Enable New Enchantments" = true
-	#Adds a brand new enchanting table. If this feature is enabled, a data pack is also enabled that changes the enchanting table recipe to give the new one and replaces xp bottles with enchanted cleansed lapis. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
 	"Enable Enchanting" = true
 
-	#Adds a brand new enchanting table. If this feature is enabled, a data pack is also enabled that changes the enchanting table recipe to give the new one and replaces xp bottles with enchanted cleansed lapis. Items in iguanatweaksexpanded:not_enchantable tag cannot be enchanted.
 	[Experience.Enchanting]
 		#Enchanted items can no longer be merged with other enchanted items (also applies to enchanted books).
 		"No enchantment merge" = true
@@ -159,12 +145,9 @@
 			"One time use enchantments" = false
 
 [Combat]
-	#Gives a use to the fletching table.
 	"Enable Fletching table" = true
-	#Changes to Shields+.
 	"Enable Shields+" = true
 
-	#Gives a use to the fletching table.
 	[Combat."Fletching table"]
 		#Enables the following changes:
 		#* Replaces the vanilla fletching table recipe with the mod's one
@@ -173,7 +156,6 @@
 		#If disabled, torch arrows will only set mobs on fire
 		"Torch arrows place torches" = true
 
-	#Changes to Shields+.
 	[Combat."Shields+"]
 		#Changes the crafting recipes of metal shields to require a Forge and rebalances the shields.
 		"Shields+ Compat DataPack" = true

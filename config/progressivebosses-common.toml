@@ -4,7 +4,6 @@
 
 ["Elder Guardian"]
 
-	#Base feature for the Elder Guardian harder fights.
 	["Elder Guardian".Base]
 		#If true, the player will not be able to break blocks when an Elder Guardian is nearby. This also removes Mining Fatigue.
 		"Adventure mode" = true
