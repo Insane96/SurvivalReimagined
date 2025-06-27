@@ -1,0 +1,2 @@
+function worldborder:try_shrink
+function worldborder:try_setup

@@ -1,5 +1,5 @@
-worldborder add 2 0
-title @a title {"text": "A day has passed"}
-title @a subtitle  {"text": "World Border expanded!"}
-execute store result score WORLD_BORDER world_border_setup run worldborder get
+worldborder add 10 600
+execute store result score WORLD_BORDER wb_setup run worldborder get
 scoreboard players set @a wb_deaths 0
+
+schedule function worldborder:expand 600s
