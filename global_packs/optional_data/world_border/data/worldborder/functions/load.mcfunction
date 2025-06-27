@@ -2,4 +2,6 @@ scoreboard objectives add wb_deaths deathCount
 scoreboard objectives add wb_setup dummy
 # scoreboard objectives setdisplay sidebar wb_setup
 
-tellraw @a [{"text": "Finding a good spawn. Please stand by."}]
+# tellraw @a [{"text": "Finding a good spawn. Please stand by."}]
+gamerule iguanatweaks:doLooseRespawn false
+gamerule iguanatweaks:deathGrave false

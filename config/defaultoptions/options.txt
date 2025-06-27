@@ -5,14 +5,14 @@ autoSuggestions:true
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
-enableVsync:false
+enableVsync:true
 entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
 invertYMouse:false
 realmsNotifications:true
 reducedDebugInfo:false
-showSubtitles:false
+showSubtitles:true
 directionalAudio:false
 touchscreen:false
 fullscreen:true
@@ -30,11 +30,11 @@ glintSpeed:0.5
 glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
-gamma:1.0
+gamma:0.5
 renderDistance:24
 simulationDistance:12
 entityDistanceScaling:5.0
-guiScale:4
+guiScale:3
 particles:0
 maxFps:140
 graphicsMode:1
@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","file/VanillaTweaks.zip","file/VanillaTweaks_CleanerBorder.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","file/Soft-Weather-1.0-1.20.zip","survivalreimaginedresourcepack","fabric"]
+resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","file/VanillaTweaks.zip","file/VanillaTweaks_CleanerBorder.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","file/Soft-Weather-1.0-1.20.zip","fabric"]
 incompatibleResourcePacks:["file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip"]
 lastServer:eitikitikitircraft.mcserver.us
 lang:en_us

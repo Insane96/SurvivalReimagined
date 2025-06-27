@@ -2,7 +2,7 @@
 [Gamplay]
 	Music = true
 	Wind = true
-	Inventory = true
+	Inventory = false
 	Cave = true
 	Nether = true
 	Water = true

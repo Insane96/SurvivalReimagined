@@ -1308,6 +1308,13 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			Maximum = 3.0
 
+		#Experience obtained when brushing blocks.
+		[Experience."Dropped experience"."Brushing xp"]
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 6.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 10.0
+
 	#Changes the experience lost on death and xp per level required.
 	[Experience."Player experience"]
 		#The experience required to level up is calculated by this formula. The variable available is 'current_level'
