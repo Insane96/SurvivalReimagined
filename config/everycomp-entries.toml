@@ -110,9 +110,6 @@
 
 	[entries.wood_type]
 
-		[entries.wood_type.vct]
-			crafting_table = true
-
 		[entries.wood_type.friendsandfoes]
 			beehive = true
 
@@ -139,6 +136,9 @@
 			chest = true
 			ladder = true
 			beehive = true
+
+		[entries.wood_type.mctb]
+			crafting_table = true
 
 	[entries.leaves_type]
 

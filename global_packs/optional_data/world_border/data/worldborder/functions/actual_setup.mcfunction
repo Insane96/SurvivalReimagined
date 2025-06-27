@@ -15,4 +15,5 @@ tp @a @s
 gamerule iguanatweaks:doLooseRespawn false
 gamerule iguanatweaks:deathGrave false
 
+execute as @a run worldborder add 4 0
 function worldborder:expand

@@ -1,0 +1,10 @@
+{
+  "type": "insanelib:inject_loot_table",
+  "conditions": [
+    {
+      "condition": "minecraft:time_check",
+      "value": 0
+    }
+  ],
+  "loot_table": "iguanatweaksexpanded:blocks/injection/cleansed_lapis"
+}

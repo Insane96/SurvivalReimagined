@@ -10,7 +10,7 @@ execute if score WORLD_BORDER_LOGS wb_setup matches ..6 run return 0
 # Change the above two lines to the one below in 1.20.2
 # execute if score WORLD_BORDER_LOGS wb_setup matches ..4 run return run function worldborder:new_spawn
 
-execute if score WORLD_BORDER_LOGS wb_setup matches 7.. store success score WORLD_BORDER_GRAVEL wb_setup run place feature ore_gravel ~ ~-12 ~
+execute if score WORLD_BORDER_LOGS wb_setup matches 7.. store success score WORLD_BORDER_GRAVEL wb_setup run place feature ore_gravel ~ ~-24 ~
 
 execute if score WORLD_BORDER_GRAVEL wb_setup matches 1.. run tellraw @a {"text": "Found good spawn, good luck", "color": "#FFD700", "bold": true}
 execute if score WORLD_BORDER_GRAVEL wb_setup matches 1.. run tellraw @a {"text": "Due to a glitch in commands, I recommend to re-join the world/server.", "color": "#FF0000"}
