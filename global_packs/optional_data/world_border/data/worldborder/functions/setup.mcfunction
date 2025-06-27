@@ -2,7 +2,7 @@ effect give @a slowness infinite 49 true
 effect give @a blindness infinite 0 true
 
 # Check if there are enough logs in the spawn area
-execute store result score WORLD_BORDER_LOGS wb_setup run clone ~-4 ~-12 ~-4 ~4 ~8 ~4 ~-4 ~-12 ~-4 filtered #logs force
+execute store result score WORLD_BORDER_LOGS wb_setup run clone ~-5 ~-12 ~-5 ~5 ~8 ~5 ~-5 ~-12 ~-5 filtered #logs force
 # If there aren't, spread the player
 execute if score WORLD_BORDER_LOGS wb_setup matches ..6 run function worldborder:spread
 # Stop executing stuff

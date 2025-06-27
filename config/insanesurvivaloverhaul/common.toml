@@ -360,9 +360,9 @@
 		#The range from beds where players will respawn.
 		["Sleep & Respawn".Respawn."Loose bed spawn range"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 64.0
+			Minimum = 96.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 128.0
+			Maximum = 192.0
 
 		["Sleep & Respawn".Respawn."Stats penalty"]
 
