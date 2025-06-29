@@ -411,6 +411,12 @@
 		#Chance for a fisher mob to steal an entity item in the hands instead of reeling the player.
 		#Range: 0.0 ~ 1.0
 		"Hook Hands Chance" = 0.4
+		#The max distance mobs will use the fishing rod. Above this distance they will try to get closer.
+		#Range: > -2147483648
+		"Max distance" = 24
+		#The min distance mobs will use the fishing rod. Below this distance they will just get closer and attack melee.
+		#Range: > -2147483648
+		"Min distance" = 4
 
 		#How fast will a mob reel in the grappled entity (or if the hook is on the ground).
 		[Mobs."Fisher Mobs"."Reel in ticks"]
@@ -522,6 +528,12 @@
 		"Blindness range multiplier" = 0.1
 		#By default, the new targeting AI only changes for targeting players. Setting this to true allows overriding target AI for entities other than players. Please note this might break specific AIs
 		"Targeting Override for non-Players" = false
+		#Chance for a mob to be able to forget about it's target. If the mob can forget the target it will forget about it after 'Unseen forgot ticks' have passed.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Forget target chance" = 0.3
+		#If the mob can forget the target it will forget about it after this amount of ticks have passed while not seeing the target.
+		#Range: > -2147483648
+		"Unseen forgot ticks" = 600
 
 		#How far away can the mobs see the player. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. I recommend using mods like Mobs Properties Randomness to have more control over the attribute. Only mobs in the entity type tag `enhancedai:change_follow_range` will be affected by this override
 		[Mobs.Targeting."Follow Range Override"]

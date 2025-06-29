@@ -4,18 +4,18 @@
 
 ["Elder Guardian"]
 
-	["Elder Guardian".Base]
+	["Elder Guardian"."Elder guardian"]
 		#If true, the player will not be able to break blocks when an Elder Guardian is nearby. This also removes Mining Fatigue.
-		"Adventure mode" = true
+		Adventure = true
 		#The range from any Elder Guardian at which players get adventure mode. This range is doubled when YUNG's Better Ocean Monuments is installed.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Adventure mode Range" = 48.0
+		"Adventure range" = 48.0
 
 ["Ender Dragon"]
 
-	["Ender Dragon"."Ender Dragon Feature"]
+	["Ender Dragon".Dragon]
 		#Crystals can no longer be destroyed by other explosions.
-		"Explosion Immune Crystals" = true
+		"Explosion immune crystals" = true
 		#Enable some fixes for the Ender Dragon:
 		# - Small spikes with cages now generate with obsidian on the corners to prevent cheesing.
 		# - Dragon Head and Neck have been repositioned/resized correctly.
@@ -25,5 +25,13 @@
 		# - Dragon is moved exactly at the center of the well when landed
 		# - Fixes players accumulating knockback when hit by the dragon and then launching like a rocket
 		# - Sets a portal cooldown to 4 years so she no longer goes through end gates
-		"Enable Fixes" = true
+		"Enable fixes" = true
+		#Adds a tooltip on the dragon egg to hint that it drops multiple times.
+		"Egg tooltip" = true
+
+[Wither]
+
+	[Wither.Wither]
+		#If true, Wither can charge any entity and not just players.
+		"Allow charging non players" = false
 
