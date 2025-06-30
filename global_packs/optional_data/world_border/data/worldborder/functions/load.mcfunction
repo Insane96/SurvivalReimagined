@@ -1,6 +1,6 @@
 scoreboard objectives add wb_deaths deathCount
 scoreboard objectives add wb_setup dummy
-scoreboard objectives setdisplay sidebar wb_setup
+# scoreboard objectives setdisplay sidebar wb_setup
 
 scoreboard players reset WORLD_BORDER_LOGS wb_setup
 scoreboard players reset WORLD_BORDER_GRAVEL wb_setup
