@@ -126,21 +126,21 @@
 			"Max enchanting power" = 20
 			#Tool enchantability multiplier if not purified or infused
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Enchantability multiplier" = 1
+			"Enchantability multiplier" = 0.75
 			#Range: > 0
-			"Base enchantability" = 1
+			"Base enchantability" = 0
 			#Tool enchantability multiplier when purified (sums with Enchantability multiplier and Infused bonus Enchantability multiplier)
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Purified Enchantability multiplier" = 0.4
+			"Purified Enchantability multiplier" = 0.0
 			#Tool enchantability bonus when purified
 			#Range: > 0
 			"Purified Enchantability flat" = 0
 			#Tool enchantability bonus percentage when infused (sums with Enchantability multiplier and Purified bonus Enchantability multiplier)
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Infused bonus Enchantability multiplier" = 0.2
+			"Infused bonus Enchantability multiplier" = 0.0
 			#Tool enchantability bonus when infused
 			#Range: > 0
-			"Infused bonus Enchantability flat" = 1
+			"Infused bonus Enchantability flat" = 0
 			#If true, all the enchantments in the enchanting table (so, not only curses) are one time use. If enabled, you can no longer disenchant items in grindstone to prevent accidental loss.
 			"One time use enchantments" = false
 

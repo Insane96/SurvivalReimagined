@@ -881,7 +881,7 @@
 	[Items."Ecologic wood"]
 		#Chance for the wooden item to not consume durability at 'Max sunlight'.
 		#Range: 0.0 ~ 1.0
-		"Chance at max sunlight" = 0.75
+		"Chance at max sunlight" = 0.8
 		#Range: 0 ~ 15
 		"Max sunlight" = 12
 

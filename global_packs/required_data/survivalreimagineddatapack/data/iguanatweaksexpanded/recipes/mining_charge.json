@@ -1,0 +1,38 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+        {
+            "conditions": [
+                {
+                    "type": "insanelib:feature_enabled",
+                    "feature": "Mining charge"
+                }
+            ],
+            "recipe": {
+                "type": "minecraft:crafting_shaped",
+                "category": "redstone",
+                "key": {
+                    "C": {
+                        "item": "minecraft:iron_nugget"
+                    },
+                    "S": {
+                        "item": "minecraft:slime_ball"
+                    },
+                    "T": {
+                        "item": "minecraft:tnt"
+                    }
+                },
+                "pattern": [
+                    " T ",
+                    "CCC",
+                    " S "
+                ],
+                "result": {
+                    "count": 2,
+                    "item": "iguanatweaksexpanded:mining_charge"
+                },
+                "show_notification": true
+            }
+        }
+    ]
+}
