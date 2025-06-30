@@ -1,19 +1,14 @@
 effect give @a slowness infinite 49 true
 effect give @a blindness infinite 0 true
 
+tellraw @a [{"text": "Checking for logs"}]
 # Check if there are enough logs in the spawn area
-execute store result score WORLD_BORDER_LOGS wb_setup run clone ~-5 ~-12 ~-5 ~5 ~8 ~5 ~-5 ~-12 ~-5 filtered #logs force
+execute store result score WORLD_BORDER_LOGS wb_setup run clone ~-6 ~-12 ~-6 ~6 ~8 ~6 ~-6 ~-12 ~-6 filtered #logs force
 # If there aren't, spread the player
 execute if score WORLD_BORDER_LOGS wb_setup matches ..6 run function worldborder:spread
 # Stop executing stuff
 execute if score WORLD_BORDER_LOGS wb_setup matches ..6 run return 0
 # Change the above two lines to the one below in 1.20.2
-# execute if score WORLD_BORDER_LOGS wb_setup matches ..4 run return run function worldborder:new_spawn
+# execute if score WORLD_BORDER_LOGS wb_setup matches ..6 run return run function worldborder:new_spawn
 
-execute if score WORLD_BORDER_LOGS wb_setup matches 7.. store success score WORLD_BORDER_GRAVEL wb_setup run place feature ore_gravel ~ ~-24 ~
-
-execute if score WORLD_BORDER_GRAVEL wb_setup matches 1.. run tellraw @a {"text": "Found good spawn, good luck", "color": "#FFD700", "bold": true}
-execute if score WORLD_BORDER_GRAVEL wb_setup matches 1.. run tellraw @a {"text": "Due to a glitch in commands, I recommend to re-join the world/server.", "color": "#FF0000"}
-execute if score WORLD_BORDER_GRAVEL wb_setup matches 1.. run function worldborder:actual_setup
-# tellraw @a [{"score": {"name": "WORLD_BORDER_GRAVEL", "objective": "wb_setup"}}, {"text": " gravel"}]
-execute if score WORLD_BORDER_GRAVEL wb_setup matches 0 run function worldborder:spread
+function worldborder:try_placing_gravel
