@@ -209,6 +209,8 @@
 		#Range: 0 ~ 500
 		cooldown = 60
 		music_disc_heave_ho = true
+		#Makes TNT-like block shot from a cannon explode on impact
+		explode_tnt = true
 
 		[functional.cannon.cannonball]
 			enabled = true
@@ -321,7 +323,7 @@
 		crystal_enchanting = 3
 
 	[building.ash]
-		enabled = true
+		enabled = false
 		#Burning mobs will drop ash when they die
 		ash_from_burning_mobs = true
 		#Allows rain to wash away ash layers overtime
@@ -363,7 +365,7 @@
 		wattle_and_daub = true
 
 	[building.ash_bricks]
-		enabled = true
+		enabled = false
 
 	[building.hat_stand]
 		enabled = true

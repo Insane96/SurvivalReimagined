@@ -42,7 +42,7 @@
 		#Non Vanilla gamerule: 'iguanatweaks:explosionMobGriefing'
 		"iguanatweaks:explosion_mob_griefing" = true
 		#Non Vanilla gamerule: 'iguanatweaks:foggyWeather'
-		"iguanatweaks:foggy_weather" = true
+		"iguanatweaks:foggy_weather" = false
 		#Non Vanilla gamerule: 'iguanatweaks:painful_world_border'
 		#Range: > 0
 		"iguanatweaks:painful_world_border" = 0
