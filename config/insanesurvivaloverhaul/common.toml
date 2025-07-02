@@ -863,7 +863,7 @@
 	"Enable Misc item" = true
 	#Replace stone tools with flint ones.
 	"Enable Flint expansion" = true
-	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via data packs
+	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected.
 	"Enable Unbreakable items" = true
 
 	[Items."gigaherz Tool Belt"]
@@ -910,12 +910,12 @@
 		#If true, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with flint ones
 		"Disable stone tools" = true
 
-	#Less durable items and efficient tools. Items Durability and Efficiency are controlled via data packs
+	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected.
 	[Items."Unbreakable items"]
-		#Items with durability get a durability tooltip.
+		#Items with durability get a durability tooltip
 		"Durability tooltip" = true
-		#If set to true items will no longer break if enchanted.
-		"Unbreakable enchanted items" = true
+		#If set to true only enchanted items will no longer break
+		"Enchanted items only" = true
 
 ["Hunger & Health"]
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
