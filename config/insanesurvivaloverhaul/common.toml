@@ -865,6 +865,8 @@
 	"Enable Flint expansion" = true
 	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected.
 	"Enable Unbreakable items" = true
+	#Basically backports copper equipment from latest MC versions.
+	"Enable Copper equipment" = true
 
 	[Items."gigaherz Tool Belt"]
 		#Enables a data pack that changes the crafting of the Tool Belt to give more slots (2 -> 4)

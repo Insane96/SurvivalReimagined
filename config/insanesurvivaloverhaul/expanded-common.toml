@@ -72,8 +72,6 @@
 	"Enable Solarium" = false
 	"Enable Crate" = true
 	"Enable Altimeter" = false
-	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
-	"Enable Copper expansion" = false
 	#Add a new explosive block.
 	"Enable Explosive barrel" = true
 
@@ -86,12 +84,6 @@
 
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
-
-	#Two new set of tools and a new Armor Set. Disabling this will prevent copper tools from being faster and more durable the deeper are used and will prevent the electrocution effect of coated copper items. Disabling this will disable ore generation and items in the creative inventory.
-	[Items."Copper expansion"]
-		#The sea level + this at which the deep bonus starts to apply
-		#Range: > -2147483648
-		"Deep Bonus Sea Level" = 16
 
 [Experience]
 	"Enable New Enchantments" = true
