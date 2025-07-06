@@ -1,5 +1,9 @@
 # Changelog
 
+## Alpha 3.0.1
+* Mod updates, Tide integration and bug fixes
+* Hybrid beta data pack is now optional
+
 ## Alpha 3.0.0
 This version greatly simplifies the modpack. No more Cleansed lapis, no more forging and no new materials from Insane's Survival Extra. You should be able to update an old world to this version, but the items you have can no longer be obtained and are no longer balanced against new updates.
 
