@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Locked stamina no longer slows you down
+
 ## Alpha 3.0.1
 * Mod updates, Tide integration and bug fixes
 * Hybrid beta data pack is now optional

@@ -2,19 +2,6 @@
 #Stamina to let the player run and do stuff.
 [Stamina]
 
-	[Stamina.Stats]
-		#How much stamina the player has per half heart. Each 1 stamina is 1 tick of running
-		#Range: > 0
-		"Stamina per half heart" = 10
-		#Range: > 0
-		"Bonus stamina per level of Vigour Enchantment" = 40
-		#Range: > 0
-		"Bonus stamina per level of Vigour Effect" = 40
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Stamina reduction per armor point" = 0.025
-		#If enabled, stamina amount is bound to max health and no longer current health
-		"Bound to Max Health" = false
-
 	[Stamina.Consumption]
 		#How much stamina the player consumes each tick when sprinting
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -31,16 +18,19 @@
 		#How much stamina the player consumes each tick when mining. If stamina is locked, mining speed is halved
 		#Range: 0.0 ~ 1.7976931348623157E308
 		Mine = 0.0
+		#Stamina consumption will be multiplied by this value when the player is out of combat. Out of combat = not attacked or hurt in the last 15 seconds
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Out of combat multiplier" = 0.8
 
 	[Stamina.Regen]
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Per Tick" = 1
 		#Multiplier for the regen per tick when stamina is locked
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Modifier when locked" = 0.6
 		#Percentage reduction per armor point
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Reduction per armor point" = 0.025
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Per tick" = 2.0
 
 	[Stamina.Lock]
 		#When max stamina goes below this percentage, stamina will be locked. With locked stamina, the player can't sprint
@@ -59,14 +49,14 @@
 			#Below this percentage stamina, sprinting will be less effective.
 			#Range: 0.0 ~ 1.0
 			Threshold = 0.2
-			#Below this stamina amount, sprinting will be less effective.
-			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			"Threshold Flat" = 40.0
 			#Slowdown sprinting and swimming by this amount, vanilla sprint is x1.3
 			#Range: 0.0 ~ 1.0
 			Amount = 0.0
+			#Below this stamina amount, sprinting will be less effective.
+			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			"Threshold flat" = 40.0
 
-		[Stamina.Slowdown."When Locked"]
+		[Stamina.Slowdown."When locked"]
 			#If stamina is locked, player will be slowed down.
 			Enabled = true
 			#Range: 0.0 ~ 1.0
@@ -77,4 +67,17 @@
 		Sprinting = false
 		#Disable swimming altogether
 		Swimming = false
+
+	[Stamina.Stamina]
+		#How much stamina the player has per half heart. Each 1 stamina is 1 tick of running
+		#Range: > 0
+		"Per half heart" = 10
+		#Range: > 0
+		"Bonus per level of vigour enchantment" = 40
+		#Range: > 0
+		"Bonus per level of vigour effect" = 40
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Percentage reduction per armor point" = 0.025
+		#If enabled, max stamina will always be bound to max health and no longer with current health
+		"Bound to max health" = false
 
