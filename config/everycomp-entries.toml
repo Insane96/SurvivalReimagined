@@ -136,7 +136,7 @@
 			ladder = true
 			beehive = true
 
-		[entries.wood_type.mctb]
+		[entries.wood_type.vct]
 			crafting_table = true
 
 	[entries.leaves_type]

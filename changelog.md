@@ -4,6 +4,7 @@
 * Locked stamina no longer slows you down
 * Disabled Void fog
 * Removed old explosion sound
+* Reverted back to Variant Crafting Tables mod
 
 ## Alpha 3.0.1
 * Mod updates, Tide integration and bug fixes
