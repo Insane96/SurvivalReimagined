@@ -412,7 +412,7 @@
     "oldDarkVoidHeight": false,
     "customVoidSky": false,
     "customVoidSkyColor": "#0000FF",
-    "renderVoidFog": true,
+    "renderVoidFog": false,
     "creativeVoidFog": true,
     "creativeVoidParticles": true,
     "lightRemovesVoidFog": false,
