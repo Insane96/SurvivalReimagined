@@ -6,7 +6,7 @@
       "late_winter"
     ],
     "despawn_distance": 112,
-    "hostile_cap": 70,
+    "hostile_cap": 80,
     "animal_cap": 0,
     "water_ambient_cap": 0
   },
