@@ -93,7 +93,6 @@
 			jasper = true
 			shale = true
 			myalite = true
-			permafrost = true
 
 		[types.stone_type.atmospheric]
 			dolerite = true
@@ -104,9 +103,6 @@
 
 		[types.stone_type.caverns_and_chasms]
 			sugilite = true
-
-		[types.stone_type.upgrade_aquatic]
-			coralstone = true
 
 #Disables specific entries
 [entries]
