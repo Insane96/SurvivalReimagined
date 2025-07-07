@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## Alpha 3.0.2
 * Locked stamina no longer slows you down
 * Disabled Void fog
 * Removed old explosion sound
