@@ -4,12 +4,12 @@
 com.google.gson.JsonSyntaxException: Unknown type 'insanelib:feature_enabled'
 tide fishing speed
 tide fishing loot 
-nerf cooked fish
 shields+ vanilla shield stats
 support for tide fishing hook
 
 ## Upcoming
 * Baits no longer require seeds
+* Lowered cooked fish restored health
 
 ## Alpha 3.0.2
 * Locked stamina no longer slows you down

@@ -94,5 +94,9 @@
   {
     "food": "buzzier_bees:honey_bread",
     "nutrition": 5
+  },
+  {
+    "food": "tide:cooked_fish",
+    "nutrition": 5
   }
 ]
