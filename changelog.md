@@ -1,5 +1,16 @@
 # Changelog
 
+[07Jul2025 18:38:18.938] [Worker-Main-14/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:minecraft:chests/abandoned_mineshaft
+com.google.gson.JsonSyntaxException: Unknown type 'insanelib:feature_enabled'
+tide fishing speed
+tide fishing loot 
+nerf cooked fish
+shields+ vanilla shield stats
+support for tide fishing hook
+
+## Upcoming
+* Baits no longer require seeds
+
 ## Alpha 3.0.2
 * Locked stamina no longer slows you down
 * Disabled Void fog
