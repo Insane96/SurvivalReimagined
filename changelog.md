@@ -10,6 +10,7 @@ support for tide fishing hook
 ## Upcoming
 * Baits no longer require seeds
 * Lowered cooked fish restored health
+* Disabled vanilla shields
 
 ## Alpha 3.0.2
 * Locked stamina no longer slows you down
