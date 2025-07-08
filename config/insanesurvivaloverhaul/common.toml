@@ -1269,7 +1269,7 @@
 		"Block multiplier" = 1.0
 		#Bottle o' enchanting will drop this amount of experience. Can be set to 0 to make Bottle o' enchanting drop no experience
 		#Range: 0 ~ 512
-		"Bottle o' Enchanting XP" = 40
+		"Bottle o' Enchanting XP" = 200
 
 		[Experience."Dropped experience".Mobs]
 			#Experience dropped from mobs that come from spawners will be multiplied by this multiplier.

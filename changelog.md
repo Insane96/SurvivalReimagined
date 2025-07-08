@@ -4,13 +4,13 @@
 com.google.gson.JsonSyntaxException: Unknown type 'insanelib:feature_enabled'
 tide fishing speed
 tide fishing loot 
-shields+ vanilla shield stats
 support for tide fishing hook
 
 ## Upcoming
 * Baits no longer require seeds
 * Lowered cooked fish restored health
 * Disabled vanilla shields
+* Bottle o' Enchanting now drop 5 levels worth of xp
 
 ## Alpha 3.0.2
 * Locked stamina no longer slows you down
