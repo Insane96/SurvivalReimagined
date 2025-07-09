@@ -2,6 +2,8 @@
 
 ## Upcoming
 * Portable Crates now slow down less (5/20/45/... -> 2.5/10/22.5)
+* Added repair recipe for iron fishing rod
+* Vanilla fishing rods are now replaced with tide's
 
 ## Alpha 3.0.3
 * Baits no longer require seeds
