@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Portable Crates now slow down less (5/20/45/... -> 2.5/10/22.5)
+
 ## Alpha 3.0.3
 * Baits no longer require seeds
 * Lowered cooked fish restored health

@@ -80,7 +80,7 @@
 		"Max crates without slowdown" = 2
 		#When you have > 'Max crates without slowdown' this is the base value for the slowdown. The slowdown is calculated as (crates above 'Max crates' ^ 2 * this)
 		#Range: 0.0 ~ 1.0
-		"Base Slowness per crate over max" = 0.05
+		"Base Slowness per crate over max" = 0.025
 
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
