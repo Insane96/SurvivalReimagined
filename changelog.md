@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## Alpha 3.0.3
 * Baits no longer require seeds
 * Lowered cooked fish restored health
 * Disabled vanilla shields
