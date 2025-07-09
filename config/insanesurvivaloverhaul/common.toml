@@ -829,6 +829,8 @@
 		#* Smelting Iron in a Furnace takes 4x time, and 2x time in a blast furnace
 		#* Can no longer smelt gold and Ancient Debris in a Furnace, and 2x in a blast furnace
 		"Ore smelting" = true
+		#Enables a data pack that backports diamonds generation from 1.20.2. Disables itself if Terralith is installed
+		"Diamond generation backport" = true
 
 	#Various mining changes
 	[Mining."Mining misc"]

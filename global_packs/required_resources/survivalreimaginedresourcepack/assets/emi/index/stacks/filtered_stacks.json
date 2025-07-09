@@ -49,7 +49,15 @@
       "/iguanatweaksexpanded:forge/",
       "woodworks:sawmill",
       "/citadel:/",
-      "/waystones:/"
+      "/waystones:/",
+
+      "/minecraft:fishing_rod/",
+      "/tide:stone_fishing_rod/",
+      "/tide:golden_fishing_rod/",
+      "/tide:crystal_fishing_rod/",
+      "/tide:diamond_fishing_rod/",
+      "/tide:netherite_fishing_rod/",
+      "/tide:midas_fish/"
     ],
     "disable": true
   }

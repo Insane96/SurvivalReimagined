@@ -135,3 +135,5 @@ key.map_atlases.increase_slice
 key.map_atlases.decrease_slice
 key.stellarview.open_config_screen
 key.tctcore.tc_tcore_key
+simpleclouds.key.openGenPreviewer
+key.endergetic.booflo_slam
