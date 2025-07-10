@@ -1,1 +1,0 @@
-schedule function survivalreimagined:check_players_online 1s
