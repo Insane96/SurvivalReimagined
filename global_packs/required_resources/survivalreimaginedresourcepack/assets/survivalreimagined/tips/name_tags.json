@@ -1,0 +1,5 @@
+{
+    "tip": {
+        "text": "Name tags can now be retrieved from entities, if they die or if you apply another name tag to them. If you use an un-named Name Tag, you will remove their name."
+    }
+}
