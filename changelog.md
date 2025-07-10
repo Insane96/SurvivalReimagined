@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.0.4
 * Added tips to loading screen
 * Items from a grave now despawn after 3 minutes instead of 2
 * Portable Crates now slow down less (5/20/45/... -> 2.5/10/22.5/...)
