@@ -333,7 +333,7 @@
 		"Players' killer bounty" = true
 		#In how many ticks will items despawn after dropping from a grave.
 		#Range: > -2147483648
-		"Despawn time" = 2400
+		"Despawn time" = 3600
 		#If true, graves will be placed even if the player has no items/xp.
 		"Summon grave even with no items" = true
 		#If true, players can crouch right-click to take items from graves. Experience still requires breaking the grave.
