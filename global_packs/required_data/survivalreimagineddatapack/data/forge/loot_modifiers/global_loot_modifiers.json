@@ -1,0 +1,9 @@
+{
+	"entries": [
+		"survivalreimagined:replace_diamond_brush",
+		"survivalreimagined:replace_iron_brush",
+		"survivalreimagined:replace_netherite_brush",
+		"survivalreimagined:replace_fishing_rod"
+	],
+	"replace": false
+}
