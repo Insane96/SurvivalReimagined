@@ -5,6 +5,7 @@
 * Reduced plum restored health
 * Fixed vanilla fishing rods not being replaced by tide's
 * Fixed not being able to convert rich dirt to dirt with shovels
+* Fixed missing many data pack and resource pack files (like Tips)
 
 ### Changes from Insane Survival Overhaul
 **Addition**

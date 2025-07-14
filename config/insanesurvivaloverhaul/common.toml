@@ -298,6 +298,8 @@
 		"Tiredness to effect" = 400.0
 		#Phantoms will no longer spawn based on insomnia, but instead based off tiredness. Will spawn with Tired III.
 		"Tired tied phantoms" = true
+		#If true, Simple Clouds' clouds will speed up when player skips time by sleeping.
+		"Simple clouds integration" = true
 
 		["Sleep & Respawn".Tiredness."Fake sound"]
 			#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
@@ -687,6 +689,8 @@
 		"Tinkers construct" = false
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
 		"Force reload world data packs" = false
+		#Integrates the mod with Tide. Lowers chance for fishes to drop fish.
+		Tide = true
 
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	[Miscellaneous."Beacon & Conduit"]
@@ -857,7 +861,7 @@
 	"Enable gigaherz Tool Belt" = true
 	#Make items not able to mine / attack
 	"Enable Disabled items" = true
-	#Wooden items have a lower chance to break in sunlight.
+	#Wooden items have bonuses when used in sunlight.
 	"Enable Ecologic wood" = true
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	"Enable Stack sizes" = true
@@ -881,13 +885,22 @@
 		#If set to true items in the 'no_damage', 'no_efficiency', 'no_equip' and 'disabled' item tags will get a tooltip.
 		"Add tooltip" = true
 
-	#Wooden items have a lower chance to break in sunlight.
+	#Wooden items have bonuses when used in sunlight.
 	[Items."Ecologic wood"]
-		#Chance for the wooden item to not consume durability at 'Max sunlight'.
+		#Chance for the wooden item to not consume durability when >= 'Max sunlight'.
 		#Range: 0.0 ~ 1.0
 		"Chance at max sunlight" = 0.8
 		#Range: 0 ~ 15
 		"Max sunlight" = 12
+		#Bonus attack speed when >= 'Max sunlight'.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Bonus attack speed" = 0.2
+		#Percentage efficiency bonus when >= 'Max sunlight'.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Bonus efficiency" = 1.0
+		#Lower cooldown by this many ticks when >= 'Max sunlight'.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Shield cooldown reduction" = 10.0
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack sizes"]
