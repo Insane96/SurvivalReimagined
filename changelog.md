@@ -1,7 +1,7 @@
 # Changelog
 
 ## 3.0.5
-* 
+* Fixed vanilla fishing rods not being replaced by tide's
 
 ## 3.0.4
 * Added tips to loading screen
