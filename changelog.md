@@ -1,6 +1,7 @@
 # Changelog
 
 ## Upcoming
+* Removed Yung's Desert Temples and Jungle Temples
 * Fixed wooden equipment having too much unbreaking
 
 ## 3.0.5
@@ -23,7 +24,7 @@
   * Lowered base mining speed (2.5 -> 2)
   * Lowered % attack speed (+10% -> NONE)
   * Lowered durability (118 -> 108)
-  * Lowered unbreaking (80% -> 50% chance to not consume durability)
+  * Lowered unbreaking (80% -> 50% chnce to not consume durability)
 * Leather, Copper and Chainmail armor durability has been increased
 * Increased Iron tools durability by 35%
 * Increased shears durability
