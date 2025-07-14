@@ -2,6 +2,7 @@
 
 ## 3.0.5
 * Fixed vanilla fishing rods not being replaced by tide's
+* Fixed not being able to convert rich dirt to dirt with shovels
 
 ## 3.0.4
 * Added tips to loading screen
