@@ -1,9 +1,46 @@
 # Changelog
 
 ## 3.0.5
+* Sprinting is now unlocked at 80% stamina instead of 40%
 * Reduced plum restored health
 * Fixed vanilla fishing rods not being replaced by tide's
 * Fixed not being able to convert rich dirt to dirt with shovels
+
+### Changes from Insane Survival Overhaul
+**Addition**
+* Simple clouds integration with Tiredness
+  * If enabled, thunderous clouds will no longer be removed on sleep and clouds will be fast forwarded
+* Tide integration data pack
+  * If enabled, will change fish entities to only have a chance to drop the fish
+
+**Changes**
+* Minor rework to wooden equipment
+  * Wooden equipment now gains +20% attack speed and x2 mining speed when used in sunlight
+  * Lowered base mining speed (2.5 -> 2)
+  * Lowered % attack speed (+10% -> NONE)
+  * Lowered durability (118 -> 108)
+  * Lowered unbreaking (80% -> 50% chance to not consume durability)
+* Leather, Copper and Chainmail armor durability has been increased
+* Increased Iron tools durability by 35%
+* Increased shears durability
+* Reduced flint and steel durability
+* Adjusted Necromium stats
+  * Increased % attack speed (-20% -> -15%)
+  * Increased % damage (-10% -> -5%)
+  * Lowered base attack damage (6 -> 5)
+* Shields+
+  * Lowered copper shield durability
+  * Lowered flint and wooden shield time blocked
+* `iguanatweaksreborn:replace_loot` modifier now also keeps nbt tag of the item
+
+**Fixes**
+* Missing copper equipment repair
+* Tall grass replacing blocks when growing with seasons
+
+### Changes from Insane Survival Extra
+**Changes**
+* Removed cleansed and enchanted lapis
+  * You can now purify items with bottle o' enchanting, which is the same as the old infusing, with increased enchantability and over level enchantments
 
 ## 3.0.4
 * Added tips to loading screen
