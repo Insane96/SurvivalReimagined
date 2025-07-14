@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Fixed wooden equipment having too much unbreaking
+
 ## 3.0.5
 * Sprinting is now unlocked at 80% stamina instead of 40%
 * Reduced plum restored health

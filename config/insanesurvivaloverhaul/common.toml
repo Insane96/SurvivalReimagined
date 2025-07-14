@@ -889,7 +889,7 @@
 	[Items."Ecologic wood"]
 		#Chance for the wooden item to not consume durability when >= 'Max sunlight'.
 		#Range: 0.0 ~ 1.0
-		"Chance at max sunlight" = 0.8
+		"Chance at max sunlight" = 0.5
 		#Range: 0 ~ 15
 		"Max sunlight" = 12
 		#Bonus attack speed when >= 'Max sunlight'.
