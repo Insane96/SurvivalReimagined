@@ -18,14 +18,7 @@ modernfix/
 server-resource-packs/
 .mixin.out/
 config/everycomp-hazardous.properties
-/.idea/libraries/ComplementaryReimagined_r5_2_2.xml
-/.idea/libraries/mods.xml
-/.idea/libraries/resourcepacks.xml
-/.idea/.gitignore
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/Survival Reimagined 2.iml
-/.idea/vcs.xml
+/.idea
 .physics_mod_cache
 exposures
 map_atlases/
