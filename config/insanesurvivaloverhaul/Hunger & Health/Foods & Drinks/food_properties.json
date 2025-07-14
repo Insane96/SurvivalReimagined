@@ -98,5 +98,9 @@
   {
     "food": "tide:cooked_fish",
     "nutrition": 5
+  },
+  {
+    "food": "environmental:plum",
+    "nutrition": 3
   }
 ]

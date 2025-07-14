@@ -1,6 +1,7 @@
 # Changelog
 
 ## 3.0.5
+* Reduced plum restored health
 * Fixed vanilla fishing rods not being replaced by tide's
 * Fixed not being able to convert rich dirt to dirt with shovels
 
