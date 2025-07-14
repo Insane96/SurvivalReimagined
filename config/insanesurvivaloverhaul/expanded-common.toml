@@ -130,7 +130,7 @@
 			#Range: > 0
 			"Purified Enchantability flat" = 0
 			#If true, all the enchantments in the enchanting table (so, not only curses) are one time use. If enabled, you can no longer disenchant items in grindstone to prevent accidental loss.
-			"One time use enchantments" = false
+			"One time use enchantments" = true
 
 [Combat]
 	"Enable Fletching table" = true

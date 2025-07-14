@@ -4,6 +4,8 @@
 * Added farsight
   * On servers, keeps far away chunks not loaded from the server
 * Removed Yung's Desert Temples and Jungle Temples
+* Enchantments in the enchanting table are now one time use only, so they are consumed on apply
+  * This is experimental, let's see how it goes
 * Fixed wooden equipment having too much unbreaking
 
 ## 3.0.5
