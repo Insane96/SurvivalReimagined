@@ -1,6 +1,8 @@
 # Changelog
 
 ## Upcoming
+* Added farsight
+  * On servers, keeps far away chunks not loaded from the server
 * Removed Yung's Desert Temples and Jungle Temples
 * Fixed wooden equipment having too much unbreaking
 
