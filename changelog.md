@@ -2,6 +2,7 @@
 
 ## Upcoming
 * Since enchantments are limited, experience is now disabled
+* Re-enabled ambient fog
 
 ## 3.0.6
 * Added farsight
