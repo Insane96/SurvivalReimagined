@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.1.0
 * Added [Horseman](https://www.curseforge.com/minecraft/mc-mods/horseman)
   * Improves horses
 * Added [Scholar](https://www.curseforge.com/minecraft/mc-mods/scholar)
@@ -8,8 +8,18 @@
 * Added [Monobank](https://www.curseforge.com/minecraft/mc-mods/monobank)
   * Place your precious items in this safe deposit box storing up to 8k items
   * Safe from Supplementaries' has been disabled
+* Added [Regrowth](https://www.curseforge.com/minecraft/mc-mods/regrowth)
+  * Villagers will try to build walls, fix paths, torch up dark areas
 * Since enchantments are limited, experience is now disabled
 * Re-enabled ambient fog
+
+### Changes from Insane Survival Overhaul
+**Changes**
+* Lowered chance for animals to auto breed
+* Ground flint is now slightly more common
+
+**Fixes**
+* With experience disabled the jump bar of mounts is no longer hidden
 
 ## 3.0.6
 * Added farsight
