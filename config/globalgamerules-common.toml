@@ -84,7 +84,7 @@
 		#Range: > 0
 		"iguanatweaks:death_lose_items_percentage" = 0
 		#Non Vanilla gamerule: 'iguanatweaks:disableExperience'
-		"iguanatweaks:disable_experience" = false
+		"iguanatweaks:disable_experience" = true
 		#Non Vanilla gamerule: 'iguanatweaks:discrete_name_tags'
 		"iguanatweaks:discrete_name_tags" = true
 		#Non Vanilla gamerule: 'iguanatweaks:doLooseRespawn'

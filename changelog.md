@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Since enchantments are limited, experience is now disabled
+
 ## 3.0.6
 * Added farsight
   * On servers, keeps far away chunks not loaded from the server
