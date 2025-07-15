@@ -3,6 +3,11 @@
 ## Upcoming
 * Added [Horseman](https://www.curseforge.com/minecraft/mc-mods/horseman)
   * Improves horses
+* Added [Scholar](https://www.curseforge.com/minecraft/mc-mods/scholar)
+  * Improves book and quill and written books
+* Added [Monobank](https://www.curseforge.com/minecraft/mc-mods/monobank)
+  * Place your precious items in this safe deposit box storing up to 8k items
+  * Safe from Supplementaries' has been disabled
 * Since enchantments are limited, experience is now disabled
 * Re-enabled ambient fog
 
