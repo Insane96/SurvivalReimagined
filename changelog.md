@@ -1,6 +1,8 @@
 # Changelog
 
 ## Upcoming
+* Added [Horseman](https://www.curseforge.com/minecraft/mc-mods/horseman)
+  * Improves horses
 * Since enchantments are limited, experience is now disabled
 * Re-enabled ambient fog
 
