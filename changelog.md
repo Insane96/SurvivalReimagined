@@ -1,7 +1,5 @@
 # Changelog
 
-* check deeper explosion radius
-
 ## Upcoming
 * Removed duplicated copper button
 
