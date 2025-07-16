@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.1.1
 * Added Dynamic Lights
 * Lowered simple clouds quality
   * This should help performance
