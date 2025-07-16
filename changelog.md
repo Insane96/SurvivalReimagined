@@ -5,6 +5,11 @@
 * Lowered simple clouds quality
   * This should help performance
 * Lowered chance for fishing zombies
+* Enabled expanded items interactions
+  * You can now scroll wheel on a bundle to rotate items
+  * You can now right-click on a shulker box in the inventory to open it
+  * Right-click on an armor item in the inventory to equip it
+* Added a few new recipes
 * Fixed woodworks ladders not dropping down
 * Fixed some keybinds
   * If you want them fixed remove the options.txt file. This will reset all your settings

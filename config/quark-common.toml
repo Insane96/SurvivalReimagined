@@ -284,7 +284,7 @@
 [management]
 	"Automatic Tool Restock" = false
 	"Easy Transfering" = false
-	"Expanded Item Interactions" = false
+	"Expanded Item Interactions" = true
 	"Hotbar Changer" = false
 	"Inventory Sorting" = false
 	"Item Sharing" = true
@@ -313,8 +313,8 @@
 
 	[management.expanded_item_interactions]
 		"Enable Armor Interaction" = true
-		"Enable Shulker Box Interaction" = true
-		"Enable Lava Interaction" = true
+		"Enable Shulker Box Interaction" = false
+		"Enable Lava Interaction" = false
 		"Allow Opening Shulker Boxes" = true
 		"Allow Rotating Bundles" = true
 
