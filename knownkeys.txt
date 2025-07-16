@@ -137,3 +137,6 @@ key.stellarview.open_config_screen
 key.tctcore.tc_tcore_key
 simpleclouds.key.openGenPreviewer
 key.endergetic.booflo_slam
+key.scholar.toggle_book_tools
+key.scholar.import_book
+key.scholar.export_book
