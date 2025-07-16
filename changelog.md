@@ -1,5 +1,9 @@
 # Changelog
 
+## Upcoming
+* Lowered simple clouds quality
+  * This should help performance
+
 ## 3.1.0
 * Added [Horseman](https://www.curseforge.com/minecraft/mc-mods/horseman)
   * Improves horses
