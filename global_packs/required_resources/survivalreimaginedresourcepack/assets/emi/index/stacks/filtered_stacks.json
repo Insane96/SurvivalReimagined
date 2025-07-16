@@ -57,7 +57,9 @@
       "/tide:crystal_fishing_rod/",
       "/tide:diamond_fishing_rod/",
       "/tide:netherite_fishing_rod/",
-      "/tide:midas_fish/"
+      "/tide:midas_fish/",
+
+      "/friendsandfoes:.*copper_button/"
     ],
     "disable": true
   }

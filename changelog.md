@@ -1,5 +1,10 @@
 # Changelog
 
+* check deeper explosion radius
+
+## Upcoming
+* Removed duplicated copper button
+
 ## 3.1.1
 * Added Dynamic Lights
 * Lowered simple clouds quality
