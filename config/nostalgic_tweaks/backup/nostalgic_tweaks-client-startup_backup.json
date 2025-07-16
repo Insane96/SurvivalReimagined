@@ -262,7 +262,7 @@
     "customLoadingProgressBar": false,
     "progressBarOutlineColor": "#FFFFFF",
     "progressBarInsideColor": "#FFFFFF",
-    "oldProgressScreen": true,
+    "oldProgressScreen": false,
     "oldPauseMenu": "MODERN",
     "includeModsOnPause": false,
     "removeExtraPauseButtons": false,

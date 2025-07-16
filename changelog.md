@@ -1,8 +1,13 @@
 # Changelog
 
 ## Upcoming
+* Added Dynamic Lights
 * Lowered simple clouds quality
   * This should help performance
+* Lowered chance for fishing zombies
+* Fixed woodworks ladders not dropping down
+* Fixed some keybinds
+  * If you want them fixed remove the options.txt file. This will reset all your settings
 * Fixed bundle having two recipes
 
 ## 3.1.0
