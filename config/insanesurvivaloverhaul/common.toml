@@ -456,7 +456,7 @@
 	"Enable Minecarts" = true
 	#Makes flying with elytra outside the end dimension have stronger "air resistance"
 	"Enable Elytra nerf" = true
-	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. If you need custom armor slowdown, use item definitions
+	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack
 	"Enable Weighted armor" = false
 	#Players's slides down climbable blocks faster and stands still when opening an interface
 	"Enable Better climbable" = true
@@ -501,7 +501,7 @@
 		#Range: 0.0 ~ 1.0
 		"Air resistance" = 0.975
 
-	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. If you need custom armor slowdown, use item definitions
+	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack
 	[Movement."Weighted armor"]
 		#Formula to calculate the slowdown of a piece of armor. Variables available are: armor, armor_toughness. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Please note that 1 means 100% slowdown
 		"Slowdown formula" = "(armor * 0.01) * (1 + (armor_toughness * 0.05))"
@@ -1370,7 +1370,7 @@
 	"Enable Absorption armor" = true
 	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
 	"Enable Critical rework" = true
-	#Adds a new attribute to add regenerating absorption hearts to the player.
+	#Adds a new attribute to add regenerating absorption hearts to the player. Please note that default mods' regenerating absorption is done through item definitions within the combat_rework data pack, disabling this will only disable the regenerating absorption functionality.
 	"Enable Regenerating absorption" = true
 
 	[Combat.Snowballs]
@@ -1487,7 +1487,7 @@
 		#Range: -1.0 ~ 1.0
 		"Enchantment bonus damage" = 0.1
 
-	#Adds a new attribute to add regenerating absorption hearts to the player.
+	#Adds a new attribute to add regenerating absorption hearts to the player. Please note that default mods' regenerating absorption is done through item definitions within the combat_rework data pack, disabling this will only disable the regenerating absorption functionality.
 	[Combat."Regenerating absorption"]
 		#Ticks that must pass from the last hit to regen absorption hearts. This is affected by regenerating absorption speed (absorp regen speed * this)
 		#Range: > 0

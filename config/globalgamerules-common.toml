@@ -43,7 +43,7 @@
 		"iguanatweaks:explosion_mob_griefing" = true
 		#Non Vanilla gamerule: 'iguanatweaks:foggyWeather'
 		"iguanatweaks:foggy_weather" = false
-		#Non Vanilla gamerule: 'iguanatweaks:painful_world_border'
+		#Non Vanilla gamerule: 'iguanatweaks:painfulWorldBorder'
 		#Range: > 0
 		"iguanatweaks:painful_world_border" = 0
 		#Non Vanilla gamerule: 'iguanatweaks:thunderstormIntensity'
@@ -85,7 +85,7 @@
 		"iguanatweaks:death_lose_items_percentage" = 0
 		#Non Vanilla gamerule: 'iguanatweaks:disableExperience'
 		"iguanatweaks:disable_experience" = true
-		#Non Vanilla gamerule: 'iguanatweaks:discrete_name_tags'
+		#Non Vanilla gamerule: 'iguanatweaks:discreteNameTags'
 		"iguanatweaks:discrete_name_tags" = true
 		#Non Vanilla gamerule: 'iguanatweaks:doLooseRespawn'
 		"iguanatweaks:do_loose_respawn" = true
