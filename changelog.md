@@ -3,6 +3,7 @@
 ## Upcoming
 * Lowered simple clouds quality
   * This should help performance
+* Fixed bundle having two recipes
 
 ## 3.1.0
 * Added [Horseman](https://www.curseforge.com/minecraft/mc-mods/horseman)
