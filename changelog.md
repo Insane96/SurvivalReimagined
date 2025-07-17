@@ -4,6 +4,21 @@
 * Hopefully lowered rainy clouds spawning and duration
 * Removed duplicated copper button
 * Removed old hurt sound
+* You can no longer merge enchanted books
+  * It's a waste
+
+### Changes from other mods
+* Added Repair Kits
+  * Repair items in the crafting grid, at the cost of more items
+* Shields cooldown now scales with the amount of time blocked
+  * So the longer you block, the higher the cooldown will be
+* Increased torches from crafting (3 -> 4)
+* Plants growth/death can now make grass become flowers
+* Grass now grows more commonly in spring than summer
+* Removed zombies damage nerf
+* Reduced Caverns and Chasms' Deepers explosion damage and knockback, but increased block damage
+* Fixed plants growth/death was ticking twice as often
+* You can now smelt raw ore blocks in the Soul Blast Furnace
 
 ## 3.1.1
 * Added Dynamic Lights
