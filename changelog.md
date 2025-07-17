@@ -1,8 +1,7 @@
 # Changelog
 
-* Reduce temporali
-
 ## Upcoming
+* Hopefully lowered rainy clouds spawning and duration
 * Removed duplicated copper button
 * Removed old hurt sound
 
