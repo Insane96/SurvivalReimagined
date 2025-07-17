@@ -68,7 +68,7 @@
     "disableDoorPlace": false,
     "disableBubbleColumn": true,
     "oldAttack": true,
-    "oldHurt": true,
+    "oldHurt": false,
     "oldFall": false,
     "oldXp": false,
     "disableXpPickup": false,

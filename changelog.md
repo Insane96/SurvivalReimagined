@@ -1,7 +1,10 @@
 # Changelog
 
+* Reduce temporali
+
 ## Upcoming
 * Removed duplicated copper button
+* Removed old hurt sound
 
 ## 3.1.1
 * Added Dynamic Lights
