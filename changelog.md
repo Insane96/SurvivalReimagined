@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.1.2
 * Hopefully lowered rainy clouds spawning and duration
 * Removed duplicated copper button
 * Removed old hurt sound
