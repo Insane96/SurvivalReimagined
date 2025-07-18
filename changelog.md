@@ -1,5 +1,11 @@
 # Changelog
 
+## Upcoming
+* Added Music Maker
+  * Craft a music sheet and start making music!
+* Added Joy of Painting
+  * Create a canvas, a palette and start painting!
+
 ## 3.1.2
 * Hopefully lowered rainy clouds spawning and duration
 * Removed duplicated copper button

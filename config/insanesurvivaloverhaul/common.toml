@@ -37,8 +37,6 @@
 		"Change serene seasons config" = true
 		#Removes greenhouse glass.
 		"No green house glass" = true
-		#Saplings no longer drop in Winter.
-		"No saplings in winter" = true
 		#How many minutes will day and night duration be (with this set to 10 the day will last 10 minutes and the night 10 minutes for a grand total of 20 minutes). This also adjusts the day_duration config option in Serene Seasons. Vanilla is 10. Requires Time Control mod
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Time control day night duration" = 15.0
@@ -46,6 +44,10 @@
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Time control day night shift" = 1.5
 		"Grow flowers from grass" = true
+		#Changes what leaves can drop in different seasons.
+		#Sapling no longer drop in winter
+		#Apples only drop in spring
+		"Leaves drops" = true
 
 	[World.Berries]
 		#Berry bushes no longer deal damage when walking in them with leggings and boots
@@ -746,7 +748,7 @@
 		"Totem resistance" = true
 		#If set higher than 0 it will enable damage when colliding with walls at a high speed (e.g. with explosions or knockback). Higher = more damage. Set to 0 to disable. Please note that even if set to 0, might still show up in performance profilers.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Collide with walls damage" = 2.5
+		"Collide with walls damage" = 3
 		#Vanilla is 10
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Leash max distance" = 16.0
@@ -1263,7 +1265,7 @@
 		"Replace damaging enchantments" = true
 		#If true, vanilla fire aspect and knockback are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Replace other enchantments" = true
-		#If true, Looting, Fortune and Luck of the Sea enchantments are replaced with a single level one: Luck. Luck works like Fortune/Looting/LoTS II. To re-enable vanilla enchantments refer to `disabled_enchantments.json`. Requires a Minecraft restart
+		#If true, Looting, Fortune and Luck of the Sea enchantments are replaced with a single one: Luck. Requires a Minecraft restart
 		"Rework bonus loot enchantments" = true
 		#Unbreaking increases tool durability by 75% per level
 		"Unbreaking overhaul" = true
@@ -1281,6 +1283,8 @@
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Power enchantment damage" = 0.2
 		"Prevent farmland trampling with feather falling" = true
+		#If true, Luck will only have one level, working like Fortune/Looting/LoTS II.
+		"Luck one level only" = true
 
 	#Various changes to experience. You can also use the iguanatweaks:disableExperience game rule to make experience disappear altogether.
 	[Experience."Dropped experience"]
