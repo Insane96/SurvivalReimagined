@@ -1,10 +1,22 @@
 # Changelog
 
-## Upcoming
+## 3.2.0
 * Added Music Maker
   * Craft a music sheet and start making music!
 * Added Joy of Painting
   * Create a canvas, a palette and start painting!
+
+### Changes from other mods
+* Apples now only drop from leaves in Spring
+* Plums only drop in summer
+* Foxhounds now have a really high life span
+* Lowered the amount of phantom membrane required to make and repair a hang glider
+* Increased low tier materials durability
+  * Wooden tools (108 -> 128)
+  * Flint tools (63 -> 99)
+  * Copper tools (101 -> 109)
+  * Golden tools (49 -> 64)
+  * Silver Tools (157 -> 207)
 
 ## 3.1.2
 * Hopefully lowered rainy clouds spawning and duration
