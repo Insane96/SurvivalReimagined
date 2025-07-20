@@ -1,5 +1,9 @@
 # Changelog
 
+## Upcoming
+* Disabled mending, alleviating and smartness enchantments
+* Fixed artist's trades being too good
+
 ## 3.2.0
 * Added Music Maker
   * Craft a music sheet and start making music!

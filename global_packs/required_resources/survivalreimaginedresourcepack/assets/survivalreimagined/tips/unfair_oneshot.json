@@ -1,5 +1,5 @@
 {
     "tip": {
-        "text": "Taking damage that would kill you when above 7.5 hearts will not prevent death."
+        "text": "Taking damage that would kill you when above 7.5 hearts will prevent death."
     }
 }
