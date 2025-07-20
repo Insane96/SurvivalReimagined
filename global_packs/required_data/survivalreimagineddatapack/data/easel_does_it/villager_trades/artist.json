@@ -1,0 +1,91 @@
+[
+    {
+        "level": 1,
+        "remove": "true",
+        "low_priority": "true",
+        "trades": [
+            {
+                "item_a": {
+                    "item": "#easel_does_it:dyes",
+                    "count": {
+                        "min": 14,
+                        "max": 19
+                    }
+                },
+                "result": "minecraft:emerald",
+                "max_uses": 16,
+                "xp": 2
+            },
+            {
+                "item_a": {
+                    "item": "#easel_does_it:rare_dyes",
+                    "count": {
+                        "min": 7,
+                        "max": 9
+                    }
+                },
+                "result": "minecraft:emerald",
+                "max_uses": 16,
+                "xp": 2
+            }
+        ]
+    },
+    {
+        "level": 2,
+        "remove": "true",
+        "low_priority": "true",
+        "trades": [
+            {
+                "item_a": "minecraft:emerald",
+                "result": "minecraft:item_frame",
+                "max_uses": 12,
+                "xp": 10
+            },
+            {
+                "item_a": {
+                    "item": "#easel_does_it:dyes",
+                    "count": {
+                        "min": 14,
+                        "max": 19
+                    }
+                },
+                "result": "minecraft:emerald",
+                "max_uses": 16,
+                "xp": 10
+            },
+            {
+                "item_a": "minecraft:emerald",
+                "result": {
+                    "item": "#easel_does_it:rare_dyes",
+                    "count": {
+                        "min": 7,
+                        "max": 9
+                    }
+                },
+                "max_uses": 16,
+                "xp": 10
+            },
+            {
+                "item_a": "minecraft:emerald",
+                "result": {
+                    "item": "#minecraft:wool",
+                    "count": {
+                        "min": 3,
+                        "max": 3
+                    }
+                },
+                "max_uses": 12,
+                "xp": 10
+            },
+            {
+                "item_a": {
+                    "item": "minecraft:ink_sac",
+                    "count": 4
+                },
+                "result": "minecraft:emerald",
+                "max_uses": 16,
+                "xp": 10
+            }
+        ]
+    }
+]
