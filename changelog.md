@@ -2,7 +2,7 @@
 
 ## Upcoming
 * Added back Pretty Rain
-  * Simple Clouds is no compatible with it
+  * Simple Clouds is now compatible with it
 * Disabled mending, alleviating and smartness enchantments
 * Fixed artist's trades being too good
 
