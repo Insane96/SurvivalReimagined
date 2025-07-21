@@ -4,7 +4,15 @@
 * Added back Pretty Rain
   * Simple Clouds is now compatible with it
 * Disabled mending, alleviating and smartness enchantments
+* Added Skeleton and Spider Dungeons to Wandering Traders
 * Fixed artist's trades being too good
+
+### Changes from other mods
+* Enhanced enchanting table screen levels show up
+* Updated Wandering Trades
+  * Added new trades
+* Fixed bamboo growing out of season
+* Fixed tool belt upgrading costing experience if was disabled
 
 ## 3.2.0
 * Added Music Maker
