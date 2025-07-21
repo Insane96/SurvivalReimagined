@@ -43,6 +43,12 @@ showVivecraftNotice = true
 	#Default: 2000
 	#Range: 100 ~ 20000
 	thunderAttenuationDistance = 2000
+	#Specifies if new rain sounds should replace the vanilla ones.
+	#Default: true
+	customRainSounds = true
+	#Specifies if custom rain rendering should be used. Automatically disabled when using Pretty/Particle Rain.
+	#Default: true
+	renderCustomRain = true
 
 #Visual
 [visual]
@@ -58,7 +64,7 @@ showVivecraftNotice = true
 	transparency = true
 	#Specifies if a purely visual 2D atmospheric cloud layer should render.
 	#Default: true
-	atmosphericClouds = true
+	atmosphericClouds = false
 
 #Seed
 [seed]

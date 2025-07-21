@@ -637,10 +637,10 @@
 		"Attack When Avoiding Chance" = 0.5
 		#Distance from a player that counts as near and will make the skeleton run away faster.
 		#Range: 0.0 ~ 32.0
-		"Flee Distance Near" = 8.0
+		"Flee Distance Near" = 7.0
 		#Distance from a player that will make the skeleton run away.
 		#Range: 0.0 ~ 32.0
-		"Flee Distance Far" = 16.0
+		"Flee Distance Far" = 12.0
 		#Speed multiplier when the pillager avoids the player and it's within 'Flee Distance Near' blocks from him.
 		#Range: 0.0 ~ 4.0
 		"Flee speed Multiplier Near" = 1.1
