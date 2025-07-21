@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.2.1
 * Added back Pretty Rain
   * Simple Clouds is now compatible with it
 * Disabled mending, alleviating and smartness enchantments
