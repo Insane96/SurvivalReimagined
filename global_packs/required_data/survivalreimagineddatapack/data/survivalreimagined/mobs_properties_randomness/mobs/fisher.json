@@ -1,0 +1,20 @@
+{
+    "target": "#enhancedai:can_be_fisher",
+    "properties": [
+        {
+            "property": "equipment",
+            "slot": "offhand",
+            "items": [
+                {
+                    "item": "tide:iron_fishing_rod"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "chance",
+                    "chance": 0.04
+                }
+            ]
+        }
+    ]
+}

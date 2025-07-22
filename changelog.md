@@ -5,6 +5,7 @@
   * Can now give silver ore and pickaxes are rarer
 * Removed wandering for pets
   * They roam too far
+* Fisher mobs now spawn with iron fishing rod instead of the vanilla one
 
 ### Changes from other mods
 * Fixed grass only growing in any season
