@@ -6,9 +6,20 @@
 * Removed wandering for pets
   * They roam too far
 * Fisher mobs now spawn with iron fishing rod instead of the vanilla one
+* Fixed cakes not healing
+  * Disabled amendments directional cakes
 
 ### Changes from other mods
-* Fixed grass only growing in any season
+* Fixed mobs not breaking modded boats
+* Enhanced Drowned getting out of water
+* Drowned can now attack in day time as long as they can't get in water
+* Hopefully fixed mobs standing still when hurt by target instead of approaching them again
+* Skeletons and zombies enchanted equipment is now enchanted at higher levels during full moons
+* Fixed grass growing in any season
+* Fixed repair kit not showing up in EMI
+* Fixed zombies properties broken
+* Fixed drowned trident attack not being nerfed
+* Fixed spider speed being too high
 
 ## 3.2.1
 * Added back Pretty Rain

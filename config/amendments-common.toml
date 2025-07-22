@@ -52,7 +52,7 @@
 	#Allows you to place a cake on top of another
 	double_cake = true
 	#Allows eating a cake from every side
-	directional_cake = true
+	directional_cake = false
 
 [mob_head]
 	#Allows you to place two mob heads on top of each other

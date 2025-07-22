@@ -1,7 +1,6 @@
 "Enable Animals" = true
 "Enable Blazes" = true
 "Enable Creepers" = true
-"Enable Drowneds" = true
 "Enable Endermen" = true
 "Enable Ghasts" = true
 "Enable Pets" = true
@@ -15,6 +14,7 @@
 "Enable Villagers" = true
 "Enable Witches" = true
 "Enable Warden" = true
+"Enable Drowned" = true
 
 [Witches]
 	"Enable Witch Potion Throwing" = true
@@ -335,6 +335,7 @@
 	"Enable Warden Interacting" = true
 	"Enable Avoid Explosions" = true
 	"Enable Melee Attacking" = true
+	#Prevent players from abusing some game mechanics to stop mobs. Only mobs in the entity type tag enhancedai:can_use_anti_cheese will be affected by this feature. Only veichles in `enhancedai:anti_cheese_veichles` will be affected by this feature.
 	"Enable Anti-Cheese" = true
 	"Enable Fisher Mobs" = true
 	"Enable Open Doors" = true
@@ -397,11 +398,12 @@
 				#Range: 0.0 ~ 4.0
 				Hard = 0.6
 
+	#Prevent players from abusing some game mechanics to stop mobs. Only mobs in the entity type tag enhancedai:can_use_anti_cheese will be affected by this feature. Only veichles in `enhancedai:anti_cheese_veichles` will be affected by this feature.
 	[Mobs.Anti-Cheese]
-		#If true, 'Enemies' will no longer be able to be Boated and Minecarted.
-		"Prevent Boating & Minecarting" = false
-		#If true, 'Enemies' will break boats or minecarts if boated or minecarted.
-		"Break trapping vehicles" = true
+		#If true, 'Enemies' will no longer be able to be put in vehicles.
+		"Prevent riding vehicles" = false
+		#If true, 'Enemies' will break vehicles.
+		"Break vehicles" = true
 
 	[Mobs."Fisher Mobs"]
 		#Chance for a mob in the entity type tag enhancedai:can_be_fisher to spawn with a Fishing Rod in the offhand.
@@ -680,14 +682,6 @@
 		#Range: 0.0 ~ 1.0
 		"Get Over Here Chance" = 0.15
 
-[Drowneds]
-	"Enable Drowned Swimming" = true
-
-	[Drowneds."Drowned Swimming"]
-		#Multiplier for the swim speed of Drowneds. Note that the swim speed is also affected by the Movement Feature. Set to 0 to disable the multiplier.
-		#Range: 0.0 ~ 4.0
-		"Swim Speed Multiplier" = 0.3
-
 [Creepers]
 	"Enable Creeper Swell" = true
 
@@ -858,4 +852,14 @@
 		"Listen range multiplier" = 2.0
 		#If enabled, will make warden have higher step height making it not need to jump.
 		"Step up" = true
+
+[Drowned]
+	"Enable Drowned" = true
+
+	[Drowned.Drowned]
+		#Multiplier for the swim speed of Drowned. Note that the swim speed is also affected by the Movement Feature. Set to 0 to disable the multiplier.
+		#Range: 0.0 ~ 4.0
+		"Swim Speed Multiplier" = 0.3
+		#Fixes a vanilla bug that makes drowned just stand still during daytime if can't reach water.
+		"Allow attack during day" = true
 
