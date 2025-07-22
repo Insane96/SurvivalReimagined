@@ -11,7 +11,10 @@
   * Disabled amendments directional cakes
 
 ### Changes from other mods
+* You can now look at some blocks and get hud infos like when holding certain items like clock
+  * Supplementaries' Clock Block
 * Fixed mobs not breaking modded boats
+* Slowed down mulberry growth speed
 * Enhanced Drowned getting out of water
 * Drowned can now attack in day time as long as they can't get in water
 * Hopefully fixed mobs standing still when hurt by target instead of approaching them again
@@ -21,6 +24,7 @@
 * Fixed zombies properties broken
 * Fixed drowned trident attack not being nerfed
 * Fixed spider speed being too high
+* Tentative fix for health not setting on respawn
 
 ## 3.2.1
 * Added back Pretty Rain
