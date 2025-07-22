@@ -5,6 +5,7 @@
   * Can now give silver ore and pickaxes are rarer
 * Removed wandering for pets
   * They roam too far
+* Halved Fishing rods durability
 * Fisher mobs now spawn with iron fishing rod instead of the vanilla one
 * Fixed cakes not healing
   * Disabled amendments directional cakes

@@ -12,6 +12,34 @@
 			ancient = true
 			blossom = true
 
+		[types.wood_type.caverns_and_chasms]
+			azalea = true
+
+		[types.wood_type.upgrade_aquatic]
+			driftwood = true
+			river = true
+
+		[types.wood_type.atmospheric]
+			grimwood = true
+			rosewood = true
+			morado = true
+			yucca = true
+			aspen = true
+			laurel = true
+			kousa = true
+
+		[types.wood_type.environmental]
+			willow = true
+			pine = true
+			plum = true
+			wisteria = true
+
+		[types.wood_type.endergetic]
+			poise = true
+
+		[types.wood_type.autumnity]
+			maple = true
+
 	[types.stone_type]
 
 		[types.stone_type.quark]
@@ -22,6 +50,19 @@
 			myalite = true
 			permafrost = true
 
+		[types.stone_type.atmospheric]
+			dolerite = true
+			ivory_travertine = true
+			peach_travertine = true
+			persimmon_travertine = true
+			saffron_travertine = true
+
+		[types.stone_type.caverns_and_chasms]
+			sugilite = true
+
+		[types.stone_type.upgrade_aquatic]
+			coralstone = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.quark]
@@ -31,6 +72,41 @@
 			orange_blossom = true
 			yellow_blossom = true
 			red_blossom = true
+
+		[types.leaves_type.environmental]
+			pink_wisteria = true
+			blue_wisteria = true
+			purple_wisteria = true
+			white_wisteria = true
+			cheerful_plum = true
+			moody_plum = true
+			hibiscus = true
+			willow = true
+			pine = true
+			plum = true
+			wisteria = true
+
+		[types.leaves_type.autumnity]
+			yellow_maple = true
+			orange_maple = true
+			red_maple = true
+			maple = true
+
+		[types.leaves_type.upgrade_aquatic]
+			river = true
+
+		[types.leaves_type.atmospheric]
+			rosewood = true
+			morado = true
+			flowering_morado = true
+			yucca = true
+			aspen = true
+			green_aspen = true
+			laurel = true
+			dry_laurel = true
+			kousa = true
+			currant = true
+			grimwood = true
 
 #Disables specific entries
 [entries]
@@ -53,6 +129,19 @@
 			ladder = true
 			hollow_log = true
 			vertical_slab = true
+
+		[entries.wood_type.woodworks]
+			bookshelf = true
+			chiseled_bookshelf = true
+			trapped_chest = true
+			boards = true
+			chest = true
+			ladder = true
+			beehive = true
+
+		[entries.wood_type.boatload]
+			large_boat = true
+			furnace_boat = true
 
 	[entries.stone_type]
 
@@ -81,4 +170,7 @@
 		[entries.leaves_type.quark]
 			hedge = true
 			leaf_carpet = true
+
+		[entries.leaves_type.woodworks]
+			leaf_pile = true
 
