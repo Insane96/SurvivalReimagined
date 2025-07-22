@@ -1,6 +1,8 @@
 # Changelog
 
 ## Upcoming
+* Added No Animal Tempt Delay
+  * Removes the delay when an animal can be tempted
 * Enhanced Rascal rewards 
   * Can now give silver ore and pickaxes are rarer
 * Removed wandering for pets
