@@ -145,6 +145,9 @@
 
 	[entries.stone_type]
 
+		[entries.stone_type.waystones]
+			waystone = true
+
 		[entries.stone_type.quark]
 			pillar = true
 			polished_vertical_slab = true

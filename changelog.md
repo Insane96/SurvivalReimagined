@@ -1,8 +1,6 @@
 # Changelog
 
 ## Upcoming
-* Added Via Romana
-  * Removed Waystones
 * Enhanced Rascal rewards 
   * Can now give silver ore and pickaxes are rarer
 * Removed wandering for pets
