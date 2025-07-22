@@ -48,6 +48,7 @@
 		#Sapling no longer drop in winter
 		#Apples only drop in spring
 		"Leaves drops" = true
+		"Grow double tall grass" = true
 
 	[World.Berries]
 		#Berry bushes no longer deal damage when walking in them with leggings and boots

@@ -1,7 +1,7 @@
 
 [general]
 	#true if wolves, cats, parrots, foxes, axolotls, etc can be set to wander, sit or follow
-	trinary_command_system = true
+	trinary_command_system = false
 	#true if axolotls are fully tameable (axolotl must be tamed with tropical fish)
 	tameable_axolotls = true
 	#true if horses, donkeys, llamas, etc can be given enchants, beds, etc

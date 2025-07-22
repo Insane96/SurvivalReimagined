@@ -1,5 +1,12 @@
 # Changelog
 
+## Upcoming
+* Removed wandering for pets
+  * They roam too far
+
+### Changes from other mods
+* Fixed grass only growing in any season
+
 ## 3.2.1
 * Added back Pretty Rain
   * Simple Clouds is now compatible with it
