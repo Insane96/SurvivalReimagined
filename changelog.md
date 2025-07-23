@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Iron fishing rods are now unbreakable
+
 ## 3.2.2
 * Added No Animal Tempt Delay
   * Removes the delay when an animal can be tempted
