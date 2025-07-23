@@ -1,0 +1,9 @@
+[
+  {
+    "uuid": "bae34f6a-c58e-4622-b2ab-f1b89b73b781",
+    "name": "Player Stats\u0027 Block reach modifier",
+    "attribute": "forge:block_reach",
+    "amount": -1.0,
+    "operation": "addition"
+  }
+]
