@@ -3,6 +3,8 @@
 ## Upcoming
 * Iron fishing rods are now unbreakable
 * Removed another enchantment relative to experience
+* Fixed fish journal not working in multiplayer
+  * I had to re-enable the fish journal on spawn
 
 ## 3.2.2
 * Added No Animal Tempt Delay

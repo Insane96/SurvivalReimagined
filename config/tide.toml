@@ -1,5 +1,5 @@
 [general]
-giveJournal = false
+giveJournal = true
 holdToCast = true
 showUnread = true
 showToasts = true
