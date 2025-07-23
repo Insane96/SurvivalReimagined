@@ -2,6 +2,7 @@
 
 ## Upcoming
 * Iron fishing rods are now unbreakable
+* Removed another enchantment relative to experience
 
 ## 3.2.2
 * Added No Animal Tempt Delay
