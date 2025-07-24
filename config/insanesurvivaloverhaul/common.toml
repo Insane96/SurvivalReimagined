@@ -882,7 +882,7 @@
 	"Enable Misc item" = true
 	#Replace stone tools with flint ones.
 	"Enable Flint expansion" = true
-	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected.
+	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected and items in the item tag `iguanatweaksreborn:unbreakable` are always unbreakable.
 	"Enable Unbreakable items" = true
 	#Basically backports copper equipment from latest MC versions.
 	"Enable Copper equipment" = true
@@ -940,7 +940,7 @@
 		#If true, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with flint ones
 		"Disable stone tools" = true
 
-	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected.
+	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected and items in the item tag `iguanatweaksreborn:unbreakable` are always unbreakable.
 	[Items."Unbreakable items"]
 		#Items with durability get a durability tooltip
 		"Durability tooltip" = true

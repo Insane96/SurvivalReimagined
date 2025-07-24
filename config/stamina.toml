@@ -31,6 +31,11 @@
 		"Reduction per armor point" = 0.025
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Per tick" = 2.0
+		#Multiplier for the regen per tick when player's in water
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Modifier when in water" = 1.0
+		#'Modified when in water' is applied only when the player is not on the ground
+		"Modifier when in water when off ground" = true
 
 	[Stamina.Lock]
 		#When max stamina goes below this percentage, stamina will be locked. With locked stamina, the player can't sprint
