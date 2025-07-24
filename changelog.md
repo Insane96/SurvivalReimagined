@@ -1,10 +1,9 @@
 # Changelog
 
-* Broken spawners give enchanted books
-* redstone torch recipe give 2
 * Mobs follow range seems to now work?
 
 ## Upcoming
+* Breaking spawners now awards another enchanted book, since experience is disabled
 * Rainy clouds now last slightly longer 
 
 ## 3.2.3
