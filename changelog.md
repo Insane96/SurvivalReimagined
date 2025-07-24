@@ -1,6 +1,13 @@
 # Changelog
 
+* Broken spawners give enchanted books
+* redstone torch recipe give 2
+* Mobs follow range seems to now work?
+
 ## Upcoming
+* Rainy clouds now last slightly longer 
+
+## 3.2.3
 * Iron fishing rods are now unbreakable
 * Removed another enchantment relative to experience
 * Fixed fish journal not working in multiplayer
