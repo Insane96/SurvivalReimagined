@@ -6,6 +6,11 @@
 * Fixed fish journal not working in multiplayer
   * I had to re-enable the fish journal on spawn
 
+### Changes from other mods
+* Increased chance for mobs to have gear, enchanted gear and level of enchantment in caves
+* Fixed mobs gear being always enchanted
+* Fixed flint and steel requiring soul steel to repair
+
 ## 3.2.2
 * Added No Animal Tempt Delay
   * Removes the delay when an animal can be tempted
