@@ -1477,7 +1477,7 @@
 		"Better healing potion" = true
 		#If enabled, tools will not take 2 damage when used to hurt entities
 		"One damage for tool attacking" = true
-		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the Sweeping Edge enchantment increases the range. This also replaces the vanilla sweeping edge enchantment with a new one that can be applied to hoes instead of swords.
+		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the range is increased. Sweeping edge enchantment has been disabled via the enchantments feature disable_enchantments.json
 		"Sweeping overhaul" = true
 		#Enables a data pack that reworks armor, weapons and tools.
 		"Combat rework data pack" = true
