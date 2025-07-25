@@ -3,8 +3,13 @@
 ## Upcoming
 * Breaking spawners now awards another enchanted book, since experience is disabled
 * Rainy clouds now last slightly longer
+* Lowered Telekinesis cost (4 -> 2)
 
 ## Changes from other mods
+* Redstone torches now require grass like items, like normal torches
+* Increased back Deepers damage
+* Removed Sweeping Edge enchantments
+  * Hoes have been buffed like they had Sweeping Edge II
 * Fixed fish journal not working in multiplayer
   * Disabled the fish journal on spawn
 * Fixed mobs follow range not applying correctly?
