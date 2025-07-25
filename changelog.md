@@ -1,10 +1,13 @@
 # Changelog
 
-* Mobs follow range seems to now work?
-
 ## Upcoming
 * Breaking spawners now awards another enchanted book, since experience is disabled
-* Rainy clouds now last slightly longer 
+* Rainy clouds now last slightly longer
+
+## Changes from other mods
+* Fixed fish journal not working in multiplayer
+  * Disabled the fish journal on spawn
+* Fixed mobs follow range not applying correctly?
 
 ## 3.2.3
 * Iron fishing rods are now unbreakable
