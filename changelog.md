@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.2.4
 * Breaking spawners now awards another enchanted book, since experience is disabled
 * Rainy clouds now last slightly longer
 * Lowered Telekinesis cost (4 -> 2)
