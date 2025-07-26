@@ -1,12 +1,35 @@
 # Changelog
 
-## Upcoming
+## 3.2.5
 * Added [Detour VANILLA PLUS EDITION Mansions](https://modrinth.com/datapack/detours-vanilla-plus-edition-mansions)
   * Re-enabled the mansion obviously
 * Wandering traders no longer sell maps to ocean monument
   * Get them from cartographers instead
 * Fixed morado blossom leaves not falling
 * Flowers no longer growth in seasons
+
+## Changes from other mods
+* Enhanced the display of enchanting levels when teaching enchantments
+  * Also show available levels when enchanting items in the enchanting table
+* Villagers & trades
+  * Villagers now take more xp to level up
+  * Rebalanced Armorer, Toolsmith, Weaponsmith and Cartographer trades
+    * Based off new villager rebalance experiment, except that you can trade for gear less often
+  * Clerics no longer buy turtle scutes and buy spider eyes instead of rotten flesh
+  * Leatherworkers now buy cloth
+  * Fletchers now sell shortbows
+* Sweeping overhaul 
+  * Removed mod's sweeping enchantment. Hoes sweeping reach has been increased without enchantments
+* Heavily reduced projectile protection mobs sight reduction (15% -> 5% per level)
+* Slowed down a lot plant growth speed
+  * Fixed tall grass growing replacing blocks above
+* Added back flat bonus durability and efficiency
+* Mobs now can rarely attack each-other again
+* Increased shulker bullets levitation duration and amplifier
+* Endermen can now switch target
+* Fixed Iron Golem's "fire tick faster" not working as intended
+* Fixed Ravager feature not working
+* Fixed atmospheric morado leaves not timbering
 
 ## 3.2.4
 * Breaking spawners now awards another enchanted book, since experience is disabled
