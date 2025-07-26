@@ -79,6 +79,10 @@
     "leaves": "#iguanatweaksreborn:laurel_leaves"
   },
   {
+    "log": "atmospheric:morado_log",
+    "leaves": "#iguanatweaksreborn:morado_leaves"
+  },
+  {
     "log": "environmental:pine_log",
     "leaves": "environmental:pine_leaves"
   },
