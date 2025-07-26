@@ -43,7 +43,7 @@
 		#How many minutes will day and night duration be shifted based off seasons? E.g. in Mid spring / autumn the duration of day and night is vanilla, when moving off those seasons day and night will last this many minutes more/less. In mid summer / winter the duration of day and night duration will be more / less by 3 times this value. Set to 0 to disable. Requires Time Control mod
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Time control day night shift" = 1.5
-		"Grow flowers from grass" = true
+		"Grow flowers from grass" = false
 		#Changes what leaves can drop in different seasons.
 		#Sapling no longer drop in winter
 		#Apples only drop in spring
