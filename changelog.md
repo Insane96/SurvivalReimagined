@@ -1,5 +1,13 @@
 # Changelog
 
+## Upcoming
+* Added [Detour VANILLA PLUS EDITION Mansions](https://modrinth.com/datapack/detours-vanilla-plus-edition-mansions)
+  * Re-enabled the mansion obviously
+* Wandering traders no longer sell maps to ocean monument
+  * Get them from cartographers instead
+* Fixed morado blossom leaves not falling
+* Flowers no longer growth in seasons
+
 ## 3.2.4
 * Breaking spawners now awards another enchanted book, since experience is disabled
 * Rainy clouds now last slightly longer

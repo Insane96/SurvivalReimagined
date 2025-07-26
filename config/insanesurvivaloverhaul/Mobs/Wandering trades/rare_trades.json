@@ -131,22 +131,6 @@
     "xp": 0
   },
   {
-    "item_a": {
-      "item": "minecraft:emerald",
-      "count": 8
-    },
-    "result": {
-      "item": "minecraft:map",
-      "nbt": "{display:{Name:\u0027{\"translate\":\"filled_map.monument\"}\u0027}}"
-    },
-    "exploration_map": {
-      "destination": "minecraft:on_ocean_explorer_maps",
-      "decoration": "monument",
-      "skip_existing_chunks": false
-    },
-    "xp": 0
-  },
-  {
     "item_a": "minecraft:emerald",
     "item_a_count": 8,
     "item_result": "minecraft:map",
@@ -189,6 +173,22 @@
       "zoom": 4
     },
     "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": {
+      "item": "minecraft:emerald",
+      "count": 8
+    },
+    "result": {
+      "item": "minecraft:map",
+      "nbt": "{display:{Name:\u0027{\"translate\":\"filled_map.swamp_hut\"}\u0027}}"
+    },
+    "exploration_map": {
+      "destination": "iguanatweaksreborn:swamp_hut",
+      "decoration": "target_point",
+      "skip_existing_chunks": false
+    },
     "xp": 0
   }
 ]
