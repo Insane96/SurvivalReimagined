@@ -1265,7 +1265,8 @@
 		#Enchantments deal bonus damage based off the item's attack damage. So Sharpness on a Sword adds less damage than Sharpness on an Axe.
 		#Sharpness deals +0.5 damage per level
 		#Smite deals +1 damage per level to undead and applies weakness
-		#Bane of Arthropods has been replaced with Bane of SSSSS that deals +1 damage per level to arthropods and creepers and applies slowness
+		#Bane of Arthropods has been replaced with Bane of Hissing that deals +1 damage per level to arthropods and creepers and applies slowness.
+		#Impaling is not replaced, but the bonus damage is lowered to 1 per level
 		"Replace damaging enchantments" = true
 		#If true, vanilla fire aspect and knockback are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		"Replace other enchantments" = true
@@ -1285,6 +1286,8 @@
 		"Prevent farmland trampling with feather falling" = true
 		#If true, Luck will only have one level, working like Fortune/Looting/LoTS II.
 		"Luck one level only" = true
+		#Loyalty is now one level only, equal to lvl II of the original enchantment.
+		"Loyalty mini rework" = true
 
 		[Experience.Enchantments."Unbreaking overhaul"]
 			#Changes Unbreaking max level and actually increases item's durability instead of giving a chance for the item to not consume durability.

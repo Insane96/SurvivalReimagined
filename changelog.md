@@ -9,6 +9,25 @@
 ### Changes from mods
 * Potatoes can now drop again poisonous potatoes
 * Villagers trading slots now always accept 64 items
+* Loyalty Mini-rework
+  * Loyalty is now one level only, equal to original lvl II
+* Impaling damage lowered (2.5 -> 1 per level)
+* Rebalanced novice farmer and fletcher trades
+* The regenerating absorption effect now increases regen speed
+* Lowered Fire Aspect seconds on fire (4 -> 3 per level) and the seconds on fire now scale with player attack cooldown
+* Heavily lowered Knockback strength (1 -> 0.4 per level) and now scales correctly with player attack cooldown
+* Decreased Shortbow charge time (0.9s -> 0.75s) and increased damage ratio (60% -> 75%)
+* Fixed Luck enchantment being harder to obtain compared to Silk Touch
+* Fixed Trident item's definition overwriting ISE enchantability
+* Lowered Cryo Aspect freeze duration
+* Air stealer
+  * Only one level now
+  * Steals 25 ticks
+  * Ticks stolen now scale with attack speed and no longer with weapon % attack damage
+* Slightly increased Trident enchantability (7 -> 8)
+* Lowered shortbow enchantability
+* Fixed Player attack cooldown not calculated correctly in hammer knockback
+* Fixed not being able to use Swift Sneak and Soul Speed in the enchanting table
 
 ## 3.2.5
 * Added [Detour VANILLA PLUS EDITION Mansions](https://modrinth.com/datapack/detours-vanilla-plus-edition-mansions)
