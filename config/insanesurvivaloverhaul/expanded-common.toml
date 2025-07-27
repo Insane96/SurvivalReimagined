@@ -125,7 +125,7 @@
 
 [Combat]
 	"Enable Fletching table" = true
-	"Enable Shields+" = true
+	"Enable Shields+" = false
 
 	[Combat."Fletching table"]
 		#Enables the following changes:
