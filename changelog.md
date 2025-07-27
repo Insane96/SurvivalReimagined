@@ -1,16 +1,21 @@
 # Changelog
 
+## 3.2.6
+### Changes from mods
+* Potatoes can now drop again poisonous potatoes
+* Villagers trading slots now always accept 64 items
+
 ## 3.2.5
 * Added [Detour VANILLA PLUS EDITION Mansions](https://modrinth.com/datapack/detours-vanilla-plus-edition-mansions)
   * Re-enabled the mansion obviously
 * Wandering traders no longer sell maps to ocean monument
   * Get them from cartographers instead
 * Fixed morado blossom leaves not falling
-* Flowers no longer growth in seasons
+* Flowers no longer grow in seasons
+* When enchanting table is enchanting an item now shows how many levels are available
+* Applying books to enchanting tables now shows arabic numbers instead of roman when enchantment is consumed on enchant
 
-## Changes from other mods
-* Enhanced the display of enchanting levels when teaching enchantments
-  * Also show available levels when enchanting items in the enchanting table
+## Changes from mods
 * Villagers & trades
   * Villagers now take more xp to level up
   * Rebalanced Armorer, Toolsmith, Weaponsmith and Cartographer trades
@@ -36,7 +41,7 @@
 * Rainy clouds now last slightly longer
 * Lowered Telekinesis cost (4 -> 2)
 
-## Changes from other mods
+## Changes from mods
 * Redstone torches now require grass like items, like normal torches
 * Increased back Deepers damage
 * Removed Sweeping Edge enchantments
@@ -51,7 +56,7 @@
 * Fixed fish journal not working in multiplayer
   * I had to re-enable the fish journal on spawn
 
-### Changes from other mods
+### Changes from mods
 * Increased chance for mobs to have gear, enchanted gear and level of enchantment in caves
 * Fixed mobs gear being always enchanted
 * Fixed flint and steel requiring soul steel to repair
@@ -68,7 +73,7 @@
 * Fixed cakes not healing
   * Disabled amendments directional cakes
 
-### Changes from other mods
+### Changes from mods
 * You can now look at some blocks and get hud infos like when holding certain items like clock
   * Supplementaries' Clock Block
 * Fixed mobs not breaking modded boats
@@ -91,7 +96,7 @@
 * Added Skeleton and Spider Dungeons to Wandering Traders
 * Fixed artist's trades being too good
 
-### Changes from other mods
+### Changes from mods
 * Enhanced enchanting table screen levels show up
 * Updated Wandering Trades
   * Added new trades
@@ -104,7 +109,7 @@
 * Added Joy of Painting
   * Create a canvas, a palette and start painting!
 
-### Changes from other mods
+### Changes from mods
 * Apples now only drop from leaves in Spring
 * Plums only drop in summer
 * Foxhounds now have a really high life span
@@ -123,7 +128,7 @@
 * You can no longer merge enchanted books
   * It's a waste
 
-### Changes from other mods
+### Changes from mods
 * Added Repair Kits
   * Repair items in the crafting grid, at the cost of more items
 * Shields cooldown now scales with the amount of time blocked
