@@ -1,6 +1,8 @@
 # Changelog
 
 ## 3.2.6
+* Increased Telekinesis cost (2 -> 3)
+
 ### Changes from mods
 * Potatoes can now drop again poisonous potatoes
 * Villagers trading slots now always accept 64 items
