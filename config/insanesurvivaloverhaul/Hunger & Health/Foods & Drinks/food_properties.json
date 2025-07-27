@@ -102,5 +102,9 @@
   {
     "food": "environmental:plum",
     "nutrition": 3
+  },
+  {
+    "food": "atmospheric:orange",
+    "nutrition": 3
   }
 ]
