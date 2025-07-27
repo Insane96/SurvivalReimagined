@@ -1,7 +1,8 @@
 # Changelog
 
 ## Upcoming
-* Lowered oranges heal
+* Lowered oranges and foods made from them healing
+* Lowered the amount of oranges that generate on trees
 
 ## 3.2.6
 * Increased Telekinesis cost (2 -> 3)
