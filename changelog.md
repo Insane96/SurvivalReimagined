@@ -2,6 +2,7 @@
 
 ## 3.2.6
 * Increased Telekinesis cost (2 -> 3)
+* Lowered cost of the following enchantments: Luck, Reeling, Expanded, Veining, Silk Touch, Fire Aspect, Cryo Aspect, Explosive, Knockback, Launch, Part Breaker, Protection, Alleviating, Flat Protection, Absorption, Air Born, Invulnerability, Swift Sneak, Magnetic, Charged Jump, Soul Speed, Depth Strider, Double Jump, Steady Fall, Celestial Guardian, Perfect Parry, Dodge, Hunter and Vigour
 * Fixed shields having wrong enchantability
 * Disabled even more experience related enchantments
 

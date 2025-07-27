@@ -21,7 +21,7 @@
   },
   {
     "id": "iguanatweaksreborn:luck",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksexpanded:smartness",
@@ -82,7 +82,7 @@
   },
   {
     "id": "allurement:reeling",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "allurement:spread_of_ailments",
@@ -94,7 +94,7 @@
   },
   {
     "id": "minecraft:loyalty",
-    "cost_per_level": 2
+    "cost_per_level": 3
   },
   {
     "id": "minecraft:channeling",
@@ -122,15 +122,15 @@
   },
   {
     "id": "iguanatweaksexpanded:expanded",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "iguanatweaksexpanded:veining",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "minecraft:silk_touch",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksexpanded:exchange",
@@ -174,19 +174,19 @@
   },
   {
     "id": "iguanatweaksreborn:fire_aspect",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "iguanatweaksexpanded:cryo_aspect",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "iguanatweaksexpanded:explosive",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "iguanatweaksreborn:knockback",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "iguanatweaksexpanded:padding",
@@ -194,7 +194,7 @@
   },
   {
     "id": "allurement:launch",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "iguanatweaksreborn:sweeping_edge",
@@ -202,7 +202,7 @@
   },
   {
     "id": "iguanatweaksexpanded:part_breaker",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksexpanded:air_stealer",
@@ -210,7 +210,7 @@
   },
   {
     "id": "iguanatweaksreborn:protection",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksreborn:blast_protection",
@@ -238,15 +238,15 @@
   },
   {
     "id": "allurement:alleviating",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksexpanded:flat_protection",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksexpanded:absorption",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "minecraft:aqua_affinity",
@@ -266,7 +266,7 @@
   },
   {
     "id": "iguanatweaksexpanded:air_born",
-    "cost_per_level": 3
+    "cost_per_level": 2
   },
   {
     "id": "iguanatweaksexpanded:recovery",
@@ -278,7 +278,7 @@
   },
   {
     "id": "iguanatweaksexpanded:invulnerability",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksexpanded:fire_guardian",
@@ -286,11 +286,11 @@
   },
   {
     "id": "minecraft:swift_sneak",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "iguanatweaksexpanded:magnetic",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "iguanatweaksexpanded:retreat",
@@ -310,7 +310,7 @@
   },
   {
     "id": "iguanatweaksexpanded:charged_jump",
-    "cost_per_level": 3
+    "cost_per_level": 2
   },
   {
     "id": "iguanatweaksreborn:feather_falling",
@@ -318,11 +318,11 @@
   },
   {
     "id": "minecraft:soul_speed",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "minecraft:depth_strider",
-    "cost_per_level": 2
+    "cost_per_level": 1
   },
   {
     "id": "minecraft:frost_walker",
@@ -334,7 +334,7 @@
   },
   {
     "id": "iguanatweaksexpanded:double_jump",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "iguanatweaksexpanded:hoppy",
@@ -342,7 +342,7 @@
   },
   {
     "id": "iguanatweaksexpanded:steady_fall",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "passablefoliage:leaf_walker",
@@ -358,7 +358,7 @@
   },
   {
     "id": "shieldsplus:celestial_guardian",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "shieldsplus:fast_recovery",
@@ -370,7 +370,7 @@
   },
   {
     "id": "shieldsplus:perfect_parry",
-    "cost_per_level": 4
+    "cost_per_level": 3
   },
   {
     "id": "shieldsplus:recoil",
@@ -491,5 +491,17 @@
   {
     "id": "majruszsenchantments:telekinesis",
     "cost_per_level": 3
+  },
+  {
+    "id": "majruszsenchantments:dodge",
+    "cost_per_level": 2
+  },
+  {
+    "id": "majruszsenchantments:hunter",
+    "cost_per_level": 2
+  },
+  {
+    "id": "stamina:vigour",
+    "cost_per_level": 2
   }
 ]
