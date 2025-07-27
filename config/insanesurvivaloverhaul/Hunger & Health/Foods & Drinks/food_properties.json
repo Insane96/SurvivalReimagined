@@ -106,5 +106,13 @@
   {
     "food": "atmospheric:orange",
     "nutrition": 3
+  },
+  {
+    "food": "atmospheric:candied_orange_slices",
+    "nutrition": 4
+  },
+  {
+    "food": "atmospheric:orange_sorbet",
+    "nutrition": 10
   }
 ]
