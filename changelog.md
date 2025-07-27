@@ -2,6 +2,8 @@
 
 ## 3.2.6
 * Increased Telekinesis cost (2 -> 3)
+* Fixed shields having wrong enchantability
+* Disabled even more experience related enchantments
 
 ### Changes from mods
 * Potatoes can now drop again poisonous potatoes
