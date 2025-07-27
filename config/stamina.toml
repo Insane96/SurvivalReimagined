@@ -78,9 +78,9 @@
 		#Range: > 0
 		"Per half heart" = 10
 		#Range: > 0
-		"Bonus per level of vigour enchantment" = 40
+		"Bonus per level of vigour enchantment" = 60
 		#Range: > 0
-		"Bonus per level of vigour effect" = 40
+		"Bonus per level of vigour effect" = 60
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Percentage reduction per armor point" = 0.025
 		#If enabled, max stamina will always be bound to max health and no longer with current health
