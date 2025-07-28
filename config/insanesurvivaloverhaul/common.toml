@@ -1196,7 +1196,7 @@
 	[Experience.Anvils]
 		#Chance for an anvil to become chipped/damaged/break. Vanilla is 12%
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Degradation chance" = 0.01
+		"Degradation chance" = 0.03
 		#If true you can merge items in the anvil and get a repair bonus
 		"Allow merging items" = true
 		#Vanilla is 12%
@@ -1241,10 +1241,10 @@
 		[Experience.Anvils."Material cost"]
 			#Repairing items in an anvil costs more materials if the item is enchanted. This is the percentage increase for each level of enchantment on the item
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			"Increase materials required with enchantments" = 0.05
+			"Increase materials required with enchantments" = 0
 			#Repairing items in an anvil costs more materials if the item is enchanted. This is the flat increase for each level of enchantment on the item
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			"Increase materials required with enchantments flat" = 0.5
+			"Increase materials required with enchantments flat" = 0
 
 		[Experience.Anvils."Merge repair"]
 			#Merging items in an anvil will reduce the repair amount if the left is enchanted. This is the multiplicative percentage decrease for each level of enchantment on the item. This is applied to the right item durability before the bonus repair.

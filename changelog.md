@@ -4,6 +4,7 @@
 * Lowered oranges and foods made from them healing
 * Lowered the amount of oranges that generate on trees
 * Increased Stamina per level of enchantment / effect (40 -> 60)
+* Repairing enchanted items in an anvil no longer costs more materials 
 
 ## 3.2.6
 * Increased Telekinesis cost (2 -> 3)
