@@ -12,6 +12,7 @@
 * Lowered silver tools enchantability (13 -> 12)
 * Fixed Golden shield repairable with silver
 * Sprint Pact and Curse of Walking no longer prevent players from swimming
+* Fixed pumpkins still dropping seeds when sheared and reduced pulp from them
 * Fixed Golden shield giving silver nuggets when recycled
 * Fixed Missing soul recycle recipes for caverns and chasms
 
