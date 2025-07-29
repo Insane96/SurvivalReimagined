@@ -6,6 +6,15 @@
 * Increased Stamina per level of enchantment / effect (40 -> 60)
 * Repairing enchanted items in an anvil no longer costs more materials 
 
+### Changes from mods
+* Increased Sprint Pact movement speed (x1.15 -> x1.2)
+* Increased Adrenaline bonus mining speed and attack speed (exponential -> linear) but lowered bonus mining speed (2.5x -> 2x Efficiency enchantment bonus mining speed)
+* Lowered silver tools enchantability (13 -> 12)
+* Fixed Golden shield repairable with silver
+* Sprint Pact and Curse of Walking no longer prevent players from swimming
+* Fixed Golden shield giving silver nuggets when recycled
+* Fixed Missing soul recycle recipes for caverns and chasms
+
 ## 3.2.6
 * Increased Telekinesis cost (2 -> 3)
 * Lowered cost of the following enchantments: Luck, Reeling, Expanded, Veining, Silk Touch, Fire Aspect, Cryo Aspect, Explosive, Knockback, Launch, Part Breaker, Protection, Alleviating, Flat Protection, Absorption, Air Born, Invulnerability, Swift Sneak, Magnetic, Charged Jump, Soul Speed, Depth Strider, Double Jump, Steady Fall, Celestial Guardian, Perfect Parry, Dodge, Hunter and Vigour
