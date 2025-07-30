@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.2.7
 * Lowered oranges and foods made from them healing
 * Lowered the amount of oranges that generate on trees
 * Increased Stamina per level of enchantment / effect (40 -> 60)
