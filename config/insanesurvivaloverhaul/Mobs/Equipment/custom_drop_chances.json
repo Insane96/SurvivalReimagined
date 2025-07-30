@@ -38,5 +38,35 @@
   {
     "entity": "progressivebosses:wither_minion",
     "slot": "mainhand"
+  },
+  {
+    "entity": "caverns_and_chasms:mime",
+    "slot": "mainhand",
+    "chance": 0.1
+  },
+  {
+    "entity": "caverns_and_chasms:mime",
+    "slot": "offhand",
+    "chance": 0.1
+  },
+  {
+    "entity": "caverns_and_chasms:mime",
+    "slot": "head",
+    "chance": 0.1
+  },
+  {
+    "entity": "caverns_and_chasms:mime",
+    "slot": "chest",
+    "chance": 0.1
+  },
+  {
+    "entity": "caverns_and_chasms:mime",
+    "slot": "legs",
+    "chance": 0.1
+  },
+  {
+    "entity": "caverns_and_chasms:mime",
+    "slot": "feet",
+    "chance": 0.1
   }
 ]

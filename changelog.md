@@ -1,6 +1,10 @@
 # Changelog
 
+* Tameable animals shouldn't be able to breed (cats for example)
+* Remove cats from flee AI
+
 ## Upcoming
+* Heavily lowered chance for mimes to drop their equipment
 * Fixed crates not being fishable
 
 ## 3.2.7
