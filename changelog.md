@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Fixed crates not being fishable
+
 ## 3.2.7
 * Lowered oranges and foods made from them healing
 * Lowered the amount of oranges that generate on trees
