@@ -2,9 +2,10 @@
 
 * Increase quiver chance
 
-## Upcoming
+## 3.2.8
 * Heavily lowered chance for mimes to drop their equipment
 * Fixed crates not being fishable
+* Rolled back Villager Comfort
 
 ### Changes from mods
 * Villagers no longer use target changes
