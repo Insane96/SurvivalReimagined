@@ -1111,10 +1111,10 @@
 			Enable = true
 			#How many extra random ticks does Rich Farmland give to the crop sitting on top?
 			#Range: > 1
-			"Extra ticks" = 3
+			"Extra ticks" = 4
 			#Chance for a Rich farmland to decay back to farmland
 			#Range: 0.0 ~ 1.0
-			"Chance to decay" = 0.4
+			"Chance to decay" = 0.35
 
 	#Hoes can now scythe grass and flowers. Also makes them break faster when tilling farmland
 	[Farming.Hoes]

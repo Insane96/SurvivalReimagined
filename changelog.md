@@ -2,6 +2,15 @@
 
 * Increase quiver chance
 
+## Upcoming
+
+### Changes from mods
+* Prevent villagers from trampling crops and allows them to pick up and plant the mod's seeds and rooted items
+* Beetroots, Carrots and Potatoes now take 2x time to grow but yield between 1 and 3 produce (so basically 2x)
+  * Changed the looting formula (10/25/42/65% chance for another item -> -1\~1 bonus items per level of Fortune (avg 0.33), -3~1 for wheat (avg 0.2))
+  * Growing crops with bone meal now requires ~4 per stage
+  * Increased default rich farmland extra ticks (3 -> 4) and reduced chance to decay (40% -> 30%)
+
 ## 3.2.8
 * Heavily lowered chance for mimes to drop their equipment
 * Fixed crates not being fishable
