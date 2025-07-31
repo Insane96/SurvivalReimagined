@@ -1,7 +1,6 @@
 # Changelog
 
-* Tameable animals shouldn't be able to breed (cats for example)
-* Remove cats from flee AI
+* Increase quiver chance
 
 ## Upcoming
 * Heavily lowered chance for mimes to drop their equipment
