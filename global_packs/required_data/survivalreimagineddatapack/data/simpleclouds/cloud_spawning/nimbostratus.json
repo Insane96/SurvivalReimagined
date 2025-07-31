@@ -3,14 +3,14 @@
     "exist_ticks": {
         "type": "minecraft:uniform",
         "value": {
-            "max_inclusive": 48000,
+            "max_inclusive": 72000,
             "min_inclusive": 24000
         }
     },
     "grow_ticks": {
         "type": "minecraft:uniform",
         "value": {
-            "max_inclusive": 6000,
+            "max_inclusive": 8000,
             "min_inclusive": 3000
         }
     },
@@ -19,7 +19,7 @@
     "radius": {
         "type": "minecraft:uniform",
         "value": {
-            "max_inclusive": 6000,
+            "max_inclusive": 8000,
             "min_inclusive": 3000
         }
     },
