@@ -6,6 +6,13 @@
 * Heavily lowered chance for mimes to drop their equipment
 * Fixed crates not being fishable
 
+### Changes from mods
+* Villagers no longer use target changes
+* Cats no longer use animal changes
+  * You weren't able to tame them due to always fleeing
+* Fixed can't tame animals such as cats and horses due to feed only once
+* Fixed enchantments not being consumed on enchanting
+
 ## 3.2.7
 * Lowered oranges and foods made from them healing
 * Lowered the amount of oranges that generate on trees
