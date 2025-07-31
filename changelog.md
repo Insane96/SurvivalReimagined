@@ -4,6 +4,7 @@
 
 ## Upcoming
 * Increased thunderstorm clouds a bit
+* Halved Power enchantment's power
 
 ### Changes from mods
 * Prevent villagers from trampling crops and allows them to pick up and plant the mod's seeds and rooted items

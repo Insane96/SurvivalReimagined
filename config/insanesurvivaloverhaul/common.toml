@@ -1282,7 +1282,7 @@
 		"Nerf respiration" = true
 		#Set arrow's damage increase with the Power enchantment (vanilla is 0.5). If set to a value != 0.5 the flat 0.5 bonus is also removed. Set to 0.5 to disable.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Power enchantment damage" = 0.2
+		"Power enchantment damage" = 0.1
 		"Prevent farmland trampling with feather falling" = true
 		#If true, Luck will only have one level, working like Fortune/Looting/LoTS II.
 		"Luck one level only" = true
