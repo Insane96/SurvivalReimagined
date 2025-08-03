@@ -942,6 +942,8 @@
 	[Items."Flint expansion"]
 		#If true, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with flint ones
 		"Disable stone tools" = true
+		#If you want to just disable stone tools
+		"Dont enable flint tools" = false
 
 	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected and items in the item tag `iguanatweaksreborn:unbreakable` are always unbreakable.
 	[Items."Unbreakable items"]
@@ -1143,6 +1145,8 @@
 		#* Removes wheat seeds from tall grass
 		#* Makes wild crops generate in the world
 		"Data pack" = true
+		#If true, villagers will be able to pick up and (farmers) plant mod's seeds and rooted items. Also prevents villagers from trampling farmland
+		"Fix villagers" = true
 
 	#Slower breeding, Growing, Egging and Milking. Lower yield.
 	[Farming.Livestock]
@@ -1288,6 +1292,9 @@
 		"Luck one level only" = true
 		#Loyalty is now one level only, equal to lvl II of the original enchantment.
 		"Loyalty mini rework" = true
+		#Vanilla is 0.6
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Punch strength" = 0.5
 
 		[Experience.Enchantments."Unbreaking overhaul"]
 			#Changes Unbreaking max level and actually increases item's durability instead of giving a chance for the item to not consume durability.

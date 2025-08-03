@@ -2,7 +2,7 @@
 
 * Increase quiver chance
 
-## Upcoming
+## 3.2.9
 * Increased rain clouds a bit
 * Halved Power enchantment's power
 * Updated back Villagers Comfort
@@ -14,6 +14,8 @@
   * Changed the looting formula (10/25/42/65% chance for another item -> -1\~1 bonus items per level of Fortune (avg 0.33), -3~1 for wheat (avg 0.2))
   * Growing crops with bone meal now requires ~4 per stage
   * Increased default rich farmland extra ticks (3 -> 4) and reduced chance to decay (40% -> 30%)
+* Slightly lowered the strength of punch
+* Slightly increased mining speed with Veining and Expanded
 
 ## 3.2.8
 * Heavily lowered chance for mimes to drop their equipment
