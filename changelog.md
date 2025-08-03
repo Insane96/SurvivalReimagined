@@ -3,8 +3,10 @@
 * Increase quiver chance
 
 ## Upcoming
-* Increased thunderstorm clouds a bit
+* Increased rain clouds a bit
 * Halved Power enchantment's power
+* Updated back Villagers Comfort
+  * The crash has been fixed!
 
 ### Changes from mods
 * Prevent villagers from trampling crops and allows them to pick up and plant the mod's seeds and rooted items
