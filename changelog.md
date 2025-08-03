@@ -2,6 +2,9 @@
 
 * Increase quiver chance
 
+## Upcoming
+* Fixed fishing being broken
+
 ## 3.2.9
 * Increased rain clouds a bit
 * Halved Power enchantment's power

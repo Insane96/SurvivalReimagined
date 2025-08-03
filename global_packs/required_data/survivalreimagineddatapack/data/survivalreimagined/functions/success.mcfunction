@@ -19,5 +19,5 @@ setblock ~ ~ ~ minecraft:torch
 # Gamerules
 gamerule spawnRadius 0
 gamerule iguanatweaks:doLooseRespawn false
-gamerule iguanatweaks:painful_world_border 2
+gamerule iguanatweaks:painfulWorldBorder 2
 gamerule iguanatweaks:deathGrave false

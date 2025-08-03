@@ -49,51 +49,46 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "weight": 15,
-                    "name": "minecraft:gameplay/fishing/fish"
-                },
-                {
-                    "type": "minecraft:loot_table",
                     "weight": 6,
                     "quality": 1,
-                    "name": "tide:gameplay/fishing/crates/block"
-                }
-            ],
-            "conditions": [
-                {
-                    "condition": "minecraft:all_of",
-                    "terms": [
+                    "name": "tide:gameplay/fishing/crates/block",
+                    "conditions": [
                         {
-                            "condition": "minecraft:any_of",
+                            "condition": "minecraft:all_of",
                             "terms": [
                                 {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "type_specific": {
-                                            "type": "minecraft:fishing_hook",
-                                            "in_open_water": true
+                                    "condition": "minecraft:any_of",
+                                    "terms": [
+                                        {
+                                            "condition": "minecraft:entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "type_specific": {
+                                                    "type": "fishing_hook",
+                                                    "in_open_water": true
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "condition": "minecraft:entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "type_specific": {
+                                                    "type": "tide_fishing_hook",
+                                                    "is_lava_fishing": true
+                                                }
+                                            }
                                         }
-                                    }
+                                    ]
                                 },
                                 {
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "type_specific": {
-                                            "type": "tide:tide_fishing_hook",
-                                            "is_lava_fishing": true
-                                        }
+                                        "type": "tide:fishing_bobber"
                                     }
                                 }
                             ]
-                        },
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "type": "tide:fishing_bobber"
-                            }
                         }
                     ]
                 }
