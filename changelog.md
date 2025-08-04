@@ -1,6 +1,17 @@
 # Changelog
 
 * Increase quiver chance
+* Archelologist sells illegal items
+* Quaron like enchantment
+* more enchantments for shears
+* reinforced blocks too hard
+* animals never stop thinking about targ
+* slowdown grass growth instead of removing
+* Slightly increase repair cost?
+* slow down berries?
+
+## Upcoming
+* Fixed again fishing loot table
 
 ## 3.2.10
 * Added Better End Cities

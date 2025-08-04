@@ -74,7 +74,7 @@
                                             "entity": "this",
                                             "predicate": {
                                                 "type_specific": {
-                                                    "type": "tide_fishing_hook",
+                                                    "type": "tide_fishing",
                                                     "is_lava_fishing": true
                                                 }
                                             }
