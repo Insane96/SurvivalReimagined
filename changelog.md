@@ -6,7 +6,21 @@
 * Added Better End Cities
 * Added Fresh Waystone Textures resource pack
 * Fixed fishing being broken
-* Fixed rare trades
+* Fixed wandering trader rare trades
+
+### Changes from mods
+* Grass no longer spreads in Autumn and Winter
+* Flint tools are now removed, use copper tools
+* Raw copper is now smelted to nuggets only taking 25 seconds
+* Rebalanced materials (since flint tools are gone)
+  * Increased copper tools durability, efficiency, enchantability, attack damage, % attack damage. Removed % attack speed
+  * Wooden tools have 10% attack speed now
+* Enhanced fishing slowdown with seasons
+* Lowered base breed fail chance
+* Slowed down aloe vera growth speed
+* Upgrade aquatic mulberries can no longer be planted
+* Copper ore can now be mined with wooden pickaxes
+* Fixed Swamp hut map not working
 
 ## 3.2.9
 * Increased rain clouds a bit

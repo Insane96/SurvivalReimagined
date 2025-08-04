@@ -49,6 +49,7 @@
 		#Apples only drop in spring
 		"Leaves drops" = true
 		"Grow double tall grass" = true
+		"Prevent grass spreading in autumn and winter" = true
 
 	[World.Berries]
 		#Berry bushes no longer deal damage when walking in them with leggings and boots
@@ -244,6 +245,8 @@
 		"Don't apply to non-entities" = true
 		#If enabled and Caverns and Chasms is present, Deepers explosions will pierce through blocks more (like Breaching creepers and Angry Creepers in Enhanced AI), knockback and damage are reduced by 40%.
 		"Caverns chasms deepers" = true
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Knockback multiplier" = 1.0
 
 ["Sleep & Respawn"]
 	#Changes to sleeping and spawn points
@@ -1185,6 +1188,8 @@
 		"Cave vines underground" = 3.0
 		#If true, a data pack is enabled that changes the growth of plants based off various factors, such as sunlight and biome
 		"Data pack" = true
+		#Prevent planting upgrade aquatic mulberries
+		"Prevent planting upgrade aquatic mulberries" = true
 
 [Experience]
 	#Better repair, free rename and merge. With this feature enabled, EMI's repairs and enchanting in anvil recipes are removed.
