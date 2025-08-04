@@ -131,48 +131,54 @@
     "xp": 0
   },
   {
-    "item_a": "minecraft:emerald",
-    "item_a_count": 8,
-    "item_result": "minecraft:map",
-    "item_result_count": 1,
-    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.temple_jungle\"}\u0027}}",
+    "item_a": {
+      "item": "minecraft:emerald",
+      "count": 8
+    },
+    "result": {
+      "item": "minecraft:map",
+      "nbt": "{display:{Name:\u0027{\"translate\":\"filled_map.temple_jungle\"}\u0027}}"
+    },
     "exploration_map": {
       "destination": "survivalreimagined:on_temple_jungle_explorer_map",
       "decoration": "mansion",
       "skip_existing_chunks": false,
       "zoom": 4
     },
-    "max_uses": 1,
     "xp": 0
   },
   {
-    "item_a": "minecraft:emerald",
-    "item_a_count": 8,
-    "item_result": "minecraft:map",
-    "item_result_count": 1,
-    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.zombie_dungeon\"}\u0027}}",
+    "item_a": {
+      "item": "minecraft:emerald",
+      "count": 8
+    },
+    "result": {
+      "item": "minecraft:map",
+      "nbt": "{display:{Name:\u0027{\"translate\":\"filled_map.zombie_dungeon\"}\u0027}}"
+    },
     "exploration_map": {
       "destination": "survivalreimagined:on_zombie_dungeon_explorer_map",
       "decoration": "target_point",
       "skip_existing_chunks": false,
       "zoom": 4
     },
-    "max_uses": 1,
     "xp": 0
   },
   {
-    "item_a": "minecraft:emerald",
-    "item_a_count": 8,
-    "item_result": "minecraft:map",
-    "item_result_count": 1,
-    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.spider_dungeon\"}\u0027}}",
+    "item_a": {
+      "item": "minecraft:emerald",
+      "count": 8
+    },
+    "result": {
+      "item": "minecraft:map",
+      "nbt": "{display:{Name:\u0027{\"translate\":\"filled_map.spider_dungeon\"}\u0027}}"
+    },
     "exploration_map": {
       "destination": "survivalreimagined:on_spider_dungeon_explorer_map",
       "decoration": "target_point",
       "skip_existing_chunks": false,
       "zoom": 4
     },
-    "max_uses": 1,
     "xp": 0
   },
   {

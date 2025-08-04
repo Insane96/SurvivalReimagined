@@ -4,6 +4,7 @@
 
 ## Upcoming
 * Fixed fishing being broken
+* Fixed rare trades
 
 ## 3.2.9
 * Increased rain clouds a bit
