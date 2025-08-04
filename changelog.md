@@ -2,7 +2,7 @@
 
 * Increase quiver chance
 
-## Upcoming
+## 3.2.10
 * Added Better End Cities
 * Added Fresh Waystone Textures resource pack
 * Fixed fishing being broken
