@@ -3,6 +3,8 @@
 * Increase quiver chance
 
 ## Upcoming
+* Added Better End Cities
+* Added Fresh Waystone Textures resource pack
 * Fixed fishing being broken
 * Fixed rare trades
 
