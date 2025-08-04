@@ -5,7 +5,7 @@ autoSuggestions:true
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
-enableVsync:false
+enableVsync:true
 entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
@@ -31,7 +31,7 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:1.0
-renderDistance:16
+renderDistance:24
 simulationDistance:12
 entityDistanceScaling:5.0
 guiScale:4
@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","file/VanillaTweaks.zip","file/VanillaTweaks_CleanerBorder.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","fabric"]
+resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","file/VanillaTweaks.zip","file/VanillaTweaks_CleanerBorder.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","fabric","scholar:chiseled_bookshelf_colored_books_abnww_compat","scholar:colored_books","scholar:chiseled_bookshelf_colored_books","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/Fancy_Beds-v4.0.zip"]
 incompatibleResourcePacks:["file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip"]
 lastServer:eitikitikitircraft.mcserver.us
 lang:en_us

@@ -943,7 +943,7 @@
 		#If true, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with flint ones
 		"Disable stone tools" = true
 		#If you want to just disable stone tools
-		"Dont enable flint tools" = false
+		"Dont enable flint tools" = true
 
 	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected and items in the item tag `iguanatweaksreborn:unbreakable` are always unbreakable.
 	[Items."Unbreakable items"]
