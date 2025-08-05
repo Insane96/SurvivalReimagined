@@ -3,15 +3,14 @@
 * Increase quiver chance
 * Quaron like enchantment
 * more enchantments for shears
-* reinforced blocks too hard
 * animals never stop thinking about targ
 * slowdown grass growth instead of removing
-* Slightly increase repair cost?
 
 ## Upcoming
 * Repairing enchanted items now costs again more, but just a bit
 * Tried fixing Archeologist trades, sadly the mod adds trades too late
 * Fixed again fishing loot table
+* Reinforced blocks no longer take ages to mine
 
 ## 3.2.10
 * Added Better End Cities
