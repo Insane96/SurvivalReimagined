@@ -1,4 +1,4 @@
-{
+ {
   "fluid_permeability_enabled": true,
   "fluidloggable_blocks": {
     "blacklist": false,
@@ -127,8 +127,9 @@
       "#quark:ladders",
       "#quark:posts",
       "#quark:iron_rod",
-      "#quark:hollow_logs"
-
+      "#quark:hollow_logs",
+        "supplementaries:bamboo_spikes",
+        "supplementaries:bamboo_spikes_tipped"
     ]
   },
   "shape_independent_fluid_permeable_blocks": {
