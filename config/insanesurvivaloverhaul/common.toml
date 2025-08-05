@@ -1250,7 +1250,7 @@
 		[Experience.Anvils."Material cost"]
 			#Repairing items in an anvil costs more materials if the item is enchanted. This is the percentage increase for each level of enchantment on the item
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-			"Increase materials required with enchantments" = 0
+			"Increase materials required with enchantments" = 0.02
 			#Repairing items in an anvil costs more materials if the item is enchanted. This is the flat increase for each level of enchantment on the item
 			#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			"Increase materials required with enchantments flat" = 0
