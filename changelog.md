@@ -11,6 +11,9 @@
 * Reinforced blocks no longer take ages to mine
 * Supplementaries spikes no longer block flowing fluids
 
+### Changes from mods
+* You can now throw fire charges and craft dragon acid balls and throw them
+
 ## 3.2.10
 * Added Better End Cities
 * Added Fresh Waystone Textures resource pack
