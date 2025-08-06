@@ -49,7 +49,7 @@
 		#Apples only drop in spring
 		"Leaves drops" = true
 		"Grow double tall grass" = true
-		"Prevent grass spreading in autumn and winter" = true
+		"Slowdown grass spreading" = true
 
 	[World.Berries]
 		#Berry bushes no longer deal damage when walking in them with leggings and boots
@@ -247,6 +247,8 @@
 		"Caverns chasms deepers" = true
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Knockback multiplier" = 1.0
+		#If true, potion effects from the exploder will be applied to the damaged entities
+		"Apply effect from exploder" = true
 
 ["Sleep & Respawn"]
 	#Changes to sleeping and spawn points
@@ -305,6 +307,7 @@
 		"Tired tied phantoms" = true
 		#If true, Simple Clouds' clouds will speed up when player skips time by sleeping.
 		"Simple clouds integration" = true
+		"Allow sleeping even when not tired" = false
 
 		["Sleep & Respawn".Tiredness."Fake sound"]
 			#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
@@ -699,6 +702,8 @@
 		"Force reload world data packs" = false
 		#Integrates the mod with Tide. Lowers chance for fishes to drop fish.
 		Tide = true
+		#If true, the nourishment effect from Farmers' Delight is replaced with Speed or Vigour if Stamina mod is present
+		"Replace f d nourishment effect" = false
 
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	[Miscellaneous."Beacon & Conduit"]

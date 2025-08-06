@@ -11,9 +11,16 @@
 * Reinforced blocks no longer take ages to mine
 * Supplementaries spikes no longer block flowing fluids
 * Lowered again rain clouds chance and duration
+* Removed yung's better end island. Not compatible with Endergetic expansion
 
 ### Changes from mods
 * You can now throw fire charges and craft dragon acid balls and throw them
+* Explosions now transfer mob effects to hit entities
+* Autumn and Winter no longer prevent grass from spreading; instead, there's a chance for grass to fail to spread
+* Updated biometer texture, recipe and name, it's now a Sextant. Thanks to [Zeykehasnt](https://github.com/Zeykehasnt) ([#377](https://github.com/Insane96/IguanaTweaksReborn/issues/377))
+* Increased back breed fail chance
+* Added config option to replace Farmer's Delight nourishment effect
+* Rebalanced butcher and farmer trades
 
 ## 3.2.10
 * Added Better End Cities
