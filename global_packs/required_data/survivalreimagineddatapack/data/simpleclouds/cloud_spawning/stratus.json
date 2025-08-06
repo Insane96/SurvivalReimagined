@@ -1,14 +1,14 @@
 {
     "type": "simpleclouds:stratus",
     "exist_ticks": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:biased_to_bottom",
         "value": {
             "max_inclusive": 72000,
             "min_inclusive": 24000
         }
     },
     "grow_ticks": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:biased_to_bottom",
         "value": {
             "max_inclusive": 8000,
             "min_inclusive": 3000
@@ -17,7 +17,7 @@
     "moves_to_player": true,
     "order_weight": 800,
     "radius": {
-        "type": "minecraft:uniform",
+        "type": "minecraft:biased_to_bottom",
         "value": {
             "max_inclusive": 8000,
             "min_inclusive": 3000

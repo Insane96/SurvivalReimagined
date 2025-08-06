@@ -2,7 +2,7 @@
 
 * Increase quiver chance
 * animals never stop thinking about targ
-* On fire bonus damage?
+* a way to share waystones with friends
 
 ## Upcoming
 * Repairing enchanted items now costs again more, but just a bit
@@ -10,6 +10,7 @@
 * Fixed again fishing loot table
 * Reinforced blocks no longer take ages to mine
 * Supplementaries spikes no longer block flowing fluids
+* Lowered again rain clouds chance and duration
 
 ### Changes from mods
 * You can now throw fire charges and craft dragon acid balls and throw them
