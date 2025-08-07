@@ -21,6 +21,8 @@
 * Increased back breed fail chance
 * Added config option to replace Farmer's Delight nourishment effect
 * Rebalanced butcher and farmer trades
+* Added 3 new enchantments
+* Fixed Ender dragon compat with Endergetic
 
 ## 3.2.10
 * Added Better End Cities

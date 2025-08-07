@@ -34,11 +34,11 @@
 			plum = true
 			wisteria = true
 
-		[types.wood_type.endergetic]
-			poise = true
-
 		[types.wood_type.autumnity]
 			maple = true
+
+		[types.wood_type.endergetic]
+			poise = true
 
 	[types.stone_type]
 
