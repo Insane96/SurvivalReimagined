@@ -3,8 +3,12 @@
 * Increase quiver chance
 * animals never stop thinking about targ
 
-## Upcoming
+## 3.2.12
+This update doesn't require a server update
 * Lowered the amount of particles from dropped items
+
+### Changes from mods
+* Fixed No Hunger showing debug infos on the action bar
 
 ## 3.2.11
 * Repairing enchanted items now costs again more, but just a bit
