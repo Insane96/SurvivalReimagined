@@ -3,6 +3,10 @@
 * Increase quiver chance
 * animals never stop thinking about targ
 
+## Upcoming
+* Added Team Waystones
+  * `/team` players will now share waystones
+
 ## 3.2.12
 This update doesn't require a server update
 * Lowered the amount of particles from dropped items
