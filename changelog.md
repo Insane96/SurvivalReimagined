@@ -3,6 +3,9 @@
 * Increase quiver chance
 * animals never stop thinking about targ
 
+## Upcoming
+* Lowered the amount of particles from dropped items
+
 ## 3.2.11
 * Repairing enchanted items now costs again more, but just a bit
 * Tried fixing Archeologist trades, sadly the mod adds trades too late
