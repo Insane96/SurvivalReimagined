@@ -3,9 +3,18 @@
 * Increase quiver chance
 * animals never stop thinking about targ
 
-## Upcoming
+## 3.2.13
 * Added Team Waystones
   * `/team` players will now share waystones
+
+### Changes from mods
+* Conduit effect no longer grants haste
+* Minor rework to Respawn Obelisks
+  * They no longer require catalyst blocks (configurable)
+  * Removed iron blocks on the structure
+  * Right-clicking on a respawn obelisk will now both enable it and set your respawn point with one click
+  * Shift-right-clicking on a respawn obelisk will now disable it
+  * Fixed not being able to respawn on top of the obelisk (and right below)
 
 ## 3.2.12
 This update doesn't require a server update

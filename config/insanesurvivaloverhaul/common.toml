@@ -357,8 +357,10 @@
 		"Respawn obelisks" = true
 		#If enabled, respawning will try to place you on land and not in fluids
 		"Dont respawn on fluid" = true
-		#If enabled, sleeping a bed when sneaking will overwrite obelisk spawn point
+		#If true, sleeping a bed when sneaking will overwrite obelisk spawn point
 		"Allow obelisk spawn point overwrite with beds sneaking" = true
+		#If true, respawn obelisks will require (and consume) precious blocks to let you respawn
+		"Respawn obelisks require catalyst blocks" = false
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose world spawn range"]
@@ -717,6 +719,8 @@
 			#If a mob is within this radius from the conduit, it will be dealt the maximum amount of damage.
 			#Range: 0.0 ~ 96.0
 			"Protection max damage distance" = 8.0
+			#If true, conduit effect will no longer speed up mining speed.
+			"Remove haste" = true
 
 	#Various Nerfs
 	[Miscellaneous.Nerfs]
