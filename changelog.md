@@ -1,7 +1,9 @@
 # Changelog
 
 * Increase quiver chance
-* animals never stop thinking about targ
+
+## Upcoming
+* Fixed Drowned spawning with vanilla fishing rod
 
 ## 3.2.13
 * Added Team Waystones

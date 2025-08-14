@@ -1,0 +1,21 @@
+{
+    "target": "minecraft:drowned",
+    "properties": [
+        {
+            "property": "equipment",
+            "slot": "mainhand",
+            "items": [
+                {
+                    "item": "tide:iron_fishing_rod"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "equipment",
+                    "slot": "mainhand",
+					"items": ["minecraft:fishing_rod"]
+                }
+            ]
+        }
+    ]
+}
