@@ -3,6 +3,7 @@
 * Increase quiver chance
 
 ## Upcoming
+* Fisher mobs no longer fish hand items
 * Fixed Drowned spawning with vanilla fishing rod
 
 ## 3.2.13
