@@ -1,0 +1,6 @@
+{
+    "type": "iguanatweaksreborn:replace_loot",
+    "conditions": [],
+    "item_to_replace": "minecraft:fishing_rod",
+    "new_item": "tide:iron_fishing_rod"
+}

@@ -103,7 +103,7 @@
 	[Drowned."Sun resistant drowned"]
 		#Drowneds are sun resistant for this amount of ticks until the water in their body evaporates. During this time, they will not seek water
 		#Range: > 1
-		"Sun resistant" = 600
+		"Sun resistant" = 300
 
 	#Makes drowned swim speed based off swim speed attribute instead of movement speed. Only entity types in the enhancedai:drowned/swimming_attribute tag are affected by this feature.
 	[Drowned."Drowned swimming attribute"]
@@ -362,7 +362,7 @@
 	#Endermen will make the player's item fall from his hands. Add/remove mobs via the enhancedai:mobs/can_disrupt_item entity type tag
 	"Enable Item disruption" = false
 	#Makes mobs be able to move in more ways, like climbing or swim. Only entity types in `enhancedai:mobs/can_sprint` tag are affected by this feature.
-	"Enable Sprint" = true
+	"Enable Sprint" = false
 	#Gives mobs a chance to negate damage when equipped with a shield. Only entity types in `enhancedai:mobs/can_equip_shield` tag will be equipped a shield.
 	"Enable Shielding" = true
 	#Mobs can mine blocks to reach the target. Uses offhand item to mine. Only mobs in the entity type tag enhancedai:mobs/can_mine can spawn with the ability to mine and blocks in the tag enhancedai:miner_blacklist cannot be mined. This feature also adds the block reach attribute to all entities.

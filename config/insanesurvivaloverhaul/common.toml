@@ -144,7 +144,7 @@
 			Enabled = true
 			#Chance to ignite a block when using two flints
 			#Range: 0.0 ~ 1.0
-			"Ignite chance" = 0.35
+			"Ignite chance" = 0.4
 			#Chance for the flint to break when using two flints
 			#Range: 0.0 ~ 1.0
 			"Break chance" = 0.3

@@ -40,7 +40,7 @@
 
 [categories]
 	automation = true
-	building = false
+	building = true
 	management = true
 	tools = false
 	tweaks = true
@@ -108,9 +108,9 @@
 		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
 
 [building]
-	"Celebratory Lamps" = true
-	"Compressed Blocks" = true
-	"Duskbound Blocks" = true
+	"Celebratory Lamps" = false
+	"Compressed Blocks" = false
+	"Duskbound Blocks" = false
 	"Framed Glass" = true
 	"Glass Item Frame" = true
 	"Gold Bars" = true
@@ -1619,7 +1619,7 @@
 		#The value of each shank of food.
 		#Tweak this when using mods like Hardcore Hunger which change that value.
 		"Food Divisor" = 2
-		"Show Saturation" = true
+		"Show Saturation" = false
 		"Food Compression Threshold" = 4
 		"Fuel Time Divisor" = 200
 		#Should item attributes be colored relative to your current equipped item?

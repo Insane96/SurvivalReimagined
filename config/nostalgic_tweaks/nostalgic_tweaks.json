@@ -271,7 +271,7 @@
     "customLoadingProgressBar": false,
     "progressBarOutlineColor": "#FFFFFF",
     "progressBarInsideColor": "#FFFFFF",
-    "oldProgressScreen": false,
+    "oldProgressScreen": true,
     "oldPauseMenu": "MODERN",
     "includeModsOnPause": false,
     "removeExtraPauseButtons": false,
@@ -334,7 +334,7 @@
     },
     "itemMergeLimit": 16,
     "oldItemMerging": true,
-    "old2dItems": false,
+    "old2dItems": true,
     "old2dColors": false,
     "old2dRendering": false,
     "old2dExceptions": {
