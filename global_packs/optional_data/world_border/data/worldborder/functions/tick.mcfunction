@@ -1,0 +1,1 @@
+function worldborder:try_shrink

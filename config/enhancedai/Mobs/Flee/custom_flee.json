@@ -1,0 +1,11 @@
+[
+  {
+    "priority": 1,
+    "entity": "#enhancedai:all_mobs",
+    "flee_from": "minecraft:warden",
+    "avoid_distance": 16.0,
+    "avoid_distance_near": 8.0,
+    "speed_multiplier": 1.0,
+    "speed_multiplier_near": 1.1
+  }
+]

@@ -1,0 +1,17 @@
+{
+	"item_to_repair": "tide:iron_fishing_rod",
+	"repair": [
+		{
+			"repair_material": {
+				"id": "minecraft:iron_ingot"
+			},
+			"amount": 1.6
+		},
+		{
+			"repair_material": {
+				"id": "minecraft:iron_nugget"
+			},
+			"amount": 14.25
+		}
+	]
+}

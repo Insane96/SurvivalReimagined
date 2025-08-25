@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "item": "map_atlases:atlas"
+        },
+        "title": {
+            "translate": "advancements.sr_story.atlas.title"
+        },
+        "description": {
+            "translate": "advancements.sr_story.atlas.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "minecraft:adventure/root",
+    "criteria": {
+        "atlas": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "map_atlases:atlas"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "atlas"
+        ]
+    ]
+}

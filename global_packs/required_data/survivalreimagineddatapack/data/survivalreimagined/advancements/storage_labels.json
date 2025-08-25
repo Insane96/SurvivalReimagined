@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "item": "labels:label"
+        },
+        "title": {
+            "translate": "advancements.sr_story.label.title"
+        },
+        "description": {
+            "translate": "advancements.sr_story.label.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "minecraft:story/root",
+    "criteria": {
+        "label": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "labels:label"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "label"
+        ]
+    ]
+}
