@@ -754,11 +754,11 @@
 	#Only entity types in the `enhancedai:shulker/apply_armor_modifiers` tag will be affected by this feature.
 	[Shulkers."Shulker armor"]
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Armor when closed" = 30.0
+		"Armor when closed" = 15.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Armor when peeking" = 20.0
+		"Armor when peeking" = 10.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Armor when open" = 10.0
+		"Armor when open" = 5.0
 
 [Creepers]
 	#Creepers will ignite when they take explosion damage. Only entity types in the enhancedai:creeper/tnt_like tag will be affected by this feature.

@@ -113,7 +113,7 @@
 
 	[World.Nether]
 		#Enables a data pack that makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and reduces the 8 block ratio between nether and other dimensions to 2.
-		"Disable Nether Roof and reduce block ratio" = true
+		"Disable Nether Roof and reduce block ratio" = false
 		#If true, lava pockets in the nether are removed. If quark is installed, this is disabled
 		"Remove lava pockets" = true
 		#If true you cannot lit nether portals
