@@ -424,7 +424,7 @@
 		#Integrates the mod with Caverns & Chasms. Slightly alters ore generation and adds item stats.
 		"Caverns and chasms" = false
 		#Integrates the mod with Tide. Lowers chance for fishes to drop fish.
-		Tide = false
+		Tide = true
 		#Integrates the mod with Crate. Alters ore generation.
 		Create = false
 		#Integrates the mod with Tinker's Construct. Disables vanilla items. Changes some stats and adds modifiers
