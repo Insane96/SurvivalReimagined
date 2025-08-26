@@ -257,10 +257,10 @@
 	"Enable DeBuffs" = false
 	#Various stuff that doesn't fit in any other Feature.
 	"Enable Tweaks" = true
-	#Various data packs that can be enabled/disabled
-	"Enable Data Packs & Integration" = true
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	"Enable Beacon & Conduit" = true
+	#Various packs that can be enabled/disabled
+	"Enable Data / Resource Packs & Integration" = true
 
 	#Various Nerfs
 	[Miscellaneous.Nerfs]
@@ -354,8 +354,23 @@
 			#If true scutes will drop as a block and not as item
 			"Scute drops as block" = true
 
-	#Various data packs that can be enabled/disabled
-	[Miscellaneous."Data Packs & Integration"]
+	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
+	[Miscellaneous."Beacon & Conduit"]
+
+		[Miscellaneous."Beacon & Conduit".Conduit]
+			#Greatly increases the range and damage of the conduit
+			"Better protection" = true
+			#Distance multiplier (formula is `blocks_around / 7 * this_multiplier`) from the conduit at which it will deal damage to enemies.
+			#Range: 0.0 ~ 64.0
+			"Protection distance multiplier" = 8.0
+			#If a mob is within this radius from the conduit, it will be dealt the maximum amount of damage.
+			#Range: 0.0 ~ 96.0
+			"Protection max damage distance" = 8.0
+			#If true, conduit effect will no longer speed up mining speed.
+			"Remove haste" = true
+
+	#Various packs that can be enabled/disabled
+	[Miscellaneous."Data / Resource Packs & Integration"]
 		#If true, no integrated data pack will be loaded
 		"Disable all data packs" = false
 		#Changes vanilla torch recipes.
@@ -409,28 +424,13 @@
 		#Integrates the mod with Caverns & Chasms. Slightly alters ore generation and adds item stats.
 		"Caverns and chasms" = false
 		#Integrates the mod with Tide. Lowers chance for fishes to drop fish.
-		Tide = true
+		Tide = false
 		#Integrates the mod with Crate. Alters ore generation.
 		Create = false
 		#Integrates the mod with Tinker's Construct. Disables vanilla items. Changes some stats and adds modifiers
 		"Tinkers construct" = false
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
 		"Force reload world data packs" = false
-
-	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
-	[Miscellaneous."Beacon & Conduit"]
-
-		[Miscellaneous."Beacon & Conduit".Conduit]
-			#Greatly increases the range and damage of the conduit
-			"Better protection" = true
-			#Distance multiplier (formula is `blocks_around / 7 * this_multiplier`) from the conduit at which it will deal damage to enemies.
-			#Range: 0.0 ~ 64.0
-			"Protection distance multiplier" = 8.0
-			#If a mob is within this radius from the conduit, it will be dealt the maximum amount of damage.
-			#Range: 0.0 ~ 96.0
-			"Protection max damage distance" = 8.0
-			#If true, conduit effect will no longer speed up mining speed.
-			"Remove haste" = true
 
 ["Sleep & Respawn"]
 	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player. Graves can be disabled with the iguanatweaks:deathGrave game rule. Items percentage lost can be configured with the iguanatweaks:deathLoseItemsPercentage and iguanatweaks:deathLoseItemsEnchanted game rules.
@@ -1399,6 +1399,8 @@
 			#Chance for a Rich farmland to decay back to farmland
 			#Range: 0.0 ~ 1.0
 			"Chance to decay" = 0.35
+			#Prevents bone meal from working on crops and will just create rich farmland on right-click
+			"Disable bone meal" = true
 
 		#How many stages will bone meal make stuff grow?
 		[Farming."Bone meal"."Stage growth"]
