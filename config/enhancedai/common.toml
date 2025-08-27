@@ -101,7 +101,7 @@
 
 	#Makes drowned immune to sunlight for a couple of seconds before starting to burn. Only entity types in the enhancedai:drowned/sun_resistant tag are affected by this feature.
 	[Drowned."Sun resistant drowned"]
-		#Drowneds are sun resistant for this amount of ticks until the water in their body evaporates. During this time, they will not seek water
+		#Drowned are sun resistant for this amount of ticks until the water in their body evaporates. During this time, they will not seek water
 		#Range: > 1
 		"Sun resistant" = 300
 
