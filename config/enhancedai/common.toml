@@ -495,7 +495,7 @@
 		"Equip fishing rod chance" = 0
 		#Chance for a fisher mob to steal an entity item in the hands instead of reeling the player.
 		#Range: 0.0 ~ 1.0
-		"Hook hands chance" = 0.4
+		"Hook hands chance" = 0
 		#The max distance mobs will use the fishing rod. Above this distance they will try to get closer.
 		#Range: > -2147483648
 		"Max distance" = 24
