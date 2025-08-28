@@ -1,7 +1,3 @@
 [
-  {
-    "block": "#forge:ores/quartz",
-    "entity": "minecraft:zombified_piglin",
-    "range": 24.0
-  }
+
 ]

@@ -7,6 +7,7 @@
     * 256 blocks high babyyy
 * Removed villagers
   * They are a pain in the ass to balance
+* Zombified piglins no longer get angry when breaking quartz
 * Fisher mobs no longer fish hand items
 * Fixed Drowned spawning with vanilla fishing rod
 
