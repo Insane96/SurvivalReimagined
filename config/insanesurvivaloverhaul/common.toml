@@ -567,7 +567,7 @@
 		#Allows mobs to spawn in the world spawn (in vanilla mobs can't spawn in a 24 blocks radius from world spawn)
 		"Allow world spawn spawn" = true
 		#Disables Zombie Villagers
-		"No zombie villagers" = false
+		"No zombie villagers" = true
 		#Disables normal skeletons from spawning in Fortresses.
 		"Remove skeletons from fortresses" = true
 		#Enables a data pack that makes Guardians spawn in deep oceans. These guardians have half health compared to monument guardians.

@@ -5,6 +5,8 @@
 ## Upcoming
 * Added Amplified Nether
     * 256 blocks high babyyy
+* Removed villagers
+  * They are a pain in the ass to balance
 * Fisher mobs no longer fish hand items
 * Fixed Drowned spawning with vanilla fishing rod
 
