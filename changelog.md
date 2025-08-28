@@ -3,6 +3,8 @@
 * Increase quiver chance
 
 ## Upcoming
+* Added Amplified Nether
+    * 256 blocks high babyyy
 * Fisher mobs no longer fish hand items
 * Fixed Drowned spawning with vanilla fishing rod
 

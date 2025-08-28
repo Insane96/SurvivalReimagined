@@ -60,9 +60,6 @@
 		[types.stone_type.caverns_and_chasms]
 			sugilite = true
 
-		[types.stone_type.upgrade_aquatic]
-			coralstone = true
-
 	[types.leaves_type]
 
 		[types.leaves_type.quark]
