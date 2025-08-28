@@ -2,12 +2,12 @@
 
 * Increase quiver chance
 
-## Upcoming
+## 3.3.0
 * Added Amplified Nether
   * 256 blocks high babyyy
 * Removed villagers
   * They are a pain in the ass to balance
-  * Added back monument and mansion to wandering trades
+  * Added back monument and mansion maps to wandering trades
 * Zombified piglins no longer get angry when breaking quartz
 * Fisher mobs no longer fish hand items
 * Fixed Drowned spawning with vanilla fishing rod
