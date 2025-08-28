@@ -13,6 +13,24 @@
 * Fixed Drowned spawning with vanilla fishing rod
 * Fixed jungle temple explorer map
 
+### Changes from mods
+* Roofed Forest Vegetation data pack
+  * Lowers the giant mushrooms generated in Roofed forests as well as removes the non-dark oak trees
+* Sapling drop fix data pack
+  * Lowered chance to drop saplings: (flowering) azalea and cherry leaves
+  * Increased chance to drop saplings: dark oak and jungle leaves
+* Cyan flower no longer generates naturally; instead, it's dug up by the Sniffer
+* You can now bone meal a dirt block below tall grass to grow a grass block
+* Chorus Fruits are now fast eating and will cancel fall damage when teleporting
+* Bone meal can no longer be used directly on crops
+  * Instead, rich farmland is made
+* Stone tools are now replaced with copper ones instead of flint
+* Fixed zombies spawning with flint equipment
+* Season Fishing slowdown no longer affects hooking speed
+* Timber trees' logs now always fall sideways to prevent fallen logs from triggering another tree fall
+* Environmental cherries now only drop in summer
+* Fixed Aloe vera plant growth not working
+
 ## 3.2.13
 * Added Team Waystones
   * `/team` players will now share waystones
