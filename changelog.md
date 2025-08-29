@@ -2,6 +2,11 @@
 
 * Increase quiver chance
 
+## Upcoming
+* Replaced amplified nether with Incendium
+  * More biomes! No structures
+* Increased nether natural light
+
 ## 3.3.0
 * Added Amplified Nether
   * 256 blocks high babyyy
