@@ -1,6 +1,11 @@
 # Changelog
 
 * Increase quiver chance
+* Can't craft strider rod
+* exposure mindful darkness
+
+## Upcoming
+* Fixed zombie piglin getting angry when breaking quartz on linux server
 
 ## 3.4.0
 * Replaced amplified nether with Incendium
