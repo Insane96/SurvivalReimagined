@@ -2,9 +2,10 @@
 
 * Increase quiver chance
 
-## Upcoming
+## 3.4.0
 * Replaced amplified nether with Incendium
   * More biomes! No structures
+  * To regenerate the nether, delete the DIM-1 folder in your world (it's recommended to leave the nether first)
 * Increased nether natural light
 
 ## 3.3.0
