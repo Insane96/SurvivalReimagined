@@ -431,6 +431,10 @@
 		"Tinkers construct" = false
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
 		"Force reload world data packs" = false
+		#Fixes the drop rate of some saplings, such as Jungle and Dark oak dropping too rarely
+		"Sapling drop fix" = true
+		#Lowers the giant mushrooms generated in a Roofed forests forests as well as removes the non-dark oak trees
+		"Dark forest vegetation" = true
 
 ["Sleep & Respawn"]
 	#Add graves on death, and lose items on death. Controlled via game rules. Also adds a bounty system for the mob that killed the player. Graves can be disabled with the iguanatweaks:deathGrave game rule. Items percentage lost can be configured with the iguanatweaks:deathLoseItemsPercentage and iguanatweaks:deathLoseItemsEnchanted game rules.
@@ -698,6 +702,7 @@
 		#Food can no longer be smelted in furnaces and change smokers recipe to require soul sand.
 		#This also enables a change to the smelt_item_function in loot tables to use smoker recipes instead of furnaces (otherwise, mobs wouldn't drop cooked food). Might have unintended side effects.
 		"No furnace food and smoker recipe" = true
+		"Chorus fruit cancels fall damage" = true
 
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	["Hunger & Health"."Health Regen & Hunger"]
@@ -1385,7 +1390,7 @@
 		"Compostable rotten flesh" = true
 		#Chance for a bone meal to fail to grow something. Empty this string to disable. Accepts a list of seasons and chances separated by a ;
 		"Season fail chance" = "WINTER,0.65"
-		#If true, you can bone meal dirt that's near a grass block to get grass block.
+		#If true, you can bone meal dirt that's near a grass block (or below tall grass) to get grass block.
 		"Bone meal dirt to grass" = true
 		#Makes bone meal have a chance to fail on Cave Vines, Saplings and Sweet Berry Bushes.
 		"Data pack" = true

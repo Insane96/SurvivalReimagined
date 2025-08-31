@@ -356,7 +356,7 @@
 	#Only entity types in `enhancedai:mobs/random_stroll` tag are affected by this feature.
 	"Enable Random stroll" = true
 	#Makes mobs ride other mobs. Mobs in the `enhancedai:mobs/riding/can_be_mounted` tag will be able to be mounted, while mobs in the `enhancedai:mobs/riding/can_mount` tag will be able to mount other mobs.
-	"Enable Riding" = true
+	"Enable Riding" = false
 	#Only entity types in `enhancedai:mobs/can_open_doors` tag are affected by this feature.
 	"Enable Open doors" = true
 	#Endermen will make the player's item fall from his hands. Add/remove mobs via the enhancedai:mobs/can_disrupt_item entity type tag
@@ -457,7 +457,7 @@
 		#Chance for a mob to have an AI to go and ride mobs.
 		[Mobs.Riding.Chance]
 			#Range: 0.0 ~ 1.0
-			"Easy/Peaceful" = 0.03
+			"Easy/Peaceful" = 0.0
 			#Range: 0.0 ~ 1.0
 			Normal = 0.06
 			#Range: 0.0 ~ 1.0
