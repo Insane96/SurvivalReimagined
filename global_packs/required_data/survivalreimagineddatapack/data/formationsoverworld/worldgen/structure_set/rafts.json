@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 995602250,
+    "spacing": 75,
+    "separation": 45
+  },
+  "structures": [
+    {
+      "structure": "formationsoverworld:raft",
+      "weight": 1
+    }
+  ]
+}
