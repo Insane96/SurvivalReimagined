@@ -16,7 +16,7 @@
 
 	[mobs.peeper]
 		#Range: -64 ~ 320
-		"Peeper max spawn height" = -4
+		"Peeper max spawn height" = -64
 
 [tweaks]
 	#Chainmail armor increases the user's attack damage
