@@ -1,11 +1,17 @@
 # Changelog
 
 * Increase quiver chance
-* Can't craft strider rod
-* exposure mindful darkness
 
 ## Upcoming
 * Fixed zombie piglin getting angry when breaking quartz on linux server
+* Removed leftover villagers stuff
+* Reduced rafts generation rate
+* Fixed not being able to craft warped fungus on a stick
+
+### Changes from mods
+Splash potions now always are 75% effective compared to drinkable ones but will also apply the full effect duration when thrown
+Ores are no longer discarded if they are generated exposed to air making caving more rewarding
+Ground flint is back!
 
 ## 3.4.0
 * Replaced amplified nether with Incendium
