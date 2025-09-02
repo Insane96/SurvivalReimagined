@@ -55,7 +55,7 @@
 		#Requires Minecraft Restart.
 		#PLEASE NOTE that due to config limitation, some things cannot be disabled, so use item tags. E.g. Launch enchantment uses a new iguanatweaksexpanded:enchanting/allurement/accepts_launch_enchantments item tag to decide which item accepts the enchantment.
 		#
-		"Allurement integration" = false
+		"Allurement integration" = true
 		"Enable purify items" = true
 
 		[Experience.Enchanting.Grindstone]

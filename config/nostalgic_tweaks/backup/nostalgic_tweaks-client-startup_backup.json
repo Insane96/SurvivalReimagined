@@ -334,7 +334,7 @@
     },
     "itemMergeLimit": 16,
     "oldItemMerging": true,
-    "old2dItems": true,
+    "old2dItems": false,
     "old2dColors": false,
     "old2dRendering": false,
     "old2dExceptions": {

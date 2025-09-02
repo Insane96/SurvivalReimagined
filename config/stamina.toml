@@ -82,7 +82,7 @@
 
 	[Stamina.Disable]
 		#Disable sprinting altogether
-		Sprinting = true
+		Sprinting = false
 		#Disable swimming altogether
 		Swimming = false
 

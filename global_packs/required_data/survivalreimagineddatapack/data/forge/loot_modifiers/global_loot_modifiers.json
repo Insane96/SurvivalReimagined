@@ -1,6 +1,7 @@
 {
 	"entries": [
-		"survivalreimagined:replace_fishing_rod"
+        "survivalreimagined:replace_fishing_rod",
+        "survivalreimagined:replace_emeralds"
 	],
 	"replace": false
 }
