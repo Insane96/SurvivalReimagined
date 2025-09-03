@@ -99,7 +99,7 @@
 	#Adds mining charge
 	"Enable Mining charge" = true
 	"Enable Beeg Ore Veins" = false
-	"Enable Forging" = false
+	"Enable Forging" = true
 	#Add Durium, a new metal made by alloying Durium Scrap (found as scrap pieces in ores in the Overworld) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
 	"Enable Durium" = false
 
@@ -118,7 +118,7 @@
 		#* Gold Gear requires Flint / Leather gear to be forged
 		#* Iron Gear requires Stone / Chained Copper gear to be forged
 		#* Buckets, Flint and Steel and Shears require a forge to be made
-		"Forging Equipment Crafting Data Pack" = true
+		"Forging equipment crafting data pack" = true
 
 [Items]
 	"Enable Altimeter" = true

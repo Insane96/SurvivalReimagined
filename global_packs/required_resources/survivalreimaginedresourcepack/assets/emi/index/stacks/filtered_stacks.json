@@ -43,8 +43,6 @@
         "/iguanatweaksexpanded:solarium/",
         "/iguanatweaksexpanded:solium/",
         "/iguanatweaksexpanded:chained/",
-        "/iguanatweaksexpanded:.*_hammer/",
-        "/iguanatweaksexpanded:forge/",
         "woodworks:sawmill",
         "/citadel:/",
         "/waystones:/",

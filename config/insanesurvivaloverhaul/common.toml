@@ -1133,7 +1133,7 @@
 		#Items with durability get a durability tooltip. Items in the `iguanatweaksreborn:no_durability_tooltip` item tag will not get the tooltip.
 		"Durability tooltip" = true
 		#If set to true only enchanted items will no longer break
-		"Enchanted items only" = true
+		"Enchanted items only" = false
 
 [Combat]
 	#This feature disables itself if Shields+ is installed
