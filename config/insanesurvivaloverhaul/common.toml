@@ -643,6 +643,8 @@
 	"Enable Tweaks" = true
 	#Various packs that can be enabled/disabled
 	"Enable Data / Resource Packs & Integration" = true
+	#Various changes to potions and effects
+	"Enable Potions and effects" = true
 
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	[Miscellaneous."Beacon & Conduit"]
@@ -688,13 +690,8 @@
 
 	#Various stuff that doesn't fit in any other Feature.
 	[Miscellaneous.Tweaks]
-		#If true, entities will no longer be set on fire if have Fire Resistance (like bedrock edition)
-		"Prevent fire with resistance" = false
 		#Falling on glass has a chance of breaking it. The higher the fall, the higher the chance. iguanatweaksreborn:fall_on_break block tag can be used to add more blocks that break when falling onto them.
 		"Falling breaking glass" = true
-		#Poison will damage the player every this ticks at level I. Vanilla is 25.
-		#Range: > 1
-		"Poison damage speed" = 60
 		#When you die in hardcore, your spawn point is set to where you died and a lightning strike is summoned
 		"Better hardcore death" = true
 		#If enabled, the Totem of Undying will give Resistance IV for 5.5 seconds
@@ -706,9 +703,6 @@
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Leash max distance" = 16.0
 		"Blindness no longer prevents sprinting" = true
-		#The strength used to throw splash potions. Vanilla is 0.5
-		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Splash potion throw strength" = 0.8
 		#The speed modifier when frozen. Vanilla is -0.05
 		#Range: -1.0 ~ 0.0
 		"Frozen movement speed modifier" = -0.1
@@ -818,6 +812,25 @@
 		#Lowers the giant mushrooms generated in a Roofed forests forests as well as removes the non-dark oak trees
 		"Dark forest vegetation" = true
 
+	#Various changes to potions and effects
+	[Miscellaneous."Potions and effects"]
+		#Poison will damage the player every this ticks at level I. Vanilla is 25.
+		#Range: > 1
+		"Poison damage speed" = 60
+		#Changes Strength and Weakness +/-3 damage per level to +/-20% damage per level. (Requires a Minecraft restart)
+		"Better strength and weakness" = true
+		#Changes Mining fatigue and haste to no longer affects attack speed. (Requires a Minecraft restart)
+		"Better haste and mining fatigue" = true
+		#Changes Healing potions to work like pre 1.6.1 by healing 3 health per level
+		"Better healing potion" = true
+		#The strength used to throw splash potions. Vanilla is 0.5
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Splash potion throw strength" = 0.8
+		#If true, entities will no longer be set on fire if have Fire Resistance (like bedrock edition)
+		"Prevent fire with resistance" = false
+		#Splash potions will always be 2/3 effective compared to drinkable ones but will also apply the full effect duration when thrown
+		"Streamline splash potions" = true
+
 [Mining]
 	#Changes Gold tools to have an innate Fortune/Looting I
 	"Enable Gold" = true
@@ -905,6 +918,9 @@
 	"Enable Unbreakable items" = true
 	#Basically backports copper equipment from latest MC versions.
 	"Enable Copper equipment" = true
+	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones.
+	"Enable Stone tools gone" = true
+	"Enable Blinker" = true
 
 	[Items."gigaherz Tool Belt"]
 		#Enables a data pack that changes the crafting of the Tool Belt to give more slots (2 -> 4)
@@ -956,17 +972,15 @@
 
 	#Replace stone tools with flint ones.
 	[Items."Flint expansion"]
-		#If true, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with flint ones
-		"Disable stone tools" = true
-		#If you want to just disable stone tools
-		"Dont enable flint tools" = true
+		"Enable tools" = false
+		"Enable ground flint" = true
 
 	#Enchanted items no longer break, will sit at one durability and can't be used. Items in the item tag `iguanatweaksreborn:not_unbreakable` are not affected and items in the item tag `iguanatweaksreborn:unbreakable` are always unbreakable.
 	[Items."Unbreakable items"]
-		#Items with durability get a durability tooltip
+		#Items with durability get a durability tooltip. Items in the `iguanatweaksreborn:no_durability_tooltip` item tag will not get the tooltip.
 		"Durability tooltip" = true
 		#If set to true only enchanted items will no longer break
-		"Enchanted items only" = true
+		"Enchanted items only" = false
 
 ["Hunger & Health"]
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
@@ -1283,7 +1297,7 @@
 		#If true, the formula for bonus damage for arrows is changed from `'Power Enchantment Damage' + 'Power Enchantment Damage' * lvl` to `base_damage * 'Power Enchantment Damage' * lvl`.
 		"Power affects base arrow damage" = true
 		#If true, vanilla protection enchantments are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
-		#Protection has only one level, protects 6% per level and is treasure. Other protections work the same except for projectile that reduces the sight range of mobs by 2% per level. Feather falling protects for 16% per level instead of 12% + 1 per level.
+		#Protection has only one level, protects 6% per level. Other protections work the same except for projectile that reduces the sight range of mobs by 2% per level. Feather falling protects for 16% per level instead of 12% + 1 per level.
 		"Replace protection enchantments" = true
 		#If true, vanilla damaging enchantments (such as smite or sharpness) are replaced with mod's ones. To re-enable vanilla enchantments refer to `disabled_enchantments.json`.
 		#Changes to damaging enchantments:
@@ -1523,12 +1537,6 @@
 	[Combat."Misc stats"]
 		#Vanilla tooltips on gear don't sum up multiple modifiers (e.g. a sword would have "4 Attack Damage" and "-2 Attack Damage" instead of "2 Attack Damage". This might break other mods messing with these Tooltips (e.g. Quark's improved tooltips)
 		"Fix tooltips" = true
-		#Changes Strength and Weakness +/-3 damage per level to +/-20% damage per level. (Requires a Minecraft restart)
-		"Better strength and weakness" = true
-		#Changes Mining fatigue and haste to no longer affects attack speed. (Requires a Minecraft restart)
-		"Better haste and mining fatigue" = true
-		#Changes Healing potions to work like pre 1.6.1 by healing 3 health per level
-		"Better healing potion" = true
 		#If enabled, tools will not take 2 damage when used to hurt entities
 		"One damage for tool attacking" = true
 		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the range is increased. Sweeping edge enchantment has been disabled via the enchantments feature disable_enchantments.json

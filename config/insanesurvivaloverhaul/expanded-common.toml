@@ -53,7 +53,7 @@
 		#* Gold Gear requires Flint / Leather gear to be forged
 		#* Iron Gear requires Stone / Chained Copper gear to be forged
 		#* Buckets, Flint and Steel and Shears require a forge to be made
-		"Forging Equipment Crafting Data Pack" = true
+		"Forging equipment crafting data pack" = true
 
 [Items]
 	"Enable Recall Potion" = true
@@ -122,6 +122,11 @@
 			"Purified Enchantability flat" = 0
 			#If true, all the enchantments in the enchanting table (so, not only curses) are one time use. If enabled, you can no longer disenchant items in grindstone to prevent accidental loss.
 			"One time use enchantments" = true
+
+		[Experience.Enchanting.Ensorceller]
+			#How many ticks will the ensorceller take to generate a new enchantment
+			#Range: > -2147483648
+			"Time to generate" = 2400
 
 [Combat]
 	"Enable Fletching table" = true

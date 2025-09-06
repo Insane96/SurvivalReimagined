@@ -2,16 +2,22 @@
 
 * Increase quiver chance
 
-## Upcoming
+## 3.4.1
 * Fixed zombie piglin getting angry when breaking quartz on linux server
 * Removed leftover villagers stuff
 * Reduced rafts generation rate
-* Fixed not being able to craft warped fungus on a stick
+* Fixed not being able to craft warped fungus and carrot on a stick
 
 ### Changes from mods
-Splash potions now always are 75% effective compared to drinkable ones but will also apply the full effect duration when thrown
-Ores are no longer discarded if they are generated exposed to air making caving more rewarding
-Ground flint is back!
+* Splash potions now always are 75% effective compared to drinkable ones but will also apply the full effect duration when thrown
+* Ores are no longer discarded if they are generated exposed to air making caving more rewarding
+* Ground flint is back!
+* Experience bottles can no longer be thrown if experience is disabled
+* Smelting iron in a furnace now takes 2x time (one coal per ingot)
+* All items are now unbreakable again, not matter if enchanted
+* Breaking a spawner now gives an enchanted book and an echo shard
+* Empowered spawners no longer yield echo shards
+* Enchanted books from spawners now yield randoms enchantments at max level ignoring the rarity and will have 2 to 3 enchantments for empowered spawners and 3 to 4 for breaking a spawner
 
 ## 3.4.0
 * Replaced amplified nether with Incendium
