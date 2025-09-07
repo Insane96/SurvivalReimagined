@@ -41,10 +41,9 @@ graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
-renderClouds:"false"
+renderClouds:"true"
 resourcePacks:["vanilla","mod_resources","Forgery","Forgery grayscale","Moonlight Mods Dynamic Assets","file/VanillaTweaks.zip","file/VanillaTweaks_CleanerBorder.zip","file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip","fabric","scholar:chiseled_bookshelf_colored_books_abnww_compat","scholar:colored_books","scholar:chiseled_bookshelf_colored_books","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/Fancy_Beds-v4.0.zip","file/waystones_1.20.zip"]
 incompatibleResourcePacks:["file/§aCreepers-Reimagined§8-[v.1.2].zip","file/§eArmorstands-Reimagined§8-[v1.2].zip"]
-lastServer:eitikitikitircraft.mcserver.us
 lang:en_us
 soundDevice:""
 chatVisibility:0
