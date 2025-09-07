@@ -2,6 +2,18 @@
 
 * Increase quiver chance
 
+## Upcoming
+* Increased food stack sizes by ~20%
+* Removed Simple Clouds
+  * Forgot to mention in previous changelog
+* Base wither revamped
+  * It's now the same as the base mod but less powerful
+* Smithing templates are now much cheaper to dupe
+* Fixed cobblestone drops being replaced with copper blocks
+
+### Changes from mods
+* Attributes on tooltips are now sorted
+
 ## 3.4.1
 * Fixed zombie piglin getting angry when breaking quartz on linux server
 * Removed leftover villagers stuff
