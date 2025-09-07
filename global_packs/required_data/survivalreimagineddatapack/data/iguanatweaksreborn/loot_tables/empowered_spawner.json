@@ -1,0 +1,23 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "iguanatweaksreborn:enchant_randomly_weightless",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            },
+                            "treasure": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
