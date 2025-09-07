@@ -14,14 +14,14 @@ lingeringPotionClouds = true
 splashPotionClouds = true
 
 [itemRarity]
-particlesDisplayType = "ON"
+particlesDisplayType = "NOT_COMMON"
 particleColorType = "NAME_COLOR"
 mixedColorName = true
 useItemBorder = true
 colorOverrides = [  ]
-particleMaxHeight = 1.0
-particleMaxSpeed = 1.0
-particleDensity = 0.349264705882353
+particleMaxHeight = 0.997549
+particleMaxSpeed = 0.5004902
+particleDensity = 0.3007352941176471
 
 [projectiles]
 enderPearlTrail = true
