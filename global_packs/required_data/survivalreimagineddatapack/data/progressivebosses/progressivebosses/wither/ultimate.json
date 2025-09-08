@@ -1,7 +1,7 @@
 {
-    "level": 3,
+    "level": 1,
     "attack": {
-        "skull_damage": 12.0,
+        "skull_damage": 10.0,
         "skull_speed_multiplier": 2.5,
         "dangerous_skull_chance": {
             "above_half_health": 0.4,
@@ -56,7 +56,7 @@
     },
     "health": {
         "health": 300.0,
-        "regeneration": 2,
+        "regeneration": 1,
         "regen_when_hit": 0.5,
         "regen_when_hit_duration": 50
     },
@@ -91,16 +91,16 @@
             "above_half_health": 300.0,
             "below_half_health": 200.0
         },
-        "health": 15,
-        "bonus_movement_speed": 0.2,
+        "health": 5,
+        "bonus_movement_speed": 0.1,
         "bow_chance": {
             "above_half_health": 0.5,
             "below_half_health": 0.2
         },
-        "sharpness_chance": 5,
-        "knockback_chance": 2,
-        "power_chance": 5,
-        "punch_chance": 1
+        "sharpness_chance": 0,
+        "knockback_chance": 0,
+        "power_chance": 0,
+        "punch_chance": 0
     },
     "death": {
         "explosion_power": 11.0,
