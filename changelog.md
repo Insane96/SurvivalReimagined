@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.4.2
 * Increased food stack sizes by ~20%
 * Removed Simple Clouds
   * Forgot to mention in previous changelog
