@@ -19,9 +19,50 @@
                     "functions": [
                         {
                             "function": "minecraft:set_count",
-                            "count": 9
+                            "count": 16
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "rolls": 900,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_ore",
+                    "weight": 50
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ore",
+                    "weight": 35
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_ore",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ancient_debris",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "iguanatweaksreborn:enchant_randomly_weightless",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            },
+                            "treasure": true,
+                            "max_lvl": true
+                        }
+                    ],
+                    "weight": 1
                 }
             ]
         }

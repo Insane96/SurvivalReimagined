@@ -18,21 +18,5 @@
   {
     "id": "minecraft:netherite_block",
     "value": 4.0
-  },
-  {
-    "id": "iguanatweaksexpanded:durium_block",
-    "value": 3.0
-  },
-  {
-    "id": "iguanatweaksexpanded:soul_steel_block",
-    "value": 1.5
-  },
-  {
-    "id": "iguanatweaksexpanded:quaron_block",
-    "value": 1.5
-  },
-  {
-    "id": "iguanatweaksexpanded:keego_block",
-    "value": 3.0
   }
 ]

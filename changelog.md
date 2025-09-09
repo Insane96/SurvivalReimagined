@@ -4,10 +4,8 @@
 * Increased food stack sizes by ~20%
 * Removed Simple Clouds
   * Forgot to mention in previous changelog
-* Base wither revamped
-  * It's now the same as the base mod but less powerful
-* Ultimate wither has been fixed
-  * Definitely not balanced, but you can try
+* Rebalanced withers fight and loot
+  * Now should be doable
 * Chance for skeletons to spawn with quivers is now the same in all difficulties
 * Smithing templates are now much cheaper to dupe
 * Slightly reduced enchantments from spawners
