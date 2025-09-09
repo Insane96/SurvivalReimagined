@@ -11,6 +11,7 @@
 * Chance for skeletons to spawn with quivers is now the same in all difficulties
 * Smithing templates are now much cheaper to dupe
 * Slightly reduced enchantments from spawners
+* Items from explosions now stack again
 * Fixed cobblestone drops being replaced with copper blocks
 
 ### Changes from mods
