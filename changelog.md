@@ -14,6 +14,8 @@
 
 ### Changes from mods
 * Attributes on tooltips are now sorted
+* Mini-overhaul for the beacon
+* Reduced regeneration effect speed
 
 ## 3.4.1
 * Fixed zombie piglin getting angry when breaking quartz on linux server

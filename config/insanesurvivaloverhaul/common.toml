@@ -661,6 +661,11 @@
 			#If true, conduit effect will no longer speed up mining speed.
 			"Remove haste" = true
 
+		[Miscellaneous."Beacon & Conduit".Beacon]
+			"Requires payment" = false
+			#Range: > -2147483648
+			"Base range" = 16
+
 	#Various Nerfs
 	[Miscellaneous.Nerfs]
 		#If true, maxEntityCramming game rule is set to 6 from 24
@@ -830,6 +835,9 @@
 		"Prevent fire with resistance" = false
 		#Splash potions will always be 2/3 effective compared to drinkable ones but will also apply the full effect duration when thrown
 		"Streamline splash potions" = true
+		#Regeneration will regenerate health every this ticks at level I. Vanilla is 50.
+		#Range: > -2147483648
+		"Regeneration base speed" = 100
 
 [Mining]
 	#Changes Gold tools to have an innate Fortune/Looting I

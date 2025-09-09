@@ -55,15 +55,6 @@
     ]
   },
   {
-    "id": "minecraft:levitation",
-    "height_required": 2,
-    "time_cost": [
-      1,
-      2,
-      3
-    ]
-  },
-  {
     "id": "minecraft:strength",
     "height_required": 3,
     "time_cost": [
