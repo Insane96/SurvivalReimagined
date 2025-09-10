@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.4.3
+* 
+
+### Changes from mods
+* Fixed empowered spawners dropping nothing
+* Increased durability of higher tier armor pieces 
+* Rolled back regeneration effect speed to vanilla 
+* Fixed Unbreakable items still attacking when broken
+
 ## 3.4.2
 * Increased food stack sizes by ~20%
 * Removed Simple Clouds
