@@ -1463,6 +1463,8 @@
 	"Enable Critical rework" = true
 	#Adds a new attribute to add regenerating absorption hearts to the player. Please note that default mods' regenerating absorption is done through item definitions within the combat_rework data pack, disabling this will only disable the regenerating absorption functionality.
 	"Enable Regenerating absorption" = true
+	#Gives a use to the fletching table.
+	"Enable Fletching" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -1591,4 +1593,13 @@
 		"Sound on absorption hurt" = true
 		#(Client only) If true, regenerating absorption hearts are rendered on the right instead on top of hearts.
 		"Render on the right" = false
+
+	#Gives a use to the fletching table.
+	[Combat.Fletching]
+		#If disabled, torch arrows will only set mobs on fire
+		"Torch arrows place torches" = true
+		#Enables the following changes:
+		#* Replaces the vanilla fletching table recipe with the mod's one
+		#* Adds more arrows recipes
+		"Data pack" = true
 

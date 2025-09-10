@@ -129,16 +129,7 @@
 			"Time to generate" = 2400
 
 [Combat]
-	"Enable Fletching table" = true
 	"Enable Shields+" = false
-
-	[Combat."Fletching table"]
-		#Enables the following changes:
-		#* Replaces the vanilla fletching table recipe with the mod's one
-		#* Adds more arrows recipes
-		"Fletching Data Pack" = true
-		#If disabled, torch arrows will only set mobs on fire
-		"Torch arrows place torches" = true
 
 	[Combat."Shields+"]
 		#Changes the crafting recipes of metal shields to require a Forge and rebalances the shields.
