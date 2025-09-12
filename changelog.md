@@ -1,10 +1,18 @@
 # Changelog
 
-## 3.4.3
-* 
+## Upcoming
+* Fixed mobs missing movement speed bonus
 
 ### Changes from mods
+* Splash potions now stack up to 4
+* Repair kits now require 1 material instead of 2 but can only repair an item up to 75% durability
+* Fixed shields enchantability
+* Increased armor enchantability
+
+## 3.4.3
+### Changes from mods
 * Fixed empowered spawners dropping nothing
+* Removed Hellish coal
 * Increased durability of higher tier armor pieces 
 * Rolled back regeneration effect speed to vanilla 
 * Fixed Unbreakable items still attacking when broken

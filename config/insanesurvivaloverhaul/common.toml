@@ -903,10 +903,10 @@
 	[Mining."Repair kits"]
 		#Default how many materials worth does a repair kit repair. Each repair kit can have it's own ratio
 		#Range: > 1
-		"Repair kit material ratio" = 2
+		"Repair kit material ratio" = 1
 		#Default maximum repair percentage of an item. Each repair kit can have it's own max repair
 		#Range: 0.0 ~ 1.0
-		"Max repair" = 1.0
+		"Max repair" = 0.75
 
 [Items]
 	#Retrieve name tags from name tagged entities.
