@@ -1,6 +1,10 @@
 # Changelog
 
 ## Upcoming
+* Removed most long nosed entities
+  * Disabled patrols
+  * Disabled mansions
+  * Removed bane of noses enchantment (reroll them with the Ensorceller)
 * Fixed mobs missing movement speed bonus
 
 ### Changes from mods
