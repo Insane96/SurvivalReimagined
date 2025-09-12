@@ -6,6 +6,7 @@
   * Disabled mansions
   * Removed bane of noses enchantment (reroll them with the Ensorceller)
 * Fixed mobs missing movement speed bonus
+* Fixed speaker block missing recipe
 
 ### Changes from mods
 * Splash potions now stack up to 4
