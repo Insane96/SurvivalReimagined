@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.4.5
 * Removed most long nosed entities
   * Disabled patrols
   * Disabled mansions
@@ -11,8 +11,14 @@
 ### Changes from mods
 * Splash potions now stack up to 4
 * Repair kits now require 1 material instead of 2 but can only repair an item up to 75% durability
+* Keego no longer activates if not on ground
 * Fixed shields enchantability
 * Increased armor enchantability
+* Fishing is now world bound and slows down fishing instead of prevent you from fishing 
+* Changed Y info to Altitude 
+* You're now left with 1 hearth instead of half when unfair oneshot is activated 
+* Beacon range is now affected by amplifier. Higher amplifiers yield less range
+* Fixed Bone meal still usable to grow crops
 
 ## 3.4.3
 ### Changes from mods
