@@ -1,5 +1,11 @@
 # Changelog
 
+## Upcoming
+
+### Changes from mods
+* Fixed bone meal no longer usable
+* Fixed blasting silver ore
+
 ## 3.4.5
 * Removed most long nosed entities
   * Disabled patrols

@@ -645,6 +645,8 @@
 	"Enable Data / Resource Packs & Integration" = true
 	#Various changes to potions and effects
 	"Enable Potions and effects" = true
+	#Fishing more and more in the same spot will slow down the fishing
+	"Enable Low fish" = true
 
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	[Miscellaneous."Beacon & Conduit"]
@@ -672,8 +674,6 @@
 		"Reduced mob cramming" = true
 		#Fixes several piston physics exploits like TNT duping. (If quark is present this is disabled)
 		"Remove piston physics exploit" = true
-		#Range: 0.0 ~ 1.0
-		"Fishing has a chance to fish a guardian" = 0.0
 		#When an entity is hit and on a mount they have this chance to fall
 		#Range: 0.0 ~ 1.0
 		"Fall from mount chance" = 0.2
@@ -690,8 +690,6 @@
 		"Less burn time for kelp block" = true
 		#Prevents duping falling blocks when they travel across dimensions. (If quark is present this is disabled)
 		"Remove falling block dupe" = true
-		#If enabled after fishing for a few times in the same spot you won't be able to fish again unless you move in another spot
-		"Anti fishing farms" = true
 
 	#Various stuff that doesn't fit in any other Feature.
 	[Miscellaneous.Tweaks]
@@ -838,6 +836,17 @@
 		#Regeneration will regenerate health every this ticks at level I. Vanilla is 50.
 		#Range: > -2147483648
 		"Regeneration base speed" = 100
+
+	#Fishing more and more in the same spot will slow down the fishing
+	[Miscellaneous."Low fish"]
+		#Range: > -2147483648
+		"Fishing spot range" = 8
+		#Range: > -2147483648
+		"Fished before slowdown" = 12
+		#Range: > -2147483648
+		"Slowdown per one past fished" = 100
+		#Range: > -2147483648
+		"Slowdown message" = 900
 
 [Mining]
 	#Changes Gold tools to have an innate Fortune/Looting I
@@ -1439,7 +1448,7 @@
 
 [Combat]
 	"Enable Snowballs" = true
-	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
+	#Players live with a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	"Enable Unfair one-shot" = true
 	#Players will deal reduced knockback if attacking with a non-weapon or spamming. Knockback reductions are defined via Data Packs with Item Definitions (the item_stats integrated data pack already does this)
 	"Enable Knockback" = true
@@ -1476,12 +1485,18 @@
 		#If true, freezing stacks each hit.
 		"Freezing stacks" = true
 
-	#Players be left with half a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
+	#Players live with a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
 	[Combat."Unfair one-shot"]
 		#If true, an animation is played on activation
 		Animation = true
 		#A list of effects to give when Unfair One Shot triggers, separated by semi-colons
 		"Effects config" = "minecraft:resistance,50,4;minecraft:resistance,100,3;minecraft:resistance,150,1"
+		#How much health you need to have for this to activate
+		#Range: 1.0 ~ 20.0
+		"Activation health" = 15.0
+		#How much heal you're left with when this activates. Must be at least 1 lower than 'Activation health'
+		#Range: 1.0 ~ 20.0
+		"Leftover health" = 2.0
 
 	#Players will deal reduced knockback if attacking with a non-weapon or spamming. Knockback reductions are defined via Data Packs with Item Definitions (the item_stats integrated data pack already does this)
 	[Combat.Knockback]
