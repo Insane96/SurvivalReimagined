@@ -110,9 +110,6 @@
 
 	[entries.wood_type]
 
-		[entries.wood_type.friendsandfoes]
-			beehive = true
-
 		[entries.wood_type.vct]
 			crafting_table = true
 
