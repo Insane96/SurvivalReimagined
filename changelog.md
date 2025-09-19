@@ -1,10 +1,13 @@
 # Changelog
 
 ## Upcoming
+* Added Mouse Tweaks
+  * Replaces inventory profiles
 
 ### Changes from mods
 * Fixed bone meal no longer usable
 * Fixed blasting silver ore
+* Fixed repair kits recipes not working
 
 ## 3.4.5
 * Removed most long nosed entities
