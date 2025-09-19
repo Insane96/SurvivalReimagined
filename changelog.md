@@ -1,8 +1,9 @@
 # Changelog
 
-## Upcoming
+## 3.4.6
 * Added Mouse Tweaks
   * Replaces inventory profiles
+  * Re-enabled quark sorting. You can now sort Storage Crates!
 
 ### Changes from mods
 * Fixed bone meal no longer usable
