@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Doubled food stack sizes
+
 ## 3.4.6
 * Added Mouse Tweaks
   * Replaces inventory profiles
