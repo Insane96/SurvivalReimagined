@@ -3,6 +3,10 @@
 ## Upcoming
 * Doubled food stack sizes
 
+### Changes from mods
+* Soul Blasting recipes no longer take 50% more time than Blasting recipes
+* Fixed Repair kits not showing in EMI
+
 ## 3.4.6
 * Added Mouse Tweaks
   * Replaces inventory profiles

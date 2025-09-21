@@ -137,6 +137,9 @@
 			large_boat = true
 			furnace_boat = true
 
+		[entries.wood_type.friendsandfoes]
+			beehive = true
+
 	[entries.stone_type]
 
 		[entries.stone_type.waystones]
