@@ -69,17 +69,17 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:stone_sword"
+          "name": "iguanatweaksreborn:copper_sword"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:stone_axe"
+          "name": "iguanatweaksreborn:copper_axe"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:stone_shovel"
+          "name": "iguanatweaksreborn:copper_shovel"
         },
         {
           "type": "minecraft:item",

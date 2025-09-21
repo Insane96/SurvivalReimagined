@@ -6,6 +6,7 @@
 ### Changes from mods
 * Soul Blasting recipes no longer take 50% more time than Blasting recipes
 * Fixed Repair kits not showing in EMI
+* Fixed stone tools still appearing somewhere
 
 ## 3.4.6
 * Added Mouse Tweaks
