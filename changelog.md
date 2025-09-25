@@ -1,6 +1,6 @@
 # Changelog
 
-## Upcoming
+## 3.4.7
 * Added Simple Voice Chat
   * Much fun for multiplayer
 * Removed Philip's Ruins
