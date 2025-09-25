@@ -1,6 +1,8 @@
 # Changelog
 
 ## Upcoming
+* Added Simple Voice Chat
+  * Much fun for multiplayer
 * Removed Philip's Ruins
 * Doubled food stack sizes
 * Fixed stone tools still appearing somewhere
