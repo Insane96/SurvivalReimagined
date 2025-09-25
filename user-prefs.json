@@ -298,11 +298,19 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\04\\f81c7c8f13c465c535079d63a1490c586a2b26",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\05",
         "isSelected": false
       },
       {
         "path": ".git\\objects\\05\\26b8e4509c1540aea99c2a3d371e7de77fb2cb",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\05\\306119fcbdc56a35a66c71133bc31e96ca24db",
         "isSelected": false
       },
       {
@@ -470,6 +478,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\0b\\e481877b5aadef3305f725ad35663a60b557cd",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\0b\\f5b96412b2d1b4e8176e379fcf9dc3566d0ed0",
         "isSelected": false
       },
@@ -495,6 +507,10 @@
       },
       {
         "path": ".git\\objects\\0d\\18d03d6410cd362312330eecec90d236529e93",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\0d\\3ed277c40061c6568816719f3f66088c4724b3",
         "isSelected": false
       },
       {
@@ -598,6 +614,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\12\\66b10e855af91f5223faf8298f8becb9b46ca5",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\12\\816fce75a29a7d0abf179bce0ecc4b419f0d5a",
         "isSelected": false
       },
@@ -671,6 +691,10 @@
       },
       {
         "path": ".git\\objects\\15\\91649b729a3cefe4e8f9eaaadac583840f5edb",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\15\\92d5d2b1a6b9124d4aa8471bac9cab8ccd448c",
         "isSelected": false
       },
       {
@@ -886,6 +910,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\1e\\ed10bb9d987c9e3a6e8f1257cc85e3176af95c",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\1e\\fca2fc178d6beb6226164e827c1bebc7772a24",
         "isSelected": false
       },
@@ -971,6 +999,10 @@
       },
       {
         "path": ".git\\objects\\21\\9517790ec9e28258fb6acdb9c249458de0b956",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\21\\e823e72a4e81ec74eaaa9f34d179de0c1bf168",
         "isSelected": false
       },
       {
@@ -1067,6 +1099,10 @@
       },
       {
         "path": ".git\\objects\\25\\7768f9878c6503ea8494d3cdce8082a821d720",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\25\\92f1da47bf5fc316f523f6395139e17cffcb3b",
         "isSelected": false
       },
       {
@@ -1187,6 +1223,14 @@
       },
       {
         "path": ".git\\objects\\2a\\670571cf819179cffaae34b7a1546f7fa17762",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\2a\\83c4ec2c4279269995984aa67c6c8d70ca2555",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\2a\\8c59e1f7909207038037d53f47502ed5a8c99b",
         "isSelected": false
       },
       {
@@ -1351,6 +1395,10 @@
       },
       {
         "path": ".git\\objects\\30",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\30\\2190623da8a352acadc810ba7c5de4562180e0",
         "isSelected": false
       },
       {
@@ -1734,6 +1782,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\3e\\0d61112a33910d4b3da0c6cfbbae422c091894",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\3e\\1eeab9c842691d2370a6f852e7b68cb26b87e7",
         "isSelected": false
       },
@@ -2034,6 +2086,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\4b\\211e678cc397010c45d1eb834ef1ec7404fa5d",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\4b\\433ae978d15bbf062be0d540099f5d37a16c6b",
         "isSelected": false
       },
@@ -2051,6 +2107,10 @@
       },
       {
         "path": ".git\\objects\\4c",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\4c\\231dcaba8044e3a98ea27f6ef00afd6de3975c",
         "isSelected": false
       },
       {
@@ -2250,6 +2310,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\55\\508b13bbfe16abcd133f8b4498ac8a6c60b53e",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\55\\7ae0f81ed3762785dd04b6df90edfc495d6b02",
         "isSelected": false
       },
@@ -2279,6 +2343,10 @@
       },
       {
         "path": ".git\\objects\\56\\ba133a71608621496406325f162ed1f72a3d83",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\56\\ca30f132cf84d028726bbef3d9eb590057fa93",
         "isSelected": false
       },
       {
@@ -2351,6 +2419,10 @@
       },
       {
         "path": ".git\\objects\\59\\7c29e596b66916769cdfe6049fd07495ece5dc",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\59\\96b3a7b16f7c228bde077c6d540efae106d1cb",
         "isSelected": false
       },
       {
@@ -2579,6 +2651,10 @@
       },
       {
         "path": ".git\\objects\\63\\4c57fc1969a187780991ce5244d426ac5ed401",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\63\\4e299eb25e65a1a051645392d0ecc56f788f3c",
         "isSelected": false
       },
       {
@@ -2826,6 +2902,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\6b\\c62df792f31c549a2c3f3fa9f6b70866251610",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\6c",
         "isSelected": false
       },
@@ -2875,6 +2955,10 @@
       },
       {
         "path": ".git\\objects\\6e\\47a76c67ca9206fe9d06d5f680daafb43762ab",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\6e\\9318167a524c2d777cd879860731263499ee98",
         "isSelected": false
       },
       {
@@ -3162,11 +3246,19 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\79\\762a2e048bdeb12c486621c23ab9e08b2b5950",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\79\\d635288bf364bbd078bc158f5becae1745156a",
         "isSelected": false
       },
       {
         "path": ".git\\objects\\7a",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\7a\\0354aa1d993181a27b540541b3ba2b184b0f0d",
         "isSelected": false
       },
       {
@@ -3226,7 +3318,15 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\7c\\0e397be1ba94a5c4c292f34fed0721d29d109e",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\7c\\418eaf1de32141ff92a7355079254abdc00d62",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\7c\\68723fe6c30b21886ba1477b5ddb8c82852b75",
         "isSelected": false
       },
       {
@@ -3303,6 +3403,10 @@
       },
       {
         "path": ".git\\objects\\7f\\464f8114982ecf659b7c7e48c2278fe8fec0a8",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\7f\\8ce7fdb02764671e5b672e78ca8e6c1a4528ee",
         "isSelected": false
       },
       {
@@ -3438,6 +3542,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\86\\57107bc6a6b507021bcd07274ebcfe0d249878",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\86\\677f151bd95f2e6ce6f544f11800fbf4a87d38",
         "isSelected": false
       },
@@ -3467,6 +3575,10 @@
       },
       {
         "path": ".git\\objects\\87\\cc4cdbb6a676ec5d97a46f1f52b03a6ea2c26b",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\87\\e27685771127d976c2b85de65639174ef9ef0c",
         "isSelected": false
       },
       {
@@ -3631,6 +3743,10 @@
       },
       {
         "path": ".git\\objects\\8d\\58455300f81269c20575fe4f0a6192c5e546fe",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\8d\\cd3163287d801278eb14972790fc3e30e6daa3",
         "isSelected": false
       },
       {
@@ -4106,6 +4222,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\a1\\6f5b021e033623d6fb168f2928295f69210678",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\a1\\715bbc7b07260390f043ff532d842990abcb94",
         "isSelected": false
       },
@@ -4194,6 +4314,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\a5\\a46afe6dd0ea836f4853482d62ddf1353b0852",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\a5\\a7237f090959790e64dade17531ba8dc923e3c",
         "isSelected": false
       },
@@ -4251,6 +4375,14 @@
       },
       {
         "path": ".git\\objects\\a8\\db788f48a86a32c93f7c12da97b0a174bd6a0c",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\a9",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\a9\\7f067e843fc835ece2809fdb96b66f6259cb42",
         "isSelected": false
       },
       {
@@ -4315,6 +4447,10 @@
       },
       {
         "path": ".git\\objects\\ac\\08ed25eb56ce417bab8dd36a2414af9a7ce7d5",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\ac\\209f22c6a3ef7694ac26c8b34df31681263a89",
         "isSelected": false
       },
       {
@@ -4475,6 +4611,10 @@
       },
       {
         "path": ".git\\objects\\b2\\c28126b47f4c006236a133677fa4f3f08ed0d4",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\b2\\f2190fd787185e28657ebcbfca5b099c296d81",
         "isSelected": false
       },
       {
@@ -4650,6 +4790,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\b9\\f4ebae6982efda19fd63cfc82eaedb3823a1b4",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\ba",
         "isSelected": false
       },
@@ -4778,6 +4922,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\bf\\af8e63461faccb50c53a4bc24e0d4fad00dba5",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\c0",
         "isSelected": false
       },
@@ -4862,6 +5010,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\c3\\d84d0c1db975cad856bd80ea9c7f86b4030a55",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\c3\\e4a36bf018628f1560e2b7110a400b54ed72d4",
         "isSelected": false
       },
@@ -4871,6 +5023,10 @@
       },
       {
         "path": ".git\\objects\\c4\\4dc44f37c7b9b807ef282b291b36cda0f0bbeb",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\c4\\557c06634cf283779df7c13b7310ddd2d08640",
         "isSelected": false
       },
       {
@@ -4914,11 +5070,19 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\c5\\7827cf36e036decc4eebdb6d6cc065c23fb331",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\c6",
         "isSelected": false
       },
       {
         "path": ".git\\objects\\c6\\142efea7ea863f3aff1013700f423cdc5ad443",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\c6\\145b49020984bd87e490c35a4bd6da52c2fd1a",
         "isSelected": false
       },
       {
@@ -5450,6 +5614,14 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\dd\\a97b5e730e1020d82cbf8e1397dbc05850f726",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\dd\\dba5e2ad1e2072ab27ab1441b81bd7b02a04f8",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\de",
         "isSelected": false
       },
@@ -5658,6 +5830,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\e5\\997fc4913827227aa82985866340ae641ab4d1",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\e5\\af365b23f2d40916355d610a6e5c082648e5ab",
         "isSelected": false
       },
@@ -5834,6 +6010,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\ec\\66b07f5687a63569affe27f05e277b5c486ea9",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\ed",
         "isSelected": false
       },
@@ -5954,6 +6134,10 @@
         "isSelected": false
       },
       {
+        "path": ".git\\objects\\f3\\e131376e0489be933478e1a15ed03a2dfe0598",
+        "isSelected": false
+      },
+      {
         "path": ".git\\objects\\f3\\fddf5290a5b2887980f06d11bb4c0b96ac18fc",
         "isSelected": false
       },
@@ -5963,6 +6147,10 @@
       },
       {
         "path": ".git\\objects\\f4\\11492449a88198d9f74bae892be37046dcc57a",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\f4\\42cad68824c82358c05bff15fdd83f4c207fcb",
         "isSelected": false
       },
       {
@@ -5979,6 +6167,10 @@
       },
       {
         "path": ".git\\objects\\f5\\3f02b07bc12a6296bac113e68f6d08c86daa5f",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\f5\\494eb06b4d0f6dc380f1800fe570342edee540",
         "isSelected": false
       },
       {
@@ -6019,6 +6211,10 @@
       },
       {
         "path": ".git\\objects\\f6\\b16df11206552a526263070ee0a477a4285e2d",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\f6\\d4765d6da990f956ec7e109c9fa19fc19e045e",
         "isSelected": false
       },
       {
@@ -6123,6 +6319,10 @@
       },
       {
         "path": ".git\\objects\\fc",
+        "isSelected": false
+      },
+      {
+        "path": ".git\\objects\\fc\\649a619d28dfdb85b697430e6636fa64e3b2f0",
         "isSelected": false
       },
       {
@@ -6459,6 +6659,10 @@
       },
       {
         "path": "config\\defaultoptions\\options.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\defaultoptions\\servers.dat",
         "isSelected": true
       },
       {
@@ -7811,6 +8015,10 @@
       },
       {
         "path": "crash-reports\\crash-2025-09-21_17.17.34-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2025-09-25_21.33.12-server.txt",
         "isSelected": false
       },
       {
@@ -9262,94 +9470,6 @@
         "isSelected": true
       },
       {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\ancient_crypt.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\ancient_dungeon.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\antiquus_crypta.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\desert_structures.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\lost_soul_city.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\nether_ruins.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\nether_structures.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\ocean_fortress_main.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\ocean_ruins.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\rare_ruin.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\structure_set\\underground_structures.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\template_pool",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\template_pool\\badlands_structures.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\template_pool\\desert_structures.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\template_pool\\field_stone_ruins.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\template_pool\\level_one_ruins.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\template_pool\\level_three_ruins.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\template_pool\\level_two_ruins.json",
-        "isSelected": true
-      },
-      {
-        "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\philipsruins\\worldgen\\template_pool\\level_two_ruins_pool.json",
-        "isSelected": true
-      },
-      {
         "path": "global_packs\\required_data\\survivalreimagineddatapack\\data\\progressivebosses",
         "isSelected": true
       },
@@ -10767,6 +10887,14 @@
       },
       {
         "path": "logs\\2025-09-21-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-09-25-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2025-09-25-2.log.gz",
         "isSelected": false
       },
       {
@@ -15755,6 +15883,10 @@
       },
       {
         "path": "saves\\New World\\serverconfig\\toolbelt-server.toml",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World\\serverconfig\\voicechat-server.toml",
         "isSelected": false
       },
       {
