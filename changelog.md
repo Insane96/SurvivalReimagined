@@ -1,5 +1,8 @@
 # Changelog
 
+## Upcoming
+* Fixed repair kits not showing in EMI
+
 ## 3.4.7
 * Added Simple Voice Chat
   * Much fun for multiplayer
