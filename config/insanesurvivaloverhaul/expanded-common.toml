@@ -74,6 +74,11 @@
 	[Items.Altimeter]
 		"Show approx altitude in tooltip" = true
 
+	#Add a new explosive block.
+	[Items."Explosive barrel"]
+		#Range: 0.5 ~ 1.7976931348623157E308
+		"Explosion radius" = 5.0
+
 [Experience]
 	"Enable New Enchantments" = true
 	"Enable Enchanting" = true

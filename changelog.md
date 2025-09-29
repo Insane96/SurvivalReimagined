@@ -1,7 +1,12 @@
 # Changelog
 
 ## Upcoming
+* Removed extra repair cost for enchanted items
 * Fixed repair kits not showing in EMI
+
+### Changes from mods
+* Increased explosive barrel power
+* Fixed soul blast furnace not picking up items from hoppers
 
 ## 3.4.7
 * Added Simple Voice Chat
