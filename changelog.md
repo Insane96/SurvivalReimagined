@@ -3,10 +3,18 @@
 ## Upcoming
 * Removed extra repair cost for enchanted items
 * Fixed repair kits not showing in EMI
+* Removed Simple Voice Chat
+  * Sounded funnier
+* Added sound physics remastered
 
 ### Changes from mods
 * Increased explosive barrel power
 * Fixed soul blast furnace not picking up items from hoppers
+* Replaced Portable Crates with Pouches (no longer need to place them) 
+  * Can be right-clicked to open (both in hand or from inventory)
+* Composter time to produce increased 
+* Items from bundles and pouches now work for HUD Infos
+* Added more infos for ores in advancements
 
 ## 3.4.7
 * Added Simple Voice Chat

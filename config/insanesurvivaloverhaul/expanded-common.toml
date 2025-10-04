@@ -55,24 +55,19 @@
 		#* Buckets, Flint and Steel and Shears require a forge to be made
 		"Forging equipment crafting data pack" = true
 
+	#Adds mining charge
+	[Mining."Mining charge"]
+		#Range: > 1
+		"Tunnel length" = 8
+		#Range: > 0
+		"Tunnel radius" = 1
+
 [Items]
 	"Enable Recall Potion" = true
 	#Add Solarium, a new material made by alloying Overgrown solium moss ball (found in hot biomes) and can be used to upgrade Iron Equipment. Disabling this will disable ore generation and items in the creative inventory.
 	"Enable Solarium" = false
-	"Enable Crate" = true
-	"Enable Altimeter" = false
 	#Add a new explosive block.
 	"Enable Explosive barrel" = true
-
-	[Items.Crate]
-		#Range: > 0
-		"Max crates without slowdown" = 2
-		#When you have > 'Max crates without slowdown' this is the base value for the slowdown. The slowdown is calculated as (crates above 'Max crates' ^ 2 * this)
-		#Range: 0.0 ~ 1.0
-		"Base Slowness per crate over max" = 0.025
-
-	[Items.Altimeter]
-		"Show approx altitude in tooltip" = true
 
 	#Add a new explosive block.
 	[Items."Explosive barrel"]

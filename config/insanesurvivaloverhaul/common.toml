@@ -938,6 +938,10 @@
 	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones.
 	"Enable Stone tools gone" = true
 	"Enable Blinker" = true
+	#A new block that can let you carry more stuff around.
+	"Enable Pouch" = true
+	#Check your altitude. Disables itself if Caverns and Chasms is present
+	"Enable Altimeter" = true
 
 	[Items."gigaherz Tool Belt"]
 		#Enables a data pack that changes the crafting of the Tool Belt to give more slots (2 -> 4)
@@ -998,6 +1002,14 @@
 		"Durability tooltip" = true
 		#If set to true only enchanted items will no longer break
 		"Enchanted items only" = false
+
+	#A new block that can let you carry more stuff around.
+	[Items.Pouch]
+		#Range: > 0
+		"Max pouch without slowdown" = 2
+		#When you have > 'Max pouch without slowdown' this is the base value for the slowdown. The slowdown is calculated as (pouch above 'Max pouch' ^ 2 * this)
+		#Range: 0.0 ~ 1.0
+		"Base slowness per pouch over max" = 0.03
 
 ["Hunger & Health"]
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
@@ -1141,6 +1153,9 @@
 		"Compostable rotten flesh" = true
 		#Makes bone meal have a chance to fail on Cave Vines, Saplings and Sweet Berry Bushes.
 		"Data pack" = true
+		#Vanilla is 20
+		#Range: > 0
+		"Composter time to produce" = 50
 
 		#How many stages will cactus and sugar canes grow with one bone meal. Set to 0 to disable.
 		[Farming."Bone meal"."Bone meal canes and cactus"]
