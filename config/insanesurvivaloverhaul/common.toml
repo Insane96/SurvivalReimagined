@@ -849,8 +849,8 @@
 		"Slowdown message" = 900
 
 [Mining]
-	#Changes Gold tools to have an innate Fortune/Looting I
-	"Enable Gold" = true
+	#Changes Gold tools to have an innate Fortune/Looting
+	"Enable Gold" = false
 	#Various changes for different materials and ores.
 	"Enable Materials and ores" = true
 	#Change, through data packs, some blocks properties, from hardness to explosion resistance to speed and jump factors to bone meal chance to fail.
@@ -862,7 +862,7 @@
 	#Add repair kits, making you able to repair items in the crafting grid
 	"Enable Repair kits" = true
 
-	#Changes Gold tools to have an innate Fortune/Looting I
+	#Changes Gold tools to have an innate Fortune/Looting
 	[Mining.Gold]
 		#Set the innate looting level of gold tools.
 		#Range: 0 ~ 255
@@ -924,7 +924,7 @@
 	#Make items not able to mine / attack
 	"Enable Disabled items" = true
 	#Wooden items have bonuses when used in sunlight.
-	"Enable Ecologic wood" = true
+	"Enable Ecologic wood" = false
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	"Enable Stack sizes" = true
 	#Control Items properties via data packs. Add more tooltips.
@@ -1489,6 +1489,8 @@
 	"Enable Regenerating absorption" = true
 	#Gives a use to the fletching table.
 	"Enable Fletching" = true
+	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
+	"Enable Attack sounds" = true
 
 	[Combat.Snowballs]
 		#Snowballs deal this amount of damage.
@@ -1632,4 +1634,8 @@
 		#* Replaces the vanilla fletching table recipe with the mod's one
 		#* Adds more arrows recipes
 		"Data pack" = true
+
+	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
+	[Combat."Attack sounds"]
+		"Randomize pitch" = true
 

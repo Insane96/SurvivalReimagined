@@ -75,8 +75,9 @@
 		"Explosion radius" = 5.0
 
 [Experience]
-	"Enable New Enchantments" = true
 	"Enable Enchanting" = true
+	#Adds new enchantments. Please note that Damaging enchantments such as water coolant are enabled only if ITR 'Replace damaging enchantments' is enabled. This also applies for protection enchantments and ITR 'Replace protection enchantments'. Disabling this feature will make the new enchantments not discoverable
+	"Enable New enchantments" = true
 
 	[Experience.Enchanting]
 		#Enchanted items can no longer be merged with other enchanted items.

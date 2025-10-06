@@ -519,5 +519,13 @@
     {
         "id": "stamina:vigour",
         "cost_per_level": 2
+    },
+    {
+        "id": "iguanatweaksexpanded:dwarfing",
+        "cost_per_level": 1
+    },
+    {
+        "id": "iguanatweaksexpanded:weathering",
+        "cost_per_level": 3
     }
 ]
