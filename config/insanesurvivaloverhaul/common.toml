@@ -1406,7 +1406,7 @@
 			#Experience dropped by mobs from spawners are still affected by 'Global Experience Multiplier'
 			#Can be set to 0 to disable experience drop from mob that come from spawners.
 			#Range: 0.0 ~ 128.0
-			"Multiplier: Spawners" = 0.5
+			"Multiplier: Spawners" = 1.0
 			#Experience dropped from mobs that DON'T come from spawners will be multiplied by this multiplier.
 			#Experience dropped from mobs that DON'T come from spawners is still affected by 'Global Experience Multiplier'
 			#Can be set to 0 to disable experience drop from mob that DON'T come from spawners.
