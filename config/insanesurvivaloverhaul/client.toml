@@ -1,13 +1,11 @@
 "Enable Client" = true
 
 [Client]
-	#Misc client side changes
 	"Enable Misc" = true
 	#Changes to light
 	"Enable Light" = true
 	#World border changes
 	"Enable World Border" = true
-	#Makes fog less invasive in some contexts
 	"Enable Fog" = true
 	#Changes to death
 	"Enable Death" = true
@@ -16,7 +14,6 @@
 	#Adds various infos on top left of the screen
 	"Enable HUD Infos" = true
 
-	#Misc client side changes
 	[Client.Misc]
 		#Moves the hotbar this amount of pixels up (like bedrock edition). Other mods' GUI elements should work flawlessly if using the correct Forge GUI fields
 		#Range: > 0
@@ -51,7 +48,6 @@
 		#Range: 0.0 ~ 1.0
 		Transparency = 0.4
 
-	#Makes fog less invasive in some contexts
 	[Client.Fog]
 		#If true you'll be able to see better in lava when with the Fire Resistance Effect.
 		"Better visibility in Lava with Fire Resistance Lava" = true

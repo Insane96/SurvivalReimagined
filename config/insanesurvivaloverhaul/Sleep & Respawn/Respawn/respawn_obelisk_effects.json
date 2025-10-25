@@ -19,5 +19,10 @@
     "id": "minecraft:saturation",
     "duration": 900,
     "ambient": true
+  },
+  {
+    "id": "iguanatweaksreborn:ghostly",
+    "duration": 1200,
+    "ambient": true
   }
 ]

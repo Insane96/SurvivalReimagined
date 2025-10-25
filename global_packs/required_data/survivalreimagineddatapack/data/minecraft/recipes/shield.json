@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " M ",
+        "MBM",
+        " M "
+    ],
+    "key": {
+        "M": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "tag": "minecraft:logs"
+        }
+    },
+    "result": {
+        "item": "shieldsplus:iron_shield"
+    }
+}

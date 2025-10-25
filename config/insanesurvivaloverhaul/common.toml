@@ -263,6 +263,8 @@
 	"Enable Respawn" = true
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
 	"Enable Sleeping effects" = true
+	#Health and hunger penalties on respawn
+	"Enable Respawn penalties" = true
 
 	#Changes to sleeping and spawn points
 	["Sleep & Respawn"."Sleeping and Spawn Point"]
@@ -361,82 +363,23 @@
 		"Allow obelisk spawn point overwrite with beds sneaking" = true
 		#If true, respawn obelisks will require (and consume) precious blocks to let you respawn
 		"Respawn obelisks require catalyst blocks" = false
+		#How many ticks of the Ghostly effect is given to the player on respawn.
+		#Range: > 0
+		"Ghostly effect" = 120
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose world spawn range"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 96.0
+			Minimum = 128.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 192.0
+			Maximum = 256.0
 
 		#The range from beds where players will respawn.
 		["Sleep & Respawn".Respawn."Loose bed spawn range"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 96.0
+			Minimum = 80.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 192.0
-
-		["Sleep & Respawn".Respawn."Stats penalty"]
-
-			["Sleep & Respawn".Respawn."Stats penalty".Health]
-
-				#Min Health of respawning players
-				["Sleep & Respawn".Respawn."Stats penalty".Health.Minimum]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 10.0
-					#Range: 0.0 ~ 20.0
-					Normal = 10.0
-					#Range: 0.0 ~ 20.0
-					Hard = 6.0
-
-				#How much health respawning players lose on respawn (not max health)
-				["Sleep & Respawn".Respawn."Stats penalty".Health."Per death"]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 1.0
-					#Range: 0.0 ~ 20.0
-					Normal = 2.0
-					#Range: 0.0 ~ 20.0
-					Hard = 2.0
-
-			["Sleep & Respawn".Respawn."Stats penalty".Hunger]
-
-				#Min Hunger of respawning players. If below this value on death will be set to this value
-				["Sleep & Respawn".Respawn."Stats penalty".Hunger.Min]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 6.0
-					#Range: 0.0 ~ 20.0
-					Normal = 6.0
-					#Range: 0.0 ~ 20.0
-					Hard = 6.0
-
-				#Max Hunger of respawning players. If above this value on death will be set to this value
-				["Sleep & Respawn".Respawn."Stats penalty".Hunger.Maximum]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 14.0
-					#Range: 0.0 ~ 20.0
-					Normal = 14.0
-					#Range: 0.0 ~ 20.0
-					Hard = 10.0
-
-			["Sleep & Respawn".Respawn."Stats penalty".Saturation]
-
-				#Min Saturation of respawning players. If below this value on death will be set to this value
-				["Sleep & Respawn".Respawn."Stats penalty".Saturation.Minimum]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 6.0
-					#Range: 0.0 ~ 20.0
-					Normal = 6.0
-					#Range: 0.0 ~ 20.0
-					Hard = 6.0
-
-				#Max Saturation of respawning players. If above this value on death will be set to this value
-				["Sleep & Respawn".Respawn."Stats penalty".Saturation.Maximum]
-					#Range: 0.0 ~ 20.0
-					"Easy/Peaceful" = 10.0
-					#Range: 0.0 ~ 20.0
-					Normal = 10.0
-					#Range: 0.0 ~ 20.0
-					Hard = 6.0
+			Maximum = 160.0
 
 	#Prevents the player from sleeping if has not enough Hunger and gives him effects on wake up. Effects on wake up are controlled via json in this feature's folder
 	["Sleep & Respawn"."Sleeping effects"]
@@ -455,6 +398,69 @@
 		#Apply the bad effects only when the Tired effect is equal or above this amplifier. -1 to disable
 		#Range: -1 ~ 255
 		"Dizzy when to tired" = 1
+
+	#Health and hunger penalties on respawn
+	["Sleep & Respawn"."Respawn penalties"]
+
+		["Sleep & Respawn"."Respawn penalties".Health]
+
+			#Min Health of respawning players
+			["Sleep & Respawn"."Respawn penalties".Health.Minimum]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 10.0
+				#Range: 0.0 ~ 20.0
+				Normal = 10.0
+				#Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#How much health respawning players lose on respawn (not max health)
+			["Sleep & Respawn"."Respawn penalties".Health."Per death"]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 1.0
+				#Range: 0.0 ~ 20.0
+				Normal = 2.0
+				#Range: 0.0 ~ 20.0
+				Hard = 2.0
+
+		["Sleep & Respawn"."Respawn penalties".Hunger]
+
+			#Min Hunger of respawning players. If below this value on death will be set to this value
+			["Sleep & Respawn"."Respawn penalties".Hunger.Min]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 6.0
+				#Range: 0.0 ~ 20.0
+				Normal = 6.0
+				#Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#Max Hunger of respawning players. If above this value on death will be set to this value
+			["Sleep & Respawn"."Respawn penalties".Hunger.Maximum]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 14.0
+				#Range: 0.0 ~ 20.0
+				Normal = 14.0
+				#Range: 0.0 ~ 20.0
+				Hard = 10.0
+
+		["Sleep & Respawn"."Respawn penalties".Saturation]
+
+			#Min Saturation of respawning players. If below this value on death will be set to this value
+			["Sleep & Respawn"."Respawn penalties".Saturation.Minimum]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 6.0
+				#Range: 0.0 ~ 20.0
+				Normal = 6.0
+				#Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#Max Saturation of respawning players. If above this value on death will be set to this value
+			["Sleep & Respawn"."Respawn penalties".Saturation.Maximum]
+				#Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 10.0
+				#Range: 0.0 ~ 20.0
+				Normal = 10.0
+				#Range: 0.0 ~ 20.0
+				Hard = 6.0
 
 [Movement]
 	"Enable Boats" = true
@@ -610,6 +616,8 @@
 		#Multiplier to experience required by villagers to level up
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Experience to level up multiplier" = 1.3
+		#Disable the loading of villager trades from data packs. This is useful for mods like Numismatic Overhaul that has the same folder structure as ISO
+		"Load villager trades from data packs" = true
 
 	[Mobs."Misc mobs"]
 		#1 in X chance each tick for mobs in the `iguanatweaksreborn:passive_regen` entity type tag to regain 1 health. Set to 0 to disable
@@ -712,6 +720,9 @@
 		#Plays a sound effect when a mob is hit at least from this distance.
 		#Range: > -2147483648
 		"Ding distance" = 40
+		#The speed divider when off ground. Vanilla is 5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Off ground speed divider" = 3.0
 
 		[Miscellaneous.Tweaks.Sponge]
 			#The maximum amount of blocks a sponge can soak. (Vanilla is 64, disabled if quark is installed)
@@ -1014,7 +1025,7 @@
 ["Hunger & Health"]
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	"Enable Foods & Drinks" = true
-	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
 	"Enable Exhaustion" = true
 	#Makes Health regen work differently, similar to Combat Test snapshots. Can be customized. Hunger related stuff doesn't work (for obvious reasons) if No Hunger feature is enabled
 	"Enable Health Regen & Hunger" = true
@@ -1053,7 +1064,7 @@
 		"No furnace food and smoker recipe" = true
 		"Chorus fruit cancels fall damage" = true
 
-	#Make the player consume more hunger with different actions. Please note that if hunger is disabled, exhaustion still applies to Tiredness.
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
 	["Hunger & Health".Exhaustion]
 		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion.
 		#Range: 0.0 ~ 128.0
@@ -1225,6 +1236,8 @@
 		"Fluid cooldown" = 1200
 		#Enables a data pack that changes animal loot (reduced food drops) and slows down growing, breeding, egging etc
 		"Data pack" = true
+		#If true, mobs can randomly fall in love and possibly breed
+		"Auto breed" = true
 
 		[Farming.Livestock.Aging]
 			#If true, animals will age and die of old age. Configurable via data packs. With the data pack enabled, adult will drop more goodies. With pehkui installed, animals will also be smaller/bigger.
@@ -1236,11 +1249,19 @@
 			"Stop at" = "ELDER"
 			#If true, animals will die if not young and haven't been fed in a while.
 			"Starvation death" = false
-			#How long (in minutes) will an animal remain marked as fed after eating?
-			#Range: > 0
-			"Last fed duration" = 60
 			#If fed a poisonous potato, animals will stop aging at a 'Stop At With Poisonous Potato' age.
 			"Stop aging with poisonous potato" = true
+
+		[Farming.Livestock."Well fed"]
+			#If true, animals will be 'well fed' for this ticks when fed. During this time they have an higher chance (given by the livestock data) to breed. Set to 0 to disable.
+			#Range: > 0
+			Duration = 60
+			#How much well fed time must be left to the entity to be able to feed it again.
+			#Range: > 0
+			"Left to feed again" = 30
+			#How much well fed time is consumed when animals breed.
+			#Range: > 0
+			"Consumed on breed" = 20
 
 	#Slower Plants (non-crops) growing. Plants properties are controlled via data packs
 	[Farming."Plants growth"]

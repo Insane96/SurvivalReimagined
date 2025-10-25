@@ -6,6 +6,7 @@
 * Removed Simple Voice Chat
   * Sounded funnier
 * Added sound physics remastered
+* Fixed iron shield recipe 
 
 ### Changes from mods
 * Increased explosive barrel power
@@ -26,6 +27,19 @@
 * Golden tools
   * Innate Luck is now disabled by default
   * Increased enchantability. Slightly increased % attack speed a bit. Efficiency should have been increased but due to a bug was already correct
+* Ghostly effect
+  * Applied to the player on loose respawn for 2 minutes making it undetectable by mobs
+  * Also applied to the player on obelisk respawn
+* Loose respawn message on respawn
+* Off-ground speed penalty reduced
+  * Vanilla was 5x slower, now is 3x
+* Changed loose respawn range
+  * World respawn range has been slightly increased
+  * Bed respawn range has been slightly decreased
+* Lowered mob cap in spring
+* Bonus chest is no longer empty and loot has been enhanced
+* Enhanced ores advancements
+* Sextant item id is now `sextant` and no longer `biome_compass`
 
 ## 3.4.7
 * Added Simple Voice Chat
