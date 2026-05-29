@@ -1,0 +1,1311 @@
+"Enable Combat" = true
+"Enable Death" = true
+"Enable Farming" = true
+"Enable Hunger & Health" = true
+"Enable Items" = true
+"Enable Mining" = true
+"Enable Misc" = true
+"Enable Mobs" = true
+"Enable Movement" = true
+"Enable Sleep" = true
+"Enable World" = true
+
+[Mobs]
+	#Makes zombie siege happen to the player without the need of a village
+	"Enable Zombie siege" = true
+	#Changes to mobs equipment
+	"Enable Equipment" = true
+	"Enable Misc mobs" = true
+	#Add a brand new Echo Torch and some changes to mob spawn
+	"Enable Spawning" = true
+
+	#Makes zombie siege happen to the player without the need of a village
+	[Mobs."Zombie siege"]
+		# Default: 20
+		# Range: > 0
+		"Zombies to spawn" = 20
+
+	#Changes to mobs equipment
+	[Mobs.Equipment]
+		#Set the drop chance for mobs equipment.
+		# Default: 0.5
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Drop chance" = 0.5
+		#Set the drop chance for mobs equipment when spawned from spawners.
+		# Default: 0.2
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Drop chance from spawners" = 0.2
+		#Max durability of items dropped by mobs. This also fixes https://bugs.mojang.com/browse/MC-136374. Setting to 0 will disable this feature.
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		"Max durability" = 0.6
+		#All drops from mobs will be disenchanted.
+		"Disenchant equipment" = false
+
+	[Mobs."Misc mobs"]
+		#1 in X chance each tick for mobs in the `insanesurvivaloverhaul:passive_regen` entity type tag to regain 1 health. Set to 0 to disable
+		# Default: 200
+		# Range: > 0
+		"Passive regen chance" = 200
+		#Instead of dealing magic and melee damage, guardians now only deal magic damage equal to their attack_damage attribute
+		"Guardian magic damage only" = true
+		#Iron golems no longer deal randomized damage, but fixed attack_damage attribute damage instead
+		"Fixed iron golem damage" = true
+		#Changes mobs loot and makes mobs drop reduced loot if not killed by a player
+		"Loot changes" = true
+
+	#Add a brand new Echo Torch and some changes to mob spawn
+	[Mobs.Spawning]
+		#Disables Zombie Villagers
+		"No zombie villagers" = true
+		#Allows mobs to spawn in the world spawn (in vanilla mobs can't spawn in a 24 blocks radius from world spawn)
+		"Allow world spawn spawn" = true
+		#Disables normal skeletons from spawning in Fortresses.
+		"Remove skeletons from fortresses" = true
+		#Enables a data pack that makes Guardians spawn in deep oceans. These guardians have half health compared to monument guardians.
+		"Guardians in deep oceans" = true
+		#Radius (in blocks) around an Echo Lantern in which monsters cannot spawn.
+		# Default: 64
+		# Range: 1 ~ 128
+		"Echo lantern radius" = 64
+
+[Sleep]
+	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
+	"Enable Cloth" = true
+	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
+	"Enable Tiredness" = true
+
+	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
+	[Sleep.Cloth]
+		#Enables a Data Pack that integrated Cloth:
+		#* Makes zombies drop cloth instead of rotten flesh
+		#* Beds require Cloth to be crafted
+		#* Bundles can be made with Cloth
+		#* Chainmail armor is made craftable with Cloth and chains
+		#* Adds advancements for this feature and moves vanilla beds advancements to cloth advancement
+		"Data pack" = true
+
+	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
+	[Sleep.Tiredness]
+		#Multiply the tiredness gained by this value. Normally you gain tiredness equal to the exhaustion gained. 'Effective Hunger' doesn't affect the exhaustion gained.
+		# Default: 1.0
+		# Range: 0.0 ~ 128.0
+		"Tiredness gain multiplier" = 1.0
+		#If true the player will not set the spawn point if can't sleep.
+		"Should prevent spawn point" = false
+		#Tiredness required to get the Tired effect and be able to sleep.
+		# Default: 400.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Tiredness to effect" = 400.0
+		#Every this Tiredness above 'Tiredness for effect' will add a new level of Tired.
+		# Default: 250.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Tiredness per level" = 250.0
+		#What to do with tiredness when the player dies.
+		#RESET resets the tiredness to 0
+		#KEEP keeps the current tiredness
+		#SET_AT_EFFECT keeps the current tiredness but if higher than 'Tiredness to effect' it's set to that
+		#REMOVE_ONE_LEVEL keeps the current tiredness but if higher than 'Tiredness to effect' removes one level of Tired to a minimum of I
+		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
+		"On death behaviour" = "SET_AT_EFFECT"
+		#Phantoms will no longer spawn based on insomnia, but instead based off tiredness. Will spawn with Tired III.
+		"Tired tied phantoms" = true
+		"Allow sleeping even when not tired" = false
+		#If true, sets the playersSleepingPercentage gamerule to 1 so tired players can sleep no matter how many players on a server.
+		"Force one player sleep" = true
+
+		[Sleep.Tiredness."Energy boost"]
+			#If the player has energy boost, reduce tiredness by this value (multiplied by the effect level) each tick.
+			# Default: 0.025
+			# Range: 0.0 ~ 1.7976931348623157E308
+			"Tiredness reduction" = 0.025
+			#By default if omitted in the json, food items will give 1 second of Energy Boost per effectiveness (hunger + saturation) of the food. This multiplies the duration of the effect
+			# Default: 5.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			"Duration multiplier" = 5.0
+
+		[Sleep.Tiredness."Fake sound"]
+			#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
+			Mobs = ["minecraft:skeleton,minecraft:overworld", "minecraft:zombie,minecraft:overworld", "minecraft:spider,minecraft:overworld", "minecraft:ghast,minecraft:the_nether", "minecraft:zombified_piglin,minecraft:the_nether"]
+
+			#The cooldown (in ticks) between choosing a mob to play the fake sound. This is reduced with higher Tired effect levels
+			[Sleep.Tiredness."Fake sound"."Cooldown between mobs"]
+				# Default: 12000.0
+				# Range: 0.0 ~ 1.7976931348623157E308
+				Minimum = 12000.0
+				# Default: 24000.0
+				# Range: 0.0 ~ 1.7976931348623157E308
+				Maximum = 24000.0
+
+			#How many times will a fake sound of a mob play before going into cooldown
+			[Sleep.Tiredness."Fake sound".Times]
+				# Default: 2.0
+				# Range: 0.0 ~ 1.7976931348623157E308
+				Minimum = 2.0
+				# Default: 6.0
+				# Range: 0.0 ~ 1.7976931348623157E308
+				Maximum = 6.0
+
+[Farming]
+	#Increase uses for bone meal and nerf its use on some plants
+	"Enable Bone meal" = true
+	#Slower breeding, Growing, Egging and Milking. Lower yield.
+	"Enable Livestock" = true
+	#Hoes can now scythe grass and flowers. Also makes them break faster when tilling farmland
+	"Enable Hoes" = true
+	#Crops tweaks and less yield from crops
+	"Enable Crops" = true
+	#Slower Plants (non-crops) growing. Plants properties are controlled via data packs
+	"Enable Plants growth" = true
+
+	#Increase uses for bone meal and nerf its use on some plants
+	[Farming."Bone meal"]
+		#Vanilla is 20
+		# Default: 50
+		# Range: > 0
+		"Composter time to produce" = 50
+		#If true, you can bone meal dirt that's near a grass block (or below tall grass) to get grass block.
+		"Bone meal dirt to grass" = true
+		#Makes bone meal have a chance to fail on Cave Vines, Saplings and Sweet Berry Bushes. Also makes rotten flesh compostable.
+		"Data pack" = true
+
+		[Farming."Bone meal"."Rich farmland"]
+			#Bone meal used on Farmland (or crouch right clicked on crops) transforms it into Rich Farmland.
+			Enable = false
+			#How many extra random ticks does Rich Farmland give to the crop sitting on top?
+			# Default: 4
+			# Range: > 1
+			"Extra ticks" = 4
+			#Chance for a Rich farmland to decay back to farmland
+			# Default: 0.35
+			# Range: 0.0 ~ 1.0
+			"Chance to decay" = 0.35
+			#Prevents bone meal from working on crops and will just create rich farmland on right-click
+			"Disable bone meal" = true
+
+		#How many stages will bone meal make stuff grow?
+		[Farming."Bone meal"."Stage growth"]
+			# Default: 1.0
+			# Range: 0.0 ~ 25.0
+			Minimum = 1.0
+			# Default: 1.0
+			# Range: 0.0 ~ 25.0
+			Maximum = 1.0
+
+		#How many stages will cactus and sugar canes grow with one bone meal. Set to 0 to disable.
+		[Farming."Bone meal"."Bone meal canes and cactus"]
+			# Default: 1.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 1.0
+			# Default: 4.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 4.0
+
+	#Slower breeding, Growing, Egging and Milking. Lower yield.
+	[Farming.Livestock]
+		#Changes the chance for a chicken to come out from an egg (1 in this value). Vanilla is 8
+		# Default: 8
+		# Range: > -2147483648
+		"Chicken from egg chance" = 8
+		#Seconds until you can milk cows (or stew mooshrooms)
+		# Default: 1200
+		# Range: > 0
+		"Fluid cooldown" = 1200
+		#If true, animals will no longer be able to be bred manually. Only animals in insanesurvivaloverhaul:prevent_breeding will be affected by this.
+		"Prevent breeding" = true
+		#If true, mobs can randomly fall in love and possibly breed
+		"Auto breed" = true
+		#Enables a data pack that changes animal loot (reduced food drops) and slows down growing, breeding, egging etc
+		"Data pack" = true
+
+		[Farming.Livestock."Well fed"]
+			#If true, animals will be 'well fed' for this ticks when fed. During this time they have an higher chance (given by the livestock data) to breed. Set to 0 to disable.
+			# Default: 60
+			# Range: > 0
+			Duration = 60
+			#How much well fed time must be left to the entity to be able to feed it again.
+			# Default: 30
+			# Range: > 0
+			"Left to feed again" = 30
+			#How much well fed time is consumed when animals breed.
+			# Default: 20
+			# Range: > 0
+			"Consumed on breed" = 20
+
+		[Farming.Livestock.Aging]
+			#If true, animals will age and die of old age. Configurable via data packs. With the data pack enabled, adult will drop more goodies. With pehkui installed, animals will also be smaller/bigger.
+			Enable = true
+			#If true, animals die of old age.
+			"Die of old age" = true
+			#If Die of old age is disabled you can still make animals grow up to this age
+			#Allowed Values: YOUNG, ADULT, ELDER
+			"Stop at" = "ELDER"
+			#If fed a poisonous potato, animals will stop aging at a 'Stop At With Poisonous Potato' age.
+			"Stop aging with poisonous potato" = true
+			#If true, animals will die if not young and haven't been fed in a while.
+			"Starvation death" = false
+
+	#Hoes can now scythe grass and flowers. Also makes them break faster when tilling farmland
+	[Farming.Hoes]
+		# Default: 4
+		# Range: > 1
+		"Durability on right click" = 4
+		#'Durability used on right-click' is only applied for farmland, and not e.g. when using hoes on rooted or coarse dirt
+		"Extra durability only for tilling" = true
+
+	#Crops tweaks and less yield from crops
+	[Farming.Crops]
+		#Set if crops require wet farmland to grow.
+		#Valid Values:
+		#NO: Crops will not require water to grow
+		#BONE_MEAL_ONLY: Crops will grow on dry farmland by only using bone meal
+		#ANY_CASE: Will make Crops not grow in any case when on dry farmland
+		#Allowed Values: NO, BONE_MEAL_ONLY, ANY_CASE
+		"Crops require water" = "BONE_MEAL_ONLY"
+		#Radius where water hydrates farmland, vanilla is 4.
+		# Default: 2
+		# Range: > 1
+		"Water hydration radius" = 2
+		#Makes potatoes and carrots not plantable and also enables a data pack that makes the following changes:
+		#* Makes all vanilla crops drop only one seed (and makes carrots and potatoes drop the new seed item)
+		#* Makes crops hard to break, requiring an hoe as correct tool
+		#* Makes melon seeds and pumpkin seeds harder to obtain
+		#* Removes carrots and potato drops from zombies
+		#* Removes wheat seeds from tall grass
+		#* Makes wild crops generate in the world
+		"Data pack" = true
+		#If true, villagers will be able to pick up and (farmers) plant mod's seeds and rooted items. Also prevents villagers from trampling farmland
+		"Fix villagers" = true
+
+	#Slower Plants (non-crops) growing. Plants properties are controlled via data packs
+	[Farming."Plants growth"]
+		"Huge mushrooms on mycelium only" = true
+		#If != 1, cave vines will grow this slower above sea level or if they can see the sky light. This is multiplied to the plant_growth_modifiers multipliers
+		# Default: 3.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Cave vines underground" = 3.0
+		#If true, a data pack is enabled that changes the growth of plants based off various factors, such as sunlight and biome
+		"Data pack" = true
+
+[Movement]
+	"Enable Boats" = true
+	"Enable Swimming" = true
+	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
+	"Enable Terrain slowdown" = true
+	"Enable Minecarts" = true
+	#Players's slowed down when walking backwards.
+	"Enable Backwards slowdown" = true
+	#Players's slides down climbable blocks faster and stands still when opening an interface
+	"Enable Better climbable" = true
+	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack
+	"Enable Weighted armor" = false
+	#Players's slowed down for a brief moment when hit.
+	"Enable Tagging" = true
+	"Enable Elytra" = true
+	"Enable Sprinting" = true
+
+	[Movement.Boats]
+		#If true, boats will no longer go stupidly fast on ice. (If quark is present this is disabled)
+		"No ice boat" = true
+		#If true, boats will always break when falling from this height or more instead of being glitched
+		# Default: 5.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Break height" = 5.0
+
+	[Movement.Swimming]
+		#Prevents swimming up really fast if swimming and holding the jump key. Only applies to water.
+		"Prevent fast swim up with jump" = true
+
+	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
+	[Movement."Terrain slowdown"]
+		"Frost walker reduces ice slowdown" = true
+		#If true, snow slowdown is ignored if wearing leather boots (or any item in insanesurvivaloverhaul:snow_slowdown_ignore item tag)
+		"Snow slowdown ignored with leather boots" = true
+
+	[Movement.Minecarts]
+		#If true, minecarts with entities in them and chest minecarts will force load chunks, allowing them to travel in unloaded chunks. It's advised to not leave too many minecarts with entities and with chests lying around, as they will keep chunks loaded.
+		"Entity and chest minecarts force load chunks" = true
+		#If true, enables a data pack that makes rails cheaper and adds recipes for new rail. Also adds a global loot modifier that replaces vanilla rails with golden powered rails
+		"Data pack" = true
+
+	#Players's slowed down when walking backwards.
+	[Movement."Backwards slowdown"]
+		#How much slower will the player go when walking backwards.
+		# Default: 0.3
+		# Range: 0.0 ~ 1.0
+		Slowdown = 0.3
+
+	#Players's slides down climbable blocks faster and stands still when opening an interface
+	[Movement."Better climbable"]
+		#Speed at which players move up climbable blocks. Vanilla is 0.2
+		# Default: 0.3
+		# Range: 0.0 ~ 5.0
+		"Climb speed" = 0.3
+		#How much faster players move down climbable blocks.
+		# Default: 0.2
+		# Range: 0.0 ~ 5.0
+		"Descend speed" = 0.2
+		#If true, and not looking down, player will crouch when opening an interface.
+		"Crouch when opening interface" = true
+		#Entities will not count as on climbable when on the ground, preventing slowdown when passing through climbable blocks.
+		"Not on climbable when on ground" = true
+		#If enabled you'll only be able to climb when pressing jump and not when against a wall and moving.
+		"Only climb with jump" = true
+		#If true, a data pack will be enabled that will make players take damage when falling on climbable blocks.
+		"Fall damage on climbable" = true
+
+	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack
+	[Movement."Weighted armor"]
+		#Formula to calculate the slowdown of a piece of armor. Variables available are: armor, armor_toughness. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Please note that 1 means 100% slowdown. Regenerating Absorption counts as Toughness
+		"Slowdown formula" = "(armor * 0.01) * (1 + (armor_toughness * 0.05))"
+
+	#Players's slowed down for a brief moment when hit.
+	[Movement.Tagging]
+		#Which level of Slowness is applied to the player (level 0 is Slowness I).
+		# Default: 0
+		# Range: 0 ~ 10
+		"Slowness level" = 0
+		#Slowness is applied for damage_taken * this_value ticks.
+		# Default: 7
+		# Range: 0 ~ 100
+		"Duration multiplier" = 7
+
+	[Movement.Elytra]
+		#How much the player is slowed down when gliding. Only applies outside the End Dimension. Vanilla is 0.99
+		# Default: 0.975
+		# Range: 0.0 ~ 1.0
+		"Air resistance" = 0.975
+		#Target speed multiplier for firework boost when gliding. Lower = slower max speed. Vanilla is 1.5
+		# Default: 1.25
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Firework boost target speed" = 1.25
+		#How aggressively each tick pushes toward target speed when firework boosting. Lower = slower acceleration. Vanilla is 0.5
+		# Default: 0.2
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Firework boost lerp" = 0.2
+		#If true, you can take of with Elytra and fireworks while off ground, no need to be gliding. Just jump and 
+		"Firework boost off ground" = true
+
+	[Movement.Sprinting]
+		#Player can only sprint when have at least this much hunger. Vanilla is 7
+		# Default: 1
+		# Range: 0 ~ 20
+		"Min hunger" = 1
+		#Movement speed penalty when below this hunger
+		# Default: 7
+		# Range: 0 ~ 20
+		"Speed penalty below hunger" = 7
+		#How much less movement speed per hunger below 'Speed Penalty below hunger' sprinting players have. Vanilla gives 0.3 bonus movement speed when sprinting
+		# Default: 0.025
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Speed reduction each hunger" = 0.025
+
+[World]
+	#Spawners are now a challenge. Monsters spawning from spawners ignore light.
+	"Enable Spawners" = true
+	"Enable Berries" = true
+	"Enable Fluids" = true
+	#Control fire speed with insanesurvivaloverhaul:fire_speed_multiplier game rule. This feature also enables a recipe to get a flint from 3 gravel.
+	"Enable Coal & Fire" = true
+	"Enable Nether" = true
+
+	[World."Day night cycle"]
+		#How many minutes does a full day last? This DOESN'T CHANGE the day night cycle duration, but it's only used for calculations in case you change it with another mod.
+		# Default: 20.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Day night cycle duration" = 20.0
+
+	#Spawners are now a challenge. Monsters spawning from spawners ignore light.
+	[World.Spawners]
+		#If true, the spawner delay is set to 'Delay' instead of using MinSpawnDelay and MaxSpawnDelay
+		"Override spawn delay" = true
+		#Range in which a player must be present for a spawner to work. Vanilla is 16.
+		"Required player range" = 24
+		#If true, monsters from spawners will spawn no matter the light level.
+		"Ignore light" = true
+		#If true, disabled spawners can be re-enabled with a spawner reactivator item defined in the `insanesurvivaloverhaul:spawner_reactivator` item tag. These items get a new tooltip mentioning that they can be used to re-enable spawners.
+		"Re-enable with Spawner Reactivator" = true
+		#If enabled, spawner will play a sound effect when spawning mobs
+		"Spawning sound effect" = true
+
+		#Spawning Delay (in ticks) of the spawner. Vanilla is 200~800. Requires 'Override Spawn Delay' to be enabled.
+		[World.Spawners.Delay]
+			# Default: 400.0
+			# Range: 1.0 ~ 1.7976931348623157E308
+			Minimum = 400.0
+			# Default: 1600.0
+			# Range: 1.0 ~ 1.7976931348623157E308
+			Maximum = 1600.0
+
+		[World.Spawners."Disable spawners"]
+			#If true, spawners will be disabled after spawning a certain amount of mobs. This is not compatible with empowered spawners.
+			Enabled = false
+			#The minimum amount of spawnable mobs (when the spawner is basically in the same position as the world spawn). The amount of spawnable mobs before deactivating is equal to the distance divided by 8 (plus this value). E.g. At 160 blocks from spawn the max spawnable mobs will be 160 / 8 + 20 = 20 + 20 = 40
+			# Default: 20
+			# Range: > 0
+			"Min spawnable mobs" = 20
+			#This multiplier increases the max mobs spawned.
+			# Default: 1.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			"Spawnable mobs multiplier" = 1.0
+
+		[World.Spawners.Empowered]
+			#If true, spawners will generate in an empowered state. When empowered, will generate mobs really fast for a while and then will disable. This is not compatible with disable spawners.
+			Enabled = true
+			#When the spawner stops being empowered, it is disabled and will stop spawning mobs.
+			"Disable on end" = true
+			#How many mobs are spawned before empowered ends.
+			# Default: 20
+			# Range: > 0
+			"Mobs amount" = 20
+			#When the Spawner stops being empowered, will generate loot from the insanesurvivaloverhaul:empowered_spawner loot table
+			"Loot Reward" = false
+			#When the Spawner stops being empowered, will play a sound effect
+			"Sound effect" = true
+
+			#Spawning Delay (in ticks) when the Spawner is empowered.
+			[World.Spawners.Empowered.Delay]
+				# Default: 150.0
+				# Range: 1.0 ~ 1.7976931348623157E308
+				Minimum = 150.0
+				# Default: 300.0
+				# Range: 1.0 ~ 1.7976931348623157E308
+				Maximum = 300.0
+
+			#When the Spawner stops being empowered, will generate this amount of experience
+			[World.Spawners.Empowered."Experience Reward"]
+				# Default: 0.0
+				# Range: 0.0 ~ 1.7976931348623157E308
+				Minimum = 0.0
+				# Default: 0.0
+				# Range: 0.0 ~ 1.7976931348623157E308
+				Maximum = 0.0
+
+		[World.Spawners."Reactivated spawners"]
+			#The range of a player nearby in which the spawner will be active. Setting to -1 should keep the spawners always active (untested) as long as the chunk is loaded (hostiles will still despawn in a 128 block radius).
+			# Default: 128
+			# Range: > -1
+			"Player range" = 128
+			#Reactivated spawners spawn mobs no matter the light level.
+			"Ignore light" = false
+
+			#How many ticks will the spawner try to summon mobs.
+			[World.Spawners."Reactivated spawners".Delay]
+				# Default: 3600.0
+				# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				Minimum = 3600.0
+				# Default: 6000.0
+				# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				Maximum = 6000.0
+
+	#Thunderstorm Intensity. Disable it via gamerule: insanesurvivaloverhaul:thunderstormIntensity
+	[World.Thunderstorms]
+		#Minimum thunderstorm intensity.
+		# Default: 1
+		# Range: > 1
+		"Min Intensity" = 1
+		#Maximum thunderstorm intensity.
+		# Default: 15
+		# Range: > 1
+		"Max Intensity" = 15
+		#Base duration of each intensity step (in minutes). Lasts less and less the higher the intensity.
+		# Default: 4
+		# Range: > 1
+		"Base Duration" = 4
+
+	[World.Berries]
+		#Berry bushes no longer deal damage when walking in them with leggings and boots
+		"No damage if dressed" = true
+		#	Makes sweet berries not plantable, requiring seeds, and also enables a data pack that makes the following changes:
+		#	* Makes sweet berry bushes drop seeds
+		#	* Makes sweet berry patches have less plants and plants will not be all grown up
+		#
+		"Data pack" = true
+
+	[World.Fluids]
+		#If enabled, water will deal fall damage if too shallow
+		"Water fall damage" = true
+		#How strong does water push entities. Vanilla is 0.014
+		# Default: 0.028
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Water push force" = 0.028
+		#If true water pushes entities down with the same strength as there are no blocks around
+		"Water pushes when no blocks are around" = true
+		#If true, water and lava will have 0 explosion resistance allowing waterlogged block to be destroyed by explosions
+		"[EXPERIMENTAL] No explosion resistance" = true
+		#If true, entities will float in water
+		"[EXPERIMENTAL] Floaty entities" = false
+
+	#Control fire speed with insanesurvivaloverhaul:fire_speed_multiplier game rule. This feature also enables a recipe to get a flint from 3 gravel.
+	[World."Coal & Fire"]
+		#Chance for logs to yield burnt logs when burnt
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		"Burnt logs chance" = 0.8
+		#If enabled, a data pack will be enabled that:
+		#* Removes the Charcoal recipe from smelting
+		#* Makes Coal Ore require an Iron Pickaxe or better to mine
+		#* Replaces Flint and Steel in the overworld with firestarter
+		#* Changes flint and steel recipe to require blaze powder
+		"No charcoal smelting and iron coal" = true
+		#If true, campfires must be lit
+		"Unlit campfires" = true
+		#If true, campfires will be extinguished when it starts to rain
+		"Campfire turn off under rain" = true
+
+		[World."Coal & Fire"."Two flint fire starter"]
+			#If true, two flints (on per hand) can start a fire
+			Enabled = true
+			#Chance to ignite a block when using two flints
+			# Default: 0.35
+			# Range: 0.0 ~ 1.0
+			"Ignite chance" = 0.35
+			#Chance for the flint to break when using two flints
+			# Default: 0.3
+			# Range: 0.0 ~ 1.0
+			"Break chance" = 0.3
+
+	[World.Nether]
+		#Enables a data pack that makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and reduces the 8 block ratio between nether and other dimensions to 2. This will break if another mod changes the nether dimension
+		"Disable Nether Roof and reduce block ratio" = true
+		#If true, lava pockets in the nether are removed. If quark is installed, this is disabled
+		"Remove lava pockets" = true
+		#If true you cannot lit nether portals
+		"Disable nether" = false
+		#The portal requires Crying Obsidian in the corners to turn it on (in the overworld). The block tag 'insanesurvivaloverhaul:portal_corners' can be used to change the required blocks for the corners
+		"Portal requires crying obsidian" = true
+
+["Hunger & Health"]
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
+	"Enable Exhaustion" = true
+	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
+	"Enable Foods & Drinks" = true
+	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
+	"Enable Hunger and health regen" = true
+
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
+	["Hunger & Health".Exhaustion]
+		#When you break a block you'll get exhaustion equal to the block hardness multiplied by this value. Setting this to 0 will default to the vanilla exhaustion (0.005). (It's not affected by the Global Hardness Features)
+		# Default: 0.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Block break exhaustion multiplier" = 0.0
+		#When breaking block you'll get exhaustion every tick during the breaking.
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Exhaustion on block breaking" = 0.005
+		#Every second the player will get this exhaustion.
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Passive exhaustion" = 0.005
+		#Every tick of the player's rowing will get this exhaustion.
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Rowing exhaustion" = 0.005
+		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion.
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Bow charge exhaustion" = 0.005
+		#How much exhaustion is given to the player when jumps and it's not sprinting. Vanilla is 0.05
+		# Default: 0.1
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Jump exhaustion" = 0.1
+		#How much exhaustion is given to the player when jumps and it's sprinting. Vanilla is 0.2
+		# Default: 0.5
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Jump exhaustion sprint" = 0.5
+		#When affected by the hunger effect, exhaustion will be doubled per level of the effect
+		"Effective hunger" = true
+
+	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
+	["Hunger & Health"."Foods & Drinks"]
+		#Food's hunger restored will be calculated from this formula. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Empty to disable. Can be re-applied with /reload
+		"Food hunger formula" = "nutrition * 1.2"
+		#Makes potions and milk faster to drink, 1 second instead of 1.6.
+		"Faster drink consuming" = true
+		#If true, eating/drinking stops when the player's hit.
+		"Stop consuming on hit" = true
+		#If true, eating will always be possible, even with full hunger.
+		"Always eat" = false
+		#If enabled, when eating food, the saturation will not sum, instead will just be set to the food's saturation (if higher than the current).
+		"Combat snapshot eating saturation" = true
+		#If enabled, eating cakes will give 30 seconds of Speed and Haste
+		"Buff cake" = true
+		#Adds a loot table when shearing pumpkins (insanesurvivaloverhaul:gameplay/pumpkin_shear). This also replaces seeds drop with Pumpkin Pulp
+		"Add pumpkin shear loot table" = true
+		#Enables a data pack that makes food no longer smeltable in furnaces and changes smokers recipe to require soul sand.
+		#This also enables a change to the smelt_item_function in loot tables to use smoker recipes instead of furnaces (otherwise, mobs wouldn't drop cooked food). Might have unintended side effects.
+		"No furnace food and smoker recipe" = true
+		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Empty to disable. Can be re-applied with /reload
+		"Food saturation formula" = "saturation * 1.4"
+		#The formula to calculate the seconds required to eat a food. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. Empty to disable. Can be re-applied with /reload.
+		"Food eat seconds formula" = "MIN(MAX((1.6 * (nutrition + saturation)) * 0.125, 0.8), 5)"
+		#Enables a data pack that rebalances some foods and makes raw foods poisonous.
+		"Food changes" = true
+
+	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
+	["Hunger & Health"."Hunger and health regen"]
+		#How much health do players heal overtime each second without consuming hunger? This value is applied to the insanesurvivaloverhaul:passive_regen_per_second attribute on player join.
+		# Default: 0.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Passive regen per second" = 0.0
+		#How much health do players heal overtime each second by consuming hunger? This value is applied to the insanesurvivaloverhaul:regen_per_second attribute on player join.
+		# Default: 0.5
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Regen per second" = 0.5
+		#How much health regen is reduced by when in combat.
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		"Regen reduction in combat" = 0.8
+		#Time in seconds in which the health regen is reduced after entering combat.
+		# Default: 10.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Regen reduction in combat time" = 10.0
+		#Set to true to disable the health regen boost given when max hunger and saturation (false in Vanilla).
+		"Disable saturation regen boost" = true
+		#Vanilla consumes 1 saturation or hunger whenever Exhaustion reaches 4.0. You can change that value with this config option. This value is applied to the insanesurvivaloverhaul:max_exhaustion attribute on player join. NOTE that Minecraft (for ... reasons) caps this value to 40.
+		# Default: 6.0
+		# Range: 0.0 ~ 40.0
+		"Max exhaustion" = 6.0
+		#Exhaustion applied per half heart healed, only applies if 'Consume hunger only' is false. (vanilla is 6; Combat Test doesn't use this).
+		# Default: 6.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Exhaustion on heal" = 6.0
+		#Hunger consumed per half heart healed, only applies if 'Consume hunger only' is true. Decimal values are treated as chances to consume one more (e.g. this set to 0.5 means that there's 50% chance to consume one hunger). This value is applied to the insanesurvivaloverhaul:hunger_consumed attribute on player join. (vanilla ignores this; Combat Test has this set to 0.5).
+		# Default: 0.5
+		# Range: 0.0 ~ 40.0
+		"Hunger consumption on heal" = 0.5
+		#Set to true to consume Hunger only (and not saturation) when regenerating health (false for Vanilla).
+		"Consume hunger only" = true
+		#Sets how much hunger the player must have to regeneration health (vanilla is 18). This value is applied to the insanesurvivaloverhaul:hunger_required_to_regen attribute on player join.
+		# Default: 7
+		# Range: > 0
+		"Hunger required to regen" = 7
+		#If enabled, peaceful difficulty no longer heals and fulfills the player
+		"Peaceful hunger" = true
+
+		["Hunger & Health"."Hunger and health regen".Starve]
+			#Sets how many ticks between starve damage happens (vanilla is 80).
+			# Default: 160
+			# Range: > 0
+			Speed = 160
+			#Set how much damage is dealt when starving (vanilla is 1).
+			# Default: 1
+			# Range: > 0
+			Damage = 1
+			#The player will start starving at this hunger (Vanilla is 0)
+			# Default: 1
+			# Range: 0 ~ 20
+			"At hunger" = 1
+			#If below 'Starve at Hunger' player will starve 2x faster for each hunger point below 'Starve at Hunger'.
+			"Faster when really hungry" = true
+
+[Items]
+	#Add item tooltips via item tags. Items in the insanesurvivaloverhaul:has_tooltip item tag will get a tooltip with the vanilla name + .tooltip (e.g. item.minecraft.arrow.tooltip)
+	"Enable Item tooltips" = true
+	#A new item that can let you carry more stuff around.
+	"Enable Pouch" = true
+	#Wooden items have bonuses when used in sunlight.
+	"Enable Ecologic wood" = false
+	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
+	"Enable Stack sizes" = true
+	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
+	"Enable Stone tools gone" = true
+	#Make items not able to mine / attack
+	"Enable Disabled items" = true
+	#Items no longer break, will sit at one durability and can't be used. Items in the item tag `insanesurvivaloverhaul:not_unvanishable` are not affected and items in the item tag `insanesurvivaloverhaul:unvanishable` are always unvanishable.
+	"Enable Unvanishable items" = true
+	#Retrieve name tags from name tagged entities.
+	"Enable Name tags" = true
+	#Basically backports copper equipment from latest MC versions.
+	"Enable Copper equipment" = true
+
+	#A new item that can let you carry more stuff around.
+	[Items.Pouch]
+		# Default: 2
+		# Range: > 0
+		"Max pouch without slowdown" = 2
+		#When you have > 'Max pouch without slowdown' this is the base value for the slowdown. The slowdown is calculated as (pouch above 'Max pouch' ^ 2 * this)
+		# Default: 0.03
+		# Range: 0.0 ~ 1.0
+		"Base slowness per pouch over max" = 0.03
+
+	#Wooden items have bonuses when used in sunlight.
+	[Items."Ecologic wood"]
+		#Chance for the wooden item to not consume durability when >= 'Max sunlight'.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		"Chance at max sunlight" = 0.5
+		#Bonus attack speed when >= 'Max sunlight'.
+		# Default: 0.2
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Bonus attack speed" = 0.2
+		#Percentage efficiency bonus when >= 'Max sunlight'.
+		# Default: 1.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Bonus efficiency" = 1.0
+		# Default: 12
+		# Range: 0 ~ 15
+		"Max sunlight" = 12
+
+	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
+	[Items."Stack sizes"]
+		#The formula to calculate the stack size of a food item. Variables as nutrition, saturation, eat_seconds as numbers and fast_food as boolean can be used. Set to empty to disable this. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Stack sizes are limited to 99 by the game.
+		"Food stack reduction formula" = "ROUND(MAX(64 / MAX(nutrition, 1), 1), 0)"
+		#Items max stack sizes (excluding blocks and foods) will be multiplied by this value. Setting to 1 will disable this. Stack sizes are limited to 99 by the game.
+		# Default: 1.546875
+		# Range: 0.01 ~ 1.546875
+		"Item Stack Multiplier" = 1.546875
+		#All the blocks max stack sizes will be multiplied by this value. Setting to 1 will disable this. Stack sizes are limited to 99 by the game.
+		# Default: 1.546875
+		# Range: 0.01 ~ 1.546875
+		"Block stack multiplier" = 1.546875
+		#Enables a data pack that increases item stacks of Horse Armors, Minecarts and Saddles
+		"Data pack" = true
+
+	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
+	[Items."Stone tools gone"]
+		"Items to replace" = ["minecraft:stone_axe, minecraft:copper_axe", "minecraft:stone_pickaxe, minecraft:copper_pickaxe", "minecraft:stone_shovel, minecraft:copper_shovel", "minecraft:stone_hoe, minecraft:copper_hoe", "minecraft:stone_sword, minecraft:copper_sword"]
+		"Data pack" = true
+
+	#Make items not able to mine / attack
+	[Items."Disabled items"]
+		#If set to true items in the 'no_damage', 'no_efficiency', 'no_equip' and 'disabled' item tags will get a tooltip.
+		"Add tooltip" = true
+
+	#Items no longer break, will sit at one durability and can't be used. Items in the item tag `insanesurvivaloverhaul:not_unvanishable` are not affected and items in the item tag `insanesurvivaloverhaul:unvanishable` are always unvanishable.
+	[Items."Unvanishable items"]
+		#Items with durability get a durability tooltip. Items in the `insanesurvivaloverhaul:no_durability_tooltip` item tag will not get the tooltip.
+		"Durability tooltip" = true
+		#If set to true only enchanted items will no longer break
+		"Enchanted items only" = false
+
+[Combat]
+	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
+	"Enable Absorption armor" = false
+	#Adds a new attribute that deals bonus damage that bypasses armor
+	"Enable Piercing damage" = true
+	"Enable Misc combat" = true
+	#This feature disables itself if Shields+ is installed
+	"Enable Shields" = true
+	#Invincibility frames based off attack speed, so faster attacks will give less invincibility frames and viceversa.
+	"Enable Attack speed based invincibility" = true
+	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
+	"Enable Attack sounds" = true
+	#Change armor formula to damage * (1 - 1.5 * (armor / (armor + 20)))
+	"Enable Armor rework" = true
+	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
+	"Enable Critical rework" = true
+	"Enable Snowballs" = true
+	#Players live with a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
+	"Enable Unfair one-shot" = true
+	#Bows, crossbows and short bows
+	"Enable Bows" = true
+	#Players will deal reduced knockback if attacking with a non-weapon or spamming. Knockback reductions are defined via Data Packs with Item Definitions (the item_stats integrated data pack already does this)
+	"Enable Knockback" = true
+
+	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
+	[Combat."Absorption armor"]
+		#If > 0, only Armor Toughness on items will be converted to absorption, multiplying it by this.
+		# Default: 0.25
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Toughness to absorption ratio" = 0.25
+
+	[Combat."Misc combat"]
+		#If enabled, tools will not take 2 damage when used to hurt entities
+		"One damage for tool attacking" = true
+		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the range is increased. A data pack is enabled that removes the sweeping enchantment.
+		"Sweeping overhaul" = true
+		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%.
+		"No damage when spamming" = true
+		#Enables a data pack that reworks armor.
+		"Armor rework data pack" = true
+		#Enables a data pack that reworks tools and weapons.
+		"Tools and weapons data pack" = true
+
+	#This feature disables itself if Shields+ is installed
+	[Combat.Shields]
+		#In vanilla when you start blocking with a shield, there's a 0.25 seconds (5 ticks) window where you are still not blocking. By default the windup is removed.
+		# Default: 0
+		# Range: > 0
+		"Shield windup" = 0
+		#The minimum damage dealt to the player for the shield to take damage. Vanilla is 3. E.g. With this set to 3, the shield will not be damaged if damage received is lower than 3.
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
+		"Min shield hurt damage" = 0.0
+		#The amount of damage a shield blocks. Set to 0 to disable
+		# Default: 5
+		# Range: > 0
+		"Shield block damage" = 5
+
+	#Invincibility frames based off attack speed, so faster attacks will give less invincibility frames and viceversa.
+	[Combat."Attack speed based invincibility"]
+		#If true, invincibility frames will not be increased for slower attacks.
+		"Only faster attack speed" = false
+
+	#Adds a new attribute to add regenerating absorption hearts to the player. Please note that default mods' regenerating absorption is done through item definitions within the combat_rework data pack and via Absorption Armor feature.
+	[Combat."Regenerating absorption"]
+		#Ticks that must pass from the last hit to regen absorption hearts. This is affected by regenerating absorption speed (absorp regen speed * this)
+		# Default: 150
+		# Range: > 0
+		"Un-damaged time to regen" = 150
+		#Min Un-damaged time to regen
+		# Default: 60
+		# Range: > 0
+		"Un-damaged time to regen cap" = 60
+		#The amount of regenerating absorption hearts cannot go over the entity's current health.
+		"Cap to health" = true
+		#How fast (each tick) will absorption hearts decay when higher than the current maximum.
+		# Default: 0.1
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Decay speed" = 0.1
+		#If true, absorption hearts will not shield from damages in the bypasses_armor damage type tag.
+		"Absorbing bypasses_armor damage only" = true
+		#If true, a sound is played when the absorption is damaged.
+		"Sound on absorption hurt" = true
+		#(Client only) If true, regenerating absorption hearts are rendered on the right instead on top of hearts.
+		"Render on the right" = false
+
+	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
+	[Combat."Attack sounds"]
+		"Randomize pitch" = true
+
+	#Change armor formula to damage * (1 - 1.5 * (armor / (armor + 20)))
+	[Combat."Armor rework"]
+		#Vanilla formula is 'damage * (1 - ((MIN(20, MAX(armor / 5, armor - ((4 * damage) / (toughness + 8)))))) / 25))'
+		Formula = "damage * (1 - 1.5 * (armor / (armor + 20)))"
+
+	[Combat.Snowballs]
+		#Snowballs deal this amount of damage.
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		Damage = 0.5
+		#Snowballs fill freeze entities for this amount of ticks.
+		# Default: 35
+		# Range: > 0
+		"Freezing ticks" = 35
+		#If true, freezing stacks each hit.
+		"Freezing stacks" = true
+		#Ticks between throwing snowball.
+		# Default: 4
+		# Range: > -2147483648
+		Cooldown = 4
+		#Enables a data pack that increases snowballs stack size to 64
+		"Snowball stack size" = true
+
+	#Players live with a heart when too much damage that would kill them is dealt (only works for damage taken from mobs)
+	[Combat."Unfair one-shot"]
+		#A list of effects to give when Unfair One Shot triggers, separated by semi-colons in the format effect,duration,amplifier
+		"Effects config" = "minecraft:resistance,50,4;minecraft:resistance,100,3;minecraft:resistance,200,1"
+		#If true, a sound is played on activation
+		"Play sound" = true
+		#If true, an animation is played on activation
+		Animation = true
+		#How much health you need to have for this to activate
+		# Default: 15.0
+		# Range: 1.0 ~ 20.0
+		"Activation health" = 15.0
+		#How much heal you're left with when this activates. Must be at least 1 lower than 'Activation health'
+		# Default: 2.0
+		# Range: 1.0 ~ 20.0
+		"Leftover health" = 2.0
+
+	#Bows, crossbows and short bows
+	[Combat.Bows]
+		#If true, Arrows from Bows and Crossbows will no longer deal more damage when fully charged.
+		"Disable crit arrows bonus damage" = true
+		#If true, arrows will deal decimal instead of being rounded up.
+		"Decimal damage" = true
+		#Multiplies arrow's damage by this value. (this doesn't affect mobs arrows)
+		# Default: 0.65
+		# Range: 0.0 ~ 10.0
+		"Damage multiplier" = 0.65
+		#Changes bows accuracy. Vanilla is 1.0
+		# Default: 1.0
+		# Range: 0.0 ~ 10.0
+		"Bow inaccuracy" = 1.0
+		#Speed at which arrows are shot from crossbows. Vanilla is 3.15
+		# Default: 2.25
+		# Range: 0.0 ~ 10.0
+		"Crossbow velocity" = 2.25
+		#If true, crossbows will have an innate Piercing ability
+		"Piercing crossbow" = true
+		#Changes crossbows accuracy. Vanilla is 1.0
+		# Default: 0.2
+		# Range: 0.0 ~ 10.0
+		"Crossbow inaccuracy" = 0.2
+		#If true, arrows will not trigger invincibility frames, like Combat Test Snapshots
+		"No arrow invincibility frames" = true
+
+	#Players will deal reduced knockback if attacking with a non-weapon or spamming. Knockback reductions are defined via Data Packs with Item Definitions (the item_stats integrated data pack already does this)
+	[Combat.Knockback]
+		#Percentage knockback dealt if the player is using an item that doesn't have the attack damage attribute. Broken items from the Items module count as No Weapon
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		"No weapon penalty" = 0.35
+		#Percentage knockback dealt if the player is attacking when the attack is not fully charged.
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		"Spam penalty" = 0.35
+		#Percentage knockback dealt by projectiles.
+		# Default: 0.7
+		# Range: 0.0 ~ 1.0
+		"Projectile knockback" = 0.7
+
+[Death]
+	#Makes you lose a percentage of items and durability on death. Controlled via game rules. Items percentage lost can be configured with the insanesurvivaloverhaul:death_lose_items_percentage, insanesurvivaloverhaul:death_durability_penalty and insanesurvivaloverhaul:death_destroy_items game rules. Please note that this feature controls the vanilla keep_inventory game rule.
+	"Enable Death penalty" = true
+	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
+	"Enable Echo pillar" = true
+	#Health and hunger penalties on respawn
+	"Enable Respawn penalties" = true
+	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Also adds the Ghostly effect which reduces mob aggro range after an unanchored death.
+	"Enable Loose respawn" = true
+	#The mob that kills a player will not despawn, and when killed will drop more experience.
+	"Enable Player killer bounty" = true
+
+	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
+	[Death."Echo pillar"]
+		#Data pack that makes Echo Pillars generate in the world
+		"Echo pillars" = true
+
+	#Health and hunger penalties on respawn
+	[Death."Respawn penalties"]
+
+			#Min Health of respawning players
+			[Death."Respawn penalties".Health.Minimum]
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 10.0
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				Normal = 10.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#How much health respawning players lose on respawn (not max health)
+			[Death."Respawn penalties".Health."Per death"]
+				# Default: 1.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 1.0
+				# Default: 2.0
+				# Range: 0.0 ~ 20.0
+				Normal = 2.0
+				# Default: 2.0
+				# Range: 0.0 ~ 20.0
+				Hard = 2.0
+
+			#Min Hunger of respawning players. If below this value on death will be set to this value
+			[Death."Respawn penalties".Hunger.Min]
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 6.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Normal = 6.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#Max Hunger of respawning players. If above this value on death will be set to this value
+			[Death."Respawn penalties".Hunger.Maximum]
+				# Default: 14.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 14.0
+				# Default: 14.0
+				# Range: 0.0 ~ 20.0
+				Normal = 14.0
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				Hard = 10.0
+
+			#Min Saturation of respawning players. If below this value on death will be set to this value
+			[Death."Respawn penalties".Saturation.Minimum]
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 6.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Normal = 6.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#Max Saturation of respawning players. If above this value on death will be set to this value
+			[Death."Respawn penalties".Saturation.Maximum]
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 10.0
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				Normal = 10.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Also adds the Ghostly effect which reduces mob aggro range after an unanchored death.
+	[Death."Loose respawn"]
+		#How many seconds of the Ghostly effect is given to the player on respawn.
+		# Default: 120
+		# Range: > 0
+		"Ghostly effect" = 120
+		#If enabled, respawning will try to place you on land and not in fluids
+		"Dont respawn on fluid" = true
+
+		#The range from world spawn where players will respawn.
+		[Death."Loose respawn"."Loose world spawn range"]
+			# Default: 128.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 128.0
+			# Default: 256.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 256.0
+
+		#The range from beds where players will respawn.
+		[Death."Loose respawn"."Loose bed spawn range"]
+			# Default: 80.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 80.0
+			# Default: 160.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 160.0
+
+	#The mob that kills a player will not despawn, and when killed will drop more experience.
+	[Death."Player killer bounty"]
+		#Base experience multiplier applied when the bounty mob kills its first player. Each additional unique player killed adds this value again (additive).
+		# Default: 5.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Experience Multiplier" = 5.0
+
+[Mining]
+	#Various mining changes
+	"Enable Mining misc" = true
+	#Various changes for different materials and ores.
+	"Enable Materials and ores" = true
+	#Enables a Data Pack that generates large ore veins underground. On the surface you can find ore rocks indicating a huge vein below.
+	"Enable Big ore veins" = true
+	#Change, through data packs, some blocks properties, from hardness to explosion resistance to speed and jump factors to bone meal chance to fail.
+	"Enable Block definition" = true
+
+	#Various mining changes
+	[Mining."Mining misc"]
+		#Makes slabs, stairs and walls take less time to break
+		"Faster slabs, stairs and walls" = true
+		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2.5 tool mining speed.
+		"Mining speed based destroy delay" = true
+		#Tools with a mining speed set via the minecraft:tool component show it as a tooltip.
+		"Mining speed tooltip" = true
+
+	#Various changes for different materials and ores.
+	[Mining."Materials and ores"]
+		#https://minecraft.wiki/w/Ore_vein
+		"Disable ore veins" = true
+		#Enables a data pack that removes the vanilla feature of discarding ores if exposed to air. This applies to: coal, diamonds, gold and lapis
+		"Ore generation overhaul" = true
+		#Enables a data pack with the following changes:
+		#* Stone (Broken with a non Silk-Touch tool) can drop Iron Nuggets
+		#* Silverfish can drop Iron Nuggets
+		"Farmable iron data pack" = false
+		#Enables the following changes to vanilla data pack:
+		#* Smelting Raw Copper and Raw Iron takes 2x time
+		#* Blasting raw minerals takes 2x time
+		#* Blasting ores now takes 4x time but yields 2x materials from minerals (2x the normal drops without Fortune), and yields 3x raw minerals for iron, gold and copper
+		#* You can no longer smelt anything other than Raw Copper and Raw Iron. A Blast Furnace is required
+		#* Heavily increased experience from smelting ores
+		#
+		"Ore smelting" = true
+
+	#Change, through data packs, some blocks properties, from hardness to explosion resistance to speed and jump factors to bone meal chance to fail.
+	[Mining."Block definition"]
+		#Enables the built-in block definitions data pack, which changes the following:
+		#Makes Ancient Debris, Ender Chests, Obsidian, powder snow, spawners, wooden trapdoors easier to break.
+		#Budding Amethyst, Leaves, Netherrack, nylium harder to break.
+		#Makes Ores harder to break.
+		#Makes Copper, Gold, Iron ores, Amethyst clusters drop xp. Sculk Catalyst and Spawners drop moar xp.
+		"Data pack" = true
+
+[Misc]
+	#Various stuff that doesn't fit in any other Feature.
+	"Enable Tweaks" = true
+	#Resource and data packs
+	"Enable Packs" = true
+	#Various Nerfs
+	"Enable Nerfs" = true
+	#Various changes to potions and effects
+	"Enable Potions and effects" = true
+	#Fishing more and more in the same spot will slow down the fishing
+	"Enable Low fish" = true
+
+	#Various stuff that doesn't fit in any other Feature.
+	[Misc.Tweaks]
+		#Falling on glass has a chance of breaking it. The higher the fall, the higher the chance. insanesurvivaloverhaul:fall_on_break block tag can be used to add more blocks that break when falling onto them.
+		"Falling breaking glass" = true
+		#When you die in hardcore, your spawn point is set to where you died and a lightning strike is summoned
+		"Better hardcore death" = true
+		#If enabled, the Totem of Undying will give Resistance IV for 5.5 seconds
+		"Totem resistance" = true
+		#If set higher than 0 it will enable damage when colliding with walls at a high speed (e.g. with explosions or knockback). Higher = more damage. Set to 0 to disable. Please note that even if set to 0, might still show up in performance profilers.
+		# Default: 3.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Collide with walls damage" = 3.0
+		#Vanilla is 5
+		# Default: 16
+		# Range: > 0
+		"Leash max distance" = 16
+		#The speed modifier when frozen. Vanilla is -0.05
+		# Default: -0.1
+		# Range: -1.0 ~ 0.0
+		"Frozen movement speed modifier" = -0.1
+		#Plays a sound effect when a mob is hit at least from this distance.
+		# Default: 40
+		# Range: > -2147483648
+		"Ding distance" = 40
+		"Blindness no longer prevents sprinting" = true
+		#The speed divider when off ground. Vanilla is 5
+		# Default: 3.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Off ground speed divider" = 3.0
+		#How much damage vehicles require to be broken, vanilla is 4
+		# Default: 2
+		# Range: > -2147483648
+		"Damage to break vehicles" = 2
+
+		[Misc.Tweaks.Sponge]
+			#The maximum amount of blocks a sponge can soak. (Vanilla is 64, disabled if quark is installed)
+			# Default: 256
+			# Range: > -2147483648
+			"Max soak blocks" = 256
+			#The maximum range at which sponges will check for soakable blocks. (Vanilla is 5, disabled if quark is installed)
+			# Default: 10
+			# Range: > -2147483648
+			"Max soak range" = 10
+
+		[Misc.Tweaks.Sponges]
+			#If exposed to the sun sponges may dry and if exposed to rain sponges might get wet
+			"Dry wet weather" = true
+
+		[Misc.Tweaks.Breathe]
+			#The amount of ticks the entities consumes when underwater. In vanilla it's 1 without Respiration enchantment. For non integer numbers the decimal part will count as a chance to have a +1
+			# Default: 1.5
+			# Range: 0.0 ~ 100.0
+			"Air ticks consumed" = 1.5
+			#Every how many ticks will entities drown
+			# Default: 30
+			# Range: 0 ~ 100
+			"Drown speed" = 30
+			"Increase drown damage the more drowning" = true
+
+			#The amount of air ticks the entities regains each tick when out of water. Min is the amount as soon as you exit water, Max is a few seconds out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4.
+			[Misc.Tweaks.Breathe."Air ticks refilled"]
+				# Default: 1.0
+				# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				Minimum = 1.0
+				# Default: 2.5
+				# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+				Maximum = 2.5
+
+		[Misc.Tweaks.Turtle]
+			#The ticks of Water Breathing given by the Turtle Helmet. Vanilla is 200
+			# Default: 900
+			# Range: > -2147483648
+			"Helmet water breathing time" = 900
+			#If true, scute will drop as a block and not as item
+			"Scute drops as block" = true
+
+	#Resource and data packs
+	[Misc.Packs]
+		#If true, no integrated data pack will be loaded
+		"Disable all data packs" = false
+		#If true a data pack will be enabled that disables villages and pillagers outpost generation.
+		"Disable long noses structures" = true
+		#If true a data pack will be enabled that makes furnaces require copper. Copper ingots can be obtained from raw copper on campfires.
+		"Copper furnace" = true
+		#Changes vanilla torch recipes.
+		#* Torches can be only made on Campfires early on in the game
+		#* With shears you can make 4 torches out of coal
+		#* With Fire Charges you can make more of them later in the game without needing grass.
+		"Hardcore torches" = true
+		#Minor changes:
+		#* Cakes now drop when broken and not eaten
+		#* Dark Prismarine is made easier
+		#* Clay balls can be crafted from blocks
+		#* Leads and Sticky Pistons can also be made with Honey
+		#* Iron Doors can be blasted back to Iron Ingots
+		#* Dispensers can be made from droppers
+		#* Levers and glass can now be broken faster with pickaxes, cactus with hoes
+		#* Chains are easier to craft with just nuggets
+		"Misc tweaks" = true
+		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc).
+		"Actual redstone components" = true
+		#Fixes the drop rate of some saplings, such as Jungle and Dark oak dropping too rarely
+		"Sapling drop fix" = true
+		#Lowers the giant mushrooms generated in a Roofed forests forests as well as removes the non-dark oak trees
+		"Dark forest vegetation" = true
+		#If true, a data pack will be enabled that makes End Cities more common.
+		"Increase end cities" = true
+
+	#Various Nerfs
+	[Misc.Nerfs]
+		#If true, Iron golems will only drop Iron when killed by the player.
+		"Iron from golems requires player" = true
+		#If true, renderDebugInfo is enabled by default. Requires a world restart.
+		"No coordinates" = true
+		#If true, maxEntityCramming game rule is set to 6 from 24
+		"Reduced mob cramming" = true
+		#Kelp blocks smelt 16 items instead of 20
+		"Less burn time for kelp block" = true
+		#Fixes several piston physics exploits like TNT duping. (If quark is present this is disabled)
+		"Remove piston physics exploit" = true
+		#When an entity is hit and on a mount they have this chance to fall
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		"Fall from mount chance" = 0.2
+		#If true, only players are affected by 'Fall from mount chance'
+		"Fall from mount player only" = true
+		#When prone your mining speed is multiplied by this
+		# Default: 0.5
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Prone mining speed multiplier" = 0.5
+
+	#Various changes to potions and effects
+	[Misc."Potions and effects"]
+		#Poison will damage the player every this ticks at level I. Vanilla is 25.
+		# Default: 60
+		# Range: > 1
+		"Poison damage speed" = 60
+		#Changes Strength and Weakness +/-3 damage per level to +/-20% damage per level. (Requires a Minecraft restart)
+		"Better strength and weakness" = true
+		#Changes Mining fatigue and haste to no longer affects attack speed. (Requires a Minecraft restart)
+		"Better haste and mining fatigue" = true
+		#Changes Healing and Harm potions to both heal/damage 4 per level.
+		"Streamline heal and harm potions" = true
+		#Regeneration will regenerate health every this ticks at level I. Vanilla is 50.
+		# Default: 50
+		# Range: > -2147483648
+		"Regeneration base speed" = 50
+		#The strength used to throw splash potions. Vanilla is 0.5
+		# Default: 0.8
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Splash potion throw strength" = 0.8
+		#If true, entities will no longer be set on fire if have Fire Resistance (like bedrock edition)
+		"Prevent fire with resistance" = false
+		#Splash potions will always be 2/3 effective compared to drinkable ones but will also apply the full effect duration when thrown
+		"Streamline splash potions" = true
+		#Enables a data pack that increases potions stack sizes
+		"Potion stack size" = true
+
+	#Fishing more and more in the same spot will slow down the fishing
+	[Misc."Low fish"]
+		# Default: 8
+		# Range: > -2147483648
+		"Fishing spot range" = 8
+		# Default: 10
+		# Range: > -2147483648
+		"Fished before slowdown" = 10
+		# Default: 100
+		# Range: > -2147483648
+		"Slowdown per one past fished" = 100
+		#Slowdown message is displayed when 'Slowdown Per One Past Fished' sums up to this value
+		# Default: 500
+		# Range: > -2147483648
+		"Slowdown message" = 500

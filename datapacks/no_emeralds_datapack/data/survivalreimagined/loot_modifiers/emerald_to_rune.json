@@ -1,0 +1,6 @@
+{
+  "type": "runeenchanting:item_to_rune",
+  "chance": 0.2,
+  "conditions": [],
+  "item": "minecraft:emerald"
+}

@@ -1,0 +1,11 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "item": "minecraft:oak_planks"
+  },
+  "result": {
+    "id": "quark:vertical_oak_planks",
+    "count": 1
+  },
+  "type": "sawmill:woodcutting"
+}

@@ -1,0 +1,10 @@
+[Rune]
+	"Extract curses" = false
+	#A data pack will be enabled that changes the following:
+	#* Removes the enchanting table recipe
+	#* Changes Channeling enchantment (and subsequently the Channeling rune) to work in rain too
+	"Integrated data pack" = true
+	#If true, enchanting related items are hidden from creative inventory
+	"Hide enchanting related items" = true
+	#If true, infos that are usually shown only with shift held down, will always show instead
+	"Always show extra infos" = false

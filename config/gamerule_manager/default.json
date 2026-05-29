@@ -1,0 +1,12 @@
+{
+  "default": {
+    "maxEntityCramming": 6,
+    "doPatrolSpawning": false,
+    "doTraderSpawning": false,
+    "mobExplosionBlockDecay": false,
+    "snowAccumulationHeight": 7,
+    "commandBlockOutput": false,
+    "playersNetherPortalDefaultDelay": 40,
+    "experienceoverhaul:disable_experience": true
+  }
+}
