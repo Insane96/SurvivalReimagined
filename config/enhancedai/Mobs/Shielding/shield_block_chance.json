@@ -1,14 +1,14 @@
 [
   {
-    "id": "minecraft:shield",
-    "value": 0.2
-  },
-  {
     "id": "shieldsplus:wooden_shield",
     "value": 0.1
   },
   {
     "id": "shieldsplus:stone_shield",
+    "value": 0.15
+  },
+  {
+    "id": "shieldsplus:copper_shield",
     "value": 0.15
   },
   {
