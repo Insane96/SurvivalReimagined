@@ -802,6 +802,8 @@
 	"Enable Bows" = true
 	#Players will deal reduced knockback if attacking with a non-weapon or spamming. Knockback reductions are defined via Data Packs with Item Definitions (the item_stats integrated data pack already does this)
 	"Enable Knockback" = true
+	#Give an use to the fletching table, adding more arrows and better crafting
+	"Enable Fletching" = true
 
 	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
 	[Combat."Absorption armor"]
