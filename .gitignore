@@ -1,8 +1,9 @@
+.mixin.out/
 backups/
 crash-reports/
 debug/
 downloads/
-dyanmic-data-pack-cache/
+dynamic-data-pack-cache/
 dynamic-resource-pack-cache/
 logs/
 moonlight-global-datapacks/
@@ -19,3 +20,4 @@ options.txt
 user-prefs.json
 usercache.json
 usernamecache.json
+*.toml.bak
