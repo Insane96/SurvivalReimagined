@@ -567,7 +567,7 @@
 
 	[World.Nether]
 		#Enables a data pack that makes the nether 128 blocks high instead of 256, effectively disabling the "Nether Roof" and reduces the 8 block ratio between nether and other dimensions to 2. This will break if another mod changes the nether dimension
-		"Disable Nether Roof and reduce block ratio" = true
+		"Disable Nether Roof and reduce block ratio" = false
 		#If true, lava pockets in the nether are removed. If quark is installed, this is disabled
 		"Remove lava pockets" = true
 		#If true you cannot lit nether portals
@@ -1211,6 +1211,14 @@
 			"Helmet water breathing time" = 900
 			#If true, scute will drop as a block and not as item
 			"Scute drops as block" = true
+
+		[Misc.Tweaks.Nausea]
+			#Eating while nauseous will cause hunger effect
+			"Hunger when eating and nauseous" = true
+			#Hitting a mob has this % chance (per level of Nausea) to fail when nauseated
+			# Default: 0.15
+			# Range: 0.0 ~ 1.0
+			"Chance to fail to hit" = 0.15
 
 	#Resource and data packs
 	[Misc.Packs]
