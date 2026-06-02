@@ -134,7 +134,7 @@
 		#Chance for a mob the get the xray range override.
 		# Default: 0.5
 		# Range: 0.0 ~ 1.0
-		"Xray range override chance" = 0.5
+		"Xray range override chance" = 1
 		"See glowing entities" = true
 		#Mobs in the entity type tag `enhancedai:mobs/targeting/alert_nearby` will alert nearby mobs in this range and target the player.
 		# Default: 32
@@ -149,7 +149,7 @@
 		[Mobs.Targeting."Follow range override"]
 			# Default: 32.0
 			# Range: 0.0 ~ 128.0
-			Minimum = 32.0
+			Minimum = 24.0
 			# Default: 64.0
 			# Range: 0.0 ~ 128.0
 			Maximum = 48.0
@@ -158,10 +158,10 @@
 		[Mobs.Targeting."Xray range override"]
 			# Default: 12.0
 			# Range: 0.0 ~ 128.0
-			Minimum = 16.0
+			Minimum = 0.0
 			# Default: 24.0
 			# Range: 0.0 ~ 128.0
-			Maximum = 24.0
+			Maximum = 12.0
 
 		[Mobs.Targeting."Better hurt by target"]
 			#Mobs will actually switch target when attacked unless it's the same or if the current one it's closer. Only entity types in the entity type tag `enhancedai:mobs/targeting/better_hurt_by` tag will be affected by this. Use the entity type tag `enhancedai:mobs/targeting/allow_target_switch` to allow more entity types to switch targets (e.g. creepers in vanilla can't switch targets).
@@ -187,13 +187,13 @@
 			[Mobs.Targeting."Better nearby targeting"."Neutral chances"]
 				# Default: 0.25
 				# Range: 0.0 ~ 1.0
-				"Easy/Peaceful" = 0.25
+				"Easy/Peaceful" = 0.15
 				# Default: 0.1
 				# Range: 0.0 ~ 1.0
-				Normal = 0.1
+				Normal = 0.10
 				# Default: 0.04
 				# Range: 0.0 ~ 1.0
-				Hard = 0.04
+				Hard = 0.05
 
 	#Changes mobs attacks to use the attack speed attribute. Only entities in the `enhancedai:mobs/melee_attacking` entity type tag will be affected.
 	[Mobs."Melee attacking"]
