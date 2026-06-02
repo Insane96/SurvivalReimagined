@@ -19,3 +19,5 @@
 	# Default: 0.3
 	# Range: 0.0 ~ 1.0
 	"Min cooldown" = 0.3
+	#If true, enables a data pack that overrides the vanilla shield recipe with the mod's iron one.
+	"Override vanilla shield recipe" = true

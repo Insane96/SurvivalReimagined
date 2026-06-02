@@ -955,16 +955,18 @@
 		"Projectile knockback" = 0.7
 
 [Death]
-	#Makes you lose a percentage of items and durability on death. Controlled via game rules. Items percentage lost can be configured with the insanesurvivaloverhaul:death_lose_items_percentage, insanesurvivaloverhaul:death_durability_penalty and insanesurvivaloverhaul:death_destroy_items game rules. Please note that this feature controls the vanilla keep_inventory game rule.
+	#Makes you lose a percentage of items and durability on death. Controlled via game rules. Items percentage lost can be configured with the insanesurvivaloverhaul:death_lose_items_percentage, insanesurvivaloverhaul:death_durability_penalty and insanesurvivaloverhaul:death_destroy_items game rules. insanesurvivaloverhaul:death_experience_lost for the percentage of experience dropped and insanesurvivaloverhaul:death_destroy_experience if the experience should be dropped or destroyed. Please note that this feature controls the vanilla keep_inventory game rule.
 	"Enable Death penalty" = true
 	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
 	"Enable Echo pillar" = true
 	#Health and hunger penalties on respawn
 	"Enable Respawn penalties" = true
-	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Also adds the Ghostly effect which reduces mob aggro range after an unanchored death.
+	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Disabled by default via insanesurvivaloverhaul:do_loose_respawn game rule.
 	"Enable Loose respawn" = true
 	#The mob that kills a player will not despawn, and when killed will drop more experience.
 	"Enable Player killer bounty" = true
+	#Gives the player the Ghostly effect on respawn, preventing mob aggro.
+	"Enable Ghostly" = true
 
 	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
 	[Death."Echo pillar"]
@@ -1046,12 +1048,8 @@
 				# Range: 0.0 ~ 20.0
 				Hard = 6.0
 
-	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Also adds the Ghostly effect which reduces mob aggro range after an unanchored death.
+	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Disabled by default via insanesurvivaloverhaul:do_loose_respawn game rule.
 	[Death."Loose respawn"]
-		#How many seconds of the Ghostly effect is given to the player on respawn.
-		# Default: 120
-		# Range: > 0
-		"Ghostly effect" = 120
 		#If enabled, respawning will try to place you on land and not in fluids
 		"Dont respawn on fluid" = true
 
@@ -1079,6 +1077,13 @@
 		# Default: 5.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Experience Multiplier" = 5.0
+
+	#Gives the player the Ghostly effect on respawn, preventing mob aggro.
+	[Death.Ghostly]
+		#How many seconds of the Ghostly effect is given to the player on respawn.
+		# Default: 150
+		# Range: > 0
+		"Time on respawn" = 150
 
 [Mining]
 	#Various mining changes
