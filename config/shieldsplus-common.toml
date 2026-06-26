@@ -21,3 +21,7 @@
 	"Min cooldown" = 0.3
 	#If true, enables a data pack that overrides the vanilla shield recipe with the mod's iron one.
 	"Override vanilla shield recipe" = true
+	#When crouch blocking, after attacking, how many seconds will the shield be in cooldown for?
+	# Default: 0.35
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Block with crouch exposure" = 0.35

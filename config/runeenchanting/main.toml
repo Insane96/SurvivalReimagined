@@ -1,10 +1,18 @@
 [Rune]
+	"Hide curses" = true
 	"Extract curses" = false
+	#Maximum number of curses that can be on a single item. 0 disables curses entirely.
+	# Default: 1
+	# Range: > -2147483648
+	"Max curses" = 1
 	#A data pack will be enabled that changes the following:
 	#* Removes the enchanting table recipe
 	#* Changes Channeling enchantment (and subsequently the Channeling rune) to work in rain too
 	"Integrated data pack" = true
 	#If true, enchanting related items are hidden from creative inventory
 	"Hide enchanting related items" = true
+	# Default: 0.5
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Equipment rune conversion ratio" = 0.5
 	#If true, infos that are usually shown only with shift held down, will always show instead
 	"Always show extra infos" = false

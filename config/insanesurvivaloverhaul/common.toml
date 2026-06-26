@@ -91,8 +91,6 @@
 		# Default: 1.0
 		# Range: 0.0 ~ 128.0
 		"Tiredness gain multiplier" = 1.0
-		#If true the player will not set the spawn point if can't sleep.
-		"Should prevent spawn point" = false
 		#Tiredness required to get the Tired effect and be able to sleep.
 		# Default: 400.0
 		# Range: 0.0 ~ 1.7976931348623157E308
@@ -590,19 +588,19 @@
 		# Default: 0.0
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Block break exhaustion multiplier" = 0.0
-		#When breaking block you'll get exhaustion every tick during the breaking.
+		#When breaking block you'll get exhaustion every tick during the breaking. Vanilla is 0.005
 		# Default: 0.005
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Exhaustion on block breaking" = 0.005
-		#Every second the player will get this exhaustion.
+		#Every second the player will get this exhaustion. Vanilla is 0
 		# Default: 0.005
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Passive exhaustion" = 0.005
-		#Every tick of the player's rowing will get this exhaustion.
+		#Every tick of the player's rowing will get this exhaustion. Vanilla is 0
 		# Default: 0.005
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Rowing exhaustion" = 0.005
-		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion.
+		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion. Vanilla is 0
 		# Default: 0.005
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Bow charge exhaustion" = 0.005
@@ -613,8 +611,8 @@
 		#How much exhaustion is given to the player when jumps and it's sprinting. Vanilla is 0.2
 		# Default: 0.5
 		# Range: 0.0 ~ 1.7976931348623157E308
-		"Jump exhaustion sprint" = 0.5
-		#When affected by the hunger effect, exhaustion will be doubled per level of the effect
+		"Jump exhaustion sprint" = 2
+		#When affected by the hunger effect, exhaustion will be doubled per level of the effect. Requires Minecraft restart.
 		"Effective hunger" = true
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
@@ -965,7 +963,7 @@
 	"Enable Loose respawn" = true
 	#The mob that kills a player will not despawn, and when killed will drop more experience.
 	"Enable Player killer bounty" = true
-	#Gives the player the Ghostly effect on respawn, preventing mob aggro.
+	#Gives the player the Ghostly effect on respawn, making you really hard to see for mobs.
 	"Enable Ghostly" = true
 
 	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
@@ -1078,7 +1076,7 @@
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Experience Multiplier" = 5.0
 
-	#Gives the player the Ghostly effect on respawn, preventing mob aggro.
+	#Gives the player the Ghostly effect on respawn, making you really hard to see for mobs.
 	[Death.Ghostly]
 		#How many seconds of the Ghostly effect is given to the player on respawn.
 		# Default: 150
@@ -1094,6 +1092,8 @@
 	"Enable Big ore veins" = true
 	#Change, through data packs, some blocks properties, from hardness to explosion resistance to speed and jump factors to bone meal chance to fail.
 	"Enable Block definition" = true
+	#Adds recipes for crafting in an anvil through data packs
+	"Enable Anvil crafting" = true
 
 	#Various mining changes
 	[Mining."Mining misc"]
@@ -1131,6 +1131,11 @@
 		#Makes Ores harder to break.
 		#Makes Copper, Gold, Iron ores, Amethyst clusters drop xp. Sculk Catalyst and Spawners drop moar xp.
 		"Data pack" = true
+
+	#Adds recipes for crafting in an anvil through data packs
+	[Mining."Anvil crafting"]
+		#Enables a data pack that replaces vanilla metal equipment recipes requiring an anvil
+		"Metal equipment in anvil" = true
 
 [Misc]
 	#Various stuff that doesn't fit in any other Feature.

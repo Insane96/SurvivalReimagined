@@ -25,7 +25,7 @@
 	# Range: 1 ~ 256
 	"Max Blocks" = 4
 
-[expanded]
+[tunneling]
 	Enabled = true
 
 [blasting]
@@ -345,6 +345,17 @@
 	# Range: > -2147483648
 	Cooldown = 600
 
+[absorbing]
+	Enabled = true
+	#Chance to completely nullify incoming direct damage
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	"Absorbing Chance" = 0.25
+	#Multiplier applied to the nullified damage and dealt to the chestplate's durability
+	# Default: 3.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Damage To Armor" = 3.0
+
 [swift_sneak]
 	Enabled = true
 	# Default: 0.4
@@ -606,3 +617,12 @@
 	# Default: 3.0
 	# Range: 0.05 ~ 1.7976931348623157E308
 	"Delay Seconds" = 3.0
+
+[curse_of_corrosion]
+	Enabled = true
+	# Default: 1.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Damage Amount" = 1.0
+	# Default: 2.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Seconds Between Damage" = 2.0
