@@ -3,7 +3,7 @@
     "maxEntityCramming": 6,
     "doPatrolSpawning": false,
     "doTraderSpawning": false,
-    "mobExplosionBlockDecay": false,
+    "mobExplosionDropDecay": false,
     "snowAccumulationHeight": 7,
     "commandBlockOutput": false,
     "playersNetherPortalDefaultDelay": 40
