@@ -134,7 +134,7 @@
 		#Chance for a mob the get the xray range override.
 		# Default: 0.5
 		# Range: 0.0 ~ 1.0
-		"Xray range override chance" = 1
+		"Xray range override chance" = 0.5
 		"See glowing entities" = true
 		#Mobs in the entity type tag `enhancedai:mobs/targeting/alert_nearby` will alert nearby mobs in this range and target the player.
 		# Default: 32
@@ -158,7 +158,7 @@
 		[Mobs.Targeting."Xray range override"]
 			# Default: 8.0
 			# Range: 0.0 ~ 128.0
-			Minimum = 0.0
+			Minimum = 4.0
 			# Default: 16.0
 			# Range: 0.0 ~ 128.0
 			Maximum = 12.0
