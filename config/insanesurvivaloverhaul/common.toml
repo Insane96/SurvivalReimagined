@@ -94,7 +94,7 @@
 		#Tiredness required to get the Tired effect and be able to sleep.
 		# Default: 400.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		"Tiredness to effect" = 400.0
+		"Tiredness to effect" = 500.0
 		#Every this Tiredness above 'Tiredness for effect' will add a new level of Tired.
 		# Default: 250.0
 		# Range: 0.0 ~ 1.7976931348623157E308

@@ -105,7 +105,7 @@
 	"Weakness Duration Max" = 3.0
 
 [bane_of_noses]
-	Enabled = true
+	Enabled = false
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
