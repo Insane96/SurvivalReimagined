@@ -53,6 +53,8 @@
 		"Fixed iron golem damage" = true
 		#Changes mobs loot and makes mobs drop reduced loot if not killed by a player
 		"Loot changes" = true
+		#If true, mobs will burn even if there's a block above them in daylight
+		"Burn in sky light" = true
 
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
@@ -92,7 +94,7 @@
 		# Range: 0.0 ~ 128.0
 		"Tiredness gain multiplier" = 1.0
 		#Tiredness required to get the Tired effect and be able to sleep.
-		# Default: 400.0
+		# Default: 500.0
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Tiredness to effect" = 500.0
 		#Every this Tiredness above 'Tiredness for effect' will add a new level of Tired.
@@ -1140,6 +1142,8 @@
 	[Mining."Anvil crafting"]
 		#Enables a data pack that replaces vanilla metal equipment recipes requiring an anvil
 		"Metal equipment in anvil" = true
+		#If true, enchanted items can be used to craft in the anvil. If false, only non-enchanted items can be used in an anvil. If Rune Enchanting is installed, runed items count as enchanted.
+		"Allow enchanted items" = false
 
 [Misc]
 	#Various stuff that doesn't fit in any other Feature.
