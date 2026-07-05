@@ -90,7 +90,7 @@
 		#Chance for a mob to become a leader. Leader mobs have a high chance to spawn reinforcements.
 		# Default: 0.03
 		# Range: 0.0 ~ 1.0
-		"Leader chance" = 0.03
+		"Leader chance" = 0.02
 		#At this damage, the chance to spawn reinforcements is 100% of the attribute, otherwise is scaled. E.g. with this set to 6 and enhancedai:spawn_reinforcements_chance attribute set to 0.5 the chance to spawn reinforcements is 50% at 6 damage, 25% at 3 damage or 100% at 12 damage. Set to 0 to disable scaling with damage. This is damage before resistances (armor, etc).
 		# Default: 6.0
 		# Range: 0.0 ~ 1.7976931348623157E308
