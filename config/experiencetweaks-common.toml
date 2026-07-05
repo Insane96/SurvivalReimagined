@@ -1,6 +1,6 @@
-"Enable Experience" = true
+"Enable Experience" = false
 "Enable Anvil" = true
-"Enable Enchanting" = true
+"Enable Enchanting" = false
 
 [Anvil]
 	#Changes the chance for anvils to degrade on use and allows repairing anvils with items in the experiencetweaks:repairs_anvil item tag.
