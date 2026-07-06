@@ -30,51 +30,6 @@ rebiomeStreams = false
 	#Allowed: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX.
 	#Allowed Values: POTATO, LOW, MEDIUM, HIGH, EXTREME, MAX
 	qualityPreset = "MEDIUM"
-	#
-	#Skip the expensive terrain-height sampling under open OCEAN. Where the (cheap) biome is an ocean,
-	#the slow getBaseHeight call is replaced with a flat deep floor -- rivers only form on land and at
-	#coasts, so the open seabed is never needed. Big speedup on coastal/ocean-heavy worlds; no effect
-	#inland. Coasts, beaches and rivers still sample the real height, so shorelines are unchanged.
-	#  true = on (default).  false = sample the real height everywhere (e.g. terrain mods that put
-	#land inside ocean biomes).
-	fastOceanSkip = true
-
-	#Fine overrides for the preset above. Leave each at -1 (auto) to follow the preset; set one to a
-	#real number to override JUST that knob while the rest keep following the preset.
-	[performance.advanced]
-		#
-		#Routing/sampling grid spacing in blocks -- the master quality dial.
-		#  LOWER  = finer, more accurate river paths, but cost rises steeply (~1/spacing^2).
-		#  HIGHER = coarser, blockier rivers, much faster.
-		#-1 = auto (follow preset).
-		# Default: -1
-		# Range: -1 ~ 64
-		gridSpacing = -1
-		#
-		#Size (blocks) of one watershed built in a single pass. Build GRANULARITY, not quality -- the total
-		#cost to cover the world is the same at any value.
-		#  LOWER  = smaller, more frequent builds, but more watershed seams (rare perched-water artifacts).
-		#  HIGHER = fewer seams = cleaner, larger networks, at the cost of a bigger one-time build.
-		#-1 = auto.
-		# Default: -1
-		# Range: -1 ~ 4096
-		watershedSize = -1
-		#
-		#Sample the (expensive) host terrain height every N blocks, then interpolate onto the routing
-		#grid. Only takes effect when set ABOVE gridSpacing.
-		#  HIGHER = far fewer terrain lookups = faster, slightly smoother valleys.  0 = full detail.
-		#-1 = auto.
-		# Default: -1
-		# Range: -1 ~ 256
-		terrainSampleSpacing = -1
-		#
-		#After coarse routing, pull each river point onto the true lowest terrain within N blocks, so
-		#rivers sit in the real valley floor even on a coarse grid.
-		#  HIGHER = stronger pull (cleaner beds); too large over-straightens.  0 = off.
-		#-1 = auto.
-		# Default: -1
-		# Range: -1 ~ 64
-		valleySnapRadius = -1
 
 #APPEARANCE -- how streams look. These shape the network and channels and do NOT meaningfully
 #affect speed. Anything that changes the network (most of these) applies to NEW chunks only.
@@ -207,8 +162,10 @@ rebiomeStreams = false
 	biomeBoostPercent = 7
 	#
 	#Biome-boost blacklist: comma-separated placed-feature ids the near-water biome-boost must NOT
-	#re-run -- e.g. "terralith:cave_pumpkin_patch, minecraft:trees_birch". (You can also add ids to
-	#the datapack tag #streamsreflowing:biome_boost_excluded; both are honoured.) Default empty.
+	#re-run -- e.g. "terralith:cave_pumpkin_patch, minecraft:trees_birch". A whole MOD can be
+	#excluded with "modid:*" (or just "modid") -- e.g. "waypoints:*" keeps a waypoint mod's
+	#structures from scattering along every bank. (You can also add ids to the datapack tag
+	##streamsreflowing:biome_boost_excluded; both are honoured.) Default empty.
 	biomeBoostBlacklist = ""
 	#
 	#Bank-grass density (PERCENT): at the water's edge, the chance a near-water column gets a simple
@@ -218,6 +175,33 @@ rebiomeStreams = false
 	# Default: 40
 	# Range: 0 ~ 100
 	bankGrassPercent = 40
+	#
+	#Stream biome blacklist: biomes where streams and lakes are NOT carved at all. Comma-separated
+	#biome ids ("minecraft:mushroom_fields"), biome tags ("#c:is_dead"), and whole-mod wildcards
+	#("somemod:*" or just "somemod"). (You can also add biomes to the datapack tag
+	##streamsreflowing:no_streams; both are honoured.) Carve-only: applies to NEW chunks; a stream
+	#crossing a blacklisted biome simply is not carved inside it. Default empty.
+	streamBiomeBlacklist = ""
+	#
+	#Underwater flora SCOPE -- entirely separate from vegetation/allWaterFlora/biomeBoostPercent
+	#above: plants the vanilla RIVER biome's own underwater plants (seagrass and the like) onto
+	#submerged floors, regardless of the water body's surrounding biome (a lake dug into a mountain
+	#has no water plants of its own to copy). Only ever plants on a natural, water-plantable floor
+	#(see the datapack tag #streamsreflowing:underwater_vegetation_floor) -- never on stone/ore.
+	#  0 = off.  1 = our LAKES only.  2 = lakes AND our stream channels.
+	#  3 = ALL bodies of water -- vanilla rivers, lakes, ponds and oceans too, not just ours.
+	#Default 2.
+	# Default: 2
+	# Range: 0 ~ 3
+	underwaterFlora = 2
+	#
+	#Underwater flora density (PERCENT): the chance a valid submerged floor column (within whatever
+	#scope underwaterFlora selects) gets a plant.
+	#  HIGHER = denser underwater growth.  0 = bare floors (same as underwaterFlora=0).
+	#Default 35.
+	# Default: 35
+	# Range: 0 ~ 100
+	underwaterFloraPercent = 35
 
 #WATER & BOATS -- runtime behaviour of water itself. These affect ALL water in the world, not
 #just this mod's streams, and apply LIVE (no regeneration needed).
@@ -234,15 +218,10 @@ rebiomeStreams = false
 	#  EXPERIMENTAL (default OFF): tick-based, can add lag in very wet areas.  true = on.  false = off.
 	convergeSpills = false
 	#
-	#Fill stream channels with a custom directional 'stream' fluid that renders its flow in the true
-	#downstream direction (including diagonals) and is tagged as water, so swimming, boats, fishing and
-	#hydration all work. It still spills like vanilla water and uses spillOverWater. Requires NeoForge.
-	#  true = custom stream fluid (default).  false = plain vanilla water.
-	bakedStreamFluid = true
-	#
 	#Give flat vanilla / terrain-mod rivers a single coherent downstream current toward the sea (a whole
-	#river flows one way, not a patchwork of conflicting currents), via an ocean-seeded biome flood.
-	#Rivers not connected to an ocean within range are left still. Requires bakedStreamFluid. New chunks only.
+	#river flows one way, not a patchwork of conflicting currents), via an ocean-seeded biome flood. Works
+	#through vanillaWaterFlow's per-chunk flow grid, same as our own streams.
+	#Rivers not connected to an ocean within range are left still. New chunks only.
 	#  true = flow vanilla rivers (default).  false = leave them still.
 	flowVanillaRivers = true
 	#
@@ -250,6 +229,15 @@ rebiomeStreams = false
 	#still carries you downstream; SOURCE water can still submerge a boat).
 	#  true = on (default).  false = vanilla boat behaviour.
 	boatsFloatOnFlowingWater = true
+	#
+	#Give streams (and, with flowVanillaRivers, vanilla rivers) a downstream current while keeping the
+	#water as plain minecraft:water -- the flow direction is sent to the client per chunk and imposed at
+	#render time, so nothing is a custom fluid. This is the recommended path: because the block stays real
+	#water, shaders, particle mods (splashes/ripples/wakes), texture packs (Big Water), water sounds, and
+	#gameplay mods (seasons/temperature freezing, Create wheels, faucets) all just work. Flow reads smoother
+	#than the baked fluid (fine angles, not 8 compass directions). Costs ~256 bytes/stream-chunk of network.
+	#  true = impose flow on vanilla water (default).  false = streams stay still water.
+	vanillaWaterFlow = true
 
 #EXPERIMENTAL -- off by default, rough edges, niche. Most change the network (NEW chunks only).
 [experimental]

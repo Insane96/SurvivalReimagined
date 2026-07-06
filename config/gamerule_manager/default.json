@@ -6,6 +6,7 @@
     "mobExplosionDropDecay": false,
     "snowAccumulationHeight": 7,
     "commandBlockOutput": false,
-    "playersNetherPortalDefaultDelay": 40
+    "playersNetherPortalDefaultDelay": 40,
+    "randomTickSpeed": 1
   }
 }
