@@ -103,9 +103,11 @@
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Leader spawn reinforcements chance" = 1.0
 		"Reinforces can spawn as leader" = false
-		#If true, leader mobs will have 4x health and +15 armor.
+		#If true, leader mobs will have 4x health and +10 armor.
 		"Bonus stats" = true
 		"Remove vanilla spawn reinforcements chance" = true
+		#If true, reinforcements will spawn only if the damage comes from an entity
+		"Entity damage only" = false
 
 	#Makes mobs ride other mobs. Mobs in the `enhancedai:mobs/riding/can_be_mounted` tag will be able to be mounted, while mobs in the `enhancedai:mobs/riding/can_mount` tag will be able to mount other mobs.
 	[Mobs.Riding]
@@ -144,6 +146,14 @@
 		# Default: 4.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Max visited nodes multiplier" = 4.0
+		#Chance for a mob to have to sense the target to keep targeting it. If the mob must sense the target might stop following it if can't sense it (through seeing, xray or glowing)
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		"Must sense target" = 0.5
+		#After how many ticks a mob will forget about the target if can't sense it anymore
+		# Default: 300
+		# Range: > -2147483648
+		"Unsensed forget tick" = 300
 
 		#How far away can the mobs see targets. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. Use mods like Mobs Properties Randomness to have more control over the attribute. Only mobs in the entity type tag `enhancedai:mobs/targeting/follow_range_override` will be affected by this override
 		[Mobs.Targeting."Follow range override"]
