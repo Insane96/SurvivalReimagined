@@ -510,7 +510,7 @@
 	"Dragon Scales" = true
 	"Dyeable Item Frames" = true
 	Emotes = true
-	"Enhanced Ladders" = false
+	"Enhanced Ladders" = true
 	"Glass Shard" = true
 	"Gold Tools Have Fortune" = false
 	"Grab Chickens" = true
@@ -598,11 +598,11 @@
 
 	[tweaks.enhanced_ladders]
 		#Allowed values: (,0]
-		"Fall Speed" = -0.2
-		"Allow Freestanding" = true
+		"Fall Speed" = 0.0
+		"Allow Freestanding" = false
 		"Allow Dropping Down" = true
-		"Allow Sliding" = true
-		"Allow Inventory Sneak" = true
+		"Allow Sliding" = false
+		"Allow Inventory Sneak" = false
 
 	[tweaks.gold_tools_have_fortune]
 		#Allowed values: [0,)
