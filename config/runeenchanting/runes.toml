@@ -1,5 +1,4 @@
 [efficiency]
-	Enabled = true
 	#Percentage bonus mining speed
 	# Default: 0.8
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -9,54 +8,41 @@
 	"Bonus Flat Mining Speed" = 2.5
 
 [earthbend]
-	Enabled = true
 	#Percentage bonus mining speed
 	# Default: 0.25
 	# Range: 0.0 ~ 1.7976931348623157E308
 	"Bonus Mining Speed" = 0.25
 
-[silk_touch]
-	Enabled = true
-
 [veining]
-	Enabled = true
 	#Maximum number of additional connected blocks to mine
 	# Default: 4
 	# Range: 1 ~ 256
 	"Max Blocks" = 4
 
-[tunneling]
-	Enabled = true
-
 [blasting]
-	Enabled = true
 	#Percentage bonus mining speed
 	# Default: 2.5
 	# Range: 0.0 ~ 1.7976931348623157E308
 	"Bonus Mining Speed" = 2.5
 
 [dwarfing]
-	Enabled = true
 	#Percentage bonus mining speed
 	# Default: 2.5
 	# Range: 0.0 ~ 1.7976931348623157E308
 	"Bonus Mining Speed" = 2.5
 
 [luck]
-	Enabled = true
 	#This rune mimics Fortune, Looting and Luck of the Sea of this level
 	# Default: 2
 	# Range: > -2147483648
 	"Enchantment Level Equivalent" = 2
 
 [sharpness]
-	Enabled = true
 	# Default: 0.3
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.3
 
 [bane_of_hissing]
-	Enabled = true
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
@@ -73,13 +59,11 @@
 	"Slowness Duration Max" = 3.0
 
 [impaling]
-	Enabled = true
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
 
 [water_coolant]
-	Enabled = true
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
@@ -88,7 +72,6 @@
 	"Freeze Amount" = 5
 
 [smite]
-	Enabled = true
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
@@ -105,37 +88,31 @@
 	"Weakness Duration Max" = 3.0
 
 [bane_of_noses]
-	Enabled = false
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
 
 [rage]
-	Enabled = true
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Bonus Damage" = 1.0
 
 [fire_surge]
-	Enabled = true
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Bonus Damage" = 1.0
 
 [swift_strike]
-	Enabled = true
 	# Default: 0.3
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Attack Speed" = 0.3
 
 [air_stealer]
-	Enabled = true
 	# Default: 40
 	# Range: > 1
 	"Ticks Stolen" = 40
 
 [explosive]
-	Enabled = true
 	# Default: 0.7
 	# Range: 0.1 ~ 1.7976931348623157E308
 	"Explosion Power" = 0.7
@@ -144,23 +121,17 @@
 	# Range: 0.05 ~ 1.7976931348623157E308
 	"Delay Seconds" = 5.0
 
-[part_breaker]
-	Enabled = true
-
 [sweeping_edge]
-	Enabled = true
 	# Default: 0.75
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	Damage = 0.75
 
 [flame]
-	Enabled = true
 	# Default: 4.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Seconds On Fire" = 4.0
 
 [knockback]
-	Enabled = true
 	# Default: 0.8
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Melee Knockback" = 0.8
@@ -169,36 +140,28 @@
 	"Arrow Knockback" = 0.4
 
 [power]
-	Enabled = true
 	#Percentage bonus damage
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Bonus Damage" = 1.0
+	"Bonus Damage" = 0.8
 
 [infinity]
-	Enabled = true
 	#This rune mimics vanilla Frost Walker of this level
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Chance To Not Use Arrow" = 0.7
 
-[gravity_defying]
-	Enabled = true
-
 [piercing]
-	Enabled = true
 	# Default: 3
 	# Range: > -2147483648
 	"Entities To Pass Through" = 3
 
 [quick_charge]
-	Enabled = true
 	# Default: 0.75
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Seconds Reduction" = 0.75
 
 [multishot]
-	Enabled = true
 	# Default: 3
 	# Range: > -2147483648
 	"Arrows Shot" = 3
@@ -207,13 +170,11 @@
 	"Arrow Spread" = 10.0
 
 [protection]
-	Enabled = true
 	# Default: 0.06
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Reduction" = 0.06
 
 [blast_protection]
-	Enabled = true
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Reduction" = 0.4
@@ -223,7 +184,6 @@
 	"Explosion Knockback Reduction" = 0.3
 
 [fire_protection]
-	Enabled = true
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Reduction" = 0.4
@@ -233,7 +193,6 @@
 	"Burning Duration Reduction" = 0.3
 
 [projectile_protection]
-	Enabled = true
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Reduction" = 0.4
@@ -243,7 +202,6 @@
 	"Sight Modifier" = 0.8
 
 [melee_protection]
-	Enabled = true
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Reduction" = 0.4
@@ -253,7 +211,6 @@
 	"Bonus Attack Speed" = 0.1
 
 [magic_protection]
-	Enabled = true
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Reduction" = 0.4
@@ -263,13 +220,11 @@
 	"Negative Effects Duration Multiplier" = 0.8
 
 [healthy]
-	Enabled = true
 	# Default: 4.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Health" = 4.0
 
 [thorns]
-	Enabled = true
 	# Default: 1.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	"Min Damage" = 1.0
@@ -281,7 +236,6 @@
 	Chance = 0.2
 
 [magnetic]
-	Enabled = true
 	# Default: 4.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	Range = 4.0
@@ -290,26 +244,17 @@
 	Strength = 0.05
 
 [respiration]
-	Enabled = true
 	# Default: 1.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Oxygen Bonus" = 1.5
 
-[aqua_affinity]
-	Enabled = true
-
 [enlightened]
-	Enabled = true
 	#Minimum ambient brightness in dark areas (0.0 = pitch black, 1.0 = fully bright)
 	# Default: 0.08
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	Brightness = 0.08
 
-[air_affinity]
-	Enabled = true
-
 [vindication]
-	Enabled = true
 	# Default: 0.2
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Stacked Damage Multiplier" = 0.2
@@ -318,7 +263,6 @@
 	"Stacked Damage Max" = 5.0
 
 [recovery]
-	Enabled = true
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage To Regen Ratio" = 0.4
@@ -328,14 +272,12 @@
 	"Regen Speed" = 0.35
 
 [invulnerability]
-	Enabled = true
 	#Ticks subtracted from the invulnerability threshold and added to hurt duration after being hit
 	# Default: 10
 	# Range: > -2147483648
 	"Bonus Invulnerability" = 10
 
 [fire_guardian]
-	Enabled = true
 	#Duration of the fire resistance effect in ticks
 	# Default: 300
 	# Range: > -2147483648
@@ -346,7 +288,6 @@
 	Cooldown = 600
 
 [absorbing]
-	Enabled = true
 	#Chance to completely nullify incoming direct damage
 	# Default: 0.25
 	# Range: 0.0 ~ 1.0
@@ -357,22 +298,11 @@
 	"Damage To Armor" = 3.0
 
 [swift_sneak]
-	Enabled = true
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Movement Speed" = 0.4
 
-[step_up]
-	Enabled = true
-
-[zippy]
-	Enabled = true
-
-[sprint_pact]
-	Enabled = true
-
 [charged_jump]
-	Enabled = true
 	# Default: 8
 	# Range: > -2147483648
 	"Time To Charge" = 8
@@ -381,39 +311,33 @@
 	"Max Jump Boost Amplifier" = 7
 
 [retreat]
-	Enabled = true
 	# Default: 0.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Movement Speed" = 0.5
 
 [feather_falling]
-	Enabled = true
 	# Default: 0.75
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Reduction" = 0.75
 
 [depth_strider]
-	Enabled = true
 	# Default: 0.75
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Water Movement Efficiency" = 0.75
 
 [frost_walker]
-	Enabled = true
 	#This rune mimics vanilla Frost Walker of this level
 	# Default: 3
 	# Range: > -2147483648
 	"Enchantment Level Equivalent" = 3
 
 [soul_speed]
-	Enabled = true
 	#This rune mimics Soul Speed enchantment of this level
 	# Default: 1
 	# Range: > -2147483648
 	"Enchantment Level Equivalent" = 1
 
 [hoppy]
-	Enabled = true
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Jump Height" = 0.4
@@ -422,7 +346,6 @@
 	"Fall Distance Reduction" = 2.0
 
 [double_jump]
-	Enabled = true
 	# Default: 1
 	# Range: > -2147483648
 	"Extra Jumps" = 1
@@ -432,41 +355,32 @@
 	"Durability Consumed" = 0.02
 
 [steady_fall]
-	Enabled = true
 	# Default: 4.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	"Durability Ratio" = 4.0
 
-[channeling]
-	Enabled = true
-
 [loyalty]
-	Enabled = true
 	# Default: 3
 	# Range: > -2147483648
 	"Return Speed" = 3
 
 [riptide]
-	Enabled = true
 	#This rune mimics its enchantment counterpart of this level
 	# Default: 3
 	# Range: > -2147483648
 	"Enchantment Level Equivalent" = 3
 
 [lure]
-	Enabled = true
 	# Default: 15.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Seconds Reduction" = 15.0
 
 [juicy_bait]
-	Enabled = true
 	# Default: 0.15
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Extra Fish Chance" = 0.15
 
 [adrenaline]
-	Enabled = true
 	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Bonus Mining Speed" = 2.0
@@ -475,13 +389,11 @@
 	"Max Bonus Attack Speed" = 0.6
 
 [reach]
-	Enabled = true
 	# Default: 0.2
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Reach" = 0.2
 
 [enduring]
-	Enabled = true
 	#Percentage bonus durability
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -491,7 +403,6 @@
 	"Bonus Durability Flat" = 80
 
 [atmospheric]
-	Enabled = true
 	#Bonus mining speed relative to tool speed at full sunlight (Light level 12+)
 	# Default: 1.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -505,74 +416,57 @@
 	# Range: 0.0 ~ 1.0
 	"Rain Durability Reduction" = 0.667
 
-[curse_of_binding]
-	Enabled = false
-
-[curse_of_vanishing]
-	Enabled = true
-
 [curse_of_blood_pact]
-	Enabled = true
 	# Default: 0.1
 	# Range: 0.0 ~ 1.0
 	"Chance To Hurt" = 0.1
 
 [curse_of_inefficiency]
-	Enabled = true
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	"Mining Speed Reduction" = 0.5
 
 [curse_of_short_arm]
-	Enabled = true
 	# Default: 0.25
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Reach Reduction" = 0.25
 
 [curse_of_unhurried]
-	Enabled = true
 	# Default: 0.1
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Speed Reduction" = 0.1
 
 [curse_of_slow_strike]
-	Enabled = true
 	# Default: 0.2
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Attack Speed Reduction" = 0.2
 
 [curse_of_fragility]
-	Enabled = true
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	"Durability Multiplier" = 0.5
 
 [curse_of_ender]
-	Enabled = true
 	# Default: 0.2
 	# Range: 0.0 ~ 1.0
 	"Chance To Teleport" = 0.2
 
 [curse_of_steel_fall]
-	Enabled = true
 	# Default: 0.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Increase" = 0.5
 
 [curse_of_the_void]
-	Enabled = true
 	# Default: 0.35
 	# Range: 0.0 ~ 1.0
 	"Chance To Void" = 0.35
 
 [curse_of_slow_charge]
-	Enabled = true
 	# Default: 0.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Seconds Increase" = 0.5
 
 [curse_of_hop]
-	Enabled = true
 	# Default: 0.05
 	# Range: 0.0 ~ 1.0
 	"Jump Chance" = 0.05
@@ -582,7 +476,6 @@
 	Strength = 0.5
 
 [curse_of_obscurity]
-	Enabled = true
 	# Default: 0.35
 	# Range: 0.0 ~ 1.0
 	Chance = 0.35
@@ -591,25 +484,21 @@
 	"Duration Seconds" = 5.0
 
 [curse_of_frenzy]
-	Enabled = true
 	# Default: 5.0
 	# Range: 1.0 ~ 1.7976931348623157E308
 	"Duration Seconds" = 5.0
 
 [curse_of_unstable_motion]
-	Enabled = true
 	# Default: 200
 	# Range: > 20
 	"Average Interval" = 200
 
 [curse_of_static_charge]
-	Enabled = true
 	# Default: 1000
 	# Range: > 2
 	"Strike Odds" = 1000
 
 [curse_of_explosion]
-	Enabled = true
 	# Default: 0.5
 	# Range: 0.1 ~ 1.7976931348623157E308
 	"Explosion Power" = 0.5
@@ -619,10 +508,13 @@
 	"Delay Seconds" = 3.0
 
 [curse_of_corrosion]
-	Enabled = true
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Damage Amount" = 1.0
 	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Seconds Between Damage" = 2.0
+	#How much damage is dealt to the armor with the curse
+	# Default: 3
+	# Range: > -2147483648
+	"Armor Damage" = 3

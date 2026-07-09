@@ -80,6 +80,10 @@
 	"Enable Web thrower" = true
 	#Use `config/enhancedai/Custom targeting` to set custom targeting. This might not work properly as the targeting system is not meant to be expanded like this. This is not applied through Data Keys, so can't be changed at runtime.
 	"Enable Custom targeting" = true
+	#Mobs will jump off the ground to emit a shockwave when falling damaging nearby entities. Only entity types in enhancedai:mobs/shockwave/can_use tag are affected by this feature and entity types in the enhancedai:mobs/shockwave/damage_invulnerable tag will not be damaged by the shockwave.
+	"Enable Falling shockwave" = true
+	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:mobs/biting_mobs/can_bite entity type tag can bite. Entity types in `mobs/biting_mobs/unaffected_by_bite` tag are unaffected by bites. Damage types in `biting_mobs/doesnt_trigger_bite` tag don't trigger biting mobs.
+	"Enable Biting mobs" = true
 
 	#Gives mobs a chance to negate damage when equipped with a shield. Only entity types in `enhancedai:mobs/can_equip_shield` tag will be equipped a shield.
 	[Mobs.Shielding]
@@ -589,6 +593,59 @@
 			# Default: 2
 			# Range: 0 ~ 128
 			"Max slowness amplifier" = 2
+
+	#Mobs will jump off the ground to emit a shockwave when falling damaging nearby entities. Only entity types in enhancedai:mobs/shockwave/can_use tag are affected by this feature and entity types in the enhancedai:mobs/shockwave/damage_invulnerable tag will not be damaged by the shockwave.
+	[Mobs."Falling shockwave"]
+		# Default: 1.5
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Jump strength" = 1.5
+		#In ticks
+		# Default: 300
+		# Range: > 0
+		"Jump cooldown" = 300
+		#If the mob falls for less than these blocks, the shockwave will not happen
+		# Default: 3
+		# Range: > 0
+		"Min fall distance" = 3
+		#Damage per block of fall distance.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Damage per block" = 1.0
+		#Fall distance multiplied by this
+		# Default: 0.08
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Knock up strength ratio" = 0.08
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Horizontal base range" = 2.0
+		# Default: 1.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Vertical base range" = 1.0
+		# Default: 0.2
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Horizontal range per block" = 0.2
+		# Default: 0.1
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Vertical range per block" = 0.1
+
+	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:mobs/biting_mobs/can_bite entity type tag can bite. Entity types in `mobs/biting_mobs/unaffected_by_bite` tag are unaffected by bites. Damage types in `biting_mobs/doesnt_trigger_bite` tag don't trigger biting mobs.
+	[Mobs."Biting mobs"]
+		#The damage dealt to the attacker when bit
+		# Default: 3.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		Damage = 3.0
+
+		#Chance for a Mob to bite the attacker
+		[Mobs."Biting mobs".Chance]
+			# Default: 0.2
+			# Range: 0.0 ~ 1.0
+			"Easy/Peaceful" = 0.2
+			# Default: 0.2
+			# Range: 0.0 ~ 1.0
+			Normal = 0.2
+			# Default: 0.3
+			# Range: 0.0 ~ 1.0
+			Hard = 0.3
 
 [Skeletons]
 	#Skeletons try to stay away from the target. Only entity types in `enhancedai:skeleton/can_flee` tag are affected by this feature. This disables itself if Skeleton Shoot feature is disabled

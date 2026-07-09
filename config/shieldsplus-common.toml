@@ -25,3 +25,13 @@
 	# Default: 0.35
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Block with crouch exposure" = 0.35
+
+	["S p".Parry]
+		#How many seconds after lifting a shield to make a parry count as such
+		# Default: 0.1
+		# Range: 0.0 ~ 1.7976931348623157E308
+		Window = 0.1
+		#How much more damage (in percentage) is blocked if the player lifts the shield as soon as it's about to take damage?
+		# Default: 1.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Bonus damage blocked" = 1.0
