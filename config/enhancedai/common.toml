@@ -81,7 +81,7 @@
 	#Use `config/enhancedai/Custom targeting` to set custom targeting. This might not work properly as the targeting system is not meant to be expanded like this. This is not applied through Data Keys, so can't be changed at runtime.
 	"Enable Custom targeting" = true
 	#Mobs will jump off the ground to emit a shockwave when falling damaging nearby entities. Only entity types in enhancedai:mobs/shockwave/can_use tag are affected by this feature and entity types in the enhancedai:mobs/shockwave/damage_invulnerable tag will not be damaged by the shockwave.
-	"Enable Falling shockwave" = true
+	"Enable Falling shockwave" = false
 	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:mobs/biting_mobs/can_bite entity type tag can bite. Entity types in `mobs/biting_mobs/unaffected_by_bite` tag are unaffected by bites. Damage types in `biting_mobs/doesnt_trigger_bite` tag don't trigger biting mobs.
 	"Enable Biting mobs" = true
 
