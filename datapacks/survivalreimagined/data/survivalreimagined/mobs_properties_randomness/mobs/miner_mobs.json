@@ -1,0 +1,23 @@
+{
+    "target": "#enhancedai:zombies",
+    "properties": [
+        {
+            "property": "equipment",
+            "slot": "offhand",
+            "items": [
+                {
+                    "item": "minecraft:wooden_pickaxe"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "enhancedai:data",
+                    "data": "enhancedai:miner_mobs/miner",
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "priority": 1,
+    "event_priority": "LOWEST"
+}
