@@ -316,7 +316,7 @@
 	[Mobs.Sprint]
 		# Default: 0.25
 		# Range: 0.0 ~ 1.0
-		Chance = 0.25
+		Chance = 0.05
 
 	#Prevent players from abusing water or 2 high gaps to bully endermen.
 	[Mobs."Teleport anti-cheese"]
@@ -1302,7 +1302,7 @@
 [Animals]
 	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:animal/scared_attack/can_be_neutral, enhancedai:animal/scared_attack/can_be_hostile, and enhancedai:animal/scared_attack/can_be_scared_by_players to add/remove animals.
 	"Enable Animal scared attack" = true
-	#Makes animals not tempted by food. Use the entity type tag enhancedai:animal/can_ignore_food_temptation to change animals.
+	#Makes animals not tempted by food. Use the entity type tag enhancedai:animal/can_ignore_food_temptation to change animals. Please note that re-adding the tempt goal to the mob can't be done at runtime by updating the data with the /enhancedai command.
 	"Enable Not tempted animals" = true
 	#Make animals panic when one is attacked. Only entity types in `enhancedai:animal/can_panic` tag will be affected by this feature.
 	"Enable Animals panic" = true
@@ -1348,7 +1348,7 @@
 		#Animals' knockback attribute will be increased/decreased based on the size of the mob.
 		"Knockback size based" = true
 
-	#Makes animals not tempted by food. Use the entity type tag enhancedai:animal/can_ignore_food_temptation to change animals.
+	#Makes animals not tempted by food. Use the entity type tag enhancedai:animal/can_ignore_food_temptation to change animals. Please note that re-adding the tempt goal to the mob can't be done at runtime by updating the data with the /enhancedai command.
 	[Animals."Not tempted animals"]
 		#Animals have this percentage chance to not be temped by food.
 		# Default: 0.5

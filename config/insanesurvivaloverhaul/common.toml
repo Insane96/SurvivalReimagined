@@ -250,7 +250,7 @@
 		# Default: 4
 		# Range: > 1
 		"Durability on right click" = 4
-		#'Durability used on right-click' is only applied for farmland, and not e.g. when using hoes on rooted or coarse dirt
+		#'Durability on right click' is only applied for farmland, and not e.g. when using hoes on rooted or coarse dirt
 		"Extra durability only for tilling" = true
 
 	#Crops tweaks and less yield from crops
