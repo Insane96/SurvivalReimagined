@@ -6,7 +6,7 @@
 	#If true, commands will only run if the game is fully restarted
 	OnFullRestart = false
 	#list of all the commands to run, in order
-	Commands = ["gamerule maxEntityCramming 6", "gamerule doPatrolSpawning false", "gamerule doTraderSpawning false", "gamerule mobExplosionDropDecay false", "gamerule snowAccumulationHeight 7", "gamerule commandBlockOutput false", "gamerule playersNetherPortalDefaultDelay 40", "gamerule randomTickSpeed 1"]
+	Commands = ["gamerule maxEntityCramming 6", "gamerule doPatrolSpawning false", "gamerule doTraderSpawning true", "gamerule mobExplosionDropDecay false", "gamerule snowAccumulationHeight 7", "gamerule commandBlockOutput false", "gamerule playersNetherPortalDefaultDelay 40", "gamerule randomTickSpeed 1"]
 
 [2]
 	#this new set of commands uses different settings from the other 2 and will run second
