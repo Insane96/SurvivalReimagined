@@ -1,4 +1,5 @@
 ["M p r base"]
 	#If true creeper lingering clouds size changes based off their explosion radius.
 	"Better creeper lingering" = true
-	"Verbose log" = false
+	#If true, warnings will be displayed in chat when reloading data packs. Useful when developing a data pack.
+	"Warnings chat" = false
