@@ -1284,7 +1284,7 @@
 		#Below this percentage health, witches will drink strong healing potions instead of normal ones.
 		# Default: 0.35
 		# Range: 0.0 ~ 1.0
-		"Strong healing threshold" = 0.35
+		"Strong healing threshold" = 0.20
 		#Chance each tick for a witch to drink a water breathing potion when in water and air meter is at half. Vanilla is 15% and doesn't check the air meter.
 		# Default: 1.0
 		# Range: 0.0 ~ 1.0
