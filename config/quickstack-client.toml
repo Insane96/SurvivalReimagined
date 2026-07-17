@@ -1,12 +1,12 @@
 [general]
+	# information to the chat when task is complete.
+	"Display Message" = false
 	#Enable dump button.
 	"Enable Dump Button" = false
 	#Ignore hotbar when transferring.
 	"Ignore Hotbar" = true
 	#Highlight nearby containers.
 	"Highlight containers" = true
-	# information to the chat when task is complete.
-	"Display Message" = true
 	#Show button in the player inventory.
 	"Show inventory button" = true
 	#Creative inventory button position width offset.

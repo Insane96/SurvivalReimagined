@@ -64,12 +64,16 @@
 		"Allow world spawn spawn" = true
 		#Disables normal skeletons from spawning in Fortresses.
 		"Remove skeletons from fortresses" = true
-		#Enables a data pack that makes Guardians spawn in deep oceans. These guardians have half health compared to monument guardians.
+		#Enables a data pack that makes Guardians spawn in deep oceans. These guardians have much less health compared to monument guardians and are smaller.
 		"Guardians in deep oceans" = true
 		#Radius (in blocks) around an Echo Lantern in which monsters cannot spawn.
 		# Default: 64
 		# Range: 1 ~ 128
 		"Echo lantern radius" = 64
+		#Guardians naturally spawned in deep oceans (from "Guardians in deep oceans") won't spawn above this Y level.
+		# Default: 32
+		# Range: > -2147483648
+		"Max guardians in deep oceans spawn y" = 32
 
 [Sleep]
 	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
@@ -644,8 +648,10 @@
 		"Food saturation formula" = "saturation * 1.4"
 		#The formula to calculate the seconds required to eat a food. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. Empty to disable. Can be re-applied with /reload.
 		"Food eat seconds formula" = "MIN(MAX((1.6 * (nutrition + saturation)) * 0.125, 0.8), 5)"
-		#Enables a data pack that rebalances some foods and makes raw foods poisonous.
+		#Enables a data pack that rebalances some foods and makes raw foods poisonous. Also allows mushroom stews to be crafted with any mushroom.
 		"Food changes" = true
+		#If true, saturation will never exceed hunger level. Only works if "Combat snapshot eating saturation". True in Vanilla
+		"Cap saturation to hunger" = false
 
 	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
 	["Hunger & Health"."Hunger and health regen"]
@@ -754,15 +760,15 @@
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack sizes"]
-		#The formula to calculate the stack size of a food item. Variables as nutrition, saturation, eat_seconds as numbers and fast_food as boolean can be used. Set to empty to disable this. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Stack sizes are limited to 99 by the game.
+		#The formula to calculate the stack size of a food item. Variables as nutrition, saturation, eat_seconds as numbers and fast_food as boolean can be used. Set to empty to disable this. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
 		"Food stack reduction formula" = "ROUND(MAX(64 / MAX(nutrition, 1), 1), 0)"
-		#Items max stack sizes (excluding blocks and foods) will be multiplied by this value. Setting to 1 will disable this. Stack sizes are limited to 99 by the game.
-		# Default: 1.546875
-		# Range: 0.01 ~ 1.546875
+		#Items max stack sizes (excluding blocks and foods) will be multiplied by this value. Setting to 1 will disable this.
+		# Default: 2.0
+		# Range: 0.01 ~ 1.7976931348623157E308
 		"Item Stack Multiplier" = 1.546875
-		#All the blocks max stack sizes will be multiplied by this value. Setting to 1 will disable this. Stack sizes are limited to 99 by the game.
-		# Default: 1.546875
-		# Range: 0.01 ~ 1.546875
+		#All the blocks max stack sizes will be multiplied by this value. Setting to 1 will disable this.
+		# Default: 2.0
+		# Range: 0.01 ~ 1.7976931348623157E308
 		"Block stack multiplier" = 1.546875
 		#Enables a data pack that increases item stacks of Horse Armors, Minecarts and Saddles
 		"Data pack" = true
@@ -1100,6 +1106,8 @@
 	"Enable Block definition" = true
 	#Adds recipes for crafting in an anvil through data packs
 	"Enable Anvil crafting" = true
+	#Allows recycling damaged armor, tools and weapons in the Blast Furnace, giving back raw material (nuggets or gems) proportional to the item's remaining durability.
+	"Enable Recycling" = true
 
 	#Various mining changes
 	[Mining."Mining misc"]
@@ -1122,8 +1130,8 @@
 		"Farmable iron data pack" = false
 		#Enables the following changes to vanilla data pack:
 		#* Smelting Raw Copper and Raw Iron takes 2x time
-		#* Blasting raw minerals takes 2x time
-		#* Blasting ores now takes 4x time but yields 2x materials from minerals (2x the normal drops without Fortune), and yields 3x raw minerals for iron, gold and copper
+		#* Blasting raw minerals takes 1x time
+		#* Blasting ores now takes 2x time but yields 2x materials from minerals (2x the normal drops without Fortune), and yields 3x raw minerals for iron, gold and copper
 		#* You can no longer smelt anything other than Raw Copper and Raw Iron. A Blast Furnace is required
 		#* Heavily increased experience from smelting ores
 		#
@@ -1144,6 +1152,17 @@
 		"Metal equipment in anvil" = true
 		#If true, enchanted items can be used to craft in the anvil. If false, only non-enchanted items can be used in an anvil. If Rune Enchanting is installed, runed items count as enchanted.
 		"Allow enchanted items" = false
+
+	#Allows recycling damaged armor, tools and weapons in the Blast Furnace, giving back raw material (nuggets or gems) proportional to the item's remaining durability.
+	[Mining.Recycling]
+		#Minimum amount of material given back by a single recycled item, even if it's almost completely worn out.
+		# Default: 1
+		# Range: > -2147483648
+		"Minimum output" = 1
+		#Multiplier applied to the durability-based output amount. Lower it below 1 to make recycling always lossy.
+		# Default: 1.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Output multiplier" = 1.0
 
 [Misc]
 	#Various stuff that doesn't fit in any other Feature.
@@ -1240,6 +1259,12 @@
 			# Default: 0.15
 			# Range: 0.0 ~ 1.0
 			"Chance to fail to hit" = 0.15
+
+		[Misc.Tweaks.Parrot]
+			#The fall distance (in blocks) needed before parrots (and other shoulder entities) get knocked off the player's shoulder. Vanilla is 0.5
+			# Default: 4.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			"Shoulder dismount fall distance" = 4.0
 
 	#Resource and data packs
 	[Misc.Packs]
