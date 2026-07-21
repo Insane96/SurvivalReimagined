@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "runeenchanting:bane_of_noses"
+        "runeenchanting:bane_of_noses",
+        "runeenchanting:sweeping_edge"
     ]
 }
