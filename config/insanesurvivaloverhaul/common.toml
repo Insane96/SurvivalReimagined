@@ -395,7 +395,7 @@
 		# Default: 1
 		# Range: 0 ~ 20
 		"Min hunger" = 1
-		#Movement speed penalty when below this hunger
+		#Apply a sprint speed penalty when below this hunger
 		# Default: 7
 		# Range: 0 ~ 20
 		"Speed penalty below hunger" = 7
@@ -711,24 +711,56 @@
 			"Faster when really hungry" = false
 
 [Items]
-	#Add item tooltips via item tags. Items in the insanesurvivaloverhaul:has_tooltip item tag will get a tooltip with the vanilla name + .tooltip (e.g. item.minecraft.arrow.tooltip)
-	"Enable Item tooltips" = true
+	#Items no longer break, will sit at one durability and can't be used. Items in the item tag `insanesurvivaloverhaul:not_unvanishable` are not affected and items in the item tag `insanesurvivaloverhaul:unvanishable` are always unvanishable.
+	"Enable Unvanishable items" = true
+	#Make items not able to mine / attack
+	"Enable Disabled items" = true
+	#Retrieve name tags from name tagged entities.
+	"Enable Name tags" = true
+	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
+	"Enable Stone tools gone" = true
 	#A new item that can let you carry more stuff around.
 	"Enable Pouch" = true
 	#Wooden items have bonuses when used in sunlight.
 	"Enable Ecologic wood" = false
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	"Enable Stack sizes" = true
-	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
-	"Enable Stone tools gone" = true
-	#Make items not able to mine / attack
-	"Enable Disabled items" = true
-	#Items no longer break, will sit at one durability and can't be used. Items in the item tag `insanesurvivaloverhaul:not_unvanishable` are not affected and items in the item tag `insanesurvivaloverhaul:unvanishable` are always unvanishable.
-	"Enable Unvanishable items" = true
-	#Retrieve name tags from name tagged entities.
-	"Enable Name tags" = true
+	#Add item tooltips via item tags. Items in the insanesurvivaloverhaul:has_tooltip item tag will get a tooltip with the vanilla name + .tooltip (e.g. item.minecraft.arrow.tooltip)
+	"Enable Item tooltips" = true
 	#Basically backports copper equipment from latest MC versions.
 	"Enable Copper equipment" = true
+
+	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
+	[Items."Stack sizes"]
+		#All the blocks max stack sizes will be multiplied by this value. Setting to 1 will disable this.
+		# Default: 2.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"Block stack multiplier" = 2.0
+		#Items max stack sizes (excluding blocks and foods) will be multiplied by this value. Setting to 1 will disable this.
+		# Default: 2.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"Item Stack Multiplier" = 2.0
+		#The formula to calculate the stack size of a food item. Variables as nutrition, saturation, eat_seconds as numbers and fast_food as boolean can be used. Set to empty to disable this. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
+		"Food stack reduction formula" = "ROUND(MAX(64 / MAX(nutrition, 1), 1), 0)"
+		#Enables a data pack that increases item stacks of Horse Armors, Minecarts and Saddles
+		"Data pack" = true
+
+	#Items no longer break, will sit at one durability and can't be used. Items in the item tag `insanesurvivaloverhaul:not_unvanishable` are not affected and items in the item tag `insanesurvivaloverhaul:unvanishable` are always unvanishable.
+	[Items."Unvanishable items"]
+		#Items with durability get a durability tooltip. Items in the `insanesurvivaloverhaul:no_durability_tooltip` item tag will not get the tooltip.
+		"Durability tooltip" = true
+		#If set to true only enchanted items will no longer break
+		"Enchanted items only" = false
+
+	#Make items not able to mine / attack
+	[Items."Disabled items"]
+		#If set to true items in the 'no_damage', 'no_efficiency', 'no_equip' and 'disabled' item tags will get a tooltip.
+		"Add tooltip" = true
+
+	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
+	[Items."Stone tools gone"]
+		"Items to replace" = ["minecraft:stone_axe, minecraft:copper_axe", "minecraft:stone_pickaxe, minecraft:copper_pickaxe", "minecraft:stone_shovel, minecraft:copper_shovel", "minecraft:stone_hoe, minecraft:copper_hoe", "minecraft:stone_sword, minecraft:copper_sword"]
+		"Data pack" = true
 
 	#A new item that can let you carry more stuff around.
 	[Items.Pouch]
@@ -757,38 +789,6 @@
 		# Default: 12
 		# Range: 0 ~ 15
 		"Max sunlight" = 12
-
-	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
-	[Items."Stack sizes"]
-		#The formula to calculate the stack size of a food item. Variables as nutrition, saturation, eat_seconds as numbers and fast_food as boolean can be used. Set to empty to disable this. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-		"Food stack reduction formula" = "ROUND(MAX(64 / MAX(nutrition, 1), 1), 0)"
-		#Items max stack sizes (excluding blocks and foods) will be multiplied by this value. Setting to 1 will disable this.
-		# Default: 2.0
-		# Range: 0.01 ~ 1.7976931348623157E308
-		"Item Stack Multiplier" = 1.546875
-		#All the blocks max stack sizes will be multiplied by this value. Setting to 1 will disable this.
-		# Default: 2.0
-		# Range: 0.01 ~ 1.7976931348623157E308
-		"Block stack multiplier" = 1.546875
-		#Enables a data pack that increases item stacks of Horse Armors, Minecarts and Saddles
-		"Data pack" = true
-
-	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
-	[Items."Stone tools gone"]
-		"Items to replace" = ["minecraft:stone_axe, minecraft:copper_axe", "minecraft:stone_pickaxe, minecraft:copper_pickaxe", "minecraft:stone_shovel, minecraft:copper_shovel", "minecraft:stone_hoe, minecraft:copper_hoe", "minecraft:stone_sword, minecraft:copper_sword"]
-		"Data pack" = true
-
-	#Make items not able to mine / attack
-	[Items."Disabled items"]
-		#If set to true items in the 'no_damage', 'no_efficiency', 'no_equip' and 'disabled' item tags will get a tooltip.
-		"Add tooltip" = true
-
-	#Items no longer break, will sit at one durability and can't be used. Items in the item tag `insanesurvivaloverhaul:not_unvanishable` are not affected and items in the item tag `insanesurvivaloverhaul:unvanishable` are always unvanishable.
-	[Items."Unvanishable items"]
-		#Items with durability get a durability tooltip. Items in the `insanesurvivaloverhaul:no_durability_tooltip` item tag will not get the tooltip.
-		"Durability tooltip" = true
-		#If set to true only enchanted items will no longer break
-		"Enchanted items only" = false
 
 [Combat]
 	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
