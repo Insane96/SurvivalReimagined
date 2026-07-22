@@ -1,0 +1,544 @@
+#Glow Goo
+[glowGoo]
+	#Enable Glow Goo: throw a blob that splats into a bright, waterloggable light source.
+	enabled = true
+	#If true, Glow Goo can be crafted from 2 glow ink sacs plus 1 slime ball.
+	twoGlowInkRecipeEnabled = true
+	#If true, Glow Goo can also be crafted from 4 glow ink sacs.
+	fourGlowInkRecipeEnabled = true
+	#If true, Glow Goo plays glow-ink particles when it hits a block or entity.
+	impactParticlesEnabled = true
+	#How many glow-ink particles Glow Goo spawns on impact.
+	# Default: 16
+	# Range: 0 ~ 64
+	impactParticleCount = 16
+	#If true, placed Glow Goo Splatter occasionally emits glow-squid ink particles.
+	ambientSplatterParticlesEnabled = true
+	#If true, entities hit by Glow Goo gain Bioluminescence and emit light while the effect lasts.
+	bioluminescenceEnabled = true
+	#How long Bioluminescence lasts after a Glow Goo hit, in seconds.
+	# Default: 60
+	# Range: 1 ~ 600
+	bioluminescenceDurationSeconds = 60
+	#Light level emitted by Bioluminescence while active.
+	# Default: 14
+	# Range: 0 ~ 15
+	bioluminescenceLightLevel = 14
+
+#Potions
+[potions]
+
+	#Withering Potion
+	[potions.withering]
+		#Enable brewing for Withering potions.
+		#Recipe: Poison/Harming Potion + Wither Rose = Withering Potion
+		#Upgrades: Redstone for extended, Glowstone for stronger variants
+		enableWitheringPotion = true
+
+	#Resurfacing Potion
+	[potions.resurfacing]
+		#Enable the Resurfacing potion effect (teleports player to surface).
+		#Recipe: Currently no brewing recipe - obtained via creative mode or commands.
+		enableResurfacingPotion = true
+
+	#Displacement Potion
+	[potions.displacement]
+		#Enable the Displacement potion effect (randomly teleports player within 100-block radius).
+		#Recipe: Awkward Potion + Ender Eye = Displacement Potion
+		enableDisplacementPotion = true
+
+	#Returning Potion
+	[potions.returning]
+		#Enable the Returning potion effect (teleports player to their latest death location).
+		#Recipe: Displacement Potion + Echo Shard = Returning Potion
+		enableReturningPotion = true
+
+	#Levitation Potion
+	[potions.levitation]
+		#Enable brewing for Levitation potions.
+		#Recipe: Slow Falling Potion + Shulker Shell = Levitation Potion
+		#Upgrades: Redstone for extended, Glowstone for stronger variants
+		enableLevitationPotion = true
+
+	#Haste Potion
+	[potions.haste]
+		#Enable brewing for Haste potions.
+		#Recipe: Speed Potion + Quartz = Haste Potion
+		#Upgrades: Redstone for extended, Glowstone for stronger variants
+		enableHastePotion = true
+
+	#Glowing Potion
+	[potions.glowing]
+		#Enable brewing for Glowing potions.
+		#Recipe: Awkward Potion + Glow Berries = Glowing Potion
+		#Upgrades: Redstone for an extended variant
+		enableGlowingPotion = true
+
+	#Bioluminescence Potion
+	[potions.bioluminescence]
+		#Enable brewing for Bioluminescence potions.
+		#Recipe: Glowing Potion + Glow Goo = Bioluminescence Potion
+		#Upgrades: Glowstone for Bioluminescence II; Redstone extends Bioluminescence II to 4 minutes; Long Glowing Potion + Glow Goo brews the 8-minute base variant
+		enableBioluminescencePotion = true
+
+#Enhanced Slab Behavior
+#Hang items below slabs, enable KneeSlab-like mining, and mixed double slabs.
+[enhancedSlabs]
+	#Master toggle for all Enhanced Slab Behavior features.
+	enabled = false
+	#(Currently disabled) Formerly allowed placing items like torches directly on top of bottom/double slabs.
+	placeOnTop = true
+	#Allow hanging items like lanterns, chains, hanging signs below top/double slabs.
+	hangBelow = true
+	#Enable KneeSlab-like mining: break each half of a double slab independently in survival mode. Mining speed depends on the targeted half and your tool.
+	kneeSlabMining = true
+	#Allow placing different slab types together to create mixed double slabs (e.g. oak bottom + stone top in one block position).
+	mixedDoubleSlabs = true
+
+#Vertical Slabs
+#Dynamic vertical slab variants crafted from slabs.
+[verticalSlabs]
+	#Enable Vertical Slabs. Disabling this stops dynamic vertical slab generation and generated recipes, and turns off related placement and presentation.
+	enabled = false
+
+#Steps and Vertical Steps
+#Quarter-block step variants crafted from slabs and vertical slabs.
+[stepsAndVerticalSteps]
+	#Enable Steps and Vertical Steps. Disabling this stops dynamic step/vertical-step generation and generated recipes, and turns off related placement and presentation.
+	enabled = false
+
+[aerodynamic]
+	#Enable the Aerodynamic enchantment effect.
+	enabled = false
+	#Base horizontal drag reduction at full strength. 0.5 = 50% less horizontal drag (recommended).
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	baseDragReduction = 0.5
+	#Y where Aerodynamic reaches full strength; below this it still applies at reduced strength.
+	# Default: 192
+	# Range: -2032 ~ 4096
+	minAltitude = 192
+	#Legacy ramp reference. The distance from minAltitude controls how gradually Aerodynamic fades below full strength.
+	# Default: 320
+	# Range: -2032 ~ 4096
+	maxAltitude = 320
+	#Legacy setting kept for config compatibility. Full strength is controlled by minAltitude.
+	# Default: 192.0
+	# Range: -2032.0 ~ 4096.0
+	cloudLevel = 192.0
+	#Global multiplier on the effect strength.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	speedMultiplier = 1.0
+	#Maximum Aerodynamic-modified elytra flight speed (m/s) at full altitude strength. Scales down below full-strength altitude.
+	# Default: 50.0
+	# Range: 0.0 ~ 200.0
+	maxFlightSpeed = 50.0
+	#Minimum Aerodynamic strength below the altitude ramp. 0.5 = at least half strength.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	lowAltitudeStrengthFloor = 0.5
+	#Pitch angle in degrees where level-glide efficiency fades out. Larger values make the glide bonus apply over steeper pitch.
+	# Default: 60.0
+	# Range: 1.0 ~ 180.0
+	glidePitchRange = 60.0
+	#Upward pitch angle in degrees where climb efficiency starts.
+	# Default: 5.0
+	# Range: 0.0 ~ 90.0
+	upwardPitchStart = 5.0
+	#Additional upward pitch range in degrees needed to reach full climb pitch efficiency.
+	# Default: 40.0
+	# Range: 1.0 ~ 180.0
+	upwardPitchRange = 40.0
+	#Upward velocity in blocks per tick that counts as full climb motion efficiency.
+	# Default: 0.25
+	# Range: 0.01 ~ 10.0
+	upwardMotionFullSpeed = 0.25
+	#How much climb efficiency keeps drag reduction active while pitched upward.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	climbAssistScale = 0.2
+	#How strongly Aerodynamic reduces downward sink from its current drag-reduction strength.
+	# Default: 0.6
+	# Range: 0.0 ~ 10.0
+	sinkReductionScale = 0.6
+	#Maximum fraction of downward sink Aerodynamic can remove. 0.75 = up to 75% less sink.
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	maxSinkReduction = 0.75
+	#Horizontal speed in blocks per tick where sink reduction starts ramping in.
+	# Default: 0.5
+	# Range: 0.0 ~ 20.0
+	sinkReductionMinHorizontalSpeed = 0.5
+	#Horizontal speed in blocks per tick where sink reduction reaches full configured strength.
+	# Default: 1.5
+	# Range: 0.01 ~ 20.0
+	sinkReductionFullHorizontalSpeed = 1.5
+	#Maximum fraction of upward speed loss that Aerodynamic can restore per tick.
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	climbRestoreCap = 0.15
+	#How strongly climb efficiency restores upward speed loss.
+	# Default: 0.3
+	# Range: 0.0 ~ 10.0
+	climbRestoreScale = 0.3
+	#Direction-change amount needed to reach full turn speed preservation bonus. Lower values make turns count sooner.
+	# Default: 0.5
+	# Range: 0.01 ~ 2.0
+	turnResponse = 0.5
+	#Extra multiplier applied to lost horizontal speed restoration while turning.
+	# Default: 0.25
+	# Range: 0.0 ~ 10.0
+	turnRestoreBonus = 0.25
+	#When Enchancement is installed, keep vanilla Elytra durability loss even if Enchancement's Disable Durability setting is enabled.
+	enchancementElytraDurabilityCompat = true
+
+#Recipes
+[recipes]
+
+	#Alternative Recipes
+	[recipes.alternativeRecipes]
+		#Enable alternative crafting recipe for Redstone Repeater using sticks and stone.
+		enableAlternativeRepeaterRecipe = false
+		#Enable alternative crafting recipe for Chest using logs (4 chests per recipe).
+		enableChestFromLogsRecipe = false
+		#Enable alternative crafting recipe for Map using ink sac instead of compass.
+		enableMapInkSacRecipe = false
+		#Enable alternative crafting recipe for Recovery Compass using echo shards and compass.
+		enableRecoveryCompassRecipe = false
+		#Enable alternative crafting recipe for Ender Eye using echo shard, wind charge, blaze powder, and ender pearl.
+		enableEnderEyeRecipe = false
+		#Enable smelting recipe for raw iron block to iron block.
+		enableRawIronSmeltingRecipe = false
+		#Enable smelting recipe for raw gold block to gold block.
+		enableRawGoldSmeltingRecipe = false
+		#Enable smelting recipe for raw copper block to copper block.
+		enableRawCopperSmeltingRecipe = false
+		#Enable blasting recipe for raw iron block to iron block (faster than smelting).
+		enableRawIronBlastingRecipe = false
+		#Enable blasting recipe for raw gold block to gold block (faster than smelting).
+		enableRawGoldBlastingRecipe = false
+		#Enable blasting recipe for raw copper block to copper block (faster than smelting).
+		enableRawCopperBlastingRecipe = false
+		#Override ALL stair recipes (vanilla, modded, and custom) to output 8 stairs instead of 4.
+		enableStairRecipeOverride = false
+		#Add compact 2x2 stair recipes for ALL stair types (3 blocks in corner = 4 stairs). Works with any mod!
+		enableCompactStairRecipe = false
+
+	#Fuel Tweaks
+	[recipes.fuelTweaks]
+		#Enable torch as fuel for furnaces.
+		enableTorchFuel = false
+		#Burn time for torches in ticks (400 ticks = 20 seconds).
+		# Default: 400
+		# Range: 0 ~ 10000
+		torchBurnTime = 400
+
+#Loot Tables Configuration
+[lootTables]
+	#Enable custom loot table modifications (master toggle).
+	enableCustomLootTables = true
+
+	#Dog Music Disc
+	[lootTables.dogMusicDisc]
+		#Enable the Dog music disc feature.
+		#When disabled:
+		#  - The disc is hidden from creative tabs
+		#  - The disc will not be added to custom chest loot
+		#  - Skeleton-killed creepers will never drop the Dog disc
+		#Note: The item still exists and can be obtained via commands. Requires restart.
+		enabled = true
+
+	#Mineshaft Loot
+	[lootTables.mineshaftLoot]
+		#Enable custom loot additions to abandoned mineshaft chests.
+		enableMineshaftLoot = true
+
+		#Resurfacing Potion
+		[lootTables.mineshaftLoot.resurfacingPotion]
+			#Add Resurfacing Potion to mineshaft loot tables.
+			enableResurfacingPotion = true
+			#Weight for Resurfacing Potion in mineshaft loot (higher = more common).
+			# Default: 5
+			# Range: 1 ~ 100
+			resurfacingPotionWeight = 5
+			#Minimum count of Resurfacing Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			resurfacingPotionMinCount = 1
+			#Maximum count of Resurfacing Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			resurfacingPotionMaxCount = 1
+
+		#Returning Potion
+		[lootTables.mineshaftLoot.returningPotion]
+			#Add Returning Potion to mineshaft loot tables.
+			enableReturningPotion = true
+			#Weight for Returning Potion in mineshaft loot (higher = more common).
+			# Default: 1
+			# Range: 1 ~ 100
+			returningPotionWeight = 1
+			#Minimum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMinCount = 1
+			#Maximum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMaxCount = 1
+
+		#Haste Potion
+		[lootTables.mineshaftLoot.hastePotion]
+			#Add Haste Potion to mineshaft loot tables.
+			enableHastePotion = true
+			#Weight for Haste Potion in mineshaft loot (higher = more common).
+			# Default: 2
+			# Range: 1 ~ 100
+			hastePotionWeight = 2
+			#Minimum count of Haste Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			hastePotionMinCount = 1
+			#Maximum count of Haste Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			hastePotionMaxCount = 1
+
+		#Strong Haste Potion
+		[lootTables.mineshaftLoot.strongHastePotion]
+			#Add Strong Haste Potion to mineshaft loot tables.
+			enableStrongHastePotion = true
+			#Weight for Strong Haste Potion in mineshaft loot (higher = more common).
+			# Default: 2
+			# Range: 1 ~ 100
+			strongHastePotionWeight = 2
+			#Minimum count of Strong Haste Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			strongHastePotionMinCount = 1
+			#Maximum count of Strong Haste Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			strongHastePotionMaxCount = 1
+
+	#Stronghold Loot
+	[lootTables.strongholdLoot]
+		#Enable custom loot additions to stronghold chests.
+		enableStrongholdLoot = true
+
+		#Resurfacing Potion
+		[lootTables.strongholdLoot.resurfacingPotion]
+			#Add Resurfacing Potion to stronghold loot tables.
+			enableResurfacingPotion = true
+			#Weight for Resurfacing Potion in stronghold loot (higher = more common).
+			# Default: 4
+			# Range: 1 ~ 100
+			resurfacingPotionWeight = 4
+			#Minimum count of Resurfacing Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			resurfacingPotionMinCount = 1
+			#Maximum count of Resurfacing Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			resurfacingPotionMaxCount = 1
+
+		#Returning Potion
+		[lootTables.strongholdLoot.returningPotion]
+			#Add Returning Potion to stronghold loot tables.
+			enableReturningPotion = true
+			#Weight for Returning Potion in stronghold loot (higher = more common).
+			# Default: 3
+			# Range: 1 ~ 100
+			returningPotionWeight = 3
+			#Minimum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMinCount = 1
+			#Maximum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMaxCount = 1
+
+	#Ancient City Loot
+	[lootTables.ancientCityLoot]
+		#Enable custom loot additions to ancient city chests.
+		enableAncientCityLoot = true
+
+		#Resurfacing Potion
+		[lootTables.ancientCityLoot.resurfacingPotion]
+			#Add Resurfacing Potion to ancient city loot tables.
+			enableResurfacingPotion = true
+			#Weight for Resurfacing Potion in ancient city loot (higher = more common).
+			# Default: 1
+			# Range: 1 ~ 100
+			resurfacingPotionWeight = 1
+			#Minimum count of Resurfacing Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			resurfacingPotionMinCount = 1
+			#Maximum count of Resurfacing Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			resurfacingPotionMaxCount = 1
+
+		#Returning Potion
+		[lootTables.ancientCityLoot.returningPotion]
+			#Add Returning Potion to ancient city loot tables.
+			enableReturningPotion = true
+			#Weight for Returning Potion in ancient city loot (higher = more common).
+			# Default: 3
+			# Range: 1 ~ 100
+			returningPotionWeight = 3
+			#Minimum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMinCount = 1
+			#Maximum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMaxCount = 1
+
+	#End City Loot
+	[lootTables.endCityLoot]
+		#Enable custom loot additions to end city chests.
+		enableEndCityLoot = true
+
+		#Returning Potion
+		[lootTables.endCityLoot.returningPotion]
+			#Add Returning Potion to end city loot tables.
+			enableReturningPotion = true
+			#Weight for Returning Potion in end city loot (higher = more common).
+			# Default: 5
+			# Range: 1 ~ 100
+			returningPotionWeight = 5
+			#Minimum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMinCount = 1
+			#Maximum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMaxCount = 1
+
+	#Simple Dungeon Loot
+	[lootTables.simpleDungeonLoot]
+		#Enable custom loot additions to simple dungeon chests.
+		enableSimpleDungeonLoot = true
+
+		#Resurfacing Potion
+		[lootTables.simpleDungeonLoot.resurfacingPotion]
+			#Add Resurfacing Potion to simple dungeon loot tables.
+			enableResurfacingPotion = true
+			#Weight for Resurfacing Potion in simple dungeon loot (higher = more common).
+			# Default: 3
+			# Range: 1 ~ 100
+			resurfacingPotionWeight = 3
+			#Minimum count of Resurfacing Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			resurfacingPotionMinCount = 1
+			#Maximum count of Resurfacing Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			resurfacingPotionMaxCount = 1
+
+		#Returning Potion
+		[lootTables.simpleDungeonLoot.returningPotion]
+			#Add Returning Potion to simple dungeon loot tables.
+			enableReturningPotion = true
+			#Weight for Returning Potion in simple dungeon loot (higher = more common).
+			# Default: 6
+			# Range: 1 ~ 100
+			returningPotionWeight = 6
+			#Minimum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMinCount = 1
+			#Maximum count of Returning Potions when found.
+			# Default: 1
+			# Range: 1 ~ 8
+			returningPotionMaxCount = 1
+
+	#Trial Chamber Loot
+	[lootTables.trialChamberLoot]
+		#Enable custom loot additions to trial chamber chests.
+		enableTrialChamberLoot = true
+
+		#Common Rewards
+		[lootTables.trialChamberLoot.common]
+
+			#Resurfacing Potion
+			[lootTables.trialChamberLoot.common.resurfacingPotion]
+				#Add Resurfacing Potion to trial chamber common loot tables.
+				enableResurfacingPotion = true
+				#Weight for Resurfacing Potion in trial chamber common loot (higher = more common).
+				# Default: 2
+				# Range: 1 ~ 100
+				resurfacingPotionWeight = 2
+				#Minimum count of Resurfacing Potions when found.
+				# Default: 1
+				# Range: 1 ~ 8
+				resurfacingPotionMinCount = 1
+				#Maximum count of Resurfacing Potions when found.
+				# Default: 1
+				# Range: 1 ~ 8
+				resurfacingPotionMaxCount = 1
+
+		#Rare Rewards
+		[lootTables.trialChamberLoot.rare]
+
+			#Resurfacing Potion
+			[lootTables.trialChamberLoot.rare.resurfacingPotion]
+				#Add Resurfacing Potion to trial chamber rare loot tables.
+				enableResurfacingPotion = true
+				#Weight for Resurfacing Potion in trial chamber rare loot (higher = more common).
+				# Default: 5
+				# Range: 1 ~ 100
+				resurfacingPotionWeight = 5
+				#Minimum count of Resurfacing Potions when found.
+				# Default: 1
+				# Range: 1 ~ 8
+				resurfacingPotionMinCount = 1
+				#Maximum count of Resurfacing Potions when found.
+				# Default: 1
+				# Range: 1 ~ 8
+				resurfacingPotionMaxCount = 1
+
+			#Returning Potion
+			[lootTables.trialChamberLoot.rare.returningPotion]
+				#Add Returning Potion to trial chamber rare loot tables.
+				enableReturningPotion = true
+				#Weight for Returning Potion in trial chamber rare loot (higher = more common).
+				# Default: 2
+				# Range: 1 ~ 100
+				returningPotionWeight = 2
+				#Minimum count of Returning Potions when found.
+				# Default: 1
+				# Range: 1 ~ 8
+				returningPotionMinCount = 1
+				#Maximum count of Returning Potions when found.
+				# Default: 1
+				# Range: 1 ~ 8
+				returningPotionMaxCount = 1
+
+		#Unique Rewards
+		[lootTables.trialChamberLoot.unique]
+
+			#Returning Potion
+			[lootTables.trialChamberLoot.unique.returningPotion]
+				#Add Returning Potion to trial chamber unique loot tables.
+				enableReturningPotion = true
+				#Weight for Returning Potion in trial chamber unique loot (higher = more common).
+				# Default: 5
+				# Range: 1 ~ 100
+				returningPotionWeight = 5
+				#Minimum count of Returning Potions when found.
+				# Default: 1
+				# Range: 1 ~ 8
+				returningPotionMinCount = 1
+				#Maximum count of Returning Potions when found.
+				# Default: 1
+				# Range: 1 ~ 8
+				returningPotionMaxCount = 1

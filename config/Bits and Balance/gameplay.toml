@@ -1,0 +1,886 @@
+#Combat
+[combat]
+
+	#Second Chance
+	[combat.secondChance]
+		#Enable the Second Chance anti-one-shot mechanic for players (excludes fall damage by default). 
+		enableSecondChance = false
+		#Exclude fall damage from triggering Second Chance.
+		excludeFallDamage = true
+		#Player must have more than this many hearts before a lethal hit can trigger Second Chance. 7.5 = seven and a half hearts.
+		# Default: 7.5
+		# Range: 0.0 ~ 100.0
+		healthThresholdHearts = 7.5
+		#Cooldown in Minecraft days between Second Chance triggers (1 day = 24000 ticks). Set to 0 to disable cooldown.
+		# Default: 7
+		# Range: 0 ~ 3650
+		cooldownDays = 7
+		#Reset Second Chance cooldown on respawn (death). If false, cooldown persists across deaths.
+		resetOnRespawn = true
+
+		#Toast
+		[combat.secondChance.toast]
+			#Show an advancement-style toast when Second Chance saves your life.
+			enabled = true
+
+		#Apply Resistance effect when Second Chance triggers.
+		[combat.secondChance.applyResistance]
+			#Enable applying Resistance when Second Chance triggers.
+			enabled = true
+			#Resistance effect level to apply (1 = Resistance I).
+			# Default: 1
+			# Range: 1 ~ 10
+			level = 1
+
+		#Apply Nausea effect when Second Chance triggers.
+		[combat.secondChance.applyNausea]
+			#Enable applying Nausea when Second Chance triggers.
+			enabled = true
+			#Nausea effect level to apply (1 = Nausea I).
+			# Default: 2
+			# Range: 1 ~ 10
+			level = 2
+
+	#Maintain Experience
+	[combat.maintainExperience]
+		#Enable Maintain Experience: players lose a percentage of their total XP on death, not a percentage of displayed levels.
+		enableMaintainExperience = false
+		#Percentage of total XP points to lose on death (0-100), not displayed levels.
+		# Default: 50
+		# Range: 0 ~ 100
+		# Default: 50
+		# Range: 0 ~ 100
+		lossPercent = 50
+
+	#Snowball Rework
+	[combat.snowball]
+		#Enable Snowball Rework: snowballs deal damage and apply freezing.
+		enableSnowballRework = false
+		#Base damage dealt by snowballs to entities.
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		snowballBaseDamage = 0.5
+		#Damage dealt by snowballs to entities considered Nether-native.
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		snowballNetherDamage = 1.0
+		#Minimum freeze duration in seconds applied by snowballs.
+		# Default: 5
+		# Range: 0 ~ 60
+		snowballMinFreezeSeconds = 5
+		#Maximum freeze duration in seconds applied by snowballs.
+		# Default: 8
+		# Range: 0 ~ 60
+		snowballMaxFreezeSeconds = 8
+		#Entity types treated as Nether-native for snowball damage (resource locations).
+		snowballNetherEntities = ["minecraft:blaze", "minecraft:ghast", "minecraft:magma_cube", "minecraft:strider", "minecraft:wither_skeleton", "minecraft:piglin", "minecraft:piglin_brute", "minecraft:zombified_piglin", "minecraft:hoglin", "minecraft:zoglin"]
+
+#Balance
+[balance]
+
+	#Ender Dragon XP
+	[balance.enderDragon]
+		#Always drop the full first-kill XP from the Ender Dragon.
+		enableFullEnderDragonXp = false
+
+	#Food
+	[balance.food]
+		#Allow players to eat unconditionally.
+		enableFoodAlwaysEdible = false
+
+	#Source Dependent Invulnerability Frames
+	[balance.sourceDependentIFrames]
+		#Give different damage sources independent victim i-frame timers so they can overlap without fully disabling cooldowns.
+		enabled = false
+		#Damage types to never bypass i-frames (resource locations). Examples: 'minecraft:fall', 'minecraft:out_of_world'.
+		blacklist = []
+
+	#Depth Scaling Enemies
+	[balance.depthScalingEnemies]
+		#Enable depth-based scaling for Zombies and Skeletons in the Overworld.
+		enabled = false
+		#Restrict depth scaling to the Overworld only.
+		overworldOnly = true
+		#If false, disables the surface tier from affecting spawns (no gear/weapon changes for mobs in the surface band).
+		enableSurfaceTier = false
+		#If false, disables the mid tier from affecting spawns (no gear/weapon changes for mobs in the mid-depth band).
+		enableMidTier = true
+		#If false, disables the deep tier from affecting spawns (no gear/weapon changes for mobs in the deep band).
+		enableDeepTier = true
+		#Y-level threshold for mid depth tier (<= this is considered mid).
+		# Default: 40
+		# Range: -2048 ~ 4096
+		midDepthY = 40
+		#Y-level threshold for deep tier (<= this is considered deep). Example: -16.
+		# Default: 0
+		# Range: -2048 ~ 4096
+		deepDepthY = 0
+		#Chance per armor slot to equip a piece at surface tier (0.0-1.0).
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		surfaceEquipChance = 0.05
+		#Chance per armor slot to equip a piece at mid tier (0.0-1.0).
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		midEquipChance = 0.15
+		#Chance per armor slot to equip a piece at deep tier (0.0-1.0).
+		# Default: 0.3
+		# Range: 0.0 ~ 1.0
+		deepEquipChance = 0.3
+		#Surface tier: probability weight for Leather armor when equipping.
+		# Default: 0.8
+		# Range: 0.0 ~ 100.0
+		surfaceLeatherWeight = 0.8
+		#Surface tier: probability weight for Chain armor when equipping.
+		# Default: 0.15
+		# Range: 0.0 ~ 100.0
+		surfaceChainWeight = 0.15
+		#Surface tier: probability weight for Copper armor when equipping.
+		# Default: 0.06
+		# Range: 0.0 ~ 100.0
+		surfaceCopperWeight = 0.06
+		#Surface tier: probability weight for Gold armor when equipping.
+		# Default: 0.05
+		# Range: 0.0 ~ 100.0
+		surfaceGoldWeight = 0.05
+		#Surface tier: probability weight for Iron armor when equipping.
+		# Default: 0.0
+		# Range: 0.0 ~ 100.0
+		surfaceIronWeight = 0.0
+		#Mid tier: probability weight for Leather armor when equipping.
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		midLeatherWeight = 0.5
+		#Mid tier: probability weight for Chain armor when equipping.
+		# Default: 0.25
+		# Range: 0.0 ~ 100.0
+		midChainWeight = 0.25
+		#Mid tier: probability weight for Copper armor when equipping.
+		# Default: 0.06
+		# Range: 0.0 ~ 100.0
+		midCopperWeight = 0.06
+		#Mid tier: probability weight for Gold armor when equipping.
+		# Default: 0.05
+		# Range: 0.0 ~ 100.0
+		midGoldWeight = 0.05
+		#Mid tier: probability weight for Iron armor when equipping.
+		# Default: 0.2
+		# Range: 0.0 ~ 100.0
+		midIronWeight = 0.2
+		#Deep tier: probability weight for Leather armor when equipping.
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		deepLeatherWeight = 0.5
+		#Deep tier: probability weight for Chain armor when equipping.
+		# Default: 0.45
+		# Range: 0.0 ~ 100.0
+		deepChainWeight = 0.45
+		#Deep tier: probability weight for Copper armor when equipping.
+		# Default: 0.16
+		# Range: 0.0 ~ 100.0
+		deepCopperWeight = 0.16
+		#Deep tier: probability weight for Gold armor when equipping.
+		# Default: 0.15
+		# Range: 0.0 ~ 100.0
+		deepGoldWeight = 0.15
+		#Deep tier: probability weight for Iron armor when equipping. Note: hard-capped by deepMaxIronPieces.
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		deepIronWeight = 0.5
+		#Deep tier: maximum number of Iron armor pieces allowed on a single mob (example requires 1).
+		# Default: 1
+		# Range: 0 ~ 4
+		deepMaxIronPieces = 1
+		#Surface tier: chance for Zombies to spawn with a melee weapon in main hand (0.0-1.0).
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		surfaceZombieWeaponChance = 0.05
+		#Mid tier: chance for Zombies to spawn with a melee weapon in main hand (0.0-1.0).
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		midZombieWeaponChance = 0.15
+		#Deep tier: chance for Zombies to spawn with a melee weapon in main hand (0.0-1.0).
+		# Default: 0.3
+		# Range: 0.0 ~ 1.0
+		deepZombieWeaponChance = 0.3
+
+	#Balanced Elytra
+	[balance.balancedElytra]
+		#Enable Balanced Elytra: elytras lose durability based on distance flown (10 blocks = 1 durability) instead of time.
+		enabled = true
+		#How many horizontal blocks flown equals 1 durability point (default: 10). Lower = faster wear.
+		# Default: 10
+		# Range: 1 ~ 1000
+		blocksPerDurability = 10
+
+	#Nerfed Mending
+	[balance.nerfedMending]
+		#Enable nerfed Mending: items require more XP to repair.
+		enabled = false
+		#XP multiplier for Mending repairs (2-10). Example: 4 = requires 4x XP for the same repair.
+		# Default: 4
+		# Range: 2 ~ 10
+		multiplier = 4
+
+	#Nerfed Discounts
+	[balance.nerfedDiscounts]
+		#Enable nerfed villager discounts system.
+		enabled = false
+		#Remove discounts gained from curing zombie villagers.
+		removeZombieCureDiscounts = false
+		#Maximum discount percentage any villager can offer (0.0-1.0, where 0.5 = 50%).
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		maxDiscount = 0.5
+
+#Mechanics
+[mechanics]
+
+	#Toggle Stance
+	[mechanics.toggleStance]
+		#Enable the Toggle Stance keybind to switch between standing/sneaking (and crawling if enabled).
+		enableToggleStance = false
+
+	#Crawling
+	[mechanics.crawling]
+		#Enable the Crawling mechanic allowing players to explicitly enter a crawling stance.
+		enableCrawlingMechanic = false
+
+	#Friendly Fire Friendlies
+	[mechanics.friendlyFireFriendlies]
+		#Prevent players from accidentally attacking their own tamed pets.
+		enabled = true
+
+	#Sitting
+	[mechanics.sitting]
+		#Enable the Sitting feature. If false, the Sit key and server-side sitting state are disabled.
+		enabled = false
+		#If true, the Sit key acts as a toggle. If false, it acts as hold-to-sit.
+		toggleSitting = true
+
+	#Item Sharing
+	[mechanics.itemSharing]
+		#Enable: Press Shift+Chat while hovering an item stack in an inventory to post a hoverable link in chat.
+		enableItemSharing = false
+		#Minimum time between item-share messages per player (seconds). Set to 0 to disable cooldown.
+		# Default: 1.0
+		# Range: 0.0 ~ 60.0
+		cooldownSeconds = 1.0
+
+	#Campfires Ignite
+	[mechanics.campfiresIgnite]
+		#Enable campfires to ignite entities standing on them, cooking them.
+		enabled = true
+
+	#Cozy Campfire
+	[mechanics.cozyCampfire]
+		#Enable: Receive Regeneration near a lit campfire every interval while within range.
+		enabled = false
+		#Range in blocks to search for a lit campfire.
+		# Default: 8.0
+		# Range: 1.0 ~ 64.0
+		range = 8.0
+		#Duration in ticks for the Regeneration effect when applied.
+		# Default: 100
+		# Range: 1 ~ 12000
+		durationTicks = 100
+		#Interval in ticks between effect applications while in range.
+		# Default: 100
+		# Range: 1 ~ 12000
+		intervalTicks = 100
+		#Effect amplifier (0 = Regeneration I, 1 = Regeneration II, etc.).
+		# Default: 0
+		# Range: 0 ~ 10
+		amplifier = 0
+		#Enable: Bees also receive the Regeneration effect when near a lit campfire.
+		affectBees = true
+
+	#Dismount Entities
+	[mechanics.dismountEntities]
+		#Enable the Dismount Entities mechanic allowing players to crouch + right-click vehicles to eject passengers.
+		enableDismountEntities = true
+		#Allow dismounting other players from vehicles by crouch + right-clicking. Disabled by default.
+		allowDismountPlayers = false
+		#Vertical velocity applied when ejecting passengers from vehicles (0.3 = half of original, 0.6 = original).
+		# Default: 0.3
+		# Range: 0.0 ~ 2.0
+		verticalVelocity = 0.3
+		#Horizontal velocity applied when ejecting passengers from vehicles (0.5 = enhanced travel distance).
+		# Default: 0.5
+		# Range: 0.0 ~ 2.0
+		horizontalVelocity = 0.5
+
+	#Villagers Follow Emeralds
+	[mechanics.villagersFollowEmeralds]
+		#Enable: Holding an Emerald or Emerald Block makes nearby villagers follow you, similar to animal temptation.
+		enabled = false
+		#Tempt follow speed modifier used by villagers when following emeralds (1.0 = normal movement speed).
+		# Default: 0.6
+		# Range: 0.25 ~ 3.0
+		speedModifier = 0.6
+		#Show a small burst of happy villager particles when a villager begins following a player with emeralds.
+		showStartParticles = true
+		#How many happy villager particles to show when following begins.
+		# Default: 3
+		# Range: 1 ~ 40
+		startParticlesCount = 3
+
+	#Speedy Wolves
+	[mechanics.speedyWolves]
+		#Enable: Tamed wolves move faster to keep up with their owner when they fall behind.
+		enabled = true
+		#Maximum movement speed multiplier applied to tamed wolves when keeping up (1.0 = no change). Actual boost dynamically scales with owner speed.
+		# Default: 1.3
+		# Range: 1.0 ~ 2.0
+		speedMultiplier = 1.3
+		#Distance from owner beyond which the speed boost applies (blocks).
+		# Default: 6.0
+		# Range: 1.0 ~ 48.0
+		distanceThreshold = 6.0
+
+	#Quick Harvesting
+	[mechanics.quickHarvesting]
+		#Enable all Quick Harvesting behaviors (master toggle).
+		enabled = false
+		#When enabled, Quick Harvesting drops home toward the user for 1 second.
+		homeDropsToUser = true
+
+		#Quick Harvesting with Hoes
+		[mechanics.quickHarvesting.hoes]
+			#Enable: Right-click mature crops to harvest and auto-replant. Holding a hoe harvests a 3x3 area.
+			enabled = true
+
+		#Quick Harvesting with Axes
+		[mechanics.quickHarvesting.axes]
+			#Enable: Right-click with an axe to harvest axe-based crops (pumpkins, melons, cocoa, and compatible modded crops). Replants when applicable (e.g., cocoa).
+			enabled = true
+
+	#Door Knocking
+	[mechanics.doorKnocking]
+		#Enable: Left-clicking a door plays a knocking sound matching the door material.
+		enabled = true
+
+	#Coyote Time Jump
+	[mechanics.coyoteTimeJump]
+		#Enable coyote-time jump: allows jumping for a short time after falling off a block without jumping first.
+		enabled = true
+		#Delay (ms) after starting to fall before coyote-time jump becomes available.
+		# Default: 50
+		# Range: 50 ~ 1000
+		delayMs = 50
+		#Maximum time (ms) after starting to fall during which coyote-time jump is allowed.
+		# Default: 1000
+		# Range: 200 ~ 1000
+		windowMs = 200
+		#Enable debug logging for coyote time jump (shows detailed information in console).
+		debug = false
+
+	#Rapid Fire Jump
+	[mechanics.rapidFireJump]
+		#Enable rapid fire jump: hold the jump key to continuously execute jumps for quick navigation in 2-block gaps.
+		enabled = false
+		#Interval in ticks between rapid fire jumps when holding the jump key (20 ticks = 1 second).
+		# Default: 1
+		# Range: 1 ~ 20
+		intervalTicks = 1
+		#Enable debug logging for rapid fire jump (shows detailed information in console).
+		debug = false
+
+	#Leashed Teleport
+	[mechanics.leashedTeleport]
+		#Enable Leashed Teleport: leashed mobs follow players through any teleportation (commands, chorus fruit, ender pearls, portals, etc.).
+		enabled = true
+		#Allow leashed mobs to follow players across dimensions (nether portals, end portals, etc.).
+		allowCrossDimension = true
+		#Maximum number of leashed mobs that can follow a player through teleportation.
+		# Default: 12
+		# Range: 1 ~ 50
+		maxFollowers = 12
+		#Radius in blocks to search for leashed mobs around the player.
+		# Default: 48.0
+		# Range: 16.0 ~ 128.0
+		scanRadius = 48.0
+		#Number of attempts to find a safe placement spot for teleported mobs.
+		# Default: 16
+		# Range: 4 ~ 32
+		safePlacementTries = 16
+		#Base radius around player for safe placement attempts.
+		# Default: 2.5
+		# Range: 1.0 ~ 8.0
+		baseRadius = 2.5
+		#Maximum radius around player for safe placement attempts.
+		# Default: 5.0
+		# Range: 2.0 ~ 16.0
+		maxRadius = 5.0
+		#Re-attach leashes after teleporting mobs to ensure they stay connected.
+		postTeleportLeash = true
+		#Cooldown in ticks between teleportation processing for each player (prevents spam).
+		# Default: 10
+		# Range: 1 ~ 100
+		cooldownTicks = 10
+
+	#Chat Mentions
+	[mechanics.chatMentions]
+		#Enable Chat Mentions: typing @username or username in chat highlights their name and sends them a ping sound.
+		enabled = false
+		#Trigger modes: AT_NAME (@username), PLAIN_NAME (username)
+		triggerModes = ["AT_NAME", "PLAIN_NAME"]
+		#Make mention detection case-insensitive.
+		caseInsensitive = true
+		#Use word boundaries for mention detection (prevents 'jakub' matching 'hijakub').
+		wordBoundary = true
+		#Only highlight mentions for the mentioned player (others see normal text).
+		recipientOnlyHighlight = true
+		#Maximum number of mentions allowed per message.
+		# Default: 3
+		# Range: 1 ~ 10
+		maxMentionsPerMessage = 3
+		#Cooldown in milliseconds between mentions from the same sender.
+		# Default: 30000
+		# Range: 0 ~ 10000
+		cooldownMsPerSender = 10000
+		#Allow players to mention themselves.
+		allowSelfPing = false
+		#Allow pressing Tab in chat to auto-complete online usernames after typing @.
+		tabCompleteUsernames = true
+		#Highlight fully typed online usernames in the local chat box before sending, including @username mentions.
+		inputHighlightUsernames = true
+
+		#Style
+		[mechanics.chatMentions.style]
+			#Hex color for highlighting mentioned usernames (without #).
+			highlightColorHex = "FF3B30"
+			#Hover text shown when hovering over a mentioned username.
+			hoverText = "You were mentioned"
+
+		#Sound
+		[mechanics.chatMentions.sound]
+			#Sound event to play when mentioned.
+			soundEvent = "minecraft:block.note_block.pling"
+			#Sound source category.
+			soundSource = "players"
+			#Sound volume (0.0 to 1.0).
+			# Default: 0.9
+			# Range: 0.0 ~ 1.0
+			soundVolume = 0.9
+			#Sound pitch (0.5 to 2.0).
+			# Default: 1.2
+			# Range: 0.5 ~ 2.0
+			soundPitch = 1.2
+
+	#Navigator Compass
+	[mechanics.navigatorCompass]
+		#Enable Navigator Compass: Right-click a compass to set custom coordinates for navigation.
+		enabled = false
+		#Show distance to target coordinates in compass tooltip.
+		showDistance = true
+		#Show target coordinates in compass tooltip.
+		showCoordinates = true
+
+	#Bottle o' Cloud
+	[mechanics.bottleOfCloud]
+		#Enable Bottle o' Cloud: Right-click a glass bottle on a cloud to capture it. The cloud is permanently altered. Place the bottle to spawn a temporary cloud that fades after 20 seconds.
+		enabled = false
+		#Duration in ticks for placed clouds to exist before disappearing (20 ticks = 1 second).
+		# Default: 400
+		# Range: 100 ~ 6000
+		durationTicks = 400
+		#How many ticks before disappearing the cloud starts to fade (20 ticks = 1 second).
+		# Default: 100
+		# Range: 20 ~ 600
+		fadeStartTicks = 100
+		#Distance in blocks from the player to place the cloud.
+		# Default: 2.0
+		# Range: 1.0 ~ 5.0
+		placementDistance = 2.0
+		#Multiplier applied to normal fall damage when landing on Cloud Blocks. 0.5 = half damage, 0.0 = no damage, 1.0 = vanilla damage.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		fallDamageMultiplier = 0.5
+
+	#Pistons Move Tile Entities
+	[mechanics.pistonsMoveTileEntities]
+		#Allow pistons to push and pull blocks with block entity data. Invalid final positions break the moved block and drop its contents.
+		enabled = false
+		#Exact block ids that are never moved by this feature. Examples: 'minecraft:chest', 'minecraft:barrel'.
+		blacklistBlockIds = ["minecraft:spawner", "minecraft:trial_spawner", "minecraft:vault"]
+		#Case-insensitive path/name fragments that automatically blacklist matching blocks, including other mods. Examples: 'chest', 'shulker_box'.
+		blacklistNameContains = ["spawner", "trial", "vault"]
+
+	#Waterlogging
+	[mechanics.waterlogging]
+		#Automatically waterlog waterloggable blocks placed into water.
+		enabled = true
+		#Allow doors to be automatically waterlogged per block half.
+		doors = true
+		#Allow fence gates to be automatically waterlogged.
+		fenceGates = true
+		#Allow pressure plates, including weighted pressure plates, to be automatically waterlogged.
+		pressurePlates = true
+		#Allow automatic waterlogging during world generation or structure placement. Disabled by default; still requires water at the placed block.
+		worldgen = false
+		#BLACKLIST affects every waterloggable block except blockIds. WHITELIST affects only blockIds. Old mode names are still accepted for existing configs.
+		mode = "BLACKLIST"
+		#Block ids used as either the blacklist or whitelist, depending on mode. Examples: 'minecraft:oak_fence', 'minecraft:oak_door'.
+		blockIds = []
+
+#Tweaks
+[tweaks]
+
+	#Armed Armor Stands
+	[tweaks.armedArmorStands]
+		#Armor Stands placed by the Armor Stand item will have arms; you may also give them items.
+		enableArmedArmorStands = false
+
+	#Double Door Opening
+	[tweaks.doubleDoorOpening]
+		#Double doors open together when right clicked.
+		enableDoubleDoorOpening = false
+		#Crouch + right-click a double door to only affect the clicked door.
+		crouchSingleDoor = true
+		#Open up to 5 touching trapdoors at once when right-clicking.
+		chainTrapdoors = true
+		#Only pair doors or chain trapdoors when the adjacent block is the exact same block.
+		sameBlockOnly = true
+		#When a door is opened/closed via redstone, mirror the state to its paired door.
+		doubleDoorsWithRedstone = true
+		#Also apply redstone mirroring to iron doors.
+		includeIronDoorsWithRedstone = true
+		#Also apply redstone mirroring to touching trapdoors (chain up to 5).
+		includeTrapDoorsWithRedstone = true
+
+	#Improved Climbing
+	[tweaks.improvedClimbing]
+		#Right-clicking a climbable block with a climbable item places another climbable at the end of the chain.
+		enableChainPlacement = false
+		#Enable faster climbing and sliding on any climbable while looking up or down.
+		enableImprovedClimbing = false
+		#Maximum climb-down speed on climbables while looking down (blocks per tick).
+		# Default: 0.4
+		# Range: 0.05 ~ 1.0
+		climbDownSpeed = 0.4
+		#Minimum look-down angle in degrees to start faster downward climbing (0-90).
+		# Default: 45
+		# Range: 0 ~ 90
+		lookDownMinDeg = 45
+		#Maximum look-down angle in degrees for full downward climbing speed (0-90).
+		# Default: 90
+		# Range: 0 ~ 90
+		lookDownMaxDeg = 90
+		#Enable faster upward climbing on climbables while looking up.
+		enableFastClimbUp = false
+		#Maximum climb-up speed on climbables while looking up (blocks per tick).
+		# Default: 0.25
+		# Range: 0.2 ~ 1.0
+		climbUpSpeed = 0.25
+		#Minimum look-up angle in degrees to start faster upward climbing (0-90).
+		# Default: 45
+		# Range: 0 ~ 90
+		lookUpMinDeg = 45
+		#Maximum look-up angle in degrees for full upward climbing speed (0-90).
+		# Default: 90
+		# Range: 0 ~ 90
+		lookUpMaxDeg = 90
+
+	#Curse of Vanishing Usage
+	[tweaks.curseUses]
+		#Hide Pumpkin Overlay with Curse of Vanishing.
+		hidePumpkinOverlayOnVanishing = false
+
+	#Despawn With Master
+	[tweaks.despawnWithMaster]
+		#When an Evoker is removed from the world, despawn all Vex summoned by that Evoker.
+		despawnVexWithEvoker = true
+		#When a Shulker is removed from the world, despawn all Shulker Bullets fired by that Shulker.
+		despawnBulletsWithShulker = true
+
+	#Creeper Sunlight Burn
+	[tweaks.creeperSunlightBurn]
+		#Creepers burn when in direct sunlight, just like Zombies and Skeletons do.
+		enableCreeperSunlightBurn = false
+
+	#Sophisticated Scaffolding
+	[tweaks.sophisticatedScaffolding]
+		#When breaking scaffolding, all drops appear at your location.
+		enableSophisticatedScaffolding = true
+
+	#Brushing XP Rewards
+	[tweaks.brushingXp]
+		#Spawn XP when finishing brushing a brushable block; scales with loot rarity.
+		enabled = false
+		#Minimum XP to spawn when brushing completes (inclusive).
+		# Default: 3
+		# Range: 0 ~ 100
+		min = 3
+		#Maximum XP to spawn when brushing completes (inclusive).
+		# Default: 10
+		# Range: 0 ~ 100
+		max = 10
+
+	#Improved Recovery Compass
+	[tweaks.improvedRecoveryCompass]
+		#Enable improvements to the Recovery Compass.
+		enableImprovedRecoveryCompass = false
+		#Keep Recovery Compass in your inventory when you die (ignores keepInventory gamerule).
+		keepCompassOnDeath = true
+		#Show distance to death location in action bar when holding recovery compass.
+		showDistance = true
+		#Toggle between showing distance and coordinates when right-clicking recovery compass.
+		showCoordsOnRightClick = true
+		#Launch a short-lived soul trail toward the death location when shift + right-clicking the recovery compass.
+		sculkParticles = true
+
+	#Compostable Items
+	[tweaks.compostableItems]
+		#Enable compostable items feature (master toggle).
+		enableCompostableItems = true
+		#Allow Rotten Flesh to be composted (30% chance).
+		enableCompostableRottenFlesh = false
+		#Allow Poisonous Potatoes to be composted (65% chance).
+		enableCompostablePoisonousPotato = true
+
+	#Responsive Shields
+	[tweaks.responsiveShields]
+		#Enable responsive shields feature (removes shield blocking delay).
+		enableResponsiveShields = false
+		#Number of ticks from when you start blocking to when the shield actually blocks damage. 0 = instant blocking, 5 = vanilla delay.
+		# Default: 0
+		# Range: 0 ~ 100
+		shieldRaiseTime = 0
+
+	#Automatic Tool Restock
+	[tweaks.automaticToolRestock]
+		#When a tool breaks on your hotbar, automatically move a replacement of the same type from your main inventory into that hotbar slot.
+		enabled = false
+
+	#Automatic Block Restock
+	[tweaks.automaticBlockRestock]
+		#When you run out of blocks in your hotbar while building, automatically move more of the same block from your main inventory into that hotbar slot.
+		enabled = false
+
+	#Treasure Enchantment Gold Color
+	[tweaks.treasureEnchantmentGoldColor]
+		#Make beneficial treasure enchantments (Mending, Frost Walker, Soul Speed, Swift Sneak) display in gold color. Curses remain red.
+		enableTreasureEnchantmentGoldColor = false
+
+	#Glowing Glowberries
+	[tweaks.glowingGlowberries]
+		#Give the Glowing effect to entities that consume glowberries.
+		enableGlowingGlowberries = true
+		#Duration of the Glowing effect in seconds when consuming glowberries.
+		# Default: 15
+		# Range: 1 ~ 300
+		glowingDuration = 15
+		#Duration of the Glowing effect in seconds for foxes when they hold glowberries.
+		# Default: 5
+		# Range: 1 ~ 300
+		foxGlowingDuration = 5
+
+	#Enderdragon Egg Always
+	[tweaks.enderdragonEggAlways]
+		#Ensures the Ender Dragon always drops a dragon egg when killed, not just the first time.
+		enableEnderdragonEggAlways = false
+		#If true, eggs spawn randomly within the configured radius. If false, eggs spawn at vanilla location (center of podium).
+		useRandomPlacement = false
+		#Radius in blocks around the End fountain where eggs can spawn (only used if useRandomPlacement is true).
+		# Default: 10
+		# Range: 1 ~ 50
+		spawnRadius = 10
+		#Delay in seconds after dragon death before the egg spawns.
+		# Default: 10
+		# Range: 1 ~ 60
+		spawnDelaySeconds = 10
+		#Show purple particle effects when the dragon egg spawns.
+		showParticles = true
+
+	#Sugarcane Sand
+	[tweaks.sugarcaneSand]
+		#Enable Sugarcane Sand: sugarcane grows 25% faster when planted on sand instead of grass/dirt.
+		enableSugarcaneSand = false
+
+	#More Mining XP
+	[tweaks.moreMiningXp]
+		#Enable More Mining XP: increase XP drops from mining ores (affects both vanilla and variant ores).
+		enabled = false
+
+		#Coal Ore XP
+		[tweaks.moreMiningXp.coal]
+			#Minimum XP dropped by coal ore (inclusive).
+			# Default: 1
+			# Range: 0 ~ 100
+			min = 1
+			#Maximum XP dropped by coal ore (inclusive).
+			# Default: 3
+			# Range: 0 ~ 100
+			max = 3
+
+		#Diamond Ore XP
+		[tweaks.moreMiningXp.diamond]
+			#Minimum XP dropped by diamond ore (inclusive).
+			# Default: 5
+			# Range: 0 ~ 100
+			min = 5
+			#Maximum XP dropped by diamond ore (inclusive).
+			# Default: 10
+			# Range: 0 ~ 100
+			max = 10
+
+		#Emerald Ore XP
+		[tweaks.moreMiningXp.emerald]
+			#Minimum XP dropped by emerald ore (inclusive).
+			# Default: 5
+			# Range: 0 ~ 100
+			min = 5
+			#Maximum XP dropped by emerald ore (inclusive).
+			# Default: 10
+			# Range: 0 ~ 100
+			max = 10
+
+		#Lapis Lazuli Ore XP
+		[tweaks.moreMiningXp.lapis]
+			#Minimum XP dropped by lapis lazuli ore (inclusive).
+			# Default: 4
+			# Range: 0 ~ 100
+			min = 4
+			#Maximum XP dropped by lapis lazuli ore (inclusive).
+			# Default: 8
+			# Range: 0 ~ 100
+			max = 8
+
+		#Redstone Ore XP
+		[tweaks.moreMiningXp.redstone]
+			#Minimum XP dropped by redstone ore (inclusive).
+			# Default: 2
+			# Range: 0 ~ 100
+			min = 2
+			#Maximum XP dropped by redstone ore (inclusive).
+			# Default: 6
+			# Range: 0 ~ 100
+			max = 6
+
+	#Respawn Anchor Anywhere
+	[tweaks.respawn_anchor_anywhere]
+		#Enable Respawn Anchors to work in any dimension (not just the Nether).
+		enabled = false
+
+	#Return To Killer
+	[tweaks.returnToKiller]
+		#When killing flying mobs, make their XP and drops home toward the killer for easier pickup.
+		enabled = false
+
+	#Tipped Arrows Lingering Clouds
+	[tweaks.tippedArrowLingeringClouds]
+		#Tipped arrows create an area effect cloud of their potion effect when they land, then become normal arrows.
+		enabled = true
+		#Allow arrows shot by mobs to create lingering clouds. Player-fired and non-mob arrows are not affected by this option.
+		mobsEnabled = true
+		#Mob entity ids whose fired tipped arrows should not create lingering clouds. Examples: 'minecraft:skeleton', 'minecraft:stray'.
+		disabledMobIds = []
+
+	#Speedy Happy Ghasts
+	[tweaks.speedyHappyGhasts]
+		#Happy Ghasts are affected by Swiftness and Slowness (applied to flying speed).
+		enabled = true
+
+	#Candle Bundles
+	[tweaks.candleBundles]
+		#Allow placing different candle items into the same multi-candle block (mixed candle bundles).
+		allowMixedCandlePlacement = true
+
+	#Unbreakable Trial Spawners
+	[tweaks.unbreakableTrialSpawners]
+		#Make Trial Spawners completely unbreakable. They cannot be destroyed by mining, explosions, or any other means.
+		enabled = true
+
+	#Unbreakable Vaults
+	[tweaks.unbreakableVaults]
+		#Make Vaults completely unbreakable. They cannot be destroyed by mining, explosions, or any other means.
+		enabled = true
+
+#Mobs
+[mobs]
+	#Enable: Iron Golems will actively target and kill Creepers. Creepers will not retaliate/ignite when attacked by Iron Golems.
+	ironGolemsKillCreepers = false
+
+	#Cave Spiders
+	[mobs.caveSpiders]
+		#Allow Cave Spiders to spawn in place of Spiders in caves.
+		enableCaveSpidersInCaves = true
+		#Chance for a Spider in a cave to be replaced by a Cave Spider (0.0-1.0).
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		caveSpiderReplacementChance = 0.15
+
+	#Disable Nitwits
+	[mobs.disableNitwits]
+		#Prevent Nitwit villagers from spawning naturally.
+		disableNitwits = false
+
+	#Horses
+	[mobs.horses]
+		#Allow two players to ride the same Horse.
+		dualRiders = true
+
+	#Improved Phantoms
+	[mobs.improvedPhantoms]
+		#Enable improved phantom mechanics.
+		enableImprovedPhantoms = true
+
+		#Phantom Pickup
+		[mobs.improvedPhantoms.phantomPickup]
+			#Allow phantoms to pick up and carry players.
+			enablePhantomPickup = true
+			#Chance for a phantom to attempt picking up a player when attacking (0.0-1.0).
+			# Default: 0.3
+			# Range: 0.0 ~ 1.0
+			phantomPickupChance = 0.3
+			#Minimum delay in seconds before player can dismount from phantom.
+			# Default: 1
+			# Range: 0 ~ 10
+			phantomPickupMinDelay = 1
+			#Speed multiplier for phantoms when carrying a player (1.0 = normal speed, 0.5 = half speed).
+			# Default: 0.5
+			# Range: 0.1 ~ 1.0
+			phantomPickupSpeedMultiplier = 0.5
+
+		#Phantom Slowness Stacking
+		[mobs.improvedPhantoms.phantomSlowness]
+			#Enable stacking slowness effect when hit by phantoms.
+			enablePhantomSlownessStacking = true
+			#Duration of slowness effect in seconds.
+			# Default: 10
+			# Range: 1 ~ 60
+			phantomSlownessDuration = 10
+			#Maximum slowness level that can be stacked (1-4).
+			# Default: 4
+			# Range: 1 ~ 4
+			phantomSlownessMaxLevel = 4
+
+		#Double Damage When Carried
+		[mobs.improvedPhantoms.phantomDoubleDamage]
+			#Enable double damage when hitting a phantom while being carried by it.
+			enablePhantomDoubleDamage = true
+
+		#Automatic Drop
+		[mobs.improvedPhantoms.phantomAutoDrop]
+			#Automatically make phantoms drop carried players after the configured carry time.
+			enablePhantomAutoDrop = true
+			#How many seconds a phantom carries a player before automatically dropping them.
+			# Default: 3
+			# Range: 1 ~ 60
+			phantomAutoDropSeconds = 3
+
+		#Drop On Hit
+		[mobs.improvedPhantoms.phantomDropOnHit]
+			#Make phantoms immediately drop players who hit them while being carried.
+			enablePhantomDropOnHit = true
+
+		#Hit Dismount Slow Falling
+		[mobs.improvedPhantoms.phantomDismountSlowFalling]
+			#Give players 2 seconds of Slow Falling I when a phantom carry ends after they hit the carrying phantom.
+			enablePhantomSlowFallingOnHitDismount = true
+
+		#Better Combat Integration
+		[mobs.improvedPhantoms.betterCombatIntegration]
+			#Enable Better Combat mod integration for enhanced phantom combat mechanics. Only takes effect if Better Combat is installed.
+			enableBetterCombatIntegration = false

@@ -1,0 +1,83 @@
+#Azalea Woodset Features
+[azaleaWoodset]
+	#Enable the azalea woodset (blocks, items, boats, recipes, etc.).
+	#When disabled:
+	#  - Items hidden from creative tabs
+	#  - All crafting recipes disabled
+	#  - No fuel values, flammability, or boat behavior
+	#Note: Blocks/items still exist and can be obtained via commands. Requires restart.
+	enableAzaleaWoodset = false
+	#Enable Bits and Balance azalea logs in naturally-generated and sapling-grown azalea trees.
+	#When true: Azalea trees use Bits and Balance azalea logs
+	#When false: The loaded azalea tree provider is left unchanged for compatibility with other mods and datapacks
+	#Changes take effect after a server restart.
+	enableAzaleaWoodGeneration = false
+
+#Ore Variants Features
+[oreVariants]
+	#Enable ore variants (andesite, diorite, granite, tuff variants for all vanilla ores).
+	#When enabled:
+	#  - Ore variant blocks are registered and available
+	#  - Ore variants will replace vanilla ores in world generation when touching variant stone types
+	#When disabled:
+	#  - Ore variant blocks are hidden from creative tabs
+	#  - No ore replacement occurs during world generation
+	#Requires restart.
+	enableOreVariants = false
+
+#Vein Features
+[netherGoldVeins]
+	#Enable nether gold vein generation in the Nether.
+	#When enabled: Large nether gold ore deposits will generate
+	#When disabled: No nether gold veins will generate
+	#Note: Affects new chunk generation only.
+	enableNetherGoldVeins = false
+
+#Vein Features
+[netherQuartzVeins]
+	#Enable nether quartz vein generation in the Nether.
+	#When enabled: Large nether quartz ore deposits will generate
+	#When disabled: No nether quartz veins will generate
+	#Note: Affects new chunk generation only.
+	enableNetherQuartzVeins = false
+	#Enable raw quartz block placement inside nether quartz veins.
+	#When enabled: Quartz veins may include bitsandbalance:raw_quartz_block pockets
+	#When disabled: Quartz veins will never place bitsandbalance:raw_quartz_block (veins still generate quartz ore)
+	#Note: Affects new chunk generation only.
+	enableRawQuartzBlockInQuartzVeins = false
+
+#Raw Quartz Block
+[rawQuartzBlock]
+	#Master toggle for the Block of Raw Quartz.
+	#When disabled: Raw Quartz Block will not be placed in any worldgen (overrides enableRawQuartzBlockInQuartzVeins).
+	#Note: Affects new chunk generation only.
+	enabled = false
+
+#Vein Features
+[coalAndesiteVeins]
+	#Enable Mojang-style shallow coal+andesite veins (OreVeinifier-style).
+	#When enabled: Large deposits of andesite with coal ore will generate
+	#When disabled: No coal+andesite veins will generate
+	#Note: Affects new chunk generation only.
+	enableCoalAndesiteVeins = false
+	#Enable Mojang-style deep coal veins (OreVeinifier-style).
+	#When enabled: Deep underground will contain a deepslate-biased 65/35 mix of deepslate and tuff filler, mixed tuff_coal_ore and deepslate_coal_ore, plus occasional coal-block pockets
+	#When disabled: No deep coal+tuff veins will generate
+	#Note: Affects new chunk generation only.
+	enableCoalTuffVeins = false
+	#Enable verbose debug logging for vein generation.
+	#When enabled: Emits additional INFO logs from the Mojang-style coal vein wrapper.
+	#When disabled: Suppresses those logs.
+	debugVeins = false
+
+#Nether Features
+[nether]
+	#Disable random Nether lava springs (single lava source blocks in terrain).
+	#When true: Vanilla lava spring placed features are suppressed.
+	#When false: Vanilla behavior.
+	#Note: Affects new chunk generation only.
+	disableNetherLavaSprings = false
+	#When disableNetherLavaSprings=true, keep any lava spring placement that is exposed to air on at least one side.
+	#When true: Only hidden/enclosed lava springs are suppressed.
+	#When false: All nether lava springs are suppressed.
+	keepExposedNetherLavaSprings = false

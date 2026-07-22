@@ -1,0 +1,238 @@
+#Client
+[client]
+
+	#Night Vision Improvement
+	[client.nightVision]
+		#Enable Night Vision fadeout instead of vanilla blinking.
+		enableNightVisionFade = false
+		#Seconds over which Night Vision should fade out before expiring.
+		# Default: 10
+		# Range: 1 ~ 30
+		nightVisionFadeSeconds = 10
+
+	#See Held Item
+	[client.seeHeldItem]
+		#Show your held item in first-person while riding entities (e.g., boats).
+		enableShowHeldItemWhenRiding = true
+
+	#Elder Guardian Appearance
+	[client.guardian]
+		#Disable the Elder Guardian appearance effect when Mining Fatigue is inflicted.
+		disableGuardianJumpscare = false
+		#If true, still plays the normal Elder Guardian Mining Fatigue sound while the appearance effect is suppressed.
+		playGuardianJumpscareSound = true
+
+	#Auto Walk / Controls
+	[client.autoWalk]
+		#Enable the Auto Walk keybind to toggle forward walking (enables Auto Jump while active).
+		enableAutoWalkKey = false
+
+	#Experience / Sounds
+	[client.experience]
+		#Enable the long/old level-up sound when reaching level 30.
+		enableLevel30OldSound = false
+
+	#Screenshots
+	[client.screenshots]
+		#Copy successful in-game screenshots to the system clipboard and show a client-only confirmation message.
+		enableScreenshotsToClipboard = false
+
+	#Custom Splash Text
+	[client.splashText]
+		#Enable custom splash texts to randomly appear on the title screen.
+		enableCustomSplashTexts = false
+		#How many times to add each custom splash text to increase appearance odds. Higher = more likely to appear.
+		# Default: 2
+		# Range: 1 ~ 10
+		customSplashMultiplier = 2
+
+	#Performance
+	[client.performance]
+		#Uncap FPS on the title screen and pause/menu screens (uses Minecraft's built-in Unlimited value).
+		enableUncapMenuFps = true
+
+	#World / Experimental Warnings
+	[client.worldWarnings]
+		#Suppress experimental settings warnings when creating/loading worlds.
+		suppressExperimentalSettingsWarning = true
+
+	#Log Filtering
+	[client.logFiltering]
+		#Suppress "Detected setBlock in a far chunk" error spam from worldgen features.
+		suppressFarChunkErrors = true
+		#Suppress stale recipe-book warnings for recipes that no longer exist in the current world/modpack.
+		suppressRemovedRecipeBookWarnings = true
+
+	#Biome Titles
+	[client.biomeTitles]
+		#Display a title when entering a new biome (suppressed for recently entered biomes).
+		enabled = false
+		#Suppress Biome Titles while the server reports the player inside a generated structure.
+		suppressInStructures = true
+		#How many recently entered biomes are remembered (re-entering one will not re-display the title).
+		# Default: 7
+		# Range: 1 ~ 50
+		recentSize = 7
+		#Seconds to keep the title fully visible (not counting fade in/out).
+		# Default: 3
+		# Range: 0 ~ 30
+		showSeconds = 3
+		#Seconds to fade in and fade out.
+		# Default: 1
+		# Range: 0 ~ 10
+		fadeSeconds = 1
+		#Text scale for the biome title.
+		# Default: 2.0
+		# Range: 0.5 ~ 3.0
+		scale = 2.0
+		#Which line to use: 'title' or 'subtitle'.
+		slot = "subtitle"
+		#Blacklist of biome IDs that should never display a Biome Title (resource locations).
+		#Biome tags are supported by prefixing with '#'.
+		#Examples: 'minecraft:river', '#minecraft:is_ocean'.
+		#Default disables common tiny transition biomes (rivers/beaches).
+		blacklist = ["#minecraft:is_river", "minecraft:river", "minecraft:frozen_river", "minecraft:beach", "minecraft:snowy_beach", "minecraft:stony_shore"]
+		#Horizontal offset from screen center (pixels).
+		# Default: 0
+		# Range: -400 ~ 400
+		offsetX = 0
+		#Vertical offset from the default title position (pixels).
+		# Default: 0
+		# Range: -400 ~ 400
+		offsetY = 0
+		#Render the biome title with a text shadow.
+		shadow = true
+
+	#Soul Fire Overlay
+	[client.soulFireOverlay]
+		#Render blue soul-fire overlay when burning from soul fire/campfires.
+		enabled = true
+		#Use blue soul-fire flame particles for lit candles placed on soul sand or soul soil.
+		candleFlames = true
+
+	#Biome Item Tinting
+	[client.biomeItemTint]
+		#If true, block items can use biome-aware tinting from their real block color provider or fallback source.
+		enabled = false
+		#If true, automatically targets biome-sensitive foliage and grass-like block items, then only falls back to heuristics when the real block color provider returns no color.
+		autoDetect = true
+		#Optional whitelist of extra biome-sensitive modded items that auto-detect misses.
+		#Also used as the full manual whitelist when autoDetect is false.
+		#Examples: 'minecraft:grass_block', 'examplemod:blue_maple_leaves'.
+		whitelist = []
+		#Optional override list of block/item IDs that should force biome grass fallback when the real block color provider returns no color.
+		grassFallbackItems = []
+		#Optional override list of block/item IDs that should force biome foliage fallback when the real block color provider returns no color.
+		foliageFallbackItems = ["wilderwild:baobab_leaves", "wilderwild:cypress_leaves", "wilderwild:willow_leaves", "wilderwild:palm_fronds"]
+		#Blacklist of block/item IDs that should never be biome-tinted, even when auto-detected.
+		#Examples: 'minecraft:dead_bush', 'minecraft:sugar_cane'.
+		blacklist = ["minecraft:sugar_cane", "minecraft:firefly_bush", "minecraft:short_dry_grass", "minecraft:tall_dry_grass", "wilderwild:frozen_short_grass", "wilderwild:frozen_tall_grass", "wilderwild:frozen_fern", "wilderwild:frozen_large_fern", "minecraft:dead_bush", "wilderwild:frozen_bush"]
+
+	#Leaf Litter / Leaf Pile Tint
+	[client.leafLitterTint]
+		#Tint leaf litter (minecraft:leaf_litter) and leaf pile blocks using biome colors.
+		enabled = false
+		#Which biome color to use: 'foliage' or 'grass'.
+		source = "foliage"
+		#Clamp the resulting tint color into an allowed range (global and/or per-biome).
+		clampEnabled = false
+		#Global minimum allowed color as hex (e.g. '#203020'). Empty disables global minimum.
+		globalMinColor = ""
+		#Global maximum allowed color as hex (e.g. '#80A080'). Empty disables global maximum.
+		globalMaxColor = ""
+		#Per-biome clamp ranges. Format: <biome>=<minHex>-<maxHex>
+		#Example: 'minecraft:swamp=#203020-#4E7A4E'
+		#Biome tags are supported by prefixing with '#'.
+		#Example tag: '#minecraft:is_overworld=#203020-#80A080'
+		#If a biome entry is present, it overrides the global clamp for that biome.
+		biomeRanges = []
+
+	#Chat Heads
+	[client.chatHeads]
+		#Display player skin faces before usernames in chat.
+		enableChatHeads = false
+		#Size of the player head icon in pixels.
+		# Default: 8
+		# Range: 4 ~ 16
+		chatHeadSize = 8
+		#Horizontal offset for the chat head from the message start (in pixels).
+		# Default: 0
+		# Range: -10 ~ 10
+		chatHeadOffset = 0
+		#Vertical offset for the chat head from the default position (in pixels).
+		# Default: 0
+		# Range: -10 ~ 10
+		chatHeadOffsetY = 0
+		#Render chat heads with a subtle shaded depth effect, similar to text shadow.
+		chatHeadsShadow = false
+
+	#Keybind Modifiers - Configure modifier keys (Shift, Alt, Ctrl) for various keybinds
+	[client.keybindModifiers]
+		#Require Shift to be held when pressing the Item Share keybind.
+		itemShareRequireShift = false
+		#Require Alt to be held when pressing the Item Share keybind.
+		itemShareRequireAlt = false
+		#Require Ctrl to be held when pressing the Item Share keybind.
+		itemShareRequireCtrl = false
+
+	#Usage Ticker
+	[client.usageTicker]
+		#Enable the Usage Ticker overlay that shows item counts in your inventory.
+		enabled = false
+		#Show armor slots in the Usage Ticker overlay. [WIP - Currently buggy]
+		showArmorSlots = false
+		#Invert the display order of the Usage Ticker overlay.
+		invert = false
+		#Horizontal offset for the Usage Ticker overlay (in pixels).
+		# Default: 0
+		# Range: -200 ~ 200
+		offsetX = 0
+		#Vertical offset for the Usage Ticker overlay (in pixels).
+		# Default: 0
+		# Range: -200 ~ 200
+		offsetY = 0
+		#Horizontal offset for armor slots in the Usage Ticker overlay (in pixels).
+		# Default: 0
+		# Range: -200 ~ 200
+		armorOffsetX = 0
+		#Vertical offset for armor slots in the Usage Ticker overlay (in pixels).
+		# Default: 0
+		# Range: -200 ~ 200
+		armorOffsetY = 0
+		#Enable debug messages for the Usage Ticker (useful for troubleshooting).
+		debug = false
+
+		#Armor Animation Settings
+		[client.usageTicker.armorAnimation]
+			#Starting Y position for helmet animation (pixels below screen bottom).
+			# Default: 50
+			# Range: 0 ~ 200
+			helmetStartY = 50
+			#Ending Y position for helmet animation (pixels above screen bottom).
+			# Default: 24
+			# Range: 0 ~ 200
+			helmetEndY = 24
+			#Starting Y position for chestplate animation (pixels below screen bottom).
+			# Default: 50
+			# Range: 0 ~ 200
+			chestplateStartY = 50
+			#Ending Y position for chestplate animation (pixels above screen bottom).
+			# Default: 24
+			# Range: 0 ~ 200
+			chestplateEndY = 24
+			#Starting Y position for leggings animation (pixels below screen bottom).
+			# Default: 50
+			# Range: 0 ~ 200
+			leggingsStartY = 50
+			#Ending Y position for leggings animation (pixels above screen bottom).
+			# Default: 24
+			# Range: 0 ~ 200
+			leggingsEndY = 24
+			#Starting Y position for boots animation (pixels below screen bottom).
+			# Default: 50
+			# Range: 0 ~ 200
+			bootsStartY = 50
+			#Ending Y position for boots animation (pixels above screen bottom).
+			# Default: 24
+			# Range: 0 ~ 200
+			bootsEndY = 24

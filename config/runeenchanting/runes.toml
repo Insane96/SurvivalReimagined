@@ -233,7 +233,7 @@
 	"Max Damage" = 2.0
 	# Default: 0.2
 	# Range: 0.0 ~ 1.0
-	Chance = 0.2
+	Chance = 0.25
 
 [magnetic]
 	# Default: 4.0
@@ -373,7 +373,7 @@
 [lure]
 	# Default: 15.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Seconds Reduction" = 15.0
+	"Seconds Reduction" = 12.0
 
 [juicy_bait]
 	# Default: 0.15
@@ -414,7 +414,7 @@
 	#Fraction of each durability damage point ignored when raining
 	# Default: 0.667
 	# Range: 0.0 ~ 1.0
-	"Rain Durability Reduction" = 0.667
+	"Rain Durability Reduction" = 0.75
 
 [curse_of_blood_pact]
 	# Default: 0.1
