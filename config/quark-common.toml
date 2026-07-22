@@ -599,7 +599,7 @@
 	[tweaks.enhanced_ladders]
 		#Allowed values: (,0]
 		"Fall Speed" = 0.0
-		"Allow Freestanding" = false
+		"Allow Freestanding" = true
 		"Allow Dropping Down" = true
 		"Allow Sliding" = false
 		"Allow Inventory Sneak" = false
