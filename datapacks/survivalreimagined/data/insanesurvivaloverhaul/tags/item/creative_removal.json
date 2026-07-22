@@ -1,6 +1,7 @@
 {
     "values": [
         "minecraft:hopper",
+        "minecraft:hopper_minecart",
         "minecraft:crafter",
         "minecraft:observer"
     ]
