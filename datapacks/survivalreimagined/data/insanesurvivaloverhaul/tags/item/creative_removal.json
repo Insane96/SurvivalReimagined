@@ -3,6 +3,7 @@
         "minecraft:hopper",
         "minecraft:hopper_minecart",
         "minecraft:crafter",
-        "minecraft:observer"
+        "minecraft:observer",
+        "hangglider:reinforced_hang_glider"
     ]
 }
