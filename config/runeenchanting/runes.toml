@@ -18,18 +18,22 @@
 	# Default: 4
 	# Range: 1 ~ 256
 	"Max Blocks" = 4
+	#Mining speed multiplier
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	"Mining Speed Penalty" = 0.3
 
 [blasting]
 	#Percentage bonus mining speed
 	# Default: 2.5
 	# Range: 0.0 ~ 1.7976931348623157E308
-	"Bonus Mining Speed" = 2.5
+	"Max Bonus Mining Speed" = 2.5
 
 [dwarfing]
 	#Percentage bonus mining speed
 	# Default: 2.5
 	# Range: 0.0 ~ 1.7976931348623157E308
-	"Bonus Mining Speed" = 2.5
+	"Max Bonus Mining Speed" = 2.5
 
 [luck]
 	#This rune mimics Fortune, Looting and Luck of the Sea of this level
@@ -108,9 +112,10 @@
 	"Bonus Attack Speed" = 0.3
 
 [air_stealer]
-	# Default: 40
-	# Range: > 1
-	"Ticks Stolen" = 40
+	#This scales based off attack speed
+	# Default: 2.0
+	# Range: 1.0 ~ 1.7976931348623157E308
+	"Seconds Stolen" = 2.0
 
 [explosive]
 	# Default: 0.7
@@ -231,7 +236,7 @@
 	# Default: 2.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	"Max Damage" = 2.0
-	# Default: 0.2
+	# Default: 0.25
 	# Range: 0.0 ~ 1.0
 	Chance = 0.25
 
@@ -278,14 +283,14 @@
 	"Bonus Invulnerability" = 10
 
 [fire_guardian]
-	#Duration of the fire resistance effect in ticks
-	# Default: 300
-	# Range: > -2147483648
-	"Fire Duration" = 300
-	#Cooldown between activations in ticks
-	# Default: 600
-	# Range: > -2147483648
+	#Cooldown between activations in seconds
+	# Default: 45.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	Cooldown = 600
+	#Duration of the fire resistance effect in seconds
+	# Default: 15.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Resistance Duration" = 15.0
 
 [absorbing]
 	#Chance to completely nullify incoming direct damage
@@ -313,7 +318,7 @@
 [retreat]
 	# Default: 0.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Bonus Movement Speed" = 0.5
+	"Max Bonus Movement Speed" = 0.5
 
 [feather_falling]
 	# Default: 0.75
@@ -371,7 +376,7 @@
 	"Enchantment Level Equivalent" = 3
 
 [lure]
-	# Default: 15.0
+	# Default: 12.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Seconds Reduction" = 12.0
 
@@ -403,18 +408,18 @@
 	"Bonus Durability Flat" = 80
 
 [atmospheric]
+	#Fraction of each durability damage point ignored when raining
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
+	"Rain Durability Reduction" = 0.75
 	#Bonus mining speed relative to tool speed at full sunlight (Light level 12+)
 	# Default: 1.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Mining Speed Multiplier" = 1.5
+	"Max Mining Speed Multiplier" = 1.5
 	#Attack speed bonus (ADD_MULTIPLIED_BASE) at full moonlight (Light level 12+)
 	# Default: 0.25
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Attack Speed Bonus" = 0.25
-	#Fraction of each durability damage point ignored when raining
-	# Default: 0.667
-	# Range: 0.0 ~ 1.0
-	"Rain Durability Reduction" = 0.75
+	"Max Attack Speed Bonus" = 0.25
 
 [curse_of_blood_pact]
 	# Default: 0.1
@@ -518,3 +523,9 @@
 	# Default: 3
 	# Range: > -2147483648
 	"Armor Damage" = 3
+
+[tunneling]
+	#Mining speed multiplier
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	"Mining Speed Penalty" = 0.4
