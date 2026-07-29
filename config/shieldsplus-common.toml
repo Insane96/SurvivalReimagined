@@ -25,6 +25,10 @@
 	# Default: 0.35
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Block with crouch exposure" = 0.35
+	#The total width (in degrees) of the frontal arc in which attacks can be blocked with a shield. Vanilla is 180 (i.e. 90 degrees either side of where you're looking).
+	# Default: 100.0
+	# Range: 0.0 ~ 360.0
+	"Blocking angle" = 100.0
 
 	["S p".Parry]
 		#How many seconds after lifting a shield to make a parry count as such

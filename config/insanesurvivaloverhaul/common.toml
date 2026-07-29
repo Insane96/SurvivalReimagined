@@ -34,7 +34,7 @@
 		#Set the drop chance for mobs equipment when spawned from spawners.
 		# Default: 0.2
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Drop chance from spawners" = 0.2
+		"Drop chance from spawners" = 0.05
 		#Max durability of items dropped by mobs. This also fixes https://bugs.mojang.com/browse/MC-136374. Setting to 0 will disable this feature.
 		# Default: 0.6
 		# Range: 0.0 ~ 1.0
@@ -115,7 +115,7 @@
 		#Phantoms will no longer spawn based on insomnia, but instead based off tiredness. Will spawn with Tired III.
 		"Tired tied phantoms" = true
 		"Allow sleeping even when not tired" = false
-		#If true, sets the playersSleepingPercentage gamerule to 1 so tired players can sleep no matter how many players on a server.
+		#If true, sets the playersSleepingPercentage game rule to 1 so tired players can sleep no matter how many players on a server.
 		"Force one player sleep" = true
 
 		[Sleep.Tiredness."Energy boost"]
@@ -149,6 +149,16 @@
 				# Default: 6.0
 				# Range: 0.0 ~ 1.7976931348623157E308
 				Maximum = 6.0
+
+		[Sleep.Tiredness."Time skipped on sleep"]
+			#Time skipped in ticks on sleep with Tired I. Vanilla day lasts 24000 ticks.
+			# Default: 9000
+			# Range: > 0
+			Base = 9000
+			#Time skipped in ticks on sleep added with higher levels of Tired. Vanilla day lasts 24000 ticks.
+			# Default: 3000
+			# Range: > 0
+			"Per level past one" = 3000
 
 [Farming]
 	#Increase uses for bone meal and nerf its use on some plants
