@@ -227,7 +227,7 @@
 [healthy]
 	# Default: 4.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Bonus Health" = 4.0
+	"Bonus Health" = 2.0
 
 [thorns]
 	# Default: 1.0

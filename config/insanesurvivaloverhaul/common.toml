@@ -29,11 +29,11 @@
 	[Mobs.Equipment]
 		#Set the drop chance for mobs equipment.
 		# Default: 0.5
-		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		# Range: 0.0 ~ 2.0
 		"Drop chance" = 0.5
 		#Set the drop chance for mobs equipment when spawned from spawners.
-		# Default: 0.2
-		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		# Default: 0.05
+		# Range: 0.0 ~ 2.0
 		"Drop chance from spawners" = 0.05
 		#Max durability of items dropped by mobs. This also fixes https://bugs.mojang.com/browse/MC-136374. Setting to 0 will disable this feature.
 		# Default: 0.6

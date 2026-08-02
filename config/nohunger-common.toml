@@ -1,0 +1,48 @@
+["No hunger"]
+	#If true, Hunger effect is replaced by Weakness
+	"Convert hunger to weakness" = true
+	#If true, Saturation effect is replaced by Haste
+	"Convert saturation to haste" = true
+	#If true, you'll always be able to eat even if you're at full health
+	"Always eat" = false
+	#(Client Only) Armor is rendered in the place of Hunger bar
+	"Render armor at hunger" = true
+
+	["No hunger"."Food heal"]
+		#The formula to calculate the health regenerated overtime when eating food. Leave empty to disable. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
+		"Over time" = "nutrition"
+		#How much HP does food regen each second? Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html
+		"Over time strength" = "MAX(0.15, 0.25 * saturation * (1 / nutrition))"
+		#Over Time Heal will be consumed at the rate of exhaustion multiplied by this
+		# Default: 0.02
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Over time decay" = 0.02
+		#The formula to calculate the health restored instantly when eating. Leave empty to disable. To have the same effect as pre-Beta 1.8 food just use "hunger". Variables as nutrition, saturation, eat_seconds as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
+		"Instant heal" = "0.5 * ROUND((nutrition^1.3) * 0.35, 1) / 0.5"
+		#Foods below this saturation will instantly heal, foods equal or above this threshold will have overtime heal.
+		# Default: 4.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Saturation threshold" = 4.0
+
+	["No hunger".Cakes]
+		#Make cakes restore this % missing health, min 'Min Heal' health. Set to 0 to heal like other foods.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		"Percentage heal" = 0.5
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Min heal" = 2.0
+		#If true, cakes will heal overtime, otherwise will instantly heal.
+		"Heal over time" = true
+
+	["No hunger"."Food tooltip"]
+		#(Client Only) If enabled, Foods will show "Snack" or "Nosh" when the food instantly heals and "Meal" or "Feast" when the food heals over time. If advanced tooltips are enabled, the food will show how much it restores
+		Enabled = true
+		#Above how much health restored food tooltip will show Nosh instead of Snack
+		# Default: 1.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Nosh threshold" = 1.0
+		#Above how much health restored food tooltip will show Feast instead of Meal
+		# Default: 7.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Feast threshold" = 7.0

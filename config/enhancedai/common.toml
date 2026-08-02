@@ -56,8 +56,6 @@
 	"Enable Air steal" = true
 	#Makes mobs be able to leap over a few blocks. Only entity types in the `enhancedai:mobs/can_parkour` tag can leap.
 	"Enable Parkour" = false
-	#Makes mobs panic when on fire.
-	"Enable Panic" = true
 	#Allows mobs to break vehicles to escape.
 	"Enable Anti-Cheese" = true
 	#Makes mobs pick up targets to drown them. Only entity types in the enhancedai:mobs/drowning_targets tag are affected by this feature.
@@ -84,6 +82,12 @@
 	"Enable Falling shockwave" = false
 	#Mobs can bite if are attacked with non-weapons. Only mobs in the enhancedai:mobs/biting_mobs/can_bite entity type tag can bite. Entity types in `mobs/biting_mobs/unaffected_by_bite` tag are unaffected by bites. Damage types in `biting_mobs/doesnt_trigger_bite` tag don't trigger biting mobs.
 	"Enable Biting mobs" = true
+	#Makes mobs panic when on fire.
+	"Enable Panic on fire" = true
+	#Mobs with this feature enabled will move back to the position they spawned in if getting too far away from it.
+	"Enable Patrol" = true
+	#Increases the distance of the leap based off the current delta movement.
+	"Enable Better leap at target goal" = true
 
 	#Gives mobs a chance to negate damage when equipped with a shield. Only entity types in `enhancedai:mobs/can_equip_shield` tag will be equipped a shield.
 	[Mobs.Shielding]
@@ -399,13 +403,6 @@
 		# Range: 0 ~ 128
 		"Stolen ticks" = 40
 
-	#Makes mobs panic when on fire.
-	[Mobs.Panic]
-		#Chance for a mob to get the panic on fire AI
-		# Default: 0.8
-		# Range: 0.0 ~ 1.0
-		Chance = 0.8
-
 	#Allows mobs to break vehicles to escape.
 	[Mobs.Anti-Cheese]
 		#If true, entity types in the enhancedai:vehicle_anti_cheese/prevent_riding tag will not be able to mount vehicles in `enhancedai:mobs/vehicle_anti_cheese/valid_vehicles`.
@@ -654,6 +651,30 @@
 			# Default: 0.3
 			# Range: 0.0 ~ 1.0
 			Hard = 0.3
+
+	#Makes mobs panic when on fire.
+	[Mobs."Panic on fire"]
+		#Chance for a mob to get the panic on fire AI
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		Chance = 0.8
+
+	#Mobs with this feature enabled will move back to the position they spawned in if getting too far away from it.
+	[Mobs.Patrol]
+		# Default: 32.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		Range = 32.0
+
+	#Increases the distance of the leap based off the current delta movement.
+	[Mobs."Better leap at target goal"]
+		#Vanilla is 0.4
+		# Default: 0.4
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Distance speed multiplier" = 0.4
+		#Vanilla is 0.2
+		# Default: 0.6
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Delta movement speed multiplier" = 0.6
 
 [Skeletons]
 	#Skeletons try to stay away from the target. Only entity types in `enhancedai:skeleton/can_flee` tag are affected by this feature. This disables itself if Skeleton Shoot feature is disabled
