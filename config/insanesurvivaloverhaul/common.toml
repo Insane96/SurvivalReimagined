@@ -342,7 +342,7 @@
 
 	[Movement.Minecarts]
 		#If true, minecarts with entities in them and chest minecarts will force load chunks, allowing them to travel in unloaded chunks. It's advised to not leave too many minecarts with entities and with chests lying around, as they will keep chunks loaded.
-		"Entity and chest minecarts force load chunks" = true
+		"Entity and chest minecarts force load chunks" = false
 		#If true, enables a data pack that makes rails cheaper and adds recipes for new rail. Also adds a global loot modifier that replaces vanilla rails with golden powered rails
 		"Data pack" = true
 
