@@ -5,6 +5,32 @@
       "name": "Insane96MCP",
       "uniqueId": "9a8b1833-adba-418a-bde6-07c0e8572120"
     },
+    "time": 1785917415473,
+    "type": "Heap dump",
+    "data": {
+      "type": "file",
+      "value": "D:\\Giochi\\Minecraft\\Apps\\CurseForge\\Instances\\SurvivalReimagined4\\config\\spark\\heap-2026-08-05_10.10.11.hprof"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Insane96MCP",
+      "uniqueId": "9a8b1833-adba-418a-bde6-07c0e8572120"
+    },
+    "time": 1785917147532,
+    "type": "Heap dump summary",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/bPq1tsnnuI"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Insane96MCP",
+      "uniqueId": "9a8b1833-adba-418a-bde6-07c0e8572120"
+    },
     "time": 1784819795802,
     "type": "Heap dump summary",
     "data": {

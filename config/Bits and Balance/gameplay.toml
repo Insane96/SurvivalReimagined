@@ -776,6 +776,14 @@
 		mobsEnabled = true
 		#Mob entity ids whose fired tipped arrows should not create lingering clouds. Examples: 'minecraft:skeleton', 'minecraft:stray'.
 		disabledMobIds = []
+		#Starting radius of lingering clouds created by player-fired and non-mob tipped arrows.
+		# Default: 3.0
+		# Range: 0.5 ~ 32.0
+		playerRadius = 3.0
+		#Starting radius of lingering clouds created by mob-fired tipped arrows.
+		# Default: 1.5
+		# Range: 0.5 ~ 32.0
+		mobRadius = 3.0
 
 	#Speedy Happy Ghasts
 	[tweaks.speedyHappyGhasts]

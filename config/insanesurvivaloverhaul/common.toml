@@ -90,6 +90,10 @@
 		#* Chainmail armor is made craftable with Cloth and chains
 		#* Adds advancements for this feature and moves vanilla beds advancements to cloth advancement
 		"Data pack" = true
+		#Enables a data pack that changes Shulker Boxes recipe to use cloth and chests instead of shulker shells, and shulkers will drop Shulker Boxes directly instead of shells.
+		"Early game shulker boxes" = true
+		#Enables a resource pack that renames Shulker Boxes to Sack
+		"Rename shulker box to sack" = true
 
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	[Sleep.Tiredness]
@@ -438,7 +442,7 @@
 		#If true, monsters from spawners will spawn no matter the light level.
 		"Ignore light" = true
 		#If true, disabled spawners can be re-enabled with a spawner reactivator item defined in the `insanesurvivaloverhaul:spawner_reactivator` item tag. These items get a new tooltip mentioning that they can be used to re-enable spawners.
-		"Re-enable with Spawner Reactivator" = true
+		"Re-enable with Spawner Reactivator" = false
 		#If enabled, spawner will play a sound effect when spawning mobs
 		"Spawning sound effect" = true
 
@@ -572,9 +576,9 @@
 			#If true, two flints (on per hand) can start a fire
 			Enabled = true
 			#Chance to ignite a block when using two flints
-			# Default: 0.35
+			# Default: 0.4
 			# Range: 0.0 ~ 1.0
-			"Ignite chance" = 0.35
+			"Ignite chance" = 0.4
 			#Chance for the flint to break when using two flints
 			# Default: 0.3
 			# Range: 0.0 ~ 1.0
@@ -730,7 +734,7 @@
 	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
 	"Enable Stone tools gone" = true
 	#A new item that can let you carry more stuff around.
-	"Enable Pouch" = true
+	"Enable Pouch" = false
 	#Wooden items have bonuses when used in sunlight.
 	"Enable Ecologic wood" = false
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
@@ -844,6 +848,8 @@
 		"Armor rework data pack" = true
 		#Enables a data pack that reworks tools and weapons.
 		"Tools and weapons data pack" = true
+		#If true, tridents damage will be calculated based off the item thrown, instead of a fixed 8
+		"Thrown trident item based damage" = true
 
 	#This feature disables itself if Shields+ is installed
 	[Combat.Shields]
@@ -975,10 +981,13 @@
 		"Projectile knockback" = 0.7
 
 [Death]
-	#Makes you lose a percentage of items and durability on death. Controlled via game rules. Items percentage lost can be configured with the insanesurvivaloverhaul:death_lose_items_percentage, insanesurvivaloverhaul:death_durability_penalty and insanesurvivaloverhaul:death_destroy_items game rules. insanesurvivaloverhaul:death_experience_lost for the percentage of experience dropped and insanesurvivaloverhaul:death_destroy_experience if the experience should be dropped or destroyed. Please note that this feature controls the vanilla keep_inventory game rule.
-	"Enable Death penalty" = true
+	#Makes you lose a percentage of items and durability and xp on death. By default the game rules are all set to 0. Controlled via game rules.
+	#Items percentage lost can be configured with the insanesurvivaloverhaul:death_lose_items_percentage, insanesurvivaloverhaul:death_durability_penalty and insanesurvivaloverhaul:death_destroy_items game rules.
+	# insanesurvivaloverhaul:death_experience_lost for the percentage of experience dropped and insanesurvivaloverhaul:death_destroy_experience if the experience should be dropped or destroyed.
+	#Please note that this feature controls the vanilla keep_inventory game rule.
+	"Enable Death penalty" = false
 	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
-	"Enable Echo pillar" = true
+	"Enable Echo pillar" = false
 	#Health and hunger penalties on respawn
 	"Enable Respawn penalties" = true
 	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Disabled by default via insanesurvivaloverhaul:do_loose_respawn game rule.
@@ -987,6 +996,9 @@
 	"Enable Player killer bounty" = true
 	#Gives the player the Ghostly effect on respawn, making you really hard to see for mobs.
 	"Enable Ghostly" = true
+	#Makes players lose max health on death and adds a new item to gain them back.
+	#Controlled via the insanesurvivaloverhaul:death_health_lost game rule.
+	"Enable Max health death penalty" = true
 
 	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
 	[Death."Echo pillar"]
@@ -1291,13 +1303,16 @@
 		"Hardcore torches" = true
 		#Minor changes:
 		#* Cakes now drop when broken and not eaten
-		#* Dark Prismarine is made easier
 		#* Clay balls can be crafted from blocks
 		#* Leads and Sticky Pistons can also be made with Honey
 		#* Iron Doors can be blasted back to Iron Ingots
 		#* Dispensers can be made from droppers
 		#* Levers and glass can now be broken faster with pickaxes, cactus with hoes
 		#* Chains are easier to craft with just nuggets
+		#* Wool can be crafted back to strings
+		#* Carpets, Bricks, Banners, Targets and Tnt recipes now outputs more
+		#* Tnt recipe now also accepts paper instead of sand
+		#* Moss carpets can be crafted back to moss blocks
 		"Misc tweaks" = true
 		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc).
 		"Actual redstone components" = true
@@ -1307,6 +1322,13 @@
 		"Dark forest vegetation" = true
 		#If true, a data pack will be enabled that makes End Cities more common.
 		"Increase end cities" = true
+		#Reworks Prismarine, Dark Prismarine and Sea Lantern recipes to no longer need Prismarine Shards/Crystals:
+		#* Prismarine is now made with Copper and Calcite
+		#* Dark Prismarine is made easier, out of Prismarine blocks instead of shards
+		#* Sea Lantern is now made out of Prismarine and Glowstone Dust
+		#Guardians no longer drop Prismarine Shards/Crystals (they drop Wet Sponge and (Cooked) Cod instead), Elder Guardians roll the fishing loot table instead, and Sea Lanterns always drop themselves when broken.
+		#Any leftover Prismarine Shard drop from other sources is replaced with 40% as many Turtle Scutes, and any leftover Prismarine Crystals drop is replaced with 40% as many Nautilus Shells.
+		"Prismarine rework" = true
 
 	#Various Nerfs
 	[Misc.Nerfs]

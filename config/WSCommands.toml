@@ -1,12 +1,12 @@
 [1]
+	#list of all the commands to run, in order
+	Commands = ["gamerule maxEntityCramming 6", "gamerule doPatrolSpawning false", "gamerule doTraderSpawning true", "gamerule mobExplosionDropDecay false", "gamerule snowAccumulationHeight 1", "gamerule commandBlockOutput false", "gamerule playersNetherPortalDefaultDelay 40", "gamerule randomTickSpeed 1", "gamerule insanesurvivaloverhaul:death_durability_penalty 0", "gamerule insanesurvivaloverhaul:death_experience_lost 0", "gamerule insanesurvivaloverhaul:death_lose_items_percentage 0", "gamerule keepInventory true"]
 	#If true, commands will run each time the world is joined instead of just once
-	Repeat = true
+	Repeat = false
 	#If true, commands will run for each player instead of just for the first join
 	DedicatedMode = false
 	#If true, commands will only run if the game is fully restarted
 	OnFullRestart = false
-	#list of all the commands to run, in order
-	Commands = ["gamerule maxEntityCramming 6", "gamerule doPatrolSpawning false", "gamerule doTraderSpawning true", "gamerule mobExplosionDropDecay false", "gamerule snowAccumulationHeight 1", "gamerule commandBlockOutput false", "gamerule playersNetherPortalDefaultDelay 40", "gamerule randomTickSpeed 1", "gamerule insanesurvivaloverhaul:death_durability_penalty 0", "gamerule insanesurvivaloverhaul:death_experience_lost 0", "gamerule insanesurvivaloverhaul:death_lose_items_percentage 0"]
 
 [2]
 	#this new set of commands uses different settings from the other 2 and will run second
