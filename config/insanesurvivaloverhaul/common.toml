@@ -631,13 +631,13 @@
 		#How much exhaustion is given to the player when jumps and it's sprinting. Vanilla is 0.2
 		# Default: 2.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		"Jump exhaustion sprint" = 2
+		"Jump exhaustion sprint" = 0.2
 		#When affected by the hunger effect, exhaustion will be doubled per level of the effect. Requires Minecraft restart.
 		"Effective hunger" = true
 		#How much exhaustion is given to the player when sprinting per block traveled. Vanilla is 0.1
 		# Default: 0.5
 		# Range: 0.0 ~ 1.7976931348623157E308
-		"Sprint exhaustion" = 0.5
+		"Sprint exhaustion" = 0.1
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	["Hunger & Health"."Foods & Drinks"]
