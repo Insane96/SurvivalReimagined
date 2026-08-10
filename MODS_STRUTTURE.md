@@ -236,6 +236,27 @@ Non toccate: le 6 loot table mancanti (casse vuote in Bone/Sculk Dungeon, Nether
 
 ---
 
+## 🧭 Strutture vanilla — cosa è disattivato/modificato, e fix applicato
+
+Controllato ogni `structure_set` vanilla ridefinito da una mod (non solo quelli che c'entrano con le mod strutturali già elencate sopra), cercando in particolare `"structures": []` (liste vuote = struttura disattivata).
+
+- **Villaggi e Avamposti Pillager: disattivati.** Il pacchetto integrato `disable_long_noses` di InsaneSurvivalOverhaul (`"Disable long noses structures" = true`) svuota `minecraft:villages` e `minecraft:pillager_outposts` con `"structures": []` — non generano mai (già documentato sopra per Sawmill/Incubation).
+- **Nessun'altra struttura vanilla è disattivata.** Controllato specificamente in `insanesurvivaloverhaul` per buried treasure, ruined portal, trail ruins, trial chambers, nether fossil, bastion, igloo, ocean ruins, pozzo del deserto: nessun toggle, nessuna menzione.
+- **Città di Fine (End City): AUMENTATE, non ridotte.** Altro pacchetto integrato di ISO, `increased_end_cities` (`"Increase end cities" = true`, attivo): spacing passa da 20/11 (vanilla) a 11/7 — città di fine molto più dense.
+- **Scoperta bonus, mod non attiva:** `ibo-3.1.0-neoforge-1.21.jar` = **"Incendium Biomes Only"**, una mod a parte (di Naomi Roberts) che dichiara esplicitamente "Disables everything but biomes in Incendium" — un resourcepack imbustato nel jar che filtra via *tutte* le strutture/loot table/structure_set di Incendium, lasciando solo i suoi biomi. **Non risulta attivo**: non è estratto in `resourcepacks/`, non compare tra i pack abilitati in `global_packs.toml`. Se in futuro volete disattivare le 9 strutture giganti di Incendium tenendo i suoi biomi, questa mod è già pronta — basta capire come attivarla (probabilmente dal menu resource pack in game) — e risolverebbe anche di striscio il conflitto `nether_complexes` con la Fortezza del Nether DnT segnalato sopra.
+
+### ✅ FIX APPLICATO — Relitti (Shipwreck) più rari
+`minecraft:shipwrecks` (nessuna mod lo toccava). Override in `datapacks/survivalreimagined/data/minecraft/worldgen/structure_set/shipwrecks.json`:
+
+| | spacing | separation |
+|---|---|---|
+| Vanilla | 24 | 4 |
+| **Ora** | **48** | **8** |
+
+Raddoppiati entrambi (stesso rapporto, stesso salt/strutture vanilla) — relitti circa la metà frequenti. Fammi sapere se vuoi tararli diversamente.
+
+---
+
 ## Osservazioni per il pack
 
 - **Strutture disattivate nel pack: Echo Pillar** (ISO, `"Enable Echo pillar" = false`), **Galleon** e **Road Sign** (Supplementaries, entrambe spente in `supplementaries-common.toml`). Tutte le altre strutture elencate sopra sono attive.
