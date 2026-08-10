@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.6
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "minecraft:ancient_city",
+              "decoration": "minecraft:red_x",
+              "zoom": 1,
+              "skip_existing_chunks": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "translate": "Ancient City Explorer Map"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

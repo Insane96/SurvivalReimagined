@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "philipsruins:chest/ancient_ruins_loot"
+    }
+  ],
+  "table": "survivalreimagined:inject/philipsruins_underground_maps"
+}

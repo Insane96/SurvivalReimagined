@@ -257,6 +257,21 @@ Raddoppiati entrambi (stesso rapporto, stesso salt/strutture vanilla) — relitt
 
 ---
 
+## 🗺️ FIX APPLICATO — Explorer map aggiunte per le strutture sotterranee (Overworld)
+
+Aggiunte mappe per 13 strutture sotterranee (Ancient City DnT, le 8 sotterranee di Archeological, le 4 sotterranee di Philips' Ruins — Stronghold escluso, ha già gli occhi di ender). Meccanismo: **NeoForge Global Loot Modifiers** (`neoforge:add_table`), lo stesso sistema già usato in questo pack da Bits and Balance/Quark/RuneEnchanting — aggiunge le mappe come pool *extra* alle loot table esistenti, senza toccare/sovrascrivere il loro contenuto originale.
+
+| Mappa verso | Trovabile in | Probabilità |
+|---|---|---|
+| `minecraft:ancient_city` (DnT) | Buried Treasure vanilla | 60% a tesoro |
+| **Tag** `#survivalreimagined:archeological_deep_ruins` (Ancient Vault Deep Ruins + Deep Ruins Large/Medium/Small) | Scavo (brush) delle rovine comuni calde/fredde/temperate di Archeological | 5% a mappa, per scavo comune |
+| **Tag** `#survivalreimagined:archeological_underground_ruins` (Ancient Vault Underground Ruins + Underground Ruins Large/Medium/Small) | Stesso scavo di cui sopra | 5% a mappa, per scavo comune |
+| Ancient Dungeon, Lost Soul City, Lost Soul Dungeon, Underground Structures (Philips' Ruins) | Casse `ruin_loot`, `ancient_ruins_loot`, `level_one_ruins_loot` di Philips' Ruins | 15% a mappa, per cassa |
+
+File in `datapacks/survivalreimagined/data/neoforge/loot_modifiers/`, `data/survivalreimagined/loot_modifiers/`, `data/survivalreimagined/loot_table/inject/` e `data/survivalreimagined/tags/worldgen/structure/`. Per Archeological uso 2 tag di struttura (invece di puntare a una sola taglia) così `exploration_map` localizza la copia più vicina di *qualsiasi* taglia della famiglia — niente più mappe sprecate se genera solo la small/medium vicina invece della large. Per Philips' Ruins ho scelto le 3 loot table di superficie più diffuse invece di toccarle tutte singolarmente (qui non serve un tag, sono 4 strutture distinte senza varianti di taglia).
+
+---
+
 ## Osservazioni per il pack
 
 - **Strutture disattivate nel pack: Echo Pillar** (ISO, `"Enable Echo pillar" = false`), **Galleon** e **Road Sign** (Supplementaries, entrambe spente in `supplementaries-common.toml`). Tutte le altre strutture elencate sopra sono attive.

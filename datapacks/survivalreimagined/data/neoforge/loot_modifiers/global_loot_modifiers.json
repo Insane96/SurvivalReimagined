@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "entries": [
+    "survivalreimagined:add_ancient_city_map_to_buried_treasure",
+    "survivalreimagined:add_archeological_underground_maps_warm",
+    "survivalreimagined:add_archeological_underground_maps_cold",
+    "survivalreimagined:add_archeological_underground_maps_temperate",
+    "survivalreimagined:add_philipsruins_underground_maps_ruin_loot",
+    "survivalreimagined:add_philipsruins_underground_maps_ancient_ruins_loot",
+    "survivalreimagined:add_philipsruins_underground_maps_level_one_ruins_loot"
+  ]
+}

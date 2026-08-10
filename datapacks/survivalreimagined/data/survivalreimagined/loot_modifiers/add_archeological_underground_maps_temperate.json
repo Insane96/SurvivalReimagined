@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "archeological:archaeology/temperate_ruins_common"
+    }
+  ],
+  "table": "survivalreimagined:inject/archeological_underground_maps"
+}
