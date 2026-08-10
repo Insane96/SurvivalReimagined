@@ -36,7 +36,7 @@ L'unica altra eccezione è **dentro le mod DnT**, che modificano la loot table v
 
 Ho controllato sia i "salt" di generazione (`worldgen/structure_set`) sia le sovrascritture dirette di file (stesso path `data/...` presente in più mod, che in Minecraft non si fondono ma si sovrascrivono a vicenda — vince l'ultimo caricato).
 
-### 🔴 Conflitto 1 — Loot table `illager_mansion/map_chest.json` (DnT Ancient City Overhaul vs DnT Woodland Mansion Replacement)
+### ✅ Conflitto 1 (RISOLTO) — Loot table `illager_mansion/map_chest.json` (DnT Ancient City Overhaul vs DnT Woodland Mansion Replacement)
 Sia `DnT-ancient-city-overhaul-v2` **sia** `DnT-woodland-mansion-replacement-v1.2` includono una copia del file vanilla `data/minecraft/loot_table/chests/illager_mansion/map_chest.json` (loot delle Magioni Silvestri), ma con contenuti diversi:
 
 - **DnT Woodland Mansion Replacement** (versione "pulita", coerente col pack): 2 mappe — verso Pillager Outpost e verso Ancient City.
@@ -46,7 +46,7 @@ Sia `DnT-ancient-city-overhaul-v2` **sia** `DnT-woodland-mansion-replacement-v1.
 
 Lo stesso paio di mod si sovrascrive a vicenda anche su `secret_room.json` e `library_chest.json` (sempre dentro `illager_mansion/`): qui la differenza è minima ma un potenziale bug — la versione di *Ancient City Overhaul* usa `"options": "nova_structures:illagers_bane"` (un ID di incantesimo singolo), mentre *Woodland Mansion Replacement* usa `"options": "#nova_structures:illagers_bane"` (un tag, col cancelletto). Se l'ID senza `#` non corrisponde a un incantesimo reale, quella parte del loot table potrebbe fallire/non generare l'incantamento atteso.
 
-**Consiglio:** non è un problema bloccante (tutti gli altri 9 file loot condivisi tra le due mod sono identici), ma vale la pena verificare in gioco cosa esce dal "map chest" delle Magioni, o segnalarlo agli autori delle mod DnT.
+**Fix applicato:** creato un override unico in `datapacks/survivalreimagined/data/minecraft/loot_table/chests/illager_mansion/map_chest.json` che vince su entrambe le versioni delle mod (base ripresa dalla versione "pulita" di Woodland Mansion Replacement). La mappa verso `minecraft:pillager_outpost` (struttura disattivata in questo pack, quindi già morta di suo) è stata sostituita con una **mappa del Monumento Oceanico** (`minecraft:monument`, decorazione vanilla `monument`), colmando anche il buco di mappe che in vanilla darebbe solo il Cartografo (assente in questo pack). Resta la mappa verso l'Ancient City. Non ho toccato `secret_room.json`/`library_chest.json` (il bug del tag `#` mancante) — fammi sapere se vuoi che lo sistemi anche quello.
 
 ### 🔴 Conflitto 2 — `worldgen/structure_set/nether_complexes.json` (Incendium vs DnT Nether Fortress Overhaul Retro, la datapack)
 Entrambe ridefiniscono lo **stesso** structure_set vanilla `minecraft:nether_complexes` (quello che governa insieme Fortezza del Nether + Bastione):
@@ -257,18 +257,20 @@ Raddoppiati entrambi (stesso rapporto, stesso salt/strutture vanilla) — relitt
 
 ---
 
-## 🗺️ FIX APPLICATO — Explorer map aggiunte per le strutture sotterranee (Overworld)
+## 🗺️ FIX APPLICATO — Explorer map (strutture sotterranee + Monumento/Magione)
 
-Aggiunte mappe per 13 strutture sotterranee (Ancient City DnT, le 8 sotterranee di Archeological, le 4 sotterranee di Philips' Ruins — Stronghold escluso, ha già gli occhi di ender). Meccanismo: **NeoForge Global Loot Modifiers** (`neoforge:add_table`), lo stesso sistema già usato in questo pack da Bits and Balance/Quark/RuneEnchanting — aggiunge le mappe come pool *extra* alle loot table esistenti, senza toccare/sovrascrivere il loro contenuto originale.
+Aggiunte mappe per 15 strutture (Ancient City DnT, le 8 sotterranee di Archeological, le 4 sotterranee di Philips' Ruins, più **Monumento Oceanico e Magione/Illager Manor** per colmare il buco lasciato dall'assenza del Cartografo — Stronghold escluso, ha già gli occhi di ender). Meccanismo: **NeoForge Global Loot Modifiers** (`neoforge:add_table`), lo stesso sistema già usato in questo pack da Bits and Balance/Quark/RuneEnchanting — aggiunge le mappe come pool *extra* alle loot table esistenti, senza toccare/sovrascrivere il loro contenuto originale. Fa eccezione la mappa del Monumento, inserita sostituendo la voce morta "Pillager Outpost Map" nel `map_chest.json` della Magione/Ancient City (vedi fix del conflitto qui sopra).
 
 | Mappa verso | Trovabile in | Probabilità |
 |---|---|---|
 | `minecraft:ancient_city` (DnT) | Buried Treasure vanilla | 60% a tesoro |
+| `minecraft:mansion` (Illager Manor, DnT) | Cassa "di valore" dei relitti (`shipwreck_treasure`) | 60% a cassa |
+| `minecraft:monument` (Trident Trial Monument, DnT) | Cassa `map_chest` dentro Ancient City/Magione (al posto della morta "Pillager Outpost Map") | 50% (1 tra 2 voci nel pool) |
 | **Tag** `#survivalreimagined:archeological_deep_ruins` (Ancient Vault Deep Ruins + Deep Ruins Large/Medium/Small) | Scavo (brush) delle rovine comuni calde/fredde/temperate di Archeological | 5% a mappa, per scavo comune |
 | **Tag** `#survivalreimagined:archeological_underground_ruins` (Ancient Vault Underground Ruins + Underground Ruins Large/Medium/Small) | Stesso scavo di cui sopra | 5% a mappa, per scavo comune |
 | Ancient Dungeon, Lost Soul City, Lost Soul Dungeon, Underground Structures (Philips' Ruins) | Casse `ruin_loot`, `ancient_ruins_loot`, `level_one_ruins_loot` di Philips' Ruins | 15% a mappa, per cassa |
 
-File in `datapacks/survivalreimagined/data/neoforge/loot_modifiers/`, `data/survivalreimagined/loot_modifiers/`, `data/survivalreimagined/loot_table/inject/` e `data/survivalreimagined/tags/worldgen/structure/`. Per Archeological uso 2 tag di struttura (invece di puntare a una sola taglia) così `exploration_map` localizza la copia più vicina di *qualsiasi* taglia della famiglia — niente più mappe sprecate se genera solo la small/medium vicina invece della large. Per Philips' Ruins ho scelto le 3 loot table di superficie più diffuse invece di toccarle tutte singolarmente (qui non serve un tag, sono 4 strutture distinte senza varianti di taglia).
+File in `datapacks/survivalreimagined/data/neoforge/loot_modifiers/`, `data/survivalreimagined/loot_modifiers/`, `data/survivalreimagined/loot_table/inject/`, `data/survivalreimagined/tags/worldgen/structure/` e `data/minecraft/loot_table/chests/illager_mansion/map_chest.json`. Per Archeological uso 2 tag di struttura (invece di puntare a una sola taglia) così `exploration_map` localizza la copia più vicina di *qualsiasi* taglia della famiglia. Per Philips' Ruins ho scelto le 3 loot table di superficie più diffuse invece di toccarle tutte singolarmente.
 
 ---
 

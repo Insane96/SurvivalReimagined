@@ -3,8 +3,8 @@
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "loot_table_id": "minecraft:chests/buried_treasure"
+      "loot_table_id": "minecraft:chests/shipwreck_treasure"
     }
   ],
-  "table": "survivalreimagined:inject/ancient_city_map"
+  "table": "survivalreimagined:inject/shipwreck_maps"
 }
