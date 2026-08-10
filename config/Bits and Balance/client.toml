@@ -130,7 +130,7 @@
 
 	#Leaf Litter / Leaf Pile Tint
 	[client.leafLitterTint]
-		#Tint leaf litter (minecraft:leaf_litter) and leaf pile blocks using biome colors.
+		#Tint placed and item-form leaf litter (minecraft:leaf_litter) and leaf piles using biome colors.
 		enabled = false
 		#Which biome color to use: 'foliage' or 'grass'.
 		source = "foliage"

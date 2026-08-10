@@ -805,6 +805,11 @@
 		#Make Vaults completely unbreakable. They cannot be destroyed by mining, explosions, or any other means.
 		enabled = true
 
+	#Glowing Torchflowers
+	[tweaks.glowingTorchflowers]
+		#Make Torchflowers and potted Torchflowers emit light level 8, one level brighter than a redstone torch.
+		enabled = true
+
 #Mobs
 [mobs]
 	#Enable: Iron Golems will actively target and kill Creepers. Creepers will not retaliate/ignite when attacked by Iron Golems.

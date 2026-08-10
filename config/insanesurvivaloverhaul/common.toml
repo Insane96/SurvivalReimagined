@@ -55,6 +55,8 @@
 		"Loot changes" = true
 		#If true, mobs will burn even if there's a block above them in daylight
 		"Burn in sky light" = true
+		#If true, renames Heart of the Sea to Divine Fragment and retextures it accordingly
+		"Rename heart of the sea to divine fragment" = true
 
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
@@ -891,8 +893,6 @@
 		"Absorbing bypasses_armor damage only" = true
 		#If true, a sound is played when the absorption is damaged.
 		"Sound on absorption hurt" = true
-		#(Client only) If true, regenerating absorption hearts are rendered on the right instead on top of hearts.
-		"Render on the right" = false
 
 	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
 	[Combat."Attack sounds"]
