@@ -278,67 +278,25 @@ File in `datapacks/survivalreimagined/data/neoforge/loot_modifiers/`, `data/surv
 
 ---
 
-## 🆕 Dungeons and Taverns (mod completa) — analisi e fix
+## 🗑️ Dungeons and Taverns (mod completa) — installata, analizzata, poi rimossa
 
-`dungeons-and-taverns-v4.4.4 [NeoForge].jar` — la mod "madre" da cui derivano i 7 sub-mod DnT già installati. Aggiunge **96 strutture nuove + 1 override vanilla** (`village_taiga`). Nessun config dedicato (nessun toggle per singola struttura).
+`dungeons-and-taverns-v4.4.4 [NeoForge].jar` (96 strutture nuove) e il suo addon `lootintegrations_dnt-2.6.jar` sono stati **rimossi**: aggiungevano incantesimi custom non compatibili con Rune Enchanting (che sostituisce automaticamente solo gli incantesimi vanilla). Poi è stato rimosso anche `DnT-woodland-mansion-replacement-v1.2 [NeoForge].jar`. Restano installati: Ancient City, Desert Temple, Jungle Temple, Ocean Monument, Stronghold, Swamp Hut.
 
-**Riepilogo dimensione/posizione:**
+**Ripulito dal datapack** (override esclusivi della mod completa, ormai inutili senza di essa): `villages_birch/jungle/swamp`, `illager_camp`, `taverns`, `swamp_structure` (Witch Villa), `badlands_miner_outpost`, `illager_hideout`, `remnants`, `stray_fort_fortress`, `lone_citadel` (mob+frame).
 
-| Dimensione/posizione | Conteggio | Esempi |
-|---|---|---|
-| Overworld superficie | ~75 | 11 Taverne, 6 Pozzi, 24 "Remnant" (rovine/accampamenti a tema), 9 Firewatch Tower, 6 Shrine (5 livelli), 3 villaggi (birch/jungle/swamp), Illager Manor, Witch Villa |
-| Overworld sotterranea | 6 | Deepslate Camp, Illager Hideout, Undead Crypt, Underground House, Lone Citadel, Toxic Lair |
-| Nether superficie | 9 | Skeleton Tower/Camp (crimson/soul/warped/waste) x4+4, Piglin Camp/Outstation, Hamlet |
-| Nether sotterranea | 3 | Nether Keep, Nether Port, Piglin Donjon |
-| End | 3 | End Castle, End Lighthouse, End Ship (prima mod del pack a toccare l'End) |
-| Duplicato | 1 | Trident Trial Monument (identico byte-per-byte al sub-mod) |
+### 🔴 Magione (Woodland Mansion) — DISATTIVATA DEL TUTTO
+Senza nessuna mod di sostituzione, la Magione è tornata 100% vanilla — e la generazione vanilla di vindicator/evoker/witch **non è editabile via datapack**: ho estratto e controllato tutti i 73 pezzi `.nbt` vanilla dal jar di Minecraft, zero mob incorporati nei pezzi (a differenza di DnT). La popolazione mob della Magione vanilla è **scritta direttamente nel codice Java** di Minecraft (una delle poche strutture ancora non completamente data-driven), quindi non c'è alcun file datapack modificabile per toglierli.
 
-### ✅ FIX APPLICATO — Conflitto Magione (rischio -50% frequenza)
-`data/minecraft/worldgen/structure_set/woodland_mansions.json` era definito diversamente da questa mod (2 voci: `minecraft:mansion` + `nova_structures:illager_manor`, 50/50) e dal sub-mod Woodland Mansion Replacement (1 voce sola). Dato che il sub-mod reindirizza `minecraft:mansion` al "vanilla_structure_remover" (niente), se vinceva la versione a 2 voci, metà delle location disponibili per la Magione generavano il nulla. Override in `datapacks/survivalreimagined/data/minecraft/worldgen/structure_set/woodland_mansions.json` che forza la versione a 1 voce sola.
+Scelta presa: **disattivata del tutto** (`data/minecraft/worldgen/structure_set/woodland_mansions.json` con `"structures": []`), coerente col principio "niente gente dal naso lungo". Ripuliti di conseguenza anche: i pool `illager_mansion` (ormai orfani, nessuna mod li usa più), le loot table `illager_mansion/map_chest.json`/`secret_room.json`/`library_chest.json` (mai più generate), e la mappa della Magione nei relitti (`shipwreck_maps.json`, ora punterebbe a una struttura disattivata) — resta solo la mappa del Monumento Oceanico lì.
 
-### ✅ FIX APPLICATO — Nessuna "gente dal naso lungo" (villager/pillager/illager), tranne i Golem
-Design deciso: niente villager/pillager/illager in giro, i Golem restano, le streghe (witch) come nemici da dungeon vanno bene. Questa mod reintroduceva villaggi e altre strutture con villager/pillager, bypassando `disable_long_noses` (che svuota solo `minecraft:villages`, non i structure_set separati che questa mod usa). Trovato scandagliando tutti i file `.nbt`.
-
-**Strutture disattivate del tutto** (villager/pillager come contenuto centrale, non separabile senza perdere la struttura):
-
-| Struttura | Motivo |
-|---|---|
-| `villages_birch`/`villages_jungle`/`villages_swamp` | Villaggi veri con villager, stesso salt/spacing dei villaggi vanilla — bypassavano la disattivazione |
-| `illager_camp` | villager + pillager come contenuto centrale |
-| Tutte e 11 le Taverne (`taverns.json`) | Ogni variante (acacia→swamp) ha pezzi villager/pillager come parte centrale del tema "taverna con locandiere" |
-| Witch Villa | villager in 2 stanze — rimossa dal set condiviso con Toxic Lair (che resta attivo) |
-| Badlands Miner Outpost | pillager |
-| Illager Hideout | pillager + villager |
-
-**Illager Manor** (resta attiva, ripulita chirurgicamente):
-- Pool condiviso `illager_mansion/illager_mob.json`: da 22 "slot mob" pesati a **solo Golem** (2 varianti) — tolti vindicator, evoker, witch, villager, pillager.
-- 4 pezzi-stanza con villager/pillager incorporati direttamente nel pezzo (non tramite lo slot pool): `mansion_backyard_tower1_top`, `mansion_middle_room2`, `mansion_middle_room_basement8`, `mansion_secret_room3` — **rimossi con successo** dai rispettivi pool (erano alternative opzionali tra tante, rimozione sicura).
-- Bug della mod trovato durante l'editing e corretto di riflesso: `illager_mansion_room_basement.json` aveva `"processors": illager_manor_generic_degradation,` senza virgolette (JSON non valido in senso stretto) — sistemato nell'override.
-
-**`minecraft:zombie_villager`** (stessa famiglia, tolto anche questo):
-- Lone Citadel: rimosso da entrambi i pool coinvolti (mob e frame)
-- Stray Fort: rimossa la variante `stray_fort_2` (restano 2 varianti su 3)
-- Remnant Zombie Horse Ranch: rimosso dalla lista dei 24 "remnant" (restano 23)
-
-**Lasciati intatti** (streghe come nemici da dungeon, non NPC — via bene): Mangrove Witch Hut, Toxic Lair, Underground House.
-
-**`map_chest.json`**: non modificato oltre al fix precedente — Witch Villa/Badlands Miner Outpost/Illager Hideout sono ora disattivate, quindi niente mappe verso di loro (resta solo la mappa dell'Ancient City).
-
-### Mod ridondanti (contenuto duplicato byte-per-byte)
-Questi 4 sub-mod DnT sono ora **completamente ridondanti** — il loro contenuto è incluso identico nella mod completa:
-- `DnT-desert-temple-replacement-v1.2 [NeoForge].jar`
-- `DnT-jungle-temple-replacement-v1.2 [NeoForge].jar`
-- `DnT-ocean-monument-replacement-v1.2 [NeoForge].jar`
-- `DnT-woodland-mansion-replacement-v1.2 [NeoForge].jar`
-
-Puoi disinstallarli senza perdere nulla (la mod completa fornisce esattamente lo stesso `desert_ruins`/`jungle_ruins`/`trident_trial_monument`/`illager_manor`, byte-identici). **Non toccare** invece `DnT-ancient-city-overhaul`, `DnT-stronghold-overhaul`, `DnT-swamp-hut-overhaul`: la mod completa non tocca Ancient City, Stronghold o Swamp Hut, restano necessari.
+Se in futuro reinstalli una mod di sostituzione (es. di nuovo `DnT-woodland-mansion-replacement`), la Magione torna riattivabile e ri-editabile via datapack come prima.
 
 ---
 
 ## Osservazioni per il pack
 
 - **Strutture disattivate nel pack: Echo Pillar** (ISO, `"Enable Echo pillar" = false`), **Galleon** e **Road Sign** (Supplementaries, entrambe spente in `supplementaries-common.toml`). Tutte le altre strutture elencate sopra sono attive.
-- **8 strutture vanilla sono sostituite** dalle mod DnT (7 jar + 1 datapack): Città Antica, Piramide del Deserto, Tempio della Giungla, Monumento Oceanico, Fortezza, Capanna della Strega, Magione Silvestre, **Fortezza del Nether** (quest'ultima trovata solo ora, dentro `datapacks/`, non nei jar — nessun conflitto con le altre.
+- **7 strutture vanilla sono sostituite** dalle mod DnT (6 jar + 1 datapack): Città Antica, Piramide del Deserto, Tempio della Giungla, Monumento Oceanico, Fortezza, Capanna della Strega, **Fortezza del Nether** (quest'ultima dentro `datapacks/`, non nei jar). La **Magione Silvestre non è più sostituita** — è disattivata del tutto (vedi sezione dedicata).
 - **Concentrazione nel Nether**: EternalNether, formationsnether e la Nether Fortress DnT generano tutte lì (quasi tutte "di superficie" nel Nether, non sepolte). *(Correzione: nella versione precedente collegavo questo a "Portal requires crying obsidian" e al tetto del Nether attivo — non c'entrano nulla con la densità di generazione, era un'aggiunta senza senso da parte mia. L'unico modo per giudicare se la densità nel Nether è davvero eccessiva è guardare spacing/separation reali di ogni mod, vedi sotto, oppure verificarlo in gioco.)* Incendium **non** è più in questa lista: le sue 9 strutture sono disattivate da `ibo` (vedi sopra), restano solo i suoi biomi.
 - ~~Overworld sovraffollato di rovine generiche~~ — **ritrattato**: in gioco non hai trovato troppe strutture, e i numeri lo confermano. Guardando gli spacing/separation reali (estratti dai `structure_set`): Archeological usa ~30 structure_set separati con spacing 150-200 ciascuno (rovine "grandi" fino a 1 ogni 200 chunk), adventuredungeons ha spacing 30-40, Philips' Ruins varia da 40 a 360 (Rare Ruin, come dice il nome, è molto rara). YungsExtras non usa nemmeno il sistema a griglia (`structure_set`) ma decorazioni via `biome_modifier`, quindi non compete per lo spazio con le altre. La mia frase precedente era una supposizione non verificata sui numeri — la densità reale non sembra eccessiva.
 - Nessuna struttura tra quelle elencate genera nell'**End** — nessuna mod del pack tocca quella dimensione.

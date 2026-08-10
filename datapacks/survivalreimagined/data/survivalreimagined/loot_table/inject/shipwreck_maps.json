@@ -30,27 +30,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:map",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:exploration_map",
-              "destination": "minecraft:mansion",
-              "decoration": "minecraft:mansion",
-              "zoom": 1,
-              "skip_existing_chunks": false
-            },
-            {
-              "function": "minecraft:set_name",
-              "target": "item_name",
-              "name": {
-                "translate": "Illager Manor Explorer Map"
-              }
-            }
-          ]
         }
       ]
     }
