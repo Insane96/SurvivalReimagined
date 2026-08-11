@@ -1375,10 +1375,14 @@
 		"Splash potion throw strength" = 0.8
 		#If true, entities will no longer be set on fire if have Fire Resistance (like bedrock edition)
 		"Prevent fire with resistance" = false
-		#Splash potions will always be 2/3 effective compared to drinkable ones but will also apply the full effect duration when thrown
+		#Splash potions will always be 2/3 effective compared to drinkable ones but will also apply the full effect duration when thrown regardless of the distance.
 		"Streamline splash potions" = true
 		#Enables a data pack that increases potions stack sizes
 		"Potion stack size" = true
+		#Multiplier for the duration of potions. Doesn't affect instantaneous effects. Requires a Minecraft restart
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Potion duration multiplier" = 2.0
 
 	#Fishing more and more in the same spot will slow down the fishing
 	[Misc."Low fish"]
