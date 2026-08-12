@@ -597,54 +597,21 @@
 		"Portal requires crying obsidian" = true
 
 ["Hunger & Health"]
+	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
+	"Enable Hunger and health regen" = true
 	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
 	"Enable Exhaustion" = true
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	"Enable Foods & Drinks" = true
-	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
-	"Enable Hunger and health regen" = true
-
-	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
-	["Hunger & Health".Exhaustion]
-		#When you break a block you'll get exhaustion equal to the block hardness multiplied by this value. Setting this to 0 will default to the vanilla exhaustion (0.005). (It's not affected by the Global Hardness Features)
-		# Default: 0.0
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Block break exhaustion multiplier" = 0.0
-		#When breaking block you'll get exhaustion every tick during the breaking. Vanilla is 0.005
-		# Default: 0.005
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Exhaustion on block breaking" = 0.005
-		#Every second the player will get this exhaustion. Vanilla is 0
-		# Default: 0.005
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Passive exhaustion" = 0.005
-		#Every tick of the player's rowing will get this exhaustion. Vanilla is 0
-		# Default: 0.005
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Rowing exhaustion" = 0.005
-		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion. Vanilla is 0
-		# Default: 0.005
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Bow charge exhaustion" = 0.005
-		#How much exhaustion is given to the player when jumps and it's not sprinting. Vanilla is 0.05
-		# Default: 0.05
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Jump exhaustion" = 0.05
-		#How much exhaustion is given to the player when jumps and it's sprinting. Vanilla is 0.2
-		# Default: 2.0
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Jump exhaustion sprint" = 0.2
-		#When affected by the hunger effect, exhaustion will be doubled per level of the effect. Requires Minecraft restart.
-		"Effective hunger" = true
-		#How much exhaustion is given to the player when sprinting per block traveled. Vanilla is 0.1
-		# Default: 0.5
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Sprint exhaustion" = 0.1
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	["Hunger & Health"."Foods & Drinks"]
+		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Empty to disable. Can be re-applied with /reload
+		"Food saturation formula" = "saturation * 1.2"
 		#Food's hunger restored will be calculated from this formula. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Empty to disable. Can be re-applied with /reload
-		"Food hunger formula" = "nutrition * 1.2"
+		"Food hunger formula" = ""
+		#The formula to calculate the seconds required to eat a food. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. Empty to disable. Can be re-applied with /reload.
+		"Food eat seconds formula" = "MIN(MAX((1.6 * (nutrition + saturation)) * 0.125, 0.8), 5)"
 		#Makes potions and milk faster to drink, 1 second instead of 1.6.
 		"Faster drink consuming" = true
 		#If true, eating/drinking stops when the player's hit.
@@ -653,6 +620,8 @@
 		"Always eat" = false
 		#If enabled, when eating food, the saturation will not sum, instead will just be set to the food's saturation (if higher than the current).
 		"Combat snapshot eating saturation" = true
+		#If true, saturation will never exceed hunger level. Only works if "Combat snapshot eating saturation". True in Vanilla
+		"Cap saturation to hunger" = false
 		#If enabled, eating cakes will give 30 seconds of Speed and Haste
 		"Buff cake" = true
 		#Adds a loot table when shearing pumpkins (insanesurvivaloverhaul:gameplay/pumpkin_shear). This also replaces seeds drop with Pumpkin Pulp
@@ -660,14 +629,8 @@
 		#Enables a data pack that makes food no longer smeltable in furnaces and changes smokers recipe to require soul sand.
 		#This also enables a change to the smelt_item_function in loot tables to use smoker recipes instead of furnaces (otherwise, mobs wouldn't drop cooked food). Might have unintended side effects.
 		"No furnace food and smoker recipe" = true
-		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Empty to disable. Can be re-applied with /reload
-		"Food saturation formula" = "saturation * 1.4"
-		#The formula to calculate the seconds required to eat a food. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. Empty to disable. Can be re-applied with /reload.
-		"Food eat seconds formula" = "MIN(MAX((1.6 * (nutrition + saturation)) * 0.125, 0.8), 5)"
 		#Enables a data pack that rebalances some foods and makes raw foods poisonous. Also allows mushroom stews to be crafted with any mushroom.
 		"Food changes" = true
-		#If true, saturation will never exceed hunger level. Only works if "Combat snapshot eating saturation". True in Vanilla
-		"Cap saturation to hunger" = false
 
 	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
 	["Hunger & Health"."Hunger and health regen"]
@@ -724,7 +687,44 @@
 			# Range: 0 ~ 20
 			"At hunger" = 0
 			#If below 'Starve at Hunger' player will starve 2x faster for each hunger point below 'Starve at Hunger'.
-			"Faster when really hungry" = false
+			"Faster when really hungry" = true
+
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
+	["Hunger & Health".Exhaustion]
+		#When you break a block you'll get exhaustion equal to the block hardness multiplied by this value. Setting this to 0 will default to the vanilla exhaustion (0.005). (It's not affected by the Global Hardness Features)
+		# Default: 0.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Block break exhaustion multiplier" = 0.0
+		#When breaking block you'll get exhaustion every tick during the breaking. Vanilla is 0.005
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Exhaustion on block breaking" = 0.005
+		#Every second the player will get this exhaustion. Vanilla is 0
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Passive exhaustion" = 0.005
+		#Every tick of the player's rowing will get this exhaustion. Vanilla is 0
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Rowing exhaustion" = 0.005
+		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion. Vanilla is 0
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Bow charge exhaustion" = 0.005
+		#How much exhaustion is given to the player when sprinting per block traveled. Vanilla is 0.1
+		# Default: 0.5
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Sprint exhaustion" = 0.5
+		#How much exhaustion is given to the player when jumps and it's not sprinting. Vanilla is 0.05
+		# Default: 0.05
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Jump exhaustion" = 0.05
+		#How much exhaustion is given to the player when jumps and it's sprinting. Vanilla is 0.2
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Jump exhaustion sprint" = 2.0
+		#When affected by the hunger effect, exhaustion will be doubled per level of the effect. Requires Minecraft restart.
+		"Effective hunger" = true
 
 [Items]
 	#Items no longer break, will sit at one durability and can't be used. Items in the item tag `insanesurvivaloverhaul:not_unvanishable` are not affected and items in the item tag `insanesurvivaloverhaul:unvanishable` are always unvanishable.
