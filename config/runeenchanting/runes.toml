@@ -137,8 +137,8 @@
 	"Seconds On Fire" = 4.0
 
 [knockback]
-	# Default: 0.8
-	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	# Default: 0.5
+	# Range: 0.0 ~ 1.7976931348623157E308
 	"Melee Knockback" = 0.8
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -225,7 +225,7 @@
 	"Negative Effects Duration Multiplier" = 0.8
 
 [healthy]
-	# Default: 4.0
+	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Health" = 2.0
 
@@ -529,3 +529,66 @@
 	# Default: 0.4
 	# Range: 0.0 ~ 1.0
 	"Mining Speed Penalty" = 0.4
+
+[padding]
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	"Knockback Reduction" = 0.5
+
+[hunter]
+	#Percentage damage penalty applied at point-blank range
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	"Starting Penalty" = 0.3
+	#Percentage bonus damage per block traveled
+	# Default: 0.025
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Damage Per Block" = 0.025
+
+[smokescreen]
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	"Detection Range Reduction" = 0.4
+
+[vibration_detection]
+	#Range (in blocks) within which sounds are detected
+	# Default: 16.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	Range = 16.0
+	#Duration in seconds the sound source glows for
+	# Default: 1.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Glow Duration" = 1.0
+
+[lapis_fueled]
+	#Chance to not consume durability
+	# Default: 0.667
+	# Range: 0.0 ~ 1.0
+	"Save Chance" = 0.667
+	#Chance to consume a lapis lazuli when durability is saved
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	"Lapis Consume Chance" = 0.1
+
+[curse_of_undead]
+	# Default: 200
+	# Range: > 2
+	"Catch Fire Odds" = 200
+	# Default: 3
+	# Range: > 1
+	"Seconds On Fire" = 3
+
+[curse_of_inaccuracy]
+	# Default: 3.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Inaccuracy Increase" = 3.0
+
+[curse_of_slipperiness]
+	# Default: 0.025
+	# Range: 0.0 ~ 1.0
+	Chance = 0.025
+
+[curse_of_exposure]
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	"Detection Range Increase" = 0.4

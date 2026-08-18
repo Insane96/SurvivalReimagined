@@ -304,7 +304,7 @@
 		"Enable Armor Interaction" = true
 		"Enable Shulker Box Interaction" = true
 		"Enable Lava Interaction" = false
-		"Allow Opening Shulker Boxes" = false
+		"Allow Opening Shulker Boxes" = true
 		"Allow Rotating Bundles" = true
 
 	[management.hotbar_changer]

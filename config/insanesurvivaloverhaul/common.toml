@@ -18,6 +18,8 @@
 	"Enable Misc mobs" = true
 	#Add a brand new Echo Torch and some changes to mob spawn
 	"Enable Spawning" = true
+	#Turtle helmet water breathing duration and stackable scute blocks.
+	"Enable Turtles" = true
 
 	#Makes zombie siege happen to the player without the need of a village
 	[Mobs."Zombie siege"]
@@ -76,6 +78,15 @@
 		# Default: 32
 		# Range: > -2147483648
 		"Max guardians in deep oceans spawn y" = 32
+
+	#Turtle helmet water breathing duration and stackable scute blocks.
+	[Mobs.Turtles]
+		#The ticks of Water Breathing given by the Turtle Helmet. Vanilla is 200
+		# Default: 900
+		# Range: > -2147483648
+		"Helmet water breathing time" = 900
+		#If true, scute will drop as a block and not as item
+		"Scute drops as block" = true
 
 [Sleep]
 	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
@@ -428,6 +439,10 @@
 	#Control fire speed with insanesurvivaloverhaul:fire_speed_multiplier game rule. This feature also enables a recipe to get a flint from 3 gravel.
 	"Enable Coal & Fire" = true
 	"Enable Nether" = true
+	#Sponges soak up more water and can dry/wet with the weather.
+	"Enable Sponges" = true
+	#The insanesurvivaloverhaul:painful_world_border game rule grows the world border every time a player takes damage.
+	"Enable Painful world border" = true
 
 	[World."Day night cycle"]
 		#How many minutes does a full day last? This DOESN'T CHANGE the day night cycle duration, but it's only used for calculations in case you change it with another mod.
@@ -596,20 +611,70 @@
 		#The portal requires Crying Obsidian in the corners to turn it on (in the overworld). The block tag 'insanesurvivaloverhaul:portal_corners' can be used to change the required blocks for the corners
 		"Portal requires crying obsidian" = true
 
+	#Sponges soak up more water and can dry/wet with the weather.
+	[World.Sponges]
+		#The maximum amount of blocks a sponge can soak. (Vanilla is 64, disabled if quark is installed)
+		# Default: 256
+		# Range: > -2147483648
+		"Max soak blocks" = 256
+		#The maximum range at which sponges will check for soakable blocks. (Vanilla is 5, disabled if quark is installed)
+		# Default: 10
+		# Range: > -2147483648
+		"Max soak range" = 10
+		#If exposed to the sun sponges may dry and if exposed to rain sponges might get wet
+		"Dry wet weather" = true
+
 ["Hunger & Health"]
-	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
-	"Enable Hunger and health regen" = true
-	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
-	"Enable Exhaustion" = true
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	"Enable Foods & Drinks" = true
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
+	"Enable Exhaustion" = true
+	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
+	"Enable Hunger and health regen" = true
+
+	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
+	["Hunger & Health".Exhaustion]
+		#How much exhaustion is given to the player when sprinting per block traveled. Vanilla is 0.1
+		# Default: 0.5
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Sprint exhaustion" = 0.1
+		#When you break a block you'll get exhaustion equal to the block hardness multiplied by this value. Setting this to 0 will default to the vanilla exhaustion (0.005). (It's not affected by the Global Hardness Features)
+		# Default: 0.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Block break exhaustion multiplier" = 0.0
+		#When breaking block you'll get exhaustion every tick during the breaking. Vanilla is 0.005
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Exhaustion on block breaking" = 0.005
+		#Every second the player will get this exhaustion. Vanilla is 0
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Passive exhaustion" = 0.005
+		#Every tick of the player's rowing will get this exhaustion. Vanilla is 0
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Rowing exhaustion" = 0.005
+		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion. Vanilla is 0
+		# Default: 0.005
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Bow charge exhaustion" = 0.005
+		#How much exhaustion is given to the player when jumps and it's not sprinting. Vanilla is 0.05
+		# Default: 0.05
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Jump exhaustion" = 0.05
+		#How much exhaustion is given to the player when jumps and it's sprinting. Vanilla is 0.2
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Jump exhaustion sprint" = 2.0
+		#When affected by the hunger effect, exhaustion will be doubled per level of the effect. Requires Minecraft restart.
+		"Effective hunger" = true
 
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	["Hunger & Health"."Foods & Drinks"]
-		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Empty to disable. Can be re-applied with /reload
-		"Food saturation formula" = "saturation * 1.2"
 		#Food's hunger restored will be calculated from this formula. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Empty to disable. Can be re-applied with /reload
-		"Food hunger formula" = ""
+		"Food hunger formula" = "ROUND(nutrition * 1.2, 0)"
+		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Empty to disable. Can be re-applied with /reload
+		"Food saturation formula" = "saturation * 1.4"
 		#The formula to calculate the seconds required to eat a food. Variables as nutrition, saturation, eat_seconds as numbers and can_always_eat as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. NOTE: this is calculated from the original food properties, not the modified ones with the other formulas. Empty to disable. Can be re-applied with /reload.
 		"Food eat seconds formula" = "MIN(MAX((1.6 * (nutrition + saturation)) * 0.125, 0.8), 5)"
 		#Makes potions and milk faster to drink, 1 second instead of 1.6.
@@ -689,43 +754,6 @@
 			#If below 'Starve at Hunger' player will starve 2x faster for each hunger point below 'Starve at Hunger'.
 			"Faster when really hungry" = true
 
-	#Make the player consume more hunger with different actions. Please note that even if hunger is disabled, exhaustion will still be user by Tiredness.
-	["Hunger & Health".Exhaustion]
-		#When you break a block you'll get exhaustion equal to the block hardness multiplied by this value. Setting this to 0 will default to the vanilla exhaustion (0.005). (It's not affected by the Global Hardness Features)
-		# Default: 0.0
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Block break exhaustion multiplier" = 0.0
-		#When breaking block you'll get exhaustion every tick during the breaking. Vanilla is 0.005
-		# Default: 0.005
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Exhaustion on block breaking" = 0.005
-		#Every second the player will get this exhaustion. Vanilla is 0
-		# Default: 0.005
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Passive exhaustion" = 0.005
-		#Every tick of the player's rowing will get this exhaustion. Vanilla is 0
-		# Default: 0.005
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Rowing exhaustion" = 0.005
-		#Every tick of the player's charging an arrow on a bow/crossbow will get this exhaustion. Vanilla is 0
-		# Default: 0.005
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Bow charge exhaustion" = 0.005
-		#How much exhaustion is given to the player when sprinting per block traveled. Vanilla is 0.1
-		# Default: 0.5
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Sprint exhaustion" = 0.5
-		#How much exhaustion is given to the player when jumps and it's not sprinting. Vanilla is 0.05
-		# Default: 0.05
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Jump exhaustion" = 0.05
-		#How much exhaustion is given to the player when jumps and it's sprinting. Vanilla is 0.2
-		# Default: 2.0
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Jump exhaustion sprint" = 2.0
-		#When affected by the hunger effect, exhaustion will be doubled per level of the effect. Requires Minecraft restart.
-		"Effective hunger" = true
-
 [Items]
 	#Items no longer break, will sit at one durability and can't be used. Items in the item tag `insanesurvivaloverhaul:not_unvanishable` are not affected and items in the item tag `insanesurvivaloverhaul:unvanishable` are always unvanishable.
 	"Enable Unvanishable items" = true
@@ -741,8 +769,6 @@
 	"Enable Ecologic wood" = false
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	"Enable Stack sizes" = true
-	#Add item tooltips via item tags. Items in the insanesurvivaloverhaul:has_tooltip item tag will get a tooltip with the vanilla name + .tooltip (e.g. item.minecraft.arrow.tooltip)
-	"Enable Item tooltips" = true
 	#Basically backports copper equipment from latest MC versions.
 	"Enable Copper equipment" = true
 
@@ -980,6 +1006,44 @@
 		# Range: 0.0 ~ 1.0
 		"Projectile knockback" = 0.7
 
+	#Rework critical hits to be a chance to happen instead of damage on jump. Also the chance and bonus damage are now an attribute. By default critical_chance is 0 and can increase with the Critical enchantment and critical_damage is 0.5 (+50%).
+	[Combat."Critical rework"]
+		#Enables a data pack that adds the Critical enchantment (max level V). Each level increases critical chance by 10% and critical damage by 5%. It's incompatible with other damage enchantments (Sharpness, Smite, Bane of Arthropods, Impaling, Density, Breach).
+		"Critical enchantment data pack" = true
+		#Bonus critical chance granted by the Critical rune.
+		# Default: 0.1
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Critical rune bonus chance" = 0.1
+		#Bonus critical damage granted by the Critical rune.
+		# Default: 0.05
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Critical rune bonus damage" = 0.05
+
+		[Combat."Critical rework".Rune]
+			#If Rune Enchanting is installed, enables the Critical rune.
+			Enabled = true
+			#Which level of enchantment the Critical rune is equivalent to.
+			# Default: 4
+			# Range: > -2147483648
+			"Enchantment level equivalent" = 4
+
+	#Adds a new attribute that deals bonus damage that bypasses armor
+	[Combat."Piercing damage"]
+		#Enables a data pack that adds the Armor Piercer enchantment (max level V). Each level grants bonus Piercing Damage scaled by the weapon's Attack Damage (see armorPiercerDamagePerAttackDamage). It's incompatible with other damage enchantments (Sharpness, Smite, Bane of Arthropods, Impaling, Density, Breach, Critical).
+		"Armor piercer enchantment data pack" = true
+		#Bonus Piercing Damage granted by the Armor Piercer enchantment, per level, per point of the weapon's Attack Damage. Default is 0.25 every 5 points of Attack Damage (0.05 per point), so weaker/faster weapons (e.g. hoes) get less bonus than a sword or axe.
+		# Default: 0.05
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Armor piercer damage per attack damage" = 0.05
+
+		[Combat."Piercing damage".Rune]
+			#If Rune Enchanting is installed, enables the Armor Piercer rune.
+			Enabled = true
+			#Which level of enchantment the Armor Piercer rune is equivalent to.
+			# Default: 4
+			# Range: > -2147483648
+			"Enchantment level equivalent" = 4
+
 [Death]
 	#Makes you lose a percentage of items and durability and xp on death. By default the game rules are all set to 0. Controlled via game rules.
 	#Items percentage lost can be configured with the insanesurvivaloverhaul:death_lose_items_percentage, insanesurvivaloverhaul:death_durability_penalty and insanesurvivaloverhaul:death_destroy_items game rules.
@@ -1197,6 +1261,14 @@
 	"Enable Potions and effects" = true
 	#Fishing more and more in the same spot will slow down the fishing
 	"Enable Low fish" = true
+	#Greatly increases the range and damage of the conduit
+	"Enable Conduit" = true
+	#Colliding with walls at high speed (e.g. from explosions or knockback) deals damage.
+	"Enable Collide with walls" = true
+	#Nausea makes eating give Hunger and attacking sometimes miss.
+	"Enable Nausea" = true
+	#Changes how fast entities consume and refill air, and how drowning damage scales.
+	"Enable Breathing" = true
 
 	#Various stuff that doesn't fit in any other Feature.
 	[Misc.Tweaks]
@@ -1206,10 +1278,6 @@
 		"Better hardcore death" = true
 		#If enabled, the Totem of Undying will give Resistance IV for 5.5 seconds
 		"Totem resistance" = true
-		#If set higher than 0 it will enable damage when colliding with walls at a high speed (e.g. with explosions or knockback). Higher = more damage. Set to 0 to disable. Please note that even if set to 0, might still show up in performance profilers.
-		# Default: 3.0
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Collide with walls damage" = 3.0
 		#Vanilla is 5
 		# Default: 16
 		# Range: > 0
@@ -1231,56 +1299,8 @@
 		# Default: 2
 		# Range: > -2147483648
 		"Damage to break vehicles" = 2
-
-		[Misc.Tweaks.Sponge]
-			#The maximum amount of blocks a sponge can soak. (Vanilla is 64, disabled if quark is installed)
-			# Default: 256
-			# Range: > -2147483648
-			"Max soak blocks" = 256
-			#The maximum range at which sponges will check for soakable blocks. (Vanilla is 5, disabled if quark is installed)
-			# Default: 10
-			# Range: > -2147483648
-			"Max soak range" = 10
-
-		[Misc.Tweaks.Sponges]
-			#If exposed to the sun sponges may dry and if exposed to rain sponges might get wet
-			"Dry wet weather" = true
-
-		[Misc.Tweaks.Breathe]
-			#The amount of ticks the entities consumes when underwater. In vanilla it's 1 without Respiration enchantment. For non integer numbers the decimal part will count as a chance to have a +1
-			# Default: 1.5
-			# Range: 0.0 ~ 100.0
-			"Air ticks consumed" = 1.5
-			#Every how many ticks will entities drown
-			# Default: 30
-			# Range: 0 ~ 100
-			"Drown speed" = 30
-			"Increase drown damage the more drowning" = true
-
-			#The amount of air ticks the entities regains each tick when out of water. Min is the amount as soon as you exit water, Max is a few seconds out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4.
-			[Misc.Tweaks.Breathe."Air ticks refilled"]
-				# Default: 1.0
-				# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-				Minimum = 1.0
-				# Default: 2.5
-				# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-				Maximum = 2.5
-
-		[Misc.Tweaks.Turtle]
-			#The ticks of Water Breathing given by the Turtle Helmet. Vanilla is 200
-			# Default: 900
-			# Range: > -2147483648
-			"Helmet water breathing time" = 900
-			#If true, scute will drop as a block and not as item
-			"Scute drops as block" = true
-
-		[Misc.Tweaks.Nausea]
-			#Eating while nauseous will cause hunger effect
-			"Hunger when eating and nauseous" = true
-			#Hitting a mob has this % chance (per level of Nausea) to fail when nauseated
-			# Default: 0.15
-			# Range: 0.0 ~ 1.0
-			"Chance to fail to hit" = 0.15
+		#If true, makes ocelots transform into cats when tamed. Like pre ocelot-cat split.
+		"Ocelot to cat" = true
 
 		[Misc.Tweaks.Parrot]
 			#The fall distance (in blocks) needed before parrots (and other shoulder entities) get knocked off the player's shoulder. Vanilla is 0.5
@@ -1292,7 +1312,7 @@
 	[Misc.Packs]
 		#If true, no integrated data pack will be loaded
 		"Disable all data packs" = false
-		#If true a data pack will be enabled that disables villages and pillagers outpost generation.
+		#If true a data pack will be enabled that disables villages, pillagers outpost and mansions generation.
 		"Disable long noses structures" = true
 		#If true a data pack will be enabled that makes furnaces require copper. Copper ingots can be obtained from raw copper on campfires.
 		"Copper furnace" = true
@@ -1399,3 +1419,53 @@
 		# Default: 500
 		# Range: > -2147483648
 		"Slowdown message" = 500
+
+	#Greatly increases the range and damage of the conduit
+	[Misc.Conduit]
+		#Distance multiplier (formula is `blocks_around / 7 * this_multiplier`) from the conduit at which it will deal damage to enemies.
+		# Default: 8.0
+		# Range: 0.0 ~ 64.0
+		"Protection distance multiplier" = 8.0
+		#If a mob is within this radius from the conduit, it will be dealt the maximum amount of damage.
+		# Default: 8.0
+		# Range: 0.0 ~ 96.0
+		"Protection max damage distance" = 8.0
+		#If true, conduit effect will no longer speed up mining speed.
+		"Remove haste" = true
+
+	#Colliding with walls at high speed (e.g. from explosions or knockback) deals damage.
+	[Misc."Collide with walls"]
+		#If set higher than 0 it will enable damage when colliding with walls at a high speed (e.g. with explosions or knockback). Higher = more damage. Set to 0 to disable. Please note that even if set to 0, might still show up in performance profilers.
+		# Default: 3.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		Damage = 3.0
+
+	#Nausea makes eating give Hunger and attacking sometimes miss.
+	[Misc.Nausea]
+		#Eating while nauseous will cause hunger effect
+		"Hunger when eating and nauseous" = true
+		#Hitting a mob has this % chance (per level of Nausea) to fail when nauseated
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		"Chance to fail to hit" = 0.15
+
+	#Changes how fast entities consume and refill air, and how drowning damage scales.
+	[Misc.Breathing]
+		#The amount of ticks the entities consumes when underwater. In vanilla it's 1 without Respiration enchantment. For non integer numbers the decimal part will count as a chance to have a +1
+		# Default: 1.5
+		# Range: 0.0 ~ 100.0
+		"Air ticks consumed" = 1.5
+		#Every how many ticks will entities drown
+		# Default: 30
+		# Range: 0 ~ 100
+		"Drown speed" = 30
+		"Increase drown damage the more drowning" = true
+
+		#The amount of air ticks the entities regains each tick when out of water. Min is the amount as soon as you exit water, Max is a few seconds out of water. For non integer numbers the decimal part will count as a chance to have a +1. Vanilla is 4.
+		[Misc.Breathing."Air ticks refilled"]
+			# Default: 1.0
+			# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			Minimum = 1.0
+			# Default: 2.5
+			# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+			Maximum = 2.5

@@ -1,6 +1,6 @@
 [1]
 	#list of all the commands to run, in order
-	Commands = ["gamerule maxEntityCramming 6", "gamerule doPatrolSpawning false", "gamerule doTraderSpawning true", "gamerule mobExplosionDropDecay false", "gamerule snowAccumulationHeight 1", "gamerule commandBlockOutput false", "gamerule playersNetherPortalDefaultDelay 40", "gamerule randomTickSpeed 1", "gamerule insanesurvivaloverhaul:death_durability_penalty 0", "gamerule insanesurvivaloverhaul:death_experience_lost 0", "gamerule insanesurvivaloverhaul:death_lose_items_percentage 0", "gamerule keepInventory true"]
+	Commands = ["gamerule maxEntityCramming 6", "gamerule doPatrolSpawning false", "gamerule doTraderSpawning false", "gamerule mobExplosionDropDecay false", "gamerule snowAccumulationHeight 1", "gamerule commandBlockOutput false", "gamerule playersNetherPortalDefaultDelay 0", "gamerule randomTickSpeed 1", "gamerule insanesurvivaloverhaul:death_durability_penalty 0", "gamerule insanesurvivaloverhaul:death_experience_lost 0", "gamerule insanesurvivaloverhaul:death_lose_items_percentage 0", "gamerule keepInventory true", "gamerule insanesurvivaloverhaul:death_min_health 10"]
 	#If true, commands will run each time the world is joined instead of just once
 	Repeat = false
 	#If true, commands will run for each player instead of just for the first join
