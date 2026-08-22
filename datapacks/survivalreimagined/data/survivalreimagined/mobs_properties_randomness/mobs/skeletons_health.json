@@ -1,0 +1,11 @@
+{
+    "target": "#minecraft:skeletons",
+    "properties": [
+        {
+            "property": "attribute_modifier",
+            "id": "survivalreimagined:less_health_to_skeletons",
+            "amount": -0.2,
+            "operation": "add_multiplied_total"
+        }
+    ]
+}
