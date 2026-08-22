@@ -3,3 +3,5 @@
 	"Better creeper lingering" = true
 	#If true, warnings will be displayed in chat when reloading data packs. Useful when developing a data pack.
 	"Warnings chat" = false
+	#If true, the full stack trace will be logged when a mob/preset/etc fails to load. Should be enabled when the dev asks to, to trace bugs.
+	"Log stacktrace on error" = false
