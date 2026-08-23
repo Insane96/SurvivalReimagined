@@ -9,6 +9,7 @@
 "Enable Movement" = true
 "Enable Sleep" = true
 "Enable World" = true
+"Enable Respawn" = true
 
 [Mobs]
 	#Makes zombie siege happen to the player without the need of a village
@@ -148,6 +149,12 @@
 		[Sleep.Tiredness."Fake sound"]
 			#List of mobs (and optional dimension where they should play) that will have their ambience sound played when the player is tired
 			Mobs = ["minecraft:skeleton,minecraft:overworld", "minecraft:zombie,minecraft:overworld", "minecraft:spider,minecraft:overworld", "minecraft:ghast,minecraft:the_nether", "minecraft:zombified_piglin,minecraft:the_nether"]
+			#Whether fake footstep sounds should also play near the player while a fake mob sound is active
+			Steps = true
+			#Max horizontal distance (in blocks) the fake mob is allowed to wander from the player while playing footsteps
+			# Default: 16.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			"Wander radius" = 16.0
 
 			#The cooldown (in ticks) between choosing a mob to play the fake sound. This is reduced with higher Tired effect levels
 			[Sleep.Tiredness."Fake sound"."Cooldown between mobs"]
@@ -166,6 +173,15 @@
 				# Default: 6.0
 				# Range: 0.0 ~ 1.7976931348623157E308
 				Maximum = 6.0
+
+			#Ticks between fake footstep sounds while a fake mob is active. This is reduced with higher Tired effect levels
+			[Sleep.Tiredness."Fake sound"."Step interval"]
+				# Default: 8.0
+				# Range: 0.0 ~ 1.7976931348623157E308
+				Minimum = 8.0
+				# Default: 15.0
+				# Range: 0.0 ~ 1.7976931348623157E308
+				Maximum = 15.0
 
 		[Sleep.Tiredness."Time skipped on sleep"]
 			#Time skipped in ticks on sleep with Tired I. Vanilla day lasts 24000 ticks.
@@ -694,7 +710,7 @@
 		#Enables a data pack that makes food no longer smeltable in furnaces and changes smokers recipe to require soul sand.
 		#This also enables a change to the smelt_item_function in loot tables to use smoker recipes instead of furnaces (otherwise, mobs wouldn't drop cooked food). Might have unintended side effects.
 		"No furnace food and smoker recipe" = true
-		#Enables a data pack that rebalances some foods and makes raw foods poisonous. Also allows mushroom stews to be crafted with any mushroom.
+		#Enables a data pack that rebalances some foods and makes raw foods poisonous. Also allows mushroom stews to be crafted with any mushroom and removes golden apples.
 		"Food changes" = true
 
 	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
@@ -1045,127 +1061,16 @@
 			"Enchantment level equivalent" = 4
 
 [Death]
+	#The mob that kills a player will not despawn, and when killed will drop more experience.
+	"Enable Player killer bounty" = true
+	#Makes players lose max health on death and adds a new item to gain them back.
+	#Controlled via the insanesurvivaloverhaul:death_health_lost game rule.
+	"Enable Death max health penalty" = true
 	#Makes you lose a percentage of items and durability and xp on death. By default the game rules are all set to 0. Controlled via game rules.
 	#Items percentage lost can be configured with the insanesurvivaloverhaul:death_lose_items_percentage, insanesurvivaloverhaul:death_durability_penalty and insanesurvivaloverhaul:death_destroy_items game rules.
 	# insanesurvivaloverhaul:death_experience_lost for the percentage of experience dropped and insanesurvivaloverhaul:death_destroy_experience if the experience should be dropped or destroyed.
 	#Please note that this feature controls the vanilla keep_inventory game rule.
-	"Enable Death penalty" = false
-	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
-	"Enable Echo pillar" = false
-	#Health and hunger penalties on respawn
-	"Enable Respawn penalties" = true
-	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Disabled by default via insanesurvivaloverhaul:do_loose_respawn game rule.
-	"Enable Loose respawn" = true
-	#The mob that kills a player will not despawn, and when killed will drop more experience.
-	"Enable Player killer bounty" = true
-	#Gives the player the Ghostly effect on respawn, making you really hard to see for mobs.
-	"Enable Ghostly" = true
-	#Makes players lose max health on death and adds a new item to gain them back.
-	#Controlled via the insanesurvivaloverhaul:death_health_lost game rule.
-	"Enable Max health death penalty" = true
-
-	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
-	[Death."Echo pillar"]
-		#Data pack that makes Echo Pillars generate in the world
-		"Echo pillars" = true
-
-	#Health and hunger penalties on respawn
-	[Death."Respawn penalties"]
-
-			#Min Health of respawning players
-			[Death."Respawn penalties".Health.Minimum]
-				# Default: 10.0
-				# Range: 0.0 ~ 20.0
-				"Easy/Peaceful" = 10.0
-				# Default: 10.0
-				# Range: 0.0 ~ 20.0
-				Normal = 10.0
-				# Default: 6.0
-				# Range: 0.0 ~ 20.0
-				Hard = 6.0
-
-			#How much health respawning players lose on respawn (not max health)
-			[Death."Respawn penalties".Health."Per death"]
-				# Default: 1.0
-				# Range: 0.0 ~ 20.0
-				"Easy/Peaceful" = 1.0
-				# Default: 2.0
-				# Range: 0.0 ~ 20.0
-				Normal = 2.0
-				# Default: 2.0
-				# Range: 0.0 ~ 20.0
-				Hard = 2.0
-
-			#Min Hunger of respawning players. If below this value on death will be set to this value
-			[Death."Respawn penalties".Hunger.Min]
-				# Default: 6.0
-				# Range: 0.0 ~ 20.0
-				"Easy/Peaceful" = 6.0
-				# Default: 6.0
-				# Range: 0.0 ~ 20.0
-				Normal = 6.0
-				# Default: 6.0
-				# Range: 0.0 ~ 20.0
-				Hard = 6.0
-
-			#Max Hunger of respawning players. If above this value on death will be set to this value
-			[Death."Respawn penalties".Hunger.Maximum]
-				# Default: 14.0
-				# Range: 0.0 ~ 20.0
-				"Easy/Peaceful" = 14.0
-				# Default: 14.0
-				# Range: 0.0 ~ 20.0
-				Normal = 14.0
-				# Default: 10.0
-				# Range: 0.0 ~ 20.0
-				Hard = 10.0
-
-			#Min Saturation of respawning players. If below this value on death will be set to this value
-			[Death."Respawn penalties".Saturation.Minimum]
-				# Default: 6.0
-				# Range: 0.0 ~ 20.0
-				"Easy/Peaceful" = 6.0
-				# Default: 6.0
-				# Range: 0.0 ~ 20.0
-				Normal = 6.0
-				# Default: 6.0
-				# Range: 0.0 ~ 20.0
-				Hard = 6.0
-
-			#Max Saturation of respawning players. If above this value on death will be set to this value
-			[Death."Respawn penalties".Saturation.Maximum]
-				# Default: 10.0
-				# Range: 0.0 ~ 20.0
-				"Easy/Peaceful" = 10.0
-				# Default: 10.0
-				# Range: 0.0 ~ 20.0
-				Normal = 10.0
-				# Default: 6.0
-				# Range: 0.0 ~ 20.0
-				Hard = 6.0
-
-	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Disabled by default via insanesurvivaloverhaul:do_loose_respawn game rule.
-	[Death."Loose respawn"]
-		#If enabled, respawning will try to place you on land and not in fluids
-		"Dont respawn on fluid" = true
-
-		#The range from world spawn where players will respawn.
-		[Death."Loose respawn"."Loose world spawn range"]
-			# Default: 128.0
-			# Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 128.0
-			# Default: 256.0
-			# Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 256.0
-
-		#The range from beds where players will respawn.
-		[Death."Loose respawn"."Loose bed spawn range"]
-			# Default: 80.0
-			# Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 80.0
-			# Default: 160.0
-			# Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 160.0
+	"Enable Death inventory penalty" = false
 
 	#The mob that kills a player will not despawn, and when killed will drop more experience.
 	[Death."Player killer bounty"]
@@ -1173,13 +1078,6 @@
 		# Default: 5.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Experience Multiplier" = 5.0
-
-	#Gives the player the Ghostly effect on respawn, making you really hard to see for mobs.
-	[Death.Ghostly]
-		#How many seconds of the Ghostly effect is given to the player on respawn.
-		# Default: 150
-		# Range: > 0
-		"Time on respawn" = 150
 
 [Mining]
 	#Various mining changes
@@ -1336,8 +1234,6 @@
 		"Misc tweaks" = true
 		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc).
 		"Actual redstone components" = true
-		#Fixes the drop rate of some saplings, such as Jungle and Dark oak dropping too rarely
-		"Sapling drop fix" = true
 		#Lowers the giant mushrooms generated in a Roofed forests forests as well as removes the non-dark oak trees
 		"Dark forest vegetation" = true
 		#If true, a data pack will be enabled that makes End Cities more common.
@@ -1349,6 +1245,8 @@
 		#Guardians no longer drop Prismarine Shards/Crystals (they drop Wet Sponge and (Cooked) Cod instead), Elder Guardians roll the fishing loot table instead, and Sea Lanterns always drop themselves when broken.
 		#Any leftover Prismarine Shard drop from other sources is replaced with 40% as many Turtle Scutes, and any leftover Prismarine Crystals drop is replaced with 40% as many Nautilus Shells.
 		"Prismarine rework" = true
+		#Makes saplings no longer drop from trees. Instead, you can craft them from leaves
+		"Craftable saplings" = true
 
 	#Various Nerfs
 	[Misc.Nerfs]
@@ -1469,3 +1367,125 @@
 			# Default: 2.5
 			# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			Maximum = 2.5
+
+[Respawn]
+	#Gives the player the Ghostly effect on respawn, making you really hard to see for mobs.
+	"Enable Ghostly" = true
+	#Health and hunger penalties on respawn
+	"Enable Penalties" = true
+	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Disabled by default via insanesurvivaloverhaul:ranged_respawn game rule.
+	"Enable Ranged respawn" = true
+	#Allows players to have a main bed where they will always respawn in if they lose a current bed.
+	"Enable Main bed" = true
+	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
+	"Enable Echo pillar" = false
+
+	#Gives the player the Ghostly effect on respawn, making you really hard to see for mobs.
+	[Respawn.Ghostly]
+		#How many seconds of the Ghostly effect is given to the player on respawn.
+		# Default: 150
+		# Range: > 0
+		"Time on respawn" = 150
+
+	#Health and hunger penalties on respawn
+	[Respawn.Penalties]
+
+			#Min Health of respawning players
+			[Respawn.Penalties.Health.Minimum]
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 10.0
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				Normal = 10.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#How much health respawning players lose on respawn (not max health)
+			[Respawn.Penalties.Health."Per death"]
+				# Default: 1.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 1.0
+				# Default: 2.0
+				# Range: 0.0 ~ 20.0
+				Normal = 2.0
+				# Default: 2.0
+				# Range: 0.0 ~ 20.0
+				Hard = 2.0
+
+			#Min Hunger of respawning players. If below this value on death will be set to this value
+			[Respawn.Penalties.Hunger.Min]
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 6.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Normal = 6.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#Max Hunger of respawning players. If above this value on death will be set to this value
+			[Respawn.Penalties.Hunger.Maximum]
+				# Default: 14.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 14.0
+				# Default: 14.0
+				# Range: 0.0 ~ 20.0
+				Normal = 14.0
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				Hard = 10.0
+
+			#Min Saturation of respawning players. If below this value on death will be set to this value
+			[Respawn.Penalties.Saturation.Minimum]
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 6.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Normal = 6.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+			#Max Saturation of respawning players. If above this value on death will be set to this value
+			[Respawn.Penalties.Saturation.Maximum]
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				"Easy/Peaceful" = 10.0
+				# Default: 10.0
+				# Range: 0.0 ~ 20.0
+				Normal = 10.0
+				# Default: 6.0
+				# Range: 0.0 ~ 20.0
+				Hard = 6.0
+
+	#Adds loose respawning: players respawn at a random offset from world spawn or bed. Disabled by default via insanesurvivaloverhaul:ranged_respawn game rule.
+	[Respawn."Ranged respawn"]
+		#If enabled, respawning will try to place you on land and not in fluids
+		"Dont respawn on fluid" = true
+
+		#The range from world spawn where players will respawn.
+		[Respawn."Ranged respawn"."Loose world spawn range"]
+			# Default: 128.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 128.0
+			# Default: 256.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 256.0
+
+		#The range from beds where players will respawn.
+		[Respawn."Ranged respawn"."Loose bed spawn range"]
+			# Default: 80.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Minimum = 80.0
+			# Default: 160.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Maximum = 160.0
+
+	#Adds Echo Pillars: ancient structures that act as spawn anchors and grant effects on respawn.
+	[Respawn."Echo pillar"]
+		#Data pack that makes Echo Pillars generate in the world
+		"Echo pillars" = true
