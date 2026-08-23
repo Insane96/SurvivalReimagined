@@ -4,7 +4,7 @@
         {
             "property": "attribute_modifier",
             "id": "survivalreimagined:less_health_to_skeletons",
-            "amount": -0.2,
+            "amount": -0.25,
             "operation": "add_multiplied_total"
         }
     ]
