@@ -3,7 +3,8 @@
     "properties": [
         {
             "property": "attribute_modifier",
-            "attribute": "survivalreimagined:less_health_to_skeletons",
+            "attribute": "minecraft:generic.max_health",
+            "id": "survivalreimagined:less_health_to_skeletons",
             "amount": -0.25,
             "operation": "add_multiplied_total"
         }

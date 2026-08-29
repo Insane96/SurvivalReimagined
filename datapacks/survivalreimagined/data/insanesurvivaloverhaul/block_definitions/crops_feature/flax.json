@@ -1,0 +1,19 @@
+{
+    "block": "supplementaries:flax",
+    "required": false,
+    "states": [
+        "age=6,half=lower",
+        "age=6,half=upper",
+        "age=5,half=lower",
+        "age=5,half=upper",
+        "age=4,half=lower",
+        "age=4,half=upper",
+        "age=3,half=lower",
+        "age=3,half=upper",
+        "age=2,half=lower",
+        "age=2,half=upper",
+        "age=1,half=lower",
+        "age=1,half=upper"
+    ],
+    "state_hardness": 0.3
+}

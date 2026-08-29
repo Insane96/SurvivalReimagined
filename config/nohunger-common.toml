@@ -46,3 +46,9 @@
 		# Default: 7.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Feast threshold" = 7.0
+		#Always show exact values in the food tooltip instead of "Snack", "Feast", etc.
+		"Always advanced tooltip" = true
+
+	["No hunger"."Ot regen overlay"]
+		#(Client Only) If true, the overtime regen overlay will always render on the first row of hearts, capping at 20 health. Useful for mods that change heart rendering, showing them on the same row
+		"Force first row" = false

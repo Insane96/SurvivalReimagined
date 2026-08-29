@@ -817,7 +817,7 @@
 
 	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
 	[Items."Stone tools gone"]
-		"Items to replace" = ["minecraft:stone_axe, minecraft:copper_axe", "minecraft:stone_pickaxe, minecraft:copper_pickaxe", "minecraft:stone_shovel, minecraft:copper_shovel", "minecraft:stone_hoe, minecraft:copper_hoe", "minecraft:stone_sword, minecraft:copper_sword"]
+		"Items to replace" = ["minecraft:stone_axe, minecraft:copper_axe", "minecraft:stone_pickaxe, minecraft:copper_pickaxe", "minecraft:stone_shovel, minecraft:copper_shovel", "minecraft:stone_hoe, minecraft:copper_hoe", "minecraft:stone_sword, minecraft:copper_sword", "insanesurvivaloverhaul:stone_dagger, insanesurvivaloverhaul:copper_dagger"]
 		"Data pack" = true
 
 	#A new item that can let you carry more stuff around.

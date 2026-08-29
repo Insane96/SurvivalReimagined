@@ -592,3 +592,30 @@
 	# Default: 0.4
 	# Range: 0.0 ~ 1.0
 	"Detection Range Increase" = 0.4
+
+[electrocution]
+	#In seconds
+	# Default: 3.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	Delay = 3.0
+	# Default: 3.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Shock Damage" = 3.0
+	#Radius (in blocks) a discharge can chain within
+	# Default: 4.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	Radius = 4.0
+	#How many nearby entities a discharge hits
+	# Default: 2
+	# Range: > -2147483648
+	"Chain Targets" = 2
+
+[blood_fueled]
+	#Chance to not consume durability
+	# Default: 0.667
+	# Range: 0.0 ~ 1.0
+	"Save Chance" = 0.667
+	#Chance to hurt the player when durability is saved, bypassing enchantments (e.g. protection)
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	"Self Damage Chance" = 0.1
