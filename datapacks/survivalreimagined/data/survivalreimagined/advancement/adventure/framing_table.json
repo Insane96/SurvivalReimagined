@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "storagedrawers:framing_table"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.framing_table.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.framing_table.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "survivalreimagined:adventure/storage_drawers",
+	"criteria": {
+		"has_framing_table": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "storagedrawers:framing_table"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_framing_table"
+		]
+	]
+}

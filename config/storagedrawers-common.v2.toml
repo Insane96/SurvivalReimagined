@@ -19,7 +19,7 @@
 [Drawers]
 	# A base value multiplied against the storage size of all drawer slots.
 	# Change this to uniformly increase all storage amounts
-	baseStackStorage = 1
+	baseStackStorage = 4
 
 	# Configuration for individual drawer configurations.
 	# Units are the number of stacks a slot holds before the base stack storage value is multiplied.
@@ -52,7 +52,7 @@
 	# Configuration around the auto compacting feature
 	[Drawers.Compacting]
 		# Whether compacting function is supported.  Disabling does not remove the block.
-		enabled = false
+		enabled = true
 		# 
 		# Enables additional rules for some Minecraft items, like quartz, brick, and clay.
 		# See logs for full set of rules that get added.
@@ -65,7 +65,7 @@
 	# Configuration around detached drawers, which are individual drawer slots pulled from a drawer block.
 	[Drawers.Detached]
 		# Allows individual drawer slots to be pulled out from a drawer block.
-		enable = false
+		enable = true
 		# 
 		# If enabled, carrying filled drawers in your inventory gives slowness debuff.
 		# Debuff can be mitigated with portability upgrade, if it's enabled.
