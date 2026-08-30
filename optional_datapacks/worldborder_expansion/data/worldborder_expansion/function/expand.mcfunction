@@ -1,2 +1,2 @@
-worldborder add 2
-tellraw @a [{"text":"[World Border] ","color":"gold"},{"text":"Il confine si è espanso di 2 blocchi!","color":"green"}]
+worldborder add 2 4
+tellraw @a [{"text":"[World Border] ","color":"gold"},{"text":"The border has expanded by 2 blocks!","color":"green"}]

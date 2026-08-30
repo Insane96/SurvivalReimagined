@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 48,
-    "description": "Sets the world border to 15 blocks and expands it by 2 blocks every new day"
+    "description": "Sets the world border to 15 blocks (choosing a spawn with nearby logs and gravel) and expands it by 2 blocks at dawn and dusk"
   }
 }

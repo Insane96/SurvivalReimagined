@@ -105,3 +105,5 @@
 		"Prevent shake based off max health" = true
 		#Vanilla has cut the selected-slot highlight texture for ... reasons. This fixes the size of the slot selected highlight and enables a resource pack that fixes the texture.
 		"Slot selection resource pack" = true
+		#If true, the crosshair's 'ready to attack' indicator is shown based on whether the held item actually has bonus attack damage, instead of vanilla's attack-speed threshold (which never shows it for weapons faster than 4 attacks/sec, e.g. some Daggers).
+		"Attack indicator based on damage" = true

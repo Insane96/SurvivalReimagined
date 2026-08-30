@@ -54,7 +54,7 @@
 		"Guardian magic damage only" = true
 		#Iron golems no longer deal randomized damage, but fixed attack_damage attribute damage instead
 		"Fixed iron golem damage" = true
-		#Changes mobs loot and makes mobs drop reduced loot if not killed by a player
+		#Reworks the loot tables of several mobs (blaze, cave spider, creeper, enderman, ghast, magma cube, phantom, piglin brute, pillager, skeleton, slime, spider, stray, witch, wither skeleton, zombified piglin), gives bogged extra drops (glowstone dust, mushrooms), makes snow golems drop their carved pumpkin on death if they still have it, and makes mobs drop reduced loot if not killed by a player
 		"Loot changes" = true
 		#If true, mobs will burn even if there's a block above them in daylight
 		"Burn in sky light" = true
@@ -787,6 +787,8 @@
 	"Enable Stack sizes" = true
 	#Basically backports copper equipment from latest MC versions.
 	"Enable Copper equipment" = true
+	#Adds daggers: a fast, low-damage weapon type available in every material tier. No mineable/* block-breaking ability, no sweep attack.
+	"Enable Daggers" = true
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack sizes"]
@@ -873,6 +875,10 @@
 	"Enable Knockback" = true
 	#Give an use to the fletching table, adding more arrows and better crafting
 	"Enable Fletching" = true
+	#Mobs hit by pickupable arrows remember them, and drop a percentage of those arrows on death.
+	"Enable Stuck arrows" = true
+	#Rework sweep attack. Sweep is no longer on swords, instead it's on hoes. Also, the sweep attack deals full damage and the range is increased. A data pack is enabled that removes the Sweeping Edge enchantment.
+	"Enable Sweep overhaul" = true
 
 	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
 	[Combat."Absorption armor"]
@@ -884,8 +890,6 @@
 	[Combat."Misc combat"]
 		#If enabled, tools will not take 2 damage when used to hurt entities
 		"One damage for tool attacking" = true
-		#Rework Sweeping attack. Sweeping is no longer on swords, instead it's on hoes. Also, the sweeping attack deals full damage and the range is increased. A data pack is enabled that removes the sweeping enchantment.
-		"Sweeping overhaul" = true
 		#In vanilla, if you attack as soon as you just attacked you already deal 20% of the full damage. This changes that to 0%.
 		"No damage when spamming" = true
 		#Enables a data pack that reworks armor.
@@ -1060,6 +1064,46 @@
 			# Range: > -2147483648
 			"Enchantment level equivalent" = 4
 
+	#Mobs hit by pickupable arrows remember them, and drop a percentage of those arrows on death.
+	[Combat."Stuck arrows"]
+		#Chance, for each arrow stuck in the mob, to be dropped on death.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		"Drop amount" = 0.5
+
+	#Rework sweep attack. Sweep is no longer on swords, instead it's on hoes. Also, the sweep attack deals full damage and the range is increased. A data pack is enabled that removes the Sweeping Edge enchantment.
+	[Combat."Sweep overhaul"]
+		#Vanilla = false
+		"Sweep on hoes" = true
+		#Vanilla = true
+		"Sweep on swords" = false
+		#Vanilla = false
+		"Crit allows sweep" = true
+		#If true, the mobs hit by the sweep attack will take full damage instead of 1. Vanilla = false
+		"Full sweep damage" = true
+		#Increases the horizontal sweep hit box by this value in blocks. Vanilla = 0
+		# Default: 1.5
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Horizontal sweep inflation" = 1.5
+		#Increases the vertical sweep hit box by this value in blocks. Vanilla = 0
+		# Default: 0.15
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Vertical sweep inflation" = 0.15
+		#Increases the sweep range by this value in blocks. Vanilla = 0
+		# Default: 1.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Sweep range inflation" = 1.0
+		#Vanilla = false
+		"Allow sweep when airborne" = true
+		#Vanilla = false
+		"Allow sweep when sprinting" = true
+		#Vanilla = false
+		"Allow sweep when moving fast" = true
+		#If true, scales the sweep knockback strength proportionally to the attack's knockback level instead of using the hardcoded 0.4 constant (so knockback enchantment actually works). Vanilla = false
+		"Scale knockback" = true
+		#Enables a data pack that removes the Sweeping Edge enchantment and (if Rune Enchanting is installed) the Sweeping Edge rune
+		"Data pack" = true
+
 [Death]
 	#The mob that kills a player will not despawn, and when killed will drop more experience.
 	"Enable Player killer bounty" = true
@@ -1167,6 +1211,8 @@
 	"Enable Nausea" = true
 	#Changes how fast entities consume and refill air, and how drowning damage scales.
 	"Enable Breathing" = true
+	#A block that's visible through walls, for testing the see-through-walls render technique.
+	"Enable Glow block" = true
 
 	#Various stuff that doesn't fit in any other Feature.
 	[Misc.Tweaks]
@@ -1199,6 +1245,10 @@
 		"Damage to break vehicles" = 2
 		#If true, makes ocelots transform into cats when tamed. Like pre ocelot-cat split.
 		"Ocelot to cat" = true
+		#Max amount of matching, repairable items that can be merged together in a crafting grid to combine their durability (vanilla's repair recipe). Vanilla is 2.
+		# Default: 9
+		# Range: 2 ~ 9
+		"Repair merge max items" = 9
 
 		[Misc.Tweaks.Parrot]
 			#The fall distance (in blocks) needed before parrots (and other shoulder entities) get knocked off the player's shoulder. Vanilla is 0.5

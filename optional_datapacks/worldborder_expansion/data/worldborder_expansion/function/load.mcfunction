@@ -1,5 +1,5 @@
-# Scoreboard usato per far partire il setup una sola volta per mondo
+# Scoreboard used to only run the setup once per world
 scoreboard objectives add wbe_data dummy
 
-# Il primo player potrebbe non essere ancora caricato al momento del load, quindi si aspetta 1 secondo
+# The first player might not be loaded yet at load time, so wait 1 second
 schedule function worldborder_expansion:setup 20t
