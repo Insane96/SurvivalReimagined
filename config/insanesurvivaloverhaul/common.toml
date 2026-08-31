@@ -335,33 +335,32 @@
 		"Data pack" = true
 
 [Movement]
-	"Enable Boats" = true
-	"Enable Swimming" = true
-	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
-	"Enable Terrain slowdown" = true
-	"Enable Minecarts" = true
-	#Players's slowed down when walking backwards.
-	"Enable Backwards slowdown" = true
-	#Players's slides down climbable blocks faster and stands still when opening an interface
-	"Enable Better climbable" = true
 	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack
 	"Enable Weighted armor" = false
-	#Players's slowed down for a brief moment when hit.
-	"Enable Tagging" = true
+	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
+	"Enable Terrain slowdown" = true
+	#Players's slowed down when walking backwards.
+	"Enable Backwards slowdown" = true
 	"Enable Elytra" = true
 	"Enable Sprinting" = true
+	#Players's slides down climbable blocks faster and stands still when opening an interface
+	"Enable Better climbable" = true
+	#Players's slowed down for a brief moment when hit.
+	"Enable Tagging" = true
+	"Enable Swimming" = true
+	"Enable Minecarts" = true
+	"Enable Boats" = true
 
-	[Movement.Boats]
-		#If true, boats will no longer go stupidly fast on ice. (If quark is present this is disabled)
-		"No ice boat" = true
-		#If true, boats will always break when falling from this height or more instead of being glitched
-		# Default: 5.0
-		# Range: 0.0 ~ 1.7976931348623157E308
-		"Break height" = 5.0
+	[Movement.Minecarts]
+		#If true, minecarts with entities in them and chest minecarts will force load chunks, allowing them to travel in unloaded chunks. It's advised to not leave too many minecarts with entities and with chests lying around, as they will keep chunks loaded.
+		"Entity and chest minecarts force load chunks" = true
+		#If true, enables a data pack that makes rails cheaper and adds recipes for new rail. Also adds a global loot modifier that replaces vanilla rails with golden powered rails
+		"Data pack" = true
 
-	[Movement.Swimming]
-		#Prevents swimming up really fast if swimming and holding the jump key. Only applies to water.
-		"Prevent fast swim up with jump" = true
+	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack
+	[Movement."Weighted armor"]
+		#Formula to calculate the slowdown of a piece of armor. Variables available are: armor, armor_toughness. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Please note that 1 means 100% slowdown. Regenerating Absorption counts as Toughness
+		"Slowdown formula" = "(armor * 0.01) * (1 + (armor_toughness * 0.05))"
 
 	#Slowdown based off the terrain entities walking on. Custom Terrain Slowdown are controlled via json in this feature's folder
 	[Movement."Terrain slowdown"]
@@ -369,53 +368,12 @@
 		#If true, snow slowdown is ignored if wearing leather boots (or any item in insanesurvivaloverhaul:snow_slowdown_ignore item tag)
 		"Snow slowdown ignored with leather boots" = true
 
-	[Movement.Minecarts]
-		#If true, minecarts with entities in them and chest minecarts will force load chunks, allowing them to travel in unloaded chunks. It's advised to not leave too many minecarts with entities and with chests lying around, as they will keep chunks loaded.
-		"Entity and chest minecarts force load chunks" = false
-		#If true, enables a data pack that makes rails cheaper and adds recipes for new rail. Also adds a global loot modifier that replaces vanilla rails with golden powered rails
-		"Data pack" = true
-
 	#Players's slowed down when walking backwards.
 	[Movement."Backwards slowdown"]
 		#How much slower will the player go when walking backwards.
 		# Default: 0.3
 		# Range: 0.0 ~ 1.0
 		Slowdown = 0.3
-
-	#Players's slides down climbable blocks faster and stands still when opening an interface
-	[Movement."Better climbable"]
-		#Speed at which players move up climbable blocks. Vanilla is 0.2
-		# Default: 0.3
-		# Range: 0.0 ~ 5.0
-		"Climb speed" = 0.3
-		#How much faster players move down climbable blocks.
-		# Default: 0.2
-		# Range: 0.0 ~ 5.0
-		"Descend speed" = 0.2
-		#If true, and not looking down, player will crouch when opening an interface.
-		"Crouch when opening interface" = true
-		#Entities will not count as on climbable when on the ground, preventing slowdown when passing through climbable blocks.
-		"Not on climbable when on ground" = true
-		#If enabled you'll only be able to climb when pressing jump and not when against a wall and moving.
-		"Only climb with jump" = true
-		#If true, a data pack will be enabled that will make players take damage when falling on climbable blocks.
-		"Fall damage on climbable" = true
-
-	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack
-	[Movement."Weighted armor"]
-		#Formula to calculate the slowdown of a piece of armor. Variables available are: armor, armor_toughness. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Please note that 1 means 100% slowdown. Regenerating Absorption counts as Toughness
-		"Slowdown formula" = "(armor * 0.01) * (1 + (armor_toughness * 0.05))"
-
-	#Players's slowed down for a brief moment when hit.
-	[Movement.Tagging]
-		#Which level of Slowness is applied to the player (level 0 is Slowness I).
-		# Default: 0
-		# Range: 0 ~ 10
-		"Slowness level" = 0
-		#Slowness is applied for damage_taken * this_value ticks.
-		# Default: 7
-		# Range: 0 ~ 100
-		"Duration multiplier" = 7
 
 	[Movement.Elytra]
 		#How much the player is slowed down when gliding. Only applies outside the End Dimension. Vanilla is 0.99
@@ -446,6 +404,48 @@
 		# Default: 0.025
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Speed reduction each hunger" = 0.025
+
+	#Players's slides down climbable blocks faster and stands still when opening an interface
+	[Movement."Better climbable"]
+		#Speed at which players move up climbable blocks. Vanilla is 0.2
+		# Default: 0.3
+		# Range: 0.0 ~ 5.0
+		"Climb speed" = 0.3
+		#How much faster players move down climbable blocks.
+		# Default: 0.2
+		# Range: 0.0 ~ 5.0
+		"Descend speed" = 0.2
+		#If true, and not looking down, player will crouch when opening an interface.
+		"Crouch when opening interface" = true
+		#Entities will not count as on climbable when on the ground, preventing slowdown when passing through climbable blocks.
+		"Not on climbable when on ground" = true
+		#If enabled you'll only be able to climb when pressing jump and not when against a wall and moving.
+		"Only climb with jump" = true
+		#If true, a data pack will be enabled that will make players take damage when falling on climbable blocks.
+		"Fall damage on climbable" = true
+
+	#Players's slowed down for a brief moment when hit.
+	[Movement.Tagging]
+		#Which level of Slowness is applied to the player (level 0 is Slowness I).
+		# Default: 0
+		# Range: 0 ~ 10
+		"Slowness level" = 0
+		#Slowness is applied for damage_taken * this_value ticks.
+		# Default: 7
+		# Range: 0 ~ 100
+		"Duration multiplier" = 7
+
+	[Movement.Swimming]
+		#Prevents swimming up really fast if swimming and holding the jump key. Only applies to water.
+		"Prevent fast swim up with jump" = true
+
+	[Movement.Boats]
+		#If true, boats will no longer go stupidly fast on ice. (If quark is present this is disabled)
+		"No ice boat" = true
+		#If true, boats will always break when falling from this height or more instead of being glitched
+		# Default: 5.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Break height" = 5.0
 
 [World]
 	#Spawners are now a challenge. Monsters spawning from spawners ignore light.

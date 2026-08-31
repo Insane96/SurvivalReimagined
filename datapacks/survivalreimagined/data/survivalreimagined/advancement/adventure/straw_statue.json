@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "strawstatues:straw_statue"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.straw_statue.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.straw_statue.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:story/smelt_iron",
+	"criteria": {
+		"has_straw_statue": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "strawstatues:straw_statue"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_straw_statue"
+		]
+	]
+}
