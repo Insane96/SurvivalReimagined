@@ -39,3 +39,63 @@
 		# Default: 1.0
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Bonus damage blocked" = 1.0
+
+	["S p".Enchantments]
+		#Amount of knockback given to entities per level.
+		# Default: 0.6
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Recoil entities knockback" = 0.6
+		#Amount of knockback given to projectiles per level.
+		# Default: 5.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Recoil projectiles knockback" = 5.0
+		#Percentage bonus amount of damage blocked.
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		"Reinforced blocked damage bonus" = 0.1
+		#How much damage will the aegis enchantment negate per level.
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		"Aegis percentage damage reduction" = 0.1
+		#How many seconds will ablaze set entities on fire per level.
+		# Default: 2
+		# Range: > 1
+		"Ablaze time on fire" = 2
+		#Percentage increase of speed when blocking with the Lightweight enchantment.
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Lightweight bonus speed" = 2.0
+		#Percentage cooldown reduction with the Fast Recovery enchantment.
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		"Fast recovery cooldown reduction" = 0.35
+		#If Rune Enchanting is installed, whether shield-only runes granting the mod's enchantment effects are enabled.
+		"Runes enabled" = true
+		#Which level of Recoil the Recoil rune is equivalent to.
+		# Default: 2
+		# Range: > 0
+		"Recoil rune level equivalent" = 2
+		#Which level of Reinforced the Reinforced rune is equivalent to.
+		# Default: 3
+		# Range: > 0
+		"Reinforced rune level equivalent" = 3
+		#Which level of Aegis the Aegis rune is equivalent to.
+		# Default: 3
+		# Range: > 0
+		"Aegis rune level equivalent" = 3
+		#Which level of Ablaze the Ablaze rune is equivalent to.
+		# Default: 1
+		# Range: > 0
+		"Ablaze rune level equivalent" = 1
+		#Which level of Lightweight the Lightweight rune is equivalent to.
+		# Default: 1
+		# Range: > 0
+		"Lightweight rune level equivalent" = 1
+		#Which level of Fast Recovery the Fast Recovery rune is equivalent to.
+		# Default: 1
+		# Range: > 0
+		"Fast recovery rune level equivalent" = 1
+		#Which level of Celestial Guardian the Celestial Guardian rune is equivalent to.
+		# Default: 1
+		# Range: > 0
+		"Celestial guardian rune level equivalent" = 1

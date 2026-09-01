@@ -19,7 +19,7 @@
 [Drawers]
 	# A base value multiplied against the storage size of all drawer slots.
 	# Change this to uniformly increase all storage amounts
-	baseStackStorage = 4
+	baseStackStorage = 2
 
 	# Configuration for individual drawer configurations.
 	# Units are the number of stacks a slot holds before the base stack storage value is multiplied.

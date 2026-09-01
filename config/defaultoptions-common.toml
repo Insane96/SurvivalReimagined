@@ -2,6 +2,6 @@
 #Allowed Values: PEACEFUL, EASY, NORMAL, HARD
 defaultDifficulty = "NORMAL"
 #Resource pack IDs to have enabled by default on the first run.
-defaultResourcePacks = ["vanilla", "mod_resources", "insanesurvivaloverhaul:disable_stone_tools_rp", "insanesurvivaloverhaul:equipment_forging_rp", "insanesurvivaloverhaul:early_shulker_boxes_rp", "insanesurvivaloverhaul:fix_selected_slot_highlight", "bitsandbalance/generated/bitsandbalance_enhanced_slab_client_models", "moonlight:merged_pack", "insanesurvivaloverhaul:divine_fragment_rp", "file/Fancy Crops v1.3.zip", "file/Fancy_Beds-v4.1.zip", "file/LowOnFire 1.21.3.zip", "file/§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip"]
+defaultResourcePacks = ["vanilla", "mod_resources", "insanesurvivaloverhaul:divine_fragment_rp", "insanesurvivaloverhaul:fix_selected_slot_highlight", "insanesurvivaloverhaul:early_shulker_boxes_rp", "insanesurvivaloverhaul:equipment_forging_rp", "insanesurvivaloverhaul:disable_stone_tools_rp", "bitsandbalance/generated/bitsandbalance_enhanced_slab_client_models", "moonlight:merged_pack", "file/Fancy_Beds-v4.1.zip", "file/LowOnFire 1.21.3.zip", "file/§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip", "vanillabackport:freshly_animated", "file/Fancy Crops v1.3.zip", "file/Fancy_Beds-v4.2.zip"]
 #Set to true if the difficulty for new world's should be locked to the specific default. This cannot be unlocked by players without external tools! Probably a bad idea. I don't recommend. Why am I adding this option?
 lockDifficulty = false

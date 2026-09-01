@@ -11,7 +11,7 @@
 	raining_multiplier = 3.0
 	#Enables wind, making the player move unpredictably around when gliding.
 	#Default Value: true
-	allow_wind = true
+	allow_wind = false
 	#The frequency of the wind gusts, larger values mean the wind effects occur more often. 0 removes wind. Default is semi-common. Observable gameplay effects are highly tied with gust size.
 	#Default Value: 0.15
 	# Default: 0.15
@@ -108,7 +108,7 @@
 	#Default Value: 200
 	# Default: 200
 	# Range: 1 ~ 10000
-	durability_use_interval = 200
+	durability_use_interval = 100
 	#The rate at which air resistance hinders your movement. 1 is no resistance, 0.5 is 1/2 as fast each tick.
 	#Default Value: 0.985
 	# Default: 0.985

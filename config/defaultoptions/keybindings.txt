@@ -38,17 +38,6 @@ key_treechop.key.cycle_sneak_behavior:key.keyboard.unknown:
 key_treechop.key.open_settings_overlay:key.keyboard.n:
 key_key.modernfix.config:key.keyboard.unknown:
 key_key.carry.desc:key.keyboard.unknown:
-key_key.pixelshot.orthographic_camera:key.keyboard.f7:
-key_key.pixelshot.open_menu:key.keyboard.f8:
-key_key.pixelshot.zoom_in:key.keyboard.right.bracket:
-key_key.pixelshot.zoom_out:key.keyboard.backslash:
-key_key.pixelshot.rotate_left:key.keyboard.left:
-key_key.pixelshot.rotate_right:key.keyboard.right:
-key_key.pixelshot.rotate_up:key.keyboard.up:
-key_key.pixelshot.rotate_down:key.keyboard.down:
-key_key.pixelshot.switch_preset:key.keyboard.unknown:
-key_key.pixelshot.high_resolution_screenshot:key.keyboard.f9:
-key_key.pixelshot.panoramic_screenshot:key.keyboard.unknown:
 key_supplementaries.keybind.quiver:key.keyboard.v:
 key_quark.keybind.autorun:key.keyboard.keypad.8:
 key_quark.keybind.back:key.mouse.4:

@@ -1,0 +1,9 @@
+{
+  "item_to_repair": "hangglider:hang_glider",
+  "repair": [
+    {
+      "repair_material": "minecraft:phantom_membrane",
+      "amount": 4.5
+    }
+  ]
+}
