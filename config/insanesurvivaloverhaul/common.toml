@@ -130,7 +130,7 @@
 		#REMOVE_ONE_LEVEL keeps the current tiredness but if higher than 'Tiredness to effect' removes one level of Tired to a minimum of I
 		#Allowed Values: RESET, KEEP, SET_AT_EFFECT, REMOVE_ONE_LEVEL
 		"On death behaviour" = "SET_AT_EFFECT"
-		#Phantoms will no longer spawn based on insomnia, but instead based off tiredness. Will spawn with Tired III.
+		#Phantoms will no longer spawn based on insomnia, but instead based off tiredness. Will spawn with Tired II+.
 		"Tired tied phantoms" = true
 		"Allow sleeping even when not tired" = false
 		#If true, sets the playersSleepingPercentage game rule to 1 so tired players can sleep no matter how many players on a server.
