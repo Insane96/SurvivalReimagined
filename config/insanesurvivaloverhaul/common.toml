@@ -789,6 +789,8 @@
 	"Enable Copper equipment" = true
 	#Adds daggers: a fast, low-damage weapon type available in every material tier. No mineable/* block-breaking ability, no sweep attack.
 	"Enable Daggers" = true
+	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid, up to a partial durability cap.
+	"Enable Repair kits" = true
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack sizes"]
@@ -850,6 +852,17 @@
 		# Range: 0 ~ 15
 		"Max sunlight" = 12
 
+	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid, up to a partial durability cap.
+	[Items."Repair kits"]
+		#Default how many materials worth does a repair kit repair. Each repair kit repairs based on the material it was crafted with, up to Max repair.
+		# Default: 1
+		# Range: > 1
+		"Repair kit material ratio" = 1
+		#Maximum repair percentage of an item that repair kits can reach.
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		"Max repair" = 0.8
+
 [Combat]
 	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
 	"Enable Absorption armor" = false
@@ -873,7 +886,7 @@
 	"Enable Bows" = true
 	#Players will deal reduced knockback if attacking with a non-weapon or spamming. Knockback reductions are defined via Data Packs with Item Definitions (the item_stats integrated data pack already does this)
 	"Enable Knockback" = true
-	#Give an use to the fletching table, adding more arrows and better crafting
+	#Gives a use to the fletching table, letting you craft better arrows out of vanilla ones.
 	"Enable Fletching" = true
 	#Mobs hit by pickupable arrows remember them, and drop a percentage of those arrows on death.
 	"Enable Stuck arrows" = true
@@ -1103,6 +1116,11 @@
 		"Scale knockback" = true
 		#Enables a data pack that removes the Sweeping Edge enchantment and (if Rune Enchanting is installed) the Sweeping Edge rune
 		"Data pack" = true
+
+	#Gives a use to the fletching table, letting you craft better arrows out of vanilla ones.
+	[Combat.Fletching]
+		#If disabled, torch arrows only set the target on fire instead of also placing a torch when they hit a block.
+		"Torch arrows place torches" = true
 
 [Death]
 	#The mob that kills a player will not despawn, and when killed will drop more experience.
