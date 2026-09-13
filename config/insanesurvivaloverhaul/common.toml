@@ -549,7 +549,7 @@
 				# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 				Maximum = 6000.0
 
-	#Thunderstorm Intensity. Disable it via gamerule: insanesurvivaloverhaul:thunderstormIntensity
+	#Thunderstorm Intensity. Disable it via gamerule: insanesurvivaloverhaul:thunderstorm_intensity
 	[World.Thunderstorms]
 		#Minimum thunderstorm intensity.
 		# Default: 1
@@ -789,7 +789,7 @@
 	"Enable Copper equipment" = true
 	#Adds daggers: a fast, low-damage weapon type available in every material tier. No mineable/* block-breaking ability, no sweep attack.
 	"Enable Daggers" = true
-	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid, up to a partial durability cap.
+	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid.
 	"Enable Repair kits" = true
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
@@ -852,14 +852,14 @@
 		# Range: 0 ~ 15
 		"Max sunlight" = 12
 
-	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid, up to a partial durability cap.
+	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid.
 	[Items."Repair kits"]
-		#Default how many materials worth does a repair kit repair. Each repair kit repairs based on the material it was crafted with, up to Max repair.
+		#Default how many materials worth does a repair kit repair. Each repair kit repairs based on the material it was crafted with, up to Max repair. Can be overridden by item component.
 		# Default: 1
 		# Range: > 1
 		"Repair kit material ratio" = 1
-		#Maximum repair percentage of an item that repair kits can reach.
-		# Default: 0.8
+		#Maximum repair percentage of an item that repair kits can reach. Can be overridden by item component.
+		# Default: 1.0
 		# Range: 0.0 ~ 1.0
 		"Max repair" = 0.8
 

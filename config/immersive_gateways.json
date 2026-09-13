@@ -2,6 +2,7 @@
   "minDistance": 1024,
   "maxDistance": 8096,
   "onlyPlayersCanTeleport": false,
+  "generatePortalsAutomatically": true,
   "colors": {
     "minecraft:warm_ocean": 3071200,
     "minecraft:wooded_badlands_plateau": 12217644,

@@ -1,9 +1,9 @@
 # Enables wobbly items in advancement toasts.
 enableAdvancementToastItems: true
 # Enables special formatting for items with cursed enchantments.
-enableCurseFormatting: true
+enableCurseFormatting: false
 # Enables particles in the enchant(ing/ment) table.
-enableEnchantParticles: true
+enableEnchantParticles: false
 # Enables floating item rotation.
 enableFloatingItemRotation: true
 # Enables the hotbar selector animation.
