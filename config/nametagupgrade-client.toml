@@ -1,0 +1,4 @@
+#Control how the name tag edit screen opens when holding the item and right-clicking.
+#Default Value: SNEAKING_WHEN_RENAMED
+#Allowed Values: ALWAYS, SNEAKING, SNEAKING_WHEN_RENAMED, NEVER_WHEN_RENAMED
+open_name_tag_edit_screen = "SNEAKING_WHEN_RENAMED"
