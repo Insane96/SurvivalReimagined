@@ -342,7 +342,7 @@
 	"Seed Pouch" = false
 	"Skull Pikes" = true
 	"Slime In A Bucket" = true
-	"Torch Arrow" = true
+	"Torch Arrow" = false
 	Trowel = true
 
 		[tools.abacus.highlight_color]
@@ -1553,7 +1553,7 @@
 	"Soul Candles" = true
 	"Usage Ticker" = true
 	"Uses For Curses" = true
-	"Variant Animal Textures" = true
+	"Variant Animal Textures" = false
 	"Wool Shuts Up Minecarts" = true
 
 	[client.auto_walk_keybind]
