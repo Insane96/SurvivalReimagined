@@ -3,7 +3,7 @@
 play_name_tag_sound = true
 #Mobs that have a custom name drop a name tag with that name on death.
 #Default Value: true
-drop_name_tags_on_death = true
+drop_name_tags_on_death = false
 #When trying to use a name tag on a mob already named with that exact name nothing will be consumed.
 #Default Value: true
 prevent_voiding_name_tags = true
