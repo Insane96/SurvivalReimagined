@@ -619,3 +619,8 @@
 	# Default: 0.1
 	# Range: 0.0 ~ 1.0
 	"Self Damage Chance" = 0.1
+
+[sprint_pact]
+	# Default: 0.2
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Bonus Speed" = 0.2

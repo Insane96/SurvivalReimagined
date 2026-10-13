@@ -524,6 +524,29 @@
 		#Block ids used as either the blacklist or whitelist, depending on mode. Examples: 'minecraft:oak_fence', 'minecraft:oak_door'.
 		blockIds = []
 
+	#Purposes for Goat Horns
+	[mechanics.goatHornPurposes]
+		#Master switch for all optional goat horn powers. Vanilla sounds still work.
+		enabled = false
+		#Give each goat horn its own cooldown instead of sharing vanilla's goat-horn cooldown.
+		separateCooldowns = false
+		#Enable Ponder's private light-placement guide.
+		ponder = false
+		#Enable the Sing horn power when one is added.
+		sing = false
+		#Enable the Seek horn power when one is added.
+		seek = false
+		#Enable the Feel horn power when one is added.
+		feel = false
+		#Enable the Admire horn power when one is added.
+		admire = false
+		#Enable the Call horn power when one is added.
+		call = false
+		#Follow a moving crit-particle guide to the center of a large cave opening.
+		yearn = false
+		#Enable the Dream horn ten-second projection with a 60-second cooldown.
+		dream = false
+
 #Tweaks
 [tweaks]
 

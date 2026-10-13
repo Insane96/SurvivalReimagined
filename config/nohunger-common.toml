@@ -52,3 +52,15 @@
 	["No hunger"."Ot regen overlay"]
 		#(Client Only) If true, the overtime regen overlay will always render on the first row of hearts, capping at 20 health. Useful for mods that change heart rendering, showing them on the same row
 		"Force first row" = false
+
+	["No hunger".Enchantments]
+		#Percentage of health regeneration speed from eating added by Well Fed
+		# Default: 0.25
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Well fed regen speed bonus" = 0.25
+		#Percentage of health regeneration speed from eating removed by Curse of Malnutrition
+		# Default: 0.35
+		# Range: 0.0 ~ 1.0
+		"Curse of malnutrition regen speed reduction" = 0.35
+		#If Rune Enchanting is installed, whether chestplate-only runes granting Well Fed/Curse of Malnutrition are enabled.
+		"Runes enabled" = true

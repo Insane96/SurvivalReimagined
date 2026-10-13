@@ -90,24 +90,15 @@
 		"Scute drops as block" = true
 
 [Sleep]
-	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
+	#Adds Cloth and enables a Data Pack that integrates it:
+	#* Makes zombies drop cloth instead of rotten flesh
+	#* Beds require Cloth to be crafted
+	#* Bundles can be made with Cloth
+	#* Chainmail armor is made craftable with Cloth and chains
+	#* Adds advancements for this feature and moves vanilla beds advancements to cloth advancement
 	"Enable Cloth" = true
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	"Enable Tiredness" = true
-
-	#Zombies drop cloth instead of Rotten Flesh. Cloth is used to make beds and various other stuff.
-	[Sleep.Cloth]
-		#Enables a Data Pack that integrated Cloth:
-		#* Makes zombies drop cloth instead of rotten flesh
-		#* Beds require Cloth to be crafted
-		#* Bundles can be made with Cloth
-		#* Chainmail armor is made craftable with Cloth and chains
-		#* Adds advancements for this feature and moves vanilla beds advancements to cloth advancement
-		"Data pack" = true
-		#Enables a data pack that changes Shulker Boxes recipe to use cloth and chests instead of shulker shells, and shulkers will drop Shulker Boxes directly instead of shells.
-		"Early game shulker boxes" = true
-		#Enables a resource pack that renames Shulker Boxes to Sack
-		"Rename shulker box to sack" = true
 
 	#Prevents sleeping if the player is not tired. Tiredness is gained by gaining exhaustion. Allows you to sleep during daytime if too tired. Energy Boost Items are controlled via json in this feature's folder
 	[Sleep.Tiredness]
@@ -213,7 +204,7 @@
 		"Composter time to produce" = 50
 		#If true, you can bone meal dirt that's near a grass block (or below tall grass) to get grass block.
 		"Bone meal dirt to grass" = true
-		#Makes bone meal have a chance to fail on Cave Vines, Saplings and Sweet Berry Bushes. Also makes rotten flesh compostable.
+		#Makes Cave Vines, Saplings, Sweet Berry Bushes and Crops requiring more bone meal. Makes rotten flesh compostable. Makes crafting Bones yield less Bone Meal and Bone Blocks cheaper.
 		"Data pack" = true
 
 		[Farming."Bone meal"."Rich farmland"]
@@ -791,6 +782,10 @@
 	"Enable Daggers" = true
 	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid.
 	"Enable Repair kits" = true
+	#Lowers copper drops.
+	"Enable Scarce copper" = true
+	#Changes to Shulker Boxes.
+	"Enable Shulker boxes" = true
 
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack sizes"]
@@ -854,14 +849,23 @@
 
 	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid.
 	[Items."Repair kits"]
-		#Default how many materials worth does a repair kit repair. Each repair kit repairs based on the material it was crafted with, up to Max repair. Can be overridden by item component.
-		# Default: 1
-		# Range: > 1
+		#Default repair bonus multiplier applied to the durability a repair kit restores per material used. Each repair kit repairs based on the material it was crafted with, up to Max repair. Can be overridden by item component.
+		# Default: 1.2
+		# Range: 0.0 ~ 1.7976931348623157E308
 		"Repair kit material ratio" = 1
 		#Maximum repair percentage of an item that repair kits can reach. Can be overridden by item component.
 		# Default: 1.0
 		# Range: 0.0 ~ 1.0
 		"Max repair" = 0.8
+
+	#Changes to Shulker Boxes.
+	[Items."Shulker boxes"]
+		#Enables a data pack that changes Shulker Boxes recipe to use cloth (or leather if the Cloth feature is disabled) and chests instead of shulker shells, and shulkers will drop Shulker Boxes directly instead of shells.
+		"Early game shulker boxes" = true
+		#Enables a resource pack that renames Shulker Boxes to Sack
+		"Rename shulker box to sack" = true
+		#When picking up an item, if a Shulker Box in the inventory already contains that item, the item is put in the Shulker Box instead of the inventory. Auto pickup must be enabled on each Shulker Box by pressing the toggle key (S by default) while hovering it in the inventory.
+		"Auto pickup into shulker boxes" = true
 
 [Combat]
 	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness
@@ -871,7 +875,7 @@
 	"Enable Misc combat" = true
 	#This feature disables itself if Shields+ is installed
 	"Enable Shields" = true
-	#Invincibility frames based off attack speed, so faster attacks will give less invincibility frames and viceversa.
+	#Invincibility frames based off attack speed, so faster attacks will give less invincibility frames and vice versa.
 	"Enable Attack speed based invincibility" = true
 	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
 	"Enable Attack sounds" = true
@@ -927,31 +931,33 @@
 		# Range: > 0
 		"Shield block damage" = 5
 
-	#Invincibility frames based off attack speed, so faster attacks will give less invincibility frames and viceversa.
+	#Invincibility frames based off attack speed, so faster attacks will give less invincibility frames and vice versa.
 	[Combat."Attack speed based invincibility"]
 		#If true, invincibility frames will not be increased for slower attacks.
 		"Only faster attack speed" = false
 
 	#Adds a new attribute to add regenerating absorption hearts to the player. Please note that default mods' regenerating absorption is done through item definitions within the combat_rework data pack and via Absorption Armor feature.
 	[Combat."Regenerating absorption"]
-		#Ticks that must pass from the last hit to regen absorption hearts. This is affected by regenerating absorption speed (absorp regen speed * this)
-		# Default: 150
-		# Range: > 0
-		"Un-damaged time to regen" = 150
-		#Min Un-damaged time to regen
-		# Default: 60
-		# Range: > 0
-		"Un-damaged time to regen cap" = 60
 		#The amount of regenerating absorption hearts cannot go over the entity's current health.
 		"Cap to health" = true
-		#How fast (each tick) will absorption hearts decay when higher than the current maximum.
-		# Default: 0.1
+		#How many absorption hearts are lost each second when higher than the current maximum.
+		# Default: 2.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Decay speed" = 0.1
 		#If true, absorption hearts will not shield from damages in the bypasses_armor damage type tag.
 		"Absorbing bypasses_armor damage only" = true
 		#If true, a sound is played when the absorption is damaged.
 		"Sound on absorption hurt" = true
+
+		[Combat."Regenerating absorption"."In combat"]
+			#If the player has been in combat (attacked or attacking) since this seconds regen speed is multiplied by 'Regen speed'
+			# Default: 8.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			Time = 8.0
+			#If the player is in combat, regen speed is multiplied by this
+			# Default: 0.0
+			# Range: 0.0 ~ 1.0
+			"Regen speed" = 0.0
 
 	#Changes attack sound based off tool used. Axes use vanilla strong attack, swords use vanilla weak attack, pickaxes and shovels use new sounds.
 	[Combat."Attack sounds"]
@@ -1267,6 +1273,8 @@
 		# Default: 9
 		# Range: 2 ~ 9
 		"Repair merge max items" = 9
+		#Dragon Egg will no longer port on left-click
+		"Teleport dragon egg only on right click" = true
 
 		[Misc.Tweaks.Parrot]
 			#The fall distance (in blocks) needed before parrots (and other shoulder entities) get knocked off the player's shoulder. Vanilla is 0.5
@@ -1299,6 +1307,8 @@
 		#* Carpets, Bricks, Banners, Targets and Tnt recipes now outputs more
 		#* Tnt recipe now also accepts paper instead of sand
 		#* Moss carpets can be crafted back to moss blocks
+		#* Logs smelt 4 items instead of 1.5 when used as furnace fuel
+		#* Dried Kelp Blocks smelt 16 items instead of 20 when used as furnace fuel
 		"Misc tweaks" = true
 		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc).
 		"Actual redstone components" = true
@@ -1324,8 +1334,6 @@
 		"No coordinates" = true
 		#If true, maxEntityCramming game rule is set to 6 from 24
 		"Reduced mob cramming" = true
-		#Kelp blocks smelt 16 items instead of 20
-		"Less burn time for kelp block" = true
 		#Fixes several piston physics exploits like TNT duping. (If quark is present this is disabled)
 		"Remove piston physics exploit" = true
 		#When an entity is hit and on a mount they have this chance to fall
@@ -1435,6 +1443,13 @@
 			# Default: 2.5
 			# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 			Maximum = 2.5
+
+	#A block that's visible through walls, for testing the see-through-walls render technique.
+	[Misc."Glow block"]
+		#Max angle (in degrees) between the crosshair and a glow block's center for it to count as looked at. Looking directly at the block always counts.
+		# Default: 5.0
+		# Range: 0.0 ~ 90.0
+		"Look angle" = 5.0
 
 [Respawn]
 	#Gives the player the Ghostly effect on respawn, making you really hard to see for mobs.

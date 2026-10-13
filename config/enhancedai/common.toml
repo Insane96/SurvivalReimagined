@@ -41,7 +41,7 @@
 	"Enable Actual blindness" = true
 	#Makes mobs pick up and throw other mobs. Mobs in the `enhancedai:mobs/pick_up_and_throw/can_be_picked_up` tag will be able to be picked up, while mobs in the `enhancedai:mobs/pick_up_and_throw/can_pick_up` tag will be able to pick up other mobs.
 	"Enable Pick up and throw" = true
-	#Makes mobs be able to move in more ways, like climbing or swim. Only entity types in `enhancedai:mobs/can_sprint` tag are affected by this feature.
+	#Makes mobs be able to sprint when near their target. Only entity types in `enhancedai:mobs/can_sprint` tag are affected by this feature.
 	"Enable Sprint" = true
 	#Prevent players from abusing water or 2 high gaps to bully endermen.
 	"Enable Teleport anti-cheese" = true
@@ -326,7 +326,7 @@
 			# Range: 0.0 ~ 1.0
 			Hard = 0.1
 
-	#Makes mobs be able to move in more ways, like climbing or swim. Only entity types in `enhancedai:mobs/can_sprint` tag are affected by this feature.
+	#Makes mobs be able to sprint when near their target. Only entity types in `enhancedai:mobs/can_sprint` tag are affected by this feature.
 	[Mobs.Sprint]
 		# Default: 0.25
 		# Range: 0.0 ~ 1.0
@@ -847,8 +847,8 @@
 		# Range: 0.0 ~ 1.0
 		"Ignore walls chance" = 0.65
 		#Makes creepers blow up on death like when they were added back in 0.30
-		#Allowed Values: NONE, CHARGED, ALL
-		"Blow up on death" = "CHARGED"
+		#Allowed Values: NO, CHARGED_ONLY, YES
+		"Blow up on death" = "NO"
 		#If Insane's Survival Overhaul is installed and Explosion Overhaul feature is enabled, Angry creeper will deal more knockback and break more blocks, breaching creepers will break more blocks
 		"Insane survival overhaul integration" = true
 

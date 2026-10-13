@@ -236,3 +236,16 @@
 			# Default: 24
 			# Range: 0 ~ 200
 			bootsEndY = 24
+
+	#Arrow Priority HUD
+	[client.arrowPriority]
+		#Show the next projectile beside the hotbar when holding a bow or crossbow with a saved Arrow Priority choice.
+		showArrowSlot = true
+		#Horizontal pixel offset from the default Arrow Priority position below the crosshair.
+		# Default: 0
+		# Range: -400 ~ 400
+		offsetX = 0
+		#Vertical pixel offset from the default Arrow Priority position below the crosshair.
+		# Default: 0
+		# Range: -400 ~ 400
+		offsetY = 0

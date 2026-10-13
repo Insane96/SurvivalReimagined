@@ -68,6 +68,11 @@
 		#Anvils don't wear down when only used for renaming
 		"No break" = true
 
+	#Makes repairing items cost less materials instead of an arbitrary 4. Allows custom anvil repair recipes defined via datapacks in data/<modid>/anvil_repairs/.
+	[Anvil."Anvil better repair"]
+		#Enables a data pack that lets you repair damageable metal tools, weapons and armor with Amethyst Shards, either in the crafting grid or in an anvil. The amounts needed for a full repair are set in the data pack itself (data/experiencetweaks/anvil_repairs/amethyst_repair.json for the anvil, data/experiencetweaks/recipe/amethyst_repairing.json for the crafting grid).
+		"Amethyst repair" = true
+
 [Experience]
 	#Changes the experience lost on death and xp per level required.
 	"Enable Player experience" = true
