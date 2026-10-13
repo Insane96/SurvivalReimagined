@@ -12,7 +12,7 @@ There is no build system. Changes are made by editing config files and datapacks
 
 - **Most ISO features**: require a Minecraft restart to take effect. A few (noted in the config) support `/reload`.
 - **Data pack changes** (files under `datapacks/`): take effect with `/reload` in-game.
-- **Gamerules** (`config/gamerule_manager/default.json`): applied when a new world is created.
+- **Gamerules** (`config/WSCommands.toml`, mod WSCommands): `gamerule` commands run on world join (`Repeat = true`, so they're re-applied every join).
 - **`.toml.bak` files** are auto-generated backups — do not edit them, they are gitignored via `*.toml.bak`.
 
 ## Repository structure
@@ -22,7 +22,7 @@ There is no build system. Changes are made by editing config files and datapacks
 | `mods/` | JAR files for all installed mods |
 | `config/insanesurvivaloverhaul/` | InsaneSurvivalOverhaul configs, split by feature category |
 | `config/runeenchanting/` | RuneEnchanting system (`main.toml`, `runes.toml`) |
-| `config/gamerule_manager/` | Default gamerules for new worlds |
+| `config/WSCommands.toml` | Gamerules applied on world join |
 | `datapacks/survivalreimagined/` | Custom datapack for this modpack (nether tweaks, etc.) |
 | `datapacks/no_emeralds_datapack/` | Converts emerald loot to runes; removes emerald ore generation |
 | `defaultconfigs/` | Per-world default configs (e.g. biome settings via Biolith) |
@@ -50,7 +50,7 @@ Key non-obvious settings currently configured:
 - **Experience** is disabled via gamerule (`experienceoverhaul:disable_experience = true`).
 - **Stone tools** are removed; copper fills that tier (`"Enable Stone tools gone" = true`).
 - **Vanilla enchanting table** recipe is removed; runes replace enchantments.
-- **Villages and pillager outposts** do not generate (`"Disable long noses structures" = true`).
+- **Villages and pillager outposts** do not generate (`"Disable long noses structures" = true`). Wandering traders, patrols and raids are off via gamerules in `config/WSCommands.toml`; Enhanced AI's witch "Dark art" (summons villagers) is disabled; Abridged's pillager-infested bridge and the DnT stronghold jail room with a villager are removed via `datapacks/survivalreimagined` overrides.
 - **Spawners** start empowered (burst of 20 mobs, then disable permanently) — the Spawner Reactivator item exists in ISO but is **disabled** in this pack (`"Re-enable with Spawner Reactivator" = false`), so disabled spawners cannot be reactivated.
 - **Sleeping** requires tiredness (gained through exhaustion); phantoms spawn from tiredness not insomnia.
 - **Nether roof** and 8:1 ratio are kept (the data pack option to disable them is set to `false`).

@@ -101,6 +101,8 @@ Sostituisce `monument`. 🌊 **Subacquea**, **Overworld** (oceano profondo).
 ### DnT — Stronghold Overhaul — 🟢 attiva, nessun config dedicato
 Sostituisce `stronghold`. ⛏️ **Sotterranea**, **Overworld**.
 
+**Override:** `datapacks/survivalreimagined/data/minecraft/worldgen/template_pool/stronghold/stronghold_jail_room.json` è una copia del pool della mod senza `stronghold_jail_3x3_room5`, l'unica cella con un villager dentro.
+
 ### DnT — Swamp Hut Overhaul — 🟢 attiva, nessun config dedicato
 Sostituisce `swamp_hut`. ☀️ **Superficie**, **Overworld** (palude).
 
@@ -143,6 +145,8 @@ Nota: il filtro di ibo colpisce solo il namespace `incendium`, quindi la ridefin
 
 ### abridged — 🟢 attiva (via config)
 `abridged-2.0.2-neoforge-21.1.jar`. **Bridge**: ☀️ Superficie (attraversa ravine/canyon), **Overworld**. Config `abridged.json`: `"frequency": 0.8` (80% di possibilità quando viene trovata una posizione valida) — non è disattivato.
+
+**Override:** la variante `canyon/pillager_infested` (ponte con pillager) è disattivata svuotando il tag bioma `abridged:has_bridge/pillager_infested` in `datapacks/survivalreimagined/data/abridged/tags/worldgen/biome/has_bridge/pillager_infested.json`.
 
 ### adventuredungeons — 🟢 attiva, nessun config dedicato
 `adventuredungeons-neoforge-1.21-1.3.1.jar`. **Dimensione: solo Overworld**.
