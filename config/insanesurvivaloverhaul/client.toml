@@ -4,10 +4,6 @@
 	"Enable Fog" = true
 	#Changes to light
 	"Enable Light" = true
-	#Adds various infos on top left of the screen
-	"Enable HUD Infos" = true
-	#Changes to death
-	"Enable Death" = true
 	#World border changes
 	"Enable World Border" = true
 	#Changes to sounds and music. Disabling this feature requires a Minecraft restart.
@@ -48,25 +44,6 @@
 		"Force darkness" = 0.15
 		#If true, 'Force brightness' will only apply if the current brightness is higher than 'Force brightness'
 		"Force only lower brightness" = true
-
-	#Adds various infos on top left of the screen
-	[Client."HUD Infos"]
-		#If true, items in the insanesurvivaloverhaul:hud/cardinal_direction will display the cardinal direction.
-		"Cardinal direction" = true
-		#If true, items in the insanesurvivaloverhaul:hud/season will display the current season. Only available if Serene Seasons is installed
-		Season = true
-		#If true, items in the insanesurvivaloverhaul:hud/depth will display the current Y level
-		Depth = true
-		#If true, items in the insanesurvivaloverhaul:hud/time will display the time of day
-		Time = true
-		#If true, items in the insanesurvivaloverhaul:hud/biome will display the current biome
-		Biome = true
-
-	#Changes to death
-	[Client.Death]
-		#Why is that still a thing?
-		"Remove score" = true
-		"Replace score with time since last death" = true
 
 	#World border changes
 	[Client."World Border"]
