@@ -1,7 +1,5 @@
 {
     "values": [
-        "minecraft:hopper",
-        "minecraft:hopper_minecart",
         "minecraft:crafter",
         "minecraft:observer",
         "hangglider:reinforced_hang_glider",
@@ -21,7 +19,6 @@
         "storagedrawers:emerald_storage_upgrade",
         "storagedrawers:fill_level_upgrade",
         "storagedrawers:gold_storage_upgrade",
-        "storagedrawers:hopper_upgrade",
         "storagedrawers:illumination_upgrade",
         "storagedrawers:iron_storage_upgrade",
         "storagedrawers:keybutton_concealment",
@@ -46,7 +43,6 @@
         "storagedrawers:remote_upgrade",
         "storagedrawers:shroud_key",
         "storagedrawers:suspend_key",
-        "storagedrawers:upgrade_template",
         "storagedrawers:void_upgrade"
     ]
 }

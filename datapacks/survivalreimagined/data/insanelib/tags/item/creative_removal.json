@@ -1,8 +1,6 @@
 {
     "values": [
         "bitsandbalance:kiln",
-        "minecraft:hopper",
-        "minecraft:hopper_minecart",
         "minecraft:crafter",
         "minecraft:observer",
         "hangglider:reinforced_hang_glider",
@@ -14,7 +12,6 @@
         "storagedrawers:emerald_storage_upgrade",
         "storagedrawers:fill_level_upgrade",
         "storagedrawers:gold_storage_upgrade",
-        "storagedrawers:hopper_upgrade",
         "storagedrawers:illumination_upgrade",
         "storagedrawers:iron_storage_upgrade",
         "storagedrawers:magnet_upgrade",
@@ -30,7 +27,6 @@
         "storagedrawers:remote_group_upgrade",
         "storagedrawers:remote_upgrade",
         "storagedrawers:void_upgrade",
-        "storagedrawers:upgrade_template",
         "storagedrawers:compacting_drawers_2",
         "storagedrawers:compacting_drawers_3",
         "storagedrawers:compacting_half_drawers_2",
