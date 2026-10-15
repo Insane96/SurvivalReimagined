@@ -1,4 +1,4 @@
-# Upcoming
+# 4.5.7
 * Re-enabled Hoppers and Hopper Minecarts
 * Item Block Info HUD: removed coordinates when holding compass
 * In servers, time will now stop when no players are online
