@@ -402,7 +402,7 @@
 	#Percentage bonus durability
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Bonus Durability" = 1.0
+	"Bonus Durability" = 2.0
 	# Default: 80
 	# Range: > -2147483648
 	"Bonus Durability Flat" = 80
