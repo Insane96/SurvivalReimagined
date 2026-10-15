@@ -1,5 +1,5 @@
 # Upcoming
-* Re-enabled Hoppers, Hopper Minecarts, Storage Drawers Hopper Upgrade and Upgrade Template
+* Re-enabled Hoppers and Hopper Minecarts
 * Item Block Info HUD: removed coordinates when holding compass
 * In servers, time will now stop when no players are online
 * Enduring rune bonus durability increased from +100% to +200% (3x)
