@@ -1,5 +1,5 @@
 #If true, game time and day time, will not advance if no players are online. This can break anything that relies on game time so it's disabled by default.
-"Enable Time stop no player online" = false
+"Enable Time stop no player online" = true
 #Adds a new `insanelib:push_resistance` attribute to mobs, making them harder to be pushed (or not pushable with 1) (this is not knockback resistance, this is for the bounding boxes of mobs intersecting). Disabling this will prevent the attribute from working. This doesn't work on players.
 "Enable Push resistance" = true
 #Apply attribute modifiers to players. Attributes can be added in the config folder of this feature's folder (requires a world to be opened at least once). Updating attribute modifiers of players them to rejoin
@@ -18,7 +18,7 @@
 	#If true, also prevents game time from advancing if no players are online with Time Control installed. This needs to be disabled in order to allow to set the gamerule again.
 	"Time control integration" = true
 	#If true, also prevents seasons from advancing if no players are online with Serene Seasons installed. This needs to be disabled in order to allow to set the gamerule again.
-	"Serene seasons integration" = true
+	"Serene seasons integration" = false
 
 #Changes the behaviour of Falling Blocks to be smarter by preventing them from getting stuck when landing on a block but their center has air below, or try to stack or move them when inside a block.
 ["Better falling blocks"]
