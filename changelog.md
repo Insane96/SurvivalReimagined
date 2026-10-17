@@ -1,4 +1,4 @@
-# Upcoming
+# 4.5.8
 * Fixed Deep Ruins and Underground Ruins maps never dropping from archaeology
 * Updated mods
   * Bits and Balance 2.4.1 -> 2.4.3
