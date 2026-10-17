@@ -1,0 +1,17 @@
+[itemblockinfohud]
+	#If true, items in the inventory and blocks looked at in the itemblockinfohud:cardinal_direction tags will display this info.
+	cardinal_direction = true
+	#If true, items in the inventory and blocks looked at in the itemblockinfohud:position tags will display this info.
+	position = true
+	#If true, items in the inventory and blocks looked at in the itemblockinfohud:depth tags will display this info.
+	depth = true
+	#If true, items in the inventory and blocks looked at in the itemblockinfohud:time tags will display this info.
+	time = true
+	#If true, items in the inventory and blocks looked at in the itemblockinfohud:day tags will display this info.
+	day = true
+	#If true, items in the inventory and blocks looked at in the itemblockinfohud:moon_phase tags will display this info.
+	moon_phase = true
+	#If true, items in the inventory and blocks looked at in the itemblockinfohud:weather tags will display this info.
+	weather = true
+	#If true, items in the inventory and blocks looked at in the itemblockinfohud:biome tags will display this info.
+	biome = true

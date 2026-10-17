@@ -24,6 +24,12 @@
 	# Default: 14
 	# Range: 0 ~ 15
 	bioluminescenceLightLevel = 14
+	#If true, newly placed Glow Goo Splatter disappears after the configured lifetime. Disabled by default.
+	splatterDecayEnabled = false
+	#How long newly placed Glow Goo Splatter lasts when decay is enabled, in seconds.
+	# Default: 300
+	# Range: 1 ~ 604800
+	splatterDecayTimeSeconds = 300
 
 #Potions
 [potions]
@@ -235,6 +241,55 @@
 		# Default: 400
 		# Range: 0 ~ 10000
 		torchBurnTime = 400
+
+	#Ore Smelting XP
+	[recipes.oreSmeltingXp]
+		#Enable configurable experience for smelting or blasting vanilla ore blocks.
+		enabled = true
+		#XP for Coal Ore and Deepslate Coal Ore.
+		# Default: 0.5
+		# Range: 0.0 ~ 1000.0
+		coal = 0.5
+		#XP for Lapis Ore and Deepslate Lapis Ore.
+		# Default: 1.0
+		# Range: 0.0 ~ 1000.0
+		lapis = 1.0
+		#XP for Nether Quartz Ore.
+		# Default: 1.0
+		# Range: 0.0 ~ 1000.0
+		netherQuartz = 1.0
+		#XP for Iron Ore and Deepslate Iron Ore.
+		# Default: 3.5
+		# Range: 0.0 ~ 1000.0
+		iron = 3.5
+		#XP for Copper Ore and Deepslate Copper Ore.
+		# Default: 3.5
+		# Range: 0.0 ~ 1000.0
+		copper = 3.5
+		#XP for Redstone Ore and Deepslate Redstone Ore.
+		# Default: 3.5
+		# Range: 0.0 ~ 1000.0
+		redstone = 3.5
+		#XP for Gold Ore and Deepslate Gold Ore.
+		# Default: 5.0
+		# Range: 0.0 ~ 1000.0
+		gold = 5.0
+		#XP for Nether Gold Ore.
+		# Default: 5.0
+		# Range: 0.0 ~ 1000.0
+		netherGold = 5.0
+		#XP for Diamond Ore and Deepslate Diamond Ore.
+		# Default: 5.0
+		# Range: 0.0 ~ 1000.0
+		diamond = 5.0
+		#XP for Emerald Ore and Deepslate Emerald Ore.
+		# Default: 5.0
+		# Range: 0.0 ~ 1000.0
+		emerald = 5.0
+		#XP for Ancient Debris.
+		# Default: 10.0
+		# Range: 0.0 ~ 1000.0
+		ancientDebris = 10.0
 
 #Loot Tables Configuration
 [lootTables]

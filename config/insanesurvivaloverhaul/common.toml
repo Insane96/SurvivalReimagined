@@ -765,7 +765,7 @@
 	"Enable Unvanishable items" = true
 	#Make items not able to mine / attack
 	"Enable Disabled items" = true
-	#Retrieve name tags from name tagged entities.
+	#Retrieve name tags from name tagged entities. Name tagged entities show a death message when they die.
 	"Enable Name tags" = true
 	#If enabled, a data pack will be enabled that disables stone tools crafting and generation in chests will be replaced with copper ones. Also makes copper ore minable with wooden pickaxe
 	"Enable Stone tools gone" = true
@@ -865,6 +865,11 @@
 		"Rename shulker box to sack" = true
 		#When picking up an item, if a Shulker Box in the inventory already contains that item, the item is put in the Shulker Box instead of the inventory. Auto pickup must be enabled on each Shulker Box by pressing the toggle key (S by default) while hovering it in the inventory.
 		"Auto pickup into shulker boxes" = true
+
+	#Retrieve name tags from name tagged entities. Name tagged entities show a death message when they die.
+	[Items."Name tags"]
+		#If true, entities named with a name tag show a death message in chat when they die. Requires the showDeathMessages game rule.
+		"Death Message" = true
 
 [Combat]
 	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness. Please note this is not compatible with the 'Armor rework' data pack
