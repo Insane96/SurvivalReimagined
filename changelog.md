@@ -4,11 +4,17 @@
   * Bits and Balance 2.4.1 -> 2.4.3
   * Collective 8.53 -> 8.56
   * Experience Tweaks 1.1.4.0 -> 1.1.5.1
+    * Mace (Breeze Rods), Elytra (Phantom Membranes) and Wolf Armor (Armadillo Scutes) can now be repaired in the anvil
+    * Fixed Turtle Shell anvil repair not working
+    * Fixed crafting grid repair recipes consuming more materials than needed
+    * Many other anvil fixes
   * InsaneLib 2.4.33.1 -> 2.4.33.2
   * Item Block Info HUD 1.1.1.0 -> 1.1.1.1
   * No Hunger 2.1.0.0 -> 2.1.0.1
+    * Fixed overtime regen overlay shaking differently from hearts at low health
   * Stamina 2.0.0.2 -> 2.0.0.3
   * Supplementaries 4.0.1 -> 4.0.2
+    * Fixed a dupe with the pulley
 
 # 4.5.7
 * Re-enabled Hoppers and Hopper Minecarts
