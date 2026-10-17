@@ -16,7 +16,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "#survivalreimagined:archeological_deep_ruins",
+              "destination": "survivalreimagined:archeological_deep_ruins",
               "decoration": "minecraft:red_x",
               "zoom": 1,
               "skip_existing_chunks": false
@@ -42,7 +42,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "#survivalreimagined:archeological_underground_ruins",
+              "destination": "survivalreimagined:archeological_underground_ruins",
               "decoration": "minecraft:red_x",
               "zoom": 1,
               "skip_existing_chunks": false
