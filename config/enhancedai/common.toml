@@ -930,7 +930,7 @@
 	[Creepers."Tnt like creepers"]
 		# Default: 0.25
 		# Range: 0.0 ~ 1.0
-		Chance = 0.25
+		Chance = 0.05
 
 [Ghast]
 	#Various changes to ghast shooting. Only ghast in enhancedai:ghast/change_shoot entity type tag are affected by this feature.
