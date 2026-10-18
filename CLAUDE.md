@@ -56,7 +56,7 @@ Key non-obvious settings currently configured:
 - **Nether roof** and 8:1 ratio are kept (the data pack option to disable them is set to `false`).
 - **Echo Pillar** (ISO respawn-anchor feature) is **disabled** (`"Enable Echo pillar" = false`).
 - **Storage Drawers Controller and Compacting Drawer** are disabled in `config/storagedrawers-common.v2.toml`.
-- **Quark's `[oddities]` category** (Totem of Holding, Pipes, Magnets, Crate, Backpack, Tiny Potato, Matrix Enchanting) reads `true` in `config/quark-common.toml`, but none of it actually works: it requires a separate "Quark Oddities" addon jar that is **not installed** — only the base `Quark-*.jar` is present in `mods/`. Don't trust these toggles at face value; verify the feature is reachable in-game (or that its jar exists) before relying on it.
+- **Quark's `[oddities]` category** (Totem of Holding, Pipes, Magnets, Crate, Backpack, Tiny Potato) reads `true` in `config/quark-common.toml`, but none of it actually works without the separate "Quark Oddities" addon jar. The base `Quark-*.jar` contains the oddities classes, recipes and assets (`org/violetmoon/quark/addons/oddities/`) and even generates their config sections, but confirmed in-game: the content does not appear unless the addon is installed. Don't trust these toggles at face value; check that the addon jar is in `mods/`. Pipes' default recipe: copper ingot / glass / copper ingot (vertical) → 6 pipes.
 - **Matrix Enchanting** is explicitly set to `false` even though it's a `[tools]`-category (not oddities) Quark feature that *would* otherwise work — disabled on purpose since RuneEnchanting already removes the vanilla enchanting table.
 
 ## Legacy content on the `v3` / `v2` branches
