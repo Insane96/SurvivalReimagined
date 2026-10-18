@@ -1,3 +1,18 @@
+# Upcoming
+* Enhanced AI: TNT-like creepers chance reduced from 25% to 5%
+* Updated mods
+  * Collective 8.56 -> 8.58
+  * InsaneSurvivalOverhaul 5.12.6.0 -> 5.13.0.0
+    * Firework Rockets recipes now output 5 instead of 3 and Firework Stars 2 instead of 1
+    * Firework Stars can now be added to already crafted Firework Rockets
+    * Lava now smelts 256 items instead of 100
+    * Chickens can no longer auto breed
+    * Fixed Shulker Boxes losing auto pick-up when placed and broken
+    * Fixed zombies replacing zombie villagers keeping vanilla enchantments instead of having them converted to runes
+  * Platform 1.3.3 -> 1.4
+  * Stamina 2.0.0.3 -> 2.0.0.4
+    * Fixed stamina overlay shaking differently from hearts at low health
+
 # 4.5.8
 * Fixed Deep Ruins and Underground Ruins maps never dropping from archaeology
 * Updated mods
