@@ -1,6 +1,5 @@
 # Upcoming
 * Repair kits can now repair items up to 100% instead of 80%
-* Hidden copper tools and armor and spears from Vanilla Backport (they're already disabled)
 * Removed Inventory Totem
 * Updated mods
   * Amendments 2.1.11 -> 2.2.0
@@ -10,10 +9,8 @@
   * Collective 8.58 -> 8.65
   * Enhanced AI 4.2.4.0 -> 4.2.5.0
     * Shielding now works like vanilla shields: only damage coming from the front can be blocked, but projectiles and explosions can be blocked too
-    * Healed by Snowballs is no longer limited to Snow Golems
     * Fixed skeletons randomly strolling away while shooting
     * Fixed polar bears attacking without cubs nearby, witches no longer healing raiders and foxes attacking anything that hurt something
-    * Fixed riders, Pick Up and Throw and Teleport to Target chances being re-rolled every time a mob is reloaded (over time most mobs would become riders)
     * Fixed leaders spawning far less reinforcements than intended
     * Fixed Actual Blindness reducing mobs follow range way more than intended
   * InsaneLib 2.4.33.2 -> 2.4.36.0
