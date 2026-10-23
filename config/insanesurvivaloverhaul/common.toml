@@ -773,7 +773,7 @@
 	"Enable Pouch" = false
 	#Wooden items have bonuses when used in sunlight.
 	"Enable Ecologic wood" = false
-	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
+	#Make food, items and blocks less stackable. Changing stuff requires a /reload, but might require a Minecraft restart.
 	"Enable Stack sizes" = true
 	#Basically backports copper equipment from latest MC versions.
 	"Enable Copper equipment" = true
@@ -786,7 +786,7 @@
 	#Changes to Shulker Boxes.
 	"Enable Shulker boxes" = true
 
-	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
+	#Make food, items and blocks less stackable. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack sizes"]
 		#All the blocks max stack sizes will be multiplied by this value. Setting to 1 will disable this.
 		# Default: 2.0
@@ -1243,6 +1243,11 @@
 	"Enable Breathing" = true
 	#A block that's visible through walls, for testing the see-through-walls render technique.
 	"Enable Glow block" = true
+	#Enables a data pack that changes fireworks recipes:
+	#* Firework Rockets recipes output 5 instead of 3
+	#* Firework Stars recipe outputs 2 instead of 1
+	#* Firework Stars can be added to already crafted Firework Rockets
+	"Enable Fireworks" = true
 
 	#Various stuff that doesn't fit in any other Feature.
 	[Misc.Tweaks]
@@ -1315,6 +1320,7 @@
 		#* Moss carpets can be crafted back to moss blocks
 		#* Logs smelt 4 items instead of 1.5 when used as furnace fuel
 		#* Dried Kelp Blocks smelt 16 items instead of 20 when used as furnace fuel
+		#* Lava smelts 256 items instead of 100
 		"Misc tweaks" = true
 		#Makes redstone components require redstone in their recipe (e.g. Levers, pressure plates, etc).
 		"Actual redstone components" = true

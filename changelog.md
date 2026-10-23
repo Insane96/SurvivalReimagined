@@ -1,5 +1,39 @@
 # Upcoming
 * Repair kits can now repair items up to 100% instead of 80%
+* Removed Inventory Totem
+* Updated mods
+  * Amendments 2.1.11 -> 2.2.0
+    * Walls, fences and panes now all connect to each other
+    * Added a smooth hotbar slot animation
+  * Ambient Sounds 6.3.10 -> 6.3.11
+  * Collective 8.58 -> 8.65
+  * Enhanced AI 4.2.4.0 -> 4.2.5.0
+    * Shielding now works like vanilla shields: only damage coming from the front can be blocked, but projectiles and explosions can be blocked too
+    * Healed by Snowballs is no longer limited to Snow Golems
+    * Fixed skeletons randomly strolling away while shooting
+    * Fixed polar bears attacking without cubs nearby, witches no longer healing raiders and foxes attacking anything that hurt something
+    * Fixed riders, Pick Up and Throw and Teleport to Target chances being re-rolled every time a mob is reloaded (over time most mobs would become riders)
+    * Fixed leaders spawning far less reinforcements than intended
+    * Fixed Actual Blindness reducing mobs follow range way more than intended
+  * InsaneLib 2.4.33.2 -> 2.4.36.0
+    * Mods now have a config screen in the Mods list
+    * Item counts over 999 now show as 1k, 1m, 1b
+    * Fixed falling blocks getting stuck forever on top of slime blocks
+  * InsaneSurvivalOverhaul 5.13.0.0 -> 5.13.0.1
+    * Fixed health regen reduction while in combat not working properly
+  * Platform 1.4 -> 1.4.1
+  * Puzzles Lib 21.1.64 -> 21.1.65
+  * Stamina 2.0.0.4 -> 2.1.0.0
+    * Stamina consumed by jumping is now affected by the out of combat multiplier, like sprinting
+    * Fixed attacking other players not counting as being in combat
+    * Fixed stamina not being locked when health dropped below the threshold while sprinting
+  * Tiny Takeover Backport 1.6.3 -> 1.7.0
+  * Vanilla Backport 1.1.7.10 -> 1.2.1
+    * Reworked the whole mod
+    * Added features from the Copper Age drop (Copper Golems, Copper Chests, copper lanterns, chains and bars, ...)
+    * Added features from the Mounts of Mayhem drop (Nautiluses, Zombie Horses, Camel Husks, Parched skeletons, ...)
+    * Added the Dappled Forest from the Wilderness Bound drop
+    * Thrown Ender Pearls now load chunks while traveling
 
 # 4.5.9
 * Enhanced AI: TNT-like creepers chance reduced from 25% to 5%
