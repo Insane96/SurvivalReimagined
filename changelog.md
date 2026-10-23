@@ -1,3 +1,6 @@
+# Upcoming
+* Repair kits can now repair items up to 100% instead of 80%
+
 # 4.5.9
 * Enhanced AI: TNT-like creepers chance reduced from 25% to 5%
 * Updated mods
