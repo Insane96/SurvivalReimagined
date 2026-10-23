@@ -855,7 +855,7 @@
 		#Maximum repair percentage of an item that repair kits can reach. Can be overridden by item component.
 		# Default: 1.0
 		# Range: 0.0 ~ 1.0
-		"Max repair" = 0.8
+		"Max repair" = 1.0
 
 	#Changes to Shulker Boxes.
 	[Items."Shulker boxes"]
