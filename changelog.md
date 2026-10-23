@@ -1,6 +1,7 @@
 # Upcoming
 * Repair kits can now repair items up to 100% instead of 80%
 * Removed Inventory Totem
+* Removed Underlay
 * Updated mods
   * Amendments 2.1.11 -> 2.2.0
     * Walls, fences and panes now all connect to each other
