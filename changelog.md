@@ -1,5 +1,6 @@
 # Upcoming
 * Repair kits can now repair items up to 100% instead of 80%
+* Hidden copper tools and armor and spears from Vanilla Backport (they're already disabled)
 * Removed Inventory Totem
 * Updated mods
   * Amendments 2.1.11 -> 2.2.0
