@@ -27,7 +27,6 @@
   * Experience Tweaks 1.1.5.1 -> 1.1.6.0
   * InsaneLib 2.4.33.2 -> 2.5.0.4-alpha
     * Mods now have a config screen in the Mods list
-    * Item counts over 999 now show as 1k, 1m, 1b
     * Fixed falling blocks getting stuck forever on top of slime blocks
   * InsaneSurvivalOverhaul 5.13.0.0 -> 5.13.2.0
     * Golden Armor total armor increased from 5 to 9, Chainmail Armor decreased from 15.5 to 13
@@ -41,6 +40,9 @@
     * Fixed chunks force loaded by minecarts staying loaded forever after a server restart
     * Fixed repair kits consuming other items in the crafting grid
     * Lots of other fixes
+  * Mobs Properties Randomness 6.1.10.0 -> 6.2.1.0
+    * Fixed stacking potion effects lasting way longer than intended
+    * Fixed many other bugs
   * ModernFix 5.27.26 -> 5.27.27
   * No Hunger 2.1.0.1 -> 2.1.1.0
     * Eating a food that heals over time no longer replaces a higher health left to regenerate

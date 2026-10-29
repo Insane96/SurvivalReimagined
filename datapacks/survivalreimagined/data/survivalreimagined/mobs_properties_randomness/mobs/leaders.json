@@ -36,6 +36,7 @@
         },
         {
             "property": "presets",
+            "mode": "before",
             "presets": [
                 {
                     "preset": "survivalreimagined:leader_copper_armor",
