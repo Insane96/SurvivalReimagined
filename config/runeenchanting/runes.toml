@@ -124,7 +124,7 @@
 	"Destroy Blocks" = true
 	# Default: 5.0
 	# Range: 0.05 ~ 1.7976931348623157E308
-	"Delay Seconds" = 5.0
+	"Delay Seconds" = 3.0
 
 [sweeping_edge]
 	# Default: 0.75

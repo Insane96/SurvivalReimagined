@@ -5,6 +5,7 @@
 * Copper Chains now cost 3 copper nuggets, like Iron Chains
 * Copper Chests, Bars, Chains and Lanterns can now be recycled in the Blast Furnace
 * Recycling now gives back 75% of the materials
+* Explosive rune delay reduced from 5 to 3 seconds
 * Fixed Copper Torches, Lanterns and Chains not being craftable
 * Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
