@@ -20,3 +20,18 @@ min_egg_lay_time_in_minutes = 10
 #Keep all parrots sitting on a player's shoulders when that player is falling.
 #Default Value: true
 parrots_stay_when_falling = true
+
+#Types of freshly spawned vanilla parrots that are allowed to turn into one of the mod's custom parrots.
+[spawn_reasons]
+	#Parrots spawned directly by a player, e.g. via a spawn egg, a dispenser or the /summon command.
+	#Default Value: true
+	player_spawn = true
+	#Parrots spawned by mob spawners, including trial spawners.
+	#Default Value: true
+	spawner = true
+	#Parrots that spawn naturally in the world, e.g. through world generation or regular mob spawning.
+	#Default Value: true
+	world_gen = true
+	#Parrots spawned by structures, e.g. through a structure spawner or a datapack.
+	#Default Value: false
+	scripted = false
