@@ -9,9 +9,11 @@
 * Fixed Copper Torches, Lanterns and Chains not being craftable
 * Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
-  * Amendments 2.1.11 -> 2.2.0
+  * Amendments 2.1.11 -> 2.2.1
     * Walls, fences and panes now all connect to each other
     * Added a smooth hotbar slot animation
+    * Axolotl buckets show the color of the axolotl inside
+    * Following pets teleport with you instantly when you teleport
   * Ambient Sounds 6.3.10 -> 6.3.11
   * Collective 8.58 -> 8.65
   * Enhanced AI 4.2.4.0 -> 4.2.5.0
@@ -20,20 +22,35 @@
     * Fixed polar bears attacking without cubs nearby, witches no longer healing raiders and foxes attacking anything that hurt something
     * Fixed leaders spawning far less reinforcements than intended
     * Fixed Actual Blindness reducing mobs follow range way more than intended
-  * InsaneLib 2.4.33.2 -> 2.4.36.0
+  * InsaneLib 2.4.33.2 -> 2.4.37.0
     * Mods now have a config screen in the Mods list
     * Item counts over 999 now show as 1k, 1m, 1b
     * Fixed falling blocks getting stuck forever on top of slime blocks
-  * InsaneSurvivalOverhaul 5.13.0.0 -> 5.13.0.1
+  * InsaneSurvivalOverhaul 5.13.0.0 -> 5.13.2.0
+    * Golden Armor total armor increased from 5 to 9, Chainmail Armor decreased from 15.5 to 13
+    * The delay between breaking blocks is now based on the actual mining speed against the broken block (Efficiency, Haste, etc. included)
+    * Thrown tridents damage is now based on the trident attack damage
     * Fixed health regen reduction while in combat not working properly
-  * Platform 1.4 -> 1.4.1
+    * Fixed Stuck Arrows dropping arrows 100 times less than intended, any arrow type now counts
+    * Fixed items picked up by mobs (e.g. lost by players) no longer being guaranteed to drop after their chunk was reloaded
+    * Fixed Better Hardcore Death deleting the block at the player's feet
+    * Fixed tired players being able to sleep with monsters nearby and Tired levels being gained too early
+    * Fixed chunks force loaded by minecarts staying loaded forever after a server restart
+    * Fixed repair kits consuming other items in the crafting grid
+    * Lots of other fixes
+  * ModernFix 5.27.26 -> 5.27.27
+  * No Hunger 2.1.0.1 -> 2.1.1.0
+    * Eating a food that heals over time no longer replaces a higher health left to regenerate
+    * Fixed the food tooltip showing half of the real overtime regeneration duration, now also takes into account Well Fed and Curse of Malnutrition
+    * Fixed the overtime regen overlay not showing after logging in, respawning or changing dimension
+  * Platform 1.4 -> 1.4.2
   * Puzzles Lib 21.1.64 -> 21.1.65
   * Stamina 2.0.0.4 -> 2.1.0.0
     * Stamina consumed by jumping is now affected by the out of combat multiplier, like sprinting
     * Fixed attacking other players not counting as being in combat
     * Fixed stamina not being locked when health dropped below the threshold while sprinting
-  * Tiny Takeover Backport 1.6.3 -> 1.7.0
-  * Vanilla Backport 1.1.7.10 -> 1.2.1
+  * Tiny Takeover Backport 1.6.3 -> 1.8.0
+  * Vanilla Backport 1.1.7.10 -> 1.2.2
     * Reworked the whole mod
     * Added features from the Copper Age drop (Copper Golems, Copper Chests, copper lanterns, chains and bars, ...)
     * Added features from the Mounts of Mayhem drop (Nautiluses, Zombie Horses, Camel Husks, Parched skeletons, ...)
