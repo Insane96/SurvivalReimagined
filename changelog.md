@@ -2,11 +2,8 @@
 * Repair kits can now repair items up to 100% instead of 80%
 * Removed Inventory Totem
 * Removed Underlay
-* Copper Chains now cost 3 copper nuggets, like Iron Chains
-* Copper Chests, Bars, Chains and Lanterns can now be recycled in the Blast Furnace
-* Recycling now gives back 75% of the materials
 * Explosive rune delay reduced from 5 to 3 seconds
-* Fixed Copper Torches, Lanterns and Chains not being craftable
+* Removed duplicate Name Tag recipes, only the vanilla-like one (paper + any nugget) is kept
 * Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
   * Amendments 2.1.11 -> 2.2.1
@@ -51,8 +48,9 @@
     * Fixed stamina not being locked when health dropped below the threshold while sprinting
   * Tiny Takeover Backport 1.6.3 -> 1.8.0
   * Vanilla Backport 1.1.7.10 -> 1.2.2
-    * Reworked the whole mod
     * Added features from the Copper Age drop (Copper Golems, Copper Chests, copper lanterns, chains and bars, ...)
+      * Copper Chains cost 3 copper nuggets, like Iron Chains
+      * Copper Chests, Bars, Chains and Lanterns can be recycled in the Blast Furnace
     * Added features from the Mounts of Mayhem drop (Nautiluses, Zombie Horses, Camel Husks, Parched skeletons, ...)
     * Added the Dappled Forest from the Wilderness Bound drop
     * Thrown Ender Pearls now load chunks while traveling
