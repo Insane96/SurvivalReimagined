@@ -687,7 +687,7 @@
 		#Multiplier applied to the durability-based output amount. Lower it below 1 to make recycling always lossy.
 		# Default: 1.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Output multiplier" = 0.75
+		"Output multiplier" = 1.0
 
 [Misc]
 	#Changes how fast entities consume and refill air, and how drowning damage scales.
