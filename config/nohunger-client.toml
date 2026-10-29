@@ -1,0 +1,21 @@
+["No Hunger"]
+	#Armor is rendered in the place of Hunger bar
+	"Render armor at hunger" = true
+
+	["No Hunger"."Food tooltip"]
+		#If enabled, Foods will show "Snack" or "Nosh" when the food instantly heals and "Meal" or "Feast" when the food heals over time. If advanced tooltips are enabled, the food will show how much it restores
+		Enabled = true
+		#Always show exact values in the food tooltip instead of "Snack", "Feast", etc.
+		"Always advanced tooltip" = true
+		#Above how much health restored food tooltip will show Nosh instead of Snack
+		# Default: 1.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Nosh threshold" = 1.0
+		#Above how much health restored food tooltip will show Feast instead of Meal
+		# Default: 7.0
+		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		"Feast threshold" = 7.0
+
+	["No Hunger"."Ot regen overlay"]
+		#If true, the overtime regen overlay will always render on the first row of hearts, capping at 20 health. Useful for mods that change heart rendering, showing them on the same row
+		"Force first row" = false

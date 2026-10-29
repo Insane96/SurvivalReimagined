@@ -256,15 +256,15 @@
 		"Data pack" = true
 
 		[Farming.Livestock."Well fed"]
-			#If true, animals will be 'well fed' for this ticks when fed. During this time they have an higher chance (given by the livestock data) to breed. Set to 0 to disable.
+			#Animals will be 'well fed' for this minutes when fed. During this time they have an higher chance (given by the livestock data) to breed. Set to 0 to disable.
 			# Default: 60
 			# Range: > 0
 			Duration = 60
-			#How much well fed time must be left to the entity to be able to feed it again.
+			#How many minutes of well fed time must be left to the entity to be able to feed it again.
 			# Default: 30
 			# Range: > 0
 			"Left to feed again" = 30
-			#How much well fed time is consumed when animals breed.
+			#How many minutes of well fed time are consumed when animals breed.
 			# Default: 20
 			# Range: > 0
 			"Consumed on breed" = 20
@@ -705,11 +705,11 @@
 
 	#Makes natural regeneration and hunger work differently, similar to Combat Test snapshots. Can be customized. Also allows to add passive regen
 	["Hunger & Health"."Hunger and health regen"]
-		#How much health do players heal overtime each second without consuming hunger? This value is applied to the insanesurvivaloverhaul:passive_regen_per_second attribute on player join.
+		#How much health do players heal overtime each second without consuming hunger? This value is applied to the insanesurvivaloverhaul:passive_regen_per_second attribute base value.
 		# Default: 0.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Passive regen per second" = 0.0
-		#How much health do players heal overtime each second by consuming hunger? This value is applied to the insanesurvivaloverhaul:regen_per_second attribute on player join.
+		#How much health do players heal overtime each second by consuming hunger? This value is applied to the insanesurvivaloverhaul:regen_per_second attribute base value.
 		# Default: 0.5
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Regen per second" = 0.5
@@ -723,7 +723,7 @@
 		"Regen reduction in combat time" = 10.0
 		#Set to true to disable the health regen boost given when max hunger and saturation (false in Vanilla).
 		"Disable saturation regen boost" = true
-		#Vanilla consumes 1 saturation or hunger whenever Exhaustion reaches 4.0. You can change that value with this config option. This value is applied to the insanesurvivaloverhaul:max_exhaustion attribute on player join. NOTE that Minecraft (for ... reasons) caps this value to 40.
+		#Vanilla consumes 1 saturation or hunger whenever Exhaustion reaches 4.0. You can change that value with this config option. This value is applied to the insanesurvivaloverhaul:max_exhaustion attribute base value. NOTE that Minecraft (for ... reasons) caps this value to 40.
 		# Default: 6.0
 		# Range: 0.0 ~ 40.0
 		"Max exhaustion" = 6.0
@@ -731,13 +731,13 @@
 		# Default: 6.0
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Exhaustion on heal" = 6.0
-		#Hunger consumed per half heart healed, only applies if 'Consume hunger only' is true. Decimal values are treated as chances to consume one more (e.g. this set to 0.5 means that there's 50% chance to consume one hunger). This value is applied to the insanesurvivaloverhaul:hunger_consumed attribute on player join. (vanilla ignores this; Combat Test has this set to 0.5).
+		#Hunger consumed per half heart healed, only applies if 'Consume hunger only' is true. Decimal values are treated as chances to consume one more (e.g. this set to 0.5 means that there's 50% chance to consume one hunger). This value is applied to the insanesurvivaloverhaul:hunger_consumed attribute base value. (vanilla ignores this; Combat Test has this set to 0.5).
 		# Default: 0.5
 		# Range: 0.0 ~ 40.0
 		"Hunger consumption on heal" = 0.5
 		#Set to true to consume Hunger only (and not saturation) when regenerating health (false for Vanilla).
 		"Consume hunger only" = true
-		#Sets how much hunger the player must have to regeneration health (vanilla is 18). This value is applied to the insanesurvivaloverhaul:hunger_required_to_regen attribute on player join.
+		#Sets how much hunger the player must have to regeneration health (vanilla is 18). This value is applied to the insanesurvivaloverhaul:hunger_required_to_regen attribute base value.
 		# Default: 7
 		# Range: > 0
 		"Hunger required to regen" = 7
@@ -896,7 +896,7 @@
 	"Enable Knockback" = true
 	#Gives a use to the fletching table, letting you craft better arrows out of vanilla ones.
 	"Enable Fletching" = true
-	#Mobs hit by pickupable arrows remember them, and drop a percentage of those arrows on death.
+	#Mobs hit by pickupable arrows remember them, and drop a percentage of those arrows on death. Any arrow type is dropped back as a normal arrow.
 	"Enable Stuck arrows" = true
 	#Rework sweep attack. Sweep is no longer on swords, instead it's on hoes. Also, the sweep attack deals full damage and the range is increased. A data pack is enabled that removes the Sweeping Edge enchantment.
 	"Enable Sweep overhaul" = true
@@ -917,8 +917,6 @@
 		"Armor rework data pack" = true
 		#Enables a data pack that reworks tools and weapons.
 		"Tools and weapons data pack" = true
-		#If true, tridents damage will be calculated based off the item thrown, instead of a fixed 8
-		"Thrown trident item based damage" = true
 
 	#This feature disables itself if Shields+ is installed
 	[Combat.Shields]
@@ -1087,7 +1085,7 @@
 			# Range: > -2147483648
 			"Enchantment level equivalent" = 4
 
-	#Mobs hit by pickupable arrows remember them, and drop a percentage of those arrows on death.
+	#Mobs hit by pickupable arrows remember them, and drop a percentage of those arrows on death. Any arrow type is dropped back as a normal arrow.
 	[Combat."Stuck arrows"]
 		#Chance, for each arrow stuck in the mob, to be dropped on death.
 		# Default: 0.5
@@ -1145,6 +1143,8 @@
 	"Enable Death inventory penalty" = false
 	#Replace score in the death screen with time since last death
 	"Enable Time since last death" = true
+	#When you die in hardcore, your spawn point is set to where you died and a lightning strike is summoned
+	"Enable Better hardcore death" = true
 
 	#The mob that kills a player will not despawn, and when killed will drop more experience.
 	[Death."Player killer bounty"]
@@ -1171,10 +1171,14 @@
 	[Mining."Mining misc"]
 		#Makes slabs, stairs and walls take less time to break
 		"Faster slabs, stairs and walls" = true
-		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks. The tick delay is reduced by 1 tick every 2.5 tool mining speed.
+		#In vanilla there's a 5 tick delay (0.25 secs) between breaking blocks (non-instantly broken in survival). The tick delay is reduced by 1 tick every 2.5 mining speed against the broken block (efficiency, haste, etc. included). Doesn't apply to creative.
 		"Mining speed based destroy delay" = true
 		#Tools with a mining speed set via the minecraft:tool component show it as a tooltip.
 		"Mining speed tooltip" = true
+		#Delay in ticks between breaking blocks in creative. Vanilla is 5.
+		# Default: 2
+		# Range: 0 ~ 10
+		"Creative destroy delay" = 2
 
 	#Various changes for different materials and ores.
 	[Mining."Materials and ores"]
@@ -1253,8 +1257,6 @@
 	[Misc.Tweaks]
 		#Falling on glass has a chance of breaking it. The higher the fall, the higher the chance. insanesurvivaloverhaul:fall_on_break block tag can be used to add more blocks that break when falling onto them.
 		"Falling breaking glass" = true
-		#When you die in hardcore, your spawn point is set to where you died and a lightning strike is summoned
-		"Better hardcore death" = true
 		#If enabled, the Totem of Undying will give Resistance IV for 5.5 seconds
 		"Totem resistance" = true
 		#Vanilla is 5
@@ -1385,7 +1387,7 @@
 		"Streamline splash potions" = true
 		#Enables a data pack that increases potions stack sizes
 		"Potion stack size" = true
-		#Multiplier for the duration of potions. Doesn't affect instantaneous effects. Requires a Minecraft restart
+		#Multiplier for the duration of potions. Doesn't affect instantaneous effects.
 		# Default: 2.0
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Potion duration multiplier" = 2.0
