@@ -10,20 +10,22 @@
 * Enhanced AI Leaders now wear a full trimmed copper, chainmail, golden, iron or (rarely) diamond armor and a banner on their head; reinforcements chance now reaches 100% at 3 damage instead of 1
 * Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
-  * Amendments 2.1.11 -> 2.2.1
+  * Amendments 2.1.11 -> 2.2.4
     * Walls, fences and panes now all connect to each other
     * Added a smooth hotbar slot animation
     * Axolotl buckets show the color of the axolotl inside
     * Following pets teleport with you instantly when you teleport
   * Ambient Sounds 6.3.10 -> 6.3.11
-  * Collective 8.58 -> 8.65
-  * Enhanced AI 4.2.4.0 -> 4.2.5.0
+  * Collective 8.58 -> 8.69
+  * Enhanced AI 4.2.4.0 -> 4.2.6.0
     * Shielding now works like vanilla shields: only damage coming from the front can be blocked, but projectiles and explosions can be blocked too
     * Fixed skeletons randomly strolling away while shooting
     * Fixed polar bears attacking without cubs nearby, witches no longer healing raiders and foxes attacking anything that hurt something
     * Fixed leaders spawning far less reinforcements than intended
     * Fixed Actual Blindness reducing mobs follow range way more than intended
-  * InsaneLib 2.4.33.2 -> 2.4.37.0
+    * Fixed miner mobs being unable to mine blocks that don't need a specific tool (e.g. glass, wool)
+  * Experience Tweaks 1.1.5.1 -> 1.1.6.0
+  * InsaneLib 2.4.33.2 -> 2.5.0.4-alpha
     * Mods now have a config screen in the Mods list
     * Item counts over 999 now show as 1k, 1m, 1b
     * Fixed falling blocks getting stuck forever on top of slime blocks
@@ -45,12 +47,16 @@
     * Fixed the food tooltip showing half of the real overtime regeneration duration, now also takes into account Well Fed and Curse of Malnutrition
     * Fixed the overtime regen overlay not showing after logging in, respawning or changing dimension
   * Platform 1.4 -> 1.4.2
-  * Puzzles Lib 21.1.64 -> 21.1.65
+  * Puzzles Lib 21.1.64 -> 21.1.66
+  * Quark 4.1-487 -> 4.1-488
+    * Forgotten Hat no longer gives 1 armor
+    * Foxhounds now also sleep on smokers and blast furnaces
+    * Pumpkins and skulls can now be equipped with Expanded Item Interactions
   * Stamina 2.0.0.4 -> 2.1.0.0
     * Stamina consumed by jumping is now affected by the out of combat multiplier, like sprinting
     * Fixed attacking other players not counting as being in combat
     * Fixed stamina not being locked when health dropped below the threshold while sprinting
-  * Tiny Takeover Backport 1.6.3 -> 1.8.0
+  * Tiny Takeover Backport 1.6.3 -> 1.8.2
   * Vanilla Backport 1.1.7.10 -> 1.2.2
     * Added features from the Copper Age drop (Copper Golems, Copper Chests, copper lanterns, chains and bars, ...)
       * Copper Chains cost 3 copper nuggets, like Iron Chains
@@ -58,6 +64,7 @@
     * Added features from the Mounts of Mayhem drop (Nautiluses, Zombie Horses, Camel Husks, Parched skeletons, ...)
     * Added the Dappled Forest from the Wilderness Bound drop
     * Thrown Ender Pearls now load chunks while traveling
+  * Vibrant Parrots 21.1.0 -> 21.1.1
 
 # 4.5.9
 * Enhanced AI: TNT-like creepers chance reduced from 25% to 5%
