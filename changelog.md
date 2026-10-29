@@ -28,7 +28,11 @@
   * InsaneLib 2.4.33.2 -> 2.5.0.4-alpha
     * Mods now have a config screen in the Mods list
     * Fixed falling blocks getting stuck forever on top of slime blocks
-  * InsaneSurvivalOverhaul 5.13.0.0 -> 5.13.2.0
+  * InsaneSurvivalOverhaul 5.13.0.0 -> 5.14.0.0-beta
+    * Blocks in the Nether are now 1.5x harder to break
+    * Iron, golden and copper items without durability (bars, chains, lanterns, buckets, doors, hoppers, minecarts, rails, anvils, ...) can now be recycled in the Blast Furnace, giving back 75% of the materials
+    * Horse Armors can now be recycled into 5 ingots (or diamonds) instead of 1 nugget
+    * Iron, golden and chainmail equipment can no longer be smelted into 1 nugget, recycle them in the Blast Furnace instead
     * Golden Armor total armor increased from 5 to 9, Chainmail Armor decreased from 15.5 to 13
     * The delay between breaking blocks is now based on the actual mining speed against the broken block (Efficiency, Haste, etc. included)
     * Thrown tridents damage is now based on the trident attack damage
@@ -41,8 +45,6 @@
     * Fixed repair kits consuming other items in the crafting grid
     * Lots of other fixes
   * Mobs Properties Randomness 6.1.10.0 -> 6.2.1.0
-    * Fixed stacking potion effects lasting way longer than intended
-    * Fixed many other bugs
   * ModernFix 5.27.26 -> 5.27.27
   * No Hunger 2.1.0.1 -> 2.1.1.0
     * Eating a food that heals over time no longer replaces a higher health left to regenerate
