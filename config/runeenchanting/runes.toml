@@ -623,4 +623,4 @@
 [sprint_pact]
 	# Default: 0.2
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Bonus Speed" = 0.2
+	"Bonus Speed" = 0.15
