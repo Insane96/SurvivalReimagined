@@ -74,4 +74,4 @@ this pack (e.g. `map_atlases`, `easel_does_it`, `heartstone`, `labels`, `betterd
 
 ## TODO
 
-Current open work is tracked in `TODO.md` and `advancements_to_add.md`.
+Current open work is tracked in `TODO.md`.
