@@ -1,0 +1,31 @@
+{
+    "properties": [
+        {
+            "property": "equipment",
+            "slot": "chest",
+            "items": [
+                {
+                    "item": "minecraft:chainmail_chestplate"
+                }
+            ]
+        },
+        {
+            "property": "equipment",
+            "slot": "legs",
+            "items": [
+                {
+                    "item": "minecraft:chainmail_leggings"
+                }
+            ]
+        },
+        {
+            "property": "equipment",
+            "slot": "feet",
+            "items": [
+                {
+                    "item": "minecraft:chainmail_boots"
+                }
+            ]
+        }
+    ]
+}

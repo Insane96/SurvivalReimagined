@@ -1,0 +1,31 @@
+{
+    "properties": [
+        {
+            "property": "equipment",
+            "slot": "chest",
+            "items": [
+                {
+                    "item": "minecraft:iron_chestplate"
+                }
+            ]
+        },
+        {
+            "property": "equipment",
+            "slot": "legs",
+            "items": [
+                {
+                    "item": "minecraft:iron_leggings"
+                }
+            ]
+        },
+        {
+            "property": "equipment",
+            "slot": "feet",
+            "items": [
+                {
+                    "item": "minecraft:iron_boots"
+                }
+            ]
+        }
+    ]
+}

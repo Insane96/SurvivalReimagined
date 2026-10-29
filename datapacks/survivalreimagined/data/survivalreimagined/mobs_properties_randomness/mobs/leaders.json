@@ -35,29 +35,54 @@
             ]
         },
         {
+            "property": "presets",
+            "presets": [
+                {
+                    "preset": "survivalreimagined:leader_copper_armor",
+                    "weight": 10
+                },
+                {
+                    "preset": "survivalreimagined:leader_chainmail_armor",
+                    "weight": 10
+                },
+                {
+                    "preset": "survivalreimagined:leader_golden_armor",
+                    "weight": 10
+                },
+                {
+                    "preset": "survivalreimagined:leader_iron_armor",
+                    "weight": 10
+                },
+                {
+                    "preset": "survivalreimagined:leader_diamond_armor",
+                    "weight": 2
+                }
+            ]
+        },
+        {
             "property": "equipment",
             "slot": "chest",
-            "items": [
+            "functions": [
                 {
-                    "item": "minecraft:iron_chestplate"
+                    "function": "armor_trim"
                 }
             ]
         },
         {
             "property": "equipment",
             "slot": "legs",
-            "items": [
+            "functions": [
                 {
-                    "item": "minecraft:iron_leggings"
+                    "function": "armor_trim"
                 }
             ]
         },
         {
             "property": "equipment",
             "slot": "feet",
-            "items": [
+            "functions": [
                 {
-                    "item": "minecraft:iron_boots"
+                    "function": "armor_trim"
                 }
             ]
         }

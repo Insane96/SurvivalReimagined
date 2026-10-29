@@ -7,7 +7,7 @@
 * Removed duplicate Name Tag recipes, only the vanilla-like one (paper + any nugget) is kept
 * Disabled Quark's Compasses Work Everywhere, compasses spin randomly in the Nether and End again
 * Supplementaries' Blast Armor Trim can now be duplicated with 1 diamond, like the vanilla ones
-* Enhanced AI Leaders now wear iron armor and a banner on their head; reinforcements chance now reaches 100% at 3 damage instead of 1
+* Enhanced AI Leaders now wear a full trimmed copper, chainmail, golden, iron or (rarely) diamond armor and a banner on their head; reinforcements chance now reaches 100% at 3 damage instead of 1
 * Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
   * Amendments 2.1.11 -> 2.2.1
