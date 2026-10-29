@@ -1,0 +1,6 @@
+{
+    "item": "hangglider:hang_glider",
+    "components": {
+        "minecraft:max_damage": 409
+    }
+}
