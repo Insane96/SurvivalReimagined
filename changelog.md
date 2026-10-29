@@ -2,6 +2,10 @@
 * Repair kits can now repair items up to 100% instead of 80%
 * Removed Inventory Totem
 * Removed Underlay
+* Copper Chains now cost 3 copper nuggets, like Iron Chains
+* Copper Chests, Bars, Chains and Lanterns can now be recycled in the Blast Furnace
+* Fixed Copper Torches, Lanterns and Chains not being craftable
+* Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
   * Amendments 2.1.11 -> 2.2.0
     * Walls, fences and panes now all connect to each other

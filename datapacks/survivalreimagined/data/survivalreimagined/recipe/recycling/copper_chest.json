@@ -1,0 +1,21 @@
+{
+  "type": "insanesurvivaloverhaul:recycling",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "group": "recycling_copper",
+  "ingredient": [
+    { "item": "minecraft:copper_chest" },
+    { "item": "minecraft:exposed_copper_chest" },
+    { "item": "minecraft:weathered_copper_chest" },
+    { "item": "minecraft:oxidized_copper_chest" },
+    { "item": "minecraft:waxed_copper_chest" },
+    { "item": "minecraft:waxed_exposed_copper_chest" },
+    { "item": "minecraft:waxed_weathered_copper_chest" },
+    { "item": "minecraft:waxed_oxidized_copper_chest" }
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:copper_ingot"
+  }
+}
