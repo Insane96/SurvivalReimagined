@@ -45,6 +45,10 @@
 	# Default: 0.3
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.3
+	#Percentage bonus damage dealt by arrows shot with bows and crossbows
+	# Default: 1.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Arrow Bonus Damage" = 1.0
 
 [bane_of_hissing]
 	# Default: 0.7
@@ -61,11 +65,21 @@
 	# Default: 3.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Slowness Duration Max" = 3.0
+	#Percentage bonus damage dealt by arrows shot with bows and crossbows
+	# Default: 2.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Arrow Bonus Damage" = 2.0
+	#If true, arrows apply Slowness too
+	"Arrow Effects" = false
 
 [impaling]
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
+	#Percentage bonus damage dealt by arrows shot with bows and crossbows
+	# Default: 2.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Arrow Bonus Damage" = 2.0
 
 [water_coolant]
 	# Default: 0.7
@@ -74,6 +88,12 @@
 	# Default: 5
 	# Range: > -2147483648
 	"Freeze Amount" = 5
+	#Percentage bonus damage dealt by arrows shot with bows and crossbows
+	# Default: 2.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Arrow Bonus Damage" = 2.0
+	#If true, arrows freeze too
+	"Arrow Effects" = false
 
 [smite]
 	# Default: 0.7
@@ -90,21 +110,39 @@
 	# Default: 3.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Weakness Duration Max" = 3.0
+	#Percentage bonus damage dealt by arrows shot with bows and crossbows
+	# Default: 2.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Arrow Bonus Damage" = 2.0
+	#If true, arrows apply Weakness too
+	"Arrow Effects" = false
 
 [bane_of_noses]
 	# Default: 0.7
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
+	#Percentage bonus damage dealt by arrows shot with bows and crossbows
+	# Default: 2.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Arrow Bonus Damage" = 2.0
 
 [rage]
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Bonus Damage" = 1.0
+	#Max percentage bonus damage dealt by arrows shot with bows and crossbows
+	# Default: 3.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Arrow Max Bonus Damage" = 3.0
 
 [fire_surge]
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Bonus Damage" = 1.0
+	#Max percentage bonus damage dealt by arrows shot with bows and crossbows
+	# Default: 3.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Arrow Max Bonus Damage" = 3.0
 
 [swift_strike]
 	# Default: 0.3
@@ -122,7 +160,7 @@
 	# Range: 0.1 ~ 1.7976931348623157E308
 	"Explosion Power" = 0.7
 	"Destroy Blocks" = true
-	# Default: 5.0
+	# Default: 3.0
 	# Range: 0.05 ~ 1.7976931348623157E308
 	"Delay Seconds" = 3.0
 
@@ -144,12 +182,6 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Knockback" = 0.4
 
-[power]
-	#Percentage bonus damage
-	# Default: 1.0
-	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Bonus Damage" = 0.8
-
 [infinity]
 	#This rune mimics vanilla Frost Walker of this level
 	# Default: 0.7
@@ -162,9 +194,10 @@
 	"Entities To Pass Through" = 3
 
 [quick_charge]
-	# Default: 0.75
-	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Seconds Reduction" = 0.75
+	#Percentage charge time reduction
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	"Charge Time Reduction" = 0.6
 
 [multishot]
 	# Default: 3
@@ -400,7 +433,7 @@
 
 [enduring]
 	#Percentage bonus durability
-	# Default: 1.0
+	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Durability" = 2.0
 	# Default: 80
@@ -467,9 +500,10 @@
 	"Chance To Void" = 0.35
 
 [curse_of_slow_charge]
-	# Default: 0.5
-	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Seconds Increase" = 0.5
+	#Percentage charge time increase
+	# Default: 0.4
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Charge Time Increase" = 0.4
 
 [curse_of_hop]
 	# Default: 0.05
@@ -569,6 +603,8 @@
 	# Default: 0.1
 	# Range: 0.0 ~ 1.0
 	"Lapis Consume Chance" = 0.1
+	#If true, lapis lazuli inside shulker boxes and bundles in the inventory is used too. Lapis in the inventory is always consumed first
+	"Search Containers" = false
 
 [curse_of_undead]
 	# Default: 200
@@ -594,10 +630,6 @@
 	"Detection Range Increase" = 0.4
 
 [electrocution]
-	#In seconds
-	# Default: 3.0
-	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	Delay = 3.0
 	# Default: 3.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Shock Damage" = 3.0
@@ -606,9 +638,17 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	Radius = 4.0
 	#How many nearby entities a discharge hits
-	# Default: 2
+	# Default: 4
 	# Range: > -2147483648
 	"Chain Targets" = 2
+	#Damage the weapon must deal before its next hit discharges
+	# Default: 20.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Damage To Accumulate" = 20.0
+	#How much of the weapon's accumulated damage is lost per second
+	# Default: 2.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Decay Per Second" = 2.0
 
 [blood_fueled]
 	#Chance to not consume durability
@@ -621,6 +661,6 @@
 	"Self Damage Chance" = 0.1
 
 [sprint_pact]
-	# Default: 0.2
+	# Default: 0.15
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Speed" = 0.15

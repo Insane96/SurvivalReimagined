@@ -1,0 +1,5 @@
+[Rune]
+	#A data pack will be enabled that changes the following:
+	#* Removes the enchanting table recipe
+	#* Changes Channeling enchantment (and subsequently the Channeling rune) to work in rain too
+	"Integrated data pack" = true

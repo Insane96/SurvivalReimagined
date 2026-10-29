@@ -1,0 +1,7 @@
+[Rune]
+	#If true, enchanting related items are hidden from creative inventory
+	"Hide enchanting related items" = true
+	#If true, infos that are usually shown only with shift held down, will always show instead
+	"Always show extra infos" = false
+	#If true, curse names in tooltips randomly glitch (characters get obfuscated every now and then)
+	"Glitch curse names" = true

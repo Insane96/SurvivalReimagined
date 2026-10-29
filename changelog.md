@@ -10,7 +10,7 @@
 * Enhanced AI Leaders now wear a full trimmed copper, chainmail, golden, iron or (rarely) diamond armor and a banner on their head; reinforcements chance now reaches 100% at 3 damage instead of 1
 * Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
-  * Amendments 2.1.11 -> 2.2.4
+  * Amendments 2.1.11 -> 2.2.5
     * Walls, fences and panes now all connect to each other
     * Added a smooth hotbar slot animation
     * Axolotl buckets show the color of the axolotl inside
@@ -56,6 +56,17 @@
     * Forgotten Hat no longer gives 1 armor
     * Foxhounds now also sleep on smokers and blast furnaces
     * Pumpkins and skulls can now be equipped with Expanded Item Interactions
+  * RuneEnchanting 1.3.2.3 -> 1.4.0.0
+    * Bows and crossbows now share all their runes (e.g. Multishot on bows, Infinity on crossbows); Quick Charge and Curse of Slow Charge now also affect bows
+    * Melee weapon runes (Sharpness, Smite, Fire Surge, Explosive, ...) can now be applied to bows and crossbows and work on the arrows shot
+    * Power has been removed and merged into Sharpness
+    * Reworked Electrocution: dealing damage charges the weapon, after 20 damage the hit discharges on the target and the 4 nearest entities
+    * Decreased Leather armor sockets
+    * Curse of Blood Pact and Blood-fueled damage now bypasses armor
+    * Items with more runes than sockets have their runes inactive until removed with a grindstone
+    * Fixed the bonus damage from runes such as Hunter being ignored
+    * Fixed runes on weapons and tools working while held in the offhand
+    * Lots of other fixes
   * Stamina 2.0.0.4 -> 2.1.0.0
     * Stamina consumed by jumping is now affected by the out of combat multiplier, like sprinting
     * Fixed attacking other players not counting as being in combat
