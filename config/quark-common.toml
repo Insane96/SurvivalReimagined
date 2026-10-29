@@ -505,7 +505,7 @@
 	"Automatic Recipe Unlock" = true
 	"Better Elytra Rocket" = false
 	"Campfires Boost Elytra" = false
-	"Compasses Work Everywhere" = true
+	"Compasses Work Everywhere" = false
 	"Coral On Cactus" = true
 	"Diamond Repair" = false
 	"Double Door Opening" = true

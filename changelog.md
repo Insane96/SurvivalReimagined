@@ -5,6 +5,7 @@
 * Explosive rune delay reduced from 5 to 3 seconds
 * Hang Glider durability consumption doubled (1 every 5 ticks instead of 10) and durability halved (818 -> 409)
 * Removed duplicate Name Tag recipes, only the vanilla-like one (paper + any nugget) is kept
+* Disabled Quark's Compasses Work Everywhere, compasses spin randomly in the Nether and End again
 * Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
   * Amendments 2.1.11 -> 2.2.1
