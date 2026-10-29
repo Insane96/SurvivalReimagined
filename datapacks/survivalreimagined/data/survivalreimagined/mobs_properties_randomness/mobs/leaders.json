@@ -1,0 +1,66 @@
+{
+    "target": "#enhancedai:mobs/leaders",
+    "conditions": [
+        {
+            "condition": "enhancedai:is_leader"
+        }
+    ],
+    "properties": [
+        {
+            "property": "equipment",
+            "slot": "head",
+            "items": [
+                {
+                    "item": "minecraft:black_banner",
+                    "functions": [
+                        {
+                            "function": "set_component",
+                            "components": {
+                                "minecraft:banner_patterns": [
+                                    {
+                                        "pattern": "minecraft:mojang",
+                                        "color": "white"
+                                    }
+                                ],
+                                "minecraft:item_name": "{\"translate\":\"enhancedai.leader_banner\"}",
+                                "minecraft:hide_additional_tooltip": {}
+                            }
+                        },
+                        {
+                            "function": "set_drop_chance",
+                            "drop_chance": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "property": "equipment",
+            "slot": "chest",
+            "items": [
+                {
+                    "item": "minecraft:iron_chestplate"
+                }
+            ]
+        },
+        {
+            "property": "equipment",
+            "slot": "legs",
+            "items": [
+                {
+                    "item": "minecraft:iron_leggings"
+                }
+            ]
+        },
+        {
+            "property": "equipment",
+            "slot": "feet",
+            "items": [
+                {
+                    "item": "minecraft:iron_boots"
+                }
+            ]
+        }
+    ],
+    "event_priority": "lowest"
+}

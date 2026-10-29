@@ -105,7 +105,7 @@
 		#At this damage, the chance to spawn reinforcements is 100% of the attribute, otherwise is scaled. E.g. with this set to 6 and enhancedai:spawn_reinforcements_chance attribute set to 0.5 the chance to spawn reinforcements is 50% at 6 damage, 25% at 3 damage or 100% at 12 damage. Set to 0 to disable scaling with damage. This is damage before resistances (armor, etc).
 		# Default: 6.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		"Spawn reinforcements chance damage scaled" = 6.0
+		"Spawn reinforcements chance damage scaled" = 3.0
 		#How much is enhancedai:spawn_reinforcements_chance reduced by each time a reinforcement is spawned.
 		# Default: 0.05
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -115,12 +115,12 @@
 		"Leader spawn reinforcements chance" = 1.0
 		"Reinforces can spawn as leader" = false
 		#If true, leader mobs will have 4x health and +10 armor.
-		"Bonus stats" = true
+		"Bonus stats" = false
 		"Remove vanilla spawn reinforcements chance" = true
 		#If true, reinforcements will spawn only if the damage comes from an entity
 		"Entity damage only" = false
 		#If true, leader mobs will wear a banner with the Mojang logo on their head, like raid captains do with the ominous banner.
-		"Leader banner" = true
+		"Leader banner" = false
 
 	#Makes mobs ride other mobs. Mobs in the `enhancedai:mobs/riding/can_be_mounted` tag will be able to be mounted, while mobs in the `enhancedai:mobs/riding/can_mount` tag will be able to mount other mobs.
 	[Mobs.Riding]
