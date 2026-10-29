@@ -1,4 +1,4 @@
-# Upcoming
+# 4.6.0
 * Repair kits can now repair items up to 100% instead of 80%
 * Removed Inventory Totem
 * Removed Underlay
