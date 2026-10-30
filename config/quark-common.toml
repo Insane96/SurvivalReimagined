@@ -305,7 +305,7 @@
 		"Enable Shulker Box Interaction" = true
 		"Enable Lava Interaction" = false
 		"Allow Opening Shulker Boxes" = true
-		"Allow Rotating Bundles" = true
+		"Allow Rotating Bundles" = false
 		#Set this to true to use left clicks instead of right clicks for all Expanded Item Interactions. Some JEI hints may be incorrect if this is enabled
 		"Invert Clicks" = false
 

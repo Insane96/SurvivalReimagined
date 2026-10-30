@@ -1,5 +1,7 @@
 # Upcoming
 * Fixed recycling tools giving full output
+* Bundles can be dyed again
+* Enabled Vanilla Backport's modern bundle interface (scroll to select the item to take out); disabled Quark's Rotating Bundles as it conflicts with it
 
 # 4.6.0
 * Repair kits can now repair items up to 100% instead of 80%
