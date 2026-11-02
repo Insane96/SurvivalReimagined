@@ -3,6 +3,7 @@
   "entries": [
     "survivalreimagined:add_dnt_maps_to_buried_treasure",
     "survivalreimagined:add_maps_to_shipwreck",
+    "survivalreimagined:add_desert_ruins_map_to_abandoned_camp",
     "survivalreimagined:add_archeological_underground_maps_warm",
     "survivalreimagined:add_archeological_underground_maps_cold",
     "survivalreimagined:add_archeological_underground_maps_temperate",
