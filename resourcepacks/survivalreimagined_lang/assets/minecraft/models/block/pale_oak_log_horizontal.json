@@ -50,12 +50,12 @@
   ],
   "textures": {
     "particle": "minecraft:block/pale_oak_log",
-    "down": "#end",
-    "up": "#end",
-    "north": "#side",
-    "east": "#side",
-    "south": "#side",
-    "west": "#side",
+    "down": "minecraft:block/pale_oak_log_top",
+    "up": "minecraft:block/pale_oak_log_top",
+    "north": "minecraft:block/pale_oak_log",
+    "east": "minecraft:block/pale_oak_log",
+    "south": "minecraft:block/pale_oak_log",
+    "west": "minecraft:block/pale_oak_log",
     "end": "minecraft:block/pale_oak_log_top",
     "side": "minecraft:block/pale_oak_log"
   }

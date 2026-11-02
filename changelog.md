@@ -7,6 +7,7 @@
 * Added a Desert Ruins Map, found in Abandoned Camp chests (15% chance)
 * Added Ecologics
 * Added Naturalist
+* Added Every Compat and Stone Zone
 * Disabled Quark's Crabs
 * Fried Eggs can no longer be cooked in furnaces
 * Spectral Arrows and Rope Arrows are now crafted in the Fletching Table; Rope Arrows can still be refilled in the crafting grid
