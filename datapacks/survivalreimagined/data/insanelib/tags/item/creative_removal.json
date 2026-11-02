@@ -106,6 +106,7 @@
         "ecologics:stripped_azalea_log",
         "ecologics:stripped_azalea_wood",
         "naturalist:cooked_egg",
-        "ecologics:crab_meat"
+        "ecologics:crab_meat",
+        "eternalnether:gilded_netherite_shield"
     ]
 }
