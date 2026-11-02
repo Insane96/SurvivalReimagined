@@ -1,0 +1,23 @@
+{
+    "item": "ecologics:crab_claw",
+    "merge_components": {
+        "minecraft:attribute_modifiers": {
+            "modifiers": [
+                {
+                    "type": "minecraft:player.block_interaction_range",
+                    "id": "survivalreimagined:crab_claw_block_reach",
+                    "amount": 1.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                },
+                {
+                    "type": "minecraft:player.entity_interaction_range",
+                    "id": "survivalreimagined:crab_claw_attack_reach",
+                    "amount": 1.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                }
+            ]
+        }
+    }
+}

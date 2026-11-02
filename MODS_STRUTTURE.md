@@ -163,6 +163,9 @@ Nota: il filtro di ibo colpisce solo il namespace `incendium`, quindi la ridefin
 ### clayworks — 🟢 attivo, nessun config di worldgen
 `clayworks-1.21.1-4.0.3.jar`. Non è una struttura a sé: aggiunge solo vasi decorativi dentro i **Trial Chambers** vanilla (☀️/⛏️ dipende dal Trial Chamber stesso — sono sotterranei). **Overworld.**
 
+### Ecologics — 🟢 attiva, nessun config di worldgen
+`ecologics-1.21.1-2.3.8.jar`. Aggiunge la **Desert Ruin** (`ecologics:desert_ruin`, ☀️ superficie, solo bioma `minecraft:desert`, spacing 20 / separation 8). **Overworld.** La cassa di `chest_house` usa la loot table `minecraft:chests/desert_pyramid`, gli altri pezzi hanno solo vasi. I filoni d'oro del Nether (`add_ore_vein_nether_gold`) sono disattivati da un override in `datapacks/survivalreimagined/data/ecologics/neoforge/biome_modifier/`.
+
 ### formationsnether — 🟢 attiva, nessun config dedicato
 `formationsnether-1.0.5a-mc1.21+.jar`. **Dimensione: Nether** (bioma `basalt_deltas` e altri).
 
