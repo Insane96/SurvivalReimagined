@@ -8,6 +8,7 @@
 * Added Ecologics
 * Added Naturalist
 * Disabled Quark's Crabs
+* Fried Eggs can no longer be cooked in furnaces
 * Updated Mods
   * Amendments 2.2.5 -> 2.2.7
   * Cirrus 1.4.1 -> 1.4.2
