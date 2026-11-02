@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "naturalist:butterfly"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.catch_butterfly.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.catch_butterfly.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "survivalreimagined:husbandry/capture_net",
+	"criteria": {
+		"has_catch_butterfly": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "naturalist:butterfly"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_catch_butterfly"
+		]
+	]
+}

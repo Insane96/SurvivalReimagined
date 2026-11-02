@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"id": "ecologics:coconut_seedling"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.exotic_saplings.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.exotic_saplings.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_exotic_saplings": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"ecologics:coconut_seedling",
+							"ecologics:walnut_sapling"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_exotic_saplings"
+		]
+	]
+}

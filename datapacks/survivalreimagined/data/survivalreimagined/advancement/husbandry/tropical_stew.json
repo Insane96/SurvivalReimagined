@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"id": "ecologics:tropical_stew"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.tropical_stew.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.tropical_stew.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "survivalreimagined:husbandry/crab_claw",
+	"criteria": {
+		"has_tropical_stew": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": "ecologics:tropical_stew"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_tropical_stew"
+		]
+	]
+}

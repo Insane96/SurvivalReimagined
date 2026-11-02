@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "naturalist:capture_net"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.capture_net.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.capture_net.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_capture_net": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "naturalist:capture_net"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_capture_net"
+		]
+	]
+}

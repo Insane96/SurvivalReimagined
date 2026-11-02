@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"id": "naturalist:cooked_mammoth_meat"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.cooked_mammoth_meat.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.cooked_mammoth_meat.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_cooked_mammoth_meat": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": "naturalist:cooked_mammoth_meat"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_cooked_mammoth_meat"
+		]
+	]
+}

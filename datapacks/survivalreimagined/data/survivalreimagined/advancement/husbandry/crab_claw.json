@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "ecologics:crab_claw"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.crab_claw.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.crab_claw.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_crab_claw": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "ecologics:crab_claw"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_crab_claw"
+		]
+	]
+}

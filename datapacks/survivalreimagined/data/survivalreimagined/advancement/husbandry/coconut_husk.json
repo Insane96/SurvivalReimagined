@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "ecologics:coconut_husk"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.coconut_husk.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.coconut_husk.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_coconut_husk": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "ecologics:coconut_husk"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_coconut_husk"
+		]
+	]
+}

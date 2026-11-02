@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "ecologics:prickly_pear"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.prickly_pear.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.prickly_pear.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_prickly_pear": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "ecologics:prickly_pear"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_prickly_pear"
+		]
+	]
+}

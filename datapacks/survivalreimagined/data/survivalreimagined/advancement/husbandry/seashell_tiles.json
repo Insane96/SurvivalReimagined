@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "ecologics:seashell_tiles"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.seashell_tiles.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.seashell_tiles.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_seashell_tiles": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "ecologics:seashell_tiles"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_seashell_tiles"
+		]
+	]
+}

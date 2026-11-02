@@ -1,0 +1,39 @@
+{
+	"display": {
+		"icon": {
+			"id": "naturalist:verdant_froglass"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.froglass.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.froglass.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/froglights",
+	"criteria": {
+		"has_froglass": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"naturalist:azure_froglass",
+							"naturalist:crimson_froglass",
+							"naturalist:verdant_froglass"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_froglass"
+		]
+	]
+}

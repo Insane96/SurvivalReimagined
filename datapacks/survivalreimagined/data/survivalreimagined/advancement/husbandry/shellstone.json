@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "naturalist:shellstone"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.shellstone.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.shellstone.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_shellstone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "naturalist:shellstone"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_shellstone"
+		]
+	]
+}

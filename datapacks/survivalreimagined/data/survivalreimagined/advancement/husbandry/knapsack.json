@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"id": "naturalist:knapsack"
+		},
+		"title": {
+			"translate": "advancements.survivalreimagined.knapsack.title"
+		},
+		"description": {
+			"translate": "advancements.survivalreimagined.knapsack.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"has_knapsack": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "naturalist:knapsack"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_knapsack"
+		]
+	]
+}
