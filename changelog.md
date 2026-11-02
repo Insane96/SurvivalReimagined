@@ -1,4 +1,4 @@
-# Upcoming
+# 4.7.0
 * Added Ecologics
 * Added Naturalist
 * Added Every Compat and Stone Zone
