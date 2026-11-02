@@ -11,6 +11,7 @@
 * Disabled Quark's Crabs
 * Fried Eggs can no longer be cooked in furnaces
 * Spectral Arrows and Rope Arrows are now crafted in the Fletching Table; Rope Arrows can still be refilled in the crafting grid
+* Fixed Dungeons and Taverns books in Desert and Jungle Ruins loot being plain or empty instead of giving a rune
 * Updated Mods
   * Amendments 2.2.5 -> 2.2.7
   * Cirrus 1.4.1 -> 1.4.2
