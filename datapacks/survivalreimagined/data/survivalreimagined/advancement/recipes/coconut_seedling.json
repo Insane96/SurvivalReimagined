@@ -6,9 +6,7 @@
             "conditions": {
                 "items": [
                     {
-                        "items": [
-                            "minecraft:shears"
-                        ]
+                        "items": "#c:tools/shear"
                     }
                 ]
             }
