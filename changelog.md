@@ -6,6 +6,7 @@
 * Doubled the chance of Enhanced AI mobs blocking with a shield
 * Added a Desert Ruins Map, found in Abandoned Camp chests (15% chance)
 * Added Ecologics
+* Added Naturalist
 * Updated Mods
   * Amendments 2.2.5 -> 2.2.7
   * Cirrus 1.4.1 -> 1.4.2

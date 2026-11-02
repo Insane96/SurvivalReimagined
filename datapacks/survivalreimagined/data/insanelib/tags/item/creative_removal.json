@@ -104,6 +104,8 @@
         "ecologics:flowering_azalea_trapdoor",
         "ecologics:flowering_azalea_wood",
         "ecologics:stripped_azalea_log",
-        "ecologics:stripped_azalea_wood"
+        "ecologics:stripped_azalea_wood",
+        "naturalist:cooked_egg",
+        "ecologics:crab_meat"
     ]
 }

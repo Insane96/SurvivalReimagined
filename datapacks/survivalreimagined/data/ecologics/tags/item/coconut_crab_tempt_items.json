@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#c:foods/fruit",
+        "#c:foods/nut",
+        "ecologics:coconut_slice",
+        "naturalist:cooked_crab_meat"
+    ],
+    "replace": true
+}

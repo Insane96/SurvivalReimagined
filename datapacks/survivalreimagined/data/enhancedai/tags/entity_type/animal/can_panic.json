@@ -2,6 +2,14 @@
     "replace": false,
     "values": [
         "ecologics:squirrel",
-        "ecologics:penguin"
+        "ecologics:penguin",
+        "naturalist:capybara",
+        "naturalist:deer",
+        "naturalist:duck",
+        "naturalist:giant_isopod",
+        "naturalist:giraffe",
+        "naturalist:rat",
+        "naturalist:turkey",
+        "naturalist:zebra"
     ]
 }

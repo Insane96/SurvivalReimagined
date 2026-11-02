@@ -2,6 +2,13 @@
     "replace": false,
     "values": [
         "ecologics:squirrel",
-        "ecologics:coconut_crab"
+        "ecologics:coconut_crab",
+        "naturalist:crab",
+        "naturalist:duck",
+        "naturalist:giant_isopod",
+        "naturalist:hedgehog",
+        "naturalist:rat",
+        "naturalist:snail",
+        "naturalist:turkey"
     ]
 }

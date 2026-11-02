@@ -3,6 +3,30 @@
     "values": [
         "ecologics:squirrel",
         "ecologics:penguin",
-        "ecologics:coconut_crab"
+        "ecologics:coconut_crab",
+        "naturalist:alligator",
+        "naturalist:bear",
+        "naturalist:black_bear",
+        "naturalist:boar",
+        "naturalist:butterfly",
+        "naturalist:capybara",
+        "naturalist:crab",
+        "naturalist:deer",
+        "naturalist:duck",
+        "naturalist:elephant",
+        "naturalist:giant_isopod",
+        "naturalist:giraffe",
+        "naturalist:hedgehog",
+        "naturalist:hippo",
+        "naturalist:komodo_dragon",
+        "naturalist:lion",
+        "naturalist:mammoth",
+        "naturalist:ostrich",
+        "naturalist:rat",
+        "naturalist:snail",
+        "naturalist:tiger",
+        "naturalist:tortoise",
+        "naturalist:turkey",
+        "naturalist:zebra"
     ]
 }

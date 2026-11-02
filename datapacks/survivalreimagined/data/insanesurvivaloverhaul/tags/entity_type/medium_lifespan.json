@@ -1,6 +1,10 @@
 {
     "replace": false,
     "values": [
-        "ecologics:penguin"
+        "ecologics:penguin",
+        "naturalist:boar",
+        "naturalist:capybara",
+        "naturalist:deer",
+        "naturalist:ostrich"
     ]
 }
