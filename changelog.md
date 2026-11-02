@@ -4,6 +4,10 @@
 * Enabled Vanilla Backport's modern bundle interface (scroll to select the item to take out); disabled Quark's Rotating Bundles as it conflicts with it
 * Doubled the chance of Enhanced AI mobs blocking with a shield
 * Updated Mods
+  * Amendments 2.2.5 -> 2.2.7
+  * Cirrus 1.4.1 -> 1.4.2
+  * Collective 8.69 -> 8.73
+  * CreativeCore 2.13.51 -> 2.13.52
   * InsaneLib 2.5.0.4-alpha -> 2.5.0.5-beta
     * Fixed right-clicking items into Sacks in the inventory causing them to split by 99
 
