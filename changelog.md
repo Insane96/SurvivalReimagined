@@ -1,5 +1,6 @@
 # Upcoming
 * Disabled Vanilla Backport's Locator Bar
+* Disabled Vanilla Backport's new Bundle interface
 
 # 4.7.0
 * Added Ecologics

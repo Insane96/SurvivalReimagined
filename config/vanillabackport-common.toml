@@ -1,6 +1,6 @@
 ["Bundles of Bravery"]
 	#enable the modern bundle interface and controls
-	has_updated_bundles = true
+	has_updated_bundles = false
 	#allow Bundles to generate in Village loot chests
 	bundle_loot = false
 	#allow bundles to be dyed
