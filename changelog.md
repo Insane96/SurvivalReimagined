@@ -2,6 +2,10 @@
 * Fixed recycling tools giving full output
 * Bundles can be dyed again
 * Enabled Vanilla Backport's modern bundle interface (scroll to select the item to take out); disabled Quark's Rotating Bundles as it conflicts with it
+* Doubled the chance of Enhanced AI mobs blocking with a shield
+* Updated Mods
+  * InsaneLib 2.5.0.4-alpha -> 2.5.0.5-beta
+    * Fixed right-clicking items into Sacks in the inventory causing them to split by 99
 
 # 4.6.0
 * Repair kits can now repair items up to 100% instead of 80%
