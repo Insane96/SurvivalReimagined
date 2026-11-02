@@ -1,3 +1,6 @@
+# Upcoming
+* Disabled Vanilla Backport's Locator Bar
+
 # 4.7.0
 * Added Ecologics
 * Added Naturalist
