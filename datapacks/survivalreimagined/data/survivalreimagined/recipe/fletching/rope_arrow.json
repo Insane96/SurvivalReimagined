@@ -1,0 +1,24 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "insanelib:feature_enabled",
+            "feature": "Fletching"
+        }
+    ],
+    "type": "insanesurvivaloverhaul:fletching",
+    "catalyst1": {
+        "count": 8,
+        "tag": "supplementaries:ropes"
+    },
+    "ingredient": {
+        "count": 1,
+        "item": "minecraft:arrow"
+    },
+    "result": {
+        "count": 1,
+        "id": "supplementaries:rope_arrow",
+        "components": {
+            "minecraft:damage": 24
+        }
+    }
+}

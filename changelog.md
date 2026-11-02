@@ -9,6 +9,7 @@
 * Added Naturalist
 * Disabled Quark's Crabs
 * Fried Eggs can no longer be cooked in furnaces
+* Spectral Arrows and Rope Arrows are now crafted in the Fletching Table; Rope Arrows can still be refilled in the crafting grid
 * Updated Mods
   * Amendments 2.2.5 -> 2.2.7
   * Cirrus 1.4.1 -> 1.4.2
