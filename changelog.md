@@ -2,6 +2,7 @@
 * Fixed recycling tools giving full output
 * Bundles can be dyed again
 * Enabled Vanilla Backport's modern bundle interface (scroll to select the item to take out); disabled Quark's Rotating Bundles as it conflicts with it
+* You are no longer slowed down in snow
 * Doubled the chance of Enhanced AI mobs blocking with a shield
 * Updated Mods
   * Amendments 2.2.5 -> 2.2.7
