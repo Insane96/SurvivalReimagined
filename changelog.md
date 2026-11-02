@@ -1,35 +1,39 @@
 # Upcoming
-* Fixed recycling tools giving full output
-* Bundles can be dyed again
-* Enabled Vanilla Backport's modern bundle interface (scroll to select the item to take out); disabled Quark's Rotating Bundles as it conflicts with it
-* You are no longer slowed down in snow
-* Doubled the chance of Enhanced AI mobs blocking with a shield
-* Added a Desert Ruins Map, found in Abandoned Camp chests (15% chance)
 * Added Ecologics
 * Added Naturalist
 * Added Every Compat and Stone Zone
+* Added a Desert Ruins Map, found in Abandoned Camp chests (15% chance)
+* Spectral Arrows and Rope Arrows are now crafted in the Fletching Table; Rope Arrows can still be refilled in the crafting grid
+* You are no longer slowed down in snow
+* Doubled the chance of Enhanced AI mobs blocking with a shield
+* Enabled Vanilla Backport's modern bundle interface (scroll to select the item to take out); disabled Quark's Rotating Bundles as it conflicts with it
+* Bundles can be dyed again
 * Disabled Quark's Crabs
 * Fried Eggs can no longer be cooked in furnaces
-* Spectral Arrows and Rope Arrows are now crafted in the Fletching Table; Rope Arrows can still be refilled in the crafting grid
+* Fixed recycling tools giving full output
 * Fixed Dungeons and Taverns books in Desert and Jungle Ruins loot being plain or empty instead of giving a rune
 * Updated Mods
   * Amendments 2.2.5 -> 2.2.7
+  * Balm 21.0.66 -> 21.0.67
   * Cirrus 1.4.1 -> 1.4.2
   * Collective 8.69 -> 8.73
   * CreativeCore 2.13.51 -> 2.13.52
-  * InsaneLib 2.5.0.4-alpha -> 2.5.0.5-beta
+  * Fancy World Animations 1.2.31 -> 1.3.4
+  * InsaneLib 2.5.0.4-alpha -> 2.5.1.0
     * Fixed right-clicking items into Sacks in the inventory causing them to split by 99
+    * Endermen can no longer teleport inside full blocks that can be passed through (e.g. cobwebs, powder snow), where they could get stuck
+    * Fixed an error spamming the server log when a server list ping fails
 
 # 4.6.0
-* Repair kits can now repair items up to 100% instead of 80%
 * Removed Inventory Totem
 * Removed Underlay
-* Explosive rune delay reduced from 5 to 3 seconds
-* Hang Glider durability consumption doubled (1 every 5 ticks instead of 10) and durability halved (818 -> 409)
-* Removed duplicate Name Tag recipes, only the vanilla-like one (paper + any nugget) is kept
-* Disabled Quark's Compasses Work Everywhere, compasses spin randomly in the Nether and End again
-* Supplementaries' Blast Armor Trim can now be duplicated with 1 diamond, like the vanilla ones
 * Enhanced AI Leaders now wear a full trimmed copper, chainmail, golden, iron or (rarely) diamond armor and a banner on their head; reinforcements chance now reaches 100% at 3 damage instead of 1
+* Repair kits can now repair items up to 100% instead of 80%
+* Hang Glider durability consumption doubled (1 every 5 ticks instead of 10) and durability halved (818 -> 409)
+* Disabled Quark's Compasses Work Everywhere, compasses spin randomly in the Nether and End again
+* Explosive rune delay reduced from 5 to 3 seconds
+* Supplementaries' Blast Armor Trim can now be duplicated with 1 diamond, like the vanilla ones
+* Removed duplicate Name Tag recipes, only the vanilla-like one (paper + any nugget) is kept
 * Fixed mobs spawning with Vanilla Backport copper tools instead of Insane's Survival Overhaul ones
 * Updated mods
   * Amendments 2.1.11 -> 2.2.5
