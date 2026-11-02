@@ -7,6 +7,7 @@
 * Added a Desert Ruins Map, found in Abandoned Camp chests (15% chance)
 * Added Ecologics
 * Added Naturalist
+* Disabled Quark's Crabs
 * Updated Mods
   * Amendments 2.2.5 -> 2.2.7
   * Cirrus 1.4.1 -> 1.4.2
