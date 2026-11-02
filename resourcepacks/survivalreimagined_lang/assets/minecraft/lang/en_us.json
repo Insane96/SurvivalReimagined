@@ -1,0 +1,39 @@
+{
+	"dimension.minecraft.the_end": "The Void",
+	"biome.minecraft.the_end": "The Void",
+
+	"advancements.end.root.title": "The Void",
+	"advancements.end.kill_dragon.title": "Free the Void",
+	"advancements.end.respawn_dragon.title": "The Void... Again...",
+	"advancements.end.respawn_dragon.description": "Respawn the Dragon",
+	"advancements.end.find_end_city.title": "The City in the Void",
+
+	"item.minecraft.ender_pearl": "Void Pearl",
+	"item.minecraft.ender_eye": "Eye of the Void",
+	"subtitles.block.end_portal_frame.fill": "Eye of the Void placed",
+
+	"block.minecraft.end_portal": "Void Portal",
+	"block.minecraft.end_portal_frame": "Void Portal Frame",
+	"block.minecraft.end_gateway": "Void Gateway",
+	"structure.minecraft.end_city": "Void City",
+	"entity.minecraft.end_crystal": "Void Crystal",
+	"item.minecraft.end_crystal": "Void Crystal",
+
+	"entity.minecraft.ender_dragon": "Dragon",
+
+	"entity.minecraft.enderman": "Voidman",
+	"entity.minecraft.endermite": "Voidmite",
+	"block.minecraft.ender_chest": "Void Chest",
+
+	"biome.minecraft.end_highlands": "Void Highlands",
+	"biome.minecraft.end_midlands": "Void Midlands",
+	"biome.minecraft.end_barrens": "Void Barrens",
+	"biome.minecraft.small_end_islands": "Small Void Islands",
+
+	"block.minecraft.end_stone": "Void Stone",
+	"block.minecraft.end_stone_bricks": "Void Stone Bricks",
+	"block.minecraft.end_stone_brick_slab": "Void Stone Brick Slab",
+	"block.minecraft.end_stone_brick_stairs": "Void Stone Brick Stairs",
+	"block.minecraft.end_stone_brick_wall": "Void Stone Brick Wall",
+	"block.minecraft.end_rod": "Void Rod"
+}

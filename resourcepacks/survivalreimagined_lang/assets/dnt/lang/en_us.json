@@ -1,0 +1,11 @@
+{
+	"advancement.dnt.end.find_end_castle": "Find the Void Castle",
+	"advancement.dnt.end.find_end_lighthouse": "Find the Void Lighthouse",
+	"advancement.dnt.end.find_end_lighthouse.title": "The Light in the Void",
+	"advancement.dnt.end.find_end_ship": "Find a Lone Void Ship",
+	"advancement.dnt.end.kill_phantom_boss": "Slay the Void Castle's Haunting",
+	"item.dnt.end_castle_key": "Void Castle Key",
+	"item.dnt.end_ship_key": "Void Ship Key",
+	"item.dnt.filled_map.end_lighthouse": "Void Lighthouse Map",
+	"item.dnt.filled_map.end_castle": "Void Castle Map"
+}

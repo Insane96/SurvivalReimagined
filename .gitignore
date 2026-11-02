@@ -8,7 +8,7 @@ dynamic-data-pack-cache/
 dynamic-resource-pack-cache/
 logs/
 moonlight-global-datapacks/
-resourcepacks/
+resourcepacks/*.zip
 saves/
 screenshots/
 shaderpacks/

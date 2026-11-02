@@ -1,0 +1,13 @@
+{
+	"block.supplementaries.candle_holder_ender": "Void Candle Holder",
+	"block.supplementaries.end_stone_lamp": "Void Stone Lamp",
+	"block.supplementaries.enderman_head": "Voidman Head",
+	"block.supplementaries.sconce_ender": "Void Sconce",
+	"block.supplementaries.sconce_wall_ender": "Void Sconce",
+	"filled_map.end_city": "Outer Void Explorer Map",
+	"supplementaries.configuration.enderman_head": "Voidman Head",
+	"supplementaries.configuration.building.end_stone_lamp": "Void Stone Lamp",
+	"supplementaries.configuration.slingshot.unrestricted_enderman_intercept": "Unrestricted Voidman Intercept",
+	"supplementaries.configuration.dispenser_tweaks.shoot_ender_pearls": "Shoot Void Pearls",
+	"supplementaries.configuration.tweaks.enderman_and_spider_head_texture_pack_support": "Voidman And Spider Head Texture Pack Support"
+}
