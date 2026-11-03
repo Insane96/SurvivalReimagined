@@ -3,6 +3,7 @@
 * Disabled Vanilla Backport's new Bundle interface
 * Hidden Eternal Nether's Gilded Netherite Shield from the creative tabs
 * Increased the search radius of Explorer Maps from 75 to 600
+* Added missing effect descriptions (Returning, Displacement, Resurfacing, Bioluminescence, Antivenom, Breath of the Nautilus, Resilience)
 
 # 4.7.0
 * Added Ecologics

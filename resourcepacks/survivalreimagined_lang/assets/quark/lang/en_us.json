@@ -7,5 +7,7 @@
 	"block.quark.end_stone_brick_vertical_slab": "Void Stone Brick Vertical Slab",
 	"block.quark.ender_watcher": "Void Watcher",
 	"advancements.quark.watcher_center.description": "Look at the center of a Void Watcher",
-	"advancements.quark.use_viaduct.description": "Toss a Void Pearl to the tip of a line of Myalite Crystals to travel through them"
+	"advancements.quark.use_viaduct.description": "Toss a Void Pearl to the tip of a line of Myalite Crystals to travel through them",
+
+	"effect.quark.resilience.description": "Reduces knockback taken."
 }

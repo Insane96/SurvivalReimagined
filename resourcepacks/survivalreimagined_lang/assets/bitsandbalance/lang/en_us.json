@@ -1,0 +1,6 @@
+{
+	"effect.bitsandbalance.returning.description": "Teleports you to where you last died, even in another dimension. Does nothing if you haven't died yet or there's no safe spot nearby.",
+	"effect.bitsandbalance.displacement.description": "Teleports the affected entity to a random safe spot within 100 blocks.",
+	"effect.bitsandbalance.resurfacing.description": "Teleports the affected entity to the highest solid block above it.",
+	"effect.bitsandbalance.bioluminescence.description": "Makes the affected entity glow, emitting light around it."
+}

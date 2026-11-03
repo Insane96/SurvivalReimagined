@@ -35,5 +35,7 @@
 	"block.minecraft.end_stone_brick_slab": "Void Stone Brick Slab",
 	"block.minecraft.end_stone_brick_stairs": "Void Stone Brick Stairs",
 	"block.minecraft.end_stone_brick_wall": "Void Stone Brick Wall",
-	"block.minecraft.end_rod": "Void Rod"
+	"block.minecraft.end_rod": "Void Rod",
+
+	"effect.minecraft.breath_of_the_nautilus.description": "Prevents running out of air underwater. Granted while riding a Nautilus."
 }
