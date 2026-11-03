@@ -147,12 +147,12 @@
 
 	#Log Filtering
 	[client.logFiltering]
-		#Case-sensitive text fragments to hide in formatted client log messages at any log level. In the config screen, enter one fragment or a JSON array of quoted fragments; commas inside a fragment are preserved. Defaults include far-chunk errors and removed-recipe warnings. This list is the only control for message filtering. Remove entries to stop blocking them; an empty list disables all message filtering. Blank entries are ignored.
-		blockedMessages = ["Detected setBlock in a far chunk", "Tried to load unrecognized recipe:"]
 		#Internal migration version for the default blocked messages.
 		# Default: 2
 		# Range: 0 ~ 2
 		blockedMessagesVersion = 2
+		#Case-sensitive text fragments to hide in formatted client log messages at any log level. In the config screen, enter one fragment or a JSON array of quoted fragments; commas inside a fragment are preserved. Defaults include far-chunk errors and removed-recipe warnings. This list is the only control for message filtering. Remove entries to stop blocking them; an empty list disables all message filtering. Blank entries are ignored.
+		blockedMessages = ["Detected setBlock in a far chunk", "Tried to load unrecognized recipe:"]
 
 	#Night Vision Improvement
 	[client.nightVision]
