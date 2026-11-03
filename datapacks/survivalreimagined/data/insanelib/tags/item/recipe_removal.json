@@ -1,7 +1,5 @@
 {
     "values": [
-        "minecraft:crafter",
-        "minecraft:observer",
         "hangglider:reinforced_hang_glider",
         "storagedrawers:balance_fill_upgrade",
         "storagedrawers:compacting_drawers_2",
