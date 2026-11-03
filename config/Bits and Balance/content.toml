@@ -87,6 +87,13 @@
 		#Upgrades: Glowstone for Bioluminescence II; Redstone extends Bioluminescence II to 4 minutes; Long Glowing Potion + Glow Goo brews the 8-minute base variant
 		enableBioluminescencePotion = true
 
+	#Blindness Potion
+	[potions.blindness]
+		#Enable Blindness potions and limit blinded mobs to 3-block sight and aggro range.
+		#Recipe: Awkward Potion + Ink Sac = Blindness Potion
+		#Upgrades: Redstone for an extended variant
+		enableBlindnessPotion = false
+
 #Enhanced Slab Behavior
 #Hang items below slabs, enable KneeSlab-like mining, and mixed double slabs.
 [enhancedSlabs]
@@ -600,6 +607,36 @@
 				# Range: 1 ~ 8
 				returningPotionMaxCount = 1
 
+	#Brushing Loot
+	[lootTables.brushingLoot]
+		#Improve ordinary archaeology finds while preserving artifact and Sniffer Egg odds. Also requires enableCustomLootTables.
+		enabled = true
+
+		#Desert Wells
+		[lootTables.brushingLoot.desertWell]
+			#Enable ordinary-find replacements at Desert Wells.
+			enabled = true
+
+		#Desert Pyramids
+		[lootTables.brushingLoot.desertPyramid]
+			#Enable ordinary-find replacements at Desert Pyramids.
+			enabled = true
+
+		#Trail Ruins
+		[lootTables.brushingLoot.trailRuins]
+			#Enable ordinary-find replacements at Trail Ruins.
+			enabled = true
+
+		#Cold Ocean Ruins
+		[lootTables.brushingLoot.coldOceanRuins]
+			#Enable ordinary-find replacements at Cold Ocean Ruins.
+			enabled = true
+
+		#Warm Ocean Ruins
+		[lootTables.brushingLoot.warmOceanRuins]
+			#Enable ordinary-find replacements at Warm Ocean Ruins.
+			enabled = true
+
 [cascading]
 	#Enable the experimental Cascading ore mining enchantment. Crouching always bypasses it.
 	enabled = true
@@ -619,3 +656,9 @@
 	# Default: 24
 	# Range: 1 ~ 64
 	levelThreeMaxOres = 24
+
+[fortuneBrush]
+	#Enable Fortune brushing drop and XP bonuses: +50% XP per level, common drops up to triple, rare finds capped at two. Fortune remains applicable through an anvil when disabled; rewards are datapack controlled.
+	enabled = true
+	#Item IDs excluded from Fortune brushing quantity bonuses, e.g. minecraft:diamond. Keeps the normal reward and XP bonus. Applies when loot is first revealed; already revealed rewards keep their saved count.
+	blacklist = ["minecraft:emerald"]

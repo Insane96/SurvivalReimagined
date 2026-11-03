@@ -629,13 +629,13 @@
 
 	#Brushing XP Rewards
 	[tweaks.brushingXp]
-		#Spawn XP when finishing brushing a brushable block; scales with loot rarity.
+		#Spawn XP when finishing brushing a suspicious block; Fortune increases the configured base reward.
 		enabled = false
-		#Minimum XP to spawn when brushing completes (inclusive).
+		#Minimum base XP per completed suspicious block, before Fortune (inclusive).
 		# Default: 3
 		# Range: 0 ~ 100
 		min = 3
-		#Maximum XP to spawn when brushing completes (inclusive).
+		#Maximum base XP per completed suspicious block, before Fortune (inclusive).
 		# Default: 10
 		# Range: 0 ~ 100
 		max = 10

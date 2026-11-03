@@ -302,7 +302,7 @@
 		#Guardians no longer drop Prismarine Shards/Crystals (they drop Wet Sponge and (Cooked) Cod instead), Elder Guardians roll the fishing loot table instead, and Sea Lanterns always drop themselves when broken.
 		#Any leftover Prismarine Shard drop from other sources is replaced with 40% as many Turtle Scutes, and any leftover Prismarine Crystals drop is replaced with 40% as many Nautilus Shells.
 		"Prismarine rework" = true
-		#Makes saplings no longer drop from trees. Instead, you can craft them from leaves
+		#Makes saplings no longer drop from trees. Instead, you can craft them from leaves and shears
 		"Craftable saplings" = true
 		#If true, a data pack will be enabled that changes animal loot (reduced food drops) and adds livestock data that slows down growing, breeding, egg laying, etc.
 		Livestock = true

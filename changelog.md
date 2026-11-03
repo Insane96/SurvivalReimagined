@@ -4,7 +4,10 @@
 * Removed Eternal Nether
 * Increased the search radius of Explorer Maps from 75 to 600
 * Added missing effect descriptions (Returning, Displacement, Resurfacing, Bioluminescence, Antivenom, Breath of the Nautilus, Resilience)
+* Brushes now have 1 Rune socket and can have the Luck Rune, which increases brushing rewards (except Emeralds)
 * Updated Mods
+  * Bits and Balance 2.4.3 -> 2.5.0
+    * Reworked brushing loot, which now gives more Runes
   * Collective 8.73 -> 8.75
   * Ecologics 2.3.8 -> 2.3.9
     * Added Maple trees, with Sap, Syrup and a full wood set
