@@ -808,6 +808,8 @@
 		# Default: 2.0
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Potion duration multiplier" = 2.0
+		#Effects whose duration in potions isn't changed by 'Potion Duration Multiplier'.
+		"Potion duration multiplier blacklist" = ["insanesurvivaloverhaul:back_to_spawn"]
 
 	#A block that's visible through walls, for testing the see-through-walls render technique.
 	[Misc."Glow block"]

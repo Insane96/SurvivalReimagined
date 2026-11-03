@@ -1,23 +1,24 @@
-# Upcoming
+# 4.8.0
 * Added Hellish Trials
 * Added Moog's Nether Structures
-* Disabled Vanilla Backport's Locator Bar
-* Disabled Vanilla Backport's new Bundle interface
 * Removed Eternal Nether
-* Increased the search radius of Explorer Maps from 75 to 600
-* Added missing effect descriptions (Returning, Displacement, Resurfacing, Bioluminescence, Antivenom, Breath of the Nautilus, Resilience)
 * Brushes now have 1 Rune socket and can have the Luck Rune, which increases brushing rewards (except Emeralds)
+* Increased the search radius of Explorer Maps from 75 to 600 chunks
 * Naturalist mobs no longer get Enhanced AI's movement and swim speed bonus
 * Re-enabled the Crafter and the Observer
+* Disabled Vanilla Backport's Locator Bar
+* Disabled Vanilla Backport's new Bundle interface
+* Added missing effect descriptions (Returning, Displacement, Resurfacing, Bioluminescence, Antivenom, Breath of the Nautilus, Resilience)
 * Updated Mods
   * Bits and Balance 2.4.3 -> 2.5.0
     * Reworked brushing loot, which now gives more Runes
   * Collective 8.73 -> 8.75
   * Ecologics 2.3.8 -> 2.3.9
     * Added Maple trees, with Sap, Syrup and a full wood set
-  * InsaneSurvivalOverhaul 5.14.0.0-beta -> 5.14.1.0
+  * InsaneSurvivalOverhaul 5.14.0.0-beta -> 5.14.2.0
     * Saplings now require Shears in the recipe
     * Spectral Arrows in the Fletching Table now take 2 Arrows and 1 Glowstone Dust and make 2 Spectral Arrows
+    * Added Potion of Recall
 
 # 4.7.0
 * Added Ecologics

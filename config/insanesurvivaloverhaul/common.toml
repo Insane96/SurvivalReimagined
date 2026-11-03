@@ -146,6 +146,8 @@
 	"Enable Scarce copper" = true
 	#Data and resource packs of Shulker Boxes.
 	"Enable Shulker boxes" = true
+	#Adds the Potion of Recall: when its effect ends, players and their pets are sent back to the player's respawn point. Brewed by adding a Wither Rose to a Potion of Regeneration II, then an Echo Shard.
+	"Enable Recall Potion" = true
 
 	#Data packs of Stack Sizes.
 	[Items."Stack sizes"]
