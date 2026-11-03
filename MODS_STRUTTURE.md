@@ -26,7 +26,7 @@ Legenda posizione:
 | `ruins_default_chest.json` (Ruins Standard) | stesse 4 mappe di cui sopra |
 | `ruins_desert_chest.json` (Ruins Desert) | stesse 4 mappe di cui sopra |
 
-Quindi trovando un Underground Camp o una qualsiasi Ruins "standard"/"desert" di adventuredungeons, hai buone probabilità di ottenere una mappa che porta a una delle sue 4 dungeon (Trial Rooms, Bygone Dungeon, Cold Lair, Murky Dungeon). Le altre mod con strutture (EternalNether, Incendium, Philips' Ruins, formationsnether, immersive_gateways, incubation, abridged, VanillaBackport, sawmill, YungsExtras) **non** hanno mappe proprie; **Supplementaries** ha i Road Sign come indicatori visivi ma non generano mappe.
+Quindi trovando un Underground Camp o una qualsiasi Ruins "standard"/"desert" di adventuredungeons, hai buone probabilità di ottenere una mappa che porta a una delle sue 4 dungeon (Trial Rooms, Bygone Dungeon, Cold Lair, Murky Dungeon). Le altre mod con strutture (Incendium, Philips' Ruins, formationsnether, immersive_gateways, incubation, abridged, VanillaBackport, sawmill, YungsExtras) **non** hanno mappe proprie; **Supplementaries** ha i Road Sign come indicatori visivi ma non generano mappe.
 
 L'unica altra eccezione è **dentro le mod DnT**, che modificano la loot table vanilla `illager_mansion/map_chest.json` (quella dentro le Magioni Silvestri) per aggiungere mappe verso *altre* strutture — vedi conflitto qui sotto, perché qui è emerso un problema vero.
 
@@ -111,15 +111,6 @@ Sostituisce `mansion`. ☀️ **Superficie**, **Overworld** (dark forest).
 
 ### DnT — Nether Fortress Overhaul Retro *(nuova scoperta — è una datapack, non un jar!)*
 File: `datapacks/DnT Nether Fortress Overhaul Retro 2.5.zip`. Sostituisce `fortress.json` vanilla. ☀️ **Superficie** (del Nether, sospesa sulla lava come da vanilla), **dimensione Nether**. 🟢 **Attiva** — è dentro `datapacks/`, che in `config/global_packs.toml` è impostato come `required`, quindi sempre caricata in ogni mondo.
-
-### EternalNether — 🟢 attiva, nessun config dedicato
-`EternalNether-v21.1.3-1.21.1-NeoForge.jar`. **Dimensione: Nether** (biomi `warped_forest` e simili).
-
-| Struttura | Posizione |
-|---|---|
-| Catacomb | ⛏️ Sotterranea |
-| Citadel | ☀️ Superficie |
-| Piglin Manor | ☀️ Superficie |
 
 ### Incendium — 🔴 **strutture disattivate** (biomi attivi)
 `Incendium_1.21.x_v5.4.4.jar`. **Dimensione: Nether** (biomi custom `incendium:infernal_dunes`, `incendium:withered_forest`, ecc.).
@@ -304,7 +295,7 @@ Se in futuro reinstalli una mod di sostituzione (es. di nuovo `DnT-woodland-mans
 
 - **Strutture disattivate nel pack: Echo Pillar** (ISO, `"Enable Echo pillar" = false`), **Galleon** e **Road Sign** (Supplementaries, entrambe spente in `supplementaries-common.toml`). Tutte le altre strutture elencate sopra sono attive.
 - **7 strutture vanilla sono sostituite** dalle mod DnT (6 jar + 1 datapack): Città Antica, Piramide del Deserto, Tempio della Giungla, Monumento Oceanico, Fortezza, Capanna della Strega, **Fortezza del Nether** (quest'ultima dentro `datapacks/`, non nei jar). La **Magione Silvestre non è più sostituita** — è disattivata del tutto (vedi sezione dedicata).
-- **Concentrazione nel Nether**: EternalNether, formationsnether e la Nether Fortress DnT generano tutte lì (quasi tutte "di superficie" nel Nether, non sepolte). *(Correzione: nella versione precedente collegavo questo a "Portal requires crying obsidian" e al tetto del Nether attivo — non c'entrano nulla con la densità di generazione, era un'aggiunta senza senso da parte mia. L'unico modo per giudicare se la densità nel Nether è davvero eccessiva è guardare spacing/separation reali di ogni mod, vedi sotto, oppure verificarlo in gioco.)* Incendium **non** è più in questa lista: le sue 9 strutture sono disattivate da `ibo` (vedi sopra), restano solo i suoi biomi.
+- **Concentrazione nel Nether**: formationsnether e la Nether Fortress DnT generano entrambe lì (quasi tutte "di superficie" nel Nether, non sepolte). *(Correzione: nella versione precedente collegavo questo a "Portal requires crying obsidian" e al tetto del Nether attivo — non c'entrano nulla con la densità di generazione, era un'aggiunta senza senso da parte mia. L'unico modo per giudicare se la densità nel Nether è davvero eccessiva è guardare spacing/separation reali di ogni mod, vedi sotto, oppure verificarlo in gioco.)* Incendium **non** è più in questa lista: le sue 9 strutture sono disattivate da `ibo` (vedi sopra), restano solo i suoi biomi.
 - ~~Overworld sovraffollato di rovine generiche~~ — **ritrattato**: in gioco non hai trovato troppe strutture, e i numeri lo confermano. Guardando gli spacing/separation reali (estratti dai `structure_set`): Archeological usa ~30 structure_set separati con spacing 150-200 ciascuno (rovine "grandi" fino a 1 ogni 200 chunk), adventuredungeons ha spacing 30-40, Philips' Ruins varia da 40 a 360 (Rare Ruin, come dice il nome, è molto rara). YungsExtras non usa nemmeno il sistema a griglia (`structure_set`) ma decorazioni via `biome_modifier`, quindi non compete per lo spazio con le altre. La mia frase precedente era una supposizione non verificata sui numeri — la densità reale non sembra eccessiva.
 - Nessuna struttura tra quelle elencate genera nell'**End** — nessuna mod del pack tocca quella dimensione.
 - **Nessuna struttura del pack ha una propria explorer map** (vedi sezione dedicata sopra).
