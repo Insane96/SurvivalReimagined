@@ -8,6 +8,7 @@
 * Re-enabled the Crafter and the Observer
 * Disabled Vanilla Backport's Locator Bar
 * Disabled Vanilla Backport's new Bundle interface
+* Philip's Ruins' Ancient Crypt now has low-tier loot instead of diamond gear
 * Added missing effect descriptions (Returning, Displacement, Resurfacing, Bioluminescence, Antivenom, Breath of the Nautilus, Resilience)
 * Updated Mods
   * Bits and Balance 2.4.3 -> 2.5.0
