@@ -1,0 +1,9 @@
+{
+    "item": "ecologics:maple_syrup_bottle",
+    "merge_components": {
+        "minecraft:food": {
+            "nutrition": 2,
+            "saturation": 0.8
+        }
+    }
+}

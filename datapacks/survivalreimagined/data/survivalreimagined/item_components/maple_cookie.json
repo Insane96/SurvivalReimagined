@@ -1,0 +1,9 @@
+{
+    "item": "ecologics:maple_cookie",
+    "merge_components": {
+        "minecraft:food": {
+            "nutrition": 1,
+            "saturation": 0.4
+        }
+    }
+}

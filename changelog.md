@@ -4,6 +4,13 @@
 * Hidden Eternal Nether's Gilded Netherite Shield from the creative tabs
 * Increased the search radius of Explorer Maps from 75 to 600
 * Added missing effect descriptions (Returning, Displacement, Resurfacing, Bioluminescence, Antivenom, Breath of the Nautilus, Resilience)
+* Updated Mods
+  * Collective 8.73 -> 8.75
+  * Ecologics 2.3.8 -> 2.3.9
+    * Added Maple trees, with Sap, Syrup and a full wood set
+  * InsaneSurvivalOverhaul 5.14.0.0-beta -> 5.14.1.0
+    * Saplings now require Shears in the recipe
+    * Spectral Arrows in the Fletching Table now take 2 Arrows and 1 Glowstone Dust and make 2 Spectral Arrows
 
 # 4.7.0
 * Added Ecologics

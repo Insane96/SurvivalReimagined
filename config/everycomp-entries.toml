@@ -20,6 +20,7 @@
 			azalea = true
 			coconut = true
 			walnut = true
+			maple = true
 
 		[types.wood_type.minecraft]
 			pale_oak = true
@@ -33,6 +34,10 @@
 		[types.leaves_type.ecologics]
 			coconut = true
 			walnut = true
+			red_maple = true
+			orange_maple = true
+			yellow_maple = true
+			green_maple = true
 
 		[types.leaves_type.minecraft]
 			pale_oak = true

@@ -1,0 +1,26 @@
+{
+    "type": "insanesurvivaloverhaul:crafting_shapeless_damage_tool",
+    "category": "misc",
+    "ingredients": [
+        [
+            {
+                "item": "ecologics:red_maple_leaves"
+            },
+            {
+                "item": "ecologics:orange_maple_leaves"
+            },
+            {
+                "item": "ecologics:yellow_maple_leaves"
+            },
+            {
+                "item": "ecologics:green_maple_leaves"
+            }
+        ],
+        {
+            "tag": "c:tools/shear"
+        }
+    ],
+    "result": {
+        "id": "ecologics:maple_sapling"
+    }
+}
