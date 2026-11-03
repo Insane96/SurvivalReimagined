@@ -1,0 +1,18 @@
+{
+  "type": "runeenchanting:rune_loot",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "hellish_trials:chests/nether_trial/nether_trial_vault_ominous"
+    }
+  ],
+  "rune_tags": [
+    {
+      "tag": "survivalreimagined:loot/nether_vault",
+      "weight": 3
+    },
+    {
+      "weight": 1
+    }
+  ]
+}

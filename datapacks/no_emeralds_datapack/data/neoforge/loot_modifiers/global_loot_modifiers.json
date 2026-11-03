@@ -1,6 +1,7 @@
 {
   "replace": false,
   "entries": [
-    "survivalreimagined:emerald_to_rune"
+    "survivalreimagined:emerald_to_rune",
+    "survivalreimagined:emerald_block_to_rune"
   ]
 }

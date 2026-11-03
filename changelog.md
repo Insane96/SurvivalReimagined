@@ -1,4 +1,6 @@
 # Upcoming
+* Added Hellish Trials
+* Added Moog's Nether Structures
 * Disabled Vanilla Backport's Locator Bar
 * Disabled Vanilla Backport's new Bundle interface
 * Removed Eternal Nether

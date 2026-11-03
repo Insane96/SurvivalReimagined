@@ -1,0 +1,18 @@
+{
+  "type": "runeenchanting:rune_loot",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "mns:vaults/dragon_arena/main_ominous"
+    }
+  ],
+  "rune_tags": [
+    {
+      "tag": "survivalreimagined:loot/nether_vault",
+      "weight": 3
+    },
+    {
+      "weight": 1
+    }
+  ]
+}

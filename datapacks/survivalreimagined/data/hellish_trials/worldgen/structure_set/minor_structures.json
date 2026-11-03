@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "hellish_trials:nether_trial",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 666888666,
+    "spacing": 45,
+    "separation": 25,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "other_set": "minecraft:nether_complexes",
+      "chunk_count": 5
+    }
+  }
+}
