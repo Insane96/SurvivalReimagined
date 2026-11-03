@@ -5,6 +5,7 @@
 * Increased the search radius of Explorer Maps from 75 to 600
 * Added missing effect descriptions (Returning, Displacement, Resurfacing, Bioluminescence, Antivenom, Breath of the Nautilus, Resilience)
 * Brushes now have 1 Rune socket and can have the Luck Rune, which increases brushing rewards (except Emeralds)
+* Naturalist mobs no longer get Enhanced AI's movement and swim speed bonus
 * Updated Mods
   * Bits and Balance 2.4.3 -> 2.5.0
     * Reworked brushing loot, which now gives more Runes
