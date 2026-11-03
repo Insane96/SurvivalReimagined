@@ -2,6 +2,7 @@
 * Disabled Vanilla Backport's Locator Bar
 * Disabled Vanilla Backport's new Bundle interface
 * Hidden Eternal Nether's Gilded Netherite Shield from the creative tabs
+$L
 
 # 4.7.0
 * Added Ecologics
