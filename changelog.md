@@ -1,5 +1,9 @@
 # Upcoming
 * Re-enabled Quark's Rotating Bundles
+* Halved the Arrow bonus damage of Runes
+  * Sharpness 100% -> 50%
+  * Bane of Hissing, Impaling, Water Coolant, Smite and Bane of Noses 200% -> 100%
+  * Rage and Fire Surge (max) 300% -> 150%
 
 # 4.8.0
 * Added Hellish Trials

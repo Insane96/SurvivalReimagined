@@ -48,7 +48,7 @@
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Arrow Bonus Damage" = 1.0
+	"Arrow Bonus Damage" = 0.5
 
 [bane_of_hissing]
 	# Default: 0.7
@@ -68,7 +68,7 @@
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
 	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Arrow Bonus Damage" = 2.0
+	"Arrow Bonus Damage" = 1.0
 	#If true, arrows apply Slowness too
 	"Arrow Effects" = false
 
@@ -79,7 +79,7 @@
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
 	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Arrow Bonus Damage" = 2.0
+	"Arrow Bonus Damage" = 1.0
 
 [water_coolant]
 	# Default: 0.7
@@ -91,7 +91,7 @@
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
 	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Arrow Bonus Damage" = 2.0
+	"Arrow Bonus Damage" = 1.0
 	#If true, arrows freeze too
 	"Arrow Effects" = false
 
@@ -113,7 +113,7 @@
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
 	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Arrow Bonus Damage" = 2.0
+	"Arrow Bonus Damage" = 1.0
 	#If true, arrows apply Weakness too
 	"Arrow Effects" = false
 
@@ -124,7 +124,7 @@
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
 	# Default: 2.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Arrow Bonus Damage" = 2.0
+	"Arrow Bonus Damage" = 1.0
 
 [rage]
 	# Default: 1.0
@@ -133,7 +133,7 @@
 	#Max percentage bonus damage dealt by arrows shot with bows and crossbows
 	# Default: 3.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Arrow Max Bonus Damage" = 3.0
+	"Arrow Max Bonus Damage" = 1.5
 
 [fire_surge]
 	# Default: 1.0
@@ -142,7 +142,7 @@
 	#Max percentage bonus damage dealt by arrows shot with bows and crossbows
 	# Default: 3.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Arrow Max Bonus Damage" = 3.0
+	"Arrow Max Bonus Damage" = 1.5
 
 [swift_strike]
 	# Default: 0.3
