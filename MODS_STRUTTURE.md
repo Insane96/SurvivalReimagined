@@ -18,7 +18,7 @@ Legenda posizione:
 
 ## 🗺️ Explorer Map
 
-**Correzione rispetto alla prima versione di questo resoconto:** avevo controllato male — **Archeological NON ha mappe** (verificato a fondo: nessuna loot table, nessun item "map", nessun compass/locator; il suo sistema di ritrovamento degli Ancient Vault è basato su una **chiave** — `archeological:ancient_key` — non su mappe). È invece **adventuredungeons** ad avere delle vere explorer map:
+**adventuredungeons** ha delle vere explorer map:
 
 | Trovate in... | Mappe verso |
 |---|---|
@@ -70,21 +70,6 @@ Controllando tutti gli 83 file `structure_set` del pack, oltre al conflitto sopr
 ---
 
 ## ✅ Mod che aggiungono o sostituiscono strutture
-
-### Archeological — 🟢 attiva, nessun config dedicato
-`Archeological-neoforge-1.21.1-1.2.2.jar` — Sistema di siti archeologici da scavare con la spazzola. **Dimensione: solo Overworld** (tag `#minecraft:is_overworld`, `desert`, `#minecraft:is_badlands`, `#minecraft:is_forest`).
-
-| Struttura | Posizione | Bioma |
-|---|---|---|
-| Ancient Vault (Deep/Underground ruins) | ⛏️ Sotterranea | Overworld generico |
-| Ancient Vault (Desert/Frozen/Rock/Wasteland ruins, Ruined Hut) | ☀️ Superficie | deserto / neve / roccia / badlands |
-| Deep Ruins (S/M/L) | ⛏️ Sotterranea | Overworld generico |
-| Desert Ruins (S/M/L) | ☀️ Superficie | deserto |
-| Frozen Ruins (S/M/L) | ☀️ Superficie | biomi innevati |
-| Rock Ruins (S/M/L) | ☀️ Superficie | biomi rocciosi |
-| Ruined Camp (rosso/verde/blu) | ☀️ Superficie | foresta |
-| Underground Ruins (S/M/L) | ⛏️ Sotterranea | Overworld generico |
-| Wasteland Ruins (S/M/L) | ☀️ Superficie | badlands |
 
 ### DnT — Ancient City Overhaul — 🟢 attiva, nessun config dedicato
 Sostituisce `ancient_city` vanilla. ⛏️ **Sotterranea**, **Overworld** (Deep Dark, stesso bioma di sempre).
@@ -194,7 +179,7 @@ L'unica loot table (`immersive_gateways:chests/default`, 4-8 estrazioni) aveva i
 ### Supplementaries — 🔴 **ENTRAMBE DISATTIVATE**
 `supplementaries-1.21.1-3.8.8-neoforge.jar`.
 
-**Correzione rispetto alla prima versione:** avevo sbagliato su entrambe. In `config/supplementaries-common.toml`:
+**adventuredungeons** ha delle vere explorer map:
 
 | Struttura | Posizione | Dimensione | Stato |
 |---|---|---|---|
@@ -261,18 +246,16 @@ Raddoppiati entrambi (stesso rapporto, stesso salt/strutture vanilla) — relitt
 
 ## 🗺️ FIX APPLICATO — Explorer map (strutture sotterranee + Monumento/Magione)
 
-Aggiunte mappe per 15 strutture (Ancient City DnT, le 8 sotterranee di Archeological, le 4 sotterranee di Philips' Ruins, più **Monumento Oceanico e Magione/Illager Manor** per colmare il buco lasciato dall'assenza del Cartografo — Stronghold escluso, ha già gli occhi di ender). Meccanismo: **NeoForge Global Loot Modifiers** (`neoforge:add_table`), lo stesso sistema già usato in questo pack da Bits and Balance/Quark/RuneEnchanting — aggiunge le mappe come pool *extra* alle loot table esistenti, senza toccare/sovrascrivere il loro contenuto originale. Fa eccezione la mappa del Monumento, inserita sostituendo la voce morta "Pillager Outpost Map" nel `map_chest.json` della Magione/Ancient City (vedi fix del conflitto qui sopra).
+Aggiunte mappe per 7 strutture (Ancient City DnT, le 4 sotterranee di Philips' Ruins, più **Monumento Oceanico e Magione/Illager Manor** per colmare il buco lasciato dall'assenza del Cartografo — Stronghold escluso, ha già gli occhi di ender). Meccanismo: **NeoForge Global Loot Modifiers** (`neoforge:add_table`), lo stesso sistema già usato in questo pack da Bits and Balance/Quark/RuneEnchanting — aggiunge le mappe come pool *extra* alle loot table esistenti, senza toccare/sovrascrivere il loro contenuto originale. Fa eccezione la mappa del Monumento, inserita sostituendo la voce morta "Pillager Outpost Map" nel `map_chest.json` della Magione/Ancient City (vedi fix del conflitto qui sopra).
 
 | Mappa verso | Trovabile in | Probabilità |
 |---|---|---|
 | `minecraft:ancient_city` (DnT) | Buried Treasure vanilla | 60% a tesoro |
 | `minecraft:mansion` (Illager Manor, DnT) | Cassa "di valore" dei relitti (`shipwreck_treasure`) | 60% a cassa |
 | `minecraft:monument` (Trident Trial Monument, DnT) | Cassa `map_chest` dentro Ancient City/Magione (al posto della morta "Pillager Outpost Map") | 50% (1 tra 2 voci nel pool) |
-| **Tag** `#survivalreimagined:archeological_deep_ruins` (Ancient Vault Deep Ruins + Deep Ruins Large/Medium/Small) | Scavo (brush) delle rovine comuni calde/fredde/temperate di Archeological | 5% a mappa, per scavo comune |
-| **Tag** `#survivalreimagined:archeological_underground_ruins` (Ancient Vault Underground Ruins + Underground Ruins Large/Medium/Small) | Stesso scavo di cui sopra | 5% a mappa, per scavo comune |
 | Ancient Dungeon, Lost Soul City, Lost Soul Dungeon, Underground Structures (Philips' Ruins) | Casse `ruin_loot`, `ancient_ruins_loot`, `level_one_ruins_loot` di Philips' Ruins | 15% a mappa, per cassa |
 
-File in `datapacks/survivalreimagined/data/neoforge/loot_modifiers/`, `data/survivalreimagined/loot_modifiers/`, `data/survivalreimagined/loot_table/inject/`, `data/survivalreimagined/tags/worldgen/structure/` e `data/minecraft/loot_table/chests/illager_mansion/map_chest.json`. Per Archeological uso 2 tag di struttura (invece di puntare a una sola taglia) così `exploration_map` localizza la copia più vicina di *qualsiasi* taglia della famiglia. Per Philips' Ruins ho scelto le 3 loot table di superficie più diffuse invece di toccarle tutte singolarmente.
+File in `datapacks/survivalreimagined/data/neoforge/loot_modifiers/`, `data/survivalreimagined/loot_modifiers/`, `data/survivalreimagined/loot_table/inject/` e `data/minecraft/loot_table/chests/illager_mansion/map_chest.json`. Per Philips' Ruins ho scelto le 3 loot table di superficie più diffuse invece di toccarle tutte singolarmente.
 
 ---
 
@@ -296,7 +279,7 @@ Se in futuro reinstalli una mod di sostituzione (es. di nuovo `DnT-woodland-mans
 - **Strutture disattivate nel pack: Echo Pillar** (ISO, `"Enable Echo pillar" = false`), **Galleon** e **Road Sign** (Supplementaries, entrambe spente in `supplementaries-common.toml`). Tutte le altre strutture elencate sopra sono attive.
 - **7 strutture vanilla sono sostituite** dalle mod DnT (6 jar + 1 datapack): Città Antica, Piramide del Deserto, Tempio della Giungla, Monumento Oceanico, Fortezza, Capanna della Strega, **Fortezza del Nether** (quest'ultima dentro `datapacks/`, non nei jar). La **Magione Silvestre non è più sostituita** — è disattivata del tutto (vedi sezione dedicata).
 - **Concentrazione nel Nether**: formationsnether e la Nether Fortress DnT generano entrambe lì (quasi tutte "di superficie" nel Nether, non sepolte). *(Correzione: nella versione precedente collegavo questo a "Portal requires crying obsidian" e al tetto del Nether attivo — non c'entrano nulla con la densità di generazione, era un'aggiunta senza senso da parte mia. L'unico modo per giudicare se la densità nel Nether è davvero eccessiva è guardare spacing/separation reali di ogni mod, vedi sotto, oppure verificarlo in gioco.)* Incendium **non** è più in questa lista: le sue 9 strutture sono disattivate da `ibo` (vedi sopra), restano solo i suoi biomi.
-- ~~Overworld sovraffollato di rovine generiche~~ — **ritrattato**: in gioco non hai trovato troppe strutture, e i numeri lo confermano. Guardando gli spacing/separation reali (estratti dai `structure_set`): Archeological usa ~30 structure_set separati con spacing 150-200 ciascuno (rovine "grandi" fino a 1 ogni 200 chunk), adventuredungeons ha spacing 30-40, Philips' Ruins varia da 40 a 360 (Rare Ruin, come dice il nome, è molto rara). YungsExtras non usa nemmeno il sistema a griglia (`structure_set`) ma decorazioni via `biome_modifier`, quindi non compete per lo spazio con le altre. La mia frase precedente era una supposizione non verificata sui numeri — la densità reale non sembra eccessiva.
+- ~~Overworld sovraffollato di rovine generiche~~ — **ritrattato**: in gioco non hai trovato troppe strutture, e i numeri lo confermano. Guardando gli spacing/separation reali (estratti dai `structure_set`): adventuredungeons ha spacing 30-40, Philips' Ruins varia da 40 a 360 (Rare Ruin, come dice il nome, è molto rara). YungsExtras non usa nemmeno il sistema a griglia (`structure_set`) ma decorazioni via `biome_modifier`, quindi non compete per lo spazio con le altre. La mia frase precedente era una supposizione non verificata sui numeri — la densità reale non sembra eccessiva.
 - Nessuna struttura tra quelle elencate genera nell'**End** — nessuna mod del pack tocca quella dimensione.
 - **Nessuna struttura del pack ha una propria explorer map** (vedi sezione dedicata sopra).
 - **Due conflitti reali di sovrascrittura file** trovati tra mod DnT tra loro e tra Incendium/DnT — **entrambi ora risolti**: vedi sezione "⚠️ Conflitti reali trovati" sopra per i dettagli (loot table della Magione con mappe verso strutture inesistenti → sistemata con un unico override; griglia di generazione di Fortezza/Bastione del Nether ridefinita due volte con parametri diversi → allineata modificando direttamente lo zip di DnT).

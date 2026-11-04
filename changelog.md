@@ -1,4 +1,5 @@
 # Upcoming
+* Removed Archeological
 * Re-enabled Quark's Rotating Bundles
 * Halved the Arrow bonus damage of Runes
   * Sharpness 100% -> 50%
