@@ -1,3 +1,6 @@
+# Upcoming
+* Re-enabled Quark's Rotating Bundles
+
 # 4.8.0
 * Added Hellish Trials
 * Added Moog's Nether Structures
