@@ -5,6 +5,8 @@
   * Sharpness 100% -> 50%
   * Bane of Hissing, Impaling, Water Coolant, Smite and Bane of Noses 200% -> 100%
   * Rage and Fire Surge (max) 300% -> 150%
+* Shortbows can now be found in Vaults alongside Bows and Crossbows
+* Normal Vaults can now also contain Diamond, Ice, Quartz and Explosive Arrows or a Quiver
 
 # 4.8.0
 * Added Hellish Trials
