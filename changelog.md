@@ -6,6 +6,8 @@
   * Sharpness 100% -> 50%
   * Bane of Hissing, Impaling, Water Coolant, Smite and Bane of Noses 200% -> 100%
   * Rage and Fire Surge (max) 300% -> 150%
+* Efficiency Rune now gives +100% Mining Speed, instead of +80% and +2.5
+* Enduring Rune no longer gives +80 flat Durability, only the +200%
 * Shortbows can now be found in Vaults alongside Bows and Crossbows
 * Normal Vaults can now also contain Diamond, Ice, Quartz and Explosive Arrows or a Quiver
 * Updated Mods

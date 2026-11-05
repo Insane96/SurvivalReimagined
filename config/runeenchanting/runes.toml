@@ -2,10 +2,10 @@
 	#Percentage bonus mining speed
 	# Default: 0.8
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Bonus Mining Speed" = 0.8
+	"Bonus Mining Speed" = 1
 	# Default: 2.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Bonus Flat Mining Speed" = 2.5
+	"Bonus Flat Mining Speed" = 0
 
 [earthbend]
 	#Percentage bonus mining speed
@@ -438,7 +438,7 @@
 	"Bonus Durability" = 2.0
 	# Default: 80
 	# Range: > -2147483648
-	"Bonus Durability Flat" = 80
+	"Bonus Durability Flat" = 0
 
 [atmospheric]
 	#Fraction of each durability damage point ignored when raining
