@@ -11,6 +11,14 @@
 * Reduced the Damage Reduction of Blast, Fire, Projectile, Melee and Magic Protection Runes from 40% to 30%
 * Shortbows can now be found in Vaults alongside Bows and Crossbows
 * Normal Vaults can now also contain Diamond, Ice, Quartz and Explosive Arrows or a Quiver
+* Speaker Blocks now require an Amethyst Shard instead of an Emerald
+* Maple Cookies now give Energy Boost
+* Tropical Stew now uses the drinking animation
+* Tridents crafted with Trident Fragments now require Turtle Scutes instead of Prismarine Shards, which are no longer obtainable
+* Redstone Randomizers now require a Nautilus Shell instead of a Prismarine Crystal, which is no longer obtainable
+* Removed Quark's Golden Apple Crate, as Golden Apples are removed
+* Dispenser Minecarts now stack to 16 like other Minecarts
+* Pale Oak and Poplar now follow the same rules as other woods: Buttons and Pressure Plates need Redstone, leaves no longer drop Saplings, which are crafted from leaves with Shears
 * Updated Mods
   * Collective 8.75 -> 8.79
   * Ecologics 2.3.9 -> 2.3.10
