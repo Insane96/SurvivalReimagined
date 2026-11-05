@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        "minecraft:parched",
         "ecologics:squirrel",
         "ecologics:penguin",
         "ecologics:coconut_crab",

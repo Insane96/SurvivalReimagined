@@ -19,6 +19,12 @@
 * Removed Quark's Golden Apple Crate, as Golden Apples are removed
 * Dispenser Minecarts now stack to 16 like other Minecarts
 * Pale Oak and Poplar now follow the same rules as other woods: Buttons and Pressure Plates need Redstone, leaves no longer drop Saplings, which are crafted from leaves with Shears
+* Parched now have Enhanced AI's skeleton behaviours and the same drops as other Skeletons
+* Removed Supplementaries' Bed recipe from Feather Blocks, as it skipped Cloth and Wool
+* Hoes now also harvest Bushes, Firefly Bushes and Dry Grass
+* Copper and Netherite Horse Armor and Nautilus Armor now stack to 16 like other Horse Armor
+* Nautiluses can no longer be bred manually, like other animals
+* Bones can no longer be smelted into Bone Meal, as it gave more than crafting
 * Updated Mods
   * Collective 8.75 -> 8.79
   * Ecologics 2.3.9 -> 2.3.10
