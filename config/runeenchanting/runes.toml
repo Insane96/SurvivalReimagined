@@ -215,7 +215,7 @@
 [blast_protection]
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Damage Reduction" = 0.4
+	"Damage Reduction" = 0.3
 	#Multiple runes don't increase this multiple times
 	# Default: 0.3
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -224,7 +224,7 @@
 [fire_protection]
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Damage Reduction" = 0.4
+	"Damage Reduction" = 0.3
 	#Multiple runes don't increase this multiple times
 	# Default: 0.3
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -233,7 +233,7 @@
 [projectile_protection]
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Damage Reduction" = 0.4
+	"Damage Reduction" = 0.3
 	#Mobs follow range will be multiplied by this before checking if they can see the entity. Multiple runes don't increase this multiple times.
 	# Default: 0.8
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -242,7 +242,7 @@
 [melee_protection]
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Damage Reduction" = 0.4
+	"Damage Reduction" = 0.3
 	#Multiple runes don't increase this multiple times
 	# Default: 0.1
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -251,7 +251,7 @@
 [magic_protection]
 	# Default: 0.4
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Damage Reduction" = 0.4
+	"Damage Reduction" = 0.3
 	#Multiple runes don't increase this multiple times
 	# Default: 0.8
 	# Range: 0.0 ~ 1.0
