@@ -25,6 +25,10 @@
 * Copper and Netherite Horse Armor and Nautilus Armor now stack to 16 like other Horse Armor
 * Nautiluses can no longer be bred manually, like other animals
 * Bones can no longer be smelted into Bone Meal, as it gave more than crafting
+* Philip's Ruins' chests with fixed Enchanted Books, enchanted gear, Emeralds or Golden Apples now use loot tables, so they give Runes instead
+* Nerfed the loot of Philip's Ruins' surface structures: Ancient Ruins, Ancient Towers and Level Three Ruins now use the low-tier loot instead of diamonds and diamond gear
+* Philip's Ruins' Ocean Ruins and Ocean Fortress chests no longer contain diamond gear (Diamonds are still there)
+* Fixed 6 empty chests in Philip's Ruins' Field Stone Ruins and Level Two Ruins
 * Updated Mods
   * Collective 8.75 -> 8.79
   * Ecologics 2.3.9 -> 2.3.10

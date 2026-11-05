@@ -24,4 +24,5 @@ usercache.json
 usernamecache.json
 *.toml.bak
 config/spark/
+config/packetfixer.properties
 /data/
