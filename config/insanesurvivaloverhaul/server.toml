@@ -1048,7 +1048,7 @@
 		Slowdown = 0.3
 
 	[Movement.Minecarts]
-		#If true, minecarts with entities in them and chest minecarts will force load chunks, allowing them to travel in unloaded chunks. It's advised to not leave too many minecarts with entities and with chests lying around, as they will keep chunks loaded.
+		#If true, moving minecarts with entities in them and moving chest minecarts will force load chunks, allowing them to travel in unloaded chunks. Chunks are released as soon as the minecart stops, so a minecart stopped in an unloaded chunk won't move until that chunk is loaded again.
 		"Entity and chest minecarts force load chunks" = true
 
 	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack

@@ -24,3 +24,4 @@ usercache.json
 usernamecache.json
 *.toml.bak
 config/spark/
+/data/

@@ -8,6 +8,28 @@
   * Rage and Fire Surge (max) 300% -> 150%
 * Shortbows can now be found in Vaults alongside Bows and Crossbows
 * Normal Vaults can now also contain Diamond, Ice, Quartz and Explosive Arrows or a Quiver
+* Updated Mods
+  * Collective 8.75 -> 8.79
+  * Ecologics 2.3.9 -> 2.3.10
+    * Dispensers now work with Spiles and Maple Sap Cauldrons
+    * Spiles and Maple Sap Cauldrons now output a comparator signal
+    * Fixed Hanging Coconut dupe
+  * Enhanced AI 4.2.6.0 -> 4.2.7.0
+  * InsaneSurvivalOverhaul 5.14.2.0 -> 5.14.2.2
+    * Minecarts with entities and Chest Minecarts now force load chunks only while moving, fixing RAM usage growing while exploring (e.g. because of Mineshafts' Chest Minecarts)
+    * Fixed Bows feature overriding the bonus damage of Runes on Arrows
+  * Item Block Info HUD 1.1.1.1 -> 1.1.1.2
+  * Moonlight 3.7.2 -> 3.8.1
+  * Particle Rain 4.0.2 -> 4.0.3
+    * Fixed rain being less dense than it should
+    * Fixed wind sound and sandstorms appearing outside the Overworld
+    * Reversed wind direction to match the clouds
+  * RuneEnchanting 1.4.0.1 -> 1.4.1.0
+    * Fixed weapon Runes working when hitting in melee with Bows and Crossbows
+    * Fixed Bastions favoring Swift Sneak and Ancient Cities favoring Soul Speed
+  * Sawmill 1.8.1 -> 1.9.0
+  * Shields+ 2.3.0.1 -> 2.3.0.2
+    * Wooden Shields can now be used as furnace fuel
 
 # 4.8.0
 * Added Hellish Trials

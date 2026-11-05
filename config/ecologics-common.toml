@@ -25,3 +25,10 @@
 	foxesAttackSquirrels = true
 	#Should Ecologics items be added to vanilla Creative Tabs?
 	useVanillaCreativeTabs = true
+
+#Maple & Syrup Update
+[maple]
+	#The probability that Sappy Maple Logs will deplete when the bucket hanging from Spile completely fills up.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	mapleSapDepletionChance = 0.2

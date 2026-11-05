@@ -46,7 +46,7 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.3
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
-	# Default: 1.0
+	# Default: 0.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 0.5
 
@@ -66,7 +66,7 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Slowness Duration Max" = 3.0
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
-	# Default: 2.0
+	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 1.0
 	#If true, arrows apply Slowness too
@@ -77,7 +77,7 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
-	# Default: 2.0
+	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 1.0
 
@@ -89,7 +89,7 @@
 	# Range: > -2147483648
 	"Freeze Amount" = 5
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
-	# Default: 2.0
+	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 1.0
 	#If true, arrows freeze too
@@ -111,7 +111,7 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Weakness Duration Max" = 3.0
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
-	# Default: 2.0
+	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 1.0
 	#If true, arrows apply Weakness too
@@ -122,7 +122,7 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Damage" = 0.7
 	#Percentage bonus damage dealt by arrows shot with bows and crossbows
-	# Default: 2.0
+	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 1.0
 
@@ -131,7 +131,7 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Bonus Damage" = 1.0
 	#Max percentage bonus damage dealt by arrows shot with bows and crossbows
-	# Default: 3.0
+	# Default: 1.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Max Bonus Damage" = 1.5
 
@@ -140,7 +140,7 @@
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Bonus Damage" = 1.0
 	#Max percentage bonus damage dealt by arrows shot with bows and crossbows
-	# Default: 3.0
+	# Default: 1.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Max Bonus Damage" = 1.5
 
