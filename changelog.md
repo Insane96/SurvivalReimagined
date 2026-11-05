@@ -1,6 +1,7 @@
 # Upcoming
 * Removed Archeological
 * Re-enabled Quark's Rotating Bundles
+* Bundles can no longer be dyed, as colored Bundles aren't compatible with Quark's Rotating Bundles
 * Halved the Arrow bonus damage of Runes
   * Sharpness 100% -> 50%
   * Bane of Hissing, Impaling, Water Coolant, Smite and Bane of Noses 200% -> 100%
