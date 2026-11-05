@@ -36,18 +36,29 @@
     * Spiles and Maple Sap Cauldrons now output a comparator signal
     * Fixed Hanging Coconut dupe
   * Enhanced AI 4.2.6.0 -> 4.2.7.0
-  * InsaneSurvivalOverhaul 5.14.2.0 -> 5.14.2.2
+  * InsaneSurvivalOverhaul 5.14.2.0 -> 5.14.3.0
+    * Increased Diamond Armor durability (Helmet / Chestplate / Leggings / Boots): 209 / 304 / 285 / 247 -> 363 / 528 / 495 / 429
+    * Increased Netherite Armor durability: 204 / 296 / 278 / 241 -> 429 / 624 / 585 / 507
+    * Decreased Golden Armor durability: 72 / 104 / 98 / 85 -> 44 / 64 / 60 / 52
+    * Increased Golden tools and weapons durability from 64 to 102 (Axe from 51 to 82)
+    * Shortbows can now have the same Runes as Bows
     * Minecarts with entities and Chest Minecarts now force load chunks only while moving, fixing RAM usage growing while exploring (e.g. because of Mineshafts' Chest Minecarts)
     * Fixed Bows feature overriding the bonus damage of Runes on Arrows
+    * Fixed Ominous Trial Vaults never dropping the Divine Fragment (now 80% chance)
   * Item Block Info HUD 1.1.1.1 -> 1.1.1.2
   * Moonlight 3.7.2 -> 3.8.1
   * Particle Rain 4.0.2 -> 4.0.3
     * Fixed rain being less dense than it should
     * Fixed wind sound and sandstorms appearing outside the Overworld
     * Reversed wind direction to match the clouds
-  * RuneEnchanting 1.4.0.1 -> 1.4.1.0
+  * RuneEnchanting 1.4.0.1 -> 1.4.3.0
+    * Runes can now be placed in Chiseled Bookshelves
+    * Enchanted Books in Chiseled Bookshelves generated in structures are now replaced with random Runes
+    * Protection and Feather Falling Rune tooltips now state that their Damage Reduction is capped at 80% combined
     * Fixed weapon Runes working when hitting in melee with Bows and Crossbows
     * Fixed Bastions favoring Swift Sneak and Ancient Cities favoring Soul Speed
+    * Fixed Melee Protection also reducing damage not caused by melee attacks, such as fall, lava, falling blocks and Creeper explosions
+    * Fixed Ominous Trial Vaults not favoring their specific Runes
   * Sawmill 1.8.1 -> 1.9.0
   * Shields+ 2.3.0.1 -> 2.3.0.2
     * Wooden Shields can now be used as furnace fuel
