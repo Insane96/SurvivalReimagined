@@ -1,5 +1,6 @@
-# Upcoming
+# 4.8.1
 * Removed Archeological
+* Removed Quark's Golden Apple Crate, as Golden Apples are removed
 * Re-enabled Quark's Rotating Bundles
 * Bundles can no longer be dyed, as colored Bundles aren't compatible with Quark's Rotating Bundles
 * Halved the Arrow bonus damage of Runes
@@ -9,22 +10,21 @@
 * Efficiency Rune now gives +100% Mining Speed, instead of +80% and +2.5
 * Enduring Rune no longer gives +80 flat Durability, only the +200%
 * Reduced the Damage Reduction of Blast, Fire, Projectile, Melee and Magic Protection Runes from 40% to 30%
-* Shortbows can now be found in Vaults alongside Bows and Crossbows
-* Normal Vaults can now also contain Diamond, Ice, Quartz and Explosive Arrows or a Quiver
-* Speaker Blocks now require an Amethyst Shard instead of an Emerald
+* Parched now have Enhanced AI's skeleton behaviours and the same drops as other Skeletons
+* Nautiluses can no longer be bred manually, like other animals
+* Pale Oak and Poplar now follow the same rules as other woods: Buttons and Pressure Plates need Redstone, leaves no longer drop Saplings, which are crafted from leaves with Shears
+* Hoes now also harvest Bushes, Firefly Bushes and Dry Grass
+* Dispenser Minecarts now stack to 16 like other Minecarts
+* Copper and Netherite Horse Armor and Nautilus Armor now stack to 16 like other Horse Armor
 * Maple Cookies now give Energy Boost
 * Tropical Stew now uses the drinking animation
+* Speaker Blocks now require an Amethyst Shard instead of an Emerald
 * Tridents crafted with Trident Fragments now require Turtle Scutes instead of Prismarine Shards, which are no longer obtainable
 * Redstone Randomizers now require a Nautilus Shell instead of a Prismarine Crystal, which is no longer obtainable
-* Removed Quark's Golden Apple Crate, as Golden Apples are removed
-* Dispenser Minecarts now stack to 16 like other Minecarts
-* Pale Oak and Poplar now follow the same rules as other woods: Buttons and Pressure Plates need Redstone, leaves no longer drop Saplings, which are crafted from leaves with Shears
-* Parched now have Enhanced AI's skeleton behaviours and the same drops as other Skeletons
 * Removed Supplementaries' Bed recipe from Feather Blocks, as it skipped Cloth and Wool
-* Hoes now also harvest Bushes, Firefly Bushes and Dry Grass
-* Copper and Netherite Horse Armor and Nautilus Armor now stack to 16 like other Horse Armor
-* Nautiluses can no longer be bred manually, like other animals
 * Bones can no longer be smelted into Bone Meal, as it gave more than crafting
+* Shortbows can now be found in Vaults alongside Bows and Crossbows
+* Normal Vaults can now also contain Diamond, Ice, Quartz and Explosive Arrows or a Quiver
 * Philip's Ruins' chests with fixed Enchanted Books, enchanted gear, Emeralds or Golden Apples now use loot tables, so they give Runes instead
 * Nerfed the loot of Philip's Ruins' surface structures: Ancient Ruins, Ancient Towers and Level Three Ruins now use the low-tier loot instead of diamonds and diamond gear
 * Philip's Ruins' Ocean Ruins and Ocean Fortress chests no longer contain diamond gear (Diamonds are still there)
