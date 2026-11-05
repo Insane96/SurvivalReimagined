@@ -30,7 +30,7 @@
 * Philip's Ruins' Ocean Ruins and Ocean Fortress chests no longer contain diamond gear (Diamonds are still there)
 * Fixed 6 empty chests in Philip's Ruins' Field Stone Ruins and Level Two Ruins
 * Updated Mods
-  * Collective 8.75 -> 8.79
+  * Collective 8.75 -> 8.80
   * Ecologics 2.3.9 -> 2.3.10
     * Dispensers now work with Spiles and Maple Sap Cauldrons
     * Spiles and Maple Sap Cauldrons now output a comparator signal
