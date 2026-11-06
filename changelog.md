@@ -4,6 +4,9 @@
 * Angry Creepers no longer explode on death
 * Mobs from Spawners and Trial Spawners can no longer be Leaders, and mobs from Trial Spawners can no longer be Miners
 * Fixed conflicting Cake recipes: Cakes can now be crafted with any egg
+* Tridents are now repaired with Turtle Scutes (up to 25%) and Nautilus Shells (up to 75%) instead of Prismarine Shards and Crystals, which are no longer obtainable
+* Tridents can also be repaired with Trident Fragments, each one repairs 50%
+* Drowned now have a 7.5% chance (+1.25% per Looting level) to drop a Trident Fragment
 * Updated Mods
   * Collective 8.80 -> 8.82
   * CreativeCore 2.13.52 -> 2.13.53
@@ -11,10 +14,12 @@
   * Every Compat 2.11.56 -> 2.11.57
     * Improved the textures of Storage Drawers' Drawers for modded woods
   * Incendium: Biomes Only 3.1.0 -> 3.2.0
+  * InsaneLib 2.5.1.0 -> 2.5.2.0
   * InsaneSurvivalOverhaul 5.14.3.0 -> 5.14.3.1
     * Camels, Sniffers and Armadillos can no longer be bred manually, like other animals
     * Fixed dropped Netherite equipment not being immune to fire, lava and explosions
   * Moonlight 3.8.1 -> 3.8.2
+  * OctoLib 0.6.2 -> 0.6.3
 
 # 4.8.1
 * Removed Archeological
