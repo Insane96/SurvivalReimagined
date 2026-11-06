@@ -270,7 +270,7 @@
 			#When ignited, Angry Creeper will not stop swelling
 			"Force explosion" = false
 			#Makes angry creepers blow up on death like when they were added back in 0.30
-			"Explode on death" = true
+			"Explode on death" = false
 			#If true, Angry Creeper explosion will generate fire
 			Fire = false
 			#Explosion power of Angry Creeper

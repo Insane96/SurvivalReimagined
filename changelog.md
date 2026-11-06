@@ -1,6 +1,7 @@
 # Upcoming
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
-* Tropical Stew now restores 6 hunger and 8.4 saturation instead of 12 and 16.8
+* Lowered Tropical Stew nutrition
+* Angry Creepers no longer explode on death
 * Updated Mods
   * Collective 8.80 -> 8.82
   * CreativeCore 2.13.52 -> 2.13.53
