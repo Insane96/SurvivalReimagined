@@ -2,6 +2,7 @@
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
 * Lowered Tropical Stew nutrition
 * Angry Creepers no longer explode on death
+* Mobs from Spawners and Trial Spawners can no longer be Leaders, and mobs from Trial Spawners can no longer be Miners
 * Updated Mods
   * Collective 8.80 -> 8.82
   * CreativeCore 2.13.52 -> 2.13.53

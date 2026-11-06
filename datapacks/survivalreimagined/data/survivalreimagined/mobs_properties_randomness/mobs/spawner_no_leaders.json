@@ -1,0 +1,17 @@
+{
+    "target": "#enhancedai:mobs/leaders",
+    "conditions": [
+        {
+            "condition": "spawn_type",
+            "spawn_types": ["spawner", "trial_spawner"]
+        }
+    ],
+    "properties": [
+        {
+            "property": "enhancedai:change_data",
+            "data": "enhancedai:leaders/leader",
+            "value": 0
+        }
+    ],
+    "event_priority": "high"
+}

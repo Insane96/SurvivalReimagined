@@ -1,0 +1,18 @@
+{
+    "target": "#enhancedai:zombies",
+    "conditions": [
+        {
+            "condition": "spawn_type",
+            "spawn_types": ["trial_spawner"]
+        }
+    ],
+    "properties": [
+        {
+            "property": "enhancedai:change_data",
+            "data": "enhancedai:miner_mobs/miner",
+            "value": 0
+        }
+    ],
+    "priority": -1,
+    "event_priority": "lowest"
+}
