@@ -2,9 +2,8 @@
     "item": "ecologics:tropical_stew",
     "merge_components": {
         "minecraft:food": {
-            "nutrition": 6,
-            "saturation": 8.4,
-            "eat_seconds": 2.2
+            "nutrition": 5,
+            "saturation": 6
         }
     }
 }
