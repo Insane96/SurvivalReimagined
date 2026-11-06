@@ -4,7 +4,7 @@
 * Angry Creepers no longer explode on death
 * Mobs from Spawners and Trial Spawners can no longer be Leaders, and mobs from Trial Spawners can no longer be Miners
 * Fixed conflicting Cake recipes: Cakes can now be crafted with any egg
-* Tridents are now repaired with Turtle Scutes (up to 25%) and Nautilus Shells (up to 75%) instead of Prismarine Shards and Crystals, which are no longer obtainable
+* Tridents are now repaired with Turtle Scutes (up to 25%) instead of Prismarine Shards and Crystals, which are no longer obtainable
 * Tridents can also be repaired with Trident Fragments, each one repairs 50%
 * Drowned now have a 7.5% chance (+1.25% per Looting level) to drop a Trident Fragment
 * Updated Mods
