@@ -1,3 +1,16 @@
+# Upcoming
+* Updated Mods
+  * Collective 8.80 -> 8.82
+  * CreativeCore 2.13.52 -> 2.13.53
+  * Ecologics 2.3.10 -> 2.3.10 (hotfix)
+  * Every Compat 2.11.56 -> 2.11.57
+    * Improved the textures of Storage Drawers' Drawers for modded woods
+  * Incendium: Biomes Only 3.1.0 -> 3.2.0
+  * InsaneSurvivalOverhaul 5.14.3.0 -> 5.14.3.1
+    * Camels, Sniffers and Armadillos can no longer be bred manually, like other animals
+    * Fixed dropped Netherite equipment not being immune to fire, lava and explosions
+  * Moonlight 3.8.1 -> 3.8.2
+
 # 4.8.1
 * Removed Archeological
 * Removed Quark's Golden Apple Crate, as Golden Apples are removed
