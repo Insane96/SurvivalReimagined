@@ -1,4 +1,5 @@
 # Upcoming
+* Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
 * Updated Mods
   * Collective 8.80 -> 8.82
   * CreativeCore 2.13.52 -> 2.13.53

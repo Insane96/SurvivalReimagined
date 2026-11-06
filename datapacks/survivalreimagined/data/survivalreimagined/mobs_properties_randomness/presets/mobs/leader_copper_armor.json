@@ -5,7 +5,7 @@
             "slot": "chest",
             "items": [
                 {
-                    "item": "minecraft:copper_chestplate"
+                    "item": "insanesurvivaloverhaul:copper_chestplate"
                 }
             ]
         },
@@ -14,7 +14,7 @@
             "slot": "legs",
             "items": [
                 {
-                    "item": "minecraft:copper_leggings"
+                    "item": "insanesurvivaloverhaul:copper_leggings"
                 }
             ]
         },
@@ -23,7 +23,7 @@
             "slot": "feet",
             "items": [
                 {
-                    "item": "minecraft:copper_boots"
+                    "item": "insanesurvivaloverhaul:copper_boots"
                 }
             ]
         }
