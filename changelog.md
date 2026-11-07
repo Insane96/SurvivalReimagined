@@ -1,6 +1,7 @@
 # Upcoming
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
 * Lowered Tropical Stew nutrition
+* Naturalist animals' meat drops now follow the new livestock rules: 50% chance (+20% per Looting level) to drop 1 meat, or 1-3 for Boars, Elephants, Rhinos and Mammoths (previously guaranteed or 0-2, without Looting)
 * Maple Pie now restores the same as Pumpkin Pie, with much lower saturation (12.6 -> 5.04), and is eaten in 1.92 seconds
 * Angry Creepers no longer explode on death
 * Mobs from Spawners and Trial Spawners can no longer be Leaders, and mobs from Trial Spawners can no longer be Miners
