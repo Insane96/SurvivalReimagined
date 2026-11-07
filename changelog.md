@@ -1,15 +1,15 @@
-# Upcoming
+# 4.8.2
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
-* Lowered Tropical Stew nutrition
-* Naturalist animals' meat drops now follow the new livestock rules: 50% chance (+20% per Looting level) to drop 1 meat, or 1-3 for Boars, Elephants, Rhinos and Mammoths (previously guaranteed or 0-2, without Looting)
-* Maple Cream Pie now restores the same as Pumpkin Pie, with much lower saturation (12.6 -> 5.04), is eaten in 1.92 seconds and no longer gives Haste
-* Angry Creepers no longer explode on death
 * Mobs from Spawners and Trial Spawners can no longer be Leaders, and mobs from Trial Spawners can no longer be Miners
-* Fixed conflicting Cake recipes, one of which crafted a Maple Cream Pie: Cakes can now be crafted with any egg
-* Fixed Maple Cream Pie being named Cake
+* Angry Creepers no longer explode on death
+* Drowned now have a 7.5% chance (+1.25% per Looting level) to drop a Trident Fragment
 * Tridents are now repaired with Turtle Scutes (up to 25%) instead of Prismarine Shards and Crystals, which are no longer obtainable
 * Tridents can also be repaired with Trident Fragments, each one repairs 50%
-* Drowned now have a 7.5% chance (+1.25% per Looting level) to drop a Trident Fragment
+* Naturalist animals' meat drops now follow the new livestock rules: 50% chance (+20% per Looting level) to drop 1 meat, or 1-3 for Boars, Elephants, Rhinos and Mammoths (previously guaranteed or 0-2, without Looting)
+* Maple Cream Pie is now the same as Pumpkin Pie (saturation 12.6 -> 5.04, eaten in 1.92 seconds) and no longer gives Haste
+* Lowered Tropical Stew nutrition
+* Fixed conflicting Cake recipes, one of which crafted a Maple Cream Pie
+* Fixed Maple Cream Pie being named Cake
 * Updated Mods
   * Collective 8.80 -> 8.82
   * CreativeCore 2.13.52 -> 2.13.53
