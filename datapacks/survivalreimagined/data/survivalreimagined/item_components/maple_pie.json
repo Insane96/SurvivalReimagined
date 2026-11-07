@@ -2,8 +2,8 @@
     "item": "ecologics:maple_pie",
     "merge_components": {
         "minecraft:food": {
-            "nutrition": 7,
-            "saturation": 12.6
+            "nutrition": 6,
+            "saturation": 3.6
         }
     }
 }
