@@ -68,6 +68,8 @@ Key non-obvious settings currently configured:
 - **Emerald Blocks in loot become Runes** with `emerald_block_to_rune` in `datapacks/no_emeralds_datapack` (chance 1.8, 9 times `emerald_to_rune`). Blocks mined from structures are excluded, as some DnT, Incendium and Philip's Ruins structures contain them.
 - **Vault loot**: global loot modifiers only run on the table a vault rolls directly (`reward`, `reward_ominous`), not on nested ones like `reward_rare`, as `NestedLootTable` uses `getRandomItemsRaw`. To add loot on top, target the main tables (`survivalreimagined:add_vault_normal_loot`); to compete in a pool, override the table (Shortbows in vanilla, Hellish Trials and Moog's Nether Structures tables). Adventure Dungeons' vaults use the vanilla tables.
 
+- **Vanilla Backport's recipes are generated in code** (Platform's `DynamicRecipeManager`), not read from the `data/vanillabackport/recipes/` JSONs in its jar. A generated recipe is skipped when a non-vanilla pack has a file with its ID under `recipe/`, so disable one with a `neoforge:false` override in `datapacks/survivalreimagined/data/vanillabackport/recipe/` (like `cake.json`, whose `Blocks.CAKE` result resolved to Ecologics' Maple Cream Pie: without Farmer's Delight the pie's item uses the Cake block, so it takes over the Cake's block-to-item mapping and its name).
+
 ## Legacy content on the `v3` / `v2` branches
 
 Before this pack was updated to 1.21.1, datapack/resourcepack content lived under
