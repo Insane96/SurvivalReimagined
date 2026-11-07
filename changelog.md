@@ -11,12 +11,27 @@
   * Collective 8.80 -> 8.82
   * CreativeCore 2.13.52 -> 2.13.53
   * Ecologics 2.3.10 -> 2.3.10 (hotfix)
+  * Enhanced AI 4.2.7.0 -> 4.2.7.1
+    * Fixed attacked animals not making nearby animals panic
   * Every Compat 2.11.56 -> 2.11.57
     * Improved the textures of Storage Drawers' Drawers for modded woods
   * Incendium: Biomes Only 3.1.0 -> 3.2.0
   * InsaneLib 2.5.1.0 -> 2.5.2.0
-  * InsaneSurvivalOverhaul 5.14.3.0 -> 5.14.3.1
+  * InsaneSurvivalOverhaul 5.14.3.0 -> 5.14.4.0
     * Camels, Sniffers and Armadillos can no longer be bred manually, like other animals
+    * When an animal falls in love on its own, the closest animal of the same type within 8 blocks also falls in love. Auto breeding chance lowered to compensate: 2 animals take ~1 hour on average, 10 animals ~12.5 minutes
+    * Fixed Looting lowering the meat, fish and Rabbit Foot drop chance instead of increasing it
+    * Cows, Mooshrooms, Sheep, Chickens and Rabbits now have a 50% chance (+20% per Looting level) to drop meat (previously 30%, Rabbits 60%)
+    * Pigs and Hoglins now have a 50% chance (+20% per Looting level) to drop 1-3 Porkchops
+    * Chickens drop 1-2 Feathers instead of 1-3
+    * Mooshrooms can be stewed or milked every 60 minutes instead of 20
+    * Well Fed animals no longer produce as fast: Chickens lay eggs every ~11 minutes instead of ~7.5, milking cooldown is reduced by 25%
+    * Young animals now produce like Elders (+20% egg laying time, +50% milking cooldown)
+    * Pumpkin Pie, Apple Pie, Spider Eye and Honey Bottle now give less saturation, and Pies are eaten faster
+    * Fixed Honey Bottles not having lowered nutrition
+    * Fixed Shortbows not usable as furnace fuel
+    * Fixed EMI showing Recycling recipes' output without the output multiplier
+    * Fixed Hoglins, Goats, Axolotls and Frogs still being breedable manually
     * Fixed dropped Netherite equipment not being immune to fire, lava and explosions
   * Moonlight 3.8.1 -> 3.8.2
   * OctoLib 0.6.2 -> 0.6.3

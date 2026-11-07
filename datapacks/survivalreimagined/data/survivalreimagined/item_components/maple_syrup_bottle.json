@@ -3,7 +3,7 @@
     "merge_components": {
         "minecraft:food": {
             "nutrition": 2,
-            "saturation": 0.8
+            "saturation": 0.5714
         }
     }
 }

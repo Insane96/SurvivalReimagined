@@ -68,7 +68,18 @@ Key non-obvious settings currently configured:
 - **Emerald Blocks in loot become Runes** with `emerald_block_to_rune` in `datapacks/no_emeralds_datapack` (chance 1.8, 9 times `emerald_to_rune`). Blocks mined from structures are excluded, as some DnT, Incendium and Philip's Ruins structures contain them.
 - **Vault loot**: global loot modifiers only run on the table a vault rolls directly (`reward`, `reward_ominous`), not on nested ones like `reward_rare`, as `NestedLootTable` uses `getRandomItemsRaw`. To add loot on top, target the main tables (`survivalreimagined:add_vault_normal_loot`); to compete in a pool, override the table (Shortbows in vanilla, Hellish Trials and Moog's Nether Structures tables). Adventure Dungeons' vaults use the vanilla tables.
 
+- **Food overrides in `item_components` are base values**: since ISO 5.14.4.0 its food formulas (`server.toml` > `Foods & Drinks`) are applied on top of them, so the in-game values are `ROUND(nutrition * 1.2)` and `saturation * 1.4`, and eating time comes from the formula. To get a final value, write it divided by those factors (e.g. Tropical Stew 5 / 6 -> 6 / 8.4).
 - **Vanilla Backport's recipes are generated in code** (Platform's `DynamicRecipeManager`), not read from the `data/vanillabackport/recipes/` JSONs in its jar. A generated recipe is skipped when a non-vanilla pack has a file with its ID under `recipe/`, so disable one with a `neoforge:false` override in `datapacks/survivalreimagined/data/vanillabackport/recipe/` (like `cake.json`, whose `Blocks.CAKE` result resolved to Ecologics' Maple Cream Pie: without Farmer's Delight the pie's item uses the Cake block, so it takes over the Cake's block-to-item mapping and its name).
+
+## When mods are updated
+
+Updated jars show up in `git status` as a deleted old jar plus an untracked new one. For each updated mod:
+
+1. **Read what changed.** For Insane96's own mods (ISO, Enhanced AI, InsaneLib, RuneEnchanting, ...) use the source repos in `C:\Users\delvi\source\repos\Insane96\<Mod>`: `changelog.md` plus `git log`/`git diff --stat` between the version commits (commit messages are the version numbers). For third-party mods, use their changelog (CurseForge/Modrinth/GitHub) or unzip the jar.
+2. **Check the config.** After the game has run with the new jar, `git diff config/` shows new or changed options. A changed *default* is not applied to an existing value: the changelog says when an option must be updated manually. Don't edit the `.toml.bak` files.
+3. **Look for conflicts with the pack's overrides.** Grep `datapacks/`, `defaultconfigs/` and `resourcepacks/` for the IDs, files and tags the update touches (loot tables, `item_components`, recipes, MPR presets, tags). An override may now be redundant (the mod does the same thing), overwrite an upstream fix, or rely on behaviour that changed. Overrides that mirror a mod's design (e.g. Naturalist loot mirroring ISO's Livestock pack) may need to follow the new values.
+4. **Look for new integrations** the pack can use, or pack work that was waiting for this update (e.g. changelog entries already describing it).
+5. **Update `changelog.md`** under `# Upcoming` > `Updated Mods`, alphabetically: `<Mod> <old> -> <new>`, where `<old>` is the version of the last release. If the mod is already listed there, only change the new version and merge the sub-bullets. Sub-bullets list only the changes players notice in this pack (skip disabled features, internal fixes, code/API changes), rewritten in the pack's style. A newly added mod only gets `Added <mod>`.
 
 ## Legacy content on the `v3` / `v2` branches
 
