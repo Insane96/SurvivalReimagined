@@ -1,10 +1,12 @@
 # Upcoming
 * Increased Maple Cream Pie saturation (5.04 -> 20.16, now eaten in 4.08 seconds)
-* Wood can no longer be cut in the Stonecutter, use the Sawmill instead
 * Advancements with multiple criteria now list the ones still missing instead of the ones already obtained
 * Removed Beautiful Potions
+* Removed Bits and Balance's Kiln recipe and its EMI category, as Clayworks already adds a Kiln
+* Added JEI
 * Updated Mods
   * Bits and Balance 2.5.0 -> 2.5.1
+    * Wood can no longer be cut in the Stonecutter, use the Sawmill instead
 
 # 4.8.2
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
