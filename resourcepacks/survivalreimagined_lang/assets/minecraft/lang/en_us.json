@@ -37,5 +37,7 @@
 	"block.minecraft.end_stone_brick_wall": "Void Stone Brick Wall",
 	"block.minecraft.end_rod": "Void Rod",
 
-	"effect.minecraft.breath_of_the_nautilus.description": "Prevents running out of air underwater. Granted while riding a Nautilus."
+	"effect.minecraft.breath_of_the_nautilus.description": "Prevents running out of air underwater. Granted while riding a Nautilus.",
+	"effect.minecraft.haste.desc": "Increases mining speed.",
+	"effect.minecraft.mining_fatigue.desc": "Decreases mining speed."
 }

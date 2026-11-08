@@ -7,6 +7,7 @@
   * This makes Kiln recipes show up in EMI
 * Sculk Shriekers are now extremely hard to break and immune to explosions
 * Added EMI Loot
+* Fixed Haste and Mining Fatigue descriptions mentioning attack speed, which they don't affect
 * Updated Mods
   * Bits and Balance 2.5.0 -> 2.5.1
     * Wood can no longer be cut in the Stonecutter, use the Sawmill instead
