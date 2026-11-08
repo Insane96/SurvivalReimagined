@@ -1,5 +1,6 @@
 # Upcoming
 * Increased Maple Cream Pie saturation (5.04 -> 20.16, now eaten in 4.08 seconds)
+* Advancements with multiple criteria now list the ones still missing instead of the ones already obtained
 
 # 4.8.2
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted

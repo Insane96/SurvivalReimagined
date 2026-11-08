@@ -14,7 +14,7 @@ uiScaling = 100
 #    Default: List which criteria you have already obtained
 #    Spoiler: Only reveal unobtained criteria
 #    All: Show both obtained and unobtained criteria
-criteriaDetail = "Default"
+criteriaDetail = "Spoiler"
 criteriaDetailRequiresShift = false
 addInventoryButton = false
 defaultDrawDirectLines = false
