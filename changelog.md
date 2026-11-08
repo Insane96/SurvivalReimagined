@@ -4,9 +4,11 @@
 * Removed Beautiful Potions
 * Removed Bits and Balance's Kiln recipe and its EMI category, as Clayworks already adds a Kiln
 * Added JEI
+  * This makes Kiln recipes show up in EMI
 * Updated Mods
   * Bits and Balance 2.5.0 -> 2.5.1
     * Wood can no longer be cut in the Stonecutter, use the Sawmill instead
+  * Collective 8.82 -> 8.83
 
 # 4.8.2
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
