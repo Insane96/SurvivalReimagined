@@ -206,6 +206,11 @@
 	#When Enchancement is installed, keep vanilla Elytra durability loss even if Enchancement's Disable Durability setting is enabled.
 	enchancementElytraDurabilityCompat = true
 
+#Wood Stonecutting
+[woodStonecutting]
+	#Enable Bits and Balance wood stonecutting recipes. Disable when another mod or modpack handles wood processing. Reopen the world/server after changing.
+	enabled = false
+
 #Recipes
 [recipes]
 
