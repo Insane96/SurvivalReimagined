@@ -5,7 +5,6 @@
 * Removed Bits and Balance's Kiln recipe and its EMI category, as Clayworks already adds a Kiln
 * Added JEI
   * This makes Kiln recipes show up in EMI
-* Sculk Catalysts now have a 50% chance to drop a Rune when broken without Silk Touch, Sculk blocks a 0.1% chance
 * Sculk Shriekers are now extremely hard to break and immune to explosions
 * Updated Mods
   * Bits and Balance 2.5.0 -> 2.5.1
