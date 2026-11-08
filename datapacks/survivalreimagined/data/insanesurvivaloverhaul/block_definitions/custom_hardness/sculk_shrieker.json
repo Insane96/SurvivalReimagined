@@ -1,0 +1,5 @@
+{
+    "block": "minecraft:sculk_shrieker",
+    "state_hardness": 100,
+    "explosion_resistance": 1200
+}
