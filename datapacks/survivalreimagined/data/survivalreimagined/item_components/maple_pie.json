@@ -4,7 +4,7 @@
         "minecraft:item_name": "{\"translate\":\"item.ecologics.maple_pie\"}",
         "minecraft:food": {
             "nutrition": 6,
-            "saturation": 3.6
+            "saturation": 14.4
         }
     }
 }

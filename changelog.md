@@ -1,3 +1,6 @@
+# Upcoming
+* Increased Maple Cream Pie saturation (5.04 -> 20.16, now eaten in 4.08 seconds)
+
 # 4.8.2
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
 * Mobs from Spawners and Trial Spawners can no longer be Leaders, and mobs from Trial Spawners can no longer be Miners
