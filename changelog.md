@@ -1,3 +1,6 @@
+# Upcoming
+* Wither Skeletons no longer spawn with Wither Coated on their sword
+
 # 4.9.0
 * Added Progressive Bosses
 * Added EMI Loot
