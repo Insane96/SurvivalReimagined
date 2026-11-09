@@ -1,0 +1,22 @@
+[
+  {
+    "id": "minecraft:iron_block",
+    "value": 1.0
+  },
+  {
+    "id": "minecraft:emerald_block",
+    "value": 1.0
+  },
+  {
+    "id": "minecraft:gold_block",
+    "value": 2.0
+  },
+  {
+    "id": "minecraft:diamond_block",
+    "value": 3.0
+  },
+  {
+    "id": "minecraft:netherite_block",
+    "value": 4.0
+  }
+]

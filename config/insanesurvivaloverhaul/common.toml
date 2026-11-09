@@ -261,6 +261,8 @@
 	#* Firework Stars recipe outputs 2 instead of 1
 	#* Firework Stars can be added to already crafted Firework Rockets
 	"Enable Fireworks" = true
+	#Data packs of the Beacon.
+	"Enable Beacon" = true
 
 	#Resource and data packs
 	[Misc.Packs]
@@ -313,6 +315,11 @@
 	[Misc."Potions and effects"]
 		#Enables a data pack that increases potions stack sizes
 		"Potion stack size" = true
+
+	#Data packs of the Beacon.
+	[Misc.Beacon]
+		#Enables a data pack that makes the vanilla Beacon recipe give the Insane's Survival Overhaul Beacon
+		"Better beacon data pack" = true
 
 [Respawn]
 	#Data packs of Echo Pillar.

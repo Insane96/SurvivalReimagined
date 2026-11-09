@@ -1,0 +1,108 @@
+[
+  {
+    "id": "minecraft:speed",
+    "layers_required": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "minecraft:jump_boost",
+    "layers_required": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "insanesurvivaloverhaul:block_reach",
+    "layers_required": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "minecraft:haste",
+    "layers_required": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "minecraft:fire_resistance",
+    "layers_required": [
+      2
+    ]
+  },
+  {
+    "id": "stamina:vigour",
+    "layers_required": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "minecraft:invisibility",
+    "layers_required": [
+      2
+    ]
+  },
+  {
+    "id": "minecraft:strength",
+    "layers_required": [
+      3,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "minecraft:resistance",
+    "layers_required": [
+      3,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "minecraft:night_vision",
+    "layers_required": [
+      3
+    ]
+  },
+  {
+    "id": "minecraft:slow_falling",
+    "layers_required": [
+      3
+    ]
+  },
+  {
+    "id": "minecraft:regeneration",
+    "layers_required": [
+      4
+    ]
+  },
+  {
+    "id": "insanesurvivaloverhaul:regenerating_absorption",
+    "layers_required": [
+      4,
+      4
+    ]
+  },
+  {
+    "id": "insanesurvivaloverhaul:entity_reach",
+    "layers_required": [
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "id": "insanesurvivaloverhaul:ghostly",
+    "layers_required": [
+      4
+    ]
+  }
+]

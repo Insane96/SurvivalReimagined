@@ -83,7 +83,7 @@
 		# Default: 3
 		# Range: > 0
 		"Aegis rune level equivalent" = 3
-		#Which level of Ablaze the Ablaze rune is equivalent to.
+		#Which level of Ablaze the Flame rune (from Rune Enchanting) is equivalent to when applied to a shield.
 		# Default: 1
 		# Range: > 0
 		"Ablaze rune level equivalent" = 1

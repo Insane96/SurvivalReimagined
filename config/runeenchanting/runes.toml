@@ -6,6 +6,10 @@
 	# Default: 2.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Flat Mining Speed" = 0
+	#Percentage bonus brushing speed
+	# Default: 1.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Brush Speed Bonus" = 1.0
 
 [earthbend]
 	#Percentage bonus mining speed
@@ -445,7 +449,7 @@
 	# Default: 0.75
 	# Range: 0.0 ~ 1.0
 	"Rain Durability Reduction" = 0.75
-	#Bonus mining speed relative to tool speed at full sunlight (Light level 12+)
+	#Bonus mining speed relative to tool speed at full sunlight (Light level 12+). Also used as the bonus brushing speed
 	# Default: 1.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Mining Speed Multiplier" = 1.5

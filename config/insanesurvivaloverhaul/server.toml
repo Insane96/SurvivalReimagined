@@ -51,6 +51,18 @@
 		"Prevent breeding" = true
 		#If true, mobs can randomly fall in love and possibly breed
 		"Auto breed" = true
+		#Blocks around the animal in which animals of the same type are counted to reduce and stop auto breeding.
+		# Default: 16.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Auto breed crowd range" = 16.0
+		#Number of animals of the same type in the area (itself included) above which the auto breed chance starts decreasing linearly.
+		# Default: 10
+		# Range: > 1
+		"Auto breed crowd start" = 10
+		#Number of animals of the same type in the area (itself included) at which auto breeding stops. If not higher than the start value, auto breeding stops abruptly at this value, without decreasing first.
+		# Default: 16
+		# Range: > 1
+		"Auto breed crowd max" = 16
 
 	#Animals in insanesurvivaloverhaul:prevent_breeding become 'well fed' when fed. While well fed they have an higher chance (given by the livestock data) to breed.
 	[Animals."Well fed"]
@@ -708,6 +720,8 @@
 	"Enable Low fish" = true
 	#Various stuff that doesn't fit in any other Feature.
 	"Enable Tweaks" = true
+	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
+	"Enable Beacon" = true
 
 	#Changes how fast entities consume and refill air, and how drowning damage scales.
 	[Misc.Breathing]
@@ -855,7 +869,7 @@
 		"Blindness no longer prevents sprinting" = true
 		#The speed divider when off ground. Vanilla is 5
 		# Default: 3.0
-		# Range: 0.0 ~ 1.7976931348623157E308
+		# Range: 1.0 ~ 1.7976931348623157E308
 		"Off ground speed divider" = 3.0
 		#How much damage vehicles require to be broken, vanilla is 4
 		# Default: 2
@@ -867,7 +881,7 @@
 		# Default: 9
 		# Range: 2 ~ 9
 		"Repair merge max items" = 9
-		#Dragon Egg will no longer port on left-click
+		#Dragon Egg will no longer teleport on left-click
 		"Teleport dragon egg only on right click" = true
 
 		[Misc.Tweaks.Parrot]
@@ -875,6 +889,13 @@
 			# Default: 4.0
 			# Range: 0.0 ~ 1.7976931348623157E308
 			"Shoulder dismount fall distance" = 4.0
+
+	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
+	[Misc.Beacon]
+		#Range of the beacon before adding the bonus from the blocks of the pyramid.
+		# Default: 16
+		# Range: > 0
+		"Base range" = 16
 
 [Mobs]
 	"Enable Misc mobs" = true

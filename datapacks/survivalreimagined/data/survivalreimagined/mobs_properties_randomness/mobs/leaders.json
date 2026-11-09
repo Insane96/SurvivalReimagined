@@ -28,7 +28,7 @@
                         },
                         {
                             "function": "set_drop_chance",
-                            "drop_chance": 1
+                            "drop_chance": 0.25
                         }
                     ]
                 }

@@ -8,10 +8,34 @@
 * Sculk Shriekers are now extremely hard to break and immune to explosions
 * Added EMI Loot
 * Fixed Haste and Mining Fatigue descriptions mentioning attack speed, which they don't affect
+* Leaders now have a 25% chance to drop their Banner when killed by a player (previously guaranteed)
 * Updated Mods
   * Bits and Balance 2.5.0 -> 2.5.1
     * Wood can no longer be cut in the Stonecutter, use the Sawmill instead
-  * Collective 8.82 -> 8.83
+  * Collective 8.82 -> 8.84
+  * Enhanced AI 4.2.7.1 -> 4.2.7.2
+  * InsaneLib 2.5.2.0 -> 2.5.3.0
+  * InsaneSurvivalOverhaul 5.14.4.0 -> 5.15.0.0
+    * Reworked the Beacon: the vanilla recipe now gives a new Beacon, with a single selectable effect and a level for it
+      * 15 effects available: Speed, Jump Boost, Block Reach, Haste, Fire Resistance, Vigour, Invisibility, Strength, Resistance, Night Vision, Slow Falling, Regeneration, Regenerating Absorption, Entity Reach and Ghostly
+      * Each effect level requires a certain number of pyramid layers, up to 4 (e.g. Strength I and II require 3 layers, Strength III requires 4)
+      * Range is 16 blocks + a bonus based on the blocks of the pyramid, reduced by higher effect levels, up to 181 blocks with a full Netherite pyramid
+      * Also affects tamed animals
+      * If the pyramid gets smaller, the effect level is lowered, or the effect is suspended if the pyramid is too short. The selection is kept and works again once the pyramid is rebuilt
+      * No longer requires payments
+    * Golden Carrots can no longer be fed to Horses, Donkeys and Mules and no longer attract them, which are now attracted by Apples and Carrots
+    * Auto breeding chance now decreases gradually when there are more than 10 animals of the same type within 16 blocks, stopping at 16 (previously full chance until stopping at 18)
+    * Fixed Air Affinity making mining off ground faster than on ground
+    * Fixed Glow Blocks and their alignment HUD disappearing from some angles when behind walls
+    * Fixed Regenerating Absorption effect having no name and icon
+  * Moonlight 3.8.2 -> 3.8.3
+  * RuneEnchanting 1.4.3.0 -> 1.4.4.0
+    * Brushes now have 2 sockets and can get durability Runes, Reach and Telekinesis (sends the uncovered item directly to your inventory)
+    * Efficiency (+100%), Atmospheric (up to +150% under the sun) and Curse of Inefficiency (-50%) now affect brushing speed
+    * Sculk Catalysts (50%) and Sculk (0.1%) now have a chance to drop a random Rune, Curses included, when broken without Silk Touch
+    * Runes in item tooltips are now sorted by name, with Curses first
+  * Shields+ 2.3.0.2 -> 2.3.1.0
+    * Removed the Ablaze Rune, the Flame Rune now applies to Shields and does the same. Existing Ablaze Runes are converted to Flame
 
 # 4.8.2
 * Mobs (zombies and leaders) now spawn with ISO's Copper equipment instead of the Vanilla Backport's one, that couldn't be smelted
