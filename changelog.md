@@ -1,14 +1,15 @@
 # Upcoming
-* Increased Maple Cream Pie saturation (5.04 -> 20.16, now eaten in 4.08 seconds)
-* Advancements with multiple criteria now list the ones still missing instead of the ones already obtained
-* Removed Beautiful Potions
-* Removed Bits and Balance's Kiln recipe and its EMI category, as Clayworks already adds a Kiln
+* Added EMI Loot
 * Added JEI
   * This makes Kiln recipes show up in EMI
-* Sculk Shriekers are now extremely hard to break and immune to explosions
-* Added EMI Loot
-* Fixed Haste and Mining Fatigue descriptions mentioning attack speed, which they don't affect
+* Added Progressive Bosses
+* Removed Beautiful Potions
+* Removed Bits and Balance's Kiln recipe and its EMI category, as Clayworks already adds a Kiln
 * Leaders now have a 25% chance to drop their Banner when killed by a player (previously guaranteed)
+* Sculk Shriekers are now extremely hard to break and immune to explosions
+* Increased Maple Cream Pie saturation (5.04 -> 20.16, now eaten in 4.08 seconds)
+* Advancements with multiple criteria now list the ones still missing instead of the ones already obtained
+* Fixed Haste and Mining Fatigue descriptions mentioning attack speed, which they don't affect
 * Updated Mods
   * Bits and Balance 2.5.0 -> 2.5.1
     * Wood can no longer be cut in the Stonecutter, use the Sawmill instead
