@@ -1,8 +1,8 @@
-# Upcoming
+# 4.9.0
+* Added Progressive Bosses
 * Added EMI Loot
 * Added JEI
   * This makes Kiln recipes show up in EMI
-* Added Progressive Bosses
 * Removed Beautiful Potions
 * Removed Bits and Balance's Kiln recipe and its EMI category, as Clayworks already adds a Kiln
 * Leaders now have a 25% chance to drop their Banner when killed by a player (previously guaranteed)
