@@ -1,4 +1,5 @@
 # Upcoming
+* Known issue: unwaxed Lightning Rods don't attract lightning (Vanilla Backport bug). Wax them with a Honeycomb, waxed and oxidized ones work
 * Fixed fog not getting denser in the rain and starting farther than intended: Cirrus overrode Insane's Survival Overhaul's fog distance (disabled Cirrus' "Fog uses horizon color")
 * Removed Incubation's Nests: they only worked with Chickens, not with Naturalist's Ducks and Turkeys. They're no longer craftable or generated in the world
 
