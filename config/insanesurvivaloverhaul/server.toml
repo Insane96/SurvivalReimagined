@@ -13,7 +13,7 @@
 "Enable World" = true
 
 [Animals]
-	#Animals age, changing size and possibly dying of old age. Configurable via livestock data. Adult sheep drop more wool and, with the Livestock data pack enabled, adults drop more goodies.
+	#Animals age, changing size and possibly dying of old age. Configurable via livestock data. Adult and elder sheep drop more wool and, with the Livestock data pack enabled, adults and elders drop more goodies.
 	"Enable Aging" = true
 	#Slower egg laying and wool regrowth, cooldown on milking (and stewing) and changed chance for chickens from eggs. Configurable via livestock data.
 	"Enable Animal products" = true
@@ -24,7 +24,7 @@
 	#Animals in insanesurvivaloverhaul:prevent_breeding become 'well fed' when fed. While well fed they have an higher chance (given by the livestock data) to breed.
 	"Enable Well fed" = true
 
-	#Animals age, changing size and possibly dying of old age. Configurable via livestock data. Adult sheep drop more wool and, with the Livestock data pack enabled, adults drop more goodies.
+	#Animals age, changing size and possibly dying of old age. Configurable via livestock data. Adult and elder sheep drop more wool and, with the Livestock data pack enabled, adults and elders drop more goodies.
 	[Animals.Aging]
 		#If true, animals die of old age.
 		"Die of old age" = true
@@ -285,6 +285,10 @@
 	[Combat.Fletching]
 		#If disabled, torch arrows only set the target on fire instead of also placing a torch when they hit a block.
 		"Torch arrows place torches" = true
+		#Fraction of the Quartz Arrow's damage that is converted into Piercing Damage (ignores armor). The conversion is applied to the final arrow damage, so it also takes into account Power, the bows damage multiplier, etc.
+		# Default: 0.4
+		# Range: 0.0 ~ 1.0
+		"Quartz arrow piercing ratio" = 0.4
 
 	#Adds a new attribute to add regenerating absorption hearts to the player. Please note that default mods' regenerating absorption is done through item definitions within the combat_rework data pack and via Absorption Armor feature.
 	[Combat."Regenerating absorption"]
@@ -700,6 +704,8 @@
 		# Default: 1.0
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Output multiplier" = 0.75
+		#If true, enchanted items can be recycled. If false, only non-enchanted items can be recycled. If Rune Enchanting is installed, runed items count as enchanted.
+		"Allow enchanted items" = false
 
 [Misc]
 	#Changes how fast entities consume and refill air, and how drowning damage scales.
@@ -854,10 +860,6 @@
 		"Falling breaking glass" = true
 		#If enabled, the Totem of Undying will give Resistance IV for 5.5 seconds
 		"Totem resistance" = true
-		#Vanilla is 5
-		# Default: 16
-		# Range: > 0
-		"Leash max distance" = 16
 		#The speed modifier when frozen. Vanilla is -0.05
 		# Default: -0.1
 		# Range: -1.0 ~ 0.0
@@ -907,6 +909,8 @@
 	"Enable Spawning" = true
 	#Turtle helmet water breathing duration and stackable scute blocks.
 	"Enable Turtles" = true
+	#Changes to leashes distances.
+	"Enable Leash" = true
 
 	[Mobs."Misc mobs"]
 		#1 in X chance each tick for mobs in the `insanesurvivaloverhaul:passive_regen` entity type tag to regain 1 health. Set to 0 to disable
@@ -967,6 +971,17 @@
 		"Helmet water breathing time" = 900
 		#If true, scute will drop as a block and not as item
 		"Scute drops as block" = true
+
+	#Changes to leashes distances.
+	[Mobs.Leash]
+		#Distance at which leashes break. Vanilla is 10
+		# Default: 16
+		# Range: > 0
+		"Max distance" = 16
+		#Distance from which leashed mobs are physically pulled towards the holder. Vanilla is 6
+		# Default: 10
+		# Range: > 0
+		"Elastic distance" = 10
 
 [Movement]
 	#Players's slides down climbable blocks faster and stands still when opening an interface

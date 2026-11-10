@@ -273,9 +273,9 @@
 	# Default: 2.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	"Max Damage" = 2.0
-	# Default: 0.25
+	# Default: 0.35
 	# Range: 0.0 ~ 1.0
-	Chance = 0.25
+	Chance = 0.35
 
 [magnetic]
 	# Default: 4.0
@@ -345,12 +345,12 @@
 	"Bonus Movement Speed" = 0.4
 
 [charged_jump]
-	# Default: 8
+	# Default: 5
 	# Range: > -2147483648
-	"Time To Charge" = 8
-	# Default: 7
+	"Time To Charge" = 5
+	# Default: 9
 	# Range: > -2147483648
-	"Max Jump Boost Amplifier" = 7
+	"Max Jump Boost Amplifier" = 9
 
 [retreat]
 	# Default: 0.5
@@ -443,20 +443,6 @@
 	# Default: 80
 	# Range: > -2147483648
 	"Bonus Durability Flat" = 0
-
-[atmospheric]
-	#Fraction of each durability damage point ignored when raining
-	# Default: 0.75
-	# Range: 0.0 ~ 1.0
-	"Rain Durability Reduction" = 0.75
-	#Bonus mining speed relative to tool speed at full sunlight (Light level 12+). Also used as the bonus brushing speed
-	# Default: 1.5
-	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Max Mining Speed Multiplier" = 1.5
-	#Attack speed bonus (ADD_MULTIPLIED_BASE) at full moonlight (Light level 12+)
-	# Default: 0.25
-	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Max Attack Speed Bonus" = 0.25
 
 [curse_of_blood_pact]
 	# Default: 0.1
@@ -668,3 +654,15 @@
 	# Default: 0.15
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Bonus Speed" = 0.15
+
+[sunlit]
+	#Bonus mining speed relative to tool speed at full sunlight (Light level 12+). Also used as the bonus brushing speed
+	# Default: 1.5
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Max Mining Speed Multiplier" = 1.5
+
+[moonlit]
+	#Attack speed bonus (ADD_MULTIPLIED_BASE) at full moonlight (Light level 12+)
+	# Default: 0.25
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Max Attack Speed Bonus" = 0.25

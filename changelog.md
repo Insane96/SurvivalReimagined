@@ -6,8 +6,37 @@
 * Prickly Pears now grow slower outside Deserts and without sunlight, like Cactus
 * Reduced Prickly Pear nutrition (2.8 -> 2 health) and Cooked Prickly Pear nutrition (6 -> 5 health over time)
 * Copper Horse Armor can now be recycled in the Blast Furnace into 5 Copper Ingots, like other Horse Armors
+* Naturalist animals' meat drop chance reduced: 50% -> 40% (+20% per Looting level), like other animals
 * Updated Mods
+  * Bits and Balance 2.5.1 -> 2.5.2
   * Collective 8.84 -> 8.85
+  * InsaneSurvivalOverhaul 5.15.0.0 -> 5.15.1.0
+    * Netherite rebalanced to be closer to Diamond but much more durable
+      * Netherite tools and weapons durability increased: 2437 -> 3650 (Axe 1950 -> 2920)
+      * Netherite attack speed penalty reduced: 12.5% -> 5%, Netherite now deals slightly more DPS than Diamond
+      * Netherite Armor durability increased: 429 / 624 / 585 / 507 -> 635 / 924 / 866 / 751
+      * Netherite Armor points reduced: 4 / 7 / 6 / 3 -> 3.5 / 6 / 5.5 / 3 (20 -> 18 total)
+      * Netherite Armor sprint slowdown reduced: 70% -> 60%
+    * Quartz Arrows reworked: they now deal more damage (0.5 -> 2.5), but 40% of it is converted into Piercing Damage, instead of a bonus Piercing hit
+      * Power and the bow's damage multiplier now affect the Piercing part too
+      * Recipe is now more expensive: 1 Arrow + 1 Quartz -> 1 Quartz Arrow (was 2 Arrows + 1 Quartz -> 2)
+    * Runed items can no longer be recycled in the Blast Furnace
+    * Rotten Flesh drops are now converted to Cloth 25% of the time (was 35%), but Torches crafted with Cloth now give 4 instead of 3
+    * Meat drop chance from Cows, Sheep, Mooshrooms, Pigs, Hoglins, Chickens and Rabbits reduced: 50% -> 40% (+20% per Looting level)
+    * Elder animals now get the same bonuses as adults: they drop double loot and Elder Sheep drop double wool when sheared
+    * Leashed mobs are now pulled towards the holder from 10 blocks instead of 6
+    * Wardens, Elder Guardians and bosses that kill a player no longer get the Player Killer bounty
+    * The Main Bed info message is no longer displayed if you already have a main bed set
+    * Fixed babies being considered elders
+  * RuneEnchanting 1.4.4.0 -> 1.4.5.0
+    * Atmospheric has been split into two Runes, existing Atmospheric Runes become Sunlit
+      * Sunlit: gain mining and brushing speed under the sun. Can be applied to mining tools, shears and brushes
+      * Moonlit: gain attack speed under the moon light. Can be applied to weapons
+      * Removed the reduced durability consumption in the rain
+    * Increased Thorns damage chance (25% -> 35%)
+    * Charged Jump now reaches Jump Boost X in 2.5 seconds (was Jump Boost VIII in 3.2 seconds)
+    * Dwarfing now gives the max bonus mining speed in the Nether
+    * Fixed bows and crossbows with Multishot starting to draw/load with fewer arrows than required, then not shooting/loading anything. They now can't be used at all without enough arrows
 
 # 4.9.0
 * Added Progressive Bosses
