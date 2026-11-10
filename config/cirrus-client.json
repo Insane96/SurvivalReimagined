@@ -53,7 +53,7 @@
     "shootingStarBloom": 2.0,
     "shootingStarColorVariation": 1.0,
     "skyGradientsEnabled": true,
-    "fogUsesHorizonColor": true,
+    "fogUsesHorizonColor": false,
     "fogHorizonTintStrength": 0.6,
     "skyGradientOpacity": 1.0,
     "skyGradientTransitionTicks": 1800.0,

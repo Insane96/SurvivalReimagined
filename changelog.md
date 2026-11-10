@@ -1,4 +1,5 @@
 # Upcoming
+* Fixed fog not getting denser in the rain and starting farther than intended: Cirrus overrode Insane's Survival Overhaul's fog distance (disabled Cirrus' "Fog uses horizon color")
 * Removed Incubation's Nests: they only worked with Chickens, not with Naturalist's Ducks and Turkeys. They're no longer craftable or generated in the world
 
 # 4.9.1
