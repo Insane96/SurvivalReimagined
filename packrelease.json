@@ -4,11 +4,21 @@
   "exportDir": "../../Export",
   "clientOverrides": ["config", "datapacks", "resourcepacks"],
   "serverFolders": ["config", "datapacks", "defaultconfigs", "mods", "optional_datapacks", "scripts"],
-  "exclude": ["*.toml.bak"],
+  "exclude": ["*.toml.bak", "config/spark/tmp*", "config/spark/activity.json"],
   "clientModsFile": "clientmods.txt",
   "curseForge": {
     "projectId": 895737,
     "releaseType": "release",
     "tokenVariable": "CF_API_TOKEN"
+  },
+  "bisect": {
+    "serverId": "95b04099",
+    "panelUrl": "https://games.bisecthosting.com",
+    "apiTokenVariable": "BISECT_HOSTING_API_TOKEN",
+    "sftpPasswordVariable": "BISECT_HOSTING_SFTP_PASSWORD",
+    "backupFolders": ["world"],
+    "backupDownloadDir": "../../Export/ServerBackups",
+    "keepArchives": 3,
+    "warningSeconds": 60
   }
 }
