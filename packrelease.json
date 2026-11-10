@@ -1,0 +1,14 @@
+{
+  "name": "Survival Reimagined",
+  "author": "Insane96",
+  "exportDir": "../../Export",
+  "clientOverrides": ["config", "datapacks", "resourcepacks"],
+  "serverFolders": ["config", "datapacks", "defaultconfigs", "mods", "optional_datapacks", "scripts"],
+  "exclude": ["*.toml.bak"],
+  "clientModsFile": "clientmods.txt",
+  "curseForge": {
+    "projectId": 895737,
+    "releaseType": "release",
+    "tokenVariable": "CF_API_TOKEN"
+  }
+}

@@ -1,4 +1,4 @@
-# Upcoming
+# 4.9.1
 * Removed EMI Loot
 * Wither Skeletons no longer spawn with Wither Coated on their sword
 * The saturation required for food to heal over time instead of instantly now accounts for the 40% saturation increase (4 -> 5.6), so foods heal as they did before it
