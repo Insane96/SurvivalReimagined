@@ -1,0 +1,20 @@
+{
+    "block": "ecologics:prickly_pear",
+    "modifiers": [
+        {
+            "id": "insanesurvivaloverhaul:sunlight",
+            "min_sunlight": 10,
+            "modifier": 1.5,
+            "operation": "add"
+        },
+        {
+            "id": "insanesurvivaloverhaul:matches_biome",
+            "biomes": [
+                "#c:is_desert"
+            ],
+            "inverse": true,
+            "modifier": 3,
+            "operation": "add"
+        }
+    ]
+}

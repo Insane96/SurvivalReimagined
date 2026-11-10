@@ -1,5 +1,9 @@
 # Upcoming
 * Wither Skeletons no longer spawn with Wither Coated on their sword
+* Food instant heal is now rounded to half a heart
+* The saturation required for food to heal over time instead of instantly now accounts for the 40% saturation increase (4 -> 5.6), so foods heal as they did before it
+* Prickly Pears now grow slower outside Deserts and without sunlight, like Cactus
+* Reduced Prickly Pear nutrition (2.8 -> 2 health) and Cooked Prickly Pear nutrition (6 -> 5 health over time)
 
 # 4.9.0
 * Added Progressive Bosses

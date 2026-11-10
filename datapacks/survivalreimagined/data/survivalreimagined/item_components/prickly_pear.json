@@ -1,0 +1,9 @@
+{
+    "item": "ecologics:prickly_pear",
+    "merge_components": {
+        "minecraft:food": {
+            "nutrition": 3,
+            "saturation": 2.4
+        }
+    }
+}
