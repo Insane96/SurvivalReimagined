@@ -1,3 +1,6 @@
+# Upcoming
+* Removed Incubation's Nests: they only worked with Chickens, not with Naturalist's Ducks and Turkeys. They're no longer craftable or generated in the world
+
 # 4.9.1
 * Removed EMI Loot
 * Wither Skeletons no longer spawn with Wither Coated on their sword

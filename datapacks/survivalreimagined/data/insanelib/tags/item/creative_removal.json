@@ -122,6 +122,8 @@
         "minecraft:blue_bundle",
         "minecraft:purple_bundle",
         "minecraft:magenta_bundle",
-        "minecraft:pink_bundle"
+        "minecraft:pink_bundle",
+        "incubation:hay_nest",
+        "incubation:twig_nest"
     ]
 }

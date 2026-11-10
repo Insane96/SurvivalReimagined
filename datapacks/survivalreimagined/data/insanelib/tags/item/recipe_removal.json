@@ -78,6 +78,8 @@
         "ecologics:stripped_azalea_log",
         "ecologics:stripped_azalea_wood",
         "naturalist:cooked_egg",
-        "ecologics:crab_meat"
+        "ecologics:crab_meat",
+        "incubation:hay_nest",
+        "incubation:twig_nest"
     ]
 }
