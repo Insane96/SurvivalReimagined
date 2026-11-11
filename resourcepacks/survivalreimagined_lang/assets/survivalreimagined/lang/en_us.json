@@ -188,5 +188,8 @@
 	"emi.info.gravestone.gravestone.2": "Graves can also be crafted and renamed in an Anvil to show a custom text.",
 	"emi.info.storagedrawers.drawers.1": "Stores a large amount of a single item in each slot, shown on its front. Right-click with an item to put it in, or double right-click to put in all of that item from your inventory. Left-click to take a single item, sneak left-click to take a stack. Hoppers can insert and extract items.",
 	"emi.info.storagedrawers.drawers.2": "Full Drawers hold 64 stacks (1x1), 32 stacks per slot (1x2) or 16 stacks per slot (2x2). Half Drawers hold half as much. Drawers keep their items when broken.",
-	"emi.info.storagedrawers.framing_table": "Changes the look of Drawers and Trims: put one in with a full block for the sides, and optionally other blocks for the trim and the front, to get a Framed version that looks like those blocks."
+	"emi.info.storagedrawers.framing_table": "Changes the look of Drawers and Trims: put one in with a full block for the sides, and optionally other blocks for the trim and the front, to get a Framed version that looks like those blocks.",
+	"emi.info.shieldsplus.shields.1": "Shields block a fixed amount of damage per hit, shown in their tooltip, and the rest goes through. They only block attacks from the front, and Axes disable them for 1.6 seconds.",
+	"emi.info.shieldsplus.shields.2": "A shield can stay lifted only for a limited time, then it goes on cooldown, longer the more it was lifted. Raising it right before being hit is a parry, which blocks twice the damage.",
+	"emi.info.shieldsplus.shields.3": "With a shield in the off hand, crouch to block. You can attack while crouch blocking, but each attack puts the shield on cooldown for a moment."
 }
