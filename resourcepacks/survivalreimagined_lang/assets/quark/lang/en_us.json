@@ -5,8 +5,6 @@
 	"quark.jei.hint.compass_end": "Can work in the Void, pointing towards the exit portal.",
 	"quark.jei.hint.myalite_crystal_viaduct": "When a Voidman or player using a Void Pearl teleports adjacent to multiple of these in a line, they'll end up at the other end of the line instead. Forks work, but loops will not.",
 	"block.quark.end_stone_brick_vertical_slab": "Void Stone Brick Vertical Slab",
-	"block.quark.ender_watcher": "Void Watcher",
-	"advancements.quark.watcher_center.description": "Look at the center of a Void Watcher",
 	"advancements.quark.use_viaduct.description": "Toss a Void Pearl to the tip of a line of Myalite Crystals to travel through them",
 
 	"effect.quark.resilience.description": "Reduces knockback taken."

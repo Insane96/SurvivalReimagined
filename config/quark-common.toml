@@ -48,7 +48,7 @@
 	"Chains Connect Blocks" = true
 	Chute = true
 	"Dispensers Place Blocks" = true
-	"Ender Watcher" = true
+	"Ender Watcher" = false
 	"Feeding Trough" = false
 	Gravisand = true
 	"Iron Rod" = true
