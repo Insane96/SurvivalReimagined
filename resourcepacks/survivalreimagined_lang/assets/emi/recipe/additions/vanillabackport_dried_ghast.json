@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:dried_ghast"
+    ],
+    "text": [
+        "emi.info.vanillabackport.dried_ghast"
+    ]
+}

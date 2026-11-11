@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:creaking_heart"
+    ],
+    "text": [
+        "emi.info.vanillabackport.creaking_heart.1",
+        "emi.info.vanillabackport.creaking_heart.2"
+    ]
+}

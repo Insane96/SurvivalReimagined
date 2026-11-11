@@ -1,0 +1,22 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:oak_shelf",
+        "item:minecraft:spruce_shelf",
+        "item:minecraft:birch_shelf",
+        "item:minecraft:jungle_shelf",
+        "item:minecraft:acacia_shelf",
+        "item:minecraft:dark_oak_shelf",
+        "item:minecraft:mangrove_shelf",
+        "item:minecraft:cherry_shelf",
+        "item:minecraft:pale_oak_shelf",
+        "item:minecraft:poplar_shelf",
+        "item:minecraft:bamboo_shelf",
+        "item:minecraft:crimson_shelf",
+        "item:minecraft:warped_shelf"
+    ],
+    "text": [
+        "emi.info.vanillabackport.shelf.1",
+        "emi.info.vanillabackport.shelf.2"
+    ]
+}

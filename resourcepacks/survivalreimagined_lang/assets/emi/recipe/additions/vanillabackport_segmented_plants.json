@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:leaf_litter",
+        "item:minecraft:wildflowers"
+    ],
+    "text": [
+        "emi.info.vanillabackport.segmented_plants"
+    ]
+}

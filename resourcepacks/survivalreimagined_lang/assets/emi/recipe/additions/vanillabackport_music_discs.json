@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:music_disc_tears",
+        "item:minecraft:music_disc_lava_chicken",
+        "item:minecraft:music_disc_bounce"
+    ],
+    "text": [
+        "emi.info.vanillabackport.music_discs"
+    ]
+}

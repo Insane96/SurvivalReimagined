@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:shelf_mushroom"
+    ],
+    "text": [
+        "emi.info.vanillabackport.shelf_mushroom"
+    ]
+}

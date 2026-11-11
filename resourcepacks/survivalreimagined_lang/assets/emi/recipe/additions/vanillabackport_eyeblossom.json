@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:open_eyeblossom",
+        "item:minecraft:closed_eyeblossom"
+    ],
+    "text": [
+        "emi.info.vanillabackport.eyeblossom"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:lightning_rod",
+        "item:minecraft:exposed_lightning_rod",
+        "item:minecraft:weathered_lightning_rod",
+        "item:minecraft:oxidized_lightning_rod",
+        "item:minecraft:waxed_lightning_rod",
+        "item:minecraft:waxed_exposed_lightning_rod",
+        "item:minecraft:waxed_weathered_lightning_rod",
+        "item:minecraft:waxed_oxidized_lightning_rod"
+    ],
+    "text": [
+        "emi.info.vanillabackport.lightning_rod.1",
+        "emi.info.vanillabackport.lightning_rod.2"
+    ]
+}

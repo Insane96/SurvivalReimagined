@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:resin_clump",
+        "item:minecraft:resin_brick"
+    ],
+    "text": [
+        "emi.info.vanillabackport.resin_clump"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:sulfur_cube_bucket"
+    ],
+    "text": [
+        "emi.info.vanillabackport.sulfur_cube.1",
+        "emi.info.vanillabackport.sulfur_cube.2"
+    ]
+}

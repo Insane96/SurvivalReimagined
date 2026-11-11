@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:firefly_bush"
+    ],
+    "text": [
+        "emi.info.vanillabackport.firefly_bush"
+    ]
+}

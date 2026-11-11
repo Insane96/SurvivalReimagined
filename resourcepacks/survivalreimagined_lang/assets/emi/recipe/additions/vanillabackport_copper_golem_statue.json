@@ -1,0 +1,17 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:copper_golem_statue",
+        "item:minecraft:exposed_copper_golem_statue",
+        "item:minecraft:weathered_copper_golem_statue",
+        "item:minecraft:oxidized_copper_golem_statue",
+        "item:minecraft:waxed_copper_golem_statue",
+        "item:minecraft:waxed_exposed_copper_golem_statue",
+        "item:minecraft:waxed_weathered_copper_golem_statue",
+        "item:minecraft:waxed_oxidized_copper_golem_statue"
+    ],
+    "text": [
+        "emi.info.vanillabackport.copper_golem_statue.1",
+        "emi.info.vanillabackport.copper_golem_statue.2"
+    ]
+}

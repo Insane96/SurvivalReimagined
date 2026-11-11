@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:potent_sulfur"
+    ],
+    "text": [
+        "emi.info.vanillabackport.potent_sulfur.1",
+        "emi.info.vanillabackport.potent_sulfur.2"
+    ]
+}

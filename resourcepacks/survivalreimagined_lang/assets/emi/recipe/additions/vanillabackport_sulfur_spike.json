@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:sulfur_spike"
+    ],
+    "text": [
+        "emi.info.vanillabackport.sulfur_spike"
+    ]
+}
