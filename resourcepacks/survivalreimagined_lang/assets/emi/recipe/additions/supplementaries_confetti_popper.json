@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:confetti_popper"
+    ],
+    "text": [
+        "emi.info.supplementaries.confetti_popper"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:pancake"
+    ],
+    "text": [
+        "emi.info.supplementaries.pancake.1",
+        "emi.info.supplementaries.pancake.2"
+    ]
+}

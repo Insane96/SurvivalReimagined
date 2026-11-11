@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:crystal_display"
+    ],
+    "text": [
+        "emi.info.supplementaries.crystal_display"
+    ]
+}

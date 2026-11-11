@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:bubble_blower"
+    ],
+    "text": [
+        "emi.info.supplementaries.bubble_blower"
+    ]
+}

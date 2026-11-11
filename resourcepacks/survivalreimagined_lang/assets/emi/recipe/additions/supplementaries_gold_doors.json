@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:gold_door",
+        "item:supplementaries:gold_trapdoor"
+    ],
+    "text": [
+        "emi.info.supplementaries.gold_doors"
+    ]
+}

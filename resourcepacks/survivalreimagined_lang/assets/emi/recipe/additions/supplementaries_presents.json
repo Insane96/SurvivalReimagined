@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:presents",
+        "#item:supplementaries:trapped_presents"
+    ],
+    "text": [
+        "emi.info.supplementaries.presents"
+    ]
+}

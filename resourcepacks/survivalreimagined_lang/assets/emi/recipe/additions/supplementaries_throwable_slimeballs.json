@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:throwable_slimeballs"
+    ],
+    "text": [
+        "emi.info.supplementaries.throwable_slimeballs"
+    ]
+}

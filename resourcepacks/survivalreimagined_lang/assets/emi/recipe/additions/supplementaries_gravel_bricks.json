@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:gravel_bricks",
+        "item:supplementaries:suspicious_gravel_bricks"
+    ],
+    "text": [
+        "emi.info.supplementaries.gravel_bricks"
+    ]
+}

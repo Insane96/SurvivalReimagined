@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:cannon_boats"
+    ],
+    "text": [
+        "emi.info.supplementaries.cannon_boats"
+    ]
+}

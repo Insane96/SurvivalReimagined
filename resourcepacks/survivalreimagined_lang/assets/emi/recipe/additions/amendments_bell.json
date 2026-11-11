@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:bell"
+    ],
+    "text": [
+        "emi.info.amendments.bell"
+    ]
+}

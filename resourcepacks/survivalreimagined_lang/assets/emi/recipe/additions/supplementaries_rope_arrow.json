@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:rope_arrow"
+    ],
+    "text": [
+        "emi.info.supplementaries.rope_arrow.1",
+        "emi.info.supplementaries.rope_arrow.2"
+    ]
+}

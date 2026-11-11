@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:amendments:dye_bottle"
+    ],
+    "text": [
+        "emi.info.amendments.dye_bottle"
+    ]
+}

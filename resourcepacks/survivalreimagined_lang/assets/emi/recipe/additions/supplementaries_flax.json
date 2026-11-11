@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:flax_seeds",
+        "item:supplementaries:flax",
+        "item:supplementaries:wild_flax"
+    ],
+    "text": [
+        "emi.info.supplementaries.flax"
+    ]
+}

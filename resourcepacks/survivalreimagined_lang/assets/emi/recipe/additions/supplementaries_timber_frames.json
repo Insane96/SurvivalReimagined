@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:timber_frames"
+    ],
+    "text": [
+        "emi.info.supplementaries.timber_frames"
+    ]
+}

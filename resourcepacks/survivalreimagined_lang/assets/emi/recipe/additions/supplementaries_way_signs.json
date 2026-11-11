@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:way_signs"
+    ],
+    "text": [
+        "emi.info.supplementaries.way_signs.1",
+        "emi.info.supplementaries.way_signs.2"
+    ]
+}

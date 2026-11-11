@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:dispenser_minecart"
+    ],
+    "text": [
+        "emi.info.supplementaries.dispenser_minecart"
+    ]
+}

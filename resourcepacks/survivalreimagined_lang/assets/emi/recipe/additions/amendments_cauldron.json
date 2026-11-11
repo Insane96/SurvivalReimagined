@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:cauldron"
+    ],
+    "text": [
+        "emi.info.amendments.cauldron.1",
+        "emi.info.amendments.cauldron.2",
+        "emi.info.amendments.cauldron.3"
+    ]
+}

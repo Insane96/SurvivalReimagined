@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:urn"
+    ],
+    "text": [
+        "emi.info.supplementaries.urn"
+    ]
+}

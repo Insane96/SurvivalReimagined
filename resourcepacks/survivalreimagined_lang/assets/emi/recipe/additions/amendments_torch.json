@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:torch",
+        "item:minecraft:soul_torch"
+    ],
+    "text": [
+        "emi.info.amendments.torch"
+    ]
+}

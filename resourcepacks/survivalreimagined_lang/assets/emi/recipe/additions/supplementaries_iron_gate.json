@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:iron_gate"
+    ],
+    "text": [
+        "emi.info.supplementaries.iron_gate"
+    ]
+}

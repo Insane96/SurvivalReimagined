@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:lumisene_bucket",
+        "item:supplementaries:lumisene_bottle"
+    ],
+    "text": [
+        "emi.info.supplementaries.lumisene.1",
+        "emi.info.supplementaries.lumisene.2"
+    ]
+}

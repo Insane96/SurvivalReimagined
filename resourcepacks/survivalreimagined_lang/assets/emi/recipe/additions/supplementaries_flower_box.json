@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:flower_box"
+    ],
+    "text": [
+        "emi.info.supplementaries.flower_box"
+    ]
+}

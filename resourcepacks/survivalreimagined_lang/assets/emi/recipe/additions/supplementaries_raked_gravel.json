@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:gravel",
+        "item:supplementaries:raked_gravel"
+    ],
+    "text": [
+        "emi.info.supplementaries.raked_gravel"
+    ]
+}

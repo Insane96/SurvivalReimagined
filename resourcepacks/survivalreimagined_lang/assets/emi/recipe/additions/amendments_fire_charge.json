@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:fire_charge",
+        "item:amendments:dragon_charge"
+    ],
+    "text": [
+        "emi.info.amendments.fire_charge.1",
+        "emi.info.amendments.fire_charge.2"
+    ]
+}

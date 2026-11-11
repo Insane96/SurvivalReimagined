@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:wrench"
+    ],
+    "text": [
+        "emi.info.supplementaries.wrench.1",
+        "emi.info.supplementaries.wrench.2"
+    ]
+}

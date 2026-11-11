@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:jar"
+    ],
+    "text": [
+        "emi.info.supplementaries.jar.1",
+        "emi.info.supplementaries.jar.2"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:notice_board"
+    ],
+    "text": [
+        "emi.info.supplementaries.notice_board"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:enderman_head"
+    ],
+    "text": [
+        "emi.info.supplementaries.enderman_head"
+    ]
+}

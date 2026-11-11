@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:spring_launcher"
+    ],
+    "text": [
+        "emi.info.supplementaries.spring_launcher.1",
+        "emi.info.supplementaries.spring_launcher.2"
+    ]
+}

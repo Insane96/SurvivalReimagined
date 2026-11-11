@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:bamboo_spikes",
+        "item:supplementaries:bamboo_spikes_tipped"
+    ],
+    "text": [
+        "emi.info.supplementaries.bamboo_spikes.1",
+        "emi.info.supplementaries.bamboo_spikes.2"
+    ]
+}

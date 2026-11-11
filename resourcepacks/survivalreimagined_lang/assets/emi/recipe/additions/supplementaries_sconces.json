@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:sconces",
+        "item:supplementaries:fire_pit"
+    ],
+    "text": [
+        "emi.info.supplementaries.sconces"
+    ]
+}

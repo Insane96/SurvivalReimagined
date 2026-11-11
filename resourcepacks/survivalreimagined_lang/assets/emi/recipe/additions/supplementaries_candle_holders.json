@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:candle_holders"
+    ],
+    "text": [
+        "emi.info.supplementaries.candle_holders.1",
+        "emi.info.supplementaries.candle_holders.2"
+    ]
+}

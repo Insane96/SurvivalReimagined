@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:daub"
+    ],
+    "text": [
+        "emi.info.supplementaries.daub"
+    ]
+}

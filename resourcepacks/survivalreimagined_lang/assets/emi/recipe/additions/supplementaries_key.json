@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:keys"
+    ],
+    "text": [
+        "emi.info.supplementaries.key.1",
+        "emi.info.supplementaries.key.2"
+    ]
+}

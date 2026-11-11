@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:goblet"
+    ],
+    "text": [
+        "emi.info.supplementaries.goblet"
+    ]
+}

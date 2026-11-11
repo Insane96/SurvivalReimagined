@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:wind_vane"
+    ],
+    "text": [
+        "emi.info.supplementaries.wind_vane.1",
+        "emi.info.supplementaries.wind_vane.2"
+    ]
+}

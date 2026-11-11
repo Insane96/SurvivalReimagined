@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:awnings"
+    ],
+    "text": [
+        "emi.info.supplementaries.awnings.1",
+        "emi.info.supplementaries.awnings.2"
+    ]
+}

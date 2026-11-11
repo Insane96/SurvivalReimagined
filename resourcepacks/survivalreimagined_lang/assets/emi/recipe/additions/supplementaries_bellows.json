@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:bellows"
+    ],
+    "text": [
+        "emi.info.supplementaries.bellows.1",
+        "emi.info.supplementaries.bellows.2"
+    ]
+}

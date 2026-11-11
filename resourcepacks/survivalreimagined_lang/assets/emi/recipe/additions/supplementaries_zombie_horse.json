@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:rotten_flesh"
+    ],
+    "text": [
+        "emi.info.supplementaries.zombie_horse"
+    ]
+}

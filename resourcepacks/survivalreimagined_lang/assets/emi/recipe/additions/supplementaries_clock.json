@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:clock"
+    ],
+    "text": [
+        "emi.info.supplementaries.clock"
+    ]
+}

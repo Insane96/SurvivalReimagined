@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:placeable_books"
+    ],
+    "text": [
+        "emi.info.supplementaries.placeable_books"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:crank"
+    ],
+    "text": [
+        "emi.info.supplementaries.crank"
+    ]
+}

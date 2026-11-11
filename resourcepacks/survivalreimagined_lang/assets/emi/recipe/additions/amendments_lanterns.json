@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:lantern",
+        "item:minecraft:soul_lantern"
+    ],
+    "text": [
+        "emi.info.amendments.lanterns"
+    ]
+}

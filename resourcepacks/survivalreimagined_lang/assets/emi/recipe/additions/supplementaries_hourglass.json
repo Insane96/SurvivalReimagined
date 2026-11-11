@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:hourglass"
+    ],
+    "text": [
+        "emi.info.supplementaries.hourglass.1",
+        "emi.info.supplementaries.hourglass.2"
+    ]
+}

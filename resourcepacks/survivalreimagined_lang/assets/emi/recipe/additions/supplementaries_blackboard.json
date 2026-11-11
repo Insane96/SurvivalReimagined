@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:blackboard"
+    ],
+    "text": [
+        "emi.info.supplementaries.blackboard.1",
+        "emi.info.supplementaries.blackboard.2"
+    ]
+}

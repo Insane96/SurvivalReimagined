@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:quiver"
+    ],
+    "text": [
+        "emi.info.supplementaries.quiver.1",
+        "emi.info.supplementaries.quiver.2",
+        "emi.info.supplementaries.quiver.3"
+    ]
+}

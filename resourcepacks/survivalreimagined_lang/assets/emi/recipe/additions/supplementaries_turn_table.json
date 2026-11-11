@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:turn_table"
+    ],
+    "text": [
+        "emi.info.supplementaries.turn_table.1",
+        "emi.info.supplementaries.turn_table.2",
+        "emi.info.supplementaries.turn_table.3"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:sconce_lever"
+    ],
+    "text": [
+        "emi.info.supplementaries.sconce_lever"
+    ]
+}

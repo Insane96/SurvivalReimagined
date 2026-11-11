@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:antique_ink"
+    ],
+    "text": [
+        "emi.info.supplementaries.antique_ink"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:speaker_block"
+    ],
+    "text": [
+        "emi.info.supplementaries.speaker_block.1",
+        "emi.info.supplementaries.speaker_block.2"
+    ]
+}

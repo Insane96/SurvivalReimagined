@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:minecraft:hanging_signs"
+    ],
+    "text": [
+        "emi.info.amendments.hanging_signs"
+    ]
+}

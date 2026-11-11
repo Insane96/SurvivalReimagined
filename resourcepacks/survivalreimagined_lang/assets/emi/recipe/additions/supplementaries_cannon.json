@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:cannon"
+    ],
+    "text": [
+        "emi.info.supplementaries.cannon.1",
+        "emi.info.supplementaries.cannon.2",
+        "emi.info.supplementaries.cannon.3"
+    ]
+}

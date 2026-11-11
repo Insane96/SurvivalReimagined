@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:slice_map"
+    ],
+    "text": [
+        "emi.info.supplementaries.slice_map"
+    ]
+}

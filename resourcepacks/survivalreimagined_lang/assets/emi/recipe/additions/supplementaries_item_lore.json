@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:name_tag"
+    ],
+    "text": [
+        "emi.info.supplementaries.item_lore"
+    ]
+}

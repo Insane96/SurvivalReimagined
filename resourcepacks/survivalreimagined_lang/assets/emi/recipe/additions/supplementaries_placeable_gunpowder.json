@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:gunpowder"
+    ],
+    "text": [
+        "emi.info.supplementaries.placeable_gunpowder"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:redstone_illuminator"
+    ],
+    "text": [
+        "emi.info.supplementaries.redstone_illuminator"
+    ]
+}

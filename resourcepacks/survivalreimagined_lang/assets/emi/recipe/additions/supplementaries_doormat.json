@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:doormat"
+    ],
+    "text": [
+        "emi.info.supplementaries.doormat"
+    ]
+}

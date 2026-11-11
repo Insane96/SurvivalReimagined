@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:minecraft:banners",
+        "item:minecraft:flower_pot"
+    ],
+    "text": [
+        "emi.info.amendments.ceiling_decor"
+    ]
+}

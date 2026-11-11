@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:pancake_disc",
+        "item:supplementaries:music_disc_heave_ho"
+    ],
+    "text": [
+        "emi.info.supplementaries.music_discs"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:planter"
+    ],
+    "text": [
+        "emi.info.supplementaries.planter"
+    ]
+}

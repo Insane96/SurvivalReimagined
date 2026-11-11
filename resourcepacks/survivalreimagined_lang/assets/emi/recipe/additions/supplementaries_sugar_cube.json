@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:sugar_cube"
+    ],
+    "text": [
+        "emi.info.supplementaries.sugar_cube"
+    ]
+}

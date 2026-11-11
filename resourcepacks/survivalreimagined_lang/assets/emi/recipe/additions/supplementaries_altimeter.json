@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:altimeter"
+    ],
+    "text": [
+        "emi.info.supplementaries.altimeter"
+    ]
+}

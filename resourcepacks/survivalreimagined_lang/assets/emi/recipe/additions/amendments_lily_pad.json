@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:lily_pad"
+    ],
+    "text": [
+        "emi.info.amendments.lily_pad"
+    ]
+}

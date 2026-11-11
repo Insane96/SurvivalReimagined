@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:throwable_bricks"
+    ],
+    "text": [
+        "emi.info.supplementaries.throwable_bricks"
+    ]
+}

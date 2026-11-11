@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:flute"
+    ],
+    "text": [
+        "emi.info.supplementaries.flute.1",
+        "emi.info.supplementaries.flute.2"
+    ]
+}

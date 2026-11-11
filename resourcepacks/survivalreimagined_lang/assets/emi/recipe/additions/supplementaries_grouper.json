@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:grouper"
+    ],
+    "text": [
+        "emi.info.supplementaries.grouper.1",
+        "emi.info.supplementaries.grouper.2"
+    ]
+}

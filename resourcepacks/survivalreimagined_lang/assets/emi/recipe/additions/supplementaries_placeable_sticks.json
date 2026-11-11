@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:stick",
+        "item:minecraft:blaze_rod"
+    ],
+    "text": [
+        "emi.info.supplementaries.placeable_sticks"
+    ]
+}

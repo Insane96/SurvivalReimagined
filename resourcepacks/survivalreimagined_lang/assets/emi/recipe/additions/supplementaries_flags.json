@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:supplementaries:flags"
+    ],
+    "text": [
+        "emi.info.supplementaries.flags.1",
+        "emi.info.supplementaries.flags.2"
+    ]
+}

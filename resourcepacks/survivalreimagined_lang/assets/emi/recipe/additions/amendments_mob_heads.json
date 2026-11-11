@@ -1,0 +1,15 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:skeleton_skull",
+        "item:minecraft:wither_skeleton_skull",
+        "item:minecraft:zombie_head",
+        "item:minecraft:creeper_head",
+        "item:minecraft:piglin_head",
+        "item:minecraft:dragon_head",
+        "item:minecraft:player_head"
+    ],
+    "text": [
+        "emi.info.amendments.mob_heads"
+    ]
+}

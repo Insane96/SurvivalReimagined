@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:pedestal"
+    ],
+    "text": [
+        "emi.info.supplementaries.pedestal.1",
+        "emi.info.supplementaries.pedestal.2"
+    ]
+}

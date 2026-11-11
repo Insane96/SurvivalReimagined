@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:minecraft:wool_carpets",
+        "item:minecraft:moss_carpet"
+    ],
+    "text": [
+        "emi.info.amendments.carpets"
+    ]
+}

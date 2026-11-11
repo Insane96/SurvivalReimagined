@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:flint_block"
+    ],
+    "text": [
+        "emi.info.supplementaries.flint_block"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:tripwire_hook"
+    ],
+    "text": [
+        "emi.info.amendments.tripwire_hook"
+    ]
+}

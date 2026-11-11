@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:faucet"
+    ],
+    "text": [
+        "emi.info.supplementaries.faucet.1",
+        "emi.info.supplementaries.faucet.2",
+        "emi.info.supplementaries.faucet.3"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:lectern"
+    ],
+    "text": [
+        "emi.info.amendments.lectern"
+    ]
+}
