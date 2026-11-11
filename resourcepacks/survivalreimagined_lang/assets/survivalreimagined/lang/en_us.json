@@ -185,5 +185,8 @@
 	"emi.info.strawstatues.straw_statue.1": "A player-shaped armor stand that can wear armor and hold items. Sneak while placing it for a random pose.",
 	"emi.info.strawstatues.straw_statue.2": "Sneak right-click it with an empty hand to open its menu, where you can change its pose, size, rotation and the skin of any player by name. Right-clicking it with a Player Head also gives it that player's skin.",
 	"emi.info.gravestone.gravestone.1": "When you die, a Grave with all your items is placed where you died. Break it to get your items back in their original slots. Right-click it to see who died there and when.",
-	"emi.info.gravestone.gravestone.2": "Graves can also be crafted and renamed in an Anvil to show a custom text."
+	"emi.info.gravestone.gravestone.2": "Graves can also be crafted and renamed in an Anvil to show a custom text.",
+	"emi.info.storagedrawers.drawers.1": "Stores a large amount of a single item in each slot, shown on its front. Right-click with an item to put it in, or double right-click to put in all of that item from your inventory. Left-click to take a single item, sneak left-click to take a stack. Hoppers can insert and extract items.",
+	"emi.info.storagedrawers.drawers.2": "Full Drawers hold 64 stacks (1x1), 32 stacks per slot (1x2) or 16 stacks per slot (2x2). Half Drawers hold half as much. Drawers keep their items when broken.",
+	"emi.info.storagedrawers.framing_table": "Changes the look of Drawers and Trims: put one in with a full block for the sides, and optionally other blocks for the trim and the front, to get a Framed version that looks like those blocks."
 }

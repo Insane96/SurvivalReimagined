@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:storagedrawers:drawers"
+    ],
+    "text": [
+        "emi.info.storagedrawers.drawers.1",
+        "emi.info.storagedrawers.drawers.2"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:storagedrawers:framing_table"
+    ],
+    "text": [
+        "emi.info.storagedrawers.framing_table"
+    ]
+}
