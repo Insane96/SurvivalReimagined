@@ -865,7 +865,7 @@
 		#Phantom Pickup
 		[mobs.improvedPhantoms.phantomPickup]
 			#Allow phantoms to pick up and carry players.
-			enablePhantomPickup = true
+			enablePhantomPickup = false
 			#Chance for a phantom to attempt picking up a player when attacking (0.0-1.0).
 			# Default: 0.3
 			# Range: 0.0 ~ 1.0

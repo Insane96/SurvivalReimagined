@@ -7,6 +7,7 @@
 * Removed items (e.g. the Reinforced Hang Glider) no longer show up in EMI recipes, they were only hidden from the item list
 * Elder Guardians drop their vanilla loot again, including Trident Fragments and the Tide Armor Trim Smithing Template, which Progressive Bosses had replaced. They now drop 2/4/6 Wet Sponges depending on their level
 * Removed Progressive Bosses' Elder Guardian Spike and Nether Star Shard, along with their Trident and Nether Star recipes: Tridents are already crafted with Trident Fragments, and the shards couldn't be obtained
+* Phantoms no longer pick up and carry players (disabled Bits and Balance's Phantom Pickup)
 * Updated Mods
   * Bits and Balance 2.5.2 -> 2.5.3
   * Collective 8.85 -> 8.86
