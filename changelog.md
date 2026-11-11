@@ -2,6 +2,15 @@
 * Known issue: unwaxed Lightning Rods don't attract lightning (Vanilla Backport bug). Wax them with a Honeycomb, waxed and oxidized ones work
 * Fixed fog not getting denser in the rain and starting farther than intended: Cirrus overrode Insane's Survival Overhaul's fog distance (disabled Cirrus' "Fog uses horizon color")
 * Removed Incubation's Nests: they only worked with Chickens, not with Naturalist's Ducks and Turkeys. They're no longer craftable or generated in the world
+* Updated Mods
+  * Bits and Balance 2.5.2 -> 2.5.3
+  * Collective 8.85 -> 8.86
+  * CreativeCore 2.13.53 -> 2.13.54
+  * Experience Tweaks 1.1.6.0 -> 1.1.6.1
+    * Anvil repairs in EMI now respect the max repair (e.g. a Netherite Shovel repaired with a Diamond now shows half a repair instead of a full one)
+    * Anvil repairs in EMI now have a tooltip showing how much durability each material repairs, the max repair and how many materials are needed
+  * InsaneLib 2.5.3.0 -> 2.5.3.1
+    * Fixed the Rope Arrow and Spectral Arrow (from Glow Goop) Fletching Table recipes missing when first loading a world, until `/reload`
 
 # 4.9.1
 * Removed EMI Loot
