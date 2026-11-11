@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:hide"
+    ],
+    "text": [
+        "emi.info.naturalist.hide"
+    ]
+}

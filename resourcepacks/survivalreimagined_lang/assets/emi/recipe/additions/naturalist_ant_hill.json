@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:queen_ant",
+        "item:naturalist:ant_hill"
+    ],
+    "text": [
+        "emi.info.naturalist.ant_hill.1",
+        "emi.info.naturalist.ant_hill.2"
+    ]
+}

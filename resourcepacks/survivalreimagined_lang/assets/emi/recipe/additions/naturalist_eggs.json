@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:alligator_egg",
+        "item:naturalist:tortoise_egg",
+        "item:naturalist:ostrich_egg"
+    ],
+    "text": [
+        "emi.info.naturalist.eggs"
+    ]
+}

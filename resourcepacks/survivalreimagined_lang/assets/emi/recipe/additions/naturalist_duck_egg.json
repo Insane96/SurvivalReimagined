@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:duck_egg"
+    ],
+    "text": [
+        "emi.info.naturalist.duck_egg"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:red_starfish",
+        "item:naturalist:orange_starfish",
+        "item:naturalist:blue_starfish",
+        "item:naturalist:purple_starfish"
+    ],
+    "text": [
+        "emi.info.naturalist.starfish"
+    ]
+}

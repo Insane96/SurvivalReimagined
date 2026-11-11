@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:snail_shell"
+    ],
+    "text": [
+        "emi.info.naturalist.snail_shell"
+    ]
+}

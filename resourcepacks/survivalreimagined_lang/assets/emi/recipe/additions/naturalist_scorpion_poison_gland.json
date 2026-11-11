@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:scorpion_poison_gland"
+    ],
+    "text": [
+        "emi.info.naturalist.scorpion_poison_gland"
+    ]
+}

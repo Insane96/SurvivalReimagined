@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:antler"
+    ],
+    "text": [
+        "emi.info.naturalist.antler"
+    ]
+}

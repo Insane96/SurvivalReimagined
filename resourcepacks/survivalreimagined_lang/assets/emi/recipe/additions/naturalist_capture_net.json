@@ -1,0 +1,23 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:capture_net",
+        "item:naturalist:butterfly",
+        "item:naturalist:caterpillar",
+        "item:naturalist:dragonfly",
+        "item:naturalist:firefly",
+        "item:naturalist:bee",
+        "item:naturalist:ant",
+        "item:naturalist:snail",
+        "item:naturalist:crab",
+        "item:naturalist:rat",
+        "item:naturalist:scorpion",
+        "item:naturalist:hedgehog",
+        "item:naturalist:silverfish",
+        "item:naturalist:endermite"
+    ],
+    "text": [
+        "emi.info.naturalist.capture_net.1",
+        "emi.info.naturalist.capture_net.2"
+    ]
+}

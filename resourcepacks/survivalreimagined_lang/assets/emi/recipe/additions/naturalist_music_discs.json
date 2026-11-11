@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:music_disc_wild_ones",
+        "item:naturalist:music_disc_death_by_hogs"
+    ],
+    "text": [
+        "emi.info.naturalist.music_discs"
+    ]
+}

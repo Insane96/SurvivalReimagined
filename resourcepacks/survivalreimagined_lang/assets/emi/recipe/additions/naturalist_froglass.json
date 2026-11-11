@@ -1,0 +1,14 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:azure_froglass",
+        "item:naturalist:verdant_froglass",
+        "item:naturalist:crimson_froglass",
+        "item:naturalist:azure_froglass_pane",
+        "item:naturalist:verdant_froglass_pane",
+        "item:naturalist:crimson_froglass_pane"
+    ],
+    "text": [
+        "emi.info.naturalist.froglass"
+    ]
+}

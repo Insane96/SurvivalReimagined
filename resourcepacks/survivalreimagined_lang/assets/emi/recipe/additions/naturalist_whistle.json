@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:whistle"
+    ],
+    "text": [
+        "emi.info.naturalist.whistle"
+    ]
+}
