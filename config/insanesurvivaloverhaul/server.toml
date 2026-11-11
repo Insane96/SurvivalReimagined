@@ -51,15 +51,15 @@
 		"Prevent breeding" = true
 		#If true, mobs can randomly fall in love and possibly breed
 		"Auto breed" = true
-		#Blocks around the animal in which animals of the same type are counted to reduce and stop auto breeding.
+		#Blocks around the animal in which animals of any type are counted to reduce and stop auto breeding.
 		# Default: 16.0
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Auto breed crowd range" = 16.0
-		#Number of animals of the same type in the area (itself included) above which the auto breed chance starts decreasing linearly.
+		#Number of animals (of any type) in the area (itself included) above which the auto breed chance starts decreasing linearly.
 		# Default: 10
 		# Range: > 1
 		"Auto breed crowd start" = 10
-		#Number of animals of the same type in the area (itself included) at which auto breeding stops. If not higher than the start value, auto breeding stops abruptly at this value, without decreasing first.
+		#Number of animals (of any type) in the area (itself included) at which auto breeding stops. If not higher than the start value, auto breeding stops abruptly at this value, without decreasing first.
 		# Default: 16
 		# Range: > 1
 		"Auto breed crowd max" = 16
@@ -700,8 +700,8 @@
 		# Default: 1
 		# Range: > -2147483648
 		"Minimum output" = 1
-		#Multiplier applied to the durability-based output amount. Lower it below 1 to make recycling always lossy.
-		# Default: 1.0
+		#Multiplier applied to the output amount of every recycling recipe (after the durability scaling for damageable items). Lower it below 1 to make recycling always lossy.
+		# Default: 0.75
 		# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Output multiplier" = 0.75
 		#If true, enchanted items can be recycled. If false, only non-enchanted items can be recycled. If Rune Enchanting is installed, runed items count as enchanted.

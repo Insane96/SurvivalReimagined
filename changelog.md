@@ -17,6 +17,14 @@
     * Anvil repairs in EMI now have a tooltip showing how much durability each material repairs, the max repair and how many materials are needed
   * InsaneLib 2.5.3.0 -> 2.5.3.1
     * Fixed many recipes missing when first loading a world, until `/reload`
+  * InsaneSurvivalOverhaul 5.15.1.0 -> 5.15.2.0
+    * Redstone Torches now use the vanilla recipe (1 Redstone + 1 Stick -> 1), instead of requiring grass and giving 2
+    * Added EMI info pages for Insane's Survival Overhaul's blocks and items and for the vanilla ones it changes (e.g. Daggers, Shortbow, Beacon, Rich Farmland, Beds, Sponges, Campfires, Spawners, Totem of Undying)
+    * Repair Kit repairs are now shown in EMI as crafting recipes, with the Repair Kits needed to fully repair each item
+    * Auto breeding animals now pick the closest animal they can mate with: Horses and Donkeys can auto breed with each other (making Mules), and Horses, Donkeys and Llamas must be tamed and at full health
+    * Auto breeding now slows down and stops based on the animals of any type nearby, not only of the same type
+    * Horse Armors now give back 3 materials when recycled instead of 5, like other items without durability (75% of the material)
+    * EMI now shows the actual recycling output of items without durability (e.g. Hoppers, Minecarts, Rails), it showed less than what you actually got
 
 # 4.9.1
 * Removed EMI Loot
