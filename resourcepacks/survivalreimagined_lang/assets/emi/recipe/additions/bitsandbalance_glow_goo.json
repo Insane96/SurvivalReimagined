@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:bitsandbalance:glow_goo"
+    ],
+    "text": [
+        "emi.info.bitsandbalance.glow_goo.1",
+        "emi.info.bitsandbalance.glow_goo.2"
+    ]
+}

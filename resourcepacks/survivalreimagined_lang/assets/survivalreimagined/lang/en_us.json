@@ -170,5 +170,20 @@
 	"emi.info.amendments.fire_charge.1": "Fire Charges can be thrown and are affected by gravity. They set things on fire where they land.",
 	"emi.info.amendments.fire_charge.2": "Dragon Charges are a Dragon's Breath version that leaves a lingering cloud. Dispensers shoot both.",
 	"emi.info.amendments.torch": "Hitting a mob with a Torch in your main hand sets it on fire for 2 seconds.",
-	"emi.info.amendments.jukebox": "Jukeboxes show the disc they are playing, which spins while the music plays."
+	"emi.info.amendments.jukebox": "Jukeboxes show the disc they are playing, which spins while the music plays.",
+	"emi.info.clayworks.kiln": "A furnace for building materials: it bakes Bricks, Terracotta, Glass, smooth and cracked stones and similar blocks twice as fast as a Furnace, using the same fuels.",
+	"emi.info.clayworks.pottery_table": "Used to customize Decorated Pots: change their color with a Dye, or add a trim by choosing a pattern and a trim material (Iron, Copper, Gold, Lapis, Amethyst, Diamond, Emerald, Netherite...).",
+	"emi.info.boatload.furnace_boat": "A boat with a Furnace that burns fuel to go faster. Sneak right-click it to open the fuel slot. The Furnace takes a seat, so it carries only one passenger.",
+	"emi.info.boatload.large_boat": "A wider boat that carries up to 4 passengers, or fewer if some of them are large mobs.",
+	"emi.info.bitsandbalance.glow_goo.1": "Throw it to leave a bright Glow Goo Splatter where it lands, which works as a light source even underwater. Mobs and players hit by it glow for 60 seconds.",
+	"emi.info.bitsandbalance.glow_goo.2": "Brewed into a Potion of Glowing (made from Glow Berries), it gives a Potion of Bioluminescence, which makes you emit light.",
+	"emi.info.bitsandbalance.music_disc_dog": "Dropped by Creepers killed by a Skeleton, like the other Music Discs, and found in some chests.",
+	"emi.info.hangglider.hang_glider": "Right-click to open it, then jump from a high place to glide. Sneak to dive faster. It loses durability quickly while gliding (less than 2 minutes of flight) and is repaired with Phantom Membranes in an Anvil.",
+	"emi.info.sawmill.sawmill": "A Stonecutter for wood: put in Logs or Planks and choose any wooden item to make it directly, often for fewer planks than the crafting recipe.",
+	"emi.info.labels.label.1": "Like an Item Frame, but it fits on any surface and lets you open the block behind it, perfect for chests and storage.",
+	"emi.info.labels.label.2": "Sneak right-click it with an item to show that item. Dye it to change its color, use a Glow Ink Sac to make it glow, or a Feather to show the item's name.",
+	"emi.info.strawstatues.straw_statue.1": "A player-shaped armor stand that can wear armor and hold items. Sneak while placing it for a random pose.",
+	"emi.info.strawstatues.straw_statue.2": "Sneak right-click it with an empty hand to open its menu, where you can change its pose, size, rotation and the skin of any player by name. Right-clicking it with a Player Head also gives it that player's skin.",
+	"emi.info.gravestone.gravestone.1": "When you die, a Grave with all your items is placed where you died. Break it to get your items back in their original slots. Right-click it to see who died there and when.",
+	"emi.info.gravestone.gravestone.2": "Graves can also be crafted and renamed in an Anvil to show a custom text."
 }

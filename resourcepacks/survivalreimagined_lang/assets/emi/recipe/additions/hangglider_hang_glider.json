@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:hangglider:hang_glider"
+    ],
+    "text": [
+        "emi.info.hangglider.hang_glider"
+    ]
+}

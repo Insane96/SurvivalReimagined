@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:sawmill:sawmill"
+    ],
+    "text": [
+        "emi.info.sawmill.sawmill"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:labels:label"
+    ],
+    "text": [
+        "emi.info.labels.label.1",
+        "emi.info.labels.label.2"
+    ]
+}

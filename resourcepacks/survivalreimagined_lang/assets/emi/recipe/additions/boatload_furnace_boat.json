@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "#item:boatload:furnace_boats"
+    ],
+    "text": [
+        "emi.info.boatload.furnace_boat"
+    ]
+}

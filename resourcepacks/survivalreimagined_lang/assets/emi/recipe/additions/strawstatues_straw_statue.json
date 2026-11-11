@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:strawstatues:straw_statue"
+    ],
+    "text": [
+        "emi.info.strawstatues.straw_statue.1",
+        "emi.info.strawstatues.straw_statue.2"
+    ]
+}

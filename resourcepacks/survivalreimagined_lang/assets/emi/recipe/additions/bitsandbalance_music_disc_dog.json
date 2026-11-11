@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:bitsandbalance:music_disc_dog"
+    ],
+    "text": [
+        "emi.info.bitsandbalance.music_disc_dog"
+    ]
+}

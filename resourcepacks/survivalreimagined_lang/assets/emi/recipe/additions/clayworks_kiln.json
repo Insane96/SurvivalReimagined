@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:clayworks:kiln"
+    ],
+    "text": [
+        "emi.info.clayworks.kiln"
+    ]
+}

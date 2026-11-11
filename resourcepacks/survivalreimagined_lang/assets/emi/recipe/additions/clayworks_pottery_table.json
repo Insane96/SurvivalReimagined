@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:clayworks:pottery_table"
+    ],
+    "text": [
+        "emi.info.clayworks.pottery_table"
+    ]
+}

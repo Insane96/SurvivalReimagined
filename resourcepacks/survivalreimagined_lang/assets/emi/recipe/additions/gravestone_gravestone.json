@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:gravestone:gravestone"
+    ],
+    "text": [
+        "emi.info.gravestone.gravestone.1",
+        "emi.info.gravestone.gravestone.2"
+    ]
+}
