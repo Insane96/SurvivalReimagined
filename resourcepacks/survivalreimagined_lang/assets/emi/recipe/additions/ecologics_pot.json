@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:pot"
+    ],
+    "text": [
+        "emi.info.ecologics.pot.1",
+        "emi.info.ecologics.pot.2"
+    ]
+}

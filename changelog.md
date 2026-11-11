@@ -3,7 +3,7 @@
 * Fixed fog not getting denser in the rain and starting farther than intended: Cirrus overrode Insane's Survival Overhaul's fog distance (disabled Cirrus' "Fog uses horizon color")
 * Removed Incubation's Nests: they only worked with Chickens, not with Naturalist's Ducks and Turkeys. They're no longer craftable or generated in the world
 * Disabled Quark's Ender Watcher: Supplementaries' Voidman Head already emits a redstone signal when looked at
-* Added EMI info pages for Supplementaries' blocks and items, and for the vanilla blocks and items changed by Amendments, explaining what they do. Also added pages for Bits and Balance's Glow Goo, Boatload's boats, Clayworks' Kiln and Pottery Table, Graves, Hang Gliders, Labels, the Saw, Shields, Storage Drawers and Straw Statues
+* Added EMI info pages for Supplementaries' blocks and items, and for the vanilla blocks and items changed by Amendments, explaining what they do. Also added pages for Bits and Balance's Glow Goo, Boatload's boats, Clayworks' Kiln and Pottery Table, Ecologics' blocks and items, Graves, Hang Gliders, Labels, the Saw, Shields, Storage Drawers and Straw Statues
 * Removed items (e.g. the Reinforced Hang Glider) no longer show up in EMI recipes, they were only hidden from the item list
 * Elder Guardians drop their vanilla loot again, including Trident Fragments and the Tide Armor Trim Smithing Template, which Progressive Bosses had replaced. They now drop 2/4/6 Wet Sponges depending on their level
 * Removed Progressive Bosses' Elder Guardian Spike and Nether Star Shard, along with their Trident and Nether Star recipes: Tridents are already crafted with Trident Fragments, and the shards couldn't be obtained

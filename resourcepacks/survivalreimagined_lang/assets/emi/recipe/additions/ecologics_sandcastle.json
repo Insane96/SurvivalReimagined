@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:sandcastle"
+    ],
+    "text": [
+        "emi.info.ecologics.sandcastle.1",
+        "emi.info.ecologics.sandcastle.2"
+    ]
+}

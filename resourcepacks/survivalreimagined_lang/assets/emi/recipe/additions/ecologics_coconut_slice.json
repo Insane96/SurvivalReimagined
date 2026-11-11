@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:coconut_slice",
+        "item:ecologics:coconut_husk"
+    ],
+    "text": [
+        "emi.info.ecologics.coconut_slice"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:spile",
+        "item:ecologics:sappy_maple_log",
+        "item:ecologics:maple_sap_bucket",
+        "item:ecologics:maple_syrup_bottle"
+    ],
+    "text": [
+        "emi.info.ecologics.maple_syrup.1",
+        "emi.info.ecologics.maple_syrup.2"
+    ]
+}

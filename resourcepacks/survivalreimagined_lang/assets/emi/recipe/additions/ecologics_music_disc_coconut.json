@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:music_disc_coconut"
+    ],
+    "text": [
+        "emi.info.ecologics.music_disc_coconut"
+    ]
+}

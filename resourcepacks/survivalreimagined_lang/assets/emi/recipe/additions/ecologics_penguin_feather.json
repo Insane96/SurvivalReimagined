@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:penguin_feather"
+    ],
+    "text": [
+        "emi.info.ecologics.penguin_feather"
+    ]
+}

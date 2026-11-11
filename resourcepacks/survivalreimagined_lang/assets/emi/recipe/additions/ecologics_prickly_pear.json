@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:prickly_pear",
+        "item:ecologics:cooked_prickly_pear"
+    ],
+    "text": [
+        "emi.info.ecologics.prickly_pear"
+    ]
+}

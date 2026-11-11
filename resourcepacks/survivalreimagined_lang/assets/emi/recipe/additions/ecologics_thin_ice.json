@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:thin_ice"
+    ],
+    "text": [
+        "emi.info.ecologics.thin_ice"
+    ]
+}

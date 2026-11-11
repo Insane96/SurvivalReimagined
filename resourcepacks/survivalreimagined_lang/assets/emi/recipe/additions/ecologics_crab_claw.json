@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:ecologics:crab_claw"
+    ],
+    "text": [
+        "emi.info.ecologics.crab_claw"
+    ]
+}
