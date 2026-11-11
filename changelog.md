@@ -15,7 +15,7 @@
     * Anvil repairs in EMI now respect the max repair (e.g. a Netherite Shovel repaired with a Diamond now shows half a repair instead of a full one)
     * Anvil repairs in EMI now have a tooltip showing how much durability each material repairs, the max repair and how many materials are needed
   * InsaneLib 2.5.3.0 -> 2.5.3.1
-    * Fixed the Rope Arrow and Spectral Arrow (from Glow Goop) Fletching Table recipes missing when first loading a world, until `/reload`
+    * Fixed many recipes missing when first loading a world, until `/reload`
 
 # 4.9.1
 * Removed EMI Loot
