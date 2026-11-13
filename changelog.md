@@ -9,9 +9,10 @@
 * Removed Progressive Bosses' Elder Guardian Spike and Nether Star Shard, along with their Trident and Nether Star recipes: Tridents are already crafted with Trident Fragments, and the shards couldn't be obtained
 * Phantoms no longer pick up and carry players (disabled Bits and Balance's Phantom Pickup)
 * Updated Mods
-  * Bits and Balance 2.5.2 -> 2.5.3
+  * Bits and Balance 2.5.2 -> 2.5.4
   * Collective 8.85 -> 8.86
   * CreativeCore 2.13.53 -> 2.13.54
+  * Every Compat 2.11.57 -> 2.11.58
   * Experience Tweaks 1.1.6.0 -> 1.1.6.1
     * Anvil repairs in EMI now respect the max repair (e.g. a Netherite Shovel repaired with a Diamond now shows half a repair instead of a full one)
     * Anvil repairs in EMI now have a tooltip showing how much durability each material repairs, the max repair and how many materials are needed
@@ -25,6 +26,8 @@
     * Auto breeding now slows down and stops based on the animals of any type nearby, not only of the same type
     * Horse Armors now give back 3 materials when recycled instead of 5, like other items without durability (75% of the material)
     * EMI now shows the actual recycling output of items without durability (e.g. Hoppers, Minecarts, Rails), it showed less than what you actually got
+  * OctoLib 0.6.3 -> 0.6.3.2
+  * Stone Zone 2.11.21 -> 2.11.22
 
 # 4.9.1
 * Removed EMI Loot
