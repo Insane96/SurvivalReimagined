@@ -550,7 +550,7 @@
 		"Force Limited Crafting" = false
 		"Disable Recipe Book" = false
 		#If enabled, advancements granting recipes will be stopped from loading, potentially reducing the lagspike on first world join.
-		"Filter Recipe Advancements" = true
+		"Filter Recipe Advancements" = false
 		#This feature disables itself if any of the following mods are loaded:
 		# - nerb
 		#This is done to prevent content overlap.

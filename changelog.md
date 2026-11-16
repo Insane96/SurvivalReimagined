@@ -1,3 +1,20 @@
+# Upcoming
+* Added Smooth Animations: True Singleplayer
+* Updated Mods
+  * Architectury 13.0.11 -> 13.0.12
+  * Bits and Balance 2.5.4 -> 2.5.7
+  * Collective 8.86 -> 8.87
+  * Ecologics 2.3.10_1 -> 2.3.11
+  * FWA 1.3.4 -> 1.3.7
+    * Improved performance with many animated blocks
+  * Kotlin for Forge 5.12.0 -> 5.13.0
+  * Loot Integrations 4.7 -> 4.9
+  * Snow Under Trees 1.5.1 -> 1.7
+    * Snow now generates under trees with full-block branches
+  * Supplementaries 4.0.2 -> 4.1.2
+    * Added the Redstone Lantern, crafted with a Redstone Torch surrounded by Iron Nuggets
+    * Cannons now have a shooting animation, and players shot out of a Cannon damage the entities they fly through. Pigñatas can be fired from Cannons
+
 # 4.9.2
 * Removed Incubation's Nests: they only worked with Chickens, not with Naturalist's Ducks and Turkeys. They're no longer craftable or generated in the world
 * Disabled Quark's Ender Watcher: Supplementaries' Voidman Head already emits a redstone signal when looked at

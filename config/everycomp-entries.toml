@@ -12,6 +12,9 @@
 		[types.lantern.insanesurvivaloverhaul]
 			echo_lantern = true
 
+		[types.lantern.supplementaries]
+			redstone_lantern = true
+
 		[types.wood_type.bitsandbalance]
 			azalea = true
 
