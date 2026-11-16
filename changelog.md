@@ -1,5 +1,6 @@
 # Upcoming
 * Added Smooth Animations: True Singleplayer
+* Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
 * Updated Mods
   * Architectury 13.0.11 -> 13.0.12
   * Bits and Balance 2.5.4 -> 2.5.7

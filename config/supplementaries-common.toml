@@ -216,7 +216,7 @@
 		cave_urns = true
 
 	[functional.soap]
-		enabled = true
+		enabled = false
 		#Allows soap to clean blocks in-world. Disable to prevent in-world block cleaning while keeping soap item and recipes functional
 		block_cleaning_enabled = true
 		#Dyed Bock/Item types that cannot be cleaned with soap
@@ -553,7 +553,7 @@
 		range_multiplier = 0.25
 
 	[tools.bubble_blower]
-		enabled = true
+		enabled = false
 		#Amount of soap consumed per bubble block placed
 		# Default: 5
 		# Range: 1 ~ 25
