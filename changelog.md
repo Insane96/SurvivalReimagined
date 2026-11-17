@@ -2,6 +2,7 @@
 * Added Heartstone
 * Added Map Atlases
 * Added Smooth Animations: True Singleplayer
+* Added EMI info pages for Sculk Sensors and Calibrated Sculk Sensors, listing the frequency of each vibration
 * Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
 * Updated Mods
   * Architectury 13.0.11 -> 13.0.12

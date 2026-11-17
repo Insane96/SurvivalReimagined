@@ -1,0 +1,13 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:sculk_sensor",
+        "item:minecraft:calibrated_sculk_sensor"
+    ],
+    "text": [
+        "emi.info.minecraft.sculk_sensor.1",
+        "emi.info.minecraft.sculk_sensor.2",
+        "emi.info.minecraft.sculk_sensor.3",
+        "emi.info.minecraft.sculk_sensor.4"
+    ]
+}
