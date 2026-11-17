@@ -8,7 +8,9 @@
   * Bits and Balance 2.5.4 -> 2.5.7
   * Collective 8.86 -> 8.87
   * Ecologics 2.3.10_1 -> 2.3.11
-  * FWA 1.3.4 -> 1.3.7
+  * Every Compat 2.11.58 -> 2.11.59
+    * Fixed missing textures on Storage Drawers' Drawers made from modded woods
+  * FWA 1.3.4 -> 1.3.7-patch.2
     * Improved performance with many animated blocks
   * Kotlin for Forge 5.12.0 -> 5.13.0
   * Loot Integrations 4.7 -> 4.9
