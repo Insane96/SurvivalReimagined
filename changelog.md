@@ -1,5 +1,6 @@
 # Upcoming
 * Added Heartstone
+* Added Map Atlases
 * Added Smooth Animations: True Singleplayer
 * Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
 * Updated Mods
