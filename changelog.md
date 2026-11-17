@@ -19,6 +19,7 @@
     * Cannons now have a shooting animation, and players shot out of a Cannon damage the entities they fly through. Pigñatas can be fired from Cannons
 
 # 4.9.2
+* Removed No Chat Reports, as it was taken down from CurseForge due to [pressure from Mojank/Microslop](https://www.youtube.com/watch?v=Ap1dBjz74tc)
 * Removed Incubation's Nests: they only worked with Chickens, not with Naturalist's Ducks and Turkeys. They're no longer craftable or generated in the world
 * Disabled Quark's Ender Watcher: Supplementaries' Voidman Head already emits a redstone signal when looked at
 * Phantoms no longer pick up and carry players (disabled Bits and Balance's Phantom Pickup)
