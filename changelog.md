@@ -2,6 +2,9 @@
 * Added Heartstone
 * Added Map Atlases
 * Added Smooth Animations: True Singleplayer
+* Added the Torches Reimagined resource pack
+* Vanilla Backport's Backported OST and Naturalist's Custom Spawn Eggs resource packs are now enabled by default
+* Crawling (Personality) is now bound to C by default
 * Added EMI info pages for Sculk Sensors and Calibrated Sculk Sensors, listing the frequency of each vibration
 * Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
 * Updated Mods
