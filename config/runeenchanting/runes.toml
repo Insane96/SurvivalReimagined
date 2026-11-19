@@ -73,8 +73,8 @@
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 1.0
-	#If true, arrows apply Slowness too
-	"Arrow Effects" = false
+	#If true, ranged attacks (arrows and thrown tridents) apply Slowness too
+	"Ranged Effects" = false
 
 [impaling]
 	# Default: 0.7
@@ -96,8 +96,8 @@
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 1.0
-	#If true, arrows freeze too
-	"Arrow Effects" = false
+	#If true, ranged attacks (arrows and thrown tridents) freeze too
+	"Ranged Effects" = false
 
 [smite]
 	# Default: 0.7
@@ -118,8 +118,8 @@
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Arrow Bonus Damage" = 1.0
-	#If true, arrows apply Weakness too
-	"Arrow Effects" = false
+	#If true, ranged attacks (arrows and thrown tridents) apply Weakness too
+	"Ranged Effects" = false
 
 [bane_of_noses]
 	# Default: 0.7
@@ -160,9 +160,9 @@
 	"Seconds Stolen" = 2.0
 
 [explosive]
-	# Default: 0.7
+	# Default: 0.6
 	# Range: 0.1 ~ 1.7976931348623157E308
-	"Explosion Power" = 0.7
+	"Explosion Power" = 0.6
 	"Destroy Blocks" = true
 	# Default: 3.0
 	# Range: 0.05 ~ 1.7976931348623157E308
@@ -449,11 +449,6 @@
 	# Range: 0.0 ~ 1.0
 	"Chance To Hurt" = 0.1
 
-[curse_of_inefficiency]
-	# Default: 0.5
-	# Range: 0.0 ~ 1.0
-	"Mining Speed Reduction" = 0.5
-
 [curse_of_short_arm]
 	# Default: 0.25
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
@@ -463,11 +458,6 @@
 	# Default: 0.1
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Speed Reduction" = 0.1
-
-[curse_of_slow_strike]
-	# Default: 0.2
-	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	"Attack Speed Reduction" = 0.2
 
 [curse_of_fragility]
 	# Default: 0.5
@@ -528,9 +518,9 @@
 	"Strike Odds" = 1000
 
 [curse_of_explosion]
-	# Default: 0.5
+	# Default: 0.6
 	# Range: 0.1 ~ 1.7976931348623157E308
-	"Explosion Power" = 0.5
+	"Explosion Power" = 0.6
 	"Destroy Blocks" = false
 	# Default: 3.0
 	# Range: 0.05 ~ 1.7976931348623157E308
@@ -583,6 +573,10 @@
 	# Default: 1.0
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Glow Duration" = 1.0
+	#Chance for the glowing effect to be applied
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	Chance = 0.2
 
 [lapis_fueled]
 	#Chance to not consume durability
@@ -666,3 +660,107 @@
 	# Default: 0.25
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Max Attack Speed Bonus" = 0.25
+
+[life_steal]
+	#Percentage of the damage dealt (after armor and resistances, capped to the target's remaining health) healed
+	# Default: 0.05
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Heal Percentage" = 0.05
+
+[true_damage]
+	#Percentage of the damage dealt (before armor, protection and resistance) added as damage that ignores them
+	# Default: 0.15
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Bonus Percentage" = 0.15
+
+[executioner]
+	#Chance to execute an enemy at 0% health when dealing 'Base damage'. Scales linearly with the target's missing health (after the hit) and with the damage dealt
+	# Default: 0.04
+	# Range: 0.0 ~ 1.0
+	"Base Chance" = 0.04
+	#Same as 'Base chance' but for entities in the runeenchanting:executioner/resistant entity type tag
+	# Default: 0.004
+	# Range: 0.0 ~ 1.0
+	"Resistant Chance" = 0.004
+	#Damage (before armor, protection and resistance) at which the chance is 'Base chance'. More damage increases the chance, less damage decreases it
+	# Default: 10.0
+	# Range: 0.1 ~ 1.7976931348623157E308
+	"Base Damage" = 10.0
+	#Maximum chance to execute an enemy
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	"Max Chance" = 0.15
+	#Multiplier of the chance for ranged attacks (arrows and thrown tridents)
+	# Default: 0.5
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Ranged Multiplier" = 0.5
+	#Enemies in this radius around an executed entity are terrified (Weakness and Slowness). 0 disables the terror
+	# Default: 6.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Terror Radius" = 6.0
+	#In seconds
+	# Default: 3.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Terror Duration" = 3.0
+	# Default: 0
+	# Range: 0 ~ 255
+	"Terror Weakness Amplifier" = 0
+	# Default: 0
+	# Range: 0 ~ 255
+	"Terror Slowness Amplifier" = 0
+
+[weak_spot]
+	#Percentage bonus damage dealt to targets at full health. Scales linearly with the target's current health percentage (before the hit, absorption excluded)
+	# Default: 0.7
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Bonus Damage" = 0.7
+	#Percentage bonus damage dealt by arrows shot with bows and crossbows to targets at full health
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Arrow Bonus Damage" = 1.0
+
+[shatterburst]
+	#Arrows the original arrow shatters into
+	# Default: 5
+	# Range: > 1
+	"Shard Count" = 5
+	#Base damage of the shards, relative to the original arrow's base damage
+	# Default: 0.5
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Shard Damage Multiplier" = 0.5
+	#Speed of the shards (a fully charged bow shoots arrows at 3)
+	# Default: 1.5
+	# Range: 0.1 ~ 1.7976931348623157E308
+	"Shard Speed" = 1.5
+
+[sprinty]
+	#Movement speed bonus while sprinting (not while swimming), applied multiplicatively on top of the sprint speed
+	# Default: 0.2
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Bonus Sprint Speed" = 0.2
+	#Extra hunger exhaustion while sprinting, as a percentage of the vanilla sprint exhaustion. Not applied if Stamina is installed
+	# Default: 0.5
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Extra Exhaustion" = 0.5
+	#Extra stamina consumed while sprinting, as a percentage of the normal consumption. Only applied if Stamina is installed
+	# Default: 0.3
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Extra Stamina Consumption" = 0.3
+
+[puller]
+	#Multiplier to the strength hooked entities are pulled with
+	# Default: 1.5
+	# Range: 1.0 ~ 1.7976931348623157E308
+	"Pull Strength Multiplier" = 1.5
+	#Durability consumed when pulling hooked entities and items (vanilla: 5 for entities, 3 for items)
+	# Default: 1
+	# Range: > 0
+	"Durability Cost" = 1
+
+[curse_of_slow_swing]
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	"Mining Speed Reduction" = 0.5
+	# Default: 0.2
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Attack Speed Reduction" = 0.2

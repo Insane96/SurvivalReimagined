@@ -19,6 +19,14 @@
   * JEI 19.70.0.469 -> 19.71.0.470
   * Kotlin for Forge 5.12.0 -> 5.13.0
   * Loot Integrations 4.7 -> 4.9
+  * RuneEnchanting 1.4.5.0 -> 1.5.0.0-beta
+    * Added the Runic Table (2 Diamonds and 4 Obsidian): stores an unlimited amount of runes, shared by every player, and applies or removes them from items without ever overloading them
+    * Added new runes: Sprinty (leggings, faster sprinting but more stamina used), Life Steal, True Damage, Executioner and Weak Spot (weapons, bows and crossbows), Sniper and Shatterburst (bows and crossbows), Puller (fishing rods) and Exchange (tools, replaces broken blocks with the block in the off-hand)
+    * Curse of Inefficiency and Curse of Slow Strike have been merged into Curse of Slow Swing (-50% mining speed, -20% attack speed), which can be applied to both weapons and tools. Existing runes are converted
+    * Curse of Short Arm and Curse of Explosion can now be applied to mining tools and shears. Curse of Explosion also triggers when breaking blocks
+    * Explosive and Curse of Explosion now show fuse particles and a sound on marked entities, and both have 0.6 explosion power
+    * Thrown Tridents now count as ranged attacks for rune effects, and charge Electrocution
+    * Vibration Detection now has only a chance to apply Glowing, and now works on players
   * Snow Under Trees 1.5.1 -> 1.7
     * Snow now generates under trees with full-block branches
   * Stamina 2.1.0.0 -> 2.1.0.1
