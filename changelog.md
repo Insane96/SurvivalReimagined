@@ -9,6 +9,7 @@
 * Player now steps 1.1 blocks instead of 0.6
   * With this, Step Up rune now increases step height to 2.1
 * Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
+* Disabled the Soulbound rune
 * Updated Mods
   * Architectury 13.0.11 -> 13.0.12
   * Bits and Balance 2.5.4 -> 2.5.7
