@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:quark:crate"
+    ],
+    "text": [
+        "emi.info.quark.crate"
+    ]
+}

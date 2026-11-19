@@ -1883,12 +1883,12 @@
 		"Reroll Even If Not Out Of Stock" = false
 
 [oddities]
-	Backpack = true
+	Backpack = false
 	Crate = true
 	Magnets = true
 	"Matrix Enchanting" = false
 	Pipes = true
-	"Tiny Potato" = true
+	"Tiny Potato" = false
 	"Totem Of Holding" = true
 
 	[oddities.backpack]
@@ -1901,7 +1901,7 @@
 		"Allow Armor Stand Unloading" = true
 
 	[oddities.crate]
-		"Max Items" = 640
+		"Max Items" = 1280
 
 	[oddities.magnets]
 		#Any items you place in this list will be derived so that any block made of it will become magnetizable
@@ -1988,7 +1988,7 @@
 
 	[oddities.pipes]
 		#How long it takes for an item to cross a pipe. Bigger = slower.
-		"Pipe Speed" = 5
+		"Pipe Speed" = 10
 		#Set to 0 if you don't want pipes to have a max amount of items
 		"Max Pipe Items" = 16
 		#When items eject or are absorbed by pipes, should they make sounds?
@@ -2008,7 +2008,7 @@
 
 	[oddities.totem_of_holding]
 		#Set this to false to remove the behaviour where totems destroy themselves if the player dies again.
-		"Dark Souls Mode" = true
+		"Dark Souls Mode" = false
 		#Totem will always spawn if the player killer is themselves.
 		"Spawn Totem on PVP Kill" = false
 		#Set this to true to make it so that if a totem is destroyed, the items it holds are destroyed alongside it rather than dropped

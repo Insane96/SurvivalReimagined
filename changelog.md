@@ -1,6 +1,10 @@
 # Upcoming
+* Removed Gravestone
+  * **Warning**: existing graves will disappear along with the items inside them. Recover your items from any grave before updating
 * Added Heartstone
 * Added Map Atlases
+* Added Quark Oddities
+  * Adds Crates, Magnets, Pipes and the Totem of Holding (replacing Gravestone)
 * Added Smooth Animations: True Singleplayer
 * Added the Torches Reimagined resource pack
 * Vanilla Backport's Backported OST and Naturalist's Custom Spawn Eggs resource packs are now enabled by default

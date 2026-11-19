@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:quark:magnet"
+    ],
+    "text": [
+        "emi.info.quark.magnet.1",
+        "emi.info.quark.magnet.2"
+    ]
+}

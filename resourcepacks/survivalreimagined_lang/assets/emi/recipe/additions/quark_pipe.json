@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:quark:pipe",
+        "item:quark:encased_pipe"
+    ],
+    "text": [
+        "emi.info.quark.pipe.1",
+        "emi.info.quark.pipe.2"
+    ]
+}
