@@ -764,3 +764,8 @@
 	# Default: 0.2
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Attack Speed Reduction" = 0.2
+
+[step_up]
+	# Default: 0.6
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Bonus Step Height" = 1

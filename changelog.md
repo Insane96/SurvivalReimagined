@@ -6,6 +6,8 @@
 * Vanilla Backport's Backported OST and Naturalist's Custom Spawn Eggs resource packs are now enabled by default
 * Crawling (Personality) is now bound to C by default
 * Added EMI info pages for Sculk Sensors and Calibrated Sculk Sensors, listing the frequency of each vibration
+* Player now steps 1.1 blocks instead of 0.6
+  * With this, Step Up rune now increases step height to 2.1
 * Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
 * Updated Mods
   * Architectury 13.0.11 -> 13.0.12
@@ -19,7 +21,7 @@
   * JEI 19.70.0.469 -> 19.71.0.470
   * Kotlin for Forge 5.12.0 -> 5.13.0
   * Loot Integrations 4.7 -> 4.9
-  * RuneEnchanting 1.4.5.0 -> 1.5.0.0-beta
+  * RuneEnchanting 1.4.5.0 -> 1.5.1.0-beta
     * Added the Runic Table (2 Diamonds and 4 Obsidian): stores an unlimited amount of runes, shared by every player, and applies or removes them from items without ever overloading them
     * Added new runes: Sprinty (leggings, faster sprinting but more stamina used), Life Steal, True Damage, Executioner and Weak Spot (weapons, bows and crossbows), Sniper and Shatterburst (bows and crossbows), Puller (fishing rods) and Exchange (tools, replaces broken blocks with the block in the off-hand)
     * Curse of Inefficiency and Curse of Slow Strike have been merged into Curse of Slow Swing (-50% mining speed, -20% attack speed), which can be applied to both weapons and tools. Existing runes are converted
