@@ -673,9 +673,6 @@
 	[tools.antique_ink]
 		enabled = true
 
-	[tools.orichalcum]
-		enabled = true
-
 	[tools.enchantments]
 		#Slingshot projectiles ignore gravity
 		stasis = true

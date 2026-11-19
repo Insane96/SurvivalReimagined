@@ -16,11 +16,14 @@
     * Fixed missing textures on Storage Drawers' Drawers made from modded woods
   * FWA 1.3.4 -> 1.3.7-patch.2
     * Improved performance with many animated blocks
+  * JEI 19.70.0.469 -> 19.71.0.470
   * Kotlin for Forge 5.12.0 -> 5.13.0
   * Loot Integrations 4.7 -> 4.9
   * Snow Under Trees 1.5.1 -> 1.7
     * Snow now generates under trees with full-block branches
-  * Supplementaries 4.0.2 -> 4.1.2
+  * Stamina 2.1.0.0 -> 2.1.0.1
+    * Fixed the stamina overlay sometimes covering half a heart more than the current health
+  * Supplementaries 4.0.2 -> 4.1.3
     * Added the Redstone Lantern, crafted with a Redstone Torch surrounded by Iron Nuggets
     * Cannons now have a shooting animation, and players shot out of a Cannon damage the entities they fly through. Pigñatas can be fired from Cannons
 
