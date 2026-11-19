@@ -1,0 +1,7 @@
+{
+  "molding": "json",
+  "remolder": {
+    "type": "noop"
+  },
+  "selector": "minecraft:worldgen/template_pool/village/desert/houses"
+}

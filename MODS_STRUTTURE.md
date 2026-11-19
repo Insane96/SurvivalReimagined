@@ -65,7 +65,7 @@ Controllando tutti gli 83 file `structure_set` del pack, oltre al conflitto sopr
 
 - **`desert_pyramids` / `desert_ruins`** (salt 239021) e **`jungle_temples` / `jungle_ruins`** (salt 239021, identico anche tra deserto e giungla) — è il meccanismo voluto delle mod DnT: la struttura vanilla viene svuotata con uno "start_pool" speciale (`nova_structures:vanilla_structure_remover`) esattamente sulla stessa griglia dove genera la struttura sostitutiva, cosicché la vecchia venga "rimossa" e la nuova prenda il suo posto nello stesso punto. Nessun conflitto reale.
 - **`ocean_monuments` / `trident_trial_monument`** (salt 69846574) — stesso meccanismo di sostituzione pulita.
-- **`villages` (versione modificata da ISO) / `woodland_mansions` / `illager_manor`** (salt 10387319) — la versione di `villages` inclusa nel pacchetto integrato `disable_long_noses` di InsaneSurvivalOverhaul (per `"Disable long noses structures" = true`, vedi `CLAUDE.md`) ha `"structures": []` (lista vuota): non genera letteralmente nulla, quindi condividere il salt con le Magioni non causa nessuna competizione per lo spazio.
+- **`woodland_mansions` / `illager_manor`** (salt 10387319) — i villaggi non c'entrano: quelli dell'overhaul di ISO (5.16.0.0) usano il salt vanilla 10387312 (spacing 80, separation 50).
 
 ---
 
@@ -156,10 +156,10 @@ Nota: il filtro di ibo colpisce solo il namespace `incendium`, quindi la ridefin
 ### ✅ FIX APPLICATO — loot troppo forte
 L'unica loot table (`immersive_gateways:chests/default`, 4-8 estrazioni) aveva il 34% di possibilità **per estrazione** di un pezzo di equipaggiamento dorato incantato (9 voci su ~25) — ~92% delle casse ne davano almeno uno, in media ~2. Generano con spacing 32/separation 8 (densità da villaggio). Sostituita in `datapacks/survivalreimagined/data/immersive_gateways/loot_table/chests/default.json` con una copia di `philipsruins:chest/level_one_ruins_loot` (già riequilibrata) — niente più oro incantato, oggetti coerenti con una struttura di superficie comune.
 
-### Incubation — 🟢 attiva, nessun config dedicato, ma **di fatto morta**
+### Incubation — 🟢 attiva, pollai disattivati
 `incubation-1.21.1-5.0.2.jar`. Pollaio ("chicken coop") aggiunto ai pool dei **villaggi** vanilla (desert/plains/savanna/snowy/taiga). ☀️ Superficie, **Overworld**.
 
-⚠️ **Irrilevante in questo pack**, stesso motivo di Sawmill (vedi sopra): `minecraft:villages` è svuotato (`"structures": []`) dal pacchetto integrato `disable_long_noses` di InsaneSurvivalOverhaul, quindi il pollaio non ha villaggi a cui agganciarsi.
+**Disattivati:** il pollaio viene aggiunto (via remolder di Blueprint, `data/incubation/remolders/`) anche ai pool `village/<bioma>/zombie/houses`, gli unici usati dai villaggi abbandonati dell'overhaul di ISO. Porterebbe galline e Hay Nest (rimossi dal pack) in villaggi che non devono avere animali: i 10 remolder sono sovrascritti con `"type": "noop"` in `datapacks/survivalreimagined/data/incubation/remolders/`.
 
 ### InsaneSurvivalOverhaul — 🔴 **DISATTIVATA**
 `insanesurvivaloverhaul-5.7.1.0.jar`. **Echo Pillar**: ☀️ Superficie (genera a `y=0` proiettata sull'ocean floor), **Overworld**. In `config/insanesurvivaloverhaul/common.toml`:
@@ -171,10 +171,10 @@ L'unica loot table (`immersive_gateways:chests/default`, 4-8 estrazioni) aveva i
 ```
 **La struttura non genera attualmente nel pack**, nonostante il sotto-toggle del datapack sia `true`.
 
-### Sawmill — 🟢 attivo, nessun config di worldgen, ma **di fatto morto**
+### Sawmill — 🟢 attivo, casa del falegname disattivata
 `sawmill-1.21-1.8.0-neoforge.jar`. Casa del falegname aggiunta ai pool dei **villaggi** vanilla (13 varianti di bioma). ☀️ Superficie, **Overworld**. Config (`sawmill-common.toml`) ha solo `repurposed_structures_compat = true`, nessun on/off per la struttura stessa.
 
-⚠️ **Irrilevante in questo pack:** `minecraft:villages` (e `pillager_outposts`) vengono svuotati con `"structures": []` dal pacchetto integrato `disable_long_noses` di InsaneSurvivalOverhaul (`"Disable long noses structures" = true`, vedi `CLAUDE.md`) — i villaggi non generano mai, quindi la casa del falegname non ha dove agganciarsi. Non vale la pena analizzare/sistemare altro su Sawmill per questo motivo.
+**Disattivata:** la casa del falegname viene aggiunta anche ai pool `zombie/houses` e contiene la Sawmill (job site del Carpenter) e una cassa con loot, mentre i villaggi abbandonati di ISO non hanno job site. `carpenter_house_spawn_rate = 0` in `config/sawmill-common.toml`. Il Carpenter resta ottenibile (villager curati vicino a una Sawmill) e ha scambi in stile ISO (vedi `CLAUDE.md`).
 
 ### Supplementaries — 🔴 **ENTRAMBE DISATTIVATE**
 `supplementaries-1.21.1-3.8.8-neoforge.jar`.
@@ -227,7 +227,7 @@ Non toccate: le 6 loot table mancanti (casse vuote in Bone/Sculk Dungeon, Nether
 
 Controllato ogni `structure_set` vanilla ridefinito da una mod (non solo quelli che c'entrano con le mod strutturali già elencate sopra), cercando in particolare `"structures": []` (liste vuote = struttura disattivata).
 
-- **Villaggi e Avamposti Pillager: disattivati.** Il pacchetto integrato `disable_long_noses` di InsaneSurvivalOverhaul (`"Disable long noses structures" = true`) svuota `minecraft:villages` e `minecraft:pillager_outposts` con `"structures": []` — non generano mai (già documentato sopra per Sawmill/Incubation).
+- **Villaggi e Avamposti Pillager: modificati da ISO.** Dalla 5.16.0.0 il pacchetto integrato `villagers_overhaul` sostituisce `disable_long_noses`: villaggi abbandonati (solo zombie villager, spacing 80/separation 50) e avamposti con una guarnigione unica, senza respawn di pillager.
 - **Nessun'altra struttura vanilla è disattivata.** Controllato specificamente in `insanesurvivaloverhaul` per buried treasure, ruined portal, trail ruins, trial chambers, nether fossil, bastion, igloo, ocean ruins, pozzo del deserto: nessun toggle, nessuna menzione.
 - **Città di Fine (End City): AUMENTATE, non ridotte.** Altro pacchetto integrato di ISO, `increased_end_cities` (`"Increase end cities" = true`, attivo): spacing passa da 20/11 (vanilla) a 11/7 — città di fine molto più dense.
 - **Correzione: `ibo-3.1.0-neoforge-1.21.jar` ("Incendium Biomes Only") È attiva.** Avevo controllato nel posto sbagliato (cartella `resourcepacks/` sul disco e lista `resourcePacks` di `options.txt`) — ma il filtro di ibo agisce sul lato **dati** (strutture/loot/structure_set), non sugli asset, quindi va cercato tra le datapack attive, non tra i resource pack visivi. La mod (di Naomi Roberts, dipendenza obbligatoria su Incendium) si registra ed è sempre attiva finché è installata, senza bisogno di estrarla a mano. Effetto reale: **le 9 strutture giganti di Incendium sono disattivate**, restano solo i suoi biomi Nether — vedi sezione Incendium sopra, corretta di conseguenza.
@@ -265,12 +265,12 @@ File in `datapacks/survivalreimagined/data/neoforge/loot_modifiers/`, `data/surv
 
 **Ripulito dal datapack** (override esclusivi della mod completa, ormai inutili senza di essa): `villages_birch/jungle/swamp`, `illager_camp`, `taverns`, `swamp_structure` (Witch Villa), `badlands_miner_outpost`, `illager_hideout`, `remnants`, `stray_fort_fortress`, `lone_citadel` (mob+frame).
 
-### 🔴 Magione (Woodland Mansion) — DISATTIVATA DEL TUTTO
+### 🟢 Magione (Woodland Mansion) — riattivata (vanilla)
 Senza nessuna mod di sostituzione, la Magione è tornata 100% vanilla — e la generazione vanilla di vindicator/evoker/witch **non è editabile via datapack**: ho estratto e controllato tutti i 73 pezzi `.nbt` vanilla dal jar di Minecraft, zero mob incorporati nei pezzi (a differenza di DnT). La popolazione mob della Magione vanilla è **scritta direttamente nel codice Java** di Minecraft (una delle poche strutture ancora non completamente data-driven), quindi non c'è alcun file datapack modificabile per toglierli.
 
 Scelta presa: **disattivata del tutto** (`data/minecraft/worldgen/structure_set/woodland_mansions.json` con `"structures": []`), coerente col principio "niente gente dal naso lungo". Ripuliti di conseguenza anche: i pool `illager_mansion` (ormai orfani, nessuna mod li usa più), le loot table `illager_mansion/map_chest.json`/`secret_room.json`/`library_chest.json` (mai più generate), e la mappa della Magione nei relitti (`shipwreck_maps.json`, ora punterebbe a una struttura disattivata) — resta solo la mappa del Monumento Oceanico lì.
 
-Se in futuro reinstalli una mod di sostituzione (es. di nuovo `DnT-woodland-mansion-replacement`), la Magione torna riattivabile e ri-editabile via datapack come prima.
+**Riattivata con l'overhaul dei villager di ISO** (5.16.0.0): gli illager fanno di nuovo parte del design (fonte finita di smeraldi e totem). `woodland_mansions.json` ora contiene la voce vanilla `minecraft:mansion`. Le loot table e la mappa nei relitti rimosse allora non sono state ripristinate: la Magione usa le loot table vanilla. Resta da valutare una mod che rinnovi le Magioni (report di ISO `report_villagers_modpack.md` §6).
 
 ---
 

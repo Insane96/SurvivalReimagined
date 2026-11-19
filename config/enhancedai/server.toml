@@ -23,6 +23,8 @@
 	"Enable Animals panic" = true
 	#Makes animals not tempted by food. Use the entity type tag enhancedai:animal/can_ignore_food_temptation to change animals. Please note that re-adding the tempt goal to the mob can't be done at runtime by updating the data with the /enhancedai command.
 	"Enable Not tempted animals" = true
+	#Makes bees less prone to wander away from their hive and get lost.
+	"Enable Bee hive navigation" = true
 
 	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:animal/scared_attack/can_be_neutral, enhancedai:animal/scared_attack/can_be_hostile, and enhancedai:animal/scared_attack/can_be_scared_by_players to add/remove animals.
 	[Animals."Animal scared attack"]
@@ -82,6 +84,17 @@
 		# Default: 0.5
 		# Range: 0.0 ~ 1.0
 		"Not tempted chance" = 0.5
+
+	#Makes bees less prone to wander away from their hive and get lost.
+	[Animals."Bee hive navigation"]
+		#When wandering, bees farther than this distance from their hive will wander towards it. Vanilla is 22. Lower values keep bees closer to their hive. Should be lower than 'Hive Forget Distance'.
+		# Default: 12
+		# Range: 1 ~ 64
+		"Wander home distance" = 12
+		#Bees farther than this distance from their hive forget about it. Vanilla is 32. Bees also forget about their hive if its chunk is not loaded. Higher values might load more chunks.
+		# Default: 48
+		# Range: 16 ~ 64
+		"Hive forget distance" = 48
 
 [Blazes]
 	#Make blazes fire faster/more fireballs. Only mobs in enhancedai:blaze_attack/change_attack entity type tag are affected by this feature.
@@ -600,6 +613,10 @@
 		# Default: 1.0
 		# Range: 0.0 ~ 1.0
 		"Ladder climb chance" = 1.0
+		#Horizontal radius in which mobs look for a ladder or similar block to reach a target that's higher up and can't be reached.
+		# Default: 8
+		# Range: 1 ~ 16
+		"Climbable search radius" = 8
 
 	#Mobs will jump off the ground to emit a shockwave when falling damaging nearby entities. Only entity types in enhancedai:mobs/shockwave/can_use tag are affected by this feature and entity types in the enhancedai:mobs/shockwave/damage_invulnerable tag will not be damaged by the shockwave.
 	[Mobs."Falling shockwave"]
@@ -1263,6 +1280,10 @@
 	"Enable Villager alert protectors" = true
 	#Make villagers fight back. Use the enhancedai:villager/can_attack type tag to add more villagers, only works with entities that extend vanilla Villagers. Attack damage can't be changed via config due to limitation so use mods like Mobs Properties Randomness to change the damage. Base damage is 4.
 	"Enable Villager attacking" = true
+	#Wounded villagers eat food from their inventory to heal when they are not in danger. Use the enhancedai:villager/eats_to_heal entity type tag to add more villagers, only works with entities that extend vanilla Villagers. Use the enhancedai:villager/healing_food item tag to change the food they can eat.
+	"Enable Villager eat to heal" = true
+	#Smiths walk to nearby damaged iron golems and repair them when no enemy is around, and badly damaged golems walk to the closest smith. Use the enhancedai:can_repair_golems villager profession tag to change which professions repair, the enhancedai:villager/can_repair_golems entity type tag to add more villagers (only works with entities that extend vanilla Villagers) and the enhancedai:villager/repairable_golems entity type tag to add more golems.
+	"Enable Villager golem repair" = true
 
 	#Villagers will alert Iron Golems and Village Guards when panicking
 	[Villagers."Villager alert protectors"]
@@ -1282,6 +1303,70 @@
 		# Default: 0.4
 		# Range: 0.0 ~ 4.0
 		"Speed multiplier" = 0.4
+
+	#Wounded villagers eat food from their inventory to heal when they are not in danger. Use the enhancedai:villager/eats_to_heal entity type tag to add more villagers, only works with entities that extend vanilla Villagers. Use the enhancedai:villager/healing_food item tag to change the food they can eat.
+	[Villagers."Villager eat to heal"]
+		#Villagers eat only when their health is below this percentage of max health
+		# Default: 0.75
+		# Range: 0.0 ~ 1.0
+		"Health threshold" = 0.75
+		#Health healed by a meal is the food's nutrition multiplied by this value
+		# Default: 1.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Heal multiplier" = 1.0
+		#Ticks between two meals of the same villager
+		# Default: 600
+		# Range: > 0
+		"Meal cooldown" = 600
+		#Villagers won't eat if that would bring the food points in their inventory below this value. Food points are what villagers use to breed (bread is worth 4, carrots, potatoes and beetroots 1).
+		# Default: 0
+		# Range: > 0
+		"Min food points to keep" = 0
+
+	#Smiths walk to nearby damaged iron golems and repair them when no enemy is around, and badly damaged golems walk to the closest smith. Use the enhancedai:can_repair_golems villager profession tag to change which professions repair, the enhancedai:villager/can_repair_golems entity type tag to add more villagers (only works with entities that extend vanilla Villagers) and the enhancedai:villager/repairable_golems entity type tag to add more golems.
+	[Villagers."Villager golem repair"]
+		#Golems are repaired only when their health is below this percentage of max health
+		# Default: 0.75
+		# Range: 0.0 ~ 1.0
+		"Health threshold" = 0.75
+		#Health restored by a repair
+		# Default: 25.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Repair amount" = 25.0
+		#Ticks between two repairs of the same villager
+		# Default: 40
+		# Range: > 0
+		"Repair cooldown" = 40
+		#How many blocks away villagers look for golems to repair. Can't go over 16, the range at which villagers see other entities.
+		# Default: 16
+		# Range: 1 ~ 16
+		"Repair radius" = 16
+		#Golems are not repaired if an enemy is within this many blocks of the villager or of the golem, even if not visible. Can't go over 13, otherwise enemies near the golem would be out of the villager's sensing range when it's repairing.
+		# Default: 10
+		# Range: 0 ~ 13
+		"Enemy check radius" = 10
+		#Villagers repair golems only while doing one of these activities. Adding activities like panic or rest makes them repair in situations this feature is meant to exclude.
+		"Repair activities" = ["minecraft:work", "minecraft:idle", "minecraft:meet"]
+		#If true, golems built by players are repaired too
+		"Repair player created golems" = true
+		#If true, badly damaged golems that aren't fighting walk to the closest villager able to repair them and wait there
+		"Golems seek repair" = true
+		#Golems look for a villager to repair them only when their health is below this percentage of max health
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		"Seek health threshold" = 0.5
+		#How many blocks away golems look for a villager able to repair them
+		# Default: 24
+		# Range: > 1
+		"Seek radius" = 24
+		#Movement speed multiplier of golems walking to a villager
+		# Default: 0.8
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Seek speed" = 0.8
+		#Ticks a golem waits before looking for a villager again after giving up
+		# Default: 600
+		# Range: > 0
+		"Seek retry cooldown" = 600
 
 [Warden]
 	#Change the distance at which the darkness effect is applied.

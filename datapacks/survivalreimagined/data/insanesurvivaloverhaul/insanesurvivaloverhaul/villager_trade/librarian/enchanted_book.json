@@ -1,0 +1,19 @@
+{
+  "given_item_modifiers": [
+    {
+      "function": "runeenchanting:set_random_rune",
+      "allow_curses": false
+    }
+  ],
+  "gives": {
+    "count": 1,
+    "id": "runeenchanting:rune"
+  },
+  "max_uses": 1,
+  "reputation_discount": 0.2,
+  "wants": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  },
+  "xp": 5
+}

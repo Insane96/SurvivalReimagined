@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survivalreimagined:leatherworker/poplar_log",
+    "survivalreimagined:leatherworker/maple_log",
+    "survivalreimagined:leatherworker/walnut_log",
+    "survivalreimagined:leatherworker/azalea_log"
+  ]
+}

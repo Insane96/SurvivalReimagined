@@ -16,6 +16,8 @@
 	"Enable Misc mobs" = true
 	#Data packs of Spawning.
 	"Enable Spawning" = true
+	#Data pack of the villagers overhaul. The Villagers feature does nothing when the data pack is disabled.
+	"Enable Villagers" = true
 
 	#Data and resource packs for mobs loot.
 	[Mobs."Misc mobs"]
@@ -28,6 +30,11 @@
 	[Mobs.Spawning]
 		#Enables a data pack that makes Guardians spawn in deep oceans. These guardians have much less health compared to monument guardians and are smaller.
 		"Guardians in deep oceans" = true
+
+	#Data pack of the villagers overhaul. The Villagers feature does nothing when the data pack is disabled.
+	[Mobs.Villagers]
+		#Enables the villagers overhaul data pack: abandoned villages, outposts and mansions, emerald ore, emeralds from pillagers and fishing, villager and wandering trader trades, Hero of the Village gifts. When disabled, the Villagers feature does nothing too.
+		"Villagers overhaul" = true
 
 [Sleep]
 	#Adds Cloth and enables a Data Pack that integrates it:
@@ -268,8 +275,6 @@
 	[Misc.Packs]
 		#If true, no integrated data pack will be loaded
 		"Disable all data packs" = false
-		#If true a data pack will be enabled that disables villages, pillagers outpost and mansions generation.
-		"Disable long noses structures" = true
 		#If true a data pack will be enabled that makes furnaces require copper. Copper ingots can be obtained from raw copper on campfires.
 		"Copper furnace" = true
 		#Changes vanilla torch recipes.

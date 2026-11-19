@@ -6,5 +6,10 @@
     "spacing": 80,
     "spread_type": "triangular"
   },
-  "structures": []
+  "structures": [
+    {
+      "structure": "minecraft:mansion",
+      "weight": 1
+    }
+  ]
 }

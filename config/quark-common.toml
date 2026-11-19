@@ -542,7 +542,7 @@
 	"Utility Recipes" = true
 	"Vexes Die With Their Masters" = true
 	"Villagers Follow Emeralds" = true
-	"Zombie Villagers On Normal" = true
+	"Zombie Villagers On Normal" = false
 
 	[tweaks.automatic_recipe_unlock]
 		#A list of recipe names that should NOT be added in by default
@@ -1194,7 +1194,7 @@
 		"Enable Jasper" = true
 		"Enable Shale" = true
 		"Enable Myalite" = true
-		"Add New Stones To Mason Trades" = true
+		"Add New Stones To Mason Trades" = false
 
 			[world.new_stone_types.limestone.dimensions]
 				"Is Blacklist" = false
@@ -1364,7 +1364,7 @@
 		#Whether Resilience should be required for 'How Did We Get Here?' and (if brewing is enabled) 'A Furious Cocktail'.
 		#Keep this on when brewing is disabled if your pack adds an alternative source for the effect.
 		"Resilience Required For All Effects" = true
-		"Add Crab Leg To Fisherman Trades" = true
+		"Add Crab Leg To Fisherman Trades" = false
 
 		[mobs.crabs.spawn_config]
 			#Allowed values: (0,)

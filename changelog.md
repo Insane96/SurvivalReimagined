@@ -14,16 +14,42 @@
   * With this, Step Up rune now increases step height to 2.1
 * Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
 * Disabled the Soulbound rune
+* Villagers are back, with Insane's Survival Overhaul's villagers overhaul: they can only be obtained by curing zombie villagers, found in abandoned villages
+  * Villages, Pillager Outposts and Woodland Mansions generate again. Villages are abandoned and only have zombie villagers, outposts no longer respawn pillagers
+  * Patrols, Raids and the Wandering Trader are back
+  * Emeralds are back: emerald ore generates rarely, pillagers drop them, they can be fished and advancements give them. Emeralds in loot no longer become Runes
+  * The Librarian sells random Runes instead of Enchanted Books
+  * The Weaponsmith sells Shields+'s Copper, Iron, Golden and Diamond Shields instead of the vanilla Shield
+  * Villagers also sell blocks, wood and food from the pack's mods: Quark's stones (Mason), modded logs (Leatherworker), Naturalist's meats (Butcher), Duck and colored Eggs (Farmer)
+  * Sawmill's Carpenter and Supplementaries' Red Merchant now follow the same trading rules as other villagers: everything costs 1 Emerald, plus part of the iron for Bombs, Cannons and Cannonballs, and is sold few times
+  * Tropical Stew and Maple Cream Pie can be asked by villagers as Local Flavours
+  * Sawmill's Carpenter houses and Incubation's Chicken Coops no longer generate in villages
+* On death, worn armor, the offhand and hotbar items with durability are kept, losing 15% durability. Everything else goes into the Totem of Holding. Items with Curse of Vanishing are still destroyed
 * Updated Mods
   * Architectury 13.0.11 -> 13.0.12
   * Bits and Balance 2.5.4 -> 2.5.7
   * Collective 8.86 -> 8.87
   * Ecologics 2.3.10_1 -> 2.3.11
+  * Enhanced AI 4.2.7.2 -> 4.3.1.0
+    * Smiths repair nearby damaged Iron Golems, and badly damaged golems walk to them to be repaired
+    * Wounded villagers eat food from their inventory to heal
+    * Mobs now walk to a nearby ladder to reach a target higher up, climb at the player's speed and can attack while climbing. Miners no longer break the ladders they climb
+    * Bees no longer wander far from their hive and get lost
+    * Angry Creepers have 50% knockback resistance
   * Every Compat 2.11.58 -> 2.11.59
     * Fixed missing textures on Storage Drawers' Drawers made from modded woods
   * FWA 1.3.4 -> 1.3.7-patch.2
     * Improved performance with many animated blocks
   * JEI 19.70.0.469 -> 19.71.0.470
+  * InsaneSurvivalOverhaul 5.15.2.0 -> 5.16.0.0-beta
+    * Added the villagers overhaul (see above): villagers can no longer breed and are cured with a Golden Carrot instead of a Golden Apple, cured villagers rest for a day before working (Convalescence), prices never go below the base price, villagers only sell and keep their job once they take one
+    * The Wandering Trader buys 2 items, then sells plants and blocks from other biomes and maps to surface structures
+    * Hero of the Village makes villagers gift items they sell, based on the effect level
+    * Lingering Potions now stack up to 4
+    * Spider Eyes no longer have reduced stack size
+    * Piglins barter 1~2 Ender Pearls instead of 2~4
+    * Fixed Looting being able to lower mob drops: it now gives +1 drop with a 33.3% chance per level (Ender Pearls 20%)
+    * Golden tools and weapons deal less damage, about as much as Copper
   * Kotlin for Forge 5.12.0 -> 5.13.0
   * Loot Integrations 4.7 -> 4.9
   * RuneEnchanting 1.4.5.0 -> 1.5.1.0-beta

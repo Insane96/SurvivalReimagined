@@ -333,11 +333,12 @@
 [Death]
 	#When you die in hardcore, your spawn point is set to where you died and a lightning strike is summoned
 	"Enable Better hardcore death" = true
-	#Makes you lose a percentage of items and durability and xp on death. By default the game rules are all set to 0. Controlled via game rules.
+	#Makes you lose a percentage of items and durability and xp on death. By default death_keep_equipment is enabled with a 15% death_durability_penalty, the other game rules are set to 0. Controlled via game rules.
 	#Items percentage lost can be configured with the insanesurvivaloverhaul:death_lose_items_percentage, insanesurvivaloverhaul:death_durability_penalty and insanesurvivaloverhaul:death_destroy_items game rules.
 	# insanesurvivaloverhaul:death_experience_lost for the percentage of experience dropped and insanesurvivaloverhaul:death_destroy_experience if the experience should be dropped or destroyed.
-	#Please note that this feature controls the vanilla keep_inventory game rule.
-	"Enable Death inventory penalty" = false
+	#insanesurvivaloverhaul:death_keep_equipment makes worn armor, the offhand and the hotbar items with durability stay in the inventory (with the death_durability_penalty applied), while everything else drops normally (e.g. into a grave mod). When enabled, the other item and experience game rules are ignored.
+	#The feature does nothing if the vanilla keep_inventory game rule is enabled.
+	"Enable Death inventory penalty" = true
 	#Makes players lose max health on death and adds a new item to gain them back.
 	#Controlled via the insanesurvivaloverhaul:death_health_lost game rule.
 	"Enable Death max health penalty" = true
@@ -911,6 +912,8 @@
 	"Enable Turtles" = true
 	#Changes to leashes distances.
 	"Enable Leash" = true
+	#Villagers can only be obtained by curing zombie villagers: no breeding, no nitwits, conversion to zombie villager on every difficulty, cure with the items in the `insanesurvivaloverhaul:zombie_villager_cure_items` item tag, convalescence after the cure, prices that only rise (demand and mistreatment, no discounts), emeralds from advancements that give experience. Requires the villagers overhaul data pack (VillagersCommon).
+	"Enable Villagers" = true
 
 	[Mobs."Misc mobs"]
 		#1 in X chance each tick for mobs in the `insanesurvivaloverhaul:passive_regen` entity type tag to regain 1 health. Set to 0 to disable
@@ -949,7 +952,6 @@
 
 	#Add a brand new Echo Torch and some changes to mob spawn
 	[Mobs.Spawning]
-		"Replace zombie villagers with normal zombies" = true
 		#Allows mobs to spawn in the world spawn (in vanilla mobs can't spawn in a 24 blocks radius from world spawn)
 		"Allow world spawn spawn" = true
 		#Disables normal skeletons from spawning in Fortresses.
@@ -982,6 +984,44 @@
 		# Default: 10
 		# Range: > 0
 		"Elastic distance" = 10
+
+	#Villagers can only be obtained by curing zombie villagers: no breeding, no nitwits, conversion to zombie villager on every difficulty, cure with the items in the `insanesurvivaloverhaul:zombie_villager_cure_items` item tag, convalescence after the cure, prices that only rise (demand and mistreatment, no discounts), emeralds from advancements that give experience. Requires the villagers overhaul data pack (VillagersCommon).
+	[Mobs.Villagers]
+		#If true, villagers killed by zombies always turn into zombie villagers, whatever the difficulty.
+		"Always convert zombie" = true
+		#If true, cured nitwits become unemployed villagers that can take a job.
+		"No nitwits" = true
+		#Ticks of convalescence after a zombie villager is cured: the villager doesn't trade, work or restock, and is slowed. 0 disables it.
+		# Default: 24000
+		# Range: > 0
+		"Convalescence duration" = 24000
+		#If true, zombie villagers placed by structures (e.g. abandoned villages) get infinite Fire Resistance, so they don't burn before being found.
+		"Fire resistant structure zombie villagers" = true
+		#When a trade's demand is above 0 and goes down at a restock, the decrease is multiplied by this value, so expensive trades go back to the base price more slowly. 1 is vanilla.
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		"Positive demand decay multiplier" = 0.6
+		#If true, a trade's demand can't go below -max uses, so an unused trade can always get more expensive again.
+		"Clamp negative demand" = true
+		#If true, villagers get 1 trading experience as soon as they take a job, so they keep it (and their trades) even if they lose their job site.
+		"Lock trades" = true
+		#Multiplier to the experience villagers need to level up.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Experience to level up multiplier" = 1.0
+		#Advancements that give experience as a reward also give 1 emerald every this much experience (rounded down). 0 disables it.
+		# Default: 25
+		# Range: > 0
+		"Advancement experience per emerald" = 25
+
+		#Ticks it takes to cure a zombie villager. Vanilla is 3600-6000.
+		[Mobs.Villagers."Cure duration"]
+			# Default: 3600.0
+			# Range: 1.0 ~ 1.7976931348623157E308
+			Minimum = 3600.0
+			# Default: 6000.0
+			# Range: 1.0 ~ 1.7976931348623157E308
+			Maximum = 6000.0
 
 [Movement]
 	#Players's slides down climbable blocks faster and stands still when opening an interface
