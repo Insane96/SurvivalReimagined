@@ -724,14 +724,18 @@
 	# Default: 5
 	# Range: > 1
 	"Shard Count" = 5
-	#Base damage of the shards, relative to the original arrow's base damage
+	#Damage dealt by each shard
+	# Default: 3.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Shard Damage" = 3.0
+	#Speed of the shards, relative to the original arrow's speed on impact
 	# Default: 0.5
 	# Range: 0.0 ~ 1.7976931348623157E308
-	"Shard Damage Multiplier" = 0.5
-	#Speed of the shards (a fully charged bow shoots arrows at 3)
-	# Default: 1.5
-	# Range: 0.1 ~ 1.7976931348623157E308
-	"Shard Speed" = 1.5
+	"Shard Speed Multiplier" = 0.5
+	#Inaccuracy of the shards, like the bow's (a bow shoots with 1, about 1 degree of spread)
+	# Default: 4.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	"Shard Inaccuracy" = 4.0
 
 [sprinty]
 	#Movement speed bonus while sprinting (not while swimming), applied multiplicatively on top of the sprint speed

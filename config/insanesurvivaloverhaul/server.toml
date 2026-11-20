@@ -1001,8 +1001,6 @@
 		# Default: 0.6
 		# Range: 0.0 ~ 1.0
 		"Positive demand decay multiplier" = 0.6
-		#If true, a trade's demand can't go below -max uses, so an unused trade can always get more expensive again.
-		"Clamp negative demand" = true
 		#If true, villagers get 1 trading experience as soon as they take a job, so they keep it (and their trades) even if they lose their job site.
 		"Lock trades" = true
 		#Multiplier to the experience villagers need to level up.
@@ -1013,6 +1011,16 @@
 		# Default: 25
 		# Range: > 0
 		"Advancement experience per emerald" = 25
+		#A trade's demand can't go below -(this value × max uses), so an unused trade doesn't need many restocks to get more expensive again. 0 keeps the demand at 0 or above, 1 lets it go down to -max uses. Negative values disable the limit (vanilla).
+		# Default: 0.0
+		# Range: -1.0 ~ 1.7976931348623157E308
+		"Negative demand limit" = 0.0
+		#How many times per day villagers can restock. When a new day starts the demand is also updated once for each missed restock, so this is also how many times per day the demand changes. Vanilla is 2.
+		# Default: 1
+		# Range: > 1
+		"Restocks per day" = 1
+		#If true, when a new day starts (or half a day passed since the last restock) and the villager restocked less than 'Restocks per day' times, the first missed restock counts the trades used since the last restock. Vanilla resets the uses first, so the used trades count as unused and their demand goes down instead of up.
+		"Catch up demand counts uses" = true
 
 		#Ticks it takes to cure a zombie villager. Vanilla is 3600-6000.
 		[Mobs.Villagers."Cure duration"]
