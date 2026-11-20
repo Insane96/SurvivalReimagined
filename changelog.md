@@ -22,7 +22,7 @@ Can't sleep in straw beds during day
   * Villages, Pillager Outposts and Woodland Mansions generate again. Villages are abandoned and only have zombie villagers, outposts no longer respawn pillagers
   * Patrols, Raids and the Wandering Trader are back
   * Re-enabled the Bane of Noses rune
-  * Emeralds are back: emerald ore generates rarely, pillagers drop them, they can be fished and advancements give them. Emeralds in loot no longer become Runes
+  * Emeralds are back: emerald ore generates rarely underground, pillagers drop them, they can be fished and advancements give them. Emeralds in loot no longer become Runes
   * The Librarian sells random Runes instead of Enchanted Books
   * The Weaponsmith sells Shields+'s Copper, Iron, Golden and Diamond Shields instead of the vanilla Shield
   * Villagers also sell blocks, wood and food from the pack's mods: Quark's stones (Mason), modded logs (Leatherworker), Naturalist's meats (Butcher), Duck and colored Eggs (Farmer)
@@ -45,9 +45,10 @@ Can't sleep in straw beds during day
     * Fixed missing textures on Storage Drawers' Drawers made from modded woods
   * FWA 1.3.4 -> 1.3.7-patch.2
     * Improved performance with many animated blocks
-  * JEI 19.70.0.469 -> 19.71.0.470
-  * InsaneSurvivalOverhaul 5.15.2.0 -> 5.16.0.0-beta
-    * Added the villagers overhaul (see above): villagers can no longer breed and are cured with a Golden Carrot instead of a Golden Apple, cured villagers rest for a day before working (Convalescence), prices never go below the base price, villagers only sell and keep their job once they take one
+  * JEI 19.70.0.469 -> 19.71.0.473
+  * InsaneSurvivalOverhaul 5.15.2.0 -> 5.16.1.0-beta
+    * Added the villagers overhaul (see above): villagers can no longer breed and are cured with a Golden Carrot instead of a Golden Apple, cured villagers rest for a day before working (Convalescence), prices never go below the base price, villagers only sell, restock once per day and keep their job once they take one
+    * Sponges dry in the sun and get wet in the rain again
     * The Wandering Trader buys 2 items, then sells plants and blocks from other biomes and maps to surface structures
     * Hero of the Village makes villagers gift items they sell, based on the effect level
     * Lingering Potions now stack up to 4
@@ -61,9 +62,9 @@ Can't sleep in straw beds during day
     * Rain and heavy rain now fade in and out with the weather's intensity
     * Fixed heavy rain sometimes appearing while the weather turns clear or starts raining
     * Fixed particle density dropping a lot while moving
-  * RuneEnchanting 1.4.5.0 -> 1.5.1.0-beta
+  * RuneEnchanting 1.4.5.0 -> 1.5.2.0-beta
     * Added the Runic Table (2 Diamonds and 4 Obsidian): stores an unlimited amount of runes, shared by every player, and applies or removes them from items without ever overloading them
-    * Added new runes: Sprinty (leggings, faster sprinting but more stamina used), Life Steal, True Damage, Executioner and Weak Spot (weapons, bows and crossbows), Sniper and Shatterburst (bows and crossbows), Puller (fishing rods) and Exchange (tools, replaces broken blocks with the block in the off-hand)
+    * Added new runes: Sprinty (leggings), Life Steal, True Damage, Executioner and Weak Spot (weapons, bows and crossbows), Sniper and Shatterburst (bows and crossbows), Puller (fishing rods) and Exchange (tools)
     * Curse of Inefficiency and Curse of Slow Strike have been merged into Curse of Slow Swing (-50% mining speed, -20% attack speed), which can be applied to both weapons and tools. Existing runes are converted
     * Curse of Short Arm and Curse of Explosion can now be applied to mining tools and shears. Curse of Explosion also triggers when breaking blocks
     * Explosive and Curse of Explosion now show fuse particles and a sound on marked entities, and both have 0.6 explosion power
