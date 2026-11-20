@@ -10,6 +10,7 @@ Can't sleep in straw beds during day
   * Adds Crates, Magnets, Pipes and the Totem of Holding (replacing Gravestone)
 * Added Smooth Animations: True Singleplayer
 * Added the Torches Reimagined resource pack
+* Added Vintage Animations
 * Added Weaker Spiderwebs
 * Vanilla Backport's Backported OST and Naturalist's Custom Spawn Eggs resource packs are now enabled by default
 * Crawling (Personality) is now bound to C by default
