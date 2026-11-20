@@ -1,3 +1,5 @@
+Can't sleep in straw beds during day
+
 # Upcoming
 * Removed Gravestone
   * **Warning**: existing graves will disappear along with the items inside them. Recover your items from any grave before updating
@@ -8,6 +10,7 @@
   * Adds Crates, Magnets, Pipes and the Totem of Holding (replacing Gravestone)
 * Added Smooth Animations: True Singleplayer
 * Added the Torches Reimagined resource pack
+* Added Weaker Spiderwebs
 * Vanilla Backport's Backported OST and Naturalist's Custom Spawn Eggs resource packs are now enabled by default
 * Crawling (Personality) is now bound to C by default
 * Added EMI info pages for Sculk Sensors and Calibrated Sculk Sensors, listing the frequency of each vibration
