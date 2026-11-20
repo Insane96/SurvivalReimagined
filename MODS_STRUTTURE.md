@@ -50,6 +50,8 @@ Lo stesso paio di mod si sovrascriveva a vicenda anche su `secret_room.json` e `
 
 **Fix applicato:** creato un override unico in `datapacks/survivalreimagined/data/minecraft/loot_table/chests/illager_mansion/map_chest.json` che vince su entrambe le versioni delle mod (base ripresa dalla versione "pulita" di Woodland Mansion Replacement). La mappa verso `minecraft:pillager_outpost` (struttura disattivata in questo pack, quindi già morta di suo) è stata sostituita con una **mappa del Monumento Oceanico** (`minecraft:monument`, decorazione vanilla `monument`), colmando anche il buco di mappe che in vanilla darebbe solo il Cartografo (assente in questo pack). Resta la mappa verso l'Ancient City.
 
+**Aggiornamento (reinstallazione di Woodland Mansion Replacement con l'overhaul dei villager di ISO):** i tre override erano stati tolti insieme alla mod e sono stati rimessi come **copie esatte** dei file di Woodland Mansion Replacement. Gli avamposti sono di nuovo attivi, quindi la mappa verso `minecraft:pillager_outpost` è tornata valida e quella del Monumento non è stata rimessa (c'è già nei relitti).
+
 ### ✅ Conflitto 2 (RISOLTO) — `worldgen/structure_set/nether_complexes.json` (Incendium vs DnT Nether Fortress Overhaul Retro, la datapack)
 Entrambe ridefinivano lo **stesso** structure_set vanilla `minecraft:nether_complexes` (quello che governa insieme Fortezza del Nether + Bastione), con valori diversi:
 
@@ -86,13 +88,18 @@ Sostituisce `monument`. 🌊 **Subacquea**, **Overworld** (oceano profondo).
 ### DnT — Stronghold Overhaul — 🟢 attiva, nessun config dedicato
 Sostituisce `stronghold`. ⛏️ **Sotterranea**, **Overworld**.
 
-**Override:** `datapacks/survivalreimagined/data/minecraft/worldgen/template_pool/stronghold/stronghold_jail_room.json` è una copia del pool della mod senza `stronghold_jail_3x3_room5`, l'unica cella con un villager dentro.
+La cella `stronghold_jail_3x3_room5` (1 su 8) contiene 2 villager disoccupati. Era tolta con un override del pool `stronghold_jail_room`, rimosso con l'overhaul dei villager di ISO: pochi villager prigionieri nelle strutture vanno bene, e senza scambi salvati prendono quelli di ISO.
 
 ### DnT — Swamp Hut Overhaul — 🟢 attiva, nessun config dedicato
 Sostituisce `swamp_hut`. ☀️ **Superficie**, **Overworld** (palude).
 
 ### DnT — Woodland Mansion Replacement — 🟢 attiva, nessun config dedicato
-Sostituisce `mansion`. ☀️ **Superficie**, **Overworld** (dark forest).
+Sostituisce `mansion`. ☀️ **Superficie**, **Overworld** (dark forest). Trasforma `minecraft:mansion` in una struttura vuota (`nova_structures:vanilla_structure_remover`) con lo stesso structure set (salt 10387319) dell'Illager Manor, così le mappe della magione puntano al manor.
+
+Fix nel datapack:
+- **Villager tenuti**: lo slot mob condiviso `illager_mob` ha 1 villager su 22 elementi, e le stanze `mansion_secret_room3` e `mansion_middle_room_basement8` ne hanno uno incorporato. Sono pochi e disoccupati, senza scambi salvati, quindi nessun override.
+- **Loot table mancanti**: tre casse dei giardini usano loot della mod DnT completa (`nova_structures:chests/dungeon_6`, `dungeon_7`, `undead_crypts_grave`), definite nel datapack come la tabella `generic` del manor.
+- **Conflitto con Ancient City Overhaul** su `map_chest`, `secret_room` e `library_chest`: vedi Conflitto 1.
 
 ### DnT — Nether Fortress Overhaul Retro *(nuova scoperta — è una datapack, non un jar!)*
 File: `datapacks/DnT Nether Fortress Overhaul Retro 2.5.zip`. Sostituisce `fortress.json` vanilla. ☀️ **Superficie** (del Nether, sospesa sulla lava come da vanilla), **dimensione Nether**. 🟢 **Attiva** — è dentro `datapacks/`, che in `config/global_packs.toml` è impostato come `required`, quindi sempre caricata in ogni mondo.
@@ -261,7 +268,7 @@ File in `datapacks/survivalreimagined/data/neoforge/loot_modifiers/`, `data/surv
 
 ## 🗑️ Dungeons and Taverns (mod completa) — installata, analizzata, poi rimossa
 
-`dungeons-and-taverns-v4.4.4 [NeoForge].jar` (96 strutture nuove) e il suo addon `lootintegrations_dnt-2.6.jar` sono stati **rimossi**: aggiungevano incantesimi custom non compatibili con Rune Enchanting (che sostituisce automaticamente solo gli incantesimi vanilla). Poi è stato rimosso anche `DnT-woodland-mansion-replacement-v1.2 [NeoForge].jar`. Restano installati: Ancient City, Desert Temple, Jungle Temple, Ocean Monument, Stronghold, Swamp Hut.
+`dungeons-and-taverns-v4.4.4 [NeoForge].jar` (96 strutture nuove) e il suo addon `lootintegrations_dnt-2.6.jar` sono stati **rimossi**: aggiungevano incantesimi custom non compatibili con Rune Enchanting (che sostituisce automaticamente solo gli incantesimi vanilla). Poi è stato rimosso anche `DnT-woodland-mansion-replacement-v1.2 [NeoForge].jar`, reinstallato con l'overhaul dei villager di ISO. Restano installati: Ancient City, Desert Temple, Jungle Temple, Ocean Monument, Stronghold, Swamp Hut, Woodland Mansion.
 
 **Ripulito dal datapack** (override esclusivi della mod completa, ormai inutili senza di essa): `villages_birch/jungle/swamp`, `illager_camp`, `taverns`, `swamp_structure` (Witch Villa), `badlands_miner_outpost`, `illager_hideout`, `remnants`, `stray_fort_fortress`, `lone_citadel` (mob+frame).
 
@@ -272,12 +279,14 @@ Scelta presa: **disattivata del tutto** (`data/minecraft/worldgen/structure_set/
 
 **Riattivata con l'overhaul dei villager di ISO** (5.16.0.0): gli illager fanno di nuovo parte del design (fonte finita di smeraldi e totem). `woodland_mansions.json` ora contiene la voce vanilla `minecraft:mansion`. Le loot table e la mappa nei relitti rimosse allora non sono state ripristinate: la Magione usa le loot table vanilla. Resta da valutare una mod che rinnovi le Magioni (report di ISO `report_villagers_modpack.md` §6).
 
+**Sostituita di nuovo da DnT Woodland Mansion Replacement** (Illager Manor): vedi la sezione della mod. L'override di `woodland_mansions.json` è stato tolto, perché identico a quello vanilla e a quello del jar.
+
 ---
 
 ## Osservazioni per il pack
 
 - **Strutture disattivate nel pack: Echo Pillar** (ISO, `"Enable Echo pillar" = false`), **Galleon** e **Road Sign** (Supplementaries, entrambe spente in `supplementaries-common.toml`). Tutte le altre strutture elencate sopra sono attive.
-- **7 strutture vanilla sono sostituite** dalle mod DnT (6 jar + 1 datapack): Città Antica, Piramide del Deserto, Tempio della Giungla, Monumento Oceanico, Fortezza, Capanna della Strega, **Fortezza del Nether** (quest'ultima dentro `datapacks/`, non nei jar). La **Magione Silvestre non è più sostituita** — è disattivata del tutto (vedi sezione dedicata).
+- **8 strutture vanilla sono sostituite** dalle mod DnT (7 jar + 1 datapack): Città Antica, Piramide del Deserto, Tempio della Giungla, Monumento Oceanico, Fortezza, Capanna della Strega, Magione Silvestre (Illager Manor), **Fortezza del Nether** (quest'ultima dentro `datapacks/`, non nei jar).
 - **Concentrazione nel Nether**: formationsnether e la Nether Fortress DnT generano entrambe lì (quasi tutte "di superficie" nel Nether, non sepolte). *(Correzione: nella versione precedente collegavo questo a "Portal requires crying obsidian" e al tetto del Nether attivo — non c'entrano nulla con la densità di generazione, era un'aggiunta senza senso da parte mia. L'unico modo per giudicare se la densità nel Nether è davvero eccessiva è guardare spacing/separation reali di ogni mod, vedi sotto, oppure verificarlo in gioco.)* Incendium **non** è più in questa lista: le sue 9 strutture sono disattivate da `ibo` (vedi sopra), restano solo i suoi biomi.
 - ~~Overworld sovraffollato di rovine generiche~~ — **ritrattato**: in gioco non hai trovato troppe strutture, e i numeri lo confermano. Guardando gli spacing/separation reali (estratti dai `structure_set`): adventuredungeons ha spacing 30-40, Philips' Ruins varia da 40 a 360 (Rare Ruin, come dice il nome, è molto rara). YungsExtras non usa nemmeno il sistema a griglia (`structure_set`) ma decorazioni via `biome_modifier`, quindi non compete per lo spazio con le altre. La mia frase precedente era una supposizione non verificata sui numeri — la densità reale non sembra eccessiva.
 - Nessuna struttura tra quelle elencate genera nell'**End** — nessuna mod del pack tocca quella dimensione.

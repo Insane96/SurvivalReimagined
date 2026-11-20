@@ -1,6 +1,7 @@
 # Upcoming
 * Removed Gravestone
   * **Warning**: existing graves will disappear along with the items inside them. Recover your items from any grave before updating
+* Added Dungeons and Taverns Woodland Mansion Replacement
 * Added Heartstone
 * Added Map Atlases
 * Added Quark Oddities
@@ -14,9 +15,10 @@
   * With this, Step Up rune now increases step height to 2.1
 * Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
 * Disabled the Soulbound rune
-* Villagers are back, with Insane's Survival Overhaul's villagers overhaul: they can only be obtained by curing zombie villagers, found in abandoned villages
+* Villagers are back, with Insane's Survival Overhaul's villagers overhaul: they're obtained by curing zombie villagers, found in abandoned villages, or rarely found as prisoners in Woodland Mansions and Strongholds
   * Villages, Pillager Outposts and Woodland Mansions generate again. Villages are abandoned and only have zombie villagers, outposts no longer respawn pillagers
   * Patrols, Raids and the Wandering Trader are back
+  * Re-enabled the Bane of Noses rune
   * Emeralds are back: emerald ore generates rarely, pillagers drop them, they can be fished and advancements give them. Emeralds in loot no longer become Runes
   * The Librarian sells random Runes instead of Enchanted Books
   * The Weaponsmith sells Shields+'s Copper, Iron, Golden and Diamond Shields instead of the vanilla Shield
@@ -52,6 +54,10 @@
     * Golden tools and weapons deal less damage, about as much as Copper
   * Kotlin for Forge 5.12.0 -> 5.13.0
   * Loot Integrations 4.7 -> 4.9
+  * Particle Rain 4.0.3 -> 4.0.4
+    * Rain and heavy rain now fade in and out with the weather's intensity
+    * Fixed heavy rain sometimes appearing while the weather turns clear or starts raining
+    * Fixed particle density dropping a lot while moving
   * RuneEnchanting 1.4.5.0 -> 1.5.1.0-beta
     * Added the Runic Table (2 Diamonds and 4 Obsidian): stores an unlimited amount of runes, shared by every player, and applies or removes them from items without ever overloading them
     * Added new runes: Sprinty (leggings, faster sprinting but more stamina used), Life Steal, True Damage, Executioner and Weak Spot (weapons, bows and crossbows), Sniper and Shatterburst (bows and crossbows), Puller (fishing rods) and Exchange (tools, replaces broken blocks with the block in the off-hand)
