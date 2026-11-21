@@ -93,6 +93,13 @@ Sostituisce `monument`. 🌊 **Subacquea**, **Overworld** (oceano profondo).
 ### DnT — Stronghold Overhaul — 🟢 attiva, nessun config dedicato
 Sostituisce `stronghold`. ⛏️ **Sotterranea**, **Overworld**.
 
+Il datapack cambia il posizionamento (nel jar: anelli `concentric_rings`, `count` 219):
+- `worldgen/structure_set/strongholds.json`: `random_spread` spacing 80 / separation 40, salt 1784520396, come le altre strutture.
+- `tags/worldgen/biome/has_structure/stronghold.json`: `replace: true` con solo `#minecraft:stronghold_biased_to` (terraferma + Lush/Dripstone Caves e quello che aggiunge Vanilla Backport). Sotto oceani, fiumi, spiagge e Deep Dark non si generano. Il bioma è controllato all'altezza di partenza, non in superficie.
+- `worldgen/structure/stronghold.json`: copia di quella del jar con `start_height` 15 invece di -15 (come la versione Forge in v3), così a volte esce in superficie. Se DnT aggiorna il file, va ricopiato.
+
+Nei mondi esistenti gli occhi di ender trovano solo gli stronghold del nuovo posizionamento (chunk nuovi); quelli vecchi restano ma non vengono più localizzati.
+
 La cella `stronghold_jail_3x3_room5` (1 su 8) contiene 2 villager disoccupati. Era tolta con un override del pool `stronghold_jail_room`, rimosso con l'overhaul dei villager di ISO: pochi villager prigionieri nelle strutture vanno bene, e senza scambi salvati prendono quelli di ISO.
 
 ### DnT — Swamp Hut Overhaul — 🟢 attiva, nessun config dedicato

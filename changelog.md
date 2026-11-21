@@ -17,6 +17,8 @@
   * With this, Step Up rune now increases step height to 2.1
 * Disabled Supplementaries' Soap, Soap Block and Bubble Blower: Soap couldn't be crafted, as Ash is disabled
 * Disabled the Soulbound rune
+* Strongholds no longer generate in rings around the world spawn: they're scattered like other structures, only under land biomes, and generate higher up, sometimes reaching the surface
+  * In existing worlds, Eyes of Ender only lead to strongholds in newly generated chunks
 * Villagers are back, with Insane's Survival Overhaul's villagers overhaul: they're obtained by curing zombie villagers, found in abandoned villages, or rarely found as prisoners in Woodland Mansions and Strongholds
   * Villages, Pillager Outposts and Woodland Mansions generate again. Villages are abandoned and only have zombie villagers, outposts no longer respawn pillagers
   * Patrols, Raids and the Wandering Trader are back
