@@ -6,7 +6,7 @@
 	},
 	"enableUpdateChecker": {
 		"//": "Whether Collective should show a message in the console if a dependent mod has an update available. Update checks are optional and async.",
-		"value": true
+		"value": false
 	},
 	"transferItemsBetweenReplacedEntities": {
 		"//": "When enabled, transfer the held items and armour from replaced entities by any of the Entity Spawn mods which depend on Collective.",
