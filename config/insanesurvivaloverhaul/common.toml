@@ -167,10 +167,10 @@
 
 	#Data and resource packs of Shulker Boxes.
 	[Items."Shulker boxes"]
-		#Enables a data pack that changes Shulker Boxes recipe to use cloth (or leather if the Cloth feature is disabled) and chests instead of shulker shells, and shulkers will drop Shulker Boxes directly instead of shells.
+		#Enables a data pack that makes Shulker Boxes obtainable before the End: they're crafted with Nether planks, a Blaze Rod and two Pouches (two chests if the Pouch feature is disabled) instead of shulker shells, keeping the Pouches' contents, and shulkers drop Shulker Boxes directly instead of shells.
 		"Early game shulker boxes" = true
-		#Enables a resource pack that renames Shulker Boxes to Sack
-		"Rename shulker box to sack" = true
+		#Enables a resource pack that renames Shulker Boxes to Nether Pouch. Only active if 'Early game shulker boxes' is enabled.
+		"Rename shulker box to nether pouch" = true
 
 [Combat]
 	#Data packs of Piercing Damage.

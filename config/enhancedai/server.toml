@@ -15,6 +15,7 @@
 "Enable Villagers" = true
 "Enable Warden" = true
 "Enable Witches" = true
+"Enable Phantoms" = true
 
 [Animals]
 	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:animal/scared_attack/can_be_neutral, enhancedai:animal/scared_attack/can_be_hostile, and enhancedai:animal/scared_attack/can_be_scared_by_players to add/remove animals.
@@ -379,6 +380,8 @@
 	"Enable Teleport to target" = true
 	#Makes mobs throw a web at a player, slowing them. Only entity types in the `enhancedai:mobs/throwing_web/can_throw_webs` tag will be affected. Entity types in `enhancedai:mobs/throwing_web/poisonous_webs` will throw poisonous webs and apply poison the same way as when a cave spider attacks an entity.
 	"Enable Web thrower" = true
+	#Melee mobs stop for a moment and then lunge at their target when in range. Only entity types in `enhancedai:mobs/can_lunge` tag are affected by this feature, and only while they're attacking in melee.
+	"Enable Lunge at target" = true
 
 	#Only entity types in the enhancedai:mobs/air_stealer tag are affected by this feature.
 	[Mobs."Air steal"]
@@ -986,6 +989,45 @@
 			# Range: 0 ~ 128
 			"Max slowness amplifier" = 2
 
+	#Melee mobs stop for a moment and then lunge at their target when in range. Only entity types in `enhancedai:mobs/can_lunge` tag are affected by this feature, and only while they're attacking in melee.
+	[Mobs."Lunge at target"]
+		#Chance for a mob to be able to lunge. Rolled when the mob spawns.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		Chance = 1.0
+		#Minimum distance from the target to lunge
+		# Default: 3.0
+		# Range: 0.0 ~ 32.0
+		"Min distance" = 3.0
+		#Maximum distance from the target to lunge
+		# Default: 5.0
+		# Range: 0.0 ~ 32.0
+		"Max distance" = 5.0
+		#Ticks the mob stands still before lunging. Set to 0 to lunge immediately.
+		# Default: 8
+		# Range: 0 ~ 100
+		"Wind up ticks" = 8
+		#Horizontal strength is calculated so that the mob lands in front of the target, then multiplied by this value.
+		# Default: 1.0
+		# Range: 0.0 ~ 10.0
+		"Horizontal strength multiplier" = 1.0
+		#Vertical speed of the lunge
+		# Default: 0.35
+		# Range: 0.0 ~ 4.0
+		"Vertical strength" = 0.35
+
+		#Ticks after landing before the mob can lunge again. Set when the mob spawns, based on the difficulty.
+		[Mobs."Lunge at target".Cooldown]
+			# Default: 160.0
+			# Range: 0.0 ~ 6000.0
+			"Easy/Peaceful" = 160.0
+			# Default: 100.0
+			# Range: 0.0 ~ 6000.0
+			Normal = 100.0
+			# Default: 80.0
+			# Range: 0.0 ~ 6000.0
+			Hard = 80.0
+
 [Endermen]
 	#Changes the angular size of the enderman's 'face' that angers them when looked at. Higher values make endermen anger from a wider viewing angle.
 	"Enable Look anger cone" = true
@@ -1498,3 +1540,18 @@
 			# Default: 24.0
 			# Range: 8.0 ~ 64.0
 			Maximum = 24.0
+
+[Phantoms]
+	#Phantoms grab the entities they hit and carry them in the air until the grabbed entity hits them back. Only phantoms in the enhancedai:phantom/grab_targets entity type tag are affected by this feature.
+	"Enable Grabbing phantoms" = true
+
+	#Phantoms grab the entities they hit and carry them in the air until the grabbed entity hits them back. Only phantoms in the enhancedai:phantom/grab_targets entity type tag are affected by this feature.
+	[Phantoms."Grabbing phantoms"]
+		#Chance for a phantom to be able to grab targets. Rolled when the phantom spawns.
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		Chance = 1.0
+		#Ticks of Slow Falling given to the entities hit and released by the phantom. Set to 0 to disable.
+		# Default: 200
+		# Range: 0 ~ 6000
+		"Slow falling duration" = 200

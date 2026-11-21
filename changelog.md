@@ -37,18 +37,22 @@
   * Collective 8.86 -> 8.87
   * CreativeCore 2.13.54 -> 2.13.55
   * Ecologics 2.3.10_1 -> 2.3.11
-  * Enhanced AI 4.2.7.2 -> 4.3.1.0
+  * Enhanced AI 4.2.7.2 -> 4.3.2.0-beta
     * Smiths repair nearby damaged Iron Golems, and badly damaged golems walk to them to be repaired
     * Wounded villagers eat food from their inventory to heal
     * Mobs now walk to a nearby ladder to reach a target higher up, climb at the player's speed and can attack while climbing. Miners no longer break the ladders they climb
     * Bees no longer wander far from their hive and get lost
     * Angry Creepers have 50% knockback resistance
+    * Zombies, Piglins, Vindicators and Skeletons and their variants (when holding a melee weapon) stop for a moment and then lunge at you when 3 to 5 blocks away
+    * Phantoms grab the entities they hit and carry them in the air until hit back, also with projectiles. They give Slow Falling on hit and when they let go
+    * Skeleton and Zombie Horses are no longer hostile towards players
+    * Mobs with Fire Resistance no longer panic when on fire
   * Every Compat 2.11.58 -> 2.11.59
     * Fixed missing textures on Storage Drawers' Drawers made from modded woods
   * FWA 1.3.4 -> 1.3.8
     * Improved performance with many animated blocks
   * JEI 19.70.0.469 -> 19.71.0.475
-  * InsaneSurvivalOverhaul 5.15.2.0 -> 5.16.1.0-beta
+  * InsaneSurvivalOverhaul 5.15.2.0 -> 5.16.2.0-beta
     * Added the villagers overhaul (see above): villagers can no longer breed and are cured with a Golden Carrot instead of a Golden Apple, cured villagers rest for a day before working (Convalescence), prices never go below the base price, villagers only sell, restock once per day and keep their job once they take one
     * Sponges dry in the sun and get wet in the rain again
     * The Wandering Trader buys 2 items, then sells plants and blocks from other biomes and maps to surface structures
@@ -58,13 +62,15 @@
     * Piglins barter 1~2 Ender Pearls instead of 2~4
     * Fixed Looting being able to lower mob drops: it now gives +1 drop with a 33.3% chance per level (Ender Pearls 20%)
     * Golden tools and weapons deal less damage, about as much as Copper
+    * Added Pouches, crafted with Cloth: up to 3 can be carried without slowdown, each extra one slows you down more
+    * Sacks are now Nether Pouches: Shulker Boxes are crafted with 2 Pouches, 6 Crimson or Warped Planks and a Blaze Rod, keeping the Pouches' contents, and use the vanilla textures. The "Not a Shulker Box" advancement moved to the Nether tab
   * Kotlin for Forge 5.12.0 -> 5.13.0
   * Loot Integrations 4.7 -> 4.9
   * Particle Rain 4.0.3 -> 4.0.4
     * Rain and heavy rain now fade in and out with the weather's intensity
     * Fixed heavy rain sometimes appearing while the weather turns clear or starts raining
     * Fixed particle density dropping a lot while moving
-  * RuneEnchanting 1.4.5.0 -> 1.5.2.0-beta
+  * RuneEnchanting 1.4.5.0 -> 1.5.3.0-beta
     * Added the Runic Table (2 Diamonds and 4 Obsidian): stores an unlimited amount of runes, shared by every player, and applies or removes them from items without ever overloading them
     * Added new runes: Sprinty (leggings), Life Steal, True Damage, Executioner and Weak Spot (weapons, bows and crossbows), Sniper and Shatterburst (bows and crossbows), Puller (fishing rods) and Exchange (tools)
     * Curse of Inefficiency and Curse of Slow Strike have been merged into Curse of Slow Swing (-50% mining speed, -20% attack speed), which can be applied to both weapons and tools. Existing runes are converted
@@ -72,6 +78,9 @@
     * Explosive and Curse of Explosion now show fuse particles and a sound on marked entities, and both have 0.6 explosion power
     * Thrown Tridents now count as ranged attacks for rune effects, and charge Electrocution
     * Vibration Detection now has only a chance to apply Glowing, and now works on players
+    * Added the Momentum rune (tools, weapons, Tridents, leggings, Horse and Wolf Armor): breaking blocks, walking and fully charged attacks stack up mining, movement and attack speed
+    * Horse Armor and Wolf Armor can now have runes
+    * Protection no longer reduces Poison and Wither damage
   * Snow Under Trees 1.5.1 -> 1.7
     * Snow now generates under trees with full-block branches
   * Stamina 2.1.0.0 -> 2.1.0.1

@@ -773,3 +773,21 @@
 	# Default: 0.6
 	# Range: 0.0 ~ 1.7976931348623157E308
 	"Bonus Step Height" = 1
+
+[momentum]
+	#Maximum level of the Momentum (mining) effect, gained by breaking blocks
+	# Default: 32
+	# Range: > -2147483648
+	"Max Mining Level" = 32
+	#Maximum level of the Momentum (moving) effect, gained by walking with leggings, horse armor or wolf armor
+	# Default: 8
+	# Range: > -2147483648
+	"Max Movement Level" = 8
+	#Maximum level of the Momentum (attacking) effect, gained by attacking
+	# Default: 8
+	# Range: > -2147483648
+	"Max Attack Level" = 8
+	#Duration in ticks of the Momentum (moving) effect, refreshed every 5 blocks walked
+	# Default: 100
+	# Range: > -2147483648
+	"Movement Duration" = 100

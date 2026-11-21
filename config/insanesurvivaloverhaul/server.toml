@@ -580,7 +580,7 @@
 	#Adds daggers: a fast, low-damage weapon type available in every material tier. No mineable/* block-breaking ability, no sweep attack.
 	"Enable Daggers" = true
 	#A new item that can let you carry more stuff around.
-	"Enable Pouch" = false
+	"Enable Pouch" = true
 	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid.
 	"Enable Repair kits" = true
 
@@ -636,13 +636,13 @@
 
 	#A new item that can let you carry more stuff around.
 	[Items.Pouch]
-		# Default: 2
+		# Default: 3
 		# Range: > 0
-		"Max pouch without slowdown" = 2
+		"Max pouch without slowdown" = 3
 		#When you have > 'Max pouch without slowdown' this is the base value for the slowdown. The slowdown is calculated as (pouch above 'Max pouch' ^ 2 * this)
-		# Default: 0.03
+		# Default: 0.01
 		# Range: 0.0 ~ 1.0
-		"Base slowness per pouch over max" = 0.03
+		"Base slowness per pouch over max" = 0.01
 
 	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid.
 	[Items."Repair kits"]
