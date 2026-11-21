@@ -258,5 +258,5 @@
 	"emi.info.quark.magnet.1": "When powered by redstone, pushes magnetic blocks in front of it away and pulls the ones behind it closer, both in the direction it faces. A stronger signal reaches farther. Blocks made of iron or copper are magnetic, and it also moves dropped magnetic items and mobs wearing iron armor.",
 	"emi.info.quark.magnet.2": "A Stonecutter moved by a Magnet cuts through the blocks in its way, dropping them as if mined with Silk Touch. Wax a Magnet with a Honeycomb to hide its particles.",
 	"emi.info.quark.pipe.1": "Moves items: items thrown or dropped into an open end, or pushed in by Hoppers and Droppers, travel through the pipe into connected containers, or come out of the other open end. At junctions, items go down first if they can. Powering a Pipe with redstone stops it.",
-	"emi.info.quark.pipe.2": "Too many items in a Pipe at once make it break. Right-click a Pipe with Glass to encase it, or with a Stick to fix connections that look wrong. Comparators read how many items are inside."
+	"emi.info.quark.pipe.2": "Pipes connect by themselves to every adjacent Pipe and container, and their sides can't be closed. Too many items in a Pipe at once make it break. Right-click a Pipe with Glass to encase it, or with a Stick to refresh the connections of the whole network if they look wrong. Comparators read how many items are inside."
 }
