@@ -1,4 +1,4 @@
-# Upcoming
+# 4.10.0-beta
 * Removed Gravestone
   * **Warning**: existing graves will disappear along with the items inside them. Recover your items from any grave before updating
 * Added Dungeons and Taverns Woodland Mansion Replacement
