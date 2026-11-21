@@ -52,5 +52,8 @@
         "naturalist:vulture",
         "naturalist:whale",
         "naturalist:zebra"
+    ],
+    "remove": [
+        "minecraft:silverfish"
     ]
 }

@@ -30,6 +30,7 @@
   * Sawmill's Carpenter and Supplementaries' Red Merchant now follow the same trading rules as other villagers: everything costs 1 Emerald, plus part of the iron for Bombs, Cannons and Cannonballs, and is sold few times
   * Tropical Stew and Maple Cream Pie can be asked by villagers as Local Flavours
   * Sawmill's Carpenter houses and Incubation's Chicken Coops no longer generate in villages
+* Silverfish no longer get Enhanced AI's extra health in caves
 * On death, worn armor, the offhand and hotbar items with durability are kept, losing 15% durability. Everything else goes into the Totem of Holding. Items with Curse of Vanishing are still destroyed
 * Updated Mods
   * Architectury 13.0.11 -> 13.0.12
