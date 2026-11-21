@@ -2,5 +2,8 @@
   "replace": true,
   "values": [
     "#minecraft:stronghold_biased_to"
+  ],
+  "remove": [
+    "minecraft:mushroom_fields"
   ]
 }
