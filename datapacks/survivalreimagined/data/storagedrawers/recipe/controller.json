@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "CXC",
+        "HDH"
+    ],
+    "key": {
+        "#": { "item": "minecraft:stone" },
+        "C": { "item": "minecraft:comparator" },
+        "X": { "tag": "storagedrawers:drawers" },
+        "H": { "item": "minecraft:hopper" },
+        "D": { "tag": "c:gems/diamond" }
+    },
+    "result": { "id": "storagedrawers:controller" }
+}

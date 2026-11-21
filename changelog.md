@@ -1,3 +1,6 @@
+# Upcoming
+* Re-enabled Storage Drawers' Drawer Controller and Drawer Controller IO, also in their Framed versions
+
 # 4.10.0-beta
 * Removed Gravestone
   * **Warning**: existing graves will disappear along with the items inside them. Recover your items from any grave before updating
