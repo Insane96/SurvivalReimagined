@@ -96,7 +96,7 @@ Sostituisce `stronghold`. ⛏️ **Sotterranea**, **Overworld**.
 Il datapack cambia il posizionamento (nel jar: anelli `concentric_rings`, `count` 219):
 - `worldgen/structure_set/strongholds.json`: `random_spread` spacing 80 / separation 40, salt 1784520396, come le altre strutture.
 - `tags/worldgen/biome/has_structure/stronghold.json`: `replace: true` con solo `#minecraft:stronghold_biased_to` (terraferma + Lush/Dripstone Caves e quello che aggiunge Vanilla Backport). Sotto oceani, fiumi, spiagge e Deep Dark non si generano. Il bioma è controllato all'altezza di partenza, non in superficie.
-- `worldgen/structure/stronghold.json`: copia di quella del jar con `start_height` 15 invece di -15, `dimension_padding.top` 0 invece di 238 (che impediva ai pezzi di superare Y ~81) e `terrain_adaptation` `none` invece di `encapsulate` (che ricopriva di terreno i pezzi in superficie), come la versione Forge in v3, così a volte esce in superficie. Le scale dei corridoi salgono sempre (+6/+12). Se DnT aggiorna il file, va ricopiato.
+- `worldgen/structure/stronghold.json`: copia di quella del jar con `start_height` 15 invece di -15 (come la versione Forge in v3). `dimension_padding.top` 238 (i pezzi non superano Y ~81) e `terrain_adaptation` `encapsulate` (avvolge i pezzi nel terreno) restano quelli di DnT: toglierli non bastava a farlo uscire in superficie, soprattutto sotto le colline, perché l'altezza di partenza è assoluta. Se DnT aggiorna il file, va ricopiato.
 
 Nei mondi esistenti gli occhi di ender trovano solo gli stronghold del nuovo posizionamento (chunk nuovi); quelli vecchi restano ma non vengono più localizzati.
 
