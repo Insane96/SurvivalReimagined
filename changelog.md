@@ -6,7 +6,6 @@
 * Added Map Atlases
 * Added Quark Oddities
   * Adds Crates, Magnets, Pipes and the Totem of Holding (replacing Gravestone)
-* Added Smooth Animations: True Singleplayer
 * Added the Torches Reimagined resource pack
 * Added Vintage Animations
 * Added Weaker Spiderwebs
