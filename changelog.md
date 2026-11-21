@@ -1,5 +1,3 @@
-Can't sleep in straw beds during day
-
 # Upcoming
 * Removed Gravestone
   * **Warning**: existing graves will disappear along with the items inside them. Recover your items from any grave before updating
@@ -33,8 +31,9 @@ Can't sleep in straw beds during day
 * On death, worn armor, the offhand and hotbar items with durability are kept, losing 15% durability. Everything else goes into the Totem of Holding. Items with Curse of Vanishing are still destroyed
 * Updated Mods
   * Architectury 13.0.11 -> 13.0.12
-  * Bits and Balance 2.5.4 -> 2.5.7
+  * Bits and Balance 2.5.4 -> 2.5.9
   * Collective 8.86 -> 8.87
+  * CreativeCore 2.13.54 -> 2.13.55
   * Ecologics 2.3.10_1 -> 2.3.11
   * Enhanced AI 4.2.7.2 -> 4.3.1.0
     * Smiths repair nearby damaged Iron Golems, and badly damaged golems walk to them to be repaired
@@ -44,9 +43,9 @@ Can't sleep in straw beds during day
     * Angry Creepers have 50% knockback resistance
   * Every Compat 2.11.58 -> 2.11.59
     * Fixed missing textures on Storage Drawers' Drawers made from modded woods
-  * FWA 1.3.4 -> 1.3.7-patch.2
+  * FWA 1.3.4 -> 1.3.8
     * Improved performance with many animated blocks
-  * JEI 19.70.0.469 -> 19.71.0.473
+  * JEI 19.70.0.469 -> 19.71.0.475
   * InsaneSurvivalOverhaul 5.15.2.0 -> 5.16.1.0-beta
     * Added the villagers overhaul (see above): villagers can no longer breed and are cured with a Golden Carrot instead of a Golden Apple, cured villagers rest for a day before working (Convalescence), prices never go below the base price, villagers only sell, restock once per day and keep their job once they take one
     * Sponges dry in the sun and get wet in the rain again
@@ -75,7 +74,7 @@ Can't sleep in straw beds during day
     * Snow now generates under trees with full-block branches
   * Stamina 2.1.0.0 -> 2.1.0.1
     * Fixed the stamina overlay sometimes covering half a heart more than the current health
-  * Supplementaries 4.0.2 -> 4.1.3
+  * Supplementaries 4.0.2 -> 4.1.4
     * Added the Redstone Lantern, crafted with a Redstone Torch surrounded by Iron Nuggets
     * Cannons now have a shooting animation, and players shot out of a Cannon damage the entities they fly through. Pigñatas can be fired from Cannons
 

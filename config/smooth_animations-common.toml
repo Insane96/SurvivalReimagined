@@ -17,3 +17,5 @@ debug_server_hitboxes = false
 zero_tick_entity_sync = false
 #Fixes entity bodies rotating choppily when head rotates
 smooth_body_turning = true
+#When the server lags, the client stops waiting for it and runs on its own like vanilla, until the server catches up. Off makes the whole game slow down with the server, player included. No more 'client' or 'server' lag, just lag. True singleplayer.
+server_lag_fallback = true
