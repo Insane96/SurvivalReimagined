@@ -52,15 +52,20 @@ Lo stesso paio di mod si sovrascriveva a vicenda anche su `secret_room.json` e `
 
 **Aggiornamento (reinstallazione di Woodland Mansion Replacement con l'overhaul dei villager di ISO):** i tre override erano stati tolti insieme alla mod e sono stati rimessi come **copie esatte** dei file di Woodland Mansion Replacement. Gli avamposti sono di nuovo attivi, quindi la mappa verso `minecraft:pillager_outpost` è tornata valida e quella del Monumento non è stata rimessa (c'è già nei relitti).
 
-### ✅ Conflitto 2 (RISOLTO) — `worldgen/structure_set/nether_complexes.json` (Incendium vs DnT Nether Fortress Overhaul Retro, la datapack)
-Entrambe ridefinivano lo **stesso** structure_set vanilla `minecraft:nether_complexes` (quello che governa insieme Fortezza del Nether + Bastione), con valori diversi:
+### ✅ Conflitto 2 (RISOLTO) — `worldgen/structure_set/nether_complexes.json` (Incendium, ibo e DnT Nether Fortress Overhaul Retro)
+Tre pack ridefiniscono lo **stesso** structure_set vanilla `minecraft:nether_complexes` (quello che governa insieme Fortezza del Nether + Bastione). Vince l'ultimo caricato; l'ordine qui sotto è quello della lista `Enabled` nel `level.dat` di un mondo del pack:
 
-| | salt | spacing | separation |
-|---|---|---|---|
-| **Incendium** | 30084232 | 16 | 8 |
-| **DnT Nether Fortress Overhaul Retro** (datapack, originale) | 30084232 | 27 | 4 |
+| Ordine | Pack | salt | spacing | separation | Note |
+|---|---|---|---|---|---|
+| 1 | **Incendium** (`mod_data`) | 30084232 | 16 | 8 | con `exclusion_zone` di 8 chunk verso `incendium:greater_structures` |
+| 2 | **ibo** (pack integrato nel jar) | 30084232 | 27 | 4 | rimette i valori vanilla, perché senza strutture di Incendium la sua griglia non serve |
+| 3 | **DnT Nether Fortress Overhaul Retro** (`datapacks/`, **vince**) | 30084232 | **16** | **8** | valori modificati a mano, l'originale era 27/4 come vanilla |
 
-**Fix applicato:** modificato direttamente il file `data/minecraft/worldgen/structure_set/nether_complexes.json` **dentro** `datapacks/DnT Nether Fortress Overhaul Retro 2.5.zip` (riscritto lo zip mantenendo intatti gli altri 404 file), portando spacing/separation a 16/8 — gli stessi valori di Incendium. Le due mod ora concordano, nessun conflitto residuo. (La `exclusion_zone` di Incendium era comunque diventata inutile dato che le sue 9 strutture sono disattivate da `ibo` — vedi sopra — quindi non l'ho riportata.)
+**Fix applicato:** modificato direttamente il file `data/minecraft/worldgen/structure_set/nether_complexes.json` **dentro** `datapacks/DnT Nether Fortress Overhaul Retro 2.5.zip` (riscritto lo zip mantenendo intatti gli altri 404 file), portando spacing/separation a 16/8, gli stessi valori di Incendium. La `exclusion_zone` di Incendium non è stata riportata: le sue strutture sono disattivate da `ibo`.
+
+**16/8 è una scelta di design, non più un allineamento.** Quando il fix è stato fatto non si sapeva che ibo ripristina i valori vanilla: l'allineamento a Incendium seguiva una griglia pensata per un Nether con le sue 9 strutture, che nel pack non ci sono. Le Fortezze e i Bastioni più comuni vanno bene comunque e i valori restano 16/8: circa **2,8 volte** più complessi che in vanilla ((27/16)², una cella ogni 256 chunk invece di 729), distribuiti in modo più regolare grazie alla separation più alta. Di conseguenza l'`exclusion_zone` di Hellish Trials verso questo set è abbassata da 10 a 5 chunk (vedi la sezione di Hellish Trials).
+
+Se un giorno si volesse tornare a vanilla, basta togliere il file dallo zip DnT (vince ibo con 27/4) e rimettere 10 chunk in Hellish Trials.
 
 ### ✅ "Salt" duplicati che invece sono INNOCUI (voluti dal design delle mod)
 Controllando tutti gli 83 file `structure_set` del pack, oltre al conflitto sopra ci sono altri 3 casi di salt duplicato, ma sono tutti innocui:
@@ -107,9 +112,17 @@ File: `datapacks/DnT Nether Fortress Overhaul Retro 2.5.zip`. Sostituisce `fortr
 ### Incendium — 🔴 **strutture disattivate** (biomi attivi)
 `Incendium_1.21.x_v5.4.4.jar`. **Dimensione: Nether** (biomi custom `incendium:infernal_dunes`, `incendium:withered_forest`, ecc.).
 
-**Correzione:** avevo detto che tutte e 9 le strutture generano — sbagliato. La mod `ibo-3.1.0-neoforge-1.21.jar` ("Incendium Biomes Only") **è attiva** in questo pack e filtra via tutto ciò che è sotto il namespace `incendium` in `worldgen/structure`, `worldgen/structure_set` e `worldgen/template_pool` — inclusi `incendium:lesser_structures.json` e `incendium:greater_structures.json`, cioè **i due structure_set che piazzano le 9 strutture giganti**. Senza quei structure_set, nessuna delle 9 strutture (Abandoned Tower, Forbidden Castle, Infernal Altar, Nether Reactor, Piglin Village, Pipeline, Quartz Kitchen, Ruined Lab, Sanctum) genera. **Restano solo i biomi Nether custom di Incendium** — che è esattamente lo scopo dichiarato di ibo ("Disables everything but biomes in Incendium").
+**Correzione:** avevo detto che tutte e 9 le strutture generano — sbagliato. La mod `ibo-3.2.0-neoforge-1.21.1.jar` ("Incendium Biomes Only") **è attiva** in questo pack e filtra via tutto ciò che è sotto il namespace `incendium` in `worldgen/structure`, `worldgen/structure_set` e `worldgen/template_pool` (oltre a loot table, advancement, ricette e funzioni) — inclusi `incendium:lesser_structures.json` e `incendium:greater_structures.json`, cioè **i due structure_set che piazzano le 9 strutture giganti**. Senza quei structure_set, nessuna delle 9 strutture (Abandoned Tower, Forbidden Castle, Infernal Altar, Nether Reactor, Piglin Village, Pipeline, Quartz Kitchen, Ruined Lab, Sanctum) genera. **Restano solo i biomi Nether custom di Incendium** — che è esattamente lo scopo dichiarato di ibo ("Disables everything but biomes in Incendium").
 
-Nota: il filtro di ibo colpisce solo il namespace `incendium`, quindi la ridefinizione che Incendium fa di `data/minecraft/worldgen/structure_set/nether_complexes.json` (namespace `minecraft`) **non è filtrata** e resta attiva — il conflitto con la Nether Fortress DnT descritto sopra è quindi ancora reale, anche se la exclusion_zone che protegge le (ormai inesistenti) strutture Incendium è di fatto inutile.
+Il filtro di ibo colpisce solo il namespace `incendium`, quindi i file di Incendium sotto `minecraft` restano:
+- **`nether_complexes.json`**: ibo lo sovrascrive con i valori vanilla, ma lo zip DnT carica dopo e vince con 16/8 (vedi Conflitto 2).
+- **Tag dei biomi `has_structure/nether_fortress` e `has_structure/bastion_remnant`**: i biomi di Incendium esistono, quindi questi tag decidono quale complesso può nascere in ognuno. Nella cella della griglia la struttura estratta che non è ammessa dal bioma lascia il posto all'altra.
+
+| Bioma di Incendium | Fortezza | Bastione |
+|---|---|---|
+| `infernal_dunes`, `toxic_heap` | ✅ | ❌ |
+| `ash_barrens`, `withered_forest` | ❌ | ✅ |
+| `inverted_forest`, `weeping_valley`, `volcanic_deltas` | ✅ | ✅ |
 
 ### Philips' Ruins — 🟢 attiva, nessun config dedicato
 `Philips-Ruins1.21.1-2.0-NeoForge.jar`. **Dimensione: solo Overworld** (biomi vanilla come forest, jungle, swamp, plains, deep_dark, lush_caves, ecc.).
@@ -120,6 +133,8 @@ Nota: il filtro di ibo colpisce solo il namespace `incendium`, quindi la ridefin
 | Ancient Dungeon, Lost Soul City, Underground Structures | ⛏️ Sotterranea |
 | Lost Soul Dungeon | ⛏️ Sotterranea |
 | Ocean Fortress, Ocean Ruins | 🌊 Subacquea |
+
+Il jar ha anche i tag `has_structure/start_nether_dungeon_biomes` (biomi del Nether) e `start_nether_ruin_biomes`, ma nessuna struttura li usa: Philips' Ruins non genera niente nel Nether.
 
 ### VanillaBackport — 🟢 attiva (via config)
 `VanillaBackport-neoforge-1.21.1-1.1.7.10.jar`. Non registra vere strutture jigsaw ma pezzi/feature decorative:
@@ -150,12 +165,41 @@ Nota: il filtro di ibo colpisce solo il namespace `incendium`, quindi la ridefin
 `ecologics-1.21.1-2.3.8.jar`. Aggiunge la **Desert Ruin** (`ecologics:desert_ruin`, ☀️ superficie, solo bioma `minecraft:desert`, spacing 20 / separation 8). **Overworld.** La cassa di `chest_house` usa la loot table `minecraft:chests/desert_pyramid`, gli altri pezzi hanno solo vasi. I filoni d'oro del Nether (`add_ore_vein_nether_gold`) sono disattivati da un override in `datapacks/survivalreimagined/data/ecologics/neoforge/biome_modifier/`.
 
 ### formationsnether — 🟢 attiva, nessun config dedicato
-`formationsnether-1.0.5a-mc1.21+.jar`. **Dimensione: Nether** (bioma `basalt_deltas` e altri).
+`formationsnether-1.0.5b-mc1.21+.jar`. **Dimensione: Nether** (bioma `basalt_deltas` e altri).
 
 | Struttura | Posizione |
 |---|---|
 | Basalt Hut, Ore Shard | ⛏️ Sotterranea |
 | Tutte le altre 18 (Blackstone Castle/Remnant, Campsite, Checkerboard Temple, Flaming Pillar, Large House, Large/Small Pedestal, Large Tree, Nether Wart Field, Obsidian Pillar, Parkour Challenge, Quartz Spikes, Respawn Anchor Altar, Rib Cage, Small Fire/Lava Arena, Small Lava Shrine, Sphere Cage) | ☀️ Superficie |
+
+Tre structure_set, nessuna `exclusion_zone`:
+
+| Set | Strutture | spacing/separation |
+|---|---|---|
+| `formationsnether:common` | le 18 strutture piccole (peso 1 ciascuna) | **5/2**, molto densa |
+| `formationsnether:rare` | Blackstone Castle, Checkerboard Temple | 15/10 |
+| `formationsnether:ore_shards` | Ore Shard | 4/1 |
+
+### Hellish Trials — 🟢 attiva, nessun config dedicato
+`HellishTrials-neoforge-1.0.5.jar`. **Nether Trial** (`hellish_trials:nether_trial`, jigsaw), la versione del Nether delle Trial Chambers con vault ominosi. **Dimensione: Nether** (tag `hellish_trials:has_structure/nether_trial_biomes`).
+
+Structure set `hellish_trials:minor_structures`: spacing 45, separation 25, `exclusion_zone` verso `minecraft:nether_complexes`. **Override** in `datapacks/survivalreimagined/data/hellish_trials/worldgen/structure_set/minor_structures.json`: `chunk_count` da 10 a 5. Con la griglia 16/8 di Fortezze e Bastioni (vedi Conflitto 2), 10 chunk escludevano quasi tutte le posizioni (sopravviveva circa lo 0,4% dei tentativi). Le rune nei suoi vault ominosi sono aggiunte con un modifier `runeenchanting:rune_loot` nel datapack (vedi `CLAUDE.md`).
+
+### Moog's Nether Structures — 🟢 attiva (config in `moogs_structures.json`)
+`MoogsNetherStructures-universal-1.21-3.1.1.jar` (libreria `MoogsStructureLib`). **Dimensione: Nether**, 50 strutture jigsaw in 40 structure_set separati, con il placement `moogs_structures:advanced_random_spread`. Nessuna ha una `exclusion_zone` verso `nether_complexes`, quindi possono nascere vicino o sopra a Fortezze e Bastioni.
+
+| Biomi (tag `mns:has_structure/...`) | Strutture | spacing/separation |
+|---|---|---|
+| Tutto il Nether | Very Small Nether Brick (3 varianti), Very Small Blackstone (4), Circle Nether Brick, Leafy Rubble, Medium Blackstone, Small Nether Brick, Shrine/Smoking Shrine, Soul Fire | 22-25 / 11-20 |
+| Tutto il Nether | Large Blackstone Pillars/Walls, Large Nether Brick, Ruined Portal, Lava Pool, Sandy Skull, Medium House (2) | 27-44 / 11-36 |
+| Tutto il Nether | Train, Copper Tower, Nether Wart Farm, 6 Bridge, Nether Tower | 65-115 / 25-70 |
+| Tutto il Nether | **Mega Fortress** | **116/76** |
+| Tutto il Nether | **Mega Arenas**: Small Arena (peso 5), Large Arena (3), Dragon Arena (1) | **150/100** |
+| Crimson | Crimson Forge, Crimson Lava Well, Medium Crimson Fungus (2), Medium Crimson Well, Sword | 22-45 / 12-42 |
+| Warped | Large House 1, Medium Warped Fungus (2), Medium Warped Well, Warped Dome, Warped House, Warped Pool | 24-42 / 13-38 |
+| Nether Wastes | Giant Skull | 54/46 |
+
+Config `config/moogs_structures.json`: `replace_nether_fortress = false`, quindi la **Mega Fortress si aggiunge** alla Fortezza DnT invece di sostituirla (con il preset attivo la Fortezza vanilla sparirebbe e la Mega Fortress passerebbe a 30/12). Moltiplicatori di frequenza tutti a 1.0, nessuna struttura disattivata. Le rune nei suoi vault sono aggiunte via il tag `survivalreimagined:loot/nether_vault` (vedi `CLAUDE.md`).
 
 ### Immersive Gateways — 🟢 attiva, nessun config on/off (solo parametri di distanza)
 `immersive_gateways-neoforge-0.0.6.jar`. ☀️ Superficie, **solo Overworld** — nonostante il file `immersive_gateways.json` elenchi colori anche per biomi Nether/End (badlands, cherry_grove, desert, ice, jungle, mangrove_swamp, mountain, mushroom, plains, swamp: 10 biomi, tutti Overworld). Config regola solo `minDistance`/`maxDistance` tra i gateway (1024–8096 blocchi), non un enable/disable.
@@ -237,7 +281,8 @@ Controllato ogni `structure_set` vanilla ridefinito da una mod (non solo quelli 
 - **Villaggi e Avamposti Pillager: modificati da ISO.** Dalla 5.16.0.0 il pacchetto integrato `villagers_overhaul` sostituisce `disable_long_noses`: villaggi abbandonati (solo zombie villager, spacing 80/separation 50) e avamposti con una guarnigione unica, senza respawn di pillager.
 - **Nessun'altra struttura vanilla è disattivata.** Controllato specificamente in `insanesurvivaloverhaul` per buried treasure, ruined portal, trail ruins, trial chambers, nether fossil, bastion, igloo, ocean ruins, pozzo del deserto: nessun toggle, nessuna menzione.
 - **Città di Fine (End City): AUMENTATE, non ridotte.** Altro pacchetto integrato di ISO, `increased_end_cities` (`"Increase end cities" = true`, attivo): spacing passa da 20/11 (vanilla) a 11/7 — città di fine molto più dense.
-- **Correzione: `ibo-3.1.0-neoforge-1.21.jar` ("Incendium Biomes Only") È attiva.** Avevo controllato nel posto sbagliato (cartella `resourcepacks/` sul disco e lista `resourcePacks` di `options.txt`) — ma il filtro di ibo agisce sul lato **dati** (strutture/loot/structure_set), non sugli asset, quindi va cercato tra le datapack attive, non tra i resource pack visivi. La mod (di Naomi Roberts, dipendenza obbligatoria su Incendium) si registra ed è sempre attiva finché è installata, senza bisogno di estrarla a mano. Effetto reale: **le 9 strutture giganti di Incendium sono disattivate**, restano solo i suoi biomi Nether — vedi sezione Incendium sopra, corretta di conseguenza.
+- **Fortezza del Nether e Bastione: più comuni, per scelta.** `nether_complexes` è a 16/8 invece di 27/4 (vedi Conflitto 2).
+- **Correzione: `ibo` ("Incendium Biomes Only") È attiva.** Avevo controllato nel posto sbagliato (cartella `resourcepacks/` sul disco e lista `resourcePacks` di `options.txt`) — ma il filtro di ibo agisce sul lato **dati** (strutture/loot/structure_set), non sugli asset, quindi va cercato tra le datapack attive, non tra i resource pack visivi. La mod (di Naomi Roberts, dipendenza obbligatoria su Incendium) si registra ed è sempre attiva finché è installata, senza bisogno di estrarla a mano. Effetto reale: **le 9 strutture giganti di Incendium sono disattivate**, restano solo i suoi biomi Nether — vedi sezione Incendium sopra, corretta di conseguenza.
 
 ### ✅ FIX APPLICATO — Relitti (Shipwreck) più rari
 `minecraft:shipwrecks` (nessuna mod lo toccava). Override in `datapacks/survivalreimagined/data/minecraft/worldgen/structure_set/shipwrecks.json`:
@@ -287,8 +332,8 @@ Scelta presa: **disattivata del tutto** (`data/minecraft/worldgen/structure_set/
 
 - **Strutture disattivate nel pack: Echo Pillar** (ISO, `"Enable Echo pillar" = false`), **Galleon** e **Road Sign** (Supplementaries, entrambe spente in `supplementaries-common.toml`). Tutte le altre strutture elencate sopra sono attive.
 - **8 strutture vanilla sono sostituite** dalle mod DnT (7 jar + 1 datapack): Città Antica, Piramide del Deserto, Tempio della Giungla, Monumento Oceanico, Fortezza, Capanna della Strega, Magione Silvestre (Illager Manor), **Fortezza del Nether** (quest'ultima dentro `datapacks/`, non nei jar).
-- **Concentrazione nel Nether**: formationsnether e la Nether Fortress DnT generano entrambe lì (quasi tutte "di superficie" nel Nether, non sepolte). *(Correzione: nella versione precedente collegavo questo a "Portal requires crying obsidian" e al tetto del Nether attivo — non c'entrano nulla con la densità di generazione, era un'aggiunta senza senso da parte mia. L'unico modo per giudicare se la densità nel Nether è davvero eccessiva è guardare spacing/separation reali di ogni mod, vedi sotto, oppure verificarlo in gioco.)* Incendium **non** è più in questa lista: le sue 9 strutture sono disattivate da `ibo` (vedi sopra), restano solo i suoi biomi.
+- **Concentrazione nel Nether**: ci generano Fortezza DnT e Bastione (16/8, più comuni di vanilla per scelta), formationsnether (set `common` a 5/2), Moog's Nether Structures (50 strutture, da 22/11 a 150/100, più la Mega Fortress) e il Nether Trial di Hellish Trials (45/25). Quasi tutte sono "di superficie" nel Nether, non sepolte. Solo Hellish Trials ha una `exclusion_zone` verso Fortezze e Bastioni: le altre possono sovrapporsi. Incendium **non** è in questa lista: le sue 9 strutture sono disattivate da `ibo`, restano solo i suoi biomi. Amplified Nether cambia solo il terreno, ma questo influisce su dove le strutture di superficie riescono a posizionarsi.
 - ~~Overworld sovraffollato di rovine generiche~~ — **ritrattato**: in gioco non hai trovato troppe strutture, e i numeri lo confermano. Guardando gli spacing/separation reali (estratti dai `structure_set`): adventuredungeons ha spacing 30-40, Philips' Ruins varia da 40 a 360 (Rare Ruin, come dice il nome, è molto rara). YungsExtras non usa nemmeno il sistema a griglia (`structure_set`) ma decorazioni via `biome_modifier`, quindi non compete per lo spazio con le altre. La mia frase precedente era una supposizione non verificata sui numeri — la densità reale non sembra eccessiva.
 - Nessuna struttura tra quelle elencate genera nell'**End** — nessuna mod del pack tocca quella dimensione.
 - **Nessuna struttura del pack ha una propria explorer map** (vedi sezione dedicata sopra).
-- **Due conflitti reali di sovrascrittura file** trovati tra mod DnT tra loro e tra Incendium/DnT — **entrambi ora risolti**: vedi sezione "⚠️ Conflitti reali trovati" sopra per i dettagli (loot table della Magione con mappe verso strutture inesistenti → sistemata con un unico override; griglia di generazione di Fortezza/Bastione del Nether ridefinita due volte con parametri diversi → allineata modificando direttamente lo zip di DnT).
+- **Due conflitti reali di sovrascrittura file** trovati tra mod DnT tra loro e tra Incendium/DnT — **entrambi ora risolti**: vedi sezione "⚠️ Conflitti reali trovati" sopra per i dettagli (loot table della Magione con mappe verso strutture inesistenti → sistemata con un unico override; griglia di generazione di Fortezza/Bastione del Nether ridefinita da Incendium, ibo e DnT con parametri diversi → fissata a 16/8 nello zip di DnT, che vince).
