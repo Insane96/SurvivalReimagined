@@ -1,4 +1,4 @@
-# Upcoming
+# 4.10.1-beta
 * Re-enabled Storage Drawers' Drawer Controller and Drawer Controller IO, also in their Framed versions
 * Diamond and Netherite Horse Armor and Nautilus Armor no longer give Armor Toughness
 * Sculk Shriekers that can summon the Warden are easier to break and no longer immune to explosions
