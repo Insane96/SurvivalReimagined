@@ -10,6 +10,9 @@
     * Tamed Horses, Donkeys, Mules and Llamas no longer wander far from where you dismounted them
     * Guardians, Elder Guardians and other mobs in water no longer get the cave health and follow range bonuses, and Zombies spawning in water no longer become Miners
   * Every Compat 2.11.59 -> 2.11.60
+  * GeckoLib 4.9.3 -> 4.9.4
+    * Fixed leashes on GeckoLib mobs being rendered multiple times
+    * Improved performance
   * InsaneSurvivalOverhaul 5.16.2.0-beta -> 5.16.5.0-beta
     * The Warden is easier to summon: Sculk Shriekers summon it after 2 warnings instead of 4, warnings build up faster and fade more slowly
     * Falling blocks (Sand, Gravel, Concrete Powder, ...) hurt the entities they fall on, more the farther they fall
@@ -25,7 +28,7 @@
     * Spider Eyes and Golden Carrots stack to 128
     * Fixed Rich Farmland not showing growth particles
   * JEI 19.71.0.475 -> 19.76.1.478
-  * RuneEnchanting 1.5.3.0-beta -> 1.5.4.0-beta
+  * RuneEnchanting 1.5.3.0-beta -> 1.5.4.1-beta
   * Stone Zone 2.11.22 -> 2.11.23
 
 # 4.10.0-beta
