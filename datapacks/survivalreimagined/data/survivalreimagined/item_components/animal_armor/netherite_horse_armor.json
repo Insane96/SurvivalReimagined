@@ -1,0 +1,23 @@
+{
+    "item": "minecraft:netherite_horse_armor",
+    "components": {
+        "minecraft:attribute_modifiers": {
+            "modifiers": [
+                {
+                    "type": "minecraft:generic.armor",
+                    "id": "minecraft:armor.body",
+                    "amount": 19.0,
+                    "operation": "add_value",
+                    "slot": "body"
+                },
+                {
+                    "type": "minecraft:generic.knockback_resistance",
+                    "id": "minecraft:armor.body",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "body"
+                }
+            ]
+        }
+    }
+}

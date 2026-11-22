@@ -1,5 +1,6 @@
 # Upcoming
 * Re-enabled Storage Drawers' Drawer Controller and Drawer Controller IO, also in their Framed versions
+* Diamond and Netherite Horse Armor and Nautilus Armor no longer give Armor Toughness
 
 # 4.10.0-beta
 * Removed Gravestone
