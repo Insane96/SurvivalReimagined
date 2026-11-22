@@ -1,0 +1,55 @@
+[
+  {
+    "entity": "minecraft:horse",
+    "health": 20.0,
+    "movement_speed": 0.3375,
+    "jump_strength": 0.7,
+    "step_height": 1.0
+  },
+  {
+    "entity": "minecraft:donkey",
+    "health": 20.0,
+    "movement_speed": 0.225,
+    "jump_strength": 0.5,
+    "step_height": 1.0
+  },
+  {
+    "entity": "minecraft:mule",
+    "health": 20.0,
+    "movement_speed": 0.225,
+    "jump_strength": 0.5,
+    "step_height": 1.0
+  },
+  {
+    "entity": "minecraft:skeleton_horse",
+    "health": 20.0,
+    "movement_speed": 0.4,
+    "jump_strength": 0.7,
+    "step_height": 1.0
+  },
+  {
+    "entity": "minecraft:zombie_horse",
+    "health": 30.0,
+    "movement_speed": 0.3,
+    "jump_strength": 0.5,
+    "step_height": 1.0
+  },
+  {
+    "entity": "minecraft:llama",
+    "health": 20.0,
+    "movement_speed": 0.175,
+    "jump_strength": 0.5,
+    "step_height": 1.0,
+    "strength": 3.0,
+    "extra_strength_chance": 0.5
+  },
+  {
+    "entity": "minecraft:trader_llama",
+    "health": 20.0,
+    "movement_speed": 0.175,
+    "jump_strength": 0.5,
+    "step_height": 1.0,
+    "strength": 3.0,
+    "extra_strength_chance": 0.5
+  }
+]

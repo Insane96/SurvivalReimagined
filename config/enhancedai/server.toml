@@ -26,6 +26,8 @@
 	"Enable Not tempted animals" = true
 	#Makes bees less prone to wander away from their hive and get lost.
 	"Enable Bee hive navigation" = true
+	#Tamed horses, donkeys, mules and similar don't wander too far away from where the player dismounted them. Only entity types in `enhancedai:animal/stay_near_dismount` tag are affected by this feature.
+	"Enable Stay near dismount" = true
 
 	#Make animals fight back or be scared by players. Use the entity type tag enhancedai:animal/scared_attack/can_be_neutral, enhancedai:animal/scared_attack/can_be_hostile, and enhancedai:animal/scared_attack/can_be_scared_by_players to add/remove animals.
 	[Animals."Animal scared attack"]
@@ -96,6 +98,13 @@
 		# Default: 48
 		# Range: 16 ~ 64
 		"Hive forget distance" = 48
+
+	#Tamed horses, donkeys, mules and similar don't wander too far away from where the player dismounted them. Only entity types in `enhancedai:animal/stay_near_dismount` tag are affected by this feature.
+	[Animals."Stay near dismount"]
+		#Max distance a horse wanders away from where the player dismounted it.
+		# Default: 10
+		# Range: 1 ~ 64
+		Range = 10
 
 [Blazes]
 	#Make blazes fire faster/more fireballs. Only mobs in enhancedai:blaze_attack/change_attack entity type tag are affected by this feature.

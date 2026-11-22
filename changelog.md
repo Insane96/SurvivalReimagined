@@ -1,10 +1,31 @@
 # Upcoming
 * Re-enabled Storage Drawers' Drawer Controller and Drawer Controller IO, also in their Framed versions
 * Diamond and Netherite Horse Armor and Nautilus Armor no longer give Armor Toughness
-* Vanilla Armor Trim Smithing Templates are duplicated with the vanilla recipe again (7 Diamonds instead of 1)
-* Sculk Shriekers are no longer extremely hard to break and immune to explosions
+* Sculk Shriekers that can summon the Warden are easier to break and no longer immune to explosions
 * Carrying a block with Carry On always gives the same slowness, no matter how many items it contains
 * Glow Berries can no longer be smelted into Naturalist's Glow Goop in the Furnace, only in the Smoker or on a Campfire
+* Updated Mods
+  * Enhanced AI 4.3.2.0-beta -> 4.3.3.0
+    * Tamed Horses, Donkeys, Mules and Llamas no longer wander far from where you dismounted them
+    * Guardians, Elder Guardians and other mobs in water no longer get the cave health and follow range bonuses, and Zombies spawning in water no longer become Miners
+  * Every Compat 2.11.59 -> 2.11.60
+  * InsaneSurvivalOverhaul 5.16.2.0-beta -> 5.16.5.0-beta
+    * The Warden is easier to summon: Sculk Shriekers summon it after 2 warnings instead of 4, warnings build up faster and fade more slowly
+    * Falling blocks (Sand, Gravel, Concrete Powder, ...) hurt the entities they fall on, more the farther they fall
+    * Horses, Donkeys, Mules, Llamas and undead Horses no longer have random stats: every animal of the same type has the same ones. Llamas carry 9 slots, bred Llamas can get more. Animals already in the world get the new stats
+    * Netherite Upgrade Smithing Templates are now also duplicated with 1 Diamond
+    * Eyes of Ender no longer break when thrown
+    * The Turtle Helmet gives Oxygen Bonus (like Respiration) instead of Water Breathing
+    * Armadillos shed their scutes as a stackable block, like Turtles, and can no longer be brushed
+    * Added the Potion of Resistance, brewed with an Armadillo Scute in an Awkward Potion, also sold by Clerics
+    * Wolf Armor no longer breaks: at 1 durability it stays on the wolf but stops protecting it until repaired
+    * Broken tools and armor lose their runes' effects until repaired, curses still apply
+    * Honeycombs from sheared Beehives and Bee Nests drop out of the clicked face
+    * Spider Eyes and Golden Carrots stack to 128
+    * Fixed Rich Farmland not showing growth particles
+  * JEI 19.71.0.475 -> 19.76.1.478
+  * RuneEnchanting 1.5.3.0-beta -> 1.5.4.0-beta
+  * Stone Zone 2.11.22 -> 2.11.23
 
 # 4.10.0-beta
 * Removed Gravestone

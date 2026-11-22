@@ -23,6 +23,10 @@
 	"Enable Growth" = true
 	#Animals in insanesurvivaloverhaul:prevent_breeding become 'well fed' when fed. While well fed they have an higher chance (given by the livestock data) to breed.
 	"Enable Well fed" = true
+	#Horses, donkeys, mules, llamas and undead horses have fixed attributes (no more genetics). Configurable in equine_attributes.json, where values can also be random ranges.
+	"Enable Equine attributes" = true
+	#Changes to scutes and scute-related items: turtle and armadillo scutes drop as stackable blocks, the Turtle Helmet gives Oxygen Bonus instead of Water Breathing and Armadillo Scutes brew the Potion of Resistance.
+	"Enable Scutes" = true
 
 	#Animals age, changing size and possibly dying of old age. Configurable via livestock data. Adult and elder sheep drop more wool and, with the Livestock data pack enabled, adults and elders drop more goodies.
 	[Animals.Aging]
@@ -78,6 +82,19 @@
 		# Default: 20
 		# Range: > 0
 		"Consumed on breed" = 20
+
+	#Changes to scutes and scute-related items: turtle and armadillo scutes drop as stackable blocks, the Turtle Helmet gives Oxygen Bonus instead of Water Breathing and Armadillo Scutes brew the Potion of Resistance.
+	[Animals.Scutes]
+		#Oxygen Bonus attribute given by the Turtle Helmet, replacing its vanilla Water Breathing effect. Works like Respiration levels (stacks with it). Set to 0 to keep the vanilla Water Breathing.
+		# Default: 2.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Helmet oxygen bonus" = 2.0
+		#If true, turtle and armadillo scutes are shed as a block and not as item. Scute blocks can also be placed and stacked by right-clicking with scutes.
+		"Scute drops as block" = true
+		#If true, Armadillos can no longer be brushed (by players or dispensers) to get scutes, so they have to be collected when shed.
+		"Disable armadillo brushing" = true
+		#Adds the Potion of Resistance, brewed with an Armadillo Scute in an Awkward Potion. (Requires a world reload)
+		"Resistance potion" = true
 
 [Combat]
 	#Armor gives regenerating absorption and regen absorption speed instead of armor and toughness. Please note this is not compatible with the 'Armor rework' data pack
@@ -886,6 +903,10 @@
 		"Repair merge max items" = 9
 		#Dragon Egg will no longer teleport on left-click
 		"Teleport dragon egg only on right click" = true
+		#Eyes of Ender will never break when thrown. Vanilla has a 20% chance to break
+		"Unbreakable eyes of ender" = true
+		#Honeycombs from sheared Beehives and Bee Nests drop out of a free face (the clicked one if possible) instead of spawning inside the block
+		"Honeycombs drop from face" = true
 
 		[Misc.Tweaks.Parrot]
 			#The fall distance (in blocks) needed before parrots (and other shoulder entities) get knocked off the player's shoulder. Vanilla is 0.5
@@ -908,12 +929,12 @@
 	"Enable Equipment" = true
 	#Add a brand new Echo Torch and some changes to mob spawn
 	"Enable Spawning" = true
-	#Turtle helmet water breathing duration and stackable scute blocks.
-	"Enable Turtles" = true
 	#Changes to leashes distances.
 	"Enable Leash" = true
 	#Villagers can only be obtained by curing zombie villagers: no breeding, no nitwits, conversion to zombie villager on every difficulty, cure with the items in the `insanesurvivaloverhaul:zombie_villager_cure_items` item tag, convalescence after the cure, prices that only rise (demand and mistreatment, no discounts), emeralds from advancements that give experience. Requires the villagers overhaul data pack (VillagersCommon).
 	"Enable Villagers" = true
+	#Makes the Warden easier to summon from Sculk Shriekers.
+	"Enable Warden" = true
 
 	[Mobs."Misc mobs"]
 		#1 in X chance each tick for mobs in the `insanesurvivaloverhaul:passive_regen` entity type tag to regain 1 health. Set to 0 to disable
@@ -964,15 +985,6 @@
 		# Default: 64
 		# Range: 1 ~ 128
 		"Echo lantern radius" = 64
-
-	#Turtle helmet water breathing duration and stackable scute blocks.
-	[Mobs.Turtles]
-		#The ticks of Water Breathing given by the Turtle Helmet. Vanilla is 200
-		# Default: 900
-		# Range: > -2147483648
-		"Helmet water breathing time" = 900
-		#If true, scute will drop as a block and not as item
-		"Scute drops as block" = true
 
 	#Changes to leashes distances.
 	[Mobs.Leash]
@@ -1030,6 +1042,21 @@
 			# Default: 6000.0
 			# Range: 1.0 ~ 1.7976931348623157E308
 			Maximum = 6000.0
+
+	#Makes the Warden easier to summon from Sculk Shriekers.
+	[Mobs.Warden]
+		#Warning level at which a Sculk Shrieker summons the Warden. Vanilla is 4
+		# Default: 2
+		# Range: 1 ~ 4
+		"Summon warning level" = 2
+		#Ticks after a warning during which the warning level can't increase again. Vanilla is 200
+		# Default: 100
+		# Range: > 0
+		"Warning cooldown" = 100
+		#Ticks without warnings after which the warning level decreases by 1. Vanilla is 12000
+		# Default: 24000
+		# Range: > 1
+		"Warning decrease interval" = 24000
 
 [Movement]
 	#Players's slides down climbable blocks faster and stands still when opening an interface
@@ -1357,6 +1384,8 @@
 	"Enable Coal & Fire" = true
 	#Spawners are now a challenge. Monsters spawning from spawners ignore light.
 	"Enable Spawners" = true
+	#All falling blocks (sand, gravel, concrete powder, etc.) hurt the entities they fall on. Damage per block can be changed in falling_blocks_damage.json in this feature's folder. Blocks in the insanesurvivaloverhaul:falling_block_damage_blacklist block tag are not changed. Falling blocks that already hurt entities (e.g. Anvils and Pointed Dripstone) are not changed.
+	"Enable Falling blocks damage" = true
 
 	[World.Berries]
 		#Berry bushes no longer deal damage when walking in them with leggings and boots
@@ -1521,3 +1550,14 @@
 		# Default: 4
 		# Range: > 1
 		"Base Duration" = 4
+
+	#All falling blocks (sand, gravel, concrete powder, etc.) hurt the entities they fall on. Damage per block can be changed in falling_blocks_damage.json in this feature's folder. Blocks in the insanesurvivaloverhaul:falling_block_damage_blacklist block tag are not changed. Falling blocks that already hurt entities (e.g. Anvils and Pointed Dripstone) are not changed.
+	[World."Falling blocks damage"]
+		#Damage dealt per block fallen (the first block fallen deals no damage) by falling blocks not in falling_blocks_damage.json. Anvils deal 2.
+		# Default: 1.0
+		# Range: 0.0 ~ 1024.0
+		"Damage per distance" = 1.0
+		#Max damage dealt by falling blocks not in falling_blocks_damage.json. Anvils deal up to 40.
+		# Default: 20
+		# Range: 0 ~ 1024
+		"Max damage" = 20
