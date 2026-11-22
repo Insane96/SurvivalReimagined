@@ -3,6 +3,7 @@
 * Diamond and Netherite Horse Armor and Nautilus Armor no longer give Armor Toughness
 * Vanilla Armor Trim Smithing Templates are duplicated with the vanilla recipe again (7 Diamonds instead of 1)
 * Sculk Shriekers are no longer extremely hard to break and immune to explosions
+* Carrying a block with Carry On always gives the same slowness, no matter how many items it contains
 
 # 4.10.0-beta
 * Removed Gravestone
