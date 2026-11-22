@@ -2,6 +2,10 @@
     "replace": false,
     "values": [],
     "remove": [
+        "minecraft:donkey",
+        "minecraft:horse",
+        "minecraft:mule",
+        "minecraft:skeleton_horse",
         "naturalist:alligator",
         "naturalist:anglerfish",
         "naturalist:ant",

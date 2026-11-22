@@ -1,3 +1,6 @@
+# Upcoming
+* Horses, Donkeys, Mules and Skeleton Horses no longer get Enhanced AI's movement and swim speed bonus
+
 # 4.10.1-beta
 * Re-enabled Storage Drawers' Drawer Controller and Drawer Controller IO, also in their Framed versions
 * Diamond and Netherite Horse Armor and Nautilus Armor no longer give Armor Toughness
