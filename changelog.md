@@ -4,6 +4,7 @@
 * Sculk Shriekers that can summon the Warden are easier to break and no longer immune to explosions
 * Carrying a block with Carry On always gives the same slowness, no matter how many items it contains
 * Glow Berries can no longer be smelted into Naturalist's Glow Goop in the Furnace, only in the Smoker or on a Campfire
+* Horses, Skeleton Horses and Zombie Horses can step up 2 blocks instead of 1
 * Updated Mods
   * Enhanced AI 4.3.2.0-beta -> 4.3.3.0
     * Tamed Horses, Donkeys, Mules and Llamas no longer wander far from where you dismounted them

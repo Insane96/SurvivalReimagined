@@ -4,7 +4,7 @@
     "health": 20.0,
     "movement_speed": 0.3375,
     "jump_strength": 0.7,
-    "step_height": 1.0
+    "step_height": 2.0
   },
   {
     "entity": "minecraft:donkey",
@@ -25,14 +25,14 @@
     "health": 20.0,
     "movement_speed": 0.4,
     "jump_strength": 0.7,
-    "step_height": 1.0
+    "step_height": 2.0
   },
   {
     "entity": "minecraft:zombie_horse",
     "health": 30.0,
     "movement_speed": 0.3,
     "jump_strength": 0.5,
-    "step_height": 1.0
+    "step_height": 2.0
   },
   {
     "entity": "minecraft:llama",
