@@ -4,6 +4,7 @@
 * Vanilla Armor Trim Smithing Templates are duplicated with the vanilla recipe again (7 Diamonds instead of 1)
 * Sculk Shriekers are no longer extremely hard to break and immune to explosions
 * Carrying a block with Carry On always gives the same slowness, no matter how many items it contains
+* Glow Berries can no longer be smelted into Naturalist's Glow Goop in the Furnace, only in the Smoker or on a Campfire
 
 # 4.10.0-beta
 * Removed Gravestone
