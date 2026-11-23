@@ -1,4 +1,4 @@
-# Upcoming
+# 4.10.2-beta
 * Removed Vintage Animations
 * Horses, Donkeys, Mules and Skeleton Horses no longer get Enhanced AI's movement and swim speed bonus
 * Re-enabled Supplementaries' Ash: burnt blocks and mobs that die while burning leave Ash
