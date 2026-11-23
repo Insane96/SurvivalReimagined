@@ -4,6 +4,15 @@
 * Re-enabled Supplementaries' Ash: burnt blocks and mobs that die while burning leave Ash
   * Burnt Logs now also drop 1-4 Ash
   * Soap, Soap Block and Bubble Blower are back
+* Updated Mods
+  * Amendments 2.2.7 -> 2.3.0
+    * Players and mobs standing upright in water now move their arms and legs as if treading water
+    * Holding jump in water keeps you at the surface with your head out instead of bobbing up and down
+    * You can only push yourself up in water when it's at least chest deep or you're next to a ledge
+    * Pets following you now also come with you through portals, and Ender Pearls keep you on your mount
+    * Items you pick up go straight into a container (Bundle, Shulker Box, ...) held in your offhand
+  * Collective 8.87 -> 8.88
+  * Sawmill 1.9.0 -> 1.9.2
 
 # 4.10.1-beta
 * Re-enabled Storage Drawers' Drawer Controller and Drawer Controller IO, also in their Framed versions
