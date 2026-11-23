@@ -216,7 +216,7 @@
 		cave_urns = true
 
 	[functional.soap]
-		enabled = false
+		enabled = true
 		#Allows soap to clean blocks in-world. Disable to prevent in-world block cleaning while keeping soap item and recipes functional
 		block_cleaning_enabled = true
 		#Dyed Bock/Item types that cannot be cleaned with soap
@@ -415,13 +415,13 @@
 		crystal_enchanting = 3.0
 
 	[building.ash]
-		enabled = false
+		enabled = true
 		#Burnable blocks will have a chance to create ash layers when burned. Greater this number the greater the chance will be
 		# Default: 1.0
 		# Range: 0.0 ~ 1.0
-		ash_from_fire_chance = 0.0
+		ash_from_fire_chance = 1.0
 		#Burning mobs will drop ash when they die
-		ash_from_burning_mobs = false
+		ash_from_burning_mobs = true
 		#Allows rain to wash away ash layers overtime
 		rain_wash_ash = true
 		#Use a datapack to tweak rarity
@@ -553,7 +553,7 @@
 		range_multiplier = 0.25
 
 	[tools.bubble_blower]
-		enabled = false
+		enabled = true
 		#Amount of soap consumed per bubble block placed
 		# Default: 5
 		# Range: 1 ~ 25

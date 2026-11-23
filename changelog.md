@@ -1,6 +1,9 @@
 # Upcoming
 * Removed Vintage Animations
 * Horses, Donkeys, Mules and Skeleton Horses no longer get Enhanced AI's movement and swim speed bonus
+* Re-enabled Supplementaries' Ash: burnt blocks and mobs that die while burning leave Ash
+  * Burnt Logs now also drop 1-4 Ash
+  * Soap, Soap Block and Bubble Blower are back
 
 # 4.10.1-beta
 * Re-enabled Storage Drawers' Drawer Controller and Drawer Controller IO, also in their Framed versions
