@@ -244,7 +244,7 @@
 	#Crawling
 	[mechanics.crawling]
 		#Enable the Crawling mechanic allowing players to explicitly enter a crawling stance.
-		enableCrawlingMechanic = false
+		enableCrawlingMechanic = true
 
 	#Friendly Fire Friendlies
 	[mechanics.friendlyFireFriendlies]

@@ -74,7 +74,7 @@ key_key.bitsandbalance.sit:key.keyboard.unknown:
 key_key.bitsandbalance.item_share:key.keyboard.unknown:
 key_key.bitsandbalance.arrow_priority:key.keyboard.r:
 key_key.bitsandbalance.toggle_stance:key.keyboard.unknown:
-key_key.bitsandbalance.crawl:key.keyboard.unknown:
+key_key.bitsandbalance.crawl:key.keyboard.c:
 key_key.bitsandbalance.door_knock:key.keyboard.unknown:
 key_key.insanesurvivaloverhaul.toggle_shulker_auto_pickup:key.keyboard.s:
 key_dropoff.key.dump:key.keyboard.unknown:
@@ -126,7 +126,7 @@ key_key.map_atlases.place_pin:key.keyboard.b:
 key_key.map_atlases.increase_slice:key.keyboard.unknown:
 key_key.map_atlases.decrease_slice:key.keyboard.unknown:
 key_key.configured.open_mod_list:key.keyboard.unknown:
-key_key.personality.crawl:key.keyboard.c:
+key_key.personality.crawl:key.keyboard.unknown:
 key_key.personality.sit:key.keyboard.z:
 key_legendarytooltips.key.scrollTooltips:key.keyboard.left.shift:
 key_key.screenshot_viewer.open_screenshots_screen:key.keyboard.unknown:

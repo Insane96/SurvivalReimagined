@@ -2,6 +2,7 @@
 * Re-enabled Storage Drawers' Compacting Drawers, also in their Half and Framed versions
 * Added EMI info pages for Storage Drawers' Drawer Controller, Drawer Controller IO and Compacting Drawers, and for Sculk
 * Falling Snow layers no longer damage the entities they fall on
+* Fixed crawling (C) standing back up immediately: it now uses Bits and Balance's crawl instead of Personality's
 
 # 4.10.2-beta
 * Removed Vintage Animations
