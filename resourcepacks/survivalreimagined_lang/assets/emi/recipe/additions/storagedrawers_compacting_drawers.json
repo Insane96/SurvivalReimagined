@@ -1,0 +1,17 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:storagedrawers:compacting_drawers_2",
+        "item:storagedrawers:compacting_drawers_3",
+        "item:storagedrawers:compacting_half_drawers_2",
+        "item:storagedrawers:compacting_half_drawers_3",
+        "item:storagedrawers:framed_compacting_drawers_2",
+        "item:storagedrawers:framed_compacting_drawers_3",
+        "item:storagedrawers:framed_compacting_half_drawers_2",
+        "item:storagedrawers:framed_compacting_half_drawers_3"
+    ],
+    "text": [
+        "emi.info.storagedrawers.compacting_drawers.1",
+        "emi.info.storagedrawers.compacting_drawers.2"
+    ]
+}

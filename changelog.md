@@ -1,5 +1,6 @@
 # Upcoming
-* Added EMI info pages for Storage Drawers' Drawer Controller and Drawer Controller IO
+* Re-enabled Storage Drawers' Compacting Drawers, also in their Half and Framed versions
+* Added EMI info pages for Storage Drawers' Drawer Controller, Drawer Controller IO and Compacting Drawers, and for Sculk
 
 # 4.10.2-beta
 * Removed Vintage Animations
