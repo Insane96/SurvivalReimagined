@@ -1,4 +1,5 @@
 # Upcoming
+* Removed Vintage Animations
 * Horses, Donkeys, Mules and Skeleton Horses no longer get Enhanced AI's movement and swim speed bonus
 
 # 4.10.1-beta
