@@ -2,7 +2,7 @@
     "item": "ecologics:cooked_prickly_pear",
     "merge_components": {
         "minecraft:food": {
-            "nutrition": 4,
+            "nutrition": 3,
             "saturation": 4.0
         }
     }

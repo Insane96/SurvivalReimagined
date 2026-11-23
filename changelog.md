@@ -3,6 +3,8 @@
 * Added EMI info pages for Storage Drawers' Drawer Controller, Drawer Controller IO and Compacting Drawers, and for Sculk
 * Falling Snow layers no longer damage the entities they fall on
 * Fixed crawling (C) standing back up immediately: it now uses Bits and Balance's crawl instead of Personality's
+* Fixed foods at the saturation threshold (e.g. Cooked Prickly Pear) healing instantly instead of over time
+* Reduced Prickly Pear nutrition (2.1 -> 0.9 health) and Cooked Prickly Pear nutrition (5 -> 4 health over time)
 
 # 4.10.2-beta
 * Removed Vintage Animations
