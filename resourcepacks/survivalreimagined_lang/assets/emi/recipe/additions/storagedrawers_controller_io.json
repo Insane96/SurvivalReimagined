@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:storagedrawers:controller_io",
+        "item:storagedrawers:framed_controller_io"
+    ],
+    "text": [
+        "emi.info.storagedrawers.controller_io"
+    ]
+}

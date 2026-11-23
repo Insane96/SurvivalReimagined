@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:storagedrawers:controller",
+        "item:storagedrawers:framed_controller"
+    ],
+    "text": [
+        "emi.info.storagedrawers.controller.1",
+        "emi.info.storagedrawers.controller.2"
+    ]
+}

@@ -1,3 +1,6 @@
+# Upcoming
+* Added EMI info pages for Storage Drawers' Drawer Controller and Drawer Controller IO
+
 # 4.10.2-beta
 * Removed Vintage Animations
 * Horses, Donkeys, Mules and Skeleton Horses no longer get Enhanced AI's movement and swim speed bonus
