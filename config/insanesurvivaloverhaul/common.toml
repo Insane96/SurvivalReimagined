@@ -44,6 +44,13 @@
 	#* Chainmail armor is made craftable with Cloth and chains
 	#* Adds advancements for this feature and moves vanilla beds advancements to cloth advancement
 	"Enable Cloth" = true
+	#Resource packs of Tiredness.
+	"Enable Tiredness" = true
+
+	#Resource packs of Tiredness.
+	[Sleep.Tiredness]
+		#Enables a resource pack that changes the 'Sleeping through this night' message to 'Skipping x hours', showing the hours skipped by sleeping.
+		"Skipping hours resource pack" = true
 
 [Farming]
 	#Data packs of Bone Meal.

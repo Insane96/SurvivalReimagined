@@ -12,6 +12,16 @@
     * Pets following you now also come with you through portals, and Ender Pearls keep you on your mount
     * Items you pick up go straight into a container (Bundle, Shulker Box, ...) held in your offhand
   * Collective 8.87 -> 8.88
+  * Enhanced AI 4.3.3.0 -> 4.3.3.1
+    * Mobs lunge twice as far, as ground friction was cutting their lunges short, and stand still for less time before lunging
+  * InsaneSurvivalOverhaul 5.16.5.0-beta -> 5.16.6.0-beta
+    * Added the Explosive Barrel (1 Barrel and 1 TNT): explodes instantly like TNT when powered by redstone, set on fire, hit by a burning projectile or caught in an explosion, dropping all the blocks it destroys
+    * Added the Mining Charge (2 from 1 TNT, 1 Slime Ball and 3 Iron Nuggets): placed on the face of a block, after a short fuse it digs a 3x3 tunnel 8 blocks long into it, dropping the blocks. Doesn't break Obsidian and other blast-resistant blocks
+    * When sleeping, the "Sleeping through this night" message is now "Skipping x hours", also in singleplayer
+  * RuneEnchanting 1.5.4.1-beta -> 1.5.4.2-beta
+    * The Runic Table also lists the runes that can go on the item when it has no free sockets, grayed out
+    * Fixed Earthbend also applying the Efficiency bonus, making tools almost as fast as the right one on blocks they aren't meant for
+    * Fixed the Runic Table's highlight hiding the hovered rune's name
   * Sawmill 1.9.0 -> 1.9.2
 
 # 4.10.1-beta

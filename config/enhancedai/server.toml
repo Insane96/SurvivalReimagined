@@ -1013,13 +1013,13 @@
 		# Range: 0.0 ~ 32.0
 		"Max distance" = 5.0
 		#Ticks the mob stands still before lunging. Set to 0 to lunge immediately.
-		# Default: 8
+		# Default: 6
 		# Range: 0 ~ 100
-		"Wind up ticks" = 8
+		"Wind up ticks" = 6
 		#Horizontal strength is calculated so that the mob lands in front of the target, then multiplied by this value.
-		# Default: 1.0
+		# Default: 2.0
 		# Range: 0.0 ~ 10.0
-		"Horizontal strength multiplier" = 1.0
+		"Horizontal strength multiplier" = 2.0
 		#Vertical speed of the lunge
 		# Default: 0.35
 		# Range: 0.0 ~ 4.0

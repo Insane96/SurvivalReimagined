@@ -600,6 +600,8 @@
 	"Enable Pouch" = true
 	#Adds repair kits: crafted from a material, they let you repair items using that material in the crafting grid.
 	"Enable Repair kits" = true
+	#Adds the Explosive Barrel, a block that explodes instantly (no fuse) when powered, set on fire, hit by a burning projectile or caught in another explosion. All the blocks destroyed by its explosion are dropped.
+	"Enable Explosive barrel" = true
 
 	#Wooden items have bonuses when used in sunlight.
 	[Items."Ecologic wood"]
@@ -672,6 +674,13 @@
 		# Range: 0.0 ~ 1.0
 		"Max repair" = 1.0
 
+	#Adds the Explosive Barrel, a block that explodes instantly (no fuse) when powered, set on fire, hit by a burning projectile or caught in another explosion. All the blocks destroyed by its explosion are dropped.
+	[Items."Explosive barrel"]
+		#Explosion power of the Explosive Barrel. TNT is 4.
+		# Default: 4.0
+		# Range: 0.5 ~ 1.7976931348623157E308
+		"Explosion power" = 4.0
+
 [Mining]
 	#Various changes for different materials and ores.
 	"Enable Materials and ores" = true
@@ -683,6 +692,8 @@
 	"Enable Block hardness" = true
 	#Allows recycling damaged armor, tools and weapons in the Blast Furnace, giving back raw material (nuggets or gems) proportional to the item's remaining durability.
 	"Enable Recycling" = true
+	#Adds the Mining Charge, a directional charge that, after a short fuse, digs a tunnel in the direction it's facing. All the blocks it destroys are dropped and entities in the tunnel are hurt.
+	"Enable Mining charge" = true
 
 	#Various changes for different materials and ores.
 	[Mining."Materials and ores"]
@@ -724,6 +735,25 @@
 		"Output multiplier" = 0.75
 		#If true, enchanted items can be recycled. If false, only non-enchanted items can be recycled. If Rune Enchanting is installed, runed items count as enchanted.
 		"Allow enchanted items" = false
+
+	#Adds the Mining Charge, a directional charge that, after a short fuse, digs a tunnel in the direction it's facing. All the blocks it destroys are dropped and entities in the tunnel are hurt.
+	[Mining."Mining charge"]
+		#Length of the tunnel dug by the Mining Charge, starting from the block in front of it.
+		# Default: 8
+		# Range: 1 ~ 64
+		"Tunnel length" = 8
+		#Radius of the tunnel dug by the Mining Charge. 0 is a 1x1 tunnel, 1 is 3x3, 2 is 5x5, etc.
+		# Default: 1
+		# Range: 0 ~ 8
+		"Tunnel radius" = 1
+		#Only blocks with an explosion resistance lower than this are destroyed by the Mining Charge. Stone and Deepslate have 6, Obsidian 1200.
+		# Default: 10.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Max block resistance" = 10.0
+		#Damage dealt to entities in the tunnel dug by the Mining Charge.
+		# Default: 10.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Entity damage" = 10.0
 
 [Misc]
 	#Changes how fast entities consume and refill air, and how drowning damage scales.
