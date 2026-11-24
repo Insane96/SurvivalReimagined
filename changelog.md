@@ -9,6 +9,11 @@
   * FWA 1.3.8 -> 1.3.10
     * Fixed Doors, Trapdoors and Fence Gates playing their opening animation when placed already open or pushed by a Piston
   * JEI 19.76.1.478 -> 19.76.1.481
+  * Moonlight 3.8.3 -> 3.8.5
+  * Sawmill 1.9.2 -> 1.9.3
+  * Tiny Takeover Backport 1.8.2 -> 1.8.3
+    * Fixed Pumpkins, Skulls and other blocks worn on the head showing at the waist of baby Zombies and Piglins
+    * Fixed armor with its own model rendering at adult size on baby mobs
 
 # 4.10.2-beta
 * Removed Vintage Animations
