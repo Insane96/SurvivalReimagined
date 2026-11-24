@@ -88,7 +88,7 @@ Nessun doppione con le pagine di ISO: Conduit, Bone Meal e Obsidian dicono cose 
 - `minecraft_sculk`, perché la Rune droppata dallo Sculk viene dall'integrated pack di RuneEnchanting (`enchantment_changes`);
 - `shieldsplus_shields`, perché Shields+ è una mod di Insane96.
 
-Parrot Eggs: spente quelle di Quark (`Parrot Eggs` = false), che vogliono i Beetroot Seeds, difficili da trovare. Restano quelle di Vibrant Parrots, che usano `#minecraft:parrot_food`: il datapack lo riduce a Melon e Pumpkin Seeds, che servono anche per addomesticarli.
+Parrot Eggs: spente quelle di Quark (`Parrot Eggs` = false), che vogliono i Beetroot Seeds, difficili da trovare. Restano quelle di Vibrant Parrots, che usano `#minecraft:parrot_food`: ISO (Livestock) lo riduce a Melon e Pumpkin Seeds, che servono anche per addomesticarli, e mette i pappagalli in `prevent_breeding` e `breedable_animals`.
 
 ## Da implementare nelle mod
 

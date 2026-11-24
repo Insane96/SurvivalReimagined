@@ -365,6 +365,6 @@
 	"emi.info.quark.magnet.2": "A Stonecutter moved by a Magnet drops the blocks it cuts as if mined with Silk Touch. Wax a Magnet with a Honeycomb to hide its particles.",
 	"emi.info.quark.pipe.1": "Items that reach an open end come out of it. Pipes connect by themselves to every adjacent Pipe and container, and their sides can't be closed. Right-click a Pipe with Glass to encase it, or with a Stick to refresh the connections of the whole network if they look wrong.",
 	"emi.info.tiny_takeover_backport.golden_dandelion": "Use it on a baby animal to stop it from growing up. Use it again to let it grow.",
-	"emi.info.vibrantparrots.parrot_eggs": "Parrots come in many more colors. Parrots are tamed and bred with Melon or Pumpkin Seeds, crafted from their fruit: some time after breeding one of the two lays an egg of its color. Throw the egg to hatch a chick.",
+	"emi.info.vibrantparrots.parrot_eggs": "Parrots come in many more colors. Parrots are tamed with Melon or Pumpkin Seeds, crafted from their fruit. Tamed Parrots fall in love on their own, more often when fed: some time later one of the two lays an egg of its color. Throw the egg to hatch a chick.",
 	"emi.info.vibrantparrots.bird_cage": "Use it on a Parrot you tamed to carry it around in the cage, and use it again to let the Parrot out, like a Bucket with fish."
 }

@@ -4,7 +4,6 @@
 * Added EMI info pages for most of the items and blocks
 * Naturalist's Fat and Tooth now have a use: Fat can replace Honeycomb to craft Candles, and a Tooth crafts 2 Bone Meal
 * Disabled Quark's Parrot Eggs, as Vibrant Parrots already has its own: tamed Parrots bred with seeds lay an egg of their color
-* Parrots are now tamed and bred only with Melon and Pumpkin Seeds, which are easy to renew
 * Falling Snow layers no longer damage the entities they fall on
 * Fixed crawling (C) standing back up immediately: it now uses Bits and Balance's crawl instead of Personality's
 * Fixed foods at the saturation threshold (e.g. Cooked Prickly Pear) healing instantly instead of over time
@@ -19,6 +18,9 @@
   * InsaneSurvivalOverhaul 5.16.6.0-beta -> 5.16.7.0-beta
     * Full blocks of the same family can be cut back and into each other in the Stonecutter (e.g. Stone Bricks and Chiseled Stone Bricks into Stone). Cracked and smooth blocks are excluded, so smelting can't be skipped
     * Fixed Turtle and Armadillo Scute blocks flickering
+    * Parrots are tamed and bred only with Melon and Pumpkin Seeds, which are easy to renew
+    * Parrots die of old age and, like other animals, can't be bred manually but fall in love on their own, more often when fed
+    * Fixed tamed Parrots not regenerating health like other pets
   * JEI 19.76.1.478 -> 19.76.1.481
   * Moonlight 3.8.3 -> 3.8.5
   * RuneEnchanting 1.5.4.2-beta -> 1.5.5.1
