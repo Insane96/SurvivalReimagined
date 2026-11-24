@@ -4,6 +4,7 @@
         "item:minecraft:bell"
     ],
     "text": [
+        "emi.info.minecraft.bell",
         "emi.info.amendments.bell"
     ]
 }

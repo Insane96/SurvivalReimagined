@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:honeycomb"
+    ],
+    "text": [
+        "emi.info.minecraft.honeycomb"
+    ]
+}

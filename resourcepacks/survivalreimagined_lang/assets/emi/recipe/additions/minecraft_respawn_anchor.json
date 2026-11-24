@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:respawn_anchor"
+    ],
+    "text": [
+        "emi.info.minecraft.respawn_anchor"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:spire_armor_trim_smithing_template"
+    ],
+    "text": [
+        "emi.info.minecraft.spire_armor_trim_smithing_template"
+    ]
+}

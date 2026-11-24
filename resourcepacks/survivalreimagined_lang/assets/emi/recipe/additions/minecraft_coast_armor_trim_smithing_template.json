@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:coast_armor_trim_smithing_template"
+    ],
+    "text": [
+        "emi.info.minecraft.coast_armor_trim_smithing_template"
+    ]
+}

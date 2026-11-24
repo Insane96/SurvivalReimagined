@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:vex_armor_trim_smithing_template"
+    ],
+    "text": [
+        "emi.info.minecraft.vex_armor_trim_smithing_template"
+    ]
+}

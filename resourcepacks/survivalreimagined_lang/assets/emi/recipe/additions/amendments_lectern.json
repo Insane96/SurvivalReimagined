@@ -4,6 +4,7 @@
         "item:minecraft:lectern"
     ],
     "text": [
+        "emi.info.minecraft.lectern",
         "emi.info.amendments.lectern"
     ]
 }

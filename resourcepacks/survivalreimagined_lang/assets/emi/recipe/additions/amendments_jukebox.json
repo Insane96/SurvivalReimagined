@@ -4,6 +4,7 @@
         "item:minecraft:jukebox"
     ],
     "text": [
+        "emi.info.minecraft.jukebox",
         "emi.info.amendments.jukebox"
     ]
 }

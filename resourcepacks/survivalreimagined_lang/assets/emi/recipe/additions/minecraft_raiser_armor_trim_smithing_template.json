@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:raiser_armor_trim_smithing_template"
+    ],
+    "text": [
+        "emi.info.minecraft.raiser_armor_trim_smithing_template"
+    ]
+}

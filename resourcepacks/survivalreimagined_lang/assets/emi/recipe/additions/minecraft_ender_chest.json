@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:ender_chest"
+    ],
+    "text": [
+        "emi.info.minecraft.ender_chest"
+    ]
+}

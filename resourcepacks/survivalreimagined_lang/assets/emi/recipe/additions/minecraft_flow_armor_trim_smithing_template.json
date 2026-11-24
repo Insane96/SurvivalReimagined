@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:flow_armor_trim_smithing_template"
+    ],
+    "text": [
+        "emi.info.minecraft.flow_armor_trim_smithing_template"
+    ]
+}

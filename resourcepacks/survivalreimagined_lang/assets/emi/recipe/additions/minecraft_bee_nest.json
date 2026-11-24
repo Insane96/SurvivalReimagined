@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:bee_nest",
+        "item:minecraft:beehive"
+    ],
+    "text": [
+        "emi.info.minecraft.bee_nest"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:netherite_upgrade_smithing_template"
+    ],
+    "text": [
+        "emi.info.minecraft.netherite_upgrade_smithing_template"
+    ]
+}

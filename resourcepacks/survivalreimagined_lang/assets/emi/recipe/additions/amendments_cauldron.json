@@ -4,6 +4,7 @@
         "item:minecraft:cauldron"
     ],
     "text": [
+        "emi.info.minecraft.cauldron",
         "emi.info.amendments.cauldron.1",
         "emi.info.amendments.cauldron.2",
         "emi.info.amendments.cauldron.3"

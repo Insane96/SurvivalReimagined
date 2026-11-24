@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:brewing_stand"
+    ],
+    "text": [
+        "emi.info.minecraft.brewing_stand"
+    ]
+}
