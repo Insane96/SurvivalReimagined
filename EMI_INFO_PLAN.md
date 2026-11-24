@@ -77,6 +77,17 @@ Un lotto (e un commit) per categoria:
 
 - Rileggere le 162 pagine esistenti alla luce di quelle nuove: doppioni con ISO o Quark, testi diventati sbagliati per cambi di config.
 - Controllo in gioco a campione (EMI → tasto info) dei lotti più grandi.
+
+**Rilettura fatta (2026-11-24)**, il controllo in gioco resta da fare. Corretto:
+
+- Crate, Magnet e Pipe ridotte a quello che i suggerimenti di Quark non dicono;
+- trim Sentry e Vex: "Woodland Mansion" diventa "Illager Manor", come nella pagina del Goat Horn.
+
+Nessun doppione con le pagine di ISO: Conduit, Bone Meal e Obsidian dicono cose diverse da ISO e restano coerenti con la config. Da decidere:
+
+- `minecraft_sculk`: la Rune droppata dallo Sculk viene dall'integrated pack di RuneEnchanting (`enchantment_changes`), quindi andrebbe nel plugin EMI di RuneEnchanting;
+- `shieldsplus_shields`: Shields+ è una mod di Insane96, quindi andrebbe nella mod;
+- Parrot Eggs: sono attivi sia quelle di Quark (`Parrot Eggs` = true, con Beetroot Seeds) sia Vibrant Parrots. Quark mostra il suo suggerimento sulle proprie uova, mentre la pagina del pack descrive quelle di Vibrant Parrots. Va controllato in gioco se i due sistemi convivono, o se conviene spegnere quello di Quark.
 ## Da implementare nelle mod
 
 Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Formato: `oggetti` — cosa spiegare (origine).
