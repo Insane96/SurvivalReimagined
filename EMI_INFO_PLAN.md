@@ -71,7 +71,7 @@ Un lotto (e un commit) per categoria:
 - Aggiunti a pagine esistenti: Hanging Coconut (Coconut), Bamboo Raft with Cannon (Cannon Boat), Tinted Jar (Jar), Gold Gate (Gold Door e Iron Gate).
 - Già a posto: Soap, Soap Block e Bubble Blower (pagine ripristinate con la Ash), Trident Fragment (pagina del Trident), Ominous Vault di Hellish Trials (pagina del Vault). Quark: bastano i suoi suggerimenti; il Totem of Holding non ha un oggetto (vedi Fase 1). Incubation: i suoi 4 oggetti sono "ovvio".
 - Non servono: Ashen Basalt (dà Basalt, citato nella pagina della Ash), Barnacles, Checker Block, Flax Bale, Gold Bars, Seashell (decorativi), Tater in a Jar, Speedometer (senza ricetta, mostra la velocità al primo uso), Snail Eggs (non si raccolgono).
-- Fat e Tooth non hanno nessun uso nel pack: le pagine dicono solo da dove vengono.
+- Fat e Tooth: le pagine dicono da dove vengono. Gli usi (Candle con la Fat al posto della Honeycomb, 2 Bone Meal da un Tooth) sono ricette del datapack, che EMI mostra già.
 
 ## Fase 4 — Revisione (1 sessione)
 
