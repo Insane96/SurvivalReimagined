@@ -1,6 +1,7 @@
 # Upcoming
 * Re-enabled Storage Drawers' Compacting Drawers, also in their Half and Framed versions
-* Added EMI info pages for a lot of items and blocks
+* Supplementaries' Blast Armor Trim can now be fished as treasure, as Galleons, its only source, are disabled
+* Added EMI info pages for most of the items and blocks
 * Falling Snow layers no longer damage the entities they fall on
 * Fixed crawling (C) standing back up immediately: it now uses Bits and Balance's crawl instead of Personality's
 * Fixed foods at the saturation threshold (e.g. Cooked Prickly Pear) healing instantly instead of over time
