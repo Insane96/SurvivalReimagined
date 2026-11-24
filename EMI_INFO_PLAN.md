@@ -1,6 +1,6 @@
 # Piano: pagine EMI info per tutti gli oggetti non decorativi
 
-Obiettivo: ogni blocco o oggetto con una funzione (vanilla e mod) ha una pagina `emi:info`. Restano fuori quelli puramente decorativi e quelli la cui funzione è già evidente da ricette e tooltip.
+Obiettivo: ogni blocco o oggetto con una funzione (vanilla e mod) ha una pagina `emi:info`. Restano fuori quelli puramente decorativi e quelli la cui funzione è già evidente da ricette e tooltip. Le pagine devono dare un'infarinatura anche a chi conosce poco Minecraft, senza dover cercare su internet: le meccaniche vanilla che un veterano conosce (redstone, pozioni, End, Trial Chambers) hanno comunque una pagina.
 
 ## Stato di partenza (2026-11-24)
 
@@ -13,7 +13,7 @@ Obiettivo: ogni blocco o oggetto con una funzione (vanilla e mod) ha una pagina 
 
 - Un file per pagina in `assets/emi/recipe/additions/<modid>_<nome>.json`. I testi vanno come chiavi `emi.info.<modid>.<nome>[.n]` in `assets/survivalreimagined/lang/en_us.json`.
 - Le varianti si raggruppano in un'unica pagina con più `stacks` o con un tag `#item:` (es. tutti i letti, tutte le asce).
-- Stile: niente numeri esatti, salvo quando servono per usare la meccanica. Niente "dove trovarlo" per gli oggetti comuni in superficie; sì per quelli sotterranei, legati a una struttura o a un mob.
+- Stile: niente numeri esatti, salvo quando servono per usare la meccanica. Niente "dove trovarlo" per gli oggetti comuni in superficie; sì per quelli sotterranei, legati a una struttura o a un mob. Sì anche per tutti gli oggetti che si ottengono da una loot table (chest, drop dei mob, pesca, archeologia), perché EMI non le mostra.
 - **Descrivere il comportamento in questo pack, non quello vanilla.** Prima di scrivere una pagina si controllano config di ISO (`common.toml`, `server.toml`), datapack, `item_components`, gamerule in `WSCommands.toml` e le altre mod che toccano lo stesso oggetto (Amendments, Supplementaries, Quark, Bits and Balance).
 - **Dove va la pagina**:
   - comportamento dovuto a ISO (o a un'altra mod di Insane96: Enhanced AI, Progressive Bosses, RuneEnchanting, Stamina, No Hunger, ...) → non va scritta nel pack. Si aggiunge alla sezione [Da implementare nelle mod](#da-implementare-nelle-mod) con oggetto, comportamento da spiegare e da dove viene (opzione di config o classe). Le implementa Insane96 nei plugin EMI delle mod;
@@ -24,6 +24,11 @@ Obiettivo: ogni blocco o oggetto con una funzione (vanilla e mod) ha una pagina 
 - Un commit per lotto, con una voce nel `changelog.md` sotto `# Upcoming` (es. "Added EMI info pages for vanilla redstone components").
 
 ## Fase 0 — Verifiche e inventario (1 sessione)
+
+**Fatta (2026-11-24).**
+
+- I suggerimenti di Quark compaiono in EMI per le funzioni attive (provati Bottled Cloud ed Emerald Block). Per Quark servono quindi solo i buchi. Le pagine del pack su Crate, Magnet e Pipe ripetono in parte i suggerimenti di Quark: vanno ridotte a quello che Quark non dice (Fase 4).
+- Inventario: `inventory.py` nello scratchpad della sessione produce `inventario.csv` (`id; mod; nome; coperto da; decisione proposta`). Su 3725 oggetti: 706 coperti, 153 rimossi, 201 tecnici, 1371 decorativi, 832 in 86 gruppi, 462 da valutare (Minecraft 280, Quark 42, Supplementaries 42, ISO 22, Naturalist 18, altre circa 58). Tra i 42 di Quark ci sono ancora oggetti di moduli spenti, che Quark nasconde da solo: Crab (categoria mobs spenta), Matrix Enchanter, Monster Box, Hammer.
 
 1. **In gioco**:
    - i suggerimenti di Quark compaiono in EMI? Se sì, per Quark servono solo i buchi e le correzioni. Se no, bisogna scegliere se riportarli nel pack o lasciar perdere;
@@ -73,6 +78,7 @@ Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Format
 - Oggetti di "Energy boost" (lista in `config/insanesurvivaloverhaul/Tiredness/`): riducono la stanchezza (`Tiredness`, `EnergyBoostItem`).
 - `#minecraft:beds`: una riga in più nella pagina `beds`, attiva solo con phantoms from tiredness: essere molto stanchi attira i Phantom (`Tiredness`).
 - Penalità alla morte (`DeathInventoryPenalty`, gamerule `death_keep_equipment`): armatura, offhand e oggetti con durabilità nella hotbar restano perdendo durabilità, il resto cade. Non ha un oggetto, quindi va fuori da EMI: una riga nella schermata di morte, del tipo "Your equipment was kept but lost durability". Nella stessa schermata, un'altra riga con il numero di morti, così non serve aprire le statistiche o usare lo scoreboard (ISO ha già `ClientboundDeathStatsPacket`, da vedere se si può estendere).
+- Non è una pagina: Turtle Scute e Armadillo Scute (`Scutes`, `Scute drops as block`) dovrebbero avere un tooltip "Placeable" tramite InsaneLib, come fa Supplementaries con Stick e Blaze Rod.
 - Non è una pagina: la ricetta di riciclo in EMI (`Recycling`) dovrebbe dire che la resa cala con la durabilità consumata.
 
 ### Altre mod

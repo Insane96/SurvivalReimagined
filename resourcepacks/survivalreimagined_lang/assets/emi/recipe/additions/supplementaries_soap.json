@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:soap"
+    ],
+    "text": [
+        "emi.info.supplementaries.soap.1",
+        "emi.info.supplementaries.soap.2"
+    ]
+}
