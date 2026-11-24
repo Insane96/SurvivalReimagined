@@ -5,6 +5,7 @@
 * Fixed crawling (C) standing back up immediately: it now uses Bits and Balance's crawl instead of Personality's
 * Fixed foods at the saturation threshold (e.g. Cooked Prickly Pear) healing instantly instead of over time
 * Reduced Prickly Pear nutrition (2.1 -> 0.9 health) and Cooked Prickly Pear nutrition (5 -> 4 health over time)
+* Renamed Curse of the Void to Curse of Teleport
 * Updated Mods
   * FWA 1.3.8 -> 1.3.10
     * Fixed Doors, Trapdoors and Fence Gates playing their opening animation when placed already open or pushed by a Piston
