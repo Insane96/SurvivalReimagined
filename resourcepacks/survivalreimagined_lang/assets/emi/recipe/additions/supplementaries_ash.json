@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:ash",
+        "item:insanesurvivaloverhaul:burnt_log"
+    ],
+    "text": [
+        "emi.info.supplementaries.ash.1",
+        "emi.info.supplementaries.ash.2"
+    ]
+}

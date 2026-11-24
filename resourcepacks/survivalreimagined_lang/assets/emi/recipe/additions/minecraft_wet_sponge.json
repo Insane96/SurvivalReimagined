@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:wet_sponge"
+    ],
+    "text": [
+        "emi.info.minecraft.wet_sponge"
+    ]
+}
