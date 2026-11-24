@@ -101,8 +101,8 @@ Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Format
 - `copper_ore_rock`, `iron_ore_rock`, `gold_ore_rock`: in superficie segnalano una grande vena del minerale sottoterra (`Big ore veins`).
 - `cloth`: la lasciano gli Zombie al posto della Rotten Flesh (`Cloth`). Gli usi si vedono dalle ricette, la fonte no.
 - `pumpkin_pulp`: si ottiene usando le Shears su una Pumpkin (`gameplay/pumpkin_shear`, `Foods & Drinks`).
-- `solanum_neorossii`: da verificare da dove viene, non ho trovato worldgen né loot.
-- `glow_block`: è un blocco di test (`GlowBlockFeature`), ma compare tra gli oggetti. Più che una pagina, andrebbe nascosto.
+- `solanum_neorossii`: la lasciano le patate selvatiche nel deserto (`Crops`). Va detto da dove viene, e si può mettere in un vaso.
+- `glow_block`: si vede attraverso i muri anche da lontano. Guardandolo, l'HUD dice su quali assi sei allineato con il blocco, o "Not aligned", per esempio per scavare un tunnel verso un punto (`GlowBlockFeature`). La descrizione della feature dice ancora "for testing" e andrebbe aggiornata.
 
 ### Progressive Bosses
 
