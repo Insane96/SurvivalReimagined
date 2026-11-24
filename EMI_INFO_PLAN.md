@@ -88,7 +88,7 @@ Nessun doppione con le pagine di ISO: Conduit, Bone Meal e Obsidian dicono cose 
 - `minecraft_sculk`, perché la Rune droppata dallo Sculk viene dall'integrated pack di RuneEnchanting (`enchantment_changes`);
 - `shieldsplus_shields`, perché Shields+ è una mod di Insane96.
 
-Tolta `vibrantparrots_parrot_eggs`: le uova di pappagallo sono spente, sia quelle di Quark (`Parrot Eggs` = false) sia quelle di Vibrant Parrots (`gameplay/parrot_lay` vuota nel datapack, uova in `insanelib:creative_removal`), perché i Beetroot Seeds sono difficili da trovare.
+Parrot Eggs: spente quelle di Quark (`Parrot Eggs` = false), che vogliono i Beetroot Seeds, difficili da trovare. Restano quelle di Vibrant Parrots, che si fanno con semi qualsiasi (`#minecraft:parrot_food`), e la loro pagina ora dice "any seeds".
 
 ## Da implementare nelle mod
 
