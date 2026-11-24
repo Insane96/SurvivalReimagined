@@ -1,98 +1,52 @@
-# Piano: pagine EMI info per tutti gli oggetti non decorativi
+# Pagine EMI info nelle mod di Insane96
 
-Obiettivo: ogni blocco o oggetto con una funzione (vanilla e mod) ha una pagina `emi:info`. Restano fuori quelli puramente decorativi e quelli la cui funzione è già evidente da ricette e tooltip. Le pagine devono dare un'infarinatura anche a chi conosce poco Minecraft, senza dover cercare su internet: le meccaniche vanilla che un veterano conosce (redstone, pozioni, End, Trial Chambers) hanno comunque una pagina.
+Questo file si usa come prompt in una sessione aperta nel repo di una mod (`C:\Users\delvi\source\repos\Insane96\<Mod>`). Il lavoro nel pack è finito: restano le pagine dei comportamenti che vengono dalle mod di Insane96, elencate in [Pagine da aggiungere](#pagine-da-aggiungere).
 
-## Stato di partenza (2026-11-24)
+## Come si aggiungono
 
-- **Pack** (`resourcepacks/survivalreimagined_lang`): 162 pagine. Supplementaries 79, Vanilla Backport 19, Naturalist 16, Amendments 14, Ecologics 10, Storage Drawers 5, Quark 3 (Crate, Magnet, Pipe), Vanilla 3 (Sculk, Sculk Sensor, Calibrated Sculk Sensor), più singole pagine per Bits and Balance, Boatload, Clayworks, Hang Glider, Heartstone, Labels, Map Atlases, Sawmill, Shields+ e Straw Statues.
-- **ISO** (pagine nel suo plugin EMI, testi in `emi.info.insanesurvivaloverhaul.*`): 37 pagine sui suoi oggetti e sui vanilla che cambia. Tra queste: Daggers, Shortbow, Beacon, Beds, Hoes, Wooden equipment, Conduit, Fishing Rod, Sweet Berry Bush, Cake, Sponge, Campfire, Spawner, Bone Meal, Rich Farmland, Totem of Undying, Zombie Villager cure, Name Tags, seeds, Powered Rails, angoli del portale, falling blocks, Explosive Barrel, Mining Charge ed Echo Lantern.
-- **Quark**: ha i suoi suggerimenti (`quark.jei.hint.*`, `"Enable Jei Hints" = true`), registrati come info di JEI. JEI è installato insieme a EMI: da verificare se EMI li mostra.
-- **Senza nessuna pagina**: Quark Oddities (Totem of Holding, Backpack disattivato), Incubation, Stamina, Better Tridents, Progressive Bosses, Hellish Trials, RuneEnchanting e circa il 98% degli oggetti vanilla.
+Le pagine si aggiungono come risorse della mod, senza codice: EMI legge `assets/emi/recipe/additions/` da tutte le risorse caricate, jar delle mod compresi. Non serve nemmeno la dipendenza da EMI.
 
-## Regole (valgono per tutte le fasi)
+- Un file per pagina in `src/main/resources/assets/emi/recipe/additions/<modid>_<nome>.json`. Il namespace `emi` è obbligatorio: EMI ignora gli altri. Il prefisso `<modid>_` evita collisioni con le pagine di altre mod e dei resource pack.
+- Formato:
+  ```json
+  {
+      "type": "emi:info",
+      "stacks": ["item:<modid>:<id>", "#item:<namespace>:<tag>"],
+      "text": ["emi.info.<modid>.<nome>", "emi.info.<modid>.<nome>.2"]
+  }
+  ```
+  Ogni voce di `text` è una chiave di traduzione e diventa un paragrafo. Le varianti vanno in un'unica pagina con più `stacks` o con un tag `#item:`.
+- I testi vanno nel file lang della mod (`assets/<modid>/lang/en_us.json`). RuneEnchanting genera il suo con la datagen (`src/generated`), quindi lì la chiave va aggiunta al provider.
+- Un resource pack con lo stesso percorso sostituisce la pagina, quindi un modpack può correggerla o toglierla.
 
-- Un file per pagina in `assets/emi/recipe/additions/<modid>_<nome>.json`. I testi vanno come chiavi `emi.info.<modid>.<nome>[.n]` in `assets/survivalreimagined/lang/en_us.json`.
-- Le varianti si raggruppano in un'unica pagina con più `stacks` o con un tag `#item:` (es. tutti i letti, tutte le asce).
-- Stile: niente numeri esatti, salvo quando servono per usare la meccanica. Niente "dove trovarlo" per gli oggetti comuni in superficie; sì per quelli sotterranei, legati a una struttura o a un mob. Sì anche per tutti gli oggetti che si ottengono da una loot table (chest, drop dei mob, pesca, archeologia), perché EMI non le mostra.
-- **Descrivere il comportamento in questo pack, non quello vanilla.** Prima di scrivere una pagina si controllano config di ISO (`common.toml`, `server.toml`), datapack, `item_components`, gamerule in `WSCommands.toml` e le altre mod che toccano lo stesso oggetto (Amendments, Supplementaries, Quark, Bits and Balance).
-- **Dove va la pagina**:
-  - comportamento dovuto a ISO (o a un'altra mod di Insane96: Enhanced AI, Progressive Bosses, RuneEnchanting, Stamina, No Hunger, ...) → non va scritta nel pack. Si aggiunge alla sezione [Da implementare nelle mod](#da-implementare-nelle-mod) con oggetto, comportamento da spiegare e da dove viene (opzione di config o classe). Le implementa Insane96 nei plugin EMI delle mod;
-  - comportamento dovuto alla combinazione del pack (datapack, config, più mod insieme) → nel resource pack.
-  - Se ISO ha già una pagina per l'oggetto, si aggiunge una seconda pagina nel pack solo per quello che ISO non dice, senza ripetere.
-- **Niente pagina se il giocatore lo scopre già da solo**: da una ricetta in EMI, da un advancement, da un tooltip o al primo utilizzo. Una regola che riguarda come funziona una ricetta va nella visualizzazione della ricetta, non in una pagina.
-- Una pagina per gli oggetti rimossi (`insanelib:creative_removal`) non serve.
-- Un commit per lotto, con una voce nel `changelog.md` sotto `# Upcoming` (es. "Added EMI info pages for vanilla redstone components").
+**Limite**: un file JSON non ha condizioni. Una pagina il cui contenuto dipende dalla config (feature spenta, riga che compare solo con un'opzione) o da una lista calcolata a runtime resta nel plugin EMI in codice. Per gli oggetti della mod stessa di solito la condizione non serve: se la feature è spenta, l'oggetto non si ottiene.
 
-## Fase 0 — Verifiche e inventario (1 sessione)
+## Regole di stile
 
-**Fatta (2026-11-24).**
+- Inglese, frasi brevi, comprensibili anche per chi conosce poco Minecraft.
+- Niente numeri esatti, salvo quando servono per usare la meccanica.
+- Sempre da dove viene un oggetto che si ottiene da una loot table (chest, drop dei mob, pesca, archeologia), perché EMI non le mostra. Niente "dove trovarlo" per gli oggetti comuni in superficie.
+- Niente pagina, o niente riga, per quello che il giocatore vede già da solo: ricetta in EMI, tooltip, advancement, primo utilizzo.
+- Si descrive il comportamento con la config di default; se dipende da un'opzione, vale il limite sopra.
+- Prima di scrivere si controlla il comportamento effettivo nel codice e nei data pack integrati, non nella descrizione della feature.
 
-- I suggerimenti di Quark compaiono in EMI per le funzioni attive (provati Bottled Cloud ed Emerald Block). Per Quark servono quindi solo i buchi. Le pagine del pack su Crate, Magnet e Pipe ripetono in parte i suggerimenti di Quark: vanno ridotte a quello che Quark non dice (Fase 4).
-- Inventario: `inventory.py` nello scratchpad della sessione produce `inventario.csv` (`id; mod; nome; coperto da; decisione proposta`). Su 3725 oggetti: 706 coperti, 153 rimossi, 201 tecnici, 1371 decorativi, 832 in 86 gruppi, 462 da valutare (Minecraft 280, Quark 42, Supplementaries 42, ISO 22, Naturalist 18, altre circa 58). Tra i 42 di Quark ci sono ancora oggetti di moduli spenti, che Quark nasconde da solo: Crab (categoria mobs spenta), Matrix Enchanter, Monster Box, Hammer.
+## ISO: spostare le pagine dal codice
 
-1. **In gioco**:
-   - i suggerimenti di Quark compaiono in EMI? Se sì, per Quark servono solo i buchi e le correzioni. Se no, bisogna scegliere se riportarli nel pack o lasciar perdere;
-   - i suggerimenti di Quark che descrivono funzioni disattivate o cambiate nel pack vanno nascosti o corretti.
-2. **Inventario**: uno script (nello scratchpad) legge dai jar le chiavi lang `item.*` e `block.*` e gli ID registrati, e produce un CSV con `id, mod, coperto da (pack / ISO / Quark / nessuno), categoria proposta, decisione`. La decisione è una tra *pagina*, *gruppo X*, *decorativo*, *ovvio* o *rimosso*.
-3. **Revisione tua** del CSV: decidi cosa è "ovvio" e cosa merita una pagina. È il passo che fissa quanto è grande tutto il resto.
+`ISOEmiPlugin` registra 29 pagine in codice (`createSimpleInfo` in `register` e `addInfo` in `addInfos`). Quelle statiche vanno spostate in `assets/emi/recipe/additions/`, con le stesse chiavi lang. Le pagine in codice hanno ID `insanesurvivaloverhaul:/info/<id>` o `insanesurvivaloverhaul:/<id>`, quelle in JSON lo prendono dal percorso del file: da controllare che non ci siano riferimenti al vecchio ID.
 
-## Fase 1 — Vanilla cambiato dal pack o da ISO, non ancora coperto (1-2 sessioni)
+- **Da spostare** (oggetti di ISO, nessuna riga condizionale): `echo_lantern`, `daggers`, `shortbow`, `beacon` (il Beacon di ISO), `explosive_barrel`, `mining_charge`, `copper_powered_rail`, `golden_powered_rail`, `rich_farmland` (righe `bone_meal.rich_farmland` e `rich_farmland`; l'oggetto esiste solo con Rich Farmland attivo).
+- **Restano in codice**, perché riguardano oggetti vanilla e la pagina o alcune righe dipendono dalla config: `name_tag`, `crops` (semi), `info_portal_corners` (`Portal requires crying obsidian`), `beds` (`allowSleepingEvenWhenNotTired`), `hoes`, `wooden_equipment`, `copper_ore` (data pack di Stone Tools Gone), `conduit` (`removeHaste`), `fishing_rod`, `sweet_berry_bush` (`noDamageIfDressed`), `cake` (`buffCake`), `sponge` (`dryWetWeather`), `campfire`, `spawner`, `bone_meal`, `totem_of_undying`, `shulker_box_from_pouches`, `zombie_villager_cure` (`convalescenceDuration`).
+- **Restano in codice perché calcolate**: `falling_blocks_damage` (blocchi `Fallable` che fanno danno) e `break_on_fall` (tag di blocchi, non di oggetti).
 
-**Fatta (2026-11-24).** Quasi tutti i candidati vengono da ISO o No Hunger e sono finiti in [Da implementare nelle mod](#da-implementare-nelle-mod). Nel pack:
+Le nuove pagine di ISO elencate sotto seguono lo stesso criterio: in JSON se sono statiche, nel plugin se dipendono dalla config.
 
-- `supplementaries_ash` (Ash e Burnt Log): il fuoco trasforma quasi tutti i log in Burnt Log, e la Ash si ottiene rompendoli (loot table del datapack). La ricetta "log che bruciano → Ash" mostrata in EMI da Supplementaries è quindi fuorviante;
-- `minecraft_wet_sponge`: dove trovarla, con più spugne dagli Elder Guardian più forti (loot table di Progressive Bosses sovrascritte dal pack).
+## Stato del pack (2026-11-24)
 
-Già a posto: Crying Obsidian (`portal_corners` di ISO) e Spawner (ISO mostra la riga "reactivate" solo se il Reactivator è attivo). Fletching Table e Recycling hanno già le loro categorie o ricette in EMI.
+Le fasi 0-4 sono fatte in `resourcepacks/survivalreimagined_lang` (inventario, vanilla, mod di terzi, revisione); resta il controllo in gioco a campione. Le pagine sui comportamenti delle mod di Insane96 non sono state scritte nel pack: sono qui sotto, con la fonte (opzione di config o classe) e, dove c'era, il testo già scritto. Quando una mod aggiunge una pagina, la voce si toglie da qui. Se il pack ha una pagina che la mod rende inutile, va tolta dal pack.
 
-Il Totem of Holding non ha un oggetto: è solo un'entità, il modello in `models/item/extra` è usato per il rendering. Non può avere una pagina EMI, quindi la spiegazione della morte va appoggiata ad altro (vedi la voce della penalità alla morte).
+## Pagine da aggiungere
 
-## Fase 2 — Vanilla con meccaniche poco evidenti (3-4 sessioni)
-
-Un lotto (e un commit) per categoria:
-
-1. **Navigazione e strumenti**: Compass, Recovery Compass, Lodestone, Clock, Spyglass, Map / Cartography Table, Bundle, Brush e blocchi sospetti, Goat Horn. **Fatto (2026-11-24)**, più Obsidian. La pagina del Clock è quella di Supplementaries, allargata. Brush e blocchi sospetti non servono.
-2. **Redstone**: Observer, Comparator, Repeater, Target, Daylight Detector, Note Block, Sculk Shrieker, Crafter, Lightning Rod, Tripwire, Piston e blocchi non spostabili, Hopper, Dropper / Dispenser (comportamenti speciali), Rail speciali. **Fatto (2026-11-24)**. Tripwire Hook e Lightning Rod hanno una riga vanilla nelle pagine di Amendments e Vanilla Backport. Slime e Honey Block sono spiegati nella pagina del Piston, Rail e Powered Rail non servono (ovvio e ISO).
-3. **Blocchi funzionali**: Beacon (se ISO non basta), Conduit, Respawn Anchor, Lectern, Jukebox, Composter, Cauldron, Brewing Stand, Smithing Table e Trim Templates, Loom, Stonecutter, Bell, Scaffolding, Bee Nest / Beehive e Honey, Ender Chest, Shulker Box. **Fatto (2026-11-24)**. Lectern, Jukebox, Cauldron e Bell hanno una riga vanilla nelle pagine di Amendments. Netherite Upgrade e Trim Template hanno una pagina ciascuno con le fonti, prese dalle loot table effettive (DnT, Incendium, Moog's, Adventure Dungeons, Hellish Trials, Bits and Balance). Non servono: Beacon (ISO), Shulker Box (il tooltip di Quark ne mostra il contenuto), Loom, Stonecutter, Scaffolding e Composter (ovvi nell'inventario). Il Blast Armor Trim di Supplementaries si trovava solo nei Galleon, spenti nel pack (`galleon = false`): ora si pesca come tesoro, e la sua pagina lo dice.
-4. **Materiali e drop non ovvi**: Echo Shard, Disc Fragment, Heart of the Sea, Nautilus Shell, Sniffer Egg, Armadillo Scute, Breeze Rod, Heavy Core, Trial Key / Ominous Trial Key, Ominous Bottle, Dragon Breath, Shulker Shell, Phantom Membrane. **Fatto (2026-11-24)**, più Trial Spawner, Vault, Nether Star, Wither Rose, Ancient Debris, Eye of Ender ed End Portal Frame, End Crystal, ametista e una pagina per tutti i dischi vanilla. Fonti prese dalle loot table effettive. Non vanno nel pack perché li cambia ISO: Heart of the Sea (Divine Fragment), Shulker Shell, Ender Pearl, Armadillo e Turtle Scute (vedi sotto). Netherite Scrap non serve: la fusione è in EMI.
-5. **Equipaggiamento**: Elytra, Trident, Mace, Wind Charge, Turtle Helmet, Shield, Crossbow, Firework Rocket / Star. **Fatto (2026-11-24)**. Il Trident Fragment di Better Tridents sta nella pagina del Trident (Drowned dal datapack, Elder Guardian). Le Elytra vengono solo dalle End City: Incendium nel pack ha solo i biomi. Non servono: Crossbow, Firework e Shield (ovvi, lo scudo ha già la pagina di Shields+). Turtle Helmet: l'Oxygen Bonus di ISO si vede nel tooltip. Le modifiche di ISO a Elytra e Crossbow sono sotto.
-6. **Piante e agricoltura**: crescita e Bone Meal (dove ISO non arriva), Sugar Cane, Cactus, Bamboo, Kelp, Chorus, Nether Wart, Sea Pickle, Glow Berries, Pitcher, Torchflower, Moss / Azalea. **Fatto (2026-11-24)**. Nel pack: Bone Meal (i blocchi aggiunti da Universal Bone Meal, oltre alla pagina di ISO), Nether Wart, Chorus, semi dello Sniffer (Torchflower e Pitcher), Frogspawn e Froglight, Carrot e Warped Fungus on a Stick. Non servono (ovvi nel CSV): Sugar Cane, Cactus, Bamboo, Kelp, Sea Pickle, Glow Berries, Moss e Azalea. Il raccolto col tasto destro di Quark (`Simple Harvest`) è spento. Golden Carrot e Glistering Melon nemmeno: la distillazione è in EMI.
-
-## Fase 3 — Mod senza copertura (2-3 sessioni)
-
-- **Quark e Quark Oddities**: dipende dalla Fase 0. In ogni caso serve il Totem of Holding, una pagina chiave per la morte nel pack.
-- **Incubation** (Egg Crates, cibi), **Better Tridents** (Trident Fragment), **Hellish Trials** (Ominous Vault e loot).
-- **RuneEnchanting**, **Stamina**, **Progressive Bosses**: sono mod di Insane96, quindi le loro pagine vanno in [Da implementare nelle mod](#da-implementare-nelle-mod).
-- **Buchi nelle mod già coperte**: per esempio Bits and Balance (2 pagine), Clayworks, Boatload, Sawmill, Ecologics, Vanilla Backport. Si controllano gli oggetti non decorativi rimasti senza pagina.
-
-**Fatta (2026-11-24)**, partendo dagli oggetti "dubbio" del CSV:
-
-- Pagine nuove: Cartographer's Quill (Supplementaries con Quark: sostituisce le mappe del tesoro e degli esploratori nelle chest), Spider Head (Creeper carico, e la stessa riga sulla pagina della Enderman Head), Fat, Tooth, Morsel e Lizard Tail di Naturalist (da quali mob), Golden Dandelion di Tiny Takeover Backport (blocca la crescita dei cuccioli), uova e Bird Cage di Vibrant Parrots.
-- Aggiunti a pagine esistenti: Hanging Coconut (Coconut), Bamboo Raft with Cannon (Cannon Boat), Tinted Jar (Jar), Gold Gate (Gold Door e Iron Gate).
-- Già a posto: Soap, Soap Block e Bubble Blower (pagine ripristinate con la Ash), Trident Fragment (pagina del Trident), Ominous Vault di Hellish Trials (pagina del Vault). Quark: bastano i suoi suggerimenti; il Totem of Holding non ha un oggetto (vedi Fase 1). Incubation: i suoi 4 oggetti sono "ovvio".
-- Non servono: Ashen Basalt (dà Basalt, citato nella pagina della Ash), Barnacles, Checker Block, Flax Bale, Gold Bars, Seashell (decorativi), Tater in a Jar, Speedometer (senza ricetta, mostra la velocità al primo uso), Snail Eggs (non si raccolgono).
-- Fat e Tooth: le pagine dicono da dove vengono. Gli usi (Candle con la Fat al posto della Honeycomb, 2 Bone Meal da un Tooth) sono ricette del datapack, che EMI mostra già.
-
-## Fase 4 — Revisione (1 sessione)
-
-- Rileggere le 162 pagine esistenti alla luce di quelle nuove: doppioni con ISO o Quark, testi diventati sbagliati per cambi di config.
-- Controllo in gioco a campione (EMI → tasto info) dei lotti più grandi.
-
-**Rilettura fatta (2026-11-24)**, il controllo in gioco resta da fare. Corretto:
-
-- Crate, Magnet e Pipe ridotte a quello che i suggerimenti di Quark non dicono;
-- trim Sentry e Vex: "Woodland Mansion" diventa "Illager Manor", come nella pagina del Goat Horn.
-
-Nessun doppione con le pagine di ISO: Conduit, Bone Meal e Obsidian dicono cose diverse da ISO e restano coerenti con la config. Spostate in [Da implementare nelle mod](#da-implementare-nelle-mod):
-
-- `minecraft_sculk`, perché la Rune droppata dallo Sculk viene dall'integrated pack di RuneEnchanting (`enchantment_changes`);
-- `shieldsplus_shields`, perché Shields+ è una mod di Insane96.
-
-Parrot Eggs: spente quelle di Quark (`Parrot Eggs` = false), che vogliono i Beetroot Seeds, difficili da trovare. Restano quelle di Vibrant Parrots, che usano `#minecraft:parrot_food`: ISO (Livestock) lo riduce a Melon e Pumpkin Seeds, che servono anche per addomesticarli, e mette i pappagalli in `prevent_breeding` e `breedable_animals`.
-
-## Da implementare nelle mod
-
-Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Formato: `oggetti` — cosa spiegare (origine).
+Formato: `oggetti` — cosa spiegare (origine). Le voci "Non è una pagina" sono emerse durante il lavoro e vanno fatte in altro modo (tooltip, HUD, correzione di un bug).
 
 ### InsaneSurvivalOverhaul
 
@@ -137,20 +91,3 @@ Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Format
 ### Stamina
 
 - Non ha oggetti. Se serve una spiegazione, va fuori da EMI (tooltip o HUD).
-
-### Altre mod
-
-_(vuoto)_
-
-## Stima
-
-| Fase | Pagine nuove | Sessioni |
-|------|-------------:|---------:|
-| 0 — Verifiche e inventario | — | 1 |
-| 1 — Vanilla cambiato | 15-30 | 1-2 |
-| 2 — Vanilla poco evidente | 70-100 | 3-4 |
-| 3 — Mod | 40-80 | 2-3 |
-| 4 — Revisione | — | 1 |
-| **Totale** | **125-210** | **8-11** |
-
-I numeri si restringono dopo la Fase 0: dipendono da quanto è largo il criterio "ovvio" e da cosa mostra già Quark.
