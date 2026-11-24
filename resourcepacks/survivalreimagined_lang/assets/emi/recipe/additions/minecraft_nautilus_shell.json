@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:nautilus_shell"
+    ],
+    "text": [
+        "emi.info.minecraft.nautilus_shell"
+    ]
+}

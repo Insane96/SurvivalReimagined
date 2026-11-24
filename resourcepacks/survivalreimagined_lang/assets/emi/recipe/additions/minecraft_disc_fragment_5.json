@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:disc_fragment_5"
+    ],
+    "text": [
+        "emi.info.minecraft.disc_fragment_5"
+    ]
+}

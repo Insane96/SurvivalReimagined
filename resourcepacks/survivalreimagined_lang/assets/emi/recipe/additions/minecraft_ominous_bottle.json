@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:ominous_bottle"
+    ],
+    "text": [
+        "emi.info.minecraft.ominous_bottle"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:ender_eye",
+        "item:minecraft:end_portal_frame"
+    ],
+    "text": [
+        "emi.info.minecraft.ender_eye"
+    ]
+}

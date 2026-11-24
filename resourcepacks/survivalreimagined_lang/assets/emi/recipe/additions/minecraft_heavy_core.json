@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:heavy_core"
+    ],
+    "text": [
+        "emi.info.minecraft.heavy_core"
+    ]
+}

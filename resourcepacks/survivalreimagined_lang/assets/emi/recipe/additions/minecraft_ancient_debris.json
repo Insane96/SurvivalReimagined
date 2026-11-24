@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:ancient_debris"
+    ],
+    "text": [
+        "emi.info.minecraft.ancient_debris"
+    ]
+}

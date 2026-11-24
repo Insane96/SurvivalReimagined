@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:phantom_membrane"
+    ],
+    "text": [
+        "emi.info.minecraft.phantom_membrane"
+    ]
+}

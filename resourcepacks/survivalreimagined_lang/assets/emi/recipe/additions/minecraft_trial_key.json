@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:trial_key"
+    ],
+    "text": [
+        "emi.info.minecraft.trial_key"
+    ]
+}

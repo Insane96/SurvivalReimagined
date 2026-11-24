@@ -1,0 +1,14 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:budding_amethyst",
+        "item:minecraft:small_amethyst_bud",
+        "item:minecraft:medium_amethyst_bud",
+        "item:minecraft:large_amethyst_bud",
+        "item:minecraft:amethyst_cluster",
+        "item:minecraft:amethyst_shard"
+    ],
+    "text": [
+        "emi.info.minecraft.amethyst"
+    ]
+}

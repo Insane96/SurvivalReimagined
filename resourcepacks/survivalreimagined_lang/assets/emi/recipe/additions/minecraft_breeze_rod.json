@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:breeze_rod"
+    ],
+    "text": [
+        "emi.info.minecraft.breeze_rod"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:echo_shard"
+    ],
+    "text": [
+        "emi.info.minecraft.echo_shard"
+    ]
+}

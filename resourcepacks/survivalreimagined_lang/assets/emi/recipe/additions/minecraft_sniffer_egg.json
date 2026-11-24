@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:sniffer_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.sniffer_egg"
+    ]
+}

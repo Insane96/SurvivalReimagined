@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:nether_star"
+    ],
+    "text": [
+        "emi.info.minecraft.nether_star"
+    ]
+}

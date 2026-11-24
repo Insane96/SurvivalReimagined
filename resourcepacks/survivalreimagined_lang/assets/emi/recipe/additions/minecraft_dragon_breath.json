@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:dragon_breath"
+    ],
+    "text": [
+        "emi.info.minecraft.dragon_breath"
+    ]
+}

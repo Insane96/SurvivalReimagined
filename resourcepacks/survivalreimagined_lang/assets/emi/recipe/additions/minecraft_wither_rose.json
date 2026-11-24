@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:wither_rose"
+    ],
+    "text": [
+        "emi.info.minecraft.wither_rose"
+    ]
+}

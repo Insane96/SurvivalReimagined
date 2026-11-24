@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:trial_spawner"
+    ],
+    "text": [
+        "emi.info.minecraft.trial_spawner"
+    ]
+}
