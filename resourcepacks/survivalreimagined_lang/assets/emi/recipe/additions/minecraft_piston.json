@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:piston",
+        "item:minecraft:sticky_piston"
+    ],
+    "text": [
+        "emi.info.minecraft.piston.1",
+        "emi.info.minecraft.piston.2"
+    ]
+}

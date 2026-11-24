@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:crafter"
+    ],
+    "text": [
+        "emi.info.minecraft.crafter"
+    ]
+}

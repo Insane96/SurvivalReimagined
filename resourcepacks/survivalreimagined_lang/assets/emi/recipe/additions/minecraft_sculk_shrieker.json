@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:sculk_shrieker"
+    ],
+    "text": [
+        "emi.info.minecraft.sculk_shrieker"
+    ]
+}

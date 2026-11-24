@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:activator_rail"
+    ],
+    "text": [
+        "emi.info.minecraft.activator_rail"
+    ]
+}

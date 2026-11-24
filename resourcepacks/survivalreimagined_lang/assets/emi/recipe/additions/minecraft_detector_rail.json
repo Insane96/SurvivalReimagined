@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:detector_rail"
+    ],
+    "text": [
+        "emi.info.minecraft.detector_rail"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:dispenser"
+    ],
+    "text": [
+        "emi.info.minecraft.dispenser.1",
+        "emi.info.minecraft.dispenser.2"
+    ]
+}

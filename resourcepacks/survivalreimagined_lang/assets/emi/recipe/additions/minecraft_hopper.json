@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:hopper",
+        "item:minecraft:hopper_minecart"
+    ],
+    "text": [
+        "emi.info.minecraft.hopper"
+    ]
+}

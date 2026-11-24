@@ -52,7 +52,7 @@ Il Totem of Holding non ha un oggetto: è solo un'entità, il modello in `models
 Un lotto (e un commit) per categoria:
 
 1. **Navigazione e strumenti**: Compass, Recovery Compass, Lodestone, Clock, Spyglass, Map / Cartography Table, Bundle, Brush e blocchi sospetti, Goat Horn. **Fatto (2026-11-24)**, più Obsidian. La pagina del Clock è quella di Supplementaries, allargata. Brush e blocchi sospetti non servono.
-2. **Redstone**: Observer, Comparator, Repeater, Target, Daylight Detector, Note Block, Sculk Shrieker, Crafter, Lightning Rod, Tripwire, Piston e blocchi non spostabili, Hopper, Dropper / Dispenser (comportamenti speciali), Rail speciali.
+2. **Redstone**: Observer, Comparator, Repeater, Target, Daylight Detector, Note Block, Sculk Shrieker, Crafter, Lightning Rod, Tripwire, Piston e blocchi non spostabili, Hopper, Dropper / Dispenser (comportamenti speciali), Rail speciali. **Fatto (2026-11-24)**. Tripwire Hook e Lightning Rod hanno una riga vanilla nelle pagine di Amendments e Vanilla Backport. Slime e Honey Block sono spiegati nella pagina del Piston, Rail e Powered Rail non servono (ovvio e ISO).
 3. **Blocchi funzionali**: Beacon (se ISO non basta), Conduit, Respawn Anchor, Lectern, Jukebox, Composter, Cauldron, Brewing Stand, Smithing Table e Trim Templates, Loom, Stonecutter, Bell, Scaffolding, Bee Nest / Beehive e Honey, Ender Chest, Shulker Box.
 4. **Materiali e drop non ovvi**: Echo Shard, Disc Fragment, Heart of the Sea, Nautilus Shell, Sniffer Egg, Armadillo Scute, Breeze Rod, Heavy Core, Trial Key / Ominous Trial Key, Ominous Bottle, Dragon Breath, Shulker Shell, Phantom Membrane.
 5. **Equipaggiamento**: Elytra, Trident, Mace, Wind Charge, Turtle Helmet, Shield, Crossbow, Firework Rocket / Star.

@@ -4,6 +4,7 @@
         "item:minecraft:tripwire_hook"
     ],
     "text": [
+        "emi.info.minecraft.tripwire_hook",
         "emi.info.amendments.tripwire_hook"
     ]
 }

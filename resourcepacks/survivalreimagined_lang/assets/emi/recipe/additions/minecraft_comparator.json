@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:comparator"
+    ],
+    "text": [
+        "emi.info.minecraft.comparator.1",
+        "emi.info.minecraft.comparator.2"
+    ]
+}

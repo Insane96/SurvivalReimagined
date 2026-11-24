@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:note_block"
+    ],
+    "text": [
+        "emi.info.minecraft.note_block"
+    ]
+}

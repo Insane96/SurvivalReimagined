@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:daylight_detector"
+    ],
+    "text": [
+        "emi.info.minecraft.daylight_detector"
+    ]
+}

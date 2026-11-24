@@ -11,6 +11,7 @@
         "item:minecraft:waxed_oxidized_lightning_rod"
     ],
     "text": [
+        "emi.info.minecraft.lightning_rod",
         "emi.info.vanillabackport.lightning_rod.1",
         "emi.info.vanillabackport.lightning_rod.2"
     ]
