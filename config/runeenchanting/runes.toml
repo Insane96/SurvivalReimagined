@@ -516,6 +516,10 @@
 	# Default: 1000
 	# Range: > 2
 	"Strike Odds" = 1000
+	#Minimum sky light at the entity's position for lightning to strike
+	# Default: 5
+	# Range: 0 ~ 15
+	"Min Sky Light" = 5
 
 [curse_of_explosion]
 	# Default: 0.6
@@ -791,3 +795,8 @@
 	# Default: 100
 	# Range: > -2147483648
 	"Movement Duration" = 100
+
+[zippy]
+	# Default: 0.15
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	"Bonus Speed" = 0.15

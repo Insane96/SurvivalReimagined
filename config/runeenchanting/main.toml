@@ -12,3 +12,7 @@
 	# Default: 0.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Equipment rune conversion ratio" = 0.5
+	#Sockets given to the items in the runeenchanting:default_sockets item tag (e.g. other mods' tools, weapons and armor) that don't get them from data packs. Items in runeenchanting:no_default_sockets are excluded. 0 disables.
+	# Default: 2
+	# Range: > -2147483648
+	"Default sockets" = 2

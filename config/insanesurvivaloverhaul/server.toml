@@ -694,6 +694,8 @@
 	"Enable Recycling" = true
 	#Adds the Mining Charge, a directional charge that, after a short fuse, digs a tunnel in the direction it's facing. All the blocks it destroys are dropped and entities in the tunnel are hurt.
 	"Enable Mining charge" = true
+	#Makes the Stonecutter reversible between full blocks of the same family: if the Stonecutter turns A into B and A into C (1 to 1), B and C can be cut back into A and into each other. Recipes added by data packs and other mods count too. Blocks in the `insanesurvivaloverhaul:stonecutter_reverse_blacklist` and `insanelib:recipe_removal` item tags are ignored. Changes apply on the next /reload. `/insanesurvivaloverhaul stonecutter_families dump` writes every family found to `logs/insanesurvivaloverhaul/`.
+	"Enable Reversible stonecutting" = true
 
 	#Various changes for different materials and ores.
 	[Mining."Materials and ores"]
@@ -754,6 +756,17 @@
 		# Default: 10.0
 		# Range: 0.0 ~ 1.7976931348623157E308
 		"Entity damage" = 10.0
+
+	#Makes the Stonecutter reversible between full blocks of the same family: if the Stonecutter turns A into B and A into C (1 to 1), B and C can be cut back into A and into each other. Recipes added by data packs and other mods count too. Blocks in the `insanesurvivaloverhaul:stonecutter_reverse_blacklist` and `insanelib:recipe_removal` item tags are ignored. Changes apply on the next /reload. `/insanesurvivaloverhaul stonecutter_families dump` writes every family found to `logs/insanesurvivaloverhaul/`.
+	[Mining."Reversible stonecutting"]
+		#If true, no recipe is added: every family found is written to the log with its blocks instead. Useful to check the families before actually adding the recipes.
+		"Log only" = false
+		#Blocks whose id path contains one of these words are ignored, like the ones in the `insanesurvivaloverhaul:stonecutter_reverse_blacklist` tag. Catches modded cracked and smooth blocks, that would let players skip smelting.
+		"Blacklisted keywords" = ["cracked", "smooth"]
+		#Families with more blocks than this are reported in the log as suspicious: a single 1 to 1 recipe from a mod can merge two unrelated families.
+		# Default: 15
+		# Range: > 2
+		"Large family warning" = 15
 
 [Misc]
 	#Changes how fast entities consume and refill air, and how drowning damage scales.

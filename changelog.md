@@ -6,11 +6,23 @@
 * Fixed foods at the saturation threshold (e.g. Cooked Prickly Pear) healing instantly instead of over time
 * Reduced Prickly Pear nutrition (2.1 -> 0.9 health) and Cooked Prickly Pear nutrition (5 -> 4 health over time)
 * Renamed Curse of the Void to Curse of Teleport
+* Supplementaries' Wrench is now a weapon that accepts weapon runes, with 4 sockets: 2.5 damage (was 3.5), 1.8 attack speed (was 2) and 0.5 shorter attack reach
+* Stone and Deepslate can no longer be cut into Cobblestone and Cobbled Deepslate in the Stonecutter, as with the new reversible stonecutting they could be cut back, skipping smelting
 * Updated Mods
   * FWA 1.3.8 -> 1.3.10
     * Fixed Doors, Trapdoors and Fence Gates playing their opening animation when placed already open or pushed by a Piston
+  * InsaneSurvivalOverhaul 5.16.6.0-beta -> 5.16.7.0-beta
+    * Full blocks of the same family can be cut back and into each other in the Stonecutter (e.g. Stone Bricks and Chiseled Stone Bricks into Stone). Cracked and smooth blocks are excluded, so smelting can't be skipped
+    * Fixed Turtle and Armadillo Scute blocks flickering
   * JEI 19.76.1.478 -> 19.76.1.481
   * Moonlight 3.8.3 -> 3.8.5
+  * RuneEnchanting 1.5.4.2-beta -> 1.5.5.0
+    * Modded tools, weapons and armor that had no sockets now have 2 (e.g. Ecologics' Crab Claw, Supplementaries' Wrench)
+    * Melee Protection only reduces player and mob attacks, no longer other damage dealt directly by a mob (e.g. Thorns)
+    * Curse of Static Charge also attracts lightning while raining, not only during thunderstorms, but no longer under a roof
+    * Curse of Teleport also makes you look in a random direction when it teleports you
+    * The mod's sounds have their own subtitles (e.g. "Player double jumps" instead of "Firework launches")
+    * Fixed some runes not showing their bonus
   * Sawmill 1.9.2 -> 1.9.3
   * Tiny Takeover Backport 1.8.2 -> 1.8.3
     * Fixed Pumpkins, Skulls and other blocks worn on the head showing at the waist of baby Zombies and Piglins
