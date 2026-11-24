@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:bundle"
+    ],
+    "text": [
+        "emi.info.minecraft.bundle"
+    ]
+}

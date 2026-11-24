@@ -51,7 +51,7 @@ Il Totem of Holding non ha un oggetto: è solo un'entità, il modello in `models
 
 Un lotto (e un commit) per categoria:
 
-1. **Navigazione e strumenti**: Compass, Recovery Compass, Lodestone, Clock, Spyglass, Map / Cartography Table, Bundle, Brush e blocchi sospetti, Goat Horn.
+1. **Navigazione e strumenti**: Compass, Recovery Compass, Lodestone, Clock, Spyglass, Map / Cartography Table, Bundle, Brush e blocchi sospetti, Goat Horn. **Fatto (2026-11-24)**, più Obsidian. La pagina del Clock è quella di Supplementaries, allargata. Brush e blocchi sospetti non servono.
 2. **Redstone**: Observer, Comparator, Repeater, Target, Daylight Detector, Note Block, Sculk Shrieker, Crafter, Lightning Rod, Tripwire, Piston e blocchi non spostabili, Hopper, Dropper / Dispenser (comportamenti speciali), Rail speciali.
 3. **Blocchi funzionali**: Beacon (se ISO non basta), Conduit, Respawn Anchor, Lectern, Jukebox, Composter, Cauldron, Brewing Stand, Smithing Table e Trim Templates, Loom, Stonecutter, Bell, Scaffolding, Bee Nest / Beehive e Honey, Ender Chest, Shulker Box.
 4. **Materiali e drop non ovvi**: Echo Shard, Disc Fragment, Heart of the Sea, Nautilus Shell, Sniffer Egg, Armadillo Scute, Breeze Rod, Heavy Core, Trial Key / Ominous Trial Key, Ominous Bottle, Dragon Breath, Shulker Shell, Phantom Membrane.
@@ -79,6 +79,7 @@ Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Format
 - `#minecraft:beds`: una riga in più nella pagina `beds`, attiva solo con phantoms from tiredness: essere molto stanchi attira i Phantom (`Tiredness`).
 - Penalità alla morte (`DeathInventoryPenalty`, gamerule `death_keep_equipment`): armatura, offhand e oggetti con durabilità nella hotbar restano perdendo durabilità, il resto cade. Non ha un oggetto, quindi va fuori da EMI: una riga nella schermata di morte, del tipo "Your equipment was kept but lost durability". Nella stessa schermata, un'altra riga con il numero di morti, così non serve aprire le statistiche o usare lo scoreboard (ISO ha già `ClientboundDeathStatsPacket`, da vedere se si può estendere).
 - Non è una pagina: Turtle Scute e Armadillo Scute (`Scutes`, `Scute drops as block`) dovrebbero avere un tooltip "Placeable" tramite InsaneLib, come fa Supplementaries con Stick e Blaze Rod.
+- Non è una pagina, è da sistemare: `Portal requires crying obsidian` (`Nether.onPortalTryToActivate`) non controlla gli angoli, ma conta la Crying Obsidian in tutto il rettangolo della cornice e ne vuole almeno 4. Quindi 4 blocchi messi in qualsiasi punto della cornice accendono il portale.
 - Non è una pagina: la ricetta di riciclo in EMI (`Recycling`) dovrebbe dire che la resa cala con la durabilità consumata.
 
 ### Altre mod

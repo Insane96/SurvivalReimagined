@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:spyglass"
+    ],
+    "text": [
+        "emi.info.minecraft.spyglass"
+    ]
+}
