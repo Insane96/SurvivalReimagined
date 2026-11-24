@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:spider_head"
+    ],
+    "text": [
+        "emi.info.supplementaries.spider_head"
+    ]
+}

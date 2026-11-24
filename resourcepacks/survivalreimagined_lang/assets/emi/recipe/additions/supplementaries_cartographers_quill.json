@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:cartographers_quill"
+    ],
+    "text": [
+        "emi.info.supplementaries.cartographers_quill"
+    ]
+}

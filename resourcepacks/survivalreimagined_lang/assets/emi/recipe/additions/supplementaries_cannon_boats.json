@@ -1,7 +1,8 @@
 {
     "type": "emi:info",
     "stacks": [
-        "#item:supplementaries:cannon_boats"
+        "#item:supplementaries:cannon_boats",
+        "item:supplementaries:cannon_raft_bamboo"
     ],
     "text": [
         "emi.info.supplementaries.cannon_boats"

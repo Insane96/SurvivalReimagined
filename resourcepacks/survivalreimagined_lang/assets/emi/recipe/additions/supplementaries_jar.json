@@ -1,7 +1,8 @@
 {
     "type": "emi:info",
     "stacks": [
-        "item:supplementaries:jar"
+        "item:supplementaries:jar",
+        "item:supplementaries:jar_tinted"
     ],
     "text": [
         "emi.info.supplementaries.jar.1",

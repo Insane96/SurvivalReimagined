@@ -1,7 +1,8 @@
 {
     "type": "emi:info",
     "stacks": [
-        "item:supplementaries:iron_gate"
+        "item:supplementaries:iron_gate",
+        "item:supplementaries:gold_gate"
     ],
     "text": [
         "emi.info.supplementaries.iron_gate"

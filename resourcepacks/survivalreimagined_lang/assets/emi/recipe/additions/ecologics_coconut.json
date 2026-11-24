@@ -1,7 +1,8 @@
 {
     "type": "emi:info",
     "stacks": [
-        "item:ecologics:coconut"
+        "item:ecologics:coconut",
+        "item:ecologics:hanging_coconut"
     ],
     "text": [
         "emi.info.ecologics.coconut.1",

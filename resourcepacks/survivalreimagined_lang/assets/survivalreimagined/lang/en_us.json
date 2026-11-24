@@ -161,6 +161,9 @@
 	"emi.info.supplementaries.item_lore": "Craft a renamed Name Tag with any item to add its name as lore to the item.",
 	"emi.info.supplementaries.clock": "Shows the time of day from the position of the sun and moon, even underground. Right-click it to see the exact time. Doesn't work in the Nether or the End.",
 	"emi.info.supplementaries.blast_armor_trim_smithing_template": "Rarely caught as treasure while fishing.",
+	"emi.info.supplementaries.cartographers_quill": "Treasure and explorer maps found in chests come as a Cartographer's Quill instead. Keep it in your inventory: after a while it finishes drawing and turns into the map. If it finds nothing nearby, try again somewhere else.",
+	"emi.info.supplementaries.spider_head": "Dropped by Spiders killed by a Charged Creeper's explosion, like the other mob heads.",
+	"emi.info.supplementaries.enderman_head.source": "Dropped by Endermen killed by a Charged Creeper's explosion.",
 	"emi.info.amendments.lanterns": "Lanterns can be placed on walls, where they swing when hit by entities. Lanterns hanging from a ceiling fall if their support is broken.",
 	"emi.info.amendments.cauldron.1": "Cauldrons can hold any liquid. Click one with an item to craft it with the liquid inside, or throw the ingredients in.",
 	"emi.info.amendments.cauldron.2": "Mix potions in it, or dye its water with dyes (dyed water can be mixed too) and fill Dye Bottles from it.",
@@ -236,6 +239,10 @@
 	"emi.info.naturalist.duck_egg": "Laid by Ducks. Throw it to sometimes hatch a Duckling, or use it instead of an Egg in Cakes and Pumpkin Pies.",
 	"emi.info.naturalist.chrysalis": "Caterpillars turn into a Chrysalis on the side of a log, which later hatches into a Butterfly. Only Shears or Silk Touch pick it up.",
 	"emi.info.naturalist.music_discs": "\"Wild Ones\" is sometimes carried by Foxes. \"Death by Hogs\" is sometimes dropped by Boars when they kill a player.",
+	"emi.info.naturalist.fat": "Dropped by Boars, Mammoths and Whales.",
+	"emi.info.naturalist.tooth": "Dropped by Alligators, Great White Sharks, Lions, Tigers and Snakes.",
+	"emi.info.naturalist.morsel": "A small piece of meat dropped by Hedgehogs, Lizards, Rats, Snakes and Vultures. Tigers and Komodo Dragons like it.",
+	"emi.info.naturalist.lizard_tail": "When hurt, a Lizard can drop its tail, which wriggles on the ground and grows back after a while. Hit the tail to pick it up.",
 	"emi.info.vanillabackport.creaking_heart.1": "Found inside Pale Oak trees in the Pale Garden. When placed between two Pale Oak Logs lined up with it, it wakes up at night and spawns a Creaking, which only moves when no one is looking at it.",
 	"emi.info.vanillabackport.creaking_heart.2": "The Creaking can't be killed by attacking it: every hit makes Resin Clumps grow on the blocks around the heart instead. Break the Creaking Heart to destroy its Creaking.",
 	"emi.info.vanillabackport.resin_clump": "Grows around a Creaking Heart when its Creaking is hit. Place it on any side of a block, or smelt it into Resin Bricks.",
@@ -361,5 +368,8 @@
 	"emi.info.quark.magnet.1": "When powered by redstone, pushes magnetic blocks in front of it away and pulls the ones behind it closer, both in the direction it faces. A stronger signal reaches farther. Blocks made of iron or copper are magnetic, and it also moves dropped magnetic items and mobs wearing iron armor.",
 	"emi.info.quark.magnet.2": "A Stonecutter moved by a Magnet cuts through the blocks in its way, dropping them as if mined with Silk Touch. Wax a Magnet with a Honeycomb to hide its particles.",
 	"emi.info.quark.pipe.1": "Moves items: items thrown or dropped into an open end, or pushed in by Hoppers and Droppers, travel through the pipe into connected containers, or come out of the other open end. At junctions, items go down first if they can. Powering a Pipe with redstone stops it.",
-	"emi.info.quark.pipe.2": "Pipes connect by themselves to every adjacent Pipe and container, and their sides can't be closed. Too many items in a Pipe at once make it break. Right-click a Pipe with Glass to encase it, or with a Stick to refresh the connections of the whole network if they look wrong. Comparators read how many items are inside."
+	"emi.info.quark.pipe.2": "Pipes connect by themselves to every adjacent Pipe and container, and their sides can't be closed. Too many items in a Pipe at once make it break. Right-click a Pipe with Glass to encase it, or with a Stick to refresh the connections of the whole network if they look wrong. Comparators read how many items are inside.",
+	"emi.info.tiny_takeover_backport.golden_dandelion": "Use it on a baby animal to stop it from growing up. Use it again to let it grow.",
+	"emi.info.vibrantparrots.parrot_eggs": "Parrots come in many more colors. Tamed Parrots can be bred with seeds: some time later one of the two lays an egg of its color. Throw the egg to hatch a chick.",
+	"emi.info.vibrantparrots.bird_cage": "Use it on a Parrot you tamed to carry it around in the cage, and use it again to let the Parrot out, like a Bucket with fish."
 }

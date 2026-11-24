@@ -2,7 +2,8 @@
     "type": "emi:info",
     "stacks": [
         "item:supplementaries:gold_door",
-        "item:supplementaries:gold_trapdoor"
+        "item:supplementaries:gold_trapdoor",
+        "item:supplementaries:gold_gate"
     ],
     "text": [
         "emi.info.supplementaries.gold_doors"

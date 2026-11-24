@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:fat"
+    ],
+    "text": [
+        "emi.info.naturalist.fat"
+    ]
+}

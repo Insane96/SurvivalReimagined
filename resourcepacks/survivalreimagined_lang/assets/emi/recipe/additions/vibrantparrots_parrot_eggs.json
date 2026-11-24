@@ -1,0 +1,24 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:vibrantparrots:white_parrot_egg",
+        "item:vibrantparrots:orange_parrot_egg",
+        "item:vibrantparrots:magenta_parrot_egg",
+        "item:vibrantparrots:light_blue_parrot_egg",
+        "item:vibrantparrots:yellow_parrot_egg",
+        "item:vibrantparrots:lime_parrot_egg",
+        "item:vibrantparrots:pink_parrot_egg",
+        "item:vibrantparrots:gray_parrot_egg",
+        "item:vibrantparrots:light_gray_parrot_egg",
+        "item:vibrantparrots:cyan_parrot_egg",
+        "item:vibrantparrots:purple_parrot_egg",
+        "item:vibrantparrots:blue_parrot_egg",
+        "item:vibrantparrots:brown_parrot_egg",
+        "item:vibrantparrots:green_parrot_egg",
+        "item:vibrantparrots:red_parrot_egg",
+        "item:vibrantparrots:black_parrot_egg"
+    ],
+    "text": [
+        "emi.info.vibrantparrots.parrot_eggs"
+    ]
+}

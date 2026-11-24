@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:naturalist:lizard_tail",
+        "item:naturalist:cooked_lizard_tail"
+    ],
+    "text": [
+        "emi.info.naturalist.lizard_tail"
+    ]
+}

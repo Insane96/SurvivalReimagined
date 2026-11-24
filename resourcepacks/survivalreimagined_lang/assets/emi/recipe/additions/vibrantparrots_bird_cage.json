@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:vibrantparrots:bird_cage",
+        "item:vibrantparrots:parrot_cage"
+    ],
+    "text": [
+        "emi.info.vibrantparrots.bird_cage"
+    ]
+}

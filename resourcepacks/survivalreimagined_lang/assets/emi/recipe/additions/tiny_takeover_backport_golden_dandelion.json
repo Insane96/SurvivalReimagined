@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:golden_dandelion"
+    ],
+    "text": [
+        "emi.info.tiny_takeover_backport.golden_dandelion"
+    ]
+}

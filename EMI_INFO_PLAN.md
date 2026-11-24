@@ -65,6 +65,14 @@ Un lotto (e un commit) per categoria:
 - **RuneEnchanting**, **Stamina**, **Progressive Bosses**: sono mod di Insane96, quindi le loro pagine vanno in [Da implementare nelle mod](#da-implementare-nelle-mod).
 - **Buchi nelle mod già coperte**: per esempio Bits and Balance (2 pagine), Clayworks, Boatload, Sawmill, Ecologics, Vanilla Backport. Si controllano gli oggetti non decorativi rimasti senza pagina.
 
+**Fatta (2026-11-24)**, partendo dagli oggetti "dubbio" del CSV:
+
+- Pagine nuove: Cartographer's Quill (Supplementaries con Quark: sostituisce le mappe del tesoro e degli esploratori nelle chest), Spider Head (Creeper carico, e la stessa riga sulla pagina della Enderman Head), Fat, Tooth, Morsel e Lizard Tail di Naturalist (da quali mob), Golden Dandelion di Tiny Takeover Backport (blocca la crescita dei cuccioli), uova e Bird Cage di Vibrant Parrots.
+- Aggiunti a pagine esistenti: Hanging Coconut (Coconut), Bamboo Raft with Cannon (Cannon Boat), Tinted Jar (Jar), Gold Gate (Gold Door e Iron Gate).
+- Già a posto: Soap, Soap Block e Bubble Blower (pagine ripristinate con la Ash), Trident Fragment (pagina del Trident), Ominous Vault di Hellish Trials (pagina del Vault). Quark: bastano i suoi suggerimenti; il Totem of Holding non ha un oggetto (vedi Fase 1). Incubation: i suoi 4 oggetti sono "ovvio".
+- Non servono: Ashen Basalt (dà Basalt, citato nella pagina della Ash), Barnacles, Checker Block, Flax Bale, Gold Bars, Seashell (decorativi), Tater in a Jar, Speedometer (senza ricetta, mostra la velocità al primo uso), Snail Eggs (non si raccolgono).
+- Fat e Tooth non hanno nessun uso nel pack: le pagine dicono solo da dove vengono.
+
 ## Fase 4 — Revisione (1 sessione)
 
 - Rileggere le 162 pagine esistenti alla luce di quelle nuove: doppioni con ISO o Quark, testi diventati sbagliati per cambi di config.
@@ -87,6 +95,27 @@ Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Format
 - `minecraft:elytra`: una riga in più rispetto alla pagina del pack: fuori dall'End si plana peggio e il boost dei razzi è più lento, ma si decolla anche con un razzo dopo un salto, senza dover già planare (`Elytra`, `Air resistance`, `Firework boost off ground`).
 - `minecraft:crossbow`: le frecce passano attraverso i mob (`Piercing crossbow`), ma partono più lente e meno precise (`Crossbow velocity`, `Crossbow inaccuracy`). Forse basta un tooltip.
 - Non è una pagina: la ricetta di riciclo in EMI (`Recycling`) dovrebbe dire che la resa cala con la durabilità consumata.
+- `crystal_heart`: va nella stessa pagina del Divine Fragment (`Death max health penalty`): la ricetta si vede, ma non a cosa serve.
+- `wild_wheat`, `wild_carrots`, `wild_potatoes`, `wild_beetroots`: la pagina `crops` dice solo "Can be found in the wild". Si possono aggiungere agli stack di quella pagina, con dove crescono e cosa lasciano (`Crops`).
+- `sweet_berry_seeds`: da dove vengono, cioè dai cespugli di bacche (pack `berries`) e dai Farmer. Basta aggiungerli alla pagina `sweet_berry_bush` (`Berries`).
+- `copper_ore_rock`, `iron_ore_rock`, `gold_ore_rock`: in superficie segnalano una grande vena del minerale sottoterra (`Big ore veins`).
+- `cloth`: la lasciano gli Zombie al posto della Rotten Flesh (`Cloth`). Gli usi si vedono dalle ricette, la fonte no.
+- `pumpkin_pulp`: si ottiene usando le Shears su una Pumpkin (`gameplay/pumpkin_shear`, `Foods & Drinks`).
+- `solanum_neorossii`: da verificare da dove viene, non ho trovato worldgen né loot.
+- `glow_block`: è un blocco di test (`GlowBlockFeature`), ma compare tra gli oggetti. Più che una pagina, andrebbe nascosto.
+
+### Progressive Bosses
+
+- `corrupted_soul_sand`: il tooltip dice dove metterla e il livello di corruzione, ma non cosa cambia (Wither più forte a ogni livello, fino all'Ultimate Wither) né da dove viene.
+- `corrupted_end_crystal`: cos'è e come si usa per evocare il Corrupted Ender Dragon.
+
+### RuneEnchanting
+
+- `rune`, `encased_rune`, `runic_table`: l'incantamento è sostituito dalle rune, quindi è una delle pagine più importanti per chi inizia. Da spiegare dove si trovano le Rune (loot e Librarian), a cosa serve l'Encased Rune e come si usa il Runic Table.
+
+### Stamina
+
+- Non ha oggetti. Se serve una spiegazione, va fuori da EMI (tooltip o HUD).
 
 ### Altre mod
 
