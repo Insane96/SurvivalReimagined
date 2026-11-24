@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:trident",
+        "item:bettertridents:trident_fragment"
+    ],
+    "text": [
+        "emi.info.minecraft.trident"
+    ]
+}

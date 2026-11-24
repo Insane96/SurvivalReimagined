@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:mace"
+    ],
+    "text": [
+        "emi.info.minecraft.mace"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:wind_charge"
+    ],
+    "text": [
+        "emi.info.minecraft.wind_charge"
+    ]
+}
