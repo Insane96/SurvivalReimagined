@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:map",
+        "item:minecraft:filled_map"
+    ],
+    "text": [
+        "emi.info.minecraft.map.1",
+        "emi.info.minecraft.map.2"
+    ]
+}

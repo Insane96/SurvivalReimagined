@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:recovery_compass"
+    ],
+    "text": [
+        "emi.info.minecraft.recovery_compass"
+    ]
+}

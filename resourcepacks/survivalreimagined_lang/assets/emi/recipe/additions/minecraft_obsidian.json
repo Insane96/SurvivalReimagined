@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:obsidian"
+    ],
+    "text": [
+        "emi.info.minecraft.obsidian"
+    ]
+}

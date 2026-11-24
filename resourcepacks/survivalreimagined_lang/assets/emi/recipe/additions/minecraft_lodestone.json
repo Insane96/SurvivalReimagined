@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:lodestone"
+    ],
+    "text": [
+        "emi.info.minecraft.lodestone"
+    ]
+}

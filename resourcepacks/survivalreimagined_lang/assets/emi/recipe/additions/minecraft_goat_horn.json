@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:goat_horn"
+    ],
+    "text": [
+        "emi.info.minecraft.goat_horn"
+    ]
+}
