@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:carrot_on_a_stick",
+        "item:minecraft:warped_fungus_on_a_stick"
+    ],
+    "text": [
+        "emi.info.minecraft.carrot_on_a_stick"
+    ]
+}

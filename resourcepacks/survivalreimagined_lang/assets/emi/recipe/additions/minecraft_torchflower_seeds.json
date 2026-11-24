@@ -1,0 +1,12 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:torchflower_seeds",
+        "item:minecraft:torchflower",
+        "item:minecraft:pitcher_pod",
+        "item:minecraft:pitcher_plant"
+    ],
+    "text": [
+        "emi.info.minecraft.torchflower_seeds"
+    ]
+}

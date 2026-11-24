@@ -1,0 +1,12 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:frogspawn",
+        "item:minecraft:ochre_froglight",
+        "item:minecraft:pearlescent_froglight",
+        "item:minecraft:verdant_froglight"
+    ],
+    "text": [
+        "emi.info.minecraft.frogspawn"
+    ]
+}
