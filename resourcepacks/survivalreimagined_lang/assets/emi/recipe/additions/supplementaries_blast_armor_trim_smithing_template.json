@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:supplementaries:blast_armor_trim_smithing_template"
+    ],
+    "text": [
+        "emi.info.supplementaries.blast_armor_trim_smithing_template"
+    ]
+}

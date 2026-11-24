@@ -160,6 +160,7 @@
 	"emi.info.supplementaries.zombie_horse": "Feeding a lot of Rotten Flesh to a tamed Skeleton Horse slowly turns it into a Zombie Horse, which can be ridden underwater.",
 	"emi.info.supplementaries.item_lore": "Craft a renamed Name Tag with any item to add its name as lore to the item.",
 	"emi.info.supplementaries.clock": "Shows the time of day from the position of the sun and moon, even underground. Right-click it to see the exact time. Doesn't work in the Nether or the End.",
+	"emi.info.supplementaries.blast_armor_trim_smithing_template": "Rarely caught as treasure while fishing.",
 	"emi.info.amendments.lanterns": "Lanterns can be placed on walls, where they swing when hit by entities. Lanterns hanging from a ceiling fall if their support is broken.",
 	"emi.info.amendments.cauldron.1": "Cauldrons can hold any liquid. Click one with an item to craft it with the liquid inside, or throw the ingredients in.",
 	"emi.info.amendments.cauldron.2": "Mix potions in it, or dye its water with dyes (dyed water can be mixed too) and fill Dye Bottles from it.",
