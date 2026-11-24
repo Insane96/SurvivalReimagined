@@ -152,6 +152,7 @@
         "incubation:hay_nest",
         "incubation:twig_nest",
         "progressivebosses:nether_star_shard",
-        "progressivebosses:elder_guardian_spike"
+        "progressivebosses:elder_guardian_spike",
+        "#vibrantparrots:parrot_eggs"
     ]
 }

@@ -3,6 +3,7 @@
 * Supplementaries' Blast Armor Trim can now be fished as treasure, as Galleons, its only source, are disabled
 * Added EMI info pages for most of the items and blocks
 * Naturalist's Fat and Tooth now have a use: Fat can replace Honeycomb to craft Candles, and a Tooth crafts 2 Bone Meal
+* Removed Parrot Eggs, from both Quark and Vibrant Parrots: Parrots no longer lay eggs
 * Falling Snow layers no longer damage the entities they fall on
 * Fixed crawling (C) standing back up immediately: it now uses Bits and Balance's crawl instead of Personality's
 * Fixed foods at the saturation threshold (e.g. Cooked Prickly Pear) healing instantly instead of over time

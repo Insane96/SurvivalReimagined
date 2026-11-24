@@ -202,9 +202,6 @@
 	"emi.info.storagedrawers.controller.2": "Right-click with an item to put it in the network's Drawers, or double right-click to put in all of that item from your inventory. Hoppers and Pipes connected to it insert and extract from the whole network.",
 	"emi.info.storagedrawers.controller_io": "Placed against a Drawer connected to a Controller, it gives Hoppers and Pipes access to the whole network from another spot. It can't be used by hand: right-click the Controller instead.",
 	"emi.info.storagedrawers.framing_table": "Changes the look of Drawers and Trims: put one in with a full block for the sides, and optionally other blocks for the trim and the front, to get a Framed version that looks like those blocks.",
-	"emi.info.shieldsplus.shields.1": "Shields block a fixed amount of damage per hit, shown in their tooltip, and the rest goes through. They only block attacks from the front, and Axes disable them for a moment.",
-	"emi.info.shieldsplus.shields.2": "A shield can stay lifted only for a limited time, then it goes on cooldown, longer the more it was lifted. Raising it right before being hit is a parry, which blocks more damage.",
-	"emi.info.shieldsplus.shields.3": "With a shield in the off hand, crouch to block. You can attack while crouch blocking, but each attack puts the shield on cooldown for a moment.",
 	"emi.info.ecologics.coconut.1": "Coconuts grow on Coconut trees and fall when ripe, hurting whoever they land on. Most smash on the ground, dropping Coconut Slices, and sometimes a Coconut Crab comes out. Some land intact, always when falling into water.",
 	"emi.info.ecologics.coconut.2": "A placed Coconut can be broken with an Axe to open it into Coconut Slices.",
 	"emi.info.ecologics.coconut_slice": "Eating a Coconut Slice removes all your effects, like Milk, and leaves a Coconut Husk, which can be used instead of a Bowl for stews.",
@@ -273,7 +270,6 @@
 	"emi.info.minecraft.sculk_sensor.3": "8: eating, drinking. 9: closing containers, doors and trapdoors, deactivating or detaching blocks. 10: opening them, activating or attaching blocks, priming TNT, playing Note Blocks. 11: blocks changing state. 12: breaking blocks, picking up fluids. 13: placing blocks and fluids. 14: placing entities, lightning, teleporting. 15: deaths and explosions.",
 	"emi.info.minecraft.sculk_sensor.4": "Wool blocks the vibrations passing through it, and sneaking doesn't make any. An Amethyst Block next to an activated sensor re-emits the vibration with the same frequency.",
 	"emi.info.minecraft.calibrated_sculk_sensor": "Works like a Sculk Sensor with a longer range, but the redstone signal entering it from the side marked by the amethyst sets the only frequency it reacts to. With no input, it reacts to every vibration.",
-	"emi.info.minecraft.sculk": "Only drops itself when mined with Silk Touch. Otherwise, very rarely, it drops a random Rune, which may be a Curse.",
 	"emi.info.minecraft.wet_sponge": "Found in Ocean Monuments and dropped by Elder Guardians: the stronger they are, the more they drop.",
 	"emi.info.minecraft.compass": "Points to the world spawn point. Use it on a Lodestone to make it point to that block instead. In the Nether and the End it spins randomly.",
 	"emi.info.minecraft.lodestone": "Use a Compass on it to make the Compass point to this Lodestone, even in the Nether. If the Lodestone is broken, the Compass stops pointing anywhere. Clicking it with a Map marks it on the Map.",
@@ -369,6 +365,5 @@
 	"emi.info.quark.magnet.2": "A Stonecutter moved by a Magnet drops the blocks it cuts as if mined with Silk Touch. Wax a Magnet with a Honeycomb to hide its particles.",
 	"emi.info.quark.pipe.1": "Items that reach an open end come out of it. Pipes connect by themselves to every adjacent Pipe and container, and their sides can't be closed. Right-click a Pipe with Glass to encase it, or with a Stick to refresh the connections of the whole network if they look wrong.",
 	"emi.info.tiny_takeover_backport.golden_dandelion": "Use it on a baby animal to stop it from growing up. Use it again to let it grow.",
-	"emi.info.vibrantparrots.parrot_eggs": "Parrots come in many more colors. Tamed Parrots can be bred with seeds: some time later one of the two lays an egg of its color. Throw the egg to hatch a chick.",
 	"emi.info.vibrantparrots.bird_cage": "Use it on a Parrot you tamed to carry it around in the cage, and use it again to let the Parrot out, like a Bucket with fish."
 }

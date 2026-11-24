@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:sculk"
-    ],
-    "text": [
-        "emi.info.minecraft.sculk"
-    ]
-}

@@ -83,11 +83,13 @@ Un lotto (e un commit) per categoria:
 - Crate, Magnet e Pipe ridotte a quello che i suggerimenti di Quark non dicono;
 - trim Sentry e Vex: "Woodland Mansion" diventa "Illager Manor", come nella pagina del Goat Horn.
 
-Nessun doppione con le pagine di ISO: Conduit, Bone Meal e Obsidian dicono cose diverse da ISO e restano coerenti con la config. Da decidere:
+Nessun doppione con le pagine di ISO: Conduit, Bone Meal e Obsidian dicono cose diverse da ISO e restano coerenti con la config. Spostate in [Da implementare nelle mod](#da-implementare-nelle-mod):
 
-- `minecraft_sculk`: la Rune droppata dallo Sculk viene dall'integrated pack di RuneEnchanting (`enchantment_changes`), quindi andrebbe nel plugin EMI di RuneEnchanting;
-- `shieldsplus_shields`: Shields+ è una mod di Insane96, quindi andrebbe nella mod;
-- Parrot Eggs: sono attivi sia quelle di Quark (`Parrot Eggs` = true, con Beetroot Seeds) sia Vibrant Parrots. Quark mostra il suo suggerimento sulle proprie uova, mentre la pagina del pack descrive quelle di Vibrant Parrots. Va controllato in gioco se i due sistemi convivono, o se conviene spegnere quello di Quark.
+- `minecraft_sculk`, perché la Rune droppata dallo Sculk viene dall'integrated pack di RuneEnchanting (`enchantment_changes`);
+- `shieldsplus_shields`, perché Shields+ è una mod di Insane96.
+
+Tolta `vibrantparrots_parrot_eggs`: le uova di pappagallo sono spente, sia quelle di Quark (`Parrot Eggs` = false) sia quelle di Vibrant Parrots (`gameplay/parrot_lay` vuota nel datapack, uova in `insanelib:creative_removal`), perché i Beetroot Seeds sono difficili da trovare.
+
 ## Da implementare nelle mod
 
 Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Formato: `oggetti` — cosa spiegare (origine).
@@ -122,7 +124,15 @@ Pagine per comportamenti delle mod di Insane96, raccolte durante le fasi. Format
 
 ### RuneEnchanting
 
+- `minecraft:sculk`: senza Silk Touch lascia molto raramente una Rune a caso, che può essere una Curse (`enchantment_changes`, `blocks/sculk`). Testo che era nel pack: "Only drops itself when mined with Silk Touch. Otherwise, very rarely, it drops a random Rune, which may be a Curse."
 - `rune`, `encased_rune`, `runic_table`: l'incantamento è sostituito dalle rune, quindi è una delle pagine più importanti per chi inizia. Da spiegare dove si trovano le Rune (loot e Librarian), a cosa serve l'Encased Rune e come si usa il Runic Table.
+
+### Shields+
+
+- Tutti gli scudi (`wooden_shield` ... `netherite_shield`). Testo che era nel pack:
+  - "Shields block a fixed amount of damage per hit, shown in their tooltip, and the rest goes through. They only block attacks from the front, and Axes disable them for a moment."
+  - "A shield can stay lifted only for a limited time, then it goes on cooldown, longer the more it was lifted. Raising it right before being hit is a parry, which blocks more damage."
+  - "With a shield in the off hand, crouch to block. You can attack while crouch blocking, but each attack puts the shield on cooldown for a moment."
 
 ### Stamina
 
