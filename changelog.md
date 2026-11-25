@@ -1,3 +1,8 @@
+# 4.10.4
+* Fixed a crash when hovering over items in the inventory
+* Updated Mods
+  * Sodium 0.8.14-beta.2 -> 0.8.13 (downgraded, the new version crashed with Legendary Tooltips)
+
 # 4.10.3
 * Re-enabled Storage Drawers' Compacting Drawers, also in their Half and Framed versions
 * Supplementaries' Blast Armor Trim can now be fished as treasure, as Galleons, its only source, are disabled
