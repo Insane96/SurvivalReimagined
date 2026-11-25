@@ -1,7 +1,7 @@
 # Upcoming
 * Re-enabled Storage Drawers' Compacting Drawers, also in their Half and Framed versions
 * Supplementaries' Blast Armor Trim can now be fished as treasure, as Galleons, its only source, are disabled
-* Added EMI info pages for most of the items and blocks
+* Added EMI info pages for most of the items and blocks, and an advancement, given when joining the world, that points to them
 * Naturalist's Fat and Tooth now have a use: Fat can replace Honeycomb to craft Candles, and a Tooth crafts 2 Bone Meal
 * Disabled Quark's Parrot Eggs, as Vibrant Parrots already has its own: tamed Parrots bred with seeds lay an egg of their color
 * Falling Snow layers no longer damage the entities they fall on
@@ -9,7 +9,7 @@
 * Fixed foods at the saturation threshold (e.g. Cooked Prickly Pear) healing instantly instead of over time
 * Reduced Prickly Pear nutrition (2.1 -> 0.9 health) and Cooked Prickly Pear nutrition (5 -> 4 health over time)
 * Renamed Curse of the Void to Curse of Teleport
-* Supplementaries' Wrench is now a weapon that accepts weapon runes, with 4 sockets: 2.5 damage (was 3.5), 1.8 attack speed (was 2) and 0.5 shorter attack reach
+* Supplementaries' Wrench is now a weapon that accepts weapon runes
 * Stone and Deepslate can no longer be cut into Cobblestone and Cobbled Deepslate in the Stonecutter, as with the new reversible stonecutting they could be cut back, skipping smelting
 * Updated Mods
   * CreativeCore 2.13.55 -> 2.13.56
