@@ -1,6 +1,6 @@
 # Pagine EMI info nelle mod di Insane96
 
-Questo file si usa come prompt in una sessione aperta nel repo di una mod (`C:\Users\delvi\source\repos\Insane96\<Mod>`). Il lavoro nel pack è finito: restano le pagine dei comportamenti che vengono dalle mod di Insane96, elencate in [Pagine da aggiungere](#pagine-da-aggiungere).
+Questo file si usa come prompt in una sessione aperta nel repo di una mod (`C:\Users\delvi\source\repos\Insane96\<Mod>`). Il lavoro nel pack è finito, e le pagine delle mod di Insane96 sono state scritte: restano le voci in [Da fare](#da-fare).
 
 ## Come si aggiungono
 
@@ -30,63 +30,29 @@ Le pagine si aggiungono come risorse della mod, senza codice: EMI legge `assets/
 - Si descrive il comportamento con la config di default; se dipende da un'opzione, vale il limite sopra.
 - Prima di scrivere si controlla il comportamento effettivo nel codice e nei data pack integrati, non nella descrizione della feature.
 
-## ISO: spostare le pagine dal codice
+## ISO: pagine spostate dal codice (fatto, 2026-11-24)
 
-`ISOEmiPlugin` registra 29 pagine in codice (`createSimpleInfo` in `register` e `addInfo` in `addInfos`). Quelle statiche vanno spostate in `assets/emi/recipe/additions/`, con le stesse chiavi lang. Le pagine in codice hanno ID `insanesurvivaloverhaul:/info/<id>` o `insanesurvivaloverhaul:/<id>`, quelle in JSON lo prendono dal percorso del file: da controllare che non ci siano riferimenti al vecchio ID.
-
-- **Da spostare** (oggetti di ISO, nessuna riga condizionale): `echo_lantern`, `daggers`, `shortbow`, `beacon` (il Beacon di ISO), `explosive_barrel`, `mining_charge`, `copper_powered_rail`, `golden_powered_rail`, `rich_farmland` (righe `bone_meal.rich_farmland` e `rich_farmland`; l'oggetto esiste solo con Rich Farmland attivo).
-- **Restano in codice**, perché riguardano oggetti vanilla e la pagina o alcune righe dipendono dalla config: `name_tag`, `crops` (semi), `info_portal_corners` (`Portal requires crying obsidian`), `beds` (`allowSleepingEvenWhenNotTired`), `hoes`, `wooden_equipment`, `copper_ore` (data pack di Stone Tools Gone), `conduit` (`removeHaste`), `fishing_rod`, `sweet_berry_bush` (`noDamageIfDressed`), `cake` (`buffCake`), `sponge` (`dryWetWeather`), `campfire`, `spawner`, `bone_meal`, `totem_of_undying`, `shulker_box_from_pouches`, `zombie_villager_cure` (`convalescenceDuration`).
-- **Restano in codice perché calcolate**: `falling_blocks_damage` (blocchi `Fallable` che fanno danno) e `break_on_fall` (tag di blocchi, non di oggetti).
-
-Le nuove pagine di ISO elencate sotto seguono lo stesso criterio: in JSON se sono statiche, nel plugin se dipendono dalla config.
+Le pagine statiche sugli oggetti di ISO sono ora in `assets/emi/recipe/additions/insanesurvivaloverhaul_*.json` (echo_lantern, daggers, shortbow, beacon, explosive_barrel, mining_charge, copper/golden_powered_rail, rich_farmland, più le nuove ore_rocks, cloth, pumpkin_pulp, solanum_neorossii, glow_block). In `ISOEmiPlugin` restano le pagine sugli oggetti vanilla, quelle con righe condizionali e quelle calcolate. Nessun riferimento ai vecchi ID trovato in ISO, nel pack, nella config o nella wiki.
 
 ## Stato del pack (2026-11-24)
 
-Le fasi 0-4 sono fatte in `resourcepacks/survivalreimagined_lang` (inventario, vanilla, mod di terzi, revisione); resta il controllo in gioco a campione. Le pagine sui comportamenti delle mod di Insane96 non sono state scritte nel pack: sono qui sotto, con la fonte (opzione di config o classe) e, dove c'era, il testo già scritto. Quando una mod aggiunge una pagina, la voce si toglie da qui. Se il pack ha una pagina che la mod rende inutile, va tolta dal pack.
+Le fasi 0-4 sono fatte in `resourcepacks/survivalreimagined_lang` (inventario, vanilla, mod di terzi, revisione); resta il controllo in gioco a campione. Le pagine sui comportamenti delle mod di Insane96 sono state scritte nelle mod (ISO, RuneEnchanting, Progressive Bosses, Shields+), non ancora committate. Restano le voci qui sotto.
 
-## Pagine da aggiungere
-
-Formato: `oggetti` — cosa spiegare (origine). Le voci "Non è una pagina" sono emerse durante il lavoro e vanno fatte in altro modo (tooltip, HUD, correzione di un bug).
+## Da fare
 
 ### InsaneSurvivalOverhaul
 
-- Oggetti di "Energy boost" (lista in `config/insanesurvivaloverhaul/Tiredness/`): riducono la stanchezza (`Tiredness`, `EnergyBoostItem`).
-- `#minecraft:beds`: una riga in più nella pagina `beds`, attiva solo con phantoms from tiredness: essere molto stanchi attira i Phantom (`Tiredness`).
-- Penalità alla morte (`DeathInventoryPenalty`, gamerule `death_keep_equipment`): armatura, offhand e oggetti con durabilità nella hotbar restano perdendo durabilità, il resto cade. Non ha un oggetto, quindi va fuori da EMI: una riga nella schermata di morte, del tipo "Your equipment was kept but lost durability". Nella stessa schermata, un'altra riga con il numero di morti, così non serve aprire le statistiche o usare lo scoreboard (ISO ha già `ClientboundDeathStatsPacket`, da vedere se si può estendere).
+- Non è una pagina: penalità alla morte (`DeathInventoryPenalty`, gamerule `death_keep_equipment`). Una riga nella schermata di morte, del tipo "Your equipment was kept but lost durability", e un'altra con il numero di morti (ISO ha già `ClientboundDeathStatsPacket`, da vedere se si può estendere).
 - Non è una pagina: Turtle Scute e Armadillo Scute (`Scutes`, `Scute drops as block`) dovrebbero avere un tooltip "Placeable" tramite InsaneLib, come fa Supplementaries con Stick e Blaze Rod.
-- Non è una pagina, è da sistemare: `Portal requires crying obsidian` (`Nether.onPortalTryToActivate`) non controlla gli angoli, ma conta la Crying Obsidian in tutto il rettangolo della cornice e ne vuole almeno 4. Quindi 4 blocchi messi in qualsiasi punto della cornice accendono il portale.
-- `minecraft:heart_of_the_sea` (Divine Fragment): a cosa serve (ridà la vita massima persa morendo) e da dove viene: Elder Guardian, Spawner, Ominous Vault, Buried Treasure, Piglin Brute (`Death max health penalty`, `divine_fragment_rp`, `mob_loot_changes`).
-- `minecraft:shulker_shell`: gli Shulker lasciano Shulker Box invece dei gusci (`Early game shulker boxes`); i gusci vengono solo dalla runa di RuneEnchanting che stacca le parti (`part_breaking/shulker`).
-- `minecraft:ender_pearl`: gli Enderman la lasciano solo con Looting (`Loot changes`, `entities/enderman`), quindi serve dire dove trovarle (baratto con i Piglin, chest degli Stronghold e delle Trial Chamber).
-- `minecraft:netherite_scrap`: una riga sui Piglin Brute, che la lasciano spesso (`Loot changes`, `entities/piglin_brute`).
-- `minecraft:elytra`: una riga in più rispetto alla pagina del pack: fuori dall'End si plana peggio e il boost dei razzi è più lento, ma si decolla anche con un razzo dopo un salto, senza dover già planare (`Elytra`, `Air resistance`, `Firework boost off ground`).
-- `minecraft:crossbow`: le frecce passano attraverso i mob (`Piercing crossbow`), ma partono più lente e meno precise (`Crossbow velocity`, `Crossbow inaccuracy`). Forse basta un tooltip.
+- Non è una pagina, è da sistemare: `Portal requires crying obsidian` (`Nether.onPortalTryToActivate`) non controlla gli angoli, ma conta la Crying Obsidian in tutto il rettangolo della cornice e ne vuole almeno 4.
 - Non è una pagina: la ricetta di riciclo in EMI (`Recycling`) dovrebbe dire che la resa cala con la durabilità consumata.
-- `crystal_heart`: va nella stessa pagina del Divine Fragment (`Death max health penalty`): la ricetta si vede, ma non a cosa serve.
-- `wild_wheat`, `wild_carrots`, `wild_potatoes`, `wild_beetroots`: la pagina `crops` dice solo "Can be found in the wild". Si possono aggiungere agli stack di quella pagina, con dove crescono e cosa lasciano (`Crops`).
-- `sweet_berry_seeds`: da dove vengono, cioè dai cespugli di bacche (pack `berries`) e dai Farmer. Basta aggiungerli alla pagina `sweet_berry_bush` (`Berries`).
-- `copper_ore_rock`, `iron_ore_rock`, `gold_ore_rock`: in superficie segnalano una grande vena del minerale sottoterra (`Big ore veins`).
-- `cloth`: la lasciano gli Zombie al posto della Rotten Flesh (`Cloth`). Gli usi si vedono dalle ricette, la fonte no.
-- `pumpkin_pulp`: si ottiene usando le Shears su una Pumpkin (`gameplay/pumpkin_shear`, `Foods & Drinks`).
-- `solanum_neorossii`: la lasciano le patate selvatiche nel deserto (`Crops`). Va detto da dove viene, e si può mettere in un vaso.
-- `glow_block`: si vede attraverso i muri anche da lontano. Guardandolo, l'HUD dice su quali assi sei allineato con il blocco, o "Not aligned", per esempio per scavare un tunnel verso un punto (`GlowBlockFeature`). La descrizione della feature dice ancora "for testing" e andrebbe aggiornata.
-
-### Progressive Bosses
-
-- `corrupted_soul_sand`: il tooltip dice dove metterla e il livello di corruzione, ma non cosa cambia (Wither più forte a ogni livello, fino all'Ultimate Wither) né da dove viene.
-- `corrupted_end_crystal`: cos'è e come si usa per evocare il Corrupted Ender Dragon.
+- `minecraft:ender_pearl`: nessuna pagina. Il plan diceva che gli Enderman la lasciano solo con Looting, ma `mob_loot_changes/entities/enderman` ne dà sempre una (Looting aggiunge la possibilità di una seconda), quindi la fonte è quella vanilla.
+- Divine Fragment: con le gamerule di default (e quelle del pack, `death_min_health 20`) morire non scende sotto i 10 cuori, quindi il Crystal Heart dà vita extra oltre i 10 cuori e la morte toglie solo quella. La pagina lo dice così. Le gamerule non sono sincronizzate al client, quindi il testo non può seguirle.
 
 ### RuneEnchanting
 
-- `minecraft:sculk`: senza Silk Touch lascia molto raramente una Rune a caso, che può essere una Curse (`enchantment_changes`, `blocks/sculk`). Testo che era nel pack: "Only drops itself when mined with Silk Touch. Otherwise, very rarely, it drops a random Rune, which may be a Curse."
-- `rune`, `encased_rune`, `runic_table`: l'incantamento è sostituito dalle rune, quindi è una delle pagine più importanti per chi inizia. Da spiegare dove si trovano le Rune (loot e Librarian), a cosa serve l'Encased Rune e come si usa il Runic Table.
-
-### Shields+
-
-- Tutti gli scudi (`wooden_shield` ... `netherite_shield`). Testo che era nel pack:
-  - "Shields block a fixed amount of damage per hit, shown in their tooltip, and the rest goes through. They only block attacks from the front, and Axes disable them for a moment."
-  - "A shield can stay lifted only for a limited time, then it goes on cooldown, longer the more it was lifted. Raising it right before being hit is a parry, which blocks more damage."
-  - "With a shield in the off hand, crouch to block. You can attack while crouch blocking, but each attack puts the shield on cooldown for a moment."
+- Librarian come fonte di Rune: con solo ISO vende un Enchanted Book vanilla (`villagers_overhaul` usa `enchant_with_levels`, e i GLM di RuneEnchanting non girano sugli scambi). Il pack sovrascrive `librarian/enchanted_book*.json` in `datapacks/survivalreimagined` con `runeenchanting:set_random_rune`, quindi nel pack vende Rune (verificato in gioco). La pagina di RuneEnchanting non cita il Librarian: la riga è nella pagina del pack `runeenchanting_rune_librarian.json` (fatto).
+- Le righe su Spawner e Sculk dipendono dal data pack integrato `enchantment_changes` (attivo di default), ma RuneEnchanting non ha un plugin EMI: le pagine in JSON lo danno per attivo.
 
 ### Stamina
 

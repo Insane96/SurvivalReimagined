@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:runeenchanting:rune"
+    ],
+    "text": [
+        "emi.info.runeenchanting.rune.librarian"
+    ]
+}
