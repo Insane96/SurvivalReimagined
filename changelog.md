@@ -1,4 +1,4 @@
-# Upcoming
+# 4.10.3
 * Re-enabled Storage Drawers' Compacting Drawers, also in their Half and Framed versions
 * Supplementaries' Blast Armor Trim can now be fished as treasure, as Galleons, its only source, are disabled
 * Added EMI info pages for most of the items and blocks, and an advancement, given when joining the world, that points to them
