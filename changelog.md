@@ -15,14 +15,21 @@
   * CreativeCore 2.13.55 -> 2.13.56
   * FWA 1.3.8 -> 1.3.10
     * Fixed Doors, Trapdoors and Fence Gates playing their opening animation when placed already open or pushed by a Piston
-  * InsaneSurvivalOverhaul 5.16.6.0-beta -> 5.16.7.0-beta
+  * InsaneSurvivalOverhaul 5.16.6.0-beta -> 5.16.8.0
     * Full blocks of the same family can be cut back and into each other in the Stonecutter (e.g. Stone Bricks and Chiseled Stone Bricks into Stone). Cracked and smooth blocks are excluded, so smelting can't be skipped
     * Fixed Turtle and Armadillo Scute blocks flickering
     * Parrots are tamed and bred only with Melon and Pumpkin Seeds, which are easy to renew
     * Parrots die of old age and, like other animals, can't be bred manually but fall in love on their own, more often when fed
     * Fixed tamed Parrots not regenerating health like other pets
+    * Added EMI info pages for more blocks and items (e.g. Glow Block, Ore Rocks, Cloth, Mining Charge)
+    * Fixed several advancements (e.g. Charcoal, Copper Tools, Iron Nugget, Use Lodestone) missing from the advancements screen and not showing the toast and chat message
+    * Fixed "Spark of Genius" unlocking with Charcoal instead of when holding 2 Flints
   * JEI 19.76.1.478 -> 19.76.1.481
   * Moonlight 3.8.3 -> 3.8.5
+  * Quark 4.1-488 -> 4.1-489
+    * New textures for Glass Shards and Ambience Discs
+    * The Cloud placed by the Bottled Cloud has a new look that changes with the weather and time of day, and a smoother animation
+    * Fixed several GUI animations
   * RuneEnchanting 1.5.4.2-beta -> 1.5.5.1
     * Modded tools, weapons and armor that had no sockets now have 2 (e.g. Ecologics' Crab Claw, Supplementaries' Wrench)
     * Melee Protection only reduces player and mob attacks, no longer other damage dealt directly by a mob (e.g. Thorns)
@@ -33,9 +40,11 @@
     * Fixed True Damage, Life Steal, Executioner and Electrocution applying to any damage dealt directly by the wielder (e.g. Thorns) instead of only melee attacks. They now also need the weapon in the main hand
     * Fixed Vindication releasing the stored damage on any damage dealt directly by the wearer instead of the next melee attack
   * Sawmill 1.9.2 -> 1.9.3
+  * Sodium 0.8.13 -> 0.8.14-beta.2
   * Tiny Takeover Backport 1.8.2 -> 1.8.3
     * Fixed Pumpkins, Skulls and other blocks worn on the head showing at the waist of baby Zombies and Piglins
     * Fixed armor with its own model rendering at adult size on baby mobs
+  * Zeta 1.1-40 -> 1.1-41
 
 # 4.10.2-beta
 * Removed Vintage Animations

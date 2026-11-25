@@ -320,7 +320,7 @@
 		"Prismarine rework" = true
 		#Makes saplings no longer drop from trees. Instead, you can craft them from leaves and shears
 		"Craftable saplings" = true
-		#If true, a data pack will be enabled that changes animal loot (reduced food drops) and adds livestock data that slows down growing, breeding, egg laying, etc.
+		#If true, a data pack will be enabled that changes animal loot (reduced food drops) and adds livestock data that slows down growing, breeding, egg laying, etc. Parrots are tamed only with Melon and Pumpkin Seeds.
 		Livestock = true
 		#If true, a data pack will be enabled that makes Armor Trim and Netherite Upgrade Smithing Templates cheaper to duplicate (1 Diamond instead of 7).
 		"Cheaper smithing templates" = true

@@ -781,7 +781,7 @@
 	"Enable Nerfs" = true
 	#Various changes to potions and effects
 	"Enable Potions and effects" = true
-	#A block that's visible through walls, for testing the see-through-walls render technique.
+	#Adds the Glow Block, visible through walls even from far away. Looking at it shows on which axes you are aligned with it.
 	"Enable Glow block" = true
 	#Fishing more and more in the same spot will slow down the fishing
 	"Enable Low fish" = true
@@ -892,7 +892,7 @@
 		#Effects whose duration in potions isn't changed by 'Potion Duration Multiplier'.
 		"Potion duration multiplier blacklist" = ["insanesurvivaloverhaul:back_to_spawn"]
 
-	#A block that's visible through walls, for testing the see-through-walls render technique.
+	#Adds the Glow Block, visible through walls even from far away. Looking at it shows on which axes you are aligned with it.
 	[Misc."Glow block"]
 		#Max angle (in degrees) between the crosshair and a glow block's center for it to count as looked at. Looking directly at the block always counts.
 		# Default: 5.0
