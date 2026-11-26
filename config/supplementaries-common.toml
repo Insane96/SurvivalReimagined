@@ -130,7 +130,7 @@
 		#Allows ropes to be supported & attached to solid block sides
 		block_side_attachment = true
 		#Makes sliding down ropes as fast as free falling, still negating fall damage
-		slide_on_fall = true
+		slide_on_fall = false
 		#Enables horizontal placement of ropes. Disabling will make ropes always non solid
 		horizontal_ropes = true
 		#Use this config to turn allow supplementaries to replace all items tagged as #supplementaries:ropes with supplementaries own rope or turn them to air instead. This is applied to all loot tables (chests and drops)

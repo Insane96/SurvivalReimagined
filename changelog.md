@@ -1,3 +1,6 @@
+# Upcoming
+* Sliding down Supplementaries' Ropes is no longer as fast as free falling: they now work like Ladders
+
 # 4.10.4
 * Fixed a crash when hovering over items in the inventory
 * Updated Mods
