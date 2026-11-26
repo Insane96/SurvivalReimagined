@@ -1,0 +1,30 @@
+{
+    "item": "minecraft:iron_nautilus_armor",
+    "components": {
+        "minecraft:attribute_modifiers": {
+            "modifiers": [
+                {
+                    "type": "minecraft:generic.armor",
+                    "id": "minecraft:armor.body",
+                    "amount": 11.0,
+                    "operation": "add_value",
+                    "slot": "body"
+                },
+                {
+                    "type": "insanesurvivaloverhaul:regenerating_absorption",
+                    "id": "minecraft:armor.body",
+                    "amount": 2.0,
+                    "operation": "add_value",
+                    "slot": "body"
+                },
+                {
+                    "type": "minecraft:generic.movement_speed",
+                    "id": "minecraft:armor.body",
+                    "amount": -0.03,
+                    "operation": "add_multiplied_base",
+                    "slot": "body"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "item": "minecraft:golden_horse_armor",
+    "components": {
+        "minecraft:attribute_modifiers": {
+            "modifiers": [
+                {
+                    "type": "minecraft:generic.armor",
+                    "id": "minecraft:armor.body",
+                    "amount": 7.0,
+                    "operation": "add_value",
+                    "slot": "body"
+                }
+            ]
+        }
+    }
+}

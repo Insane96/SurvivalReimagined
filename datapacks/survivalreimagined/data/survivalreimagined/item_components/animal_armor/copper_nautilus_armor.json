@@ -1,0 +1,23 @@
+{
+    "item": "minecraft:copper_nautilus_armor",
+    "components": {
+        "minecraft:attribute_modifiers": {
+            "modifiers": [
+                {
+                    "type": "minecraft:generic.armor",
+                    "id": "minecraft:armor.body",
+                    "amount": 8.0,
+                    "operation": "add_value",
+                    "slot": "body"
+                },
+                {
+                    "type": "insanesurvivaloverhaul:regenerating_absorption",
+                    "id": "minecraft:armor.body",
+                    "amount": 2.0,
+                    "operation": "add_value",
+                    "slot": "body"
+                }
+            ]
+        }
+    }
+}

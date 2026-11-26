@@ -1,5 +1,9 @@
 # Upcoming
 * Sliding down Supplementaries' Ropes is no longer as fast as free falling: they now work like Ladders
+* Rebalanced Horse Armor and Nautilus Armor to follow the player's armor: Golden armor no longer protects more than Iron, but has more rune sockets
+  * Leather 5 armor and 4 regenerating absorption, Copper 8 and 2, Golden 7, Iron 11 and 2, Diamond 16, Netherite 18
+  * Iron, Diamond and Netherite slow down the mount (-3%, -6%, -8%) and Diamond and Netherite give knockback resistance
+  * Copper and Netherite Horse Armor now have rune sockets (5 and 2) and accept the same runes as the other Horse Armor
 
 # 4.10.4
 * Fixed a crash when hovering over items in the inventory
