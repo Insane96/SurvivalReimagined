@@ -6,22 +6,15 @@
                 {
                     "type": "minecraft:generic.armor",
                     "id": "minecraft:armor.body",
-                    "amount": 18.0,
+                    "amount": 19.0,
                     "operation": "add_value",
                     "slot": "body"
                 },
                 {
                     "type": "minecraft:generic.knockback_resistance",
                     "id": "minecraft:armor.body",
-                    "amount": 0.4,
+                    "amount": 0.1,
                     "operation": "add_value",
-                    "slot": "body"
-                },
-                {
-                    "type": "minecraft:generic.movement_speed",
-                    "id": "minecraft:armor.body",
-                    "amount": -0.08,
-                    "operation": "add_multiplied_base",
                     "slot": "body"
                 }
             ]
