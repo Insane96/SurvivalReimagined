@@ -1,11 +1,15 @@
 # Phase 4: Naturalist (2.0.7). Sources: Naturalist 2.x changelogs, the minecraft-guides.com Naturalist wiki (2026-10),
 # checked against the jar where they disagree (Mole and Lizard have no breeding goal, Fireflies vanish in sunlight
 # instead of burning, Hippos attack boats, Dragonflies breathe a harming cloud when fed Chorus Fruit).
-# Shared texts (breeds_alone, lifespan.*) come from pages_vanilla_passive.py.
+# Shared texts (breeds_alone, lifespan.*) come from pages_vanilla_passive.py. Alligator, Ostrich, Snail and Tortoise
+# lay eggs (EggLayingBreedGoal, no BabyEntitySpawnEvent), so ISO's fail chance and twins don't apply: breeds_alone.no_twins.
+# EMI tag searches that "<mob>_food" would get wrong (#crab_food also finds #survivalreimagined:coconut_crab_food).
+FOOD_QUERY = {"crab": "naturalist:crab_food"}
+
 N = "naturalist"
 OCEANS = "all oceans except frozen ones"
 PAGES = {
-    (N, "alligator"): (["Lives in Swamps, Mangrove Swamps and along Rivers, and breathes underwater. It attacks players in the water, at night and near its eggs, and hunts Deer, Ducks, Snakes, Catfish and Frogs. It lays Alligator Eggs."], ["food", "breeds_alone", "lifespan.long"]),
+    (N, "alligator"): (["Lives in Swamps, Mangrove Swamps and along Rivers, and breathes underwater. It attacks players in the water, at night and near its eggs, and hunts Deer, Ducks, Snakes, Catfish and Frogs. It lays Alligator Eggs."], ["food", "breeds_alone.no_twins", "lifespan.long"]),
     (N, "anglerfish"): ([f"Lives deep in {OCEANS}, in the dark; the deepest ones glow. It hunts Cod and Tropical Fish and bites back when hit. Comes in random sizes, and can be caught in a Bucket."], []),
     (N, "ant"): (["Lives in Ant Hills in Jungles and Savannas. Ants carry food they find on the ground back to their hill, get angry if you take it, and the whole colony attacks whoever hurts one of them. Sugar heals them. Plant a Queen Ant to start your own hill, whose Ants defend you."], []),
     (N, "bass"): (["Lives in Rivers, Swamps and Mangrove Swamps, in schools of the same size. Bigger Bass are rarer, eat smaller ones and sometimes grow even bigger. Comes in random sizes, and can be caught in a Bucket."], []),
@@ -44,16 +48,16 @@ PAGES = {
     (N, "lizard"): (["Lives in Deserts, Savannas, Jungles, Swamps and forests. When badly hurt it drops its tail to escape, and grows it back later. Its food tames it, and tamed Lizards get tougher. It can't be bred."], ["food"]),
     (N, "mammoth"): (["Lives in Snowy Plains, Ice Spikes, Snowy Slopes and Frozen Peaks, in herds. Its hits throw you into the air, and it avoids Bees. Feed a calf Cake a few times to tame it: once grown it can be saddled, ridden and given a Chest."], ["food", "breeds_alone", "lifespan.very_long"]),
     (N, "mole"): (["Lives in forests, Plains and Meadows. It burrows when it spots undead, sprinting players or whoever hurt it, and can't be hurt underground except when it peeks out. Fire, water and Wolves force it out. It can't be tamed or bred."], []),
-    (N, "ostrich"): (["Lives in Savannas. It buries its head when you come close, unless you crouch or hold its food, which tames a chick at once. Once grown it can be saddled, ridden and made to jump, and falls slowly. It lays eggs on Sand or Dirt and attacks anyone who comes near them; Zombies trample them."], ["food", "breeds_alone", "lifespan.medium"]),
+    (N, "ostrich"): (["Lives in Savannas. It buries its head when you come close, unless you crouch or hold its food, which tames a chick at once. Once grown it can be saddled, ridden and made to jump, and falls slowly. It lays eggs on Sand or Dirt and attacks anyone who comes near them; Zombies trample them."], ["food", "breeds_alone.no_twins", "lifespan.medium"]),
     (N, "piranha"): (["Lives in Jungle waters and Lush Caves, in big schools that follow their leader and attack players in the water. Hit one and the whole school comes for you. Comes in random sizes, and can be caught in a Bucket."], []),
     (N, "rat"): (["Lives in forests, Plains and Groves, and climbs walls. Its food tames it easily. Release a tamed Rat from a Capture Net onto a Chest and it harvests and replants the ripe crops around it, storing them inside."], ["food", "breeds_alone", "lifespan.short"]),
     (N, "ray"): ([f"Glides near the floor of {OCEANS}. Hit it and its sting poisons you. Comes in random sizes, and can be caught in a Bucket."], []),
     (N, "rhino"): (["Lives in Savannas, in small groups. Adults charge at players near their young. It can't be tamed or bred."], []),
-    (N, "snail"): (["Lives in most temperate biomes and in caves. It climbs walls, hides in its shell when you come close, taking less damage, and now and then makes Slime Balls. It lays Snail Eggs and can be dyed."], ["food", "breeds_alone", "lifespan.short"]),
+    (N, "snail"): (["Lives in most temperate biomes and in caves. It climbs walls, hides in its shell when you come close, taking less damage, and now and then makes Slime Balls. It lays Snail Eggs and can be dyed."], ["food", "breeds_alone.no_twins", "lifespan.short"]),
     (N, "snake"): (["Lives in forests, plains, Jungles, Swamps, Rivers, Beaches and dry biomes: Coral Snakes and Rattlesnakes in warm ones, green Snakes elsewhere. It hunts small animals; Coral Snakes and Rattlesnakes poison, and Rattlesnakes rattle when you come close. Some of its food tames it."], ["food"]),
     (N, "starfish"): ([f"Lives on the floor of {OCEANS}. It drops itself as a block you can place, and can be caught in a Bucket."], []),
     (N, "tiger"): (["Lives alone in Jungles, Dark Forests, Cherry Groves, mountains, snowy slopes, Badlands, Deserts and Swamps, as a Tiger, White Tiger, Leopard or Black Panther depending on the biome. It sleeps by day, stalks Boars, Pigs, Deer, Zebras and Snakes at night and fights back when hit. A cub fed its food can be tamed."], ["food", "breeds_alone", "lifespan.long"]),
-    (N, "tortoise"): (["Lives in Deserts, Jungles and Swamps. It hides in its shell when you come close, unless you crouch or hold its food, taking less damage and barely knocked back. Its food can tame it, and it lays Tortoise Eggs. Tamed Tortoises get tougher."], ["food", "breeds_alone", "lifespan.long"]),
+    (N, "tortoise"): (["Lives in Deserts, Jungles and Swamps. It hides in its shell when you come close, unless you crouch or hold its food, taking less damage and barely knocked back. Its food can tame it, and it lays Tortoise Eggs. Tamed Tortoises get tougher."], ["food", "breeds_alone.no_twins", "lifespan.long"]),
     (N, "turkey"): (["Lives in forests, taigas and Groves. It runs from players unless they crouch or hold its food, and chases Ants. It falls slowly and takes no fall damage."], ["food", "breeds_alone", "lifespan.short"]),
     (N, "vulture"): (["Flies high over Deserts, Badlands and Savannas and perches on Cacti. It picks up Rotten Flesh, attacks Zombies, and dives at players low on health who hold something, unless it's already carrying Rotten Flesh."], []),
     (N, "whale"): ([f"Lives in {OCEANS}, surfacing for air before diving back down. Jellyfish and Pufferfish can't sting it."], ["food", "breeds_alone"]),

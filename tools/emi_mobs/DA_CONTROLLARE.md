@@ -4,12 +4,12 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 
 ## Test generali
 
-- [ ] Le descrizioni compaiono in Field Guide dopo la scansione (fase 1: 42 mob passivi; fase 2: 24 mob ostili; fase 3: 12 mob del Nether e dell'End, più Ender Dragon e Wither nei Bosses). Sono 80 chiavi `fieldguide.minecraft.<mob>.description`, tutti i mob sono nei tag `passive`/`neutral`/`hostile` di Field Guide. Fase 4: 47 mob di Naturalist (`fieldguide.naturalist.*`), che Field Guide mette in Animals/Monsters dalla `MobCategory`, senza tag.
+- [ ] Le descrizioni compaiono in Field Guide dopo la scansione (fase 1: 42 mob passivi; fase 2: 24 mob ostili; fase 3: 12 mob del Nether e dell'End, più Ender Dragon e Wither nei Bosses). Sono 80 chiavi `fieldguide.minecraft.<mob>.description`, tutti i mob sono nei tag `passive`/`neutral`/`hostile` di Field Guide. Fase 4: 47 mob di Naturalist (`fieldguide.naturalist.*`), che Field Guide mette in Animals/Monsters dalla `MobCategory`, senza tag. Fase 5: 8 mob di Vanilla Backport (`fieldguide.minecraft.*`: Camel Husk, Copper Golem, Creaking, Happy Ghast, Nautilus, Parched, Sulfur Cube, Zombie Nautilus), 3 di Ecologics e 2 di Supplementaries (Red Merchant, Plunderer). Il Copper Golem è `MISC` ma ha l'uovo, quindi dovrebbe comparire in Animals: controllare.
 - [ ] I testi condivisi (riproduzione, vecchiaia, equini, zombie, scheletri) sono paragrafi in fondo alla descrizione giusta.
 - [ ] Le descrizioni lunghe (Ender Dragon, Wither, Villager, Zombie Villager, Horse) scorrono bene e non vengono tagliate.
 - [ ] Nessuna pagina dei mob rimasta in EMI (tolti i 78 file `*_spawn_egg.json` e le chiavi `emi.info.*_spawn_egg*` / `emi.info.survivalreimagined.mob.*`).
 - [ ] La descrizione dell'advancement di EMI non parla più delle Spawn Egg (tolta l'ultima frase).
-- [ ] Le descrizioni non elencano i cibi: dicono di cercare `#<mob>_food` in EMI (56 mob; Horse `#minecraft:horse_food`, perché `#horse_food` troverebbe anche lo Zombie Horse). Ogni ricerca trova il tag giusto (controllato sugli ID). In gioco: la ricerca mostra i cibi e i nomi dei tag ("Deer Food"...) si vedono. I tag `survivalreimagined:<mob>_food` sono solo di riferimento per i mob col cibo fisso nel codice (Deer, Elephant, Mammoth, Hippo, Snail, Whale) o con un tag dal nome diverso (Bear, Black Bear, Butterfly, Lizard, Snake, Tortoise, Zebra, Mooshroom, Donkey, Mule, Trader Llama).
+- [ ] Le descrizioni non elencano i cibi: dicono di cercare `#<mob>_food` in EMI (64 mob; Horse `#minecraft:horse_food`, perché `#horse_food` troverebbe anche lo Zombie Horse; Crab di Naturalist `#naturalist:crab_food`, perché `#crab_food` troverebbe anche il Coconut Crab; Zombie Nautilus `#nautilus_food`, stesso cibo del Nautilus). Ogni ricerca trova il tag giusto (controllato sugli ID). In gioco: la ricerca mostra i cibi e i nomi dei tag ("Deer Food"...) si vedono. I tag `survivalreimagined:<mob>_food` sono solo di riferimento per i mob col cibo fisso nel codice (Deer, Elephant, Mammoth, Hippo, Snail, Whale) o con un tag dal nome diverso (Bear, Black Bear, Butterfly, Lizard, Snake, Tortoise, Zebra, Mooshroom, Donkey, Mule, Trader Llama, Coconut Crab, Penguin; Squirrel ha la Honeycomb fissa nel codice, le Walnut lo attirano soltanto).
 
 ## `?` da verificare in gioco
 
@@ -26,7 +26,7 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 ### Fase 2 (ostili)
 
 - [ ] **Creeper** (MPR `Better creeper lingering`): i Creeper con effetti di pozione lasciano una nuvola esplodendo? (omesso)
-- [ ] **Husk** (Vanilla Backport `has_camel_husks`): nei deserti cavalca un Camel Husk con un Parched dietro? (scritto)
+- [ ] **Husk** (Vanilla Backport `has_camel_husks`): nei deserti cavalca un Camel Husk con un Parched dietro? (scritto; dal codice: il 10% degli Husk spawnati naturalmente, se c'è spazio)
 - [ ] **Guardian**: "Its attacks ignore armor" va bene come resa del solo danno magico di ISO? (scritto)
 - [ ] **Phantom** (Bits and Balance `enableImprovedPhantoms`): le opzioni di trasporto (doppio danno, caduta automatica, caduta se colpito) valgono anche per la presa di Enhanced AI? Enhanced AI blocca lo smontaggio, quindi probabilmente no (omesse)
 - [ ] **Skeleton, Bogged, Stray** (Bits and Balance `tippedArrowLingeringClouds.mobsEnabled`): le frecce con effetto dei mob lasciano la nuvola? Va sulla pagina della Tipped Arrow, non sulle uova.
@@ -58,13 +58,26 @@ Fonti: changelog di Naturalist 2.x e wiki di minecraft-guides.com (2026-10), con
 - [ ] Le entità tecniche `naturalist:carried_food`, `dirt_trail`, `lizard_tail` non compaiono in Field Guide (MISC senza uovo); altrimenti metterle in `fieldguide:blacklisted`.
 - [ ] Varianti (Bird, Snake, Tiger, Crab...) mostrate bene da Field Guide (Naturalist ha un suo provider di varianti).
 
-### Fasi successive (già nella matrice)
+### Fase 5 (Vanilla Backport, Ecologics, Supplementaries)
 
-- [ ] **Camel Husk** (Vanilla Backport): spawna nei deserti di notte con Husk e Parched in sella (dal codice, non nei JSON dei biomi)?
-- [ ] **Parched** (Vanilla Backport `has_parched_skeletons`): spawna nei deserti (dal codice)?
+Fonti: i jar decompilati (Vanilla Backport 1.2.2, Ecologics 2.3.12, Supplementaries 4.1.4) e i loro config.
+
 - [x] **Caterpillar** (Naturalist): nasce dalle Butterfly innamorate (wiki), poi diventa Chrysalis su un tronco. Scritto, vedi fase 4.
-- [ ] **Coconut Crab** (Ecologics): esce dal Cocco che cade dalle palme?
-- [ ] **Red Merchant** (Supplementaries): arriva con il Wandering Trader?
+- [ ] **Camel Husk**: arriva con il 10% degli Husk spawnati naturalmente, con un Parched dietro (`HuskMixin`, non dipende da `has_camel_husks`). Senza cavalieri si sella e si cavalca, non si riproduce; sparisce come un mostro finché non ci interagisci. Il Rabbit's Foot lo cura?
+- [ ] **Parched**: spawna nei biomi con la Desert Pyramid (`has_parched_skeletons`), non brucia al sole (`isSunBurnTick` false, quindi neanche il `Burn in sky light` di ISO) e le sue frecce danno Weakness.
+- [ ] **Creaking**: sparisce all'alba (`do_creaking_hearts_work_on_day` false), come in vanilla?
+- [ ] **Copper Golem**: con la mano vuota ti dà l'oggetto che trasporta; il fulmine gli toglie uno stadio di ossidazione. Gli Iron Golem gli regalano un Poppy (`OfferCopperGolemFlowerGoal`, omesso).
+- [ ] **Happy Ghast**: si cura più in fretta sotto la pioggia o tra le nuvole; sta fermo con un giocatore sopra; al massimo 4 passeggeri.
+- [ ] **Nautilus**: caccia i Pufferfish (`nautilus_hostiles`), carica chi lo colpisce, immune al veleno; si doma con il Pufferfish (1 su 3). Con ISO si innamora da solo (`breeds_alone`).
+- [ ] **Zombie Nautilus**: brucia al sole se non ha l'armatura (che si consuma al posto suo); senza Drowned in sella si doma e si cavalca come il Nautilus? Non si riproduce.
+- [ ] **Sulfur Cube**: non attacca; con un blocco dentro smette di girare, si spinge, si lega al guinzaglio e non sparisce; con il TNT esplode con Flint and Steel, fuoco o redstone; da ucciso si divide in due piccoli; le Slime Ball fanno crescere i piccoli.
+- [ ] **Coconut Crab**: esce dal 20% dei Cocchi che si rompono cadendo dalle palme (spiagge). Con il Cocco addosso prende metà danno e reagisce; sotto metà vita il guscio si rompe (2 Coconut Slice) e scappa dai giocatori; un Cocco dato in mano glielo rimette.
+- [ ] **Penguin**: resta incinta e partorisce dopo (`spawnChildFromBreeding` sovrascritto, niente `BabyEntitySpawnEvent`): con ISO si innamora da sola, ma niente fallimenti né gemelli (testo `breeds_alone.no_twins`). Più di 4 Penguin vicini danno Regeneration ai giocatori.
+- [ ] **Alligator, Ostrich, Snail, Tortoise** (Naturalist): fanno le uova con `EggLayingBreedGoal`, che non lancia `BabyEntitySpawnEvent`, quindi niente fallimenti né gemelli di ISO: passati a `breeds_alone.no_twins` (prima dicevano "can fail and sometimes gives twins"). La Turtle vanilla ha un mixin apposta in ISO, questi no.
+- [ ] **Squirrel**: solo nelle Plains (biome modifier di Ecologics). Le Walnut lo fanno fidare (1 su 3), poi raccoglie e pianta gli Alberelli; la Honeycomb è il cibo per la riproduzione.
+- [ ] **Red Merchant**: arriva quando non arriva il Wandering Trader, più spesso con difficoltà locale alta e dopo il Drago (`RedMerchantSpawnerMixin`). Gli Evoker trasformano i Wandering Trader vicini in Red Merchant (sempre attivo, serve `mobGriefing`). Lancia Bombe a Zombie, raider e Zoglin.
+- [ ] **Plunderer**: solo nei raid dal mare (Galleon spenti). Spada d'oro, usa i Cannoni vicini, a volte ha un Parrot in spalla.
+- [ ] Le pagine EMI di Harness, Dried Ghast, Nautilus Armor, Creaking Heart, Copper Chest, Copper Golem Statue e del Sulfur Cube Bucket restano: ripetono in parte le pagine dei mob, decidere se accorciarle.
 
 ## Field Guide (le pagine dei mob si spostano lì)
 

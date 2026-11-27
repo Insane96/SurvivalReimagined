@@ -332,7 +332,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - EAI Riding: a volte cavalca altri mob
 - EAI Sprint: a volte corre vicino al bersaglio
 - Enhanced AI (MPR `fuck_baby_zombies`): niente Zombie bambini: tutti spawnano adulti (vale per tutto `#minecraft:zombies`)
-- Vanilla Backport `has_camel_husks`: ?nei deserti può cavalcare un Camel Husk (con un Parched dietro)
+- Vanilla Backport `has_camel_husks`: nei deserti il 10% degli Husk spawnati naturalmente cavalca un Camel Husk, con un Parched dietro (`HuskMixin`)
 - **OFF**: Shielding (`Chance to equip` 0); Miner mobs da config (`Miner chance` 0); per gli zombie lo attiva MPR (vedi sotto); Parkour (feature spenta)
 
 ### Iron Golem (`minecraft:iron_golem`)  · D S T X
@@ -815,8 +815,8 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 
 ### Camel Husk (`minecraft:camel_husk`)
 - **Dove (biomi)**: —
-- **Altre fonti**: ?Vanilla Backport: deserti (codice)
-- Vanilla Backport `has_camel_husks`: ?deserti di notte con Husk e Parched in sella
+- **Altre fonti**: Vanilla Backport: con il 10% degli Husk dei deserti (codice)
+- Vanilla Backport `has_camel_husks`: arriva con il 10% degli Husk dei deserti, con Husk e Parched in sella; si sella e si cavalca, non si riproduce
 - **Cibo (tag)**: `minecraft:camel_husk_food` = rabbit_foot (ultimo: VanillaBackport)
 
 ### Copper Golem (`minecraft:copper_golem`)
@@ -845,7 +845,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 
 ### Parched (`minecraft:parched`)  · D S T X
 - **Dove (biomi)**: —
-- **Altre fonti**: ?Vanilla Backport: deserti (codice)
+- **Altre fonti**: Vanilla Backport: biomi con la Desert Pyramid (codice)
 - EAI Climbing: sale le scale a pioli
 - EAI Leaders: alcuni sono leader e chiamano rinforzi
 - EAI MPR `overworld_skeletons`: armatura (più spesso con la luna piena e in profondità), meno preciso
@@ -854,7 +854,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - EAI Skeleton flee target: si allontana se ti avvicini
 - EAI Skeleton shoot: tira più lontano, più spesso e si sposta di lato
 - Bits and Balance `tippedArrowLingeringClouds.mobsEnabled`: le sue frecce con effetto lasciano una nuvola dell'effetto dove atterrano (vale per tutte le frecce con effetto, anche dei giocatori: va sulla pagina della Tipped Arrow, qui solo un accenno)
-- Vanilla Backport `has_parched_skeletons`: ?spawna nei deserti (codice, non nei JSON dei biomi)
+- Vanilla Backport `has_parched_skeletons`: spawna nei biomi con la Desert Pyramid (codice, non nei JSON dei biomi); non brucia al sole; frecce con Weakness
 - **OFF**: Shielding (`Chance to equip` 0); Parkour (feature spenta)
 
 ### Sulfur Cube (`minecraft:sulfur_cube`)
@@ -1146,9 +1146,9 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Aging: vita breve
 - ISO Breeding: riproduzione più lenta, può fallire, gemelli
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
-- Ecologics: ?esce dal Cocco che cade dalle palme
+- Ecologics: esce dal Cocco che cade dalle palme; con il Cocco addosso prende metà danno e reagisce, senza scappa
 - Supplementaries Cage: catturabile in gabbia
-- **Cibo (tag)**: `ecologics:coconut_crab_tempt_items` = ecologics:coconut_slice, ecologics:cooked_prickly_pear, ecologics:prickly_pear, ecologics:walnut, apple, chorus_fruit, enchanted_golden_apple, golden_apple, melon_slice, naturalist:cooked_crab_meat (ultimo: datapack(replace))
+- **Cibo (tag)**: `ecologics:coconut_crab_tempt_items` = ecologics:coconut_slice, ecologics:cooked_prickly_pear, ecologics:prickly_pear, ecologics:walnut, apple, chorus_fruit, enchanted_golden_apple, golden_apple, melon_slice, naturalist:cooked_crab_meat (ultimo: datapack(replace)) · `survivalreimagined:coconut_crab_food` = ecologics:coconut_slice, ecologics:cooked_prickly_pear, ecologics:prickly_pear, ecologics:walnut, apple, chorus_fruit, enchanted_golden_apple, golden_apple, melon_slice, naturalist:cooked_crab_meat (ultimo: datapack)
 
 ### Penguin (`ecologics:penguin`)  · A D S
 - **Dove (biomi)**: Overworld: Frozen Ocean, Frozen River, Snowy Plains
@@ -1157,7 +1157,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
 - EAI MPR `small_animals`: attacco più debole
 - Supplementaries Cage: catturabile in gabbia
-- **Cibo (tag)**: `ecologics:penguin_tempt_items` = cod, salmon, tropical_fish (ultimo: Ecologics)
+- **Cibo (tag)**: `ecologics:penguin_tempt_items` = cod, salmon, tropical_fish (ultimo: Ecologics) · `survivalreimagined:penguin_food` = cod, salmon, tropical_fish (ultimo: datapack)
 
 ### Squirrel (`ecologics:squirrel`)  · A D S
 - **Dove (biomi)**: Overworld: Plains
@@ -1166,14 +1166,14 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
 - Ecologics: spawna nelle Plains (biome modifier `ecologics:spawn_squirrel`)
 - Supplementaries Cage: catturabile in gabbia da cucciolo
-- **Cibo (tag)**: `ecologics:squirrel_tempt_items` = ecologics:walnut (ultimo: Ecologics)
+- **Cibo (tag)**: `ecologics:squirrel_tempt_items` = ecologics:walnut (ultimo: Ecologics) · `survivalreimagined:squirrel_food` = honeycomb (ultimo: datapack)
 
 ## Supplementaries
 
 ### Red Merchant (`supplementaries:red_merchant`)
 - **Dove (biomi)**: —
-- **Altre fonti**: ?con il Wandering Trader
-- Supplementaries + datapack: spawna con il Wandering Trader; trade sovrascritti nel datapack (1 Smeraldo, pochi usi)
+- **Altre fonti**: quando non arriva il Wandering Trader (`RedMerchantSpawnerMixin`); gli Evoker trasformano i Wandering Trader
+- Supplementaries + datapack: arriva al posto del Wandering Trader; trade sovrascritti nel datapack (1 Smeraldo, pochi usi)
 
 ### Plunderer (`supplementaries:plunderer`)
 - **Dove (biomi)**: —

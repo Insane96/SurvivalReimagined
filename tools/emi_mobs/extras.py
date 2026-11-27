@@ -11,7 +11,7 @@ add(["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:zombi
 add("minecraft:zombie", "ISO `Always convert zombie`", "i villager uccisi dagli zombie diventano sempre Zombie Villager")
 add("minecraft:drowned", "Enhanced AI (MPR `drowned_trident_nerf`)", "il Tridente lanciato dai Drowned fa metà danno")
 add("minecraft:drowned", "Vanilla Backport `zombie_nautilus_spawn_chance` 0.5", "metà dei Drowned negli oceani spawna in groppa a uno Zombie Nautilus")
-add("minecraft:husk", "Vanilla Backport `has_camel_husks`", "?nei deserti può cavalcare un Camel Husk (con un Parched dietro)")
+add("minecraft:husk", "Vanilla Backport `has_camel_husks`", "nei deserti il 10% degli Husk spawnati naturalmente cavalca un Camel Husk, con un Parched dietro (`HuskMixin`)")
 add("minecraft:zombie_villager", "ISO Villagers", "unica fonte di villager: si cura con Weakness + Golden Carrot (tag `#insanesurvivaloverhaul:zombie_villager_cure_items`, la durata della cura è quella vanilla), poi convalescenza di un giorno (non commercia, rallentato)")
 add("minecraft:zombie_villager", "ISO `Fire resistant structure zombie villagers`", "quelli piazzati dalle strutture hanno Fire Resistance infinita, così non bruciano prima di essere trovati")
 add("minecraft:zombie_villager", "ISO `No nitwits`", "i nitwit curati diventano disoccupati e possono prendere un lavoro")
@@ -25,7 +25,7 @@ add("minecraft:skeleton", "Bits and Balance `tippedArrowLingeringClouds.mobsEnab
 add("minecraft:wither_skeleton", "Enhanced AI `Wither instead of fire`", "con l'arco tira frecce di Wither invece che infuocate")
 add("minecraft:wither_skeleton", "Enhanced AI (MPR `wither_skeleton`)", "a volte spawna con un arco (a volte incantato)")
 add("minecraft:wither_skeleton", "Progressive Bosses `no_wither_rose`", "se ucciso dal Wither non lascia la Wither Rose")
-add("minecraft:parched", "Vanilla Backport `has_parched_skeletons`", "?spawna nei deserti (codice, non nei JSON dei biomi)")
+add("minecraft:parched", "Vanilla Backport `has_parched_skeletons`", "spawna nei biomi con la Desert Pyramid (codice, non nei JSON dei biomi); non brucia al sole; frecce con Weakness")
 
 # --- Creeper
 add("minecraft:creeper", "Explosion Overhaul", "esplosione dal centro del corpo, danno ridotto (x0.85), i blocchi distrutti droppano")
@@ -76,7 +76,7 @@ add("minecraft:villager", "Quark `Villagers Follow Emeralds`", "ti seguono se ti
 add("minecraft:villager", "Enhanced AI `Villager attacking`", "reagiscono solo ai giocatori con reputazione sotto -100 (come gli Iron Golem); `Villagers fight back enemies` = false, quindi non attaccano i mostri")
 add("minecraft:villager", "Enhanced AI `Custom targeting`", "metà dei mostri in `#enhancedai:config/can_attack_villagers` li attacca")
 add("minecraft:wandering_trader", "ISO villagers overhaul", "trade propri (ISO), attivo via `WSCommands.toml`")
-add("supplementaries:red_merchant", "Supplementaries + datapack", "spawna con il Wandering Trader; trade sovrascritti nel datapack (1 Smeraldo, pochi usi)")
+add("supplementaries:red_merchant", "Supplementaries + datapack", "arriva al posto del Wandering Trader; trade sovrascritti nel datapack (1 Smeraldo, pochi usi)")
 add("minecraft:copper_golem", "Vanilla Backport `has_copper_golems`", "si costruisce con Blocco di Rame + Carved Pumpkin; sposta oggetti dalle Copper Chest; si ossida nel tempo")
 
 # --- Pets / animals
@@ -127,11 +127,11 @@ add("minecraft:creaking", "Vanilla Backport `creaking`", "nasce di notte dal Cre
 add("minecraft:happy_ghast", "Vanilla Backport + Bits and Balance `speedyHappyGhasts`", "cavalcabile con Harness; risente di Speed/Slowness")
 add(["minecraft:nautilus", "minecraft:zombie_nautilus"], "Vanilla Backport `has_nautilus`", "cavalcabile sott'acqua, armatura da Nautilus nei loot")
 add("minecraft:sulfur_cube", "Vanilla Backport `has_sulfur_cubes`", "spawna nelle Sulfur Caves; archetipi esplosivi e dannosi attivi; si mette nel secchio")
-add("minecraft:camel_husk", "Vanilla Backport `has_camel_husks`", "?deserti di notte con Husk e Parched in sella")
+add("minecraft:camel_husk", "Vanilla Backport `has_camel_husks`", "arriva con il 10% degli Husk dei deserti, con Husk e Parched in sella; si sella e si cavalca, non si riproduce")
 
 # --- Naturalist / Ecologics
 NATURALIST_SPEED = True
-add("ecologics:coconut_crab", "Ecologics", "?esce dal Cocco che cade dalle palme")
+add("ecologics:coconut_crab", "Ecologics", "esce dal Cocco che cade dalle palme; con il Cocco addosso prende metà danno e reagisce, senza scappa")
 add("ecologics:squirrel", "Ecologics", "spawna nelle Plains (biome modifier `ecologics:spawn_squirrel`)")
 
 # Where, for mobs not (only) spawned by biomes. "?" = da verificare
@@ -164,18 +164,18 @@ DOVE = {
  "minecraft:wither": "si costruisce (4 Soul Sand + 3 teschi di Wither Skeleton)",
  "minecraft:zoglin": "Hoglin portato nell'Overworld; spawner in Philips' Ruins",
  "minecraft:zombie_horse": "Vanilla Backport: di notte in Plains, Snowy Plains e savane (`spawns_zombie_horses`)",
- "minecraft:camel_husk": "?Vanilla Backport: deserti (codice)",
+ "minecraft:camel_husk": "Vanilla Backport: con il 10% degli Husk dei deserti (codice)",
  "minecraft:copper_golem": "si costruisce",
  "minecraft:creaking": "dai Creaking Heart nel Pale Garden, di notte",
  "minecraft:happy_ghast": "da un Dried Ghast (fossili del Nether, baratto) messo in acqua -> Ghastling",
  "minecraft:nautilus": "oceani: raro in quelli freddi e ghiacciati, più frequente in quelli normali, tiepidi e caldi (`spawns_nautilus*`)",
- "minecraft:parched": "?Vanilla Backport: deserti (codice)",
+ "minecraft:parched": "Vanilla Backport: biomi con la Desert Pyramid (codice)",
  "minecraft:sulfur_cube": "Sulfur Caves (Vanilla Backport)",
  "minecraft:zombie_nautilus": "con i Drowned negli oceani (metà dei Drowned ne cavalca uno); variante corallo negli Warm Ocean",
  "naturalist:ant": "dagli Ant Hill (`add_ant_hills`)",
  "naturalist:caterpillar": "dalle Butterfly innamorate, poi diventa Chrysalis su un tronco",
  "ecologics:coconut_crab": "esce dal 20% dei Cocchi che si rompono cadendo dalle palme (spiagge)",
- "supplementaries:red_merchant": "?con il Wandering Trader",
+ "supplementaries:red_merchant": "quando non arriva il Wandering Trader (`RedMerchantSpawnerMixin`); gli Evoker trasformano i Wandering Trader",
  "supplementaries:plunderer": "nei raid vicino all'acqua, al timone delle barche dei Pillager (Galleon spenti)",
  "minecraft:cave_spider": "spawner nelle Mineshaft",
  "minecraft:zombie": "spawner nei Dungeon",

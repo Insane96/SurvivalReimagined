@@ -1,6 +1,9 @@
 SHARED = {
     "breeds_alone": "It can't be bred by hand: adults fall in love on their own now and then, much more often for a while after you feed them, and less in crowded areas. Breeding is slower, can fail and sometimes gives twins.",
     "breeds": "Breeding is slower, can fail and sometimes gives twins.",
+    # For mobs whose babies don't come from spawnChildFromBreeding (eggs, pregnancy): ISO's fail chance and twins
+    # hook BabyEntitySpawnEvent, which they never fire.
+    "breeds_alone.no_twins": "It can't be bred by hand: adults fall in love on their own now and then, much more often for a while after you feed them, and less in crowded areas.",
     "lifespan.very_short": "Its life is very short: it grows old and dies of old age. Feeding it a Poisonous Potato stops its aging.",
     "lifespan.short": "Its life is short: it grows old and dies of old age. Feeding it a Poisonous Potato stops its aging.",
     "lifespan.medium": "It grows old and dies of old age. Feeding it a Poisonous Potato stops its aging.",
