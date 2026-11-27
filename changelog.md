@@ -1,5 +1,6 @@
 # Upcoming
 * Sliding down Supplementaries' Ropes is no longer as fast as free falling: they now work like Ladders
+* Added Field Guide
 * Updated Mods
   * Amendments 2.3.0 -> 2.3.1
     * Fixed a rendering issue with held Torches

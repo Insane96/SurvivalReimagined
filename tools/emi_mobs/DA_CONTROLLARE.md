@@ -46,6 +46,32 @@ Tutti i test in gioco e tutti i `?` delle pagine EMI dei mob, da fare insieme a 
 - [ ] **Coconut Crab** (Ecologics): esce dal Cocco che cade dalle palme?
 - [ ] **Red Merchant** (Supplementaries): arriva con il Wandering Trader?
 
+## Field Guide (le pagine dei mob si spostano lì)
+
+Test in corso: voci di prova `fieldguide.minecraft.creeper.description` e `fieldguide.minecraft.zombie.description` in `en_us.json` (paragrafi separati da `\n\n`).
+
+- [x] A capo e testi lunghi (Zombie) si vedono bene, le nostre chiavi battono le descrizioni del mod.
+- [x] Griglia dei drop: legge solo le loot table, non i global loot modifier (Zombie mostra la Rotten Flesh invece della Cloth di ISO). Spenta (`disableLootDisplay: true`): i drop utili vanno nei testi.
+- [x] Griglia dei biomi: richiede Immersive Overlays (tolta). Spenta (`disableBiomeDisplay: true`): i biomi restano nei testi.
+- [ ] Guardian non scansionabile nel test (probabilmente TeamViewer): riprovare.
+- [ ] Drago e Wither compaiono bloccati nei Bosses (`kill_to_unlock`).
+- [ ] Mob delle mod (Naturalist, Ecologics, Vanilla Backport) renderizzati bene.
+- [ ] Blocchi e item: si reintegrano in Field Guide dopo i mob. Per ora la categoria Plants è nascosta (`datapacks/survivalreimagined/data/fieldguide/fieldguide/categories/plants.json`, `"hidden": true`) e `mushroom_collector` è disattivato (`neoforge:false`): da riattivare insieme. Il nome resta Field Guide.
+- [ ] Spawn egg nascoste in EMI (`assets/emi/index/stacks/survivalreimagined_spawn_eggs.json`, filtro `/_spawn_egg$/`): controllare che spariscano tutte (anche quelle delle mod) e nient'altro.
+- [ ] Vita e armatura nella pagina restano per ora.
+- [ ] Togliere le pagine `emi:info` dei mob; convertire `write_pages.py` alle chiavi `fieldguide.*` (pagina + testi condivisi in un'unica chiave).
+- [ ] Riscrivere la descrizione dell'advancement di EMI (ora parla delle pagine sulle Spawn Egg).
+- [ ] Item: Field Guide supporta anche voci per item (`obtain`/`eat`, strategie `items`/`food`/`mod_items`), per ora restano in EMI. `disableObtainUnlocks` resta `false`.
+- [ ] Condivisione: niente sblocco per tutto il server per ora (`entryScanCommands` con `fieldguide grant @a` era l'alternativa, i team non sono supportati).
+
+### Advancement di Field Guide
+
+- [ ] `fieldguide:root` (si ottiene con il Spyglass nell'inventario): descrizione riscritta in `en_us.json` ("Get a Spyglass and look at mobs through it to add them to your Field Guide, opened with B"). Controllare in gioco; se si aggiungono blocchi, citarli.
+- [ ] Field Guide sposta il vanilla `minecraft:adventure/spyglass_at_parrot` sotto `fieldguide:root`: va bene o lo rimettiamo in Adventure?
+- [x] `mushroom_collector` (4 funghi giganti): disattivato finché Plants è nascosta.
+- [ ] `animal_expert` / `monster_hunter` (completare la categoria): fattibili solo se non ci sono mob irraggiungibili (disattivati, senza spawn, es. Quark Crab, Illusioner, Giant, mob di sole strutture rimosse). Controllare le liste e metterli in `fieldguide:blacklisted`.
+- [ ] Gli altri (`first_discovery`, `enderman_scan`, `invisible_scan`, `gem_alert`, `let_him_cook`, `quick_review`) vanno bene così? Controllare che il tono dei testi vada bene col pack.
+
 ## Frasi al limite dello stile (numeri/statistiche)
 
 Lasciate per ora, da rivedere con l'utente:
