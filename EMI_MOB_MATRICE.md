@@ -180,6 +180,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - Quark `Horses Swim`: nuotano con il giocatore in groppa
 - Supplementaries Flute: richiamabile con il Flauto
 - Supplementaries Sugar Cube: mangiato dà Speed
+- **Cibo (tag)**: `survivalreimagined:donkey_food` = apple, enchanted_golden_apple, golden_apple, hay_block, sugar, wheat, supplementaries:flax, supplementaries:flax_block, supplementaries:sugar_cube (ultimo: datapack)
 
 ### Drowned (`minecraft:drowned`)  · D S T X
 - **Dove (biomi)**: Overworld: Cold Ocean, Deep Cold Ocean, Deep Frozen Ocean, Deep Lukewarm Ocean, Deep Ocean, Dripstone Caves, Frozen Ocean, Frozen River, Lukewarm Ocean, Ocean, River, Warm Ocean
@@ -374,6 +375,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - ISO `Fluid cooldown`: si mungono una volta ogni tanto (anche lo stufato del Mooshroom)
 - Mooshroom Tweaks `becomeBrownChance` 0.5: ?metà dei Mooshroom è marrone
 - Supplementaries Fodder: mangia il Fodder
+- **Cibo (tag)**: `survivalreimagined:mooshroom_food` = wheat, supplementaries:flax (ultimo: datapack)
 
 ### Mule (`minecraft:mule`)  · A D T X
 - **Dove (biomi)**: —
@@ -383,6 +385,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - Quark `Horses Swim`: nuotano con il giocatore in groppa
 - Supplementaries Flute: richiamabile con il Flauto
 - Supplementaries Sugar Cube: mangiato dà Speed
+- **Cibo (tag)**: `survivalreimagined:mule_food` = apple, enchanted_golden_apple, golden_apple, hay_block, sugar, wheat, supplementaries:flax, supplementaries:flax_block, supplementaries:sugar_cube (ultimo: datapack)
 
 ### Ocelot (`minecraft:ocelot`)  · D S T X
 - **Dove (biomi)**: Overworld: Bamboo Jungle, Jungle
@@ -408,7 +411,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - ISO `Shoulder dismount fall distance` 4: cadono dalla spalla solo dopo una caduta di qualche blocco
 - Amendments `pets_follow_teleports`: gli animali che ti seguono si teletrasportano con te (anche portali)
 - Bits and Balance `friendlyFireFriendlies`: non puoi colpire per sbaglio i tuoi animali
-- Naturalist `parrot_flight`: ?pappagalli sulla spalla danno Slow Falling
+- Naturalist `parrot_flight`: ?con un Parrot per spalla e un Bird in testa si vola lentamente (changelog 2.0)
 - Supplementaries Cage: catturabile in gabbia
 - Vibrant Parrots: colori diversi; innamorati depongono un uovo del loro colore; restano sulla spalla in volo/caduta; si tolgono accovacciandosi; Bird Cage
 - **Cibo (tag)**: `minecraft:parrot_food` = melon_seeds, pumpkin_seeds, supplementaries:flax_seeds (ultimo: supplementaries)
@@ -621,6 +624,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - ISO Aging: vita molto lunga
 - ISO `Equine attributes`: statistiche fisse per specie (niente genetica), da `equine_attributes.json`
 - EAI Stay near dismount: non si allontana da dove scendi
+- **Cibo (tag)**: `survivalreimagined:trader_llama_food` = hay_block, wheat, supplementaries:flax (ultimo: datapack)
 
 ### Tropical Fish (`minecraft:tropical_fish`)  · D S T X
 - **Dove (biomi)**: Overworld: Deep Lukewarm Ocean, Lukewarm Ocean, Lush Caves, Mangrove Swamp, Warm Ocean
@@ -892,7 +896,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Aging: vita lunga
 - ISO Breeding: riproduzione più lenta, può fallire, gemelli
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
-- **Cibo (tag)**: `naturalist:bear_tempt_items` = alexsmobs:cooked_moose_ribs, alexsmobs:raw_moose_ribs, cooked_salmon, honeycomb, salmon, sweet_berries, naturalist:venison (ultimo: naturalist)
+- **Cibo (tag)**: `naturalist:bear_tempt_items` = alexsmobs:cooked_moose_ribs, alexsmobs:raw_moose_ribs, cooked_salmon, honeycomb, salmon, sweet_berries, naturalist:venison (ultimo: naturalist) · `survivalreimagined:bear_food` = alexsmobs:cooked_moose_ribs, alexsmobs:raw_moose_ribs, cooked_salmon, honeycomb, salmon, sweet_berries, naturalist:venison (ultimo: datapack)
 
 ### Bird (`naturalist:bird`)  · D
 - **Dove (biomi)**: Overworld: Badlands, Beach, Birch Forest, Cherry Grove, Dappled Forest, Dark Forest, Desert, Eroded Badlands, Flower Forest, Forest, Frozen Peaks, Grove, Ice Spikes, Jagged Peaks, Mangrove Swamp, Meadow, Old Growth Birch Forest, Old Growth Pine Taiga, Old Growth Spruce Taiga, Pale Garden, Plains, Savanna, Savanna Plateau, Snowy Beach, Snowy Plains, Snowy Slopes, Snowy Taiga, Stony Peaks, Sunflower Plains, Swamp, Taiga, Windswept Forest, Windswept Gravelly Hills, Windswept Hills, Windswept Savanna, Wooded Badlands
@@ -903,6 +907,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Aging: vita lunga
 - ISO Breeding: riproduzione più lenta, può fallire, gemelli
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
+- **Cibo (tag)**: `survivalreimagined:black_bear_food` = alexsmobs:cooked_moose_ribs, alexsmobs:raw_moose_ribs, cooked_salmon, honeycomb, salmon, sweet_berries, naturalist:venison (ultimo: datapack)
 
 ### Blobfish (`naturalist:blobfish`)  · D
 - **Dove (biomi)**: Overworld: Cold Ocean, Deep Cold Ocean, Deep Lukewarm Ocean, Deep Ocean, Lukewarm Ocean, Ocean, Warm Ocean
@@ -922,6 +927,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
 - Supplementaries Cage: catturabile in gabbia
 - Supplementaries Jar: catturabile in un barattolo
+- **Cibo (tag)**: `survivalreimagined:butterfly_food` = ecologics:azalea_flower, insanesurvivaloverhaul:cyan_flower, allium, azure_bluet, blue_orchid, cactus_flower, cherry_leaves, chorus_flower, closed_eyeblossom, cornflower ... (ultimo: datapack)
 
 ### Capybara (`naturalist:capybara`)  · A D
 - **Dove (biomi)**: Overworld: Bamboo Jungle, Jungle, Mangrove Swamp, Sparse Jungle, Swamp
@@ -932,7 +938,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 
 ### Caterpillar (`naturalist:caterpillar`)  · D
 - **Dove (biomi)**: —
-- **Altre fonti**: ?dalle Butterfly (uova/crisalide)
+- **Altre fonti**: dalle Butterfly innamorate, poi diventa Chrysalis su un tronco
 - Supplementaries Cage: catturabile in gabbia
 - Supplementaries Jar: catturabile in un barattolo
 
@@ -955,6 +961,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Aging: vita media
 - ISO Breeding: riproduzione più lenta, può fallire, gemelli
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
+- **Cibo (tag)**: `survivalreimagined:deer_food` = apple (ultimo: datapack)
 
 ### Desert Scorpion (`naturalist:desert_scorpion`)  · D
 - **Dove (biomi)**: Overworld: Badlands, Desert, Eroded Badlands, Wooded Badlands
@@ -975,6 +982,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Aging: vita molto lunga
 - ISO Breeding: riproduzione più lenta, può fallire, gemelli
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
+- **Cibo (tag)**: `survivalreimagined:elephant_food` = melon_slice (ultimo: datapack)
 
 ### Firefly (`naturalist:firefly`)  · D
 - **Dove (biomi)**: Overworld: Birch Forest, Dappled Forest, Dark Forest, Flower Forest, Forest, Glimmering Weald, Mangrove Swamp, Mushroom Fields, Old Growth Birch Forest, Pale Garden, Plains, Sunflower Plains, Swamp
@@ -1011,6 +1019,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Aging: vita lunga
 - ISO Breeding: riproduzione più lenta, può fallire, gemelli
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
+- **Cibo (tag)**: `survivalreimagined:hippo_food` = melon (ultimo: datapack)
 
 ### Jellyfish (`naturalist:jellyfish`)  · D
 - **Dove (biomi)**: Overworld: Cold Ocean, Deep Cold Ocean, Deep Lukewarm Ocean, Deep Ocean, Lukewarm Ocean, Ocean, Warm Ocean
@@ -1035,13 +1044,14 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 
 ### Lizard (`naturalist:lizard`)  · D
 - **Dove (biomi)**: Overworld: Bamboo Jungle, Birch Forest, Dappled Forest, Dark Forest, Desert, Flower Forest, Forest, Jungle, Mangrove Swamp, Old Growth Birch Forest, Pale Garden, Savanna, Savanna Plateau, Sparse Jungle, Swamp, Windswept Savanna
-- **Cibo (tag)**: `naturalist:lizard_tempt_items` = spider_eye (ultimo: naturalist)
+- **Cibo (tag)**: `naturalist:lizard_tempt_items` = spider_eye (ultimo: naturalist) · `survivalreimagined:lizard_food` = spider_eye (ultimo: datapack)
 
 ### Mammoth (`naturalist:mammoth`)  · D
 - **Dove (biomi)**: Overworld: Frozen Peaks, Ice Spikes, Snowy Plains, Snowy Slopes
 - ISO Aging: vita molto lunga
 - ISO Breeding: riproduzione più lenta, può fallire, gemelli
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
+- **Cibo (tag)**: `survivalreimagined:mammoth_food` = melon_slice (ultimo: datapack)
 
 ### Mole (`naturalist:mole`)  · D
 - **Dove (biomi)**: Overworld: Birch Forest, Dappled Forest, Dark Forest, Flower Forest, Forest, Meadow, Old Growth Birch Forest, Pale Garden, Plains, Sunflower Plains
@@ -1078,10 +1088,11 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
 - Supplementaries Cage: catturabile in gabbia
 - Supplementaries Jar: catturabile in un barattolo
+- **Cibo (tag)**: `survivalreimagined:snail_food` = beetroot (ultimo: datapack)
 
 ### Snake (`naturalist:snake`)  · D
 - **Dove (biomi)**: Overworld: Badlands, Bamboo Jungle, Beach, Birch Forest, Dappled Forest, Dark Forest, Desert, Eroded Badlands, Flower Forest, Forest, Frozen River, Jungle, Mangrove Swamp, Old Growth Birch Forest, Pale Garden, Plains, River, Savanna, Savanna Plateau, Sparse Jungle, Stony Shore, Sunflower Plains, Swamp, Windswept Savanna, Wooded Badlands
-- **Cibo (tag)**: `naturalist:snake_tempt_items` = chicken, egg, rabbit, rabbit_foot (ultimo: naturalist)
+- **Cibo (tag)**: `naturalist:snake_tempt_items` = chicken, egg, rabbit, rabbit_foot (ultimo: naturalist) · `survivalreimagined:snake_food` = chicken, cooked_rabbit, egg, rabbit, rabbit_foot, spider_eye (ultimo: datapack)
 
 ### Starfish (`naturalist:starfish`)  · D
 - **Dove (biomi)**: Overworld: Cold Ocean, Deep Cold Ocean, Deep Lukewarm Ocean, Deep Ocean, Lukewarm Ocean, Ocean, Warm Ocean
@@ -1098,7 +1109,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Aging: vita lunga
 - ISO Breeding: riproduzione più lenta, può fallire, gemelli
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
-- **Cibo (tag)**: `naturalist:tortoise_tempt_items` = bamboo, brown_mushroom, cactus, dandelion (ultimo: naturalist)
+- **Cibo (tag)**: `naturalist:tortoise_tempt_items` = bamboo, brown_mushroom, cactus, dandelion (ultimo: naturalist) · `survivalreimagined:tortoise_food` = bamboo, brown_mushroom, cactus, dandelion (ultimo: datapack)
 
 ### Turkey (`naturalist:turkey`)  · A D
 - **Dove (biomi)**: Overworld: Flower Forest, Forest, Grove, Old Growth Pine Taiga, Old Growth Spruce Taiga, Taiga
@@ -1114,6 +1125,9 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 
 ### Whale (`naturalist:whale`)  · D
 - **Dove (biomi)**: Overworld: Cold Ocean, Deep Cold Ocean, Deep Lukewarm Ocean, Deep Ocean, Lukewarm Ocean, Ocean, Warm Ocean
+- ISO Breeding: riproduzione più lenta, può fallire, gemelli
+- ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
+- **Cibo (tag)**: `survivalreimagined:whale_food` = cod, cooked_cod, cooked_salmon, salmon, naturalist:cooked_crab_meat, naturalist:crab_meat (ultimo: datapack)
 
 ### Zebra (`naturalist:zebra`)  · A D
 - **Dove (biomi)**: Overworld: Savanna, Savanna Plateau, Windswept Savanna
@@ -1122,6 +1136,7 @@ Il comportamento proprio di Naturalist (cosa mangiano, chi cacciano, abitudini) 
 - ISO Breeding + Well fed: non si fa riprodurre a mano: si innamora da solo, più spesso se nutrito ('well fed'), meno se affollato
 - Supplementaries Flute: richiamabile con il Flauto
 - Supplementaries Fodder: mangia il Fodder
+- **Cibo (tag)**: `survivalreimagined:zebra_food` = apple, enchanted_golden_apple, golden_apple, hay_block, sugar, wheat, supplementaries:flax, supplementaries:flax_block, supplementaries:sugar_cube (ultimo: datapack)
 
 ## Ecologics
 

@@ -1,6 +1,7 @@
 # Upcoming
 * Sliding down Supplementaries' Ropes is no longer as fast as free falling: they now work like Ladders
 * Added Field Guide
+* Naturalist's Whales follow the pack's breeding rules: they can't be bred by hand and fall in love on their own, more often when fed
 * Updated Mods
   * Amendments 2.3.0 -> 2.3.1
     * Fixed a rendering issue with held Torches

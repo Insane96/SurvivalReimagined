@@ -1,13 +1,15 @@
 """Write Field Guide mob descriptions as lang keys (idempotent: existing keys are replaced in place, new ones appended).
 Each mob gets one key, fieldguide.<ns>.<mob>.description: its texts followed by its shared texts, as paragraphs (\\n\\n).
 Shared texts can be defined in any batch, so pass every batch in one call.
+"{food}" in a shared text becomes the EMI tag search for the mob's food: "<mob>_food", or FOOD_QUERY[mob] when that would match other tags too.
 Usage: python -I write_pages.py <assets_dir> <batch_module.py> [<batch_module.py> ...]"""
 import json, os, re, sys, runpy
 
 assets, batches = sys.argv[1], [runpy.run_path(b) for b in sys.argv[2:]]
-SHARED = {}
+SHARED, FOOD_QUERY = {}, {}
 for B in batches:
     SHARED.update(B.get("SHARED", {}))
+    FOOD_QUERY.update(B.get("FOOD_QUERY", {}))
 
 lang_path = os.path.join(assets, "survivalreimagined", "lang", "en_us.json")
 raw = open(lang_path, encoding="utf-8").read()
@@ -19,7 +21,8 @@ for B in batches:
     for (ns, mob), (texts, shared) in B["PAGES"].items():
         key = f"fieldguide.{ns}.{mob}.description"
         assert key not in new, key
-        new[key] = "\n\n".join(texts + [SHARED[s] for s in shared])
+        food = FOOD_QUERY.get(mob, mob + "_food")
+        new[key] = "\n\n".join(texts + [SHARED[s].replace("{food}", food) for s in shared])
 
 def entry(k, v):
     return "\t" + json.dumps(k, ensure_ascii=False) + ": " + json.dumps(v, ensure_ascii=False)

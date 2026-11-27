@@ -91,7 +91,7 @@ add("minecraft:cat", "ISO `Ocelot to cat`", "si ottiene anche addomesticando un 
 add("minecraft:parrot", "ISO Livestock", "addomesticati e fatti innamorare solo con Semi di Melone e Zucca")
 add("minecraft:parrot", "Vibrant Parrots", "colori diversi; innamorati depongono un uovo del loro colore; restano sulla spalla in volo/caduta; si tolgono accovacciandosi; Bird Cage")
 add("minecraft:parrot", "ISO `Shoulder dismount fall distance` 4", "cadono dalla spalla solo dopo una caduta di qualche blocco")
-add("minecraft:parrot", "Naturalist `parrot_flight`", "?pappagalli sulla spalla danno Slow Falling")
+add("minecraft:parrot", "Naturalist `parrot_flight`", "?con un Parrot per spalla e un Bird in testa si vola lentamente (changelog 2.0)")
 add(["minecraft:horse", "minecraft:donkey", "minecraft:mule", "minecraft:llama", "minecraft:trader_llama", "minecraft:skeleton_horse", "minecraft:zombie_horse"], "ISO `Equine attributes`", "statistiche fisse per specie (niente genetica), da `equine_attributes.json`")
 add(["minecraft:horse", "minecraft:donkey", "minecraft:mule", "minecraft:skeleton_horse", "minecraft:zombie_horse"], "Quark `Horses Swim`", "nuotano con il giocatore in groppa")
 add("minecraft:horse", "Bits and Balance `dualRiders`", "due giocatori sullo stesso cavallo")
@@ -173,7 +173,7 @@ DOVE = {
  "minecraft:sulfur_cube": "Sulfur Caves (Vanilla Backport)",
  "minecraft:zombie_nautilus": "con i Drowned negli oceani (metà dei Drowned ne cavalca uno); variante corallo negli Warm Ocean",
  "naturalist:ant": "dagli Ant Hill (`add_ant_hills`)",
- "naturalist:caterpillar": "?dalle Butterfly (uova/crisalide)",
+ "naturalist:caterpillar": "dalle Butterfly innamorate, poi diventa Chrysalis su un tronco",
  "ecologics:coconut_crab": "esce dal 20% dei Cocchi che si rompono cadendo dalle palme (spiagge)",
  "supplementaries:red_merchant": "?con il Wandering Trader",
  "supplementaries:plunderer": "nei raid vicino all'acqua, al timone delle barche dei Pillager (Galleon spenti)",

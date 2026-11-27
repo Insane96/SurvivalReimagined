@@ -4,11 +4,12 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 
 ## Test generali
 
-- [ ] Le descrizioni compaiono in Field Guide dopo la scansione (fase 1: 42 mob passivi; fase 2: 24 mob ostili; fase 3: 12 mob del Nether e dell'End, più Ender Dragon e Wither nei Bosses). Sono 80 chiavi `fieldguide.minecraft.<mob>.description`, tutti i mob sono nei tag `passive`/`neutral`/`hostile` di Field Guide.
+- [ ] Le descrizioni compaiono in Field Guide dopo la scansione (fase 1: 42 mob passivi; fase 2: 24 mob ostili; fase 3: 12 mob del Nether e dell'End, più Ender Dragon e Wither nei Bosses). Sono 80 chiavi `fieldguide.minecraft.<mob>.description`, tutti i mob sono nei tag `passive`/`neutral`/`hostile` di Field Guide. Fase 4: 47 mob di Naturalist (`fieldguide.naturalist.*`), che Field Guide mette in Animals/Monsters dalla `MobCategory`, senza tag.
 - [ ] I testi condivisi (riproduzione, vecchiaia, equini, zombie, scheletri) sono paragrafi in fondo alla descrizione giusta.
 - [ ] Le descrizioni lunghe (Ender Dragon, Wither, Villager, Zombie Villager, Horse) scorrono bene e non vengono tagliate.
 - [ ] Nessuna pagina dei mob rimasta in EMI (tolti i 78 file `*_spawn_egg.json` e le chiavi `emi.info.*_spawn_egg*` / `emi.info.survivalreimagined.mob.*`).
 - [ ] La descrizione dell'advancement di EMI non parla più delle Spawn Egg (tolta l'ultima frase).
+- [ ] Le descrizioni non elencano i cibi: dicono di cercare `#<mob>_food` in EMI (56 mob; Horse `#minecraft:horse_food`, perché `#horse_food` troverebbe anche lo Zombie Horse). Ogni ricerca trova il tag giusto (controllato sugli ID). In gioco: la ricerca mostra i cibi e i nomi dei tag ("Deer Food"...) si vedono. I tag `survivalreimagined:<mob>_food` sono solo di riferimento per i mob col cibo fisso nel codice (Deer, Elephant, Mammoth, Hippo, Snail, Whale) o con un tag dal nome diverso (Bear, Black Bear, Butterfly, Lizard, Snake, Tortoise, Zebra, Mooshroom, Donkey, Mule, Trader Llama).
 
 ## `?` da verificare in gioco
 
@@ -18,7 +19,7 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 - [ ] **Iron Golem**: i villager lo evocano? Nei villaggi abbandonati non ci sono villager, ma i villager curati sì (la pagina del Villager dice che chiamano gli Iron Golem quando sono in pericolo).
 - [ ] **Mooshroom** (Mooshroom Tweaks `becomeBrownChance` 0.5): metà dei Mooshroom è marrone? (omesso)
 - [ ] **Mule**: con ISO `prevent_breeding` nasce davvero da Cavallo e Asino domati che si innamorano da soli? (scritto)
-- [ ] **Parrot** (Naturalist `parrot_flight`): i pappagalli sulla spalla danno Slow Falling? (omesso)
+- [ ] **Parrot** (Naturalist `parrot_flight`): secondo il changelog di Naturalist 2.0, con un Parrot su ogni spalla e un Bird in testa si vola lentamente. Scritto su Parrot e Bird: verificare.
 - [ ] **Snow Golem** (Quark `Snow Golem Player Heads`): uno Snow Golem con il nome di un giocatore, ucciso da una Witch, droppa la testa del giocatore? (omesso: è un drop)
 - [ ] **Zombie Horse** (Vanilla Backport `has_zombie_horses`): spawna di notte con uno Zombie in sella? Si può domare? (omesso)
 
@@ -38,11 +39,30 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 - [ ] **Shulker** (Enhanced AI): la Levitation VI breve si sente "much stronger and shorter"? Sotto metà vita resta socchiuso mentre spara?
 - [ ] **Wither Skeleton** (Enhanced AI MPR `wither_skeleton`): alcuni spawnano con l'arco e tirano frecce di Wither?
 
+### Fase 4 (Naturalist)
+
+Fonti: changelog di Naturalist 2.x e wiki di minecraft-guides.com (2026-10), controllati nel jar dove non coincidono.
+
+- [ ] **Capybara**: per Naturalist si riproducono solo quelli domati. Con ISO `prevent_breeding` quelli selvatici si innamorano da soli e fanno figli? (scritto solo il testo condiviso)
+- [ ] **Butterfly**: con ISO si innamorano da sole e lasciano un Caterpillar?
+- [ ] **Whale**: aggiunta ai tag di riproduzione di ISO (`breedable_animals`, `prevent_breeding`), si innamora da sola. Nessun tag di vecchiaia. Il cibo è fisso nel codice: Cod, Salmon e Crab Meat, crudi o cotti (`survivalreimagined:whale_food`). Controllare che così diventi 'well fed'.
+- [ ] **Mole, Lizard, Rhino**: nel codice non hanno `BreedGoal` (il changelog dice che il Mole si riproduce con gli Spider Eye): scritto "can't be bred".
+- [ ] **Deer**: mangia le Apple (dalla wiki, nessun tag nella matrice)?
+- [ ] **Firefly**: alla luce del sole sparisce (codice: `isSunBurnTick` -> `discard`), non brucia come diceva la wiki (1.x).
+- [ ] **Dragonfly**: nutrita con Chorus Fruit sputa una nuvola di Instant Damage (codice, `mobInteract`).
+- [ ] **Hippo**: attacca le barche (`HippoAttackBoatsGoal`) e segue i giocatori a terra (2.0.7).
+- [ ] **Clam**: si prende il tesoro con click destro mentre è aperta (wiki)?
+- [ ] **Ant**: lo Sugar le cura; le formiche di un formicaio piantato con la Queen Ant ti difendono.
+- [ ] **Vulture**: attacca chi ha poca vita e tiene qualcosa in mano (codice: vita sotto i 3 cuori, mano principale non vuota), a meno che non porti già Rotten Flesh.
+- [ ] **Black Bear**: stesso testo del Bear (per il changelog è un clone).
+- [ ] Le entità tecniche `naturalist:carried_food`, `dirt_trail`, `lizard_tail` non compaiono in Field Guide (MISC senza uovo); altrimenti metterle in `fieldguide:blacklisted`.
+- [ ] Varianti (Bird, Snake, Tiger, Crab...) mostrate bene da Field Guide (Naturalist ha un suo provider di varianti).
+
 ### Fasi successive (già nella matrice)
 
 - [ ] **Camel Husk** (Vanilla Backport): spawna nei deserti di notte con Husk e Parched in sella (dal codice, non nei JSON dei biomi)?
 - [ ] **Parched** (Vanilla Backport `has_parched_skeletons`): spawna nei deserti (dal codice)?
-- [ ] **Caterpillar** (Naturalist): nasce dalle Butterfly (uova/crisalide)?
+- [x] **Caterpillar** (Naturalist): nasce dalle Butterfly innamorate (wiki), poi diventa Chrysalis su un tronco. Scritto, vedi fase 4.
 - [ ] **Coconut Crab** (Ecologics): esce dal Cocco che cade dalle palme?
 - [ ] **Red Merchant** (Supplementaries): arriva con il Wandering Trader?
 
@@ -87,3 +107,6 @@ Lasciate per ora, da rivedere con l'utente:
 - [ ] Shulker: "It's armored even while open", "Levitation is much stronger and shorter"
 - [ ] Ender Dragon: "Hitting it in flight hurts it more than when it's perched, and explosions hurt it less"
 - [ ] Wither: "the Ultimate does all of this and hits harder"
+- [ ] Giant Isopod, Snail, Tortoise: "taking less damage" (Tortoise anche "barely knocked back")
+- [ ] Lizard, Tortoise: "Tamed ... get tougher"
+- [ ] Jungle Scorpion: "Bigger than the Desert Scorpion"
