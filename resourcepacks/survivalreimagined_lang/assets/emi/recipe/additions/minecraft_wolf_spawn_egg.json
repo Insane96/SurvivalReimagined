@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:wolf_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.wolf_spawn_egg",
+        "emi.info.survivalreimagined.mob.breeds_alone",
+        "emi.info.survivalreimagined.mob.lifespan.very_long"
+    ]
+}

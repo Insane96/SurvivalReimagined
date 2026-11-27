@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:rabbit_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.rabbit_spawn_egg",
+        "emi.info.survivalreimagined.mob.breeds_alone",
+        "emi.info.survivalreimagined.mob.lifespan.short"
+    ]
+}

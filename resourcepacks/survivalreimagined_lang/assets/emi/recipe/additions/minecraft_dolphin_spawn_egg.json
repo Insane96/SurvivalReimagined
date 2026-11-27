@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:dolphin_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.dolphin_spawn_egg"
+    ]
+}

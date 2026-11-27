@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:tropical_fish_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.tropical_fish_spawn_egg"
+    ]
+}

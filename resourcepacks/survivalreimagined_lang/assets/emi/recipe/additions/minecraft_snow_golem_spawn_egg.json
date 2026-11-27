@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:snow_golem_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.snow_golem_spawn_egg"
+    ]
+}

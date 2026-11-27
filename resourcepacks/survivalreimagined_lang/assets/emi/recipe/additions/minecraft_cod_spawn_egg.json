@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:cod_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.cod_spawn_egg"
+    ]
+}

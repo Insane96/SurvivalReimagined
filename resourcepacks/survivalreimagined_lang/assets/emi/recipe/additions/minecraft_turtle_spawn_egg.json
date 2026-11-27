@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:turtle_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.turtle_spawn_egg",
+        "emi.info.survivalreimagined.mob.breeds_alone"
+    ]
+}

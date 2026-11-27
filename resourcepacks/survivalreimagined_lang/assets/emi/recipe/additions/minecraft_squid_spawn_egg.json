@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:squid_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.squid_spawn_egg"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:pufferfish_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.pufferfish_spawn_egg"
+    ]
+}

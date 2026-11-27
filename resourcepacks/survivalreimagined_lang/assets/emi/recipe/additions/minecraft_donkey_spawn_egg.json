@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:donkey_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.donkey_spawn_egg",
+        "emi.info.survivalreimagined.mob.equine",
+        "emi.info.survivalreimagined.mob.breeds_alone"
+    ]
+}

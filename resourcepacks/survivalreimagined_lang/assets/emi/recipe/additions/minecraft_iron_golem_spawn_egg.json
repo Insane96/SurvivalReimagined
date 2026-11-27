@@ -1,0 +1,10 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:iron_golem_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.iron_golem_spawn_egg.1",
+        "emi.info.minecraft.iron_golem_spawn_egg.2"
+    ]
+}

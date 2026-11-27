@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:trader_llama_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.trader_llama_spawn_egg",
+        "emi.info.survivalreimagined.mob.equine",
+        "emi.info.survivalreimagined.mob.lifespan.very_long"
+    ]
+}
