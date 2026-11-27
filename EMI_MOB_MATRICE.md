@@ -554,7 +554,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - Enhanced AI `Slime attack fix`: fanno danno al salto e all'atterraggio, non a ogni tick di contatto
 - Quark `Safer Creatures`: niente danno da caduta
 - Quark `Slime In A Bucket`: gli Slime piccoli si raccolgono con un secchio (fanno saltellare nei chunk slime)
-- Quark `Slimes To Magma Cubes`: ?gli Slime che bruciano diventano Magma Cube
+- Quark `Slimes To Magma Cubes`: uno Slime ucciso da un Magma Block (danno `hotFloor`) si divide in Magma Cube
 - Supplementaries Cage: catturabile in gabbia
 - Supplementaries Jar: catturabile in un barattolo
 - Supplementaries Urn: può uscire dalle Urne rotte nelle grotte
@@ -773,7 +773,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 ### Zombie Villager (`minecraft:zombie_villager`)  · D S T X
 - **Dove (biomi)**: quasi tutto l'Overworld (55/57; manca: Deep Dark, Mushroom Fields)
 - **Strutture**: Igloo (piazzato); Jungle Temple (DnT) (spawn naturale); Philips' Ruins (piazzato); Stronghold (DnT) (piazzato, spawn naturale); Villaggi abbandonati (ISO) (piazzato)
-- ISO Villagers: unica fonte di villager: si cura (Weakness + oggetti in `#insanesurvivaloverhaul:zombie_villager_cure_items`), la cura dura di più, poi convalescenza di un giorno (non commercia, rallentato)
+- ISO Villagers: unica fonte di villager: si cura con Weakness + Golden Carrot (tag `#insanesurvivaloverhaul:zombie_villager_cure_items`, la durata della cura è quella vanilla), poi convalescenza di un giorno (non commercia, rallentato)
 - ISO `Fire resistant structure zombie villagers`: quelli piazzati dalle strutture hanno Fire Resistance infinita, così non bruciano prima di essere trovati
 - ISO `No nitwits`: i nitwit curati diventano disoccupati e possono prendere un lavoro
 - ISO `Zombie siege`: assedio di zombie anche lontano dai villaggi

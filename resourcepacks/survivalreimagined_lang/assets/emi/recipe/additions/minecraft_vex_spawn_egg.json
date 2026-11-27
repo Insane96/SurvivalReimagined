@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:vex_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.vex_spawn_egg"
+    ]
+}

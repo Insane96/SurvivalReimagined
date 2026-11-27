@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:guardian_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.guardian_spawn_egg"
+    ]
+}

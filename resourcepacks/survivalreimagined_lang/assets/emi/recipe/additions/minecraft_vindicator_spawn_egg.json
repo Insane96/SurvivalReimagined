@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:vindicator_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.vindicator_spawn_egg"
+    ]
+}

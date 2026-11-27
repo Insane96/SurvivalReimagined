@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:witch_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.witch_spawn_egg"
+    ]
+}

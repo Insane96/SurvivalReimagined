@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:drowned_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.drowned_spawn_egg",
+        "emi.info.survivalreimagined.mob.zombie.1",
+        "emi.info.survivalreimagined.mob.zombie.2"
+    ]
+}

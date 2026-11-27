@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:warden_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.warden_spawn_egg"
+    ]
+}

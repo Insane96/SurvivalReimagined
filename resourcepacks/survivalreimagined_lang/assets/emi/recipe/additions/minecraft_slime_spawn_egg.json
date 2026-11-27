@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:slime_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.slime_spawn_egg"
+    ]
+}

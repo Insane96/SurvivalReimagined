@@ -1,0 +1,11 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:zombie_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.zombie_spawn_egg",
+        "emi.info.survivalreimagined.mob.zombie.1",
+        "emi.info.survivalreimagined.mob.zombie.2"
+    ]
+}

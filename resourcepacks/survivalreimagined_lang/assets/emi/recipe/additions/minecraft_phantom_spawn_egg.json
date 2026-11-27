@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:phantom_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.phantom_spawn_egg"
+    ]
+}
