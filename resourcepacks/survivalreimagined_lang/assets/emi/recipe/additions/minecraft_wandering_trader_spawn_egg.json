@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:wandering_trader_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.wandering_trader_spawn_egg"
-    ]
-}

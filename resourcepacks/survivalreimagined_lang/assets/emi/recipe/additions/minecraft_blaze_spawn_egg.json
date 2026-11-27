@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:blaze_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.blaze_spawn_egg"
-    ]
-}

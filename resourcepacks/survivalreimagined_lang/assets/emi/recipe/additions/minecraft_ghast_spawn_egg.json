@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:ghast_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.ghast_spawn_egg"
-    ]
-}

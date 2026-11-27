@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:tadpole_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.tadpole_spawn_egg"
-    ]
-}

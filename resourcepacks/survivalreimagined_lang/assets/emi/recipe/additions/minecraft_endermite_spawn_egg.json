@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:endermite_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.endermite_spawn_egg"
-    ]
-}

@@ -16,9 +16,8 @@ PAGES = {
     (M, "zombified_piglin"): (["Lives in Nether Wastes and Crimson Forests, and in Nether Fortresses and other Nether structures. It's never a baby and some are smaller. It climbs ladders, lunges at you, sprints when close and bites back if you hit it without a weapon. It sometimes picks up other mobs and throws them at you, and sometimes rides other mobs."], []),
 }
 
-# Bosses without a spawn egg (Vanilla Backport only ships textures, the items are not registered):
-# not written by write_pages.py, waiting for a decision on which item gets the page.
-NO_EGG = {
+# Bosses: they have no spawn egg, Field Guide unlocks them by killing them (fieldguide:kill_to_unlock).
+PAGES |= {
     (M, "ender_dragon"): ([
         "Lives in the End and can be respawned with four End Crystals on the exit portal. Respawning it with four Corrupted End Crystals, made with a Dragon Egg, summons the much stronger Corrupted Ender Dragon.",
         "It heals over time and from the End Crystals, more from Corrupted ones, and destroying a crystal while it's healing the Dragon hurts it. Crystals can't be set off by other explosions, more towers are caged and some hide a crystal inside. Once it's below half health, it can bring crystals back, together with Phantoms.",

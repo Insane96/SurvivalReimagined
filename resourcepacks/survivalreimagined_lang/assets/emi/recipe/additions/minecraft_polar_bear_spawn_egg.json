@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:polar_bear_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.polar_bear_spawn_egg"
-    ]
-}

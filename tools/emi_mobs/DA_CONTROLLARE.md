@@ -1,14 +1,14 @@
-# Da controllare alla fine (pagine EMI dei mob)
+# Da controllare alla fine (pagine dei mob)
 
-Tutti i test in gioco e tutti i `?` delle pagine EMI dei mob, da fare insieme a fine lavoro. Ogni fase aggiunge qui i suoi. Dopo la verifica: correggere `pages_<fase>.py` (testi) o `extras.py` (matrice), poi rilanciare `write_pages.py` e `run.sh`.
+Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), da fare insieme a fine lavoro. Ogni fase aggiunge qui i suoi. Dopo la verifica: correggere `pages_<fase>.py` (testi) o `extras.py` (matrice), poi rilanciare `run.sh` e `write_pages.py` con tutti i `pages_*.py` insieme.
 
 ## Test generali
 
-- [ ] Le pagine compaiono nella scheda Info di EMI su ogni uovo (fase 1: 42 mob passivi; fase 2: 24 mob ostili; fase 3: 12 mob del Nether e dell'End, più Elder Guardian e Shulker).
-- [ ] I testi condivisi (`mob.breeds_alone`, `mob.breeds`, `mob.lifespan.*`, `mob.equine`, `mob.zombie.1`/`.2`, `mob.skeleton`) si vedono in fondo alle pagine giuste, senza chiavi non tradotte.
-- [ ] Le pagine con più righe (`.1`, `.2`, `.3`: Chicken, Iron Golem, Villager, Creeper, Zombie Villager, uova con testi condivisi) non vengono tagliate o divise male.
-- [ ] Dopo aver tolto le pagine di Drago e Wither (uova inesistenti) non restano file o chiavi `emi.info.vanillabackport.ender_dragon_*`/`wither_*`.
-- [ ] La descrizione dell'advancement di EMI dice che le Spawn Egg hanno una pagina sul loro mob.
+- [ ] Le descrizioni compaiono in Field Guide dopo la scansione (fase 1: 42 mob passivi; fase 2: 24 mob ostili; fase 3: 12 mob del Nether e dell'End, più Ender Dragon e Wither nei Bosses). Sono 80 chiavi `fieldguide.minecraft.<mob>.description`, tutti i mob sono nei tag `passive`/`neutral`/`hostile` di Field Guide.
+- [ ] I testi condivisi (riproduzione, vecchiaia, equini, zombie, scheletri) sono paragrafi in fondo alla descrizione giusta.
+- [ ] Le descrizioni lunghe (Ender Dragon, Wither, Villager, Zombie Villager, Horse) scorrono bene e non vengono tagliate.
+- [ ] Nessuna pagina dei mob rimasta in EMI (tolti i 78 file `*_spawn_egg.json` e le chiavi `emi.info.*_spawn_egg*` / `emi.info.survivalreimagined.mob.*`).
+- [ ] La descrizione dell'advancement di EMI non parla più delle Spawn Egg (tolta l'ultima frase).
 
 ## `?` da verificare in gioco
 
@@ -32,7 +32,7 @@ Tutti i test in gioco e tutti i `?` delle pagine EMI dei mob, da fare insieme a 
 
 ### Fase 3 (Nether, End, boss)
 
-- [ ] **Decisione: Drago e Wither non hanno uovo.** Vanilla Backport ha solo texture e modelli di `ender_dragon_spawn_egg` e `wither_spawn_egg`, gli item non sono registrati. I testi sono pronti in `pages_vanilla_nether_end.py` (`NO_EGG`, non scritti). Dove vanno? Sul Dragon Egg / sulla Nether Star (o sul Corrupted Soul Sand e sul Corrupted End Crystal), oppure nel plugin EMI di Progressive Bosses come dice CLAUDE.md?
+- [x] **Drago e Wither senza uovo**: risolto con Field Guide, le loro descrizioni sono nei Bosses (si sbloccano uccidendoli).
 - [ ] **Ender Dragon** (Progressive Bosses): esistono solo le definizioni di livello 0 (base) e 4 (corrupted). Con 1-3 Corrupted End Crystal tra i 4 del respawn il livello è 1-3 e non c'è definizione: il Drago resta vanilla (nel log `Failed to get Dragon Stats`)?
 - [ ] **Elder Guardian** (Progressive Bosses): uccidendone uno, gli altri entro 64 blocchi diventano più forti (si sente il verso della maledizione)? Gli Elder dei trial spawner del Monumento vengono potenziati (lo spawn `SPAWNER` è escluso, `TRIAL_SPAWNER` no)?
 - [ ] **Shulker** (Enhanced AI): la Levitation VI breve si sente "much stronger and shorter"? Sotto metà vita resta socchiuso mentre spara?
@@ -48,8 +48,6 @@ Tutti i test in gioco e tutti i `?` delle pagine EMI dei mob, da fare insieme a 
 
 ## Field Guide (le pagine dei mob si spostano lì)
 
-Test in corso: voci di prova `fieldguide.minecraft.creeper.description` e `fieldguide.minecraft.zombie.description` in `en_us.json` (paragrafi separati da `\n\n`).
-
 - [x] A capo e testi lunghi (Zombie) si vedono bene, le nostre chiavi battono le descrizioni del mod.
 - [x] Griglia dei drop: legge solo le loot table, non i global loot modifier (Zombie mostra la Rotten Flesh invece della Cloth di ISO). Spenta (`disableLootDisplay: true`): i drop utili vanno nei testi.
 - [x] Griglia dei biomi: richiede Immersive Overlays (tolta). Spenta (`disableBiomeDisplay: true`): i biomi restano nei testi.
@@ -59,8 +57,8 @@ Test in corso: voci di prova `fieldguide.minecraft.creeper.description` e `field
 - [ ] Blocchi e item: si reintegrano in Field Guide dopo i mob. Per ora la categoria Plants è nascosta (`datapacks/survivalreimagined/data/fieldguide/fieldguide/categories/plants.json`, `"hidden": true`) e `mushroom_collector` è disattivato (`neoforge:false`): da riattivare insieme. Il nome resta Field Guide.
 - [ ] Spawn egg nascoste in EMI (`assets/emi/index/stacks/survivalreimagined_spawn_eggs.json`, filtro `/_spawn_egg$/`): controllare che spariscano tutte (anche quelle delle mod) e nient'altro.
 - [ ] Vita e armatura nella pagina restano per ora.
-- [ ] Togliere le pagine `emi:info` dei mob; convertire `write_pages.py` alle chiavi `fieldguide.*` (pagina + testi condivisi in un'unica chiave).
-- [ ] Riscrivere la descrizione dell'advancement di EMI (ora parla delle pagine sulle Spawn Egg).
+- [x] Tolte le pagine `emi:info` dei mob; `write_pages.py` scrive le chiavi `fieldguide.*` (testi e testi condivisi in un'unica chiave, un paragrafo ciascuno). Tolte anche le voci di prova di Creeper e Zombie.
+- [x] Descrizione dell'advancement di EMI: tolta la frase sulle Spawn Egg.
 - [ ] Item: Field Guide supporta anche voci per item (`obtain`/`eat`, strategie `items`/`food`/`mod_items`), per ora restano in EMI. `disableObtainUnlocks` resta `false`.
 - [ ] Condivisione: niente sblocco per tutto il server per ora (`entryScanCommands` con `fieldguide grant @a` era l'alternativa, i team non sono supportati).
 
@@ -87,5 +85,5 @@ Lasciate per ora, da rivedere con l'utente:
 - [ ] Drowned: "Its Trident hits less hard"
 - [ ] Elder Guardian: "tougher, quicker to attack"
 - [ ] Shulker: "It's armored even while open", "Levitation is much stronger and shorter"
-- [ ] Ender Dragon (testo non pubblicato): "Hitting it in flight hurts it more than when it's perched, and explosions hurt it less"
-- [ ] Wither (testo non pubblicato): "the Ultimate does all of this and hits harder"
+- [ ] Ender Dragon: "Hitting it in flight hurts it more than when it's perched, and explosions hurt it less"
+- [ ] Wither: "the Ultimate does all of this and hits harder"

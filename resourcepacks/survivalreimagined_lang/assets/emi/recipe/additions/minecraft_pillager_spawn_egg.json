@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:pillager_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.pillager_spawn_egg"
-    ]
-}

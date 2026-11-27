@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:shulker_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.shulker_spawn_egg"
-    ]
-}

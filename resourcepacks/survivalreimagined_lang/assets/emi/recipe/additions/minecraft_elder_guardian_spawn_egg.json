@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:elder_guardian_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.elder_guardian_spawn_egg"
-    ]
-}

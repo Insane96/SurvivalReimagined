@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:ravager_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.ravager_spawn_egg"
-    ]
-}

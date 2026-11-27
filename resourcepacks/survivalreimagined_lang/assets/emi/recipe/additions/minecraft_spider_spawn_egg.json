@@ -1,9 +1,0 @@
-{
-    "type": "emi:info",
-    "stacks": [
-        "item:minecraft:spider_spawn_egg"
-    ],
-    "text": [
-        "emi.info.minecraft.spider_spawn_egg"
-    ]
-}

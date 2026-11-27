@@ -9,4 +9,5 @@ python -I "$HERE/data.py" "$INST" "$OUT"
 python -I "$HERE/struct.py" "$INST" "$OUT/structure_spawns.json" > /dev/null
 python -I "$HERE/nbtscan.py" "$INST" "$OUT/nbt_mobs.json" > "$OUT/nbt_mobs.txt"
 python -I "$HERE/matrix.py" "$OUT" "$INST" "$INST/EMI_MOB_MATRICE.md"
-# EMI pages (one file per batch): python -I "$HERE/write_pages.py" "$INST/resourcepacks/survivalreimagined_lang/assets" "$HERE/pages_<batch>.py"
+# Field Guide mob descriptions (all batches in one call, shared texts can come from any of them):
+# python -I "$HERE/write_pages.py" "$INST/resourcepacks/survivalreimagined_lang/assets" "$HERE"/pages_*.py
