@@ -5,9 +5,27 @@
     * Fixed a rendering issue with held Torches
   * Ecologics 2.3.11 -> 2.3.12
     * Fixed the inside texture of Spile buckets and flickering inside Spiles
+  * Enhanced AI 4.3.3.1 -> 4.3.4.0
+    * Phantoms spot players from farther away horizontally, so they no longer keep circling without attacking
+    * Not every Phantom can grab you anymore (3 in 4)
+    * Fixed Angry Creepers not dealing more knockback and not breaking more blocks, and Breaching Creepers not breaking more blocks
   * Every Compat 2.11.60 -> 2.11.62
+  * GeckoLib 4.9.4 -> 4.9.5
   * JEI 19.76.1.481 -> 19.76.1.482
   * OctoLib 0.6.3.2 -> 0.6.3.3
+  * RuneEnchanting 1.5.5.1 -> 1.6.0.0-beta
+    * Tools, weapons and armor now have 4 Rune sockets no matter the material (Golden ones 5), so stronger materials no longer get fewer. Bows, Crossbows, Tridents and other mods' equipment have 4 too, Fishing Rods, Shears and Brushes 3
+    * Horse and Wolf Armor follow the same rules as player armor
+    * In existing worlds, items with more Runes than their new sockets (e.g. Wooden, Copper, Leather and Golden ones) become overloaded: their Runes stop working until some are removed
+    * Leather and Golden equipment can have 2 Curses
+    * Curses are discovered in half the time, and most as soon as their effect shows up (e.g. Curse of Teleport when it teleports you, Curse of Hop when you jump)
+    * The Runic Table shows the Runes already on the item grayed out
+    * Veining and Tunneling work with Shears on any block they break faster (e.g. Leaves, Wool, Vines), not only Cobwebs
+    * Added EMI info pages for the mod's items
+    * Fixed the bow drawing animation not following Quick Charge and Curse of Slow Charge
+    * Fixed bows and crossbows with Multishot not using the arrows in a Quiver
+  * Vibrant Parrots v21.1.1 -> v21.1.2
+    * Fixed tamed Parrots sometimes changing color when getting off a player's shoulder
 
 # 4.10.4
 * Fixed a crash when hovering over items in the inventory

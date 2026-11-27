@@ -249,8 +249,8 @@
 		#Makes creepers blow up on death like when they were added back in 0.30
 		#Allowed Values: NO, CHARGED_ONLY, YES
 		"Blow up on death" = "NO"
-		#If Insane's Survival Overhaul is installed and Explosion Overhaul feature is enabled, Angry creeper will deal more knockback and break more blocks, breaching creepers will break more blocks
-		"Insane survival overhaul integration" = true
+		#If Explosion Overhaul is installed, Angry creeper will deal more knockback and break more blocks, breaching creepers will break more blocks
+		"Explosion overhaul integration" = true
 
 		[Creepers."Creeper swell"."Walking fuse"]
 			#Percentage chance for a Creeper to keep walking while exploding. This is overwritten if the creeper has the beta property.
@@ -1557,10 +1557,12 @@
 	#Phantoms grab the entities they hit and carry them in the air until the grabbed entity hits them back. Only phantoms in the enhancedai:phantom/grab_targets entity type tag are affected by this feature.
 	[Phantoms."Grabbing phantoms"]
 		#Chance for a phantom to be able to grab targets. Rolled when the phantom spawns.
-		# Default: 1.0
+		# Default: 0.75
 		# Range: 0.0 ~ 1.0
-		Chance = 1.0
+		Chance = 0.75
 		#Ticks of Slow Falling given to the entities hit and released by the phantom. Set to 0 to disable.
 		# Default: 200
 		# Range: 0 ~ 6000
 		"Slow falling duration" = 200
+		#If true, grabbed entities will hang from below the phantom instead of sitting on top
+		"Hang from below" = true

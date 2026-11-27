@@ -1,18 +1,20 @@
 [Rune]
 	"Extract curses" = true
 	"Must learn curses" = true
-	#Cumulative durability damage a player must deal/take while an item has an unlearned curse before they learn what that curse is
-	# Default: 200
+	#Cumulative durability damage a player must deal/take while an item has an unlearned curse before they learn what that curse is. Some curses count durability damage more, and most are also revealed instantly when their effect shows up
+	# Default: 100
 	# Range: > -2147483648
-	"Curse learn threshold" = 200
-	#Maximum number of curses that can be on a single item. 0 disables curses entirely.
-	# Default: 1
-	# Range: > -2147483648
-	"Max curses" = 1
+	"Curse learn threshold" = 100
 	# Default: 0.5
 	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 	"Equipment rune conversion ratio" = 0.5
 	#Sockets given to the items in the runeenchanting:default_sockets item tag (e.g. other mods' tools, weapons and armor) that don't get them from data packs. Items in runeenchanting:no_default_sockets are excluded. 0 disables.
-	# Default: 2
+	# Default: 4
 	# Range: > -2147483648
-	"Default sockets" = 2
+	"Default sockets" = 4
+	#If false, curses are disabled: they can't be applied, are never generated and the ones already on items have no effect and give no sockets.
+	"Enable curses" = true
+	#Maximum number of curses that can be on items that don't set it with the runeenchanting:curse_sockets item component (e.g. other mods' equipment).
+	# Default: 1
+	# Range: > -2147483648
+	"Default curse sockets" = 1
