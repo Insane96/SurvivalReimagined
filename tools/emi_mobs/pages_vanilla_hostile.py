@@ -18,7 +18,7 @@ PAGES = {
     (M, "enderman"): (["Lives almost everywhere, in all three dimensions. It gets angry even if you look at it from the side and climbs ladders. If you attack it from where it can't reach, it teleports. It can also teleport other monsters next to you."], []),
     (M, "endermite"): (["Sometimes comes out of a thrown Ender Pearl. Also found in Strongholds and in the spawners of some ruins."], []),
     (M, "evoker"): (["Lives in Woodland Mansions and joins raids. Its Vexes die with it. It opens doors and slowly heals over time."], []),
-    (M, "guardian"): (["Comes out of the trial spawners of Ocean Monuments, and also lives deep down in deep oceans: those are smaller and much weaker. Its attacks ignore armor."], []),
+    (M, "guardian"): (["Comes out of the trial spawners of Ocean Monuments, and also lives deep down in deep oceans: those are smaller and much weaker. It deals magic damage."], []),
     (M, "husk"): (["Lives in Deserts and is found in Desert Temples. In Deserts it can ride a Camel Husk, with a Parched behind it."], Z),
     (M, "phantom"): (["Comes at night for players who are very tired and under the open sky, and also lives in some Nether biomes. Comes in random sizes, some much bigger. Its hits slow you down more and more and make you fall slowly, and it grabs you and carries you up in the air until you hit it back."], []),
     (M, "pillager"): (["Lives in Pillager Outposts and Woodland Mansions, and comes in patrols and raids. It shoots from farther and more accurately, sometimes keeps its distance, opens doors and slowly heals over time."], []),

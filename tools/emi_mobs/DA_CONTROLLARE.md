@@ -27,9 +27,9 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 
 - [ ] **Creeper** (MPR `Better creeper lingering`): i Creeper con effetti di pozione lasciano una nuvola esplodendo? (omesso)
 - [ ] **Husk** (Vanilla Backport `has_camel_husks`): nei deserti cavalca un Camel Husk con un Parched dietro? (scritto; dal codice: il 10% degli Husk spawnati naturalmente, se c'è spazio)
-- [ ] **Guardian**: "Its attacks ignore armor" va bene come resa del solo danno magico di ISO? (scritto)
+- [x] **Guardian**: il danno magico di ISO ora è scritto "It deals magic damage".
 - [ ] **Phantom** (Bits and Balance `enableImprovedPhantoms`): le opzioni di trasporto (doppio danno, caduta automatica, caduta se colpito) valgono anche per la presa di Enhanced AI? Enhanced AI blocca lo smontaggio, quindi probabilmente no (omesse)
-- [ ] **Skeleton, Bogged, Stray** (Bits and Balance `tippedArrowLingeringClouds.mobsEnabled`): le frecce con effetto dei mob lasciano la nuvola? Va sulla pagina della Tipped Arrow, non sulle uova.
+- [ ] **Tipped Arrow** (Bits and Balance `tippedArrowLingeringClouds`, anche `mobsEnabled`): pagina EMI `bitsandbalance_tipped_arrow.json` sulle 42 frecce vanilla con effetto (EMI confronta la pozione, quindi una stack per pozione; quelle delle mod non la mostrano). Controllare che la nuvola si formi (anche con le frecce di Stray e Bogged), che la freccia torni normale e che la pagina compaia su tutte le 42 (stack con componenti `{"minecraft:potion_contents":...}`).
 
 ### Fase 3 (Nether, End, boss)
 
@@ -90,11 +90,11 @@ Fonti: i jar decompilati (Vanilla Backport 1.2.2, Ecologics 2.3.12, Supplementar
 - [ ] Mob delle mod (Naturalist, Ecologics, Vanilla Backport) renderizzati bene.
 - [ ] Blocchi e item: si reintegrano in Field Guide dopo i mob. Per ora la categoria Plants è nascosta (`datapacks/survivalreimagined/data/fieldguide/fieldguide/categories/plants.json`, `"hidden": true`) e `mushroom_collector` è disattivato (`neoforge:false`): da riattivare insieme. Il nome resta Field Guide.
 - [ ] Spawn egg nascoste in EMI (`assets/emi/index/stacks/survivalreimagined_spawn_eggs.json`, filtro `/_spawn_egg$/`): controllare che spariscano tutte (anche quelle delle mod) e nient'altro.
-- [ ] Vita e armatura nella pagina restano per ora.
+- [x] Vita e armatura nella pagina restano: sono i valori base (copia del mob sul client, senza i bonus di MPR, Enhanced AI e Progressive Bosses) e non c'è un'opzione per nasconderle.
 - [x] Tolte le pagine `emi:info` dei mob; `write_pages.py` scrive le chiavi `fieldguide.*` (testi e testi condivisi in un'unica chiave, un paragrafo ciascuno). Tolte anche le voci di prova di Creeper e Zombie.
 - [x] Descrizione dell'advancement di EMI: tolta la frase sulle Spawn Egg.
 - [ ] Item: Field Guide supporta anche voci per item (`obtain`/`eat`, strategie `items`/`food`/`mod_items`), per ora restano in EMI. `disableObtainUnlocks` resta `false`.
-- [ ] Condivisione: niente sblocco per tutto il server per ora (`entryScanCommands` con `fieldguide grant @a` era l'alternativa, i team non sono supportati).
+- [x] Condivisione: niente sblocco per tutto il server (`entryScanCommands` con `fieldguide grant @a` era l'alternativa, i team non sono supportati).
 
 ### Advancement di Field Guide
 
@@ -106,21 +106,21 @@ Fonti: i jar decompilati (Vanilla Backport 1.2.2, Ecologics 2.3.12, Supplementar
 
 ## Frasi al limite dello stile (numeri/statistiche)
 
-Lasciate per ora, da rivedere con l'utente:
+Riviste con l'utente: restano tutte così.
 
-- [ ] Rabbit: "It takes less fall damage"
-- [ ] Zombie Horse: "Tougher but slower than a Horse"
-- [ ] Llama, Trader Llama: "Some carry more than others"
-- [ ] Horse: "steps up two blocks without jumping"
-- [ ] Spider, Cave Spider: "barely takes fall damage"
-- [ ] Vindicator: "It hits less hard"
-- [ ] Vex: "It's bigger but dies quickly"
-- [ ] Guardian: "smaller and much weaker"
-- [ ] Drowned: "Its Trident hits less hard"
-- [ ] Elder Guardian: "tougher, quicker to attack"
-- [ ] Shulker: "It's armored even while open", "Levitation is much stronger and shorter"
-- [ ] Ender Dragon: "Hitting it in flight hurts it more than when it's perched, and explosions hurt it less"
-- [ ] Wither: "the Ultimate does all of this and hits harder"
-- [ ] Giant Isopod, Snail, Tortoise: "taking less damage" (Tortoise anche "barely knocked back")
-- [ ] Lizard, Tortoise: "Tamed ... get tougher"
-- [ ] Jungle Scorpion: "Bigger than the Desert Scorpion"
+- [x] Rabbit: "It takes less fall damage"
+- [x] Zombie Horse: "Tougher but slower than a Horse"
+- [x] Llama, Trader Llama: "Some carry more than others"
+- [x] Horse: "steps up two blocks without jumping"
+- [x] Spider, Cave Spider: "barely takes fall damage"
+- [x] Vindicator: "It hits less hard"
+- [x] Vex: "It's bigger but dies quickly"
+- [x] Guardian: "smaller and much weaker"
+- [x] Drowned: "Its Trident hits less hard"
+- [x] Elder Guardian: "tougher, quicker to attack"
+- [x] Shulker: "It's armored even while open", "Levitation is much stronger and shorter"
+- [x] Ender Dragon: "Hitting it in flight hurts it more than when it's perched, and explosions hurt it less"
+- [x] Wither: "the Ultimate does all of this and hits harder"
+- [x] Giant Isopod, Snail, Tortoise: "taking less damage" (Tortoise anche "barely knocked back")
+- [x] Lizard, Tortoise: "Tamed ... get tougher"
+- [x] Jungle Scorpion: "Bigger than the Desert Scorpion"
