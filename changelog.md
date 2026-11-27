@@ -1,5 +1,13 @@
 # Upcoming
 * Sliding down Supplementaries' Ropes is no longer as fast as free falling: they now work like Ladders
+* Updated Mods
+  * Amendments 2.3.0 -> 2.3.1
+    * Fixed a rendering issue with held Torches
+  * Ecologics 2.3.11 -> 2.3.12
+    * Fixed the inside texture of Spile buckets and flickering inside Spiles
+  * Every Compat 2.11.60 -> 2.11.62
+  * JEI 19.76.1.481 -> 19.76.1.482
+  * OctoLib 0.6.3.2 -> 0.6.3.3
 
 # 4.10.4
 * Fixed a crash when hovering over items in the inventory
