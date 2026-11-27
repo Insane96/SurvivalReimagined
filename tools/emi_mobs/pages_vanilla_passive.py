@@ -69,5 +69,5 @@ PAGES = {
     ], []),
     (M, "wandering_trader"): (["Shows up near players now and then, with Trader Llamas. Sells plants, seeds and explorer maps, abandoned villages included, for one Emerald each, and buys a few items, like Music Discs, Hay Bales and Milk Buckets, for one Emerald."], []),
     (M, "wolf"): (["Lives in forests, taigas and groves. Wolves are faster and slowly heal over time, and tamed ones run to catch up with you. Pet one by crouching and right-clicking with an empty hand. Wolves left sitting for a while lie down. Wild Wolves hunt Deer and Moles, and dig Moles out of the ground."], ["food", "breeds_alone", "lifespan.very_long"]),
-    (M, "zombie_horse"): (["Roams Plains, Snowy Plains and Savannas at night. Tougher but slower than a Horse; it swims with you on its back."], ["food", "equine"]),
+    (M, "zombie_horse"): (["Roams Plains, Snowy Plains and Savannas at night, and a tamed Skeleton Horse fed a lot of Rotten Flesh slowly turns into one. Tougher but slower than a Horse; it swims with you on its back."], ["food", "equine"]),
 }

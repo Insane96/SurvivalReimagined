@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "quark:crab",
+    "quark:forgotten",
+    "quark:foxhound",
+    "quark:shiba",
+    "quark:stoneling",
+    "quark:toretoise",
+    "quark:wraith"
+  ]
+}

@@ -77,7 +77,8 @@ Fonti: i jar decompilati (Vanilla Backport 1.2.2, Ecologics 2.3.12, Supplementar
 - [ ] **Squirrel**: solo nelle Plains (biome modifier di Ecologics). Le Walnut lo fanno fidare (1 su 3), poi raccoglie e pianta gli Alberelli; la Honeycomb è il cibo per la riproduzione.
 - [ ] **Red Merchant**: arriva quando non arriva il Wandering Trader, più spesso con difficoltà locale alta e dopo il Drago (`RedMerchantSpawnerMixin`). Gli Evoker trasformano i Wandering Trader vicini in Red Merchant (sempre attivo, serve `mobGriefing`). Lancia Bombe a Zombie, raider e Zoglin.
 - [ ] **Plunderer**: solo nei raid dal mare (Galleon spenti). Spada d'oro, usa i Cannoni vicini, a volte ha un Parrot in spalla.
-- [ ] Le pagine EMI di Harness, Dried Ghast, Nautilus Armor, Creaking Heart, Copper Chest, Copper Golem Statue e del Sulfur Cube Bucket restano: ripetono in parte le pagine dei mob, decidere se accorciarle.
+- [x] Pagine EMI degli oggetti accorciate dove ripetevano il comportamento del mob (Harness, Dried Ghast, Nautilus Armor, Creaking Heart, Copper Chest, Sulfur Cube Bucket, Frogspawn, Sniffer Egg, Ant Hill, Lizard Tail, Quiver, Rotten Flesh, Parrot Eggs, Bee Nest). Tolti anche "fed Slimeballs"/"fed Torchflower Seeds" (con ISO non si fanno riprodurre a mano). Restano intere Copper Golem Statue (tutto sull'oggetto), Nether Star ed End Crystal (Wither e Drago si sbloccano in Field Guide solo uccidendoli). La conversione Skeleton Horse -> Zombie Horse è ora anche nella pagina dello Zombie Horse.
+- [ ] Sulfur Cube Bucket: solo gli adulti si prendono col secchio e il blocco ingoiato resta (`saveToBucketTag`): controllare.
 
 ## Field Guide (le pagine dei mob si spostano lì)
 
@@ -98,10 +99,10 @@ Fonti: i jar decompilati (Vanilla Backport 1.2.2, Ecologics 2.3.12, Supplementar
 ### Advancement di Field Guide
 
 - [ ] `fieldguide:root` (si ottiene con il Spyglass nell'inventario): descrizione riscritta in `en_us.json` ("Get a Spyglass and look at mobs through it to add them to your Field Guide, opened with B"). Controllare in gioco; se si aggiungono blocchi, citarli.
-- [ ] Field Guide sposta il vanilla `minecraft:adventure/spyglass_at_parrot` sotto `fieldguide:root`: va bene o lo rimettiamo in Adventure?
+- [x] Field Guide sposta il vanilla `minecraft:adventure/spyglass_at_parrot` (e con lui Ghast e Drago) sotto `fieldguide:root`: lasciato lì, va bene col tema del Spyglass.
 - [x] `mushroom_collector` (4 funghi giganti): disattivato finché Plants è nascosta.
-- [ ] `animal_expert` / `monster_hunter` (completare la categoria): fattibili solo se non ci sono mob irraggiungibili (disattivati, senza spawn, es. Quark Crab, Illusioner, Giant, mob di sole strutture rimosse). Controllare le liste e metterli in `fieldguide:blacklisted`.
-- [ ] Gli altri (`first_discovery`, `enderman_scan`, `invisible_scan`, `gem_alert`, `let_him_cook`, `quick_review`) vanno bene così? Controllare che il tono dei testi vada bene col pack.
+- [ ] `animal_expert` / `monster_hunter` (completare la categoria). Dal codice (`AutoPopulateRegistry`): Animals = ogni entità registrata non `MONSTER` (le `MISC` solo con uovo), Monsters = le `MONSTER`, boss esclusi. Giant e Illusioner sono già nel blacklist del mod; i 7 mob di Quark (Crab, Forgotten, Foxhound, Shiba, Stoneling, Toretoise, Wraith), registrati anche con `mobs = false`, sono in `datapacks/survivalreimagined/data/fieldguide/tags/entity_type/blacklisted.json`. Controllare in gioco che non compaiano più e che nelle categorie restino solo i nostri 140. I 100 XP di ricompensa diventano 4 smeraldi tramite ISO (`Advancement experience per emerald` 25, vale per tutti gli advancement).
+- [x] Gli altri (`first_discovery`, `enderman_scan`, `invisible_scan`, `gem_alert`, `let_him_cook`, `quick_review`) e i titoli di `animal_expert`/`monster_hunter`: tono ok, restano così.
 
 ## Frasi al limite dello stile (numeri/statistiche)
 
