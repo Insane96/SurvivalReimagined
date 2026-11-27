@@ -74,7 +74,7 @@ T = {  # tag -> (source, italian text); "OFF" source = present but neutralized
  "enhancedai:mobs/throwing_web/can_throw_webs": ("EAI Web thrower", "a volte lancia ragnatele che rallentano"),
  "enhancedai:mobs/throwing_web/poisonous_webs": ("EAI Web thrower", "le ragnatele avvelenano"),
  "enhancedai:phantom/grab_targets": ("EAI Grabbing phantoms", "afferra e porta in aria finché non lo colpisci"),
- "enhancedai:shulker/apply_armor_modifiers": ("EAI Shulker armor", "molta più armatura quando è chiuso"),
+ "enhancedai:shulker/apply_armor_modifiers": ("EAI Shulker armor", "armatura anche da aperto e da socchiuso"),
  "enhancedai:skeleton/can_flee": ("EAI Skeleton flee target", "si allontana se ti avvicini"),
  "enhancedai:skeleton/better_shooting": ("EAI Skeleton shoot", "tira più lontano, più spesso e si sposta di lato"),
  "enhancedai:slime/magma_cube_surf_speed": ("EAI Magma cube surf speed", "veloce nella lava"),

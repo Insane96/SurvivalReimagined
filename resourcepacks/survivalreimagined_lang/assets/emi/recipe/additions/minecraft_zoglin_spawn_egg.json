@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:zoglin_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.zoglin_spawn_egg"
+    ]
+}

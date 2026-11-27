@@ -4,9 +4,10 @@ Tutti i test in gioco e tutti i `?` delle pagine EMI dei mob, da fare insieme a 
 
 ## Test generali
 
-- [ ] Le pagine compaiono nella scheda Info di EMI su ogni uovo (fase 1: 42 mob passivi; fase 2: 24 mob ostili).
+- [ ] Le pagine compaiono nella scheda Info di EMI su ogni uovo (fase 1: 42 mob passivi; fase 2: 24 mob ostili; fase 3: 12 mob del Nether e dell'End, più Elder Guardian e Shulker).
 - [ ] I testi condivisi (`mob.breeds_alone`, `mob.breeds`, `mob.lifespan.*`, `mob.equine`, `mob.zombie.1`/`.2`, `mob.skeleton`) si vedono in fondo alle pagine giuste, senza chiavi non tradotte.
 - [ ] Le pagine con più righe (`.1`, `.2`, `.3`: Chicken, Iron Golem, Villager, Creeper, Zombie Villager, uova con testi condivisi) non vengono tagliate o divise male.
+- [ ] Dopo aver tolto le pagine di Drago e Wither (uova inesistenti) non restano file o chiavi `emi.info.vanillabackport.ender_dragon_*`/`wither_*`.
 - [ ] La descrizione dell'advancement di EMI dice che le Spawn Egg hanno una pagina sul loro mob.
 
 ## `?` da verificare in gioco
@@ -29,11 +30,16 @@ Tutti i test in gioco e tutti i `?` delle pagine EMI dei mob, da fare insieme a 
 - [ ] **Phantom** (Bits and Balance `enableImprovedPhantoms`): le opzioni di trasporto (doppio danno, caduta automatica, caduta se colpito) valgono anche per la presa di Enhanced AI? Enhanced AI blocca lo smontaggio, quindi probabilmente no (omesse)
 - [ ] **Skeleton, Bogged, Stray** (Bits and Balance `tippedArrowLingeringClouds.mobsEnabled`): le frecce con effetto dei mob lasciano la nuvola? Va sulla pagina della Tipped Arrow, non sulle uova.
 
+### Fase 3 (Nether, End, boss)
+
+- [ ] **Decisione: Drago e Wither non hanno uovo.** Vanilla Backport ha solo texture e modelli di `ender_dragon_spawn_egg` e `wither_spawn_egg`, gli item non sono registrati. I testi sono pronti in `pages_vanilla_nether_end.py` (`NO_EGG`, non scritti). Dove vanno? Sul Dragon Egg / sulla Nether Star (o sul Corrupted Soul Sand e sul Corrupted End Crystal), oppure nel plugin EMI di Progressive Bosses come dice CLAUDE.md?
+- [ ] **Ender Dragon** (Progressive Bosses): esistono solo le definizioni di livello 0 (base) e 4 (corrupted). Con 1-3 Corrupted End Crystal tra i 4 del respawn il livello è 1-3 e non c'è definizione: il Drago resta vanilla (nel log `Failed to get Dragon Stats`)?
+- [ ] **Elder Guardian** (Progressive Bosses): uccidendone uno, gli altri entro 64 blocchi diventano più forti (si sente il verso della maledizione)? Gli Elder dei trial spawner del Monumento vengono potenziati (lo spawn `SPAWNER` è escluso, `TRIAL_SPAWNER` no)?
+- [ ] **Shulker** (Enhanced AI): la Levitation VI breve si sente "much stronger and shorter"? Sotto metà vita resta socchiuso mentre spara?
+- [ ] **Wither Skeleton** (Enhanced AI MPR `wither_skeleton`): alcuni spawnano con l'arco e tirano frecce di Wither?
+
 ### Fasi successive (già nella matrice)
 
-- [ ] **Elder Guardian** (Progressive Bosses): come sale il livello (numero di Elder uccisi nel Monumento?)
-- [ ] **Ender Dragon** (Progressive Bosses): cos'è la definizione `corrupted` (Corrupted End Crystal?); dettagli da leggere nei JSON
-- [ ] **Wither** (Progressive Bosses): come si sceglie la variante (Corrupted Soul Sand?)
 - [ ] **Camel Husk** (Vanilla Backport): spawna nei deserti di notte con Husk e Parched in sella (dal codice, non nei JSON dei biomi)?
 - [ ] **Parched** (Vanilla Backport `has_parched_skeletons`): spawna nei deserti (dal codice)?
 - [ ] **Caterpillar** (Naturalist): nasce dalle Butterfly (uova/crisalide)?
@@ -53,3 +59,7 @@ Lasciate per ora, da rivedere con l'utente:
 - [ ] Vex: "It's bigger but dies quickly"
 - [ ] Guardian: "smaller and much weaker"
 - [ ] Drowned: "Its Trident hits less hard"
+- [ ] Elder Guardian: "tougher, quicker to attack"
+- [ ] Shulker: "It's armored even while open", "Levitation is much stronger and shorter"
+- [ ] Ender Dragon (testo non pubblicato): "Hitting it in flight hurts it more than when it's perched, and explosions hurt it less"
+- [ ] Wither (testo non pubblicato): "the Ultimate does all of this and hits harder"

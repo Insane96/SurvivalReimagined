@@ -212,13 +212,13 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - **Dove (biomi)**: —
 - **Strutture**: Ocean Monument (DnT) (piazzato, trial spawner)
 - **Altre fonti**: nell'Ocean Monument (DnT Trident Trial Monument), piazzati e da trial spawner
-- Progressive Bosses Elder Guardian: 3 livelli (0-2): più vita, assorbimento, resistenza e minion più frequenti. ?come sale il livello (numero di Elder uccisi nel Monumento?)
-- Progressive Bosses `Adventure` = false: non impedisce di rompere blocchi; ?Mining Fatigue resta vanilla
+- Progressive Bosses Elder Guardian: 3 livelli (0-2): ogni Elder ucciso alza di 1 il livello degli altri Elder entro 64 blocchi (più vita e assorbimento, attacco più rapido, più resistenza, minion più frequenti); assorbimento e cura a ogni colpo già dal livello 0; evoca Elder Minion (Guardian con metà vita e nuoto più veloce) se ci sono meno di 6 Guardian vicini. Gli Elder da `SPAWNER` (non trial) restano vanilla
+- Progressive Bosses `Adventure` = false: non impedisce di rompere blocchi e la Mining Fatigue resta vanilla (il codice agisce solo con `Adventure` = true)
 
 ### Ender Dragon (`minecraft:ender_dragon`)
 - **Dove (biomi)**: —
 - **Altre fonti**: nell'End, si può far rinascere con 4 End Crystal sul portale
-- Progressive Bosses Dragon: 2 definizioni (base, corrupted = Corrupted End Crystal?): acid ball, blast attack, carica, minion, rigenerazione dai cristalli; cristalli immuni alle altre esplosioni; gabbie con ossidiana agli angoli; ?dettagli da leggere nei JSON
+- Progressive Bosses Dragon: 2 definizioni: base (livello 0) e corrupted (livello 4 = respawn con 4 Corrupted End Crystal, ricetta End Crystal + Dragon Egg). Si rigenera da sola e dai cristalli (di più dai corrotti); distruggere un cristallo che la cura la ferisce; più danno in volo, meno da appollaiata e dalle esplosioni; si arrabbia col danno (più veloce, più attacchi); acid ball con nube, blast attack che respinge lontano, carica, minion Shulker; sotto metà vita può far rinascere cristalli (con Phantom); gabbie sulle torri, alcune con cristalli corrotti; cristalli immuni alle altre esplosioni; gabbie con ossidiana agli angoli. ?con 1-3 cristalli corrotti non c'è definizione: Drago vanilla?
 
 ### Enderman (`minecraft:enderman`)  · D X
 - **Dove (biomi)**: quasi tutto l'Overworld (55/57; manca: Deep Dark, Mushroom Fields); Nether: Inverted Forest, Nether Wastes, Soul Sand Valley, Warped Forest, Weeping Valley; End: End Barrens, End Highlands, End Midlands, Small End Islands, The End
@@ -510,9 +510,9 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - **Dove (biomi)**: —
 - **Strutture**: Philips' Ruins (piazzato)
 - **Altre fonti**: End City; Philips' Ruins (End Gate Fortress)
-- EAI Shulker armor: molta più armatura quando è chiuso
+- EAI Shulker armor: armatura anche da aperto e da socchiuso
 - Bits and Balance `despawnBulletsWithShulker`: i proiettili spariscono con lo Shulker
-- Enhanced AI `Shulker armor`/`bullets`/`attack`: armatura molto più alta da chiuso, Levitation più forte e più lunga
+- Enhanced AI `Shulker armor`/`bullets`/`attack`: armatura anche da aperto e da socchiuso (chiuso poco più del vanilla); sotto metà vita si apre solo a metà mentre spara; spara meno spesso; Levitation VI ma più breve (5 s, 8 s su Hard, contro 10 s di Levitation I)
 
 ### Silverfish (`minecraft:silverfish`)  · T X
 - **Dove (biomi)**: —
@@ -701,7 +701,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - **Dove (biomi)**: —
 - **Altre fonti**: si costruisce (4 Soul Sand + 3 teschi di Wither Skeleton)
 - Explosion Overhaul: nessun knockback dalle esplosioni
-- Progressive Bosses Wither: 4 varianti (base, armored, summoner, ultimate): armatura, minion, barrage/charge. ?come si sceglie la variante (Corrupted Soul Sand?)
+- Progressive Bosses Wither: 4 varianti: base (evocazione normale) e, con Corrupted Soul Sand al centro (1/2/3 Nether Star), armored, summoner, ultimate (solo nel Nether). Tutte: si rigenera, si cura con le uccisioni dei teschi, raffiche di teschi quando colpito, cariche sotto metà vita e se non ti vede, esplode alla morte, ogni uccisione lascia una Wither Rose. Armored: armatura alta; summoner: Wither Minion (alcuni con arco) e cura alta; ultimate: tutto. Dalla armored in su le esplosioni ignorano i blocchi wither-proof
 
 ### Wither Skeleton (`minecraft:wither_skeleton`)  · D S T X
 - **Dove (biomi)**: Nether: Withered Forest

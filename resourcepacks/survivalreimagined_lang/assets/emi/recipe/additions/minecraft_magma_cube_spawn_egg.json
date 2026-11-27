@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:magma_cube_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.magma_cube_spawn_egg"
+    ]
+}

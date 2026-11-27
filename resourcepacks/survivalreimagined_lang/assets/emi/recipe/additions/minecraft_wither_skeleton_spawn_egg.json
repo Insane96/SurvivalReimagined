@@ -1,0 +1,9 @@
+{
+    "type": "emi:info",
+    "stacks": [
+        "item:minecraft:wither_skeleton_spawn_egg"
+    ],
+    "text": [
+        "emi.info.minecraft.wither_skeleton_spawn_egg"
+    ]
+}
