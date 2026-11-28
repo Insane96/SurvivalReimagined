@@ -34,10 +34,10 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 ### Fase 3 (Nether, End, boss)
 
 - [x] **Drago e Wither senza uovo**: risolto con Field Guide, le loro descrizioni sono nei Bosses (si sbloccano uccidendoli).
-- [ ] **Ender Dragon** (Progressive Bosses): esistono solo le definizioni di livello 0 (base) e 4 (corrupted). Con 1-3 Corrupted End Crystal tra i 4 del respawn il livello è 1-3 e non c'è definizione: il Drago resta vanilla (nel log `Failed to get Dragon Stats`)?
-- [ ] **Elder Guardian** (Progressive Bosses): uccidendone uno, gli altri entro 64 blocchi diventano più forti (si sente il verso della maledizione)? Gli Elder dei trial spawner del Monumento vengono potenziati (lo spawn `SPAWNER` è escluso, `TRIAL_SPAWNER` no)?
-- [ ] **Shulker** (Enhanced AI): la Levitation VI breve si sente "much stronger and shorter"? Sotto metà vita resta socchiuso mentre spara?
-- [ ] **Wither Skeleton** (Enhanced AI MPR `wither_skeleton`): alcuni spawnano con l'arco e tirano frecce di Wither?
+- [x] **Ender Dragon** (Progressive Bosses): con 1-3 Corrupted End Crystal parte il Drago vanilla. Da correggere in Progressive Bosses (il respawn deve fallire e droppare i cristalli): in `TODO.md`. La ricetta dei Corrupted End Crystal (un Dragon Egg -> 4 cristalli) cambia direttamente in Progressive Bosses: il testo "made with a Dragon Egg" resta valido.
+- [x] **Elder Guardian** (Progressive Bosses): uccidendone uno, gli altri entro 64 blocchi (lo stesso Monumento) diventano più forti, con il suono (confermato). Quelli dei trial spawner dovrebbero essere esclusi ma non lo sono (il controllo esclude solo `SPAWNER`): in `TODO.md`.
+- [x] **Shulker** (Enhanced AI): testo riscritto senza confronti. Armatura piena da chiuso, metà da socchiuso, poca da aperto; sotto metà vita spara socchiuso (quindi con più armatura), quasi morto resta chiuso se sei vicino (`EAIShulkerAttackGoal`); Levitation forte e breve. Tolto "doesn't shoot often": l'attesa tra i colpi è quasi quella vanilla.
+- [x] **Wither Skeleton** (Enhanced AI MPR `wither_skeleton`): alcuni spawnano con l'arco e tirano frecce di Wither (confermato).
 
 ### Fase 4 (Naturalist)
 

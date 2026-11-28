@@ -219,7 +219,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 ### Ender Dragon (`minecraft:ender_dragon`)
 - **Dove (biomi)**: —
 - **Altre fonti**: nell'End, si può far rinascere con 4 End Crystal sul portale
-- Progressive Bosses Dragon: 2 definizioni: base (livello 0) e corrupted (livello 4 = respawn con 4 Corrupted End Crystal, ricetta End Crystal + Dragon Egg). Si rigenera da sola e dai cristalli (di più dai corrotti); distruggere un cristallo che la cura la ferisce; più danno in volo, meno da appollaiata e dalle esplosioni; si arrabbia col danno (più veloce, più attacchi); acid ball con nube, blast attack che respinge lontano, carica, minion Shulker; sotto metà vita può far rinascere cristalli (con Phantom); gabbie sulle torri, alcune con cristalli corrotti; cristalli immuni alle altre esplosioni; gabbie con ossidiana agli angoli. ?con 1-3 cristalli corrotti non c'è definizione: Drago vanilla?
+- Progressive Bosses Dragon: 2 definizioni: base (livello 0) e corrupted (livello 4 = respawn con 4 Corrupted End Crystal, ricetta End Crystal + Dragon Egg). Si rigenera da sola e dai cristalli (di più dai corrotti); distruggere un cristallo che la cura la ferisce; più danno in volo, meno da appollaiata e dalle esplosioni; si arrabbia col danno (più veloce, più attacchi); acid ball con nube, blast attack che respinge lontano, carica, minion Shulker; sotto metà vita può far rinascere cristalli (con Phantom); gabbie sulle torri, alcune con cristalli corrotti; cristalli immuni alle altre esplosioni; gabbie con ossidiana agli angoli. Con 1-3 cristalli corrotti non c'è definizione e parte il Drago vanilla (in TODO.md)
 
 ### Enderman (`minecraft:enderman`)  · D X
 - **Dove (biomi)**: quasi tutto l'Overworld (55/57; manca: Deep Dark, Mushroom Fields); Nether: Inverted Forest, Nether Wastes, Soul Sand Valley, Warped Forest, Weeping Valley; End: End Barrens, End Highlands, End Midlands, Small End Islands, The End
@@ -515,7 +515,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - **Altre fonti**: End City; Philips' Ruins (End Gate Fortress)
 - EAI Shulker armor: armatura anche da aperto e da socchiuso
 - Bits and Balance `despawnBulletsWithShulker`: i proiettili spariscono con lo Shulker
-- Enhanced AI `Shulker armor`/`bullets`/`attack`: armatura anche da aperto e da socchiuso (chiuso poco più del vanilla); sotto metà vita si apre solo a metà mentre spara; spara meno spesso; Levitation VI ma più breve (5 s, 8 s su Hard, contro 10 s di Levitation I)
+- Enhanced AI `Shulker armor`/`bullets`/`attack`: armatura 24 chiuso, 16 socchiuso, 8 aperto; sotto metà vita spara socchiuso (`EAIShulkerAttackGoal`), sotto un quarto smette di sparare se sei entro 4 blocchi; Levitation VI breve (5 s, 8 s su Hard)
 
 ### Silverfish (`minecraft:silverfish`)  · T X
 - **Dove (biomi)**: —
