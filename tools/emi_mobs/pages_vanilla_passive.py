@@ -39,7 +39,7 @@ PAGES = {
     (M, "goat"): (["Lives on snowy slopes and peaks. It can only be milked once in a while."], ["food", "breeds_alone"]),
     (M, "horse"): (["Lives in Plains and Savannas. It steps up two blocks without jumping, swims with you on its back and can carry two players."], ["food", "equine", "breeds_alone", "lifespan.very_long"]),
     (M, "iron_golem"): ([
-        "Build one with four Iron Blocks and a Carved Pumpkin. Some are caged in Pillager Outposts or stand guard in Woodland Mansions and Strongholds.",
+        "Build one with four Iron Blocks and a Carved Pumpkin, and Villagers living together call one now and then, more often when in danger. Some are caged in Pillager Outposts or stand guard in Woodland Mansions and Strongholds.",
         "It's very tough. It goes back to where it was made, and Villager smiths repair it. Some monsters attack it on sight.",
     ], []),
     (M, "llama"): (["Lives in Savanna Plateaus and Windswept Hills. Some Llamas carry more than others."], ["food", "equine", "breeds_alone", "lifespan.very_long"]),
@@ -56,7 +56,7 @@ PAGES = {
     (M, "sheep"): (["Lives in most grassy biomes, but not in savannas or swamps. Its wool grows back, and grown-up and old Sheep give more wool."], ["food", "breeds_alone", "lifespan.long"]),
     (M, "skeleton_horse"): (["Never found alone: lightning during a thunderstorm can be a trap that spawns four Skeleton Horsemen. The fastest mount, and it swims with you on its back."], ["equine"]),
     (M, "sniffer"): (["Only hatches from Sniffer Eggs, found by brushing Suspicious Sand in Warm Ocean Ruins and Jungle Temples."], ["food", "breeds_alone"]),
-    (M, "snow_golem"): (["Build one with two Snow Blocks and a Carved Pumpkin. Its snowballs deal damage and freeze what they hit. It climbs ladders and is healed by snowballs."], []),
+    (M, "snow_golem"): (["Build one with two Snow Blocks and a Carved Pumpkin. Its snowballs deal damage and freeze what they hit. It climbs ladders and is healed by snowballs. Name it after a player: if a Witch kills it, it drops that player's head."], []),
     (M, "squid"): (["Lives in rivers and oceans. Comes in random sizes."], []),
     (M, "tadpole"): (["Hatches from the Frogspawn that Frogs lay in water."], []),
     (M, "trader_llama"): (["Comes with the Wandering Trader. Some carry more than others."], ["food", "equine", "lifespan.very_long"]),
@@ -65,9 +65,9 @@ PAGES = {
     (M, "villager"): ([
         "Villages are abandoned: Villagers only come from curing Zombie Villagers, apart from a few prisoners in Strongholds, Woodland Mansions and Igloos. They can't breed.",
         "They only sell, each trade for one Emerald. Prices go up with use and don't come back down, stock is restocked once a day and they keep their trades if they lose their job site. They follow you while you hold an Emerald.",
-        "They eat to heal, call Iron Golems when in danger and smiths repair Iron Golems. They only fight back against players they really dislike.",
+        "They eat to heal, call Iron Golems now and then, more often when in danger, and smiths repair Iron Golems. They only fight back against players they really dislike.",
     ], []),
     (M, "wandering_trader"): (["Shows up near players now and then, with Trader Llamas. Sells plants, seeds and explorer maps, abandoned villages included, for one Emerald each, and buys a few items, like Music Discs, Hay Bales and Milk Buckets, for one Emerald."], []),
     (M, "wolf"): (["Lives in forests, taigas and groves. Wolves slowly heal over time, and tamed ones run to catch up with you. Pet one by crouching and right-clicking with an empty hand. Wolves left sitting for a while lie down. Wild Wolves hunt Deer and Moles, and dig Moles out of the ground."], ["food", "breeds_alone", "lifespan.very_long"]),
-    (M, "zombie_horse"): (["Roams Plains, Snowy Plains and Savannas at night, and a tamed Skeleton Horse fed a lot of Rotten Flesh slowly turns into one. Tougher but slower than a Horse; it swims with you on its back."], ["food", "equine"]),
+    (M, "zombie_horse"): (["Roams Plains, Snowy Plains and Savannas at night and in their caves, but it's rare. It comes with a Zombie riding it and burns in sunlight unless it wears Horse Armor, which wears out instead. Without its rider it can be tamed and ridden, but it can't breed. One under Weakness fed a Golden Carrot slowly turns into a Horse. Tougher but slower than a Horse; it swims with you on its back."], ["food", "equine"]),
 }

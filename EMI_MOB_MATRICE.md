@@ -338,7 +338,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 ### Iron Golem (`minecraft:iron_golem`)  · D S T X
 - **Dove (biomi)**: —
 - **Strutture**: Pillager Outpost (piazzato); Stronghold (DnT) (piazzato); Woodland Mansion (DnT Illager Manor) (piazzato)
-- **Altre fonti**: si costruisce (4 blocchi di ferro + Carved Pumpkin); ?i villager lo evocano (nei villaggi abbandonati non ci sono villager); piazzato in Pillager Outpost (gabbia), Woodland Mansion, Stronghold (DnT)
+- **Altre fonti**: si costruisce (4 blocchi di ferro + Carved Pumpkin); i villager lo evocano (ogni tanto, più spesso in pericolo); piazzato in Pillager Outpost (gabbia), Woodland Mansion, Stronghold (DnT)
 - ISO `Fixed iron golem damage`: danno fisso invece che casuale
 - EAI MPR `iron_golems`: subisce molto meno danno e quasi non viene spinto
 - EAI Patrol: torna dove è spawnato
@@ -411,7 +411,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - ISO `Shoulder dismount fall distance` 4: cadono dalla spalla solo dopo una caduta di qualche blocco
 - Amendments `pets_follow_teleports`: gli animali che ti seguono si teletrasportano con te (anche portali)
 - Bits and Balance `friendlyFireFriendlies`: non puoi colpire per sbaglio i tuoi animali
-- Naturalist `parrot_flight`: ?con un Parrot per spalla e un Bird in testa si vola lentamente (changelog 2.0)
+- Naturalist `parrot_flight`: con un Parrot per spalla e un Bird di Naturalist (`naturalist:bird`) in testa, tenendo premuto salto in aria si sale lentamente (`ParrotFlight`)
 - Supplementaries Cage: catturabile in gabbia
 - Vibrant Parrots: colori diversi; innamorati depongono un uovo del loro colore; restano sulla spalla in volo/caduta; si tolgono accovacciandosi; Bird Cage
 - **Cibo (tag)**: `minecraft:parrot_food` = melon_seeds, pumpkin_seeds, supplementaries:flax_seeds (ultimo: supplementaries)
@@ -576,7 +576,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - EAI Healed by snowballs: curato dalle palle di neve
 - EAI MPR `snow_golems`: ha un po' di armatura
 - EAI Snow golems: le palle di neve fanno danno; e congelano
-- Quark `Snow Golem Player Heads`: ?uno Snow Golem con nome di un giocatore ucciso da una Witch droppa la testa del giocatore
+- Quark `Snow Golem Player Heads`: uno Snow Golem con nome di un giocatore ucciso da una Witch droppa la testa del giocatore
 
 ### Spider (`minecraft:spider`)  · D S T X
 - **Dove (biomi)**: quasi tutto l'Overworld (54/57; manca: Deep Dark, Mushroom Fields, Sulfur Caves)
@@ -766,12 +766,13 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 
 ### Zombie Horse (`minecraft:zombie_horse`)
 - **Dove (biomi)**: —
-- **Altre fonti**: Vanilla Backport: di notte in Plains, Snowy Plains e savane (`spawns_zombie_horses`)
+- **Altre fonti**: Vanilla Backport: al buio (regole dei mostri) in Plains, Snowy Plains e savane (`spawns_zombie_horses`), raro
 - ISO `Equine attributes`: statistiche fisse per specie (niente genetica), da `equine_attributes.json`
 - EAI Stay near dismount: non si allontana da dove scendi
 - Quark `Horses Swim`: nuotano con il giocatore in groppa
 - Supplementaries Flute: richiamabile con il Flauto
-- Vanilla Backport `has_zombie_horses`: spawna di notte in pianure e savane ?con uno Zombie in sella
+- Supplementaries `zombie_horse_inverse_conversion`: sotto Weakness, con una Golden Carrot torna Horse
+- Vanilla Backport `has_zombie_horses`: spawna come i mostri (`MobCategory.MONSTER`, regole dei mostri, peso 5: raro) in pianure e savane, con uno Zombie in sella; brucia al sole senza armatura (che si consuma); domabile senza cavaliere, non si riproduce
 - **Cibo (tag)**: `minecraft:zombie_horse_food` = red_mushroom (ultimo: VanillaBackport)
 
 ### Zombie Villager (`minecraft:zombie_villager`)  · D S T X

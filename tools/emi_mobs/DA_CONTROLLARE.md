@@ -15,13 +15,13 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 
 ### Fase 1 (passivi)
 
-- [ ] **Cat**: i villaggi abbandonati non ne generano (pool vuoto); il CatSpawner vanilla li fa comparire vicino ai letti? (omesso dalla pagina)
-- [ ] **Iron Golem**: i villager lo evocano? Nei villaggi abbandonati non ci sono villager, ma i villager curati sì (la pagina del Villager dice che chiamano gli Iron Golem quando sono in pericolo).
-- [ ] **Mooshroom** (Mooshroom Tweaks `becomeBrownChance` 0.5): metà dei Mooshroom è marrone? (omesso)
-- [ ] **Mule**: con ISO `prevent_breeding` nasce davvero da Cavallo e Asino domati che si innamorano da soli? (scritto)
-- [ ] **Parrot** (Naturalist `parrot_flight`): secondo il changelog di Naturalist 2.0, con un Parrot su ogni spalla e un Bird in testa si vola lentamente. Scritto su Parrot e Bird: verificare.
-- [ ] **Snow Golem** (Quark `Snow Golem Player Heads`): uno Snow Golem con il nome di un giocatore, ucciso da una Witch, droppa la testa del giocatore? (omesso: è un drop)
-- [ ] **Zombie Horse** (Vanilla Backport `has_zombie_horses`): spawna di notte con uno Zombie in sella? Si può domare? (omesso)
+- [x] **Cat**: i villaggi abbandonati non ne generano (confermato). Dove compaiono vicino ai letti non interessa: resta omesso.
+- [x] **Iron Golem**: i villager lo evocano ogni tanto (gossip vicino alla campana) e più spesso in pericolo; ISO non lo cambia. Scritto su Iron Golem e Villager.
+- [x] **Mooshroom** (Mooshroom Tweaks `becomeBrownChance` 0.5): metà sono marroni (confermato, omesso: si vede in gioco).
+- [x] **Mule**: nasce da Cavallo e Asino domati che si innamorano da soli (confermato, sistemato di recente in ISO).
+- [ ] **Parrot** (Naturalist `parrot_flight`): il Bird è il `naturalist:bird` di Naturalist (tutte le specie), domato con il suo cibo lanciato a terra, che si siede in testa (`ParrotFlight.hasBirdOnHead`: un passeggero `Bird` del giocatore). Con un Parrot vanilla su ogni spalla e il Bird in testa, tenendo premuto salto in aria si sale lentamente (`LocalPlayerMixin`: +0.15 a tick fino a 0.22, azzera il danno da caduta). Scritto su Parrot e Bird ("fly slowly"): da testare.
+- [x] **Snow Golem** (Quark `Snow Golem Player Heads`): droppa la testa del giocatore (confermato, scritto: un accenno anche se Quark ha già la sua pagina EMI).
+- [ ] **Zombie Horse** (Vanilla Backport 1.2.2, codice): diventa `MobCategory.MONSTER` (`EntityTypeMixin`, quindi in Field Guide sta nei Monsters) e spawna con le regole dei mostri (al buio, di notte o nelle grotte) in Plains, Snowy Plains e savane, peso 5 (come la Witch: raro, per questo non se ne vedono). Con lo spawn naturale ha uno Zombie in sella con una Iron Sword (le lance sono spente). Brucia al sole se non ha l'armatura, che si consuma al posto suo; sparisce come un mostro finché non ci interagisci. Non si riproduce (`canFallInLove` false); senza cavaliere si doma come un cavallo (con un oggetto che non è il cibo si arrabbia), il Red Mushroom (`#zombie_horse_food`) lo cura e lo attira. In più Supplementaries `zombie_horse_inverse_conversion`: sotto Weakness, con una Golden Carrot torna un Horse. Tutto scritto. Da testare: la cura di Supplementaries, perché Vanilla Backport riscrive `mobInteract` dello Zombie Horse e l'inject di Supplementaries potrebbe non arrivarci (prova con `/summon` e `/effect`).
 
 ### Fase 2 (ostili)
 
@@ -53,7 +53,7 @@ Fonti: changelog di Naturalist 2.x e wiki di minecraft-guides.com (2026-10), con
 - [ ] **Hippo**: attacca le barche (`HippoAttackBoatsGoal`) e segue i giocatori a terra (2.0.7).
 - [ ] **Clam**: si prende il tesoro con click destro mentre è aperta (wiki)?
 - [ ] **Ant**: lo Sugar le cura; le formiche di un formicaio piantato con la Queen Ant ti difendono.
-- [ ] **Vulture**: attacca chi ha poca vita e tiene qualcosa in mano (codice: vita sotto i 3 cuori, mano principale non vuota), a meno che non porti già Rotten Flesh.
+- [ ] **Vulture**: attacca chi ha poca vita e tiene qualcosa in mano (codice: vita sotto i 3 cuori, mano principale non vuota). Il suo cibo è la Rotten Flesh fissa nel codice, che nel pack non esiste (ISO `cloth` la sostituisce con la Cloth in tutti i loot): tolti dal testo "picks up Rotten Flesh" e "unless it's already carrying Rotten Flesh".
 - [ ] **Black Bear**: stesso testo del Bear (per il changelog è un clone).
 - [ ] Le entità tecniche `naturalist:carried_food`, `dirt_trail`, `lizard_tail` non compaiono in Field Guide (MISC senza uovo); altrimenti metterle in `fieldguide:blacklisted`.
 - [ ] Varianti (Bird, Snake, Tiger, Crab...) mostrate bene da Field Guide (Naturalist ha un suo provider di varianti).
@@ -77,7 +77,7 @@ Fonti: i jar decompilati (Vanilla Backport 1.2.2, Ecologics 2.3.12, Supplementar
 - [ ] **Squirrel**: solo nelle Plains (biome modifier di Ecologics). Le Walnut lo fanno fidare (1 su 3), poi raccoglie e pianta gli Alberelli; la Honeycomb è il cibo per la riproduzione.
 - [ ] **Red Merchant**: arriva quando non arriva il Wandering Trader, più spesso con difficoltà locale alta e dopo il Drago (`RedMerchantSpawnerMixin`). Gli Evoker trasformano i Wandering Trader vicini in Red Merchant (sempre attivo, serve `mobGriefing`). Lancia Bombe a Zombie, raider e Zoglin.
 - [ ] **Plunderer**: solo nei raid dal mare (Galleon spenti). Spada d'oro, usa i Cannoni vicini, a volte ha un Parrot in spalla.
-- [x] Pagine EMI degli oggetti accorciate dove ripetevano il comportamento del mob (Harness, Dried Ghast, Nautilus Armor, Creaking Heart, Copper Chest, Sulfur Cube Bucket, Frogspawn, Sniffer Egg, Ant Hill, Lizard Tail, Quiver, Rotten Flesh, Parrot Eggs, Bee Nest). Tolti anche "fed Slimeballs"/"fed Torchflower Seeds" (con ISO non si fanno riprodurre a mano). Restano intere Copper Golem Statue (tutto sull'oggetto), Nether Star ed End Crystal (Wither e Drago si sbloccano in Field Guide solo uccidendoli). La conversione Skeleton Horse -> Zombie Horse è ora anche nella pagina dello Zombie Horse.
+- [x] Pagine EMI degli oggetti accorciate dove ripetevano il comportamento del mob (Harness, Dried Ghast, Nautilus Armor, Creaking Heart, Copper Chest, Sulfur Cube Bucket, Frogspawn, Sniffer Egg, Ant Hill, Lizard Tail, Quiver, Rotten Flesh, Parrot Eggs, Bee Nest). Tolti anche "fed Slimeballs"/"fed Torchflower Seeds" (con ISO non si fanno riprodurre a mano). Restano intere Copper Golem Statue (tutto sull'oggetto), Nether Star ed End Crystal (Wither e Drago si sbloccano in Field Guide solo uccidendoli). Tolta la conversione Skeleton Horse -> Zombie Horse di Supplementaries (pagina EMI `supplementaries_zombie_horse.json` e testo dello Zombie Horse): usa `Items.ROTTEN_FLESH` fisso nel codice (`SkellyHorseMixin`) e la Rotten Flesh nel pack non esiste. L'oggetto non si cambia da config; `zombie_horse_conversion` resta acceso (non serve a niente).
 - [ ] Sulfur Cube Bucket: solo gli adulti si prendono col secchio e il blocco ingoiato resta (`saveToBucketTag`): controllare.
 
 ## Field Guide (le pagine dei mob si spostano lì)

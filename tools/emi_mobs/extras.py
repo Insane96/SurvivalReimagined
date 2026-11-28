@@ -70,7 +70,7 @@ add("minecraft:ravager", "", "")
 add("minecraft:iron_golem", "ISO `Fixed iron golem damage`", "danno fisso invece che casuale")
 add("minecraft:iron_golem", "Enhanced AI `Custom targeting`", "metà dei mostri in `#enhancedai:config/can_attack_iron_golem` lo attacca")
 add("minecraft:iron_golem", "Bits and Balance `ironGolemsKillCreepers` = false", "spento")
-add("minecraft:snow_golem", "Quark `Snow Golem Player Heads`", "?uno Snow Golem con nome di un giocatore ucciso da una Witch droppa la testa del giocatore")
+add("minecraft:snow_golem", "Quark `Snow Golem Player Heads`", "uno Snow Golem con nome di un giocatore ucciso da una Witch droppa la testa del giocatore")
 add("minecraft:villager", "ISO Villagers", "solo curando Zombie Villager; niente riproduzione; commerciano solo vendendo per 1 Smeraldo; prezzi che salgono e non scendono; 1 restock al giorno; mantengono i trade se perdono il job site")
 add("minecraft:villager", "Quark `Villagers Follow Emeralds`", "ti seguono se tieni uno Smeraldo")
 add("minecraft:villager", "Enhanced AI `Villager attacking`", "reagiscono solo ai giocatori con reputazione sotto -100 (come gli Iron Golem); `Villagers fight back enemies` = false, quindi non attaccano i mostri")
@@ -91,12 +91,13 @@ add("minecraft:cat", "ISO `Ocelot to cat`", "si ottiene anche addomesticando un 
 add("minecraft:parrot", "ISO Livestock", "addomesticati e fatti innamorare solo con Semi di Melone e Zucca")
 add("minecraft:parrot", "Vibrant Parrots", "colori diversi; innamorati depongono un uovo del loro colore; restano sulla spalla in volo/caduta; si tolgono accovacciandosi; Bird Cage")
 add("minecraft:parrot", "ISO `Shoulder dismount fall distance` 4", "cadono dalla spalla solo dopo una caduta di qualche blocco")
-add("minecraft:parrot", "Naturalist `parrot_flight`", "?con un Parrot per spalla e un Bird in testa si vola lentamente (changelog 2.0)")
+add("minecraft:parrot", "Naturalist `parrot_flight`", "con un Parrot per spalla e un Bird di Naturalist (`naturalist:bird`) in testa, tenendo premuto salto in aria si sale lentamente (`ParrotFlight`)")
 add(["minecraft:horse", "minecraft:donkey", "minecraft:mule", "minecraft:llama", "minecraft:trader_llama", "minecraft:skeleton_horse", "minecraft:zombie_horse"], "ISO `Equine attributes`", "statistiche fisse per specie (niente genetica), da `equine_attributes.json`")
 add(["minecraft:horse", "minecraft:donkey", "minecraft:mule", "minecraft:skeleton_horse", "minecraft:zombie_horse"], "Quark `Horses Swim`", "nuotano con il giocatore in groppa")
 add("minecraft:horse", "Bits and Balance `dualRiders`", "due giocatori sullo stesso cavallo")
 add(["minecraft:horse", "minecraft:donkey", "minecraft:mule"], "Supplementaries Sugar Cube", "mangiato dà Speed")
-add("minecraft:zombie_horse", "Vanilla Backport `has_zombie_horses`", "spawna di notte in pianure e savane ?con uno Zombie in sella")
+add("minecraft:zombie_horse", "Vanilla Backport `has_zombie_horses`", "spawna come i mostri (`MobCategory.MONSTER`, regole dei mostri, peso 5: raro) in pianure e savane, con uno Zombie in sella; brucia al sole senza armatura (che si consuma); domabile senza cavaliere, non si riproduce")
+add("minecraft:zombie_horse", "Supplementaries `zombie_horse_inverse_conversion`", "sotto Weakness, con una Golden Carrot torna Horse")
 add("minecraft:camel", "Ecologics `camelChestsEnabled`", "gli si può mettere una Chest")
 add("minecraft:camel", "Vanilla Backport `camel_spawns` + Ecologics `spawn_camel`", "spawna nei deserti")
 add("minecraft:chicken", "Quark `Grab Chickens`", "si prende in testa e rallenta la caduta (Slowness)")
@@ -144,7 +145,7 @@ DOVE = {
  "minecraft:ender_dragon": "nell'End, si può far rinascere con 4 End Crystal sul portale",
  "minecraft:endermite": "a volte da una Ender Pearl lanciata; spawner in Formations Nether e Philips' Ruins",
  "minecraft:evoker": "Woodland Mansion (DnT Illager Manor) e raid",
- "minecraft:iron_golem": "si costruisce (4 blocchi di ferro + Carved Pumpkin); ?i villager lo evocano (nei villaggi abbandonati non ci sono villager); piazzato in Pillager Outpost (gabbia), Woodland Mansion, Stronghold (DnT)",
+ "minecraft:iron_golem": "si costruisce (4 blocchi di ferro + Carved Pumpkin); i villager lo evocano (ogni tanto, più spesso in pericolo); piazzato in Pillager Outpost (gabbia), Woodland Mansion, Stronghold (DnT)",
  "minecraft:mule": "da Cavallo + Asino; con ISO `prevent_breeding` ?solo se si innamorano da soli",
  "minecraft:piglin_brute": "Bastion Remnant; spawner in Formations Nether; Incendium",
  "minecraft:pillager": "Pillager Outpost, pattuglie nell'Overworld, raid; Woodland Mansion (DnT)",
@@ -163,7 +164,7 @@ DOVE = {
  "minecraft:warden": "evocato dagli Sculk Shrieker nel Deep Dark (Ancient City)",
  "minecraft:wither": "si costruisce (4 Soul Sand + 3 teschi di Wither Skeleton)",
  "minecraft:zoglin": "Hoglin portato nell'Overworld; spawner in Philips' Ruins",
- "minecraft:zombie_horse": "Vanilla Backport: di notte in Plains, Snowy Plains e savane (`spawns_zombie_horses`)",
+ "minecraft:zombie_horse": "Vanilla Backport: al buio (regole dei mostri) in Plains, Snowy Plains e savane (`spawns_zombie_horses`), raro",
  "minecraft:camel_husk": "Vanilla Backport: con il 10% degli Husk dei deserti (codice)",
  "minecraft:copper_golem": "si costruisce",
  "minecraft:creaking": "dai Creaking Heart nel Pale Garden, di notte",

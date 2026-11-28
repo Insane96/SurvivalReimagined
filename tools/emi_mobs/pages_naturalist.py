@@ -59,7 +59,7 @@ PAGES = {
     (N, "tiger"): (["Lives alone in Jungles, Dark Forests, Cherry Groves, mountains, snowy slopes, Badlands, Deserts and Swamps, as a Tiger, White Tiger, Leopard or Black Panther depending on the biome. It sleeps by day, stalks Boars, Pigs, Deer, Zebras and Snakes at night and fights back when hit. A cub fed its food can be tamed."], ["food", "breeds_alone", "lifespan.long"]),
     (N, "tortoise"): (["Lives in Deserts, Jungles and Swamps. It hides in its shell when you come close, unless you crouch or hold its food, taking less damage and barely knocked back. Its food can tame it, and it lays Tortoise Eggs. Tamed Tortoises get tougher."], ["food", "breeds_alone.no_twins", "lifespan.long"]),
     (N, "turkey"): (["Lives in forests, taigas and Groves. It runs from players unless they crouch or hold its food, and chases Ants. It falls slowly and takes no fall damage."], ["food", "breeds_alone", "lifespan.short"]),
-    (N, "vulture"): (["Flies high over Deserts, Badlands and Savannas and perches on Cacti. It picks up Rotten Flesh, attacks Zombies, and dives at players low on health who hold something, unless it's already carrying Rotten Flesh."], []),
+    (N, "vulture"): (["Flies high over Deserts, Badlands and Savannas and perches on Cacti. It attacks Zombies and dives at players low on health who hold something."], []),
     (N, "whale"): ([f"Lives in {OCEANS}, surfacing for air before diving back down. Jellyfish and Pufferfish can't sting it."], ["food", "breeds_alone"]),
     (N, "zebra"): (["Lives in Savannas, in herds, and runs from players. Tame it by riding it until it stops throwing you off; then it can be saddled and given a Chest."], ["food", "breeds_alone", "lifespan.very_long"]),
 }
