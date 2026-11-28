@@ -106,7 +106,7 @@ Fonti: i jar decompilati (Vanilla Backport 1.2.2, Ecologics 2.3.12, Supplementar
 
 ## Frasi al limite dello stile (numeri/statistiche)
 
-Riviste con l'utente: restano tutte così.
+Riviste con l'utente. Poi tolti tutti i confronti con la vanilla ("swims faster", "bigger", "hits less hard", "lays eggs less often"...): restano solo i confronti interni al pack (tra mob, varianti, condizioni). Vex, Vindicator, Drowned, Shulker, Rabbit e gli altri di questa lista sono stati riscritti di conseguenza.
 
 - [x] Rabbit: "It takes less fall damage"
 - [x] Zombie Horse: "Tougher but slower than a Horse"
