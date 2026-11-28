@@ -25,11 +25,11 @@ Tutti i test in gioco e tutti i `?` delle pagine dei mob (ora in Field Guide), d
 
 ### Fase 2 (ostili)
 
-- [ ] **Creeper** (MPR `Better creeper lingering`): i Creeper con effetti di pozione lasciano una nuvola esplodendo? (omesso)
+- [x] **Creeper** (MPR `Better creeper lingering`): esplodendo lasciano la nuvola dei loro effetti (confermato). È vanilla, MPR ne cambia solo la grandezza in base all'esplosione: resta omesso.
 - [ ] **Husk** (Vanilla Backport `has_camel_husks`): nei deserti cavalca un Camel Husk con un Parched dietro? (scritto; dal codice: il 10% degli Husk spawnati naturalmente, se c'è spazio)
 - [x] **Guardian**: il danno magico di ISO ora è scritto "It deals magic damage".
-- [ ] **Phantom** (Bits and Balance `enableImprovedPhantoms`): le opzioni di trasporto (doppio danno, caduta automatica, caduta se colpito) valgono anche per la presa di Enhanced AI? Enhanced AI blocca lo smontaggio, quindi probabilmente no (omesse)
-- [ ] **Tipped Arrow** (Bits and Balance `tippedArrowLingeringClouds`, anche `mobsEnabled`): pagina EMI `bitsandbalance_tipped_arrow.json` sulle 42 frecce vanilla con effetto (EMI confronta la pozione, quindi una stack per pozione; quelle delle mod non la mostrano). Controllare che la nuvola si formi (anche con le frecce di Stray e Bogged), che la freccia torni normale e che la pagina compaia su tutte le 42 (stack con componenti `{"minecraft:potion_contents":...}`).
+- [x] **Phantom** (Bits and Balance `enableImprovedPhantoms`): per evitare conflitti con la presa di Enhanced AI le opzioni di trasporto sono spente (`enablePhantomDoubleDamage`, `enablePhantomAutoDrop`, `enablePhantomDropOnHit`, `enablePhantomSlowFallingOnHitDismount`); il Pickup era già spento. Resta solo la Slowness che si accumula ("slow you down more and more"); lo Slow Falling del testo è di Enhanced AI (`Slow falling duration`).
+- [ ] **Tipped Arrow** (Bits and Balance `tippedArrowLingeringClouds`, anche `mobsEnabled`): la nuvola si forma, anche con le frecce degli scheletri, e la freccia torna normale (confermato). Resta da controllare che la pagina EMI `bitsandbalance_tipped_arrow.json` compaia su tutte le 42 frecce vanilla con effetto (stack con componenti `{"minecraft:potion_contents":...}`; quelle delle mod non la mostrano).
 
 ### Fase 3 (Nether, End, boss)
 

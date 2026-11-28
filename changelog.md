@@ -3,6 +3,7 @@
 * Added Field Guide
 * Naturalist's Whales follow the pack's breeding rules: they can't be bred by hand and fall in love on their own, more often when fed
 * Disabled Supplementaries' Skeleton Horse to Zombie Horse conversion, as it needs Rotten Flesh, which isn't in the pack
+* Disabled Bits and Balance's Phantom carrying options (double damage, automatic drop, drop on hit), as Phantoms grab players with Enhanced AI
 * Updated Mods
   * Amendments 2.3.0 -> 2.3.1
     * Fixed a rendering issue with held Torches

@@ -29,7 +29,7 @@ add("minecraft:parched", "Vanilla Backport `has_parched_skeletons`", "spawna nei
 
 # --- Creeper
 add("minecraft:creeper", "Explosion Overhaul", "esplosione dal centro del corpo, danno ridotto (x0.85), i blocchi distrutti droppano")
-add("minecraft:creeper", "MPR `Better creeper lingering`", "?i Creeper con effetti di pozione lasciano una nuvola 3D esplodendo")
+add("minecraft:creeper", "MPR `Better creeper lingering`", "la nuvola degli effetti di pozione lasciata esplodendo (vanilla) è grande quanto l'esplosione")
 add("minecraft:creeper", "Enhanced AI Creeper swell `Insane survival overhaul integration`", "probabilmente senza effetto: scrive le chiavi `iguanatweaksreborn:explosion_*`, che Explosion Overhaul non legge (legge `knockback_multiplier`/`damage_multiplier`)")
 
 # --- Spiders
@@ -42,7 +42,7 @@ add("minecraft:enderman", "Enhanced AI `Look anger cone`", "si arrabbia guardand
 add("minecraft:enderman", "Supplementaries `enderman_head`", "la testa droppa e fa da componente redstone quando la guardi (pagina item già esistente?)")
 add("minecraft:phantom", "ISO `Tired tied phantoms`", "spawnano in base alla stanchezza (Tired II+), non all'insonnia")
 add("minecraft:phantom", "Enhanced AI (MPR `scale/phantoms`)", "dimensioni casuali, fino a molto più grandi")
-add("minecraft:phantom", "Bits and Balance `enableImprovedPhantoms`", "i colpi danno Slowness che si accumula; Pickup è spento, le altre opzioni (doppio danno, caduta) ?valgono solo per il suo Pickup o anche per la presa di Enhanced AI")
+add("minecraft:phantom", "Bits and Balance `enableImprovedPhantoms`", "i colpi danno Slowness che si accumula; Pickup spento, e spente anche le opzioni di trasporto (doppio danno, caduta automatica, caduta se colpito, Slow Falling) per non toccare la presa di Enhanced AI")
 add(["minecraft:slime", "minecraft:magma_cube"], "Enhanced AI `Slime attack fix`", "fanno danno al salto e all'atterraggio, non a ogni tick di contatto")
 add("minecraft:slime", "Quark `Slimes To Magma Cubes`", "uno Slime ucciso da un Magma Block (danno `hotFloor`) si divide in Magma Cube")
 add("minecraft:slime", "Quark `Slime In A Bucket`", "gli Slime piccoli si raccolgono con un secchio (fanno saltellare nei chunk slime)")

@@ -165,7 +165,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - EAI Tnt like creepers: a volte si innesca se colpito da un'esplosione
 - Enhanced AI Creeper swell `Insane survival overhaul integration`: probabilmente senza effetto: scrive le chiavi `iguanatweaksreborn:explosion_*`, che Explosion Overhaul non legge (legge `knockback_multiplier`/`damage_multiplier`)
 - Explosion Overhaul: esplosione dal centro del corpo, danno ridotto (x0.85), i blocchi distrutti droppano
-- MPR `Better creeper lingering`: ?i Creeper con effetti di pozione lasciano una nuvola 3D esplodendo
+- MPR `Better creeper lingering`: la nuvola degli effetti di pozione lasciata esplodendo (vanilla) è grande quanto l'esplosione
 - **OFF**: Parkour (feature spenta)
 
 ### Dolphin (`minecraft:dolphin`)  · D S T X
@@ -420,7 +420,7 @@ Questi valgono per quasi tutti i mob e nella matrice sono solo una sigla accanto
 - **Dove (biomi)**: Nether: Toxic Heap, Withered Forest
 - ISO `Tired tied phantoms`: spawnano in base alla stanchezza (Tired II+), non all'insonnia
 - EAI Grabbing phantoms: afferra e porta in aria finché non lo colpisci
-- Bits and Balance `enableImprovedPhantoms`: i colpi danno Slowness che si accumula; Pickup è spento, le altre opzioni (doppio danno, caduta) ?valgono solo per il suo Pickup o anche per la presa di Enhanced AI
+- Bits and Balance `enableImprovedPhantoms`: i colpi danno Slowness che si accumula; Pickup spento, e spente anche le opzioni di trasporto (doppio danno, caduta automatica, caduta se colpito, Slow Falling) per non toccare la presa di Enhanced AI
 - Enhanced AI (MPR `scale/phantoms`): dimensioni casuali, fino a molto più grandi
 
 ### Pig (`minecraft:pig`)  · A D S T X

@@ -895,12 +895,12 @@
 		#Double Damage When Carried
 		[mobs.improvedPhantoms.phantomDoubleDamage]
 			#Enable double damage when hitting a phantom while being carried by it.
-			enablePhantomDoubleDamage = true
+			enablePhantomDoubleDamage = false
 
 		#Automatic Drop
 		[mobs.improvedPhantoms.phantomAutoDrop]
 			#Automatically make phantoms drop carried players after the configured carry time.
-			enablePhantomAutoDrop = true
+			enablePhantomAutoDrop = false
 			#How many seconds a phantom carries a player before automatically dropping them.
 			# Default: 3
 			# Range: 1 ~ 60
@@ -909,12 +909,12 @@
 		#Drop On Hit
 		[mobs.improvedPhantoms.phantomDropOnHit]
 			#Make phantoms immediately drop players who hit them while being carried.
-			enablePhantomDropOnHit = true
+			enablePhantomDropOnHit = false
 
 		#Hit Dismount Slow Falling
 		[mobs.improvedPhantoms.phantomDismountSlowFalling]
 			#Give players 2 seconds of Slow Falling I when a phantom carry ends after they hit the carrying phantom.
-			enablePhantomSlowFallingOnHitDismount = true
+			enablePhantomSlowFallingOnHitDismount = false
 
 		#Better Combat Integration
 		[mobs.improvedPhantoms.betterCombatIntegration]
